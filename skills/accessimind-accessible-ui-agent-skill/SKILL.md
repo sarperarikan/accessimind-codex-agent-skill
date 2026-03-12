@@ -1,4 +1,4 @@
-﻿---
+---
 name: accessimind-accessible-ui-agent-skill
 description: Use when the user wants production-ready modern UI work for existing projects or new screens in React, HTML, or CSS, with stack-aware implementation, enterprise-grade multilingual architecture, consistent design systems, WCAG 2.2-compliant output, axe-core-backed accessibility verification, and strong support for dynamic and stateful interfaces.
 ---
@@ -111,6 +111,35 @@ Prefer:
 
 Do not ship visually noisy dashboards, low-contrast surfaces, or ambiguous actions.
 
+
+## Encoding safety rules
+
+Treat text encoding as a production requirement.
+
+### Required rules
+
+- Always preserve and emit UTF-8 for UI-facing source files unless the project already uses a different encoding and changing it would break the build.
+- Do not introduce BOM unless the project already requires it.
+- Do not rewrite files through tooling or shell flows that are likely to convert UTF-8 text into ANSI, Windows-1252, or mojibake.
+- Preserve Turkish and other non-ASCII characters correctly in UI labels, translations, headings, aria labels, help text, and generated HTML.
+- When generating HTML, keep `charset="utf-8"` in the document metadata or the equivalent response header.
+- When generating server responses, ensure `content-type` includes `charset=utf-8` for HTML, JSON, JS, and text endpoints where relevant.
+- When reading and rewriting files, prefer no-BOM UTF-8-safe paths and verify that special characters remain intact after writes.
+- After UI generation or refactors, scan for mojibake patterns and fix them before considering the task complete.
+
+### Verification steps
+
+Check for broken text such as:
+- `Ã`, `â€™`, `â€œ`, `Ä±`, `ÅŸ`, `Ã§`
+- mixed-language corruption in titles, buttons, table headings, and aria text
+- incorrect locale strings after serialization, template generation, or dashboard export
+
+If the task touches multilingual UI, generated HTML, extension UIs, reports, or dashboard templates, explicitly verify:
+- file encoding remained UTF-8
+- visible text renders correctly in the browser
+- `lang`, `dir`, and localized strings still match the selected locale
+
+Do not ship interface changes with encoding corruption, even if the UI is otherwise functional.
 ## Multilingual architecture
 
 Treat multilingual UI as architecture, not string replacement.
