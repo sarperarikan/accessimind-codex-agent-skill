@@ -1,0 +1,4 @@
+﻿interface:
+  display_name: "AccessiMind Accessible UI Agent Skill"
+  short_description: "Enterprise UI + WCAG 2.2 + multi-platform accessibility"
+  default_prompt: "Use $accessimind-accessible-ui-agent-skill to improve or build UI using the existing stack with enterprise-grade accessibility, multilingual support, and platform-aware verification."
