@@ -14,12 +14,14 @@ Keep this skill practical. Prefer shipping code over writing design essays.
 Produce UI that is:
 - modern but not trendy for its own sake
 - usable with keyboard, screen reader, zoom, forced colors, and reduced motion
+- usable across blind, low-vision, motor-limited, speech-input, cognitive-load, deaf and hard-of-hearing, and vestibular-sensitive user needs where those needs affect the target UI
 - structurally correct in semantic HTML first
 - consistent through tokens, states, spacing, and component rules
 - multilingual by architecture, not by string scattering
 - aligned with the current project's existing stack and patterns
 - verified with automated accessibility checks plus explicit manual review notes
 - resilient for both static layouts and dynamic, stateful application behavior
+- production-ready for implementation, QA, regression review, and repeatable release workflows
 
 ## Required workflow
 
@@ -29,9 +31,81 @@ Produce UI that is:
 4. Build semantic HTML first, then CSS, then JS behavior.
 5. Use ARIA only when native HTML cannot express the interaction correctly.
 6. Design and code to WCAG 2.2 AA by default.
-7. Run or wire automated `axe-core` checks where the stack allows it.
-8. Verify static and dynamic states: keyboard flow, focus visibility, naming, contrast, target size, errors, responsiveness, language metadata, motion behavior, async updates, overlays, and live announcements.
-9. Explain any remaining accessibility risk or unverified area.
+7. Treat all applicable WCAG 2.2 Level A and AA success criteria as an implementation and verification scope, not a slogan.
+8. Run or wire automated `axe-core` checks where the stack allows it.
+9. Verify static and dynamic states: keyboard flow, focus visibility, naming, contrast, target size, errors, responsiveness, language metadata, motion behavior, async updates, overlays, and live announcements.
+10. Verify the experience against at least the persona matrix in this skill before calling the work production-ready.
+11. Explain any remaining accessibility risk, unsupported criterion, or unverified area.
+
+## Production-ready delivery bar
+
+Do not describe UI work as production-ready unless all of these are true:
+- the implementation follows the existing stack or a justified minimal extension
+- semantics, labels, names, states, and focus behavior are implemented in shipped code, not left as notes
+- keyboard-only operation is complete for all primary and secondary flows touched by the change
+- reduced-motion behavior is implemented where motion, animation, or auto-updating content exists
+- text scaling, reflow, and responsive behavior were considered for the affected surfaces
+- automated accessibility checks were run or explicitly wired for later execution
+- at least a targeted manual review was performed for the affected interaction states
+- unresolved issues are called out as blockers or known gaps, not silently deferred
+
+Production-ready output should usually include:
+- implementation code
+- test or audit wiring when feasible
+- clear verification notes
+- residual-risk notes only for items that genuinely could not be validated in the current environment
+
+## Persona coverage rule
+
+When using this skill, explicitly design and review for these user perspectives whenever they intersect the changed UI:
+- blind screen reader users
+- low-vision users who zoom, enlarge text, or use screen magnification
+- keyboard-only users
+- users with limited fine motor control, tremor, or limited reach
+- users who rely on switch, voice, or alternate input methods
+- users with vestibular sensitivity or reduced-motion needs
+- users with cognitive or attention-related load sensitivity
+- deaf and hard-of-hearing users when the UI includes audio, alerts, captions, transcripts, or multimedia instructions
+
+Do not claim full disability coverage in the abstract. Instead, map the changed UI to the relevant personas and verify the affected interaction model for each.
+
+### Persona review matrix
+
+Use this matrix as a minimum review lens:
+
+- blind screen reader users: structure, accessible names, landmarks, heading order, status messages, dialog behavior, form errors, meaningful link and button purpose
+- low-vision users: zoom at 200% and 400% equivalent, text spacing, reflow, contrast, focus visibility, non-obscured focus, scalable controls, no clipped content
+- keyboard-only users: full reachability, logical tab order, no traps, predictable shortcuts, visible current location, reliable escape and close behavior
+- motor-limited users: target size, spacing between targets, no drag-only operation, no precision-only gestures, enough time, no accidental activation patterns
+- voice and alternate input users: stable visible labels, consistent control names, no hidden-only commands, no gesture-exclusive tasks
+- vestibular-sensitive users: reduced motion support, no essential autoplay, no parallax or motion-heavy transitions required for comprehension
+- cognitive-load-sensitive users: plain language, clear hierarchy, consistent navigation, explicit errors, progress cues, low-surprise interactions, recoverable actions
+- deaf and hard-of-hearing users: captions, transcripts, visible equivalents for audio alerts, no sound-only instructions, synchronized media controls
+
+## WCAG 2.2 coverage protocol
+
+This skill must treat WCAG 2.2 coverage as a review protocol over all applicable Level A and AA success criteria, not only the commonly broken ones.
+
+Load [wcag-2-2-coverage-map.md](references/wcag-2-2-coverage-map.md) when:
+- the task explicitly asks for WCAG 2.2 completeness or coverage mapping
+- the UI change is broad enough that a full criterion-routing pass is warranted
+- you are doing a production-readiness review, audit, PR review, or acceptance check
+- you need quick routing from a UI surface such as forms, dialogs, carousels, data tables, navigation shells, or media into the most relevant criteria
+
+Required behavior:
+- identify which success criteria are applicable to the changed experience
+- implement against all applicable criteria
+- verify the criteria through automation, manual inspection, or explicit reasoning tied to the changed code
+- call out criteria that are not applicable instead of ignoring them
+- call out criteria that remain unverified instead of implying complete conformance
+
+For substantial UI work, group review thinking at least across:
+- perceivable: alternatives, adaptable structure, distinguishability, contrast, reflow, text spacing, orientation, input purpose
+- operable: keyboard access, enough time, seizures and motion safety, navigability, focus, target size, dragging alternatives, pointer alternatives
+- understandable: readable text, predictable behavior, form help, error prevention, redundant entry, authentication accessibility
+- robust: valid semantics, name-role-value integrity, assistive-technology compatibility, status message exposure
+
+Do not reduce WCAG review to a short checklist if the UI change is broad. Expand the review depth to match the interaction surface.
 
 ## Stack detection rules
 
@@ -746,6 +820,7 @@ Use for:
 ## References
 
 Load [official-sources.md](references/official-sources.md) when you need the standards, techniques, and rationale behind the rules in this skill.
+Load [wcag-2-2-coverage-map.md](references/wcag-2-2-coverage-map.md) when you need a practical criterion-to-surface review map for complete WCAG 2.2 A/AA coverage.
 
 
 
