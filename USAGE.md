@@ -1,5 +1,7 @@
 ﻿# Usage Guide
 
+Current version: `1.0.0.2`
+
 ## Overview
 
 AccessiMind Accessible UI Agent Skill is intended for Codex users who want UI work that is:

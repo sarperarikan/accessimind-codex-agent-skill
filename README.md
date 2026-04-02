@@ -1,5 +1,7 @@
 ﻿# AccessiMind Accessible UI Agent Skill
 
+Current version: `1.0.0.2`
+
 AccessiMind Accessible UI Agent Skill is a shareable Codex skill for building and reviewing production-ready UI with an accessibility-first workflow.
 
 It is designed for teams that want a single skill capable of:
@@ -94,3 +96,8 @@ Suggested trigger phrases:
 ## Documentation
 
 For a more detailed English usage guide, see `USAGE.md`.
+
+## Release Notes
+
+- Current release: `1.0.0.2`
+- Changelog: `CHANGELOG.md`
