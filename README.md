@@ -1,6 +1,6 @@
 ﻿# AccessiMind Accessible UI Agent Skill
 
-Current version: `1.1.0`
+Current version: `1.0.0.3`
 
 AccessiMind Accessible UI Agent Skill is a shareable Codex skill for building and reviewing production-ready UI with an accessibility-first workflow.
 
@@ -121,5 +121,5 @@ The bundle methodology is:
 
 ## Release Notes
 
-- Current release: `1.1.0`
+- Current release: `1.0.0.3`
 - Changelog: `CHANGELOG.md`

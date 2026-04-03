@@ -1,6 +1,6 @@
 ﻿# Usage Guide
 
-Current version: `1.1.0`
+Current version: `1.0.0.3`
 
 ## Overview
 
