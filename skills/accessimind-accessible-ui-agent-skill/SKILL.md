@@ -2936,12 +2936,14 @@ Primary controls and structure expose valid name, role, state, and relationship 
 All `critical` and `high` findings have an accepted remediation decision.
 - `G5: Evidence gate`:
 Report includes reproducible evidence for each major claim.
+- `G6: Assistive-tech and visual-measurement gate`:
+Live screen-reader evidence and pixel-level visual checks are mandatory and reported.
 
 ### Gate decision rules
 
 - `PASS`: all gates satisfied and no unresolved `critical` or `high` findings.
 - `PASS_WITH_RISK`: no unresolved `critical` findings, but at least one unresolved `high` or accepted temporary exception.
-- `FAIL`: any unresolved `critical`, missing evidence on major claims, or blocked keyboard completion in core flow.
+- `FAIL`: any unresolved `critical`, missing evidence on major claims, blocked keyboard completion in core flow, missing live SR evidence, or missing pixel-level contrast/focus evidence.
 
 ### Exception handling rule
 
@@ -3024,6 +3026,30 @@ Default to Playwright-assisted runtime capture when the request includes any of:
 - Runtime interaction evidence comes from `playwright`.
 - Severity and compliance interpretation stay in `accessimind`.
 - Never skip runtime evidence for keyboard/focus claims unless tooling is blocked; if blocked, mark as unverified.
+
+## Absolute mandatory verification mode
+
+This mode is default and non-optional for accessibility audits and production sign-off.
+
+### Absolute requirements
+
+- Live screen-reader evidence must be captured and reported in every audit:
+  - `NVDA` on Windows and/or `VoiceOver` on Apple platforms based on runtime availability.
+- Pixel-level visual verification must be captured and reported in every audit:
+  - text/control contrast measurements
+  - visible focus indicator checks
+
+### No-skip policy
+
+- These checks are mandatory in all conditions.
+- If tooling cannot run, the audit result must be `FAIL` with explicit blocker details; do not mark as passed or pass-with-risk.
+
+### Reporting requirement
+
+Every final report must include dedicated sections:
+- `Live screen-reader evidence (NVDA/VoiceOver)`
+- `Pixel-level contrast measurements`
+- `Focus visibility measurements`
 
 ## Senior engineering integration mode
 
