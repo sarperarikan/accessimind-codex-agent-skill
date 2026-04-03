@@ -1,0 +1,4686 @@
+<!DOCTYPE html>
+<html lang="vi" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Danh sách các phím tắt trong NVDA 2025.3.3</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="styles.css">
+<link rel="shortcut icon" href="favicon.ico">
+
+</head>
+<body><h1 id="danh-sach-cac-phim-tat-trong-nvda-202533">Danh sách các phím tắt trong NVDA 2025.3.3</h1>
+<div class="toc">
+<ul>
+<li><a href="#danh-sach-cac-phim-tat-trong-nvda-202533" title="Danh sách các phím tắt trong NVDA 2025.3.3">Danh sách các phím tắt trong NVDA 2025.3.3</a><ul>
+<li><a href="#GettingStartedWithNVDA" title="Sử dụng NVDA">Sử dụng NVDA</a><ul>
+<li><a href="#NVDATouchGestures" title="Thao tác cảm ứng trong NVDA">Thao tác cảm ứng trong NVDA</a><ul>
+<li><a href="#TouchModes" title="Chế độ cảm ứng">Chế độ cảm ứng</a></li>
+</ul>
+</li>
+<li><a href="#BasicNVDACommands" title="Các lệnh cơ bản của NVDA">Các lệnh cơ bản của NVDA</a></li>
+<li><a href="#ReportingSystemInformation" title="Thông báo thông tin hệ thống">Thông báo thông tin hệ thống</a></li>
+<li><a href="#SpeechModes" title="Các chế độ đọc">Các chế độ đọc</a></li>
+</ul>
+</li>
+<li><a href="#NavigatingWithNVDA" title="Di chuyển với NVDA">Di chuyển với NVDA</a><ul>
+<li><a href="#SystemFocus" title="Di chuyển với focus hệ thống">Di chuyển với focus hệ thống</a></li>
+<li><a href="#SystemCaret" title="Di chuyển với dấu nháy hệ thống">Di chuyển với dấu nháy hệ thống</a></li>
+<li><a href="#ObjectNavigation" title="Phương pháp duyệt đối tượng">Phương pháp duyệt đối tượng</a></li>
+<li><a href="#ReviewingText" title="Duyệt nội dung">Duyệt nội dung</a></li>
+<li><a href="#ReviewModes" title="Các chế độ duyệt">Các chế độ duyệt</a></li>
+<li><a href="#NavigatingWithTheMouse" title="Di chuyển với chuột">Di chuyển với chuột</a></li>
+</ul>
+</li>
+<li><a href="#BrowseMode" title="Chế độ duyệt">Chế độ duyệt</a><ul>
+<li><a href="#SingleLetterNavigation" title="Ký tự di chuyển đơn">Ký tự di chuyển đơn</a></li>
+<li><a href="#ElementsList" title="Hộp thoại danh sách các thành phần">Hộp thoại danh sách các thành phần</a></li>
+<li><a href="#SearchingForText" title="Tìm kiếm văn bản">Tìm kiếm văn bản</a></li>
+<li><a href="#ImbeddedObjects" title="Thao tác trên đối tượng nhúng">Thao tác trên đối tượng nhúng</a></li>
+<li><a href="#NativeSelectionMode" title="Chế độ chọn thực tế">Chế độ chọn thực tế</a></li>
+</ul>
+</li>
+<li><a href="#ReadingMath" title="Đọc nội dung toán học">Đọc nội dung toán học</a><ul>
+<li><a href="#InteractiveNavigation" title="Duyệt và Tương Tác">Duyệt và Tương Tác</a></li>
+</ul>
+</li>
+<li><a href="#Braille" title="Chữ Nổi">Chữ Nổi</a><ul>
+<li><a href="#BrailleInput" title="Nhập Liệu Chữ Nổi">Nhập Liệu Chữ Nổi</a></li>
+</ul>
+</li>
+<li><a href="#Vision" title="Hỗ trợ nhìn">Hỗ trợ nhìn</a><ul>
+<li><a href="#VisionScreenCurtain" title="Che màn hình">Che màn hình</a></li>
+</ul>
+</li>
+<li><a href="#ContentRecognition" title="Nhận Dạng Nội Dung">Nhận Dạng Nội Dung</a><ul>
+<li><a href="#Win10Ocr" title="Windows OCR">Windows OCR</a></li>
+</ul>
+</li>
+<li><a href="#ApplicationSpecificFeatures" title="Tính năng cụ thể cho một số ứng dụng">Tính năng cụ thể cho một số ứng dụng</a><ul>
+<li><a href="#MicrosoftWord" title="Microsoft Word">Microsoft Word</a><ul>
+<li><a href="#WordAutomaticColumnAndRowHeaderReading" title="Tự động đọc tiêu đề dòng và cột">Tự động đọc tiêu đề dòng và cột</a></li>
+<li><a href="#BrowseModeInMicrosoftWord" title="Chế độ duyệt tài liệu trong Microsoft Word">Chế độ duyệt tài liệu trong Microsoft Word</a><ul>
+<li><a href="#WordElementsList" title="Duyệt Danh sách các thành phần">Duyệt Danh sách các thành phần</a></li>
+</ul>
+</li>
+<li><a href="#WordReportingComments" title="Thông Báo Chú Thích">Thông Báo Chú Thích</a></li>
+</ul>
+</li>
+<li><a href="#MicrosoftExcel" title="Microsoft Excel">Microsoft Excel</a><ul>
+<li><a href="#ExcelAutomaticColumnAndRowHeaderReading" title="Tự Động Đọc Tiêu Đề Dòng Và Cột">Tự Động Đọc Tiêu Đề Dòng Và Cột</a></li>
+<li><a href="#ExcelElementsList" title="Danh Sách Thành Phần">Danh Sách Thành Phần</a></li>
+<li><a href="#ExcelReportingComments" title="Thông Báo Chú Thích (notes)">Thông Báo Chú Thích (notes)</a></li>
+<li><a href="#ExcelReadingProtectedCells" title="Đọc Ô Được Bảo Vệ">Đọc Ô Được Bảo Vệ</a></li>
+</ul>
+</li>
+<li><a href="#MicrosoftPowerPoint" title="Microsoft PowerPoint">Microsoft PowerPoint</a></li>
+<li><a href="#Foobar2000" title="foobar2000">foobar2000</a></li>
+<li><a href="#MirandaIM" title="Miranda IM">Miranda IM</a></li>
+<li><a href="#Poedit" title="Poedit">Poedit</a></li>
+<li><a href="#Kindle" title="Kindle cho PC">Kindle cho PC</a><ul>
+<li><a href="#KindleTextSelection" title="Chọn văn bản">Chọn văn bản</a></li>
+</ul>
+</li>
+<li><a href="#Azardi" title="Azardi">Azardi</a></li>
+<li><a href="#WinConsole" title="Windows Console">Windows Console</a></li>
+</ul>
+</li>
+<li><a href="#ConfiguringNVDA" title="Cấu hình NVDA">Cấu hình NVDA</a><ul>
+<li><a href="#NVDASettings" title="Cài đặt NVDA">Cài đặt NVDA</a><ul>
+<li><a href="#GeneralSettings" title="Cài Đặt Chung">Cài Đặt Chung</a></li>
+<li><a href="#SpeechSettings" title="Thiết lập bộ đọc">Thiết lập bộ đọc</a></li>
+<li><a href="#SelectSynthesizer" title="Chọn bộ đọc">Chọn bộ đọc</a></li>
+<li><a href="#SynthSettingsRing" title="Vòng thiết lập tham số cho giọng đọc">Vòng thiết lập tham số cho giọng đọc</a></li>
+<li><a href="#BrailleSettings" title="Chữ Nổi">Chữ Nổi</a></li>
+<li><a href="#SelectBrailleDisplay" title="Chọn màn hình chữ nổi">Chọn màn hình chữ nổi</a></li>
+<li><a href="#AudioSettings" title="Cài đặt âm thanh">Cài đặt âm thanh</a><ul>
+<li><a href="#SelectSoundSplitMode" title="Tách âm thanh">Tách âm thanh</a></li>
+</ul>
+</li>
+<li><a href="#KeyboardSettings" title="Bàn phím">Bàn phím</a></li>
+<li><a href="#MouseSettings" title="Thiết Lập Chuột">Thiết Lập Chuột</a></li>
+<li><a href="#ReviewCursorSettings" title="Con Trỏ Duyệt">Con Trỏ Duyệt</a></li>
+<li><a href="#ObjectPresentationSettings" title="Trình Bày Đối Tượng">Trình Bày Đối Tượng</a></li>
+<li><a href="#BrowseModeSettings" title="Chế Độ Duyệt">Chế Độ Duyệt</a></li>
+<li><a href="#DocumentFormattingSettings" title="Định Dạng Tài Liệu">Định Dạng Tài Liệu</a></li>
+<li><a href="#AdvancedSettings" title="Cài đặt nâng cao">Cài đặt nâng cao</a><ul>
+<li><a href="#Annotations" title="các ghi chú">các ghi chú</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#SavingAndReloading" title="Lưu và cập nhật thông tin cấu hình">Lưu và cập nhật thông tin cấu hình</a></li>
+<li><a href="#ConfigurationProfiles" title="Hồ Sơ Cấu Hình">Hồ Sơ Cấu Hình</a><ul>
+<li><a href="#ProfilesBasicManagement" title="Quản lý cơ bản">Quản lý cơ bản</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#RemoteAccess" title="Remote Access">Remote Access</a><ul>
+<li><a href="#RemoteAccessGestures" title="Remote Access Key Commands Summary">Remote Access Key Commands Summary</a></li>
+</ul>
+</li>
+<li><a href="#ExtraTools" title="Các Công Cụ">Các Công Cụ</a><ul>
+<li><a href="#LogViewer" title="Trình hiển thị Log">Trình hiển thị Log</a></li>
+<li><a href="#ReloadPlugins" title="Cập nhật lại plugins">Cập nhật lại plugins</a></li>
+</ul>
+</li>
+<li><a href="#SupportedBrailleDisplays" title="Các màn hình chữ nổi được hỗ trợ">Các màn hình chữ nổi được hỗ trợ</a><ul>
+<li><a href="#FreedomScientificFocus" title="Freedom Scientific dòng Focus / PAC Mate">Freedom Scientific dòng Focus / PAC Mate</a></li>
+<li><a href="#OptelecALVA" title="Optelec ALVA dòng 6 / có bộ chuyển giao thức">Optelec ALVA dòng 6 / có bộ chuyển giao thức</a></li>
+<li><a href="#HandyTech" title="Các Màn Hình Handy Tech">Các Màn Hình Handy Tech</a></li>
+<li><a href="#MDVLilli" title="MDV Lilli">MDV Lilli</a></li>
+<li><a href="#Baum" title="Màn Hình Chữ Nổi Baum/Humanware/APH/Orbit">Màn Hình Chữ Nổi Baum/Humanware/APH/Orbit</a></li>
+<li><a href="#HedoProfiLine" title="hedo ProfiLine USB">hedo ProfiLine USB</a></li>
+<li><a href="#HedoMobilLine" title="hedo MobilLine USB">hedo MobilLine USB</a></li>
+<li><a href="#HumanWareBrailliant" title="Các dòng HumanWare Brailliant BI/B / BrailleNote Touch">Các dòng HumanWare Brailliant BI/B / BrailleNote Touch</a><ul>
+<li><a href="#HumanWareBrailliantKeyAssignmentForAllModels" title="Các phím được gán cho tất cả sản phẩm">Các phím được gán cho tất cả sản phẩm</a></li>
+<li><a href="#HumanWareBrailliantKeyAssignmentForBI32BI40AndB80" title="Các phím gán cho màn hình Brailliant BI 32, BI 40 và B 80">Các phím gán cho màn hình Brailliant BI 32, BI 40 và B 80</a></li>
+<li><a href="#HumanWareBrailliantKeyAssignmentForBI14" title="Phím gán cho Brailliant BI 14">Phím gán cho Brailliant BI 14</a></li>
+</ul>
+</li>
+<li><a href="#Hims" title="Các dòng HIMS Braille Sense/Braille EDGE/Smart Beetle">Các dòng HIMS Braille Sense/Braille EDGE/Smart Beetle</a></li>
+<li><a href="#Seika" title="Màn hình chữ nổi Seika">Màn hình chữ nổi Seika</a><ul>
+<li><a href="#SeikaBrailleDisplays" title="Seika Phiên Bản 3, 4 và 5 (40 ô), Seika80 (80 ô)">Seika Phiên Bản 3, 4 và 5 (40 ô), Seika80 (80 ô)</a></li>
+<li><a href="#SeikaNotetaker" title="MiniSeika (16, 24 ô), V6 và V6Pro (40 ô)">MiniSeika (16, 24 ô), V6 và V6Pro (40 ô)</a></li>
+</ul>
+</li>
+<li><a href="#Papenmeier" title="Các Mẫu Papenmeier BRAILLEX Mới">Các Mẫu Papenmeier BRAILLEX Mới</a></li>
+<li><a href="#PapenmeierOld" title="Các Mẫu Papenmeier Braille BRAILLEX Cũ">Các Mẫu Papenmeier Braille BRAILLEX Cũ</a></li>
+<li><a href="#HumanWareBrailleNote" title="HumanWare BrailleNote">HumanWare BrailleNote</a></li>
+<li><a href="#EcoBraille" title="EcoBraille">EcoBraille</a></li>
+<li><a href="#SuperBraille" title="SuperBraille">SuperBraille</a></li>
+<li><a href="#Eurobraille" title="Các màn hình Eurobraille">Các màn hình Eurobraille</a><ul>
+<li><a href="#EurobrailleBraille" title="Các chức năng bàn phím chữ nổi">Các chức năng bàn phím chữ nổi</a></li>
+<li><a href="#Eurobraillebbook" title="Phím lệnh cho b.book">Phím lệnh cho b.book</a></li>
+<li><a href="#Eurobraillebnote" title="Phím lệnh cho b.note">Phím lệnh cho b.note</a></li>
+<li><a href="#Eurobrailleesys" title="Phím lệnh cho Esys">Phím lệnh cho Esys</a></li>
+<li><a href="#EurobrailleEsytime" title="Phím lệnh cho Esytime">Phím lệnh cho Esytime</a></li>
+</ul>
+</li>
+<li><a href="#NattiqTechnologies" title="Các màn hình của Nattiq nBraille">Các màn hình của Nattiq nBraille</a></li>
+<li><a href="#BRLTTY" title="BRLTTY">BRLTTY</a></li>
+<li><a href="#Albatross" title="Tivomatic Caiku Albatross 46/80">Tivomatic Caiku Albatross 46/80</a></li>
+<li><a href="#Zoomax" title="NLS eReader Zoomax">NLS eReader Zoomax</a></li>
+<li><a href="#HIDBraille" title="Các màn hình chữ nổi tiêu chuẩn">Các màn hình chữ nổi tiêu chuẩn</a></li>
+<li><a href="#dotPad" title="Dot Pad">Dot Pad</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="GettingStartedWithNVDA">Sử dụng NVDA</h2>
+<h3 id="NVDATouchGestures">Thao tác cảm ứng trong NVDA</h3>
+<p>Để bật / tắt hỗ trợ tương tác cảm ứng, bấm NVDA+control+alt+t.</p>
+<h4 id="TouchModes">Chế độ cảm ứng</h4>
+<p>Để chuyển qua lại giữa các chế độ, chạm ba (chạm nhanh ba ngón vào màn hình).</p>
+<h3 id="BasicNVDACommands">Các lệnh cơ bản của NVDA</h3>
+<table>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Phím máy bàn</th>
+<th>Phím xách tay</th>
+<th>Cảm ứng</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bật hoặc khởi động lại NVDA</td>
+<td>Control+alt+n</td>
+<td>Control+alt+n</td>
+<td>không có</td>
+<td>Bật hoặc khởi động lại NVDA từ Desktop, nếu tùy chọn tạo biểu tượng được bật trong quá trình cài đặt NVDA. Đây là một biểu tượng trên Windows nên không thể gán lại phím tắt trong hộp thoại quản lý các thao tác.</td>
+</tr>
+<tr>
+<td>Dừng đọc</td>
+<td>Control</td>
+<td>control</td>
+<td>Chạm hai-ngón</td>
+<td>Dừng đọc</td>
+</tr>
+<tr>
+<td>Tạm dừng đọc</td>
+<td>shift</td>
+<td>shift</td>
+<td>Không có</td>
+<td>Tạm dừng đọc (hoặc tiếp tục đọc nếu đã tạm dừng trước đó)</td>
+</tr>
+<tr>
+<td>Mở trình đơn của NVDA</td>
+<td>NVDA+n</td>
+<td>NVDA+n</td>
+<td>hai-chạm hai-ngón</td>
+<td>Mở trình đơn của NVDA</td>
+</tr>
+<tr>
+<td>bật tắt chế độ trợ giúp nhập</td>
+<td>NVDA+1</td>
+<td>NVDA+1</td>
+<td>không có</td>
+<td>Bật tắt chế độ thông báo mô tả các phím tắt trong NVDA</td>
+</tr>
+<tr>
+<td>Tắt NVDA</td>
+<td>NVDA+q</td>
+<td>NVDA+q</td>
+<td>không có</td>
+<td>Tắt NVDA</td>
+</tr>
+<tr>
+<td>Chuyển phím tới hệ thống</td>
+<td>NVDA+f2</td>
+<td>NVDA+f2</td>
+<td>không có</td>
+<td>chuyển phím được bấm tiếp theo trực tiếp tới ứng dụng hiện tại và hệ thống mà không thông qua NVDA</td>
+</tr>
+<tr>
+<td>Bật tắt chế độ ngủ cho ứng dụng</td>
+<td>NVDA+shift+s</td>
+<td>NVDA+shift+z</td>
+<td>không có</td>
+<td>Bật tắt chế độ ngủ cho ứng dụng hiện tại. Chức năng này hữu ích khi bạn dùng một ứng dụng tự hỗ trợ giọng nói. Mọi lệnh đọc và chức năng hiển thị thông tin trên màn hình chữ nổi của NVDA đều không hoạt động khi ở chế độ ngủ. Bấm một lần nữa để tắt chế độ ngủ nếu đang bật, và ngược lại - lưu ý rằng NVDA sẽ chỉ giữ thiết lập chế độ ngủ cho tới khi nó bị khởi động lại nó.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ReportingSystemInformation">Thông báo thông tin hệ thống</h3>
+<table>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Phím tắt</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thông báo ngày giờ hệ thống</td>
+<td>NVDA+f12</td>
+<td>Bấm một lần để nghe giờ, bấm nhanh hai lần để nghe ngày tháng</td>
+</tr>
+<tr>
+<td>Thông báo trạng thái Pin</td>
+<td>NVDA+shift+b</td>
+<td>thông báo tình trạng hiện tại của Pin(phần trăm pin và tình trạng sạc)</td>
+</tr>
+<tr>
+<td>Thông báo văn bản trong bộ nhớ tạm</td>
+<td>NVDA+c</td>
+<td>thông báo văn bản trong bộ nhớ tạm (nếu có).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="SpeechModes">Các chế độ đọc</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chuyển chế độ đọc</td>
+<td><code>NVDA+s</code></td>
+<td>Chuyển giữa các chế độ đọc.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="NavigatingWithNVDA">Di chuyển với NVDA</h2>
+<h3 id="SystemFocus">Di chuyển với focus hệ thống</h3>
+<table>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Phím máy bàn</th>
+<th>Phím xách tay</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thông báo focus hiện tại</td>
+<td>NVDA+tab</td>
+<td>NVDA+tab</td>
+<td>Thông báo về đối tượng đang có focus hiện tại. Bấm nhanh hai lần để đánh vần thông tin</td>
+</tr>
+<tr>
+<td>Thông báo tiêu đề</td>
+<td>NVDA+t</td>
+<td>NVDA+t</td>
+<td>Thông báo tiêu đề của cửa sổ hiện tại. Bấm hai lần để đánh vần tiêu đề, bấm ba lần để sao chép nó vào bộ nhớ tạm</td>
+</tr>
+<tr>
+<td>Thông báo cửa sổ hiện tại</td>
+<td>NVDA+b</td>
+<td>NVDA+b</td>
+<td>Đọc tất cả đối tượng trên cửa sổ hiện tại (rất hữu ích khi đứng trong một hộp thoại)</td>
+</tr>
+<tr>
+<td>Thông báo thanh trạng thái</td>
+<td>NVDA+end</td>
+<td>NVDA+shift+end</td>
+<td>Thông báo thanh trạng thái của cửa sổ hiện tại nếu tìm thấy. Bấm hai lần để đánh vần thông tin. Bấm ba lần để chép nó vào bộ nhớ tạm.</td>
+</tr>
+<tr>
+<td>Thông báo phím tắt</td>
+<td><code>shift+2 bàn phím số</code></td>
+<td><code>NVDA+control+shift+.</code></td>
+<td>Thông báo phím tắt (phím truy cập nhanh) của đối tượng tại vị trí con trỏ</td>
+</tr>
+</tbody>
+</table>
+<h3 id="SystemCaret">Di chuyển với dấu nháy hệ thống</h3>
+<table>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Phím máy bàn</th>
+<th>Phím xách tay</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Đọc tất cả</td>
+<td>NVDA+mũi tên xuống</td>
+<td>NVDA+a</td>
+<td>Đọc tất cả văn bản từ vị trí hiện tại trở đi</td>
+</tr>
+<tr>
+<td>Đọc dòng hiện tại</td>
+<td>NVDA+mũi tên lên</td>
+<td>NVDA+l</td>
+<td>Đọc dòng hiện tại, bấm nhanh hai lần để đánh vần và bấm nhanh ba lần để đánh vần dòng đó với phần mô tả ký tự</td>
+</tr>
+<tr>
+<td>Đọc vùng văn bản đang chọn</td>
+<td>NVDA+Shift+mũi tên lên</td>
+<td>NVDA+shift+s</td>
+<td>Đọc vùng văn bản đang được chọn</td>
+</tr>
+<tr>
+<td>Thông báo định dạng văn bản</td>
+<td>NVDA+f</td>
+<td>NVDA+f</td>
+<td>Thông báo định dạng của văn bản tại vị trí con trỏ nháy. Bấm hai lần để hiển thị thông tin trong chế độ duyệt</td>
+</tr>
+<tr>
+<td>Thông báo địa chỉ liên kết</td>
+<td><code>NVDA+k</code></td>
+<td><code>NVDA+k</code></td>
+<td>Bấm một lần để đọc địa chỉ URL tại dấu nháy hiện tại hoặc vị trí con trỏ. Bấm hai lần để hiện trên một cửa sổ, thuận tiện hơn trong việc xem lại</td>
+</tr>
+<tr>
+<td>Thông báo vị trí con trỏ nháy</td>
+<td>NVDA+Delete bàn phím số</td>
+<td>NVDA+delete</td>
+<td>Báo các thông tin về vị trí của văn bản hay đối tượng tại vị trí con trỏ nháy. Ví dụ, có thể bao gồm tỉ lệ phần trăm so với  tài liệu, khoảng cách từ mép của trang hoặc vị trí chính xác trên màn hình. Bấm hai lần có thể cung cấp nhiều thông tin hơn.</td>
+</tr>
+<tr>
+<td>Đọc câu tiếp theo</td>
+<td>alt+mũi tên xuống</td>
+<td>alt+mũi tên xuống</td>
+<td>Di chuyển con trỏ nháy đến câu kế tiếp và đọc nó (Chỉ hỗ trợ trong Microsoft Word và Outlook).</td>
+</tr>
+<tr>
+<td>Đọc câu trước</td>
+<td>alt+mũi tên lên</td>
+<td>alt+mũi tên lên</td>
+<td>Di chuyển con trỏ nháy đến câu trước đó và đọc nó (Chỉ hỗ trợ trong Microsoft Word và Outlook).</td>
+</tr>
+</tbody>
+</table>
+<p>Khi ở trong bảng thì dùng các phím tắt sau để thao tác:</p>
+<table>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Phím tắt</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chuyển về cột trước</td>
+<td>control+alt+mũi tên trái</td>
+<td>Đưa con trỏ về cột trước đó ( vẫn ở trên cùng dòng)</td>
+</tr>
+<tr>
+<td>Chuyển sang cột kế tiếp</td>
+<td>control+alt+mũi tên phải</td>
+<td>Đưa con trỏ sang cột kế tiếp (vẫn ở trên cùng dòng)</td>
+</tr>
+<tr>
+<td>Chuyển lên dòng trên</td>
+<td>control+alt+mũi tên lên</td>
+<td>Đưa con trỏ lên dòng trên ( vẫn ở trong cùng cột)</td>
+</tr>
+<tr>
+<td>Chuyển xuống dòng bên dưới</td>
+<td>control+alt+mũi tên xuống</td>
+<td>Đưa con trỏ xuống dòng bên dưới (vẫn ở trong cùng cột)</td>
+</tr>
+<tr>
+<td>Chuyển đến cột đầu tiên</td>
+<td>control+alt+home</td>
+<td>Chuyển dấu nháy hệ thống đến cột đầu tiên (giữ nguyên vị trí dòng)</td>
+</tr>
+<tr>
+<td>Chuyển đến cột cuối cùng</td>
+<td>control+alt+end</td>
+<td>Chuyển dấu nháy hệ thống đến cột cuối cùng (giữ nguyên vị trí dòng)</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng đầu tiên</td>
+<td>control+alt+pageUp</td>
+<td>Chuyển dấu nháy hệ thống đến dòng đầu tiên (giữ nguyên vị trí cột)</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng cuối cùng</td>
+<td>control+alt+pageDown</td>
+<td>Chuyển dấu nháy hệ thống đến dòng cuối cùng (giữ nguyên vị trí cột)</td>
+</tr>
+<tr>
+<td>Đọc tất cả trong cột</td>
+<td><code>NVDA+control+alt+mũi tên xuống</code></td>
+<td>Đọc thông tin theo cột dọc từ ô hiện tại xuống đến ô cuối cùng của cột.</td>
+</tr>
+<tr>
+<td>Đọc tất cả trong dòng</td>
+<td><code>NVDA+control+alt+mũi tên phải</code></td>
+<td>Đọc thông tin theo hàng ngang từ ô hiện tại cho đến ô cuối cùng bên phải của dòng.</td>
+</tr>
+<tr>
+<td>Đọc toàn bộ cột</td>
+<td><code>NVDA+control+alt+mũi tên lên</code></td>
+<td>Đọc cột hiện tại theo chiều đứng từ trên xuống dưới mà không di chuyển dấu nháy hệ thống.</td>
+</tr>
+<tr>
+<td>Đọc toàn bộ dòng</td>
+<td><code>NVDA+control+alt+mũi tên trái</code></td>
+<td>Đọc dòng hiện tại theo chiều ngang từ trái sang phải mà không di chuyển dấu nháy hệ thống.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ObjectNavigation">Phương pháp duyệt đối tượng</h3>
+<table>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Phím máy bàn</th>
+<th>Phím sách tay</th>
+<th>Cảm ứng</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thông báo đối tượng hiện tại</td>
+<td>NVDA+5 bàn phím số</td>
+<td>NVDA+shift+o</td>
+<td>không có</td>
+<td>Thông báo đối tượng đang được duyệt hiện tại, bấm hai lần để đánh vần thông tin, bấm ba lần để chép thông tin vào bộ nhớ tạm</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng cha</td>
+<td>NVDA+8 bàn phím số</td>
+<td>NVDA+shift+mũi tên lên</td>
+<td>Vuốt lên (chế độ đối tượng)</td>
+<td>Chuyển đến đối tượng cha đang chứa đối tượng hiện tại</td>
+</tr>
+<tr>
+<td>Chuyển về đối tượng trước</td>
+<td>NVDA+4 bàn phím số</td>
+<td>NVDA+shift+mũi tên trái</td>
+<td>không có</td>
+<td>Chuyển về đối tượng trước đối tượng hiện tại</td>
+</tr>
+<tr>
+<td>Chuyển về đối tượng trước ở dạng xem phẳng</td>
+<td>NVDA+9 bàn phím số</td>
+<td>NVDA+shift+[</td>
+<td>vuốt trái (chế độ đối tượng)</td>
+<td>Chuyển đến đối tượng trước ở dạng xem phẳng của hệ thống phân cấp đối tượng điều hướng</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng kế</td>
+<td>NVDA+6 bàn phím số</td>
+<td>NVDA+shift+mũi tên phải</td>
+<td>không có</td>
+<td>Chuyển đến đối tượng kế sau đối tượng điều hướng hiện tại</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng kế ở dạng xem phẳng</td>
+<td>NVDA+3 bàn phím số</td>
+<td>NVDA+shift+]</td>
+<td>vuốt phải (chế độ đối tượng)</td>
+<td>Chuyển đến đối tượng kế ở dạng xem phẳng của hệ thống phân cấp đối tượng điều hướng</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng con đầu tiên</td>
+<td>NVDA+2 bàn phím số</td>
+<td>NVDA+shift+mũi tên xuống</td>
+<td>Vuốt xuống (chế độ đối tượng)</td>
+<td>Chuyển đến đối tượng con đầu tiên của đối tượng hiện tại</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng đang có focus</td>
+<td>NVDA+dấu trừ bàn phím số</td>
+<td>NVDA+xóa lùi</td>
+<td>không có</td>
+<td>Chuyển đến đối tượng đang có focus và đặt con trỏ duyệt vào vị trí con trỏ nháy (nếu đối tượng có dấu nháy)</td>
+</tr>
+<tr>
+<td>Kích hoạt đối tượng hiện tại</td>
+<td>NVDA+enter bàn phím số</td>
+<td>NVDA+enter</td>
+<td>Hai-chạm</td>
+<td>Kích hoạt đối tượng đang duyệt (giống như kích hoạt một đối tượng đang có focus)</td>
+</tr>
+<tr>
+<td>Chuyển focus hoặc dấu nháy hệ thống đến vị trí duyệt hiện tại</td>
+<td>NVDA+shift+dấu trừ bàn phím số</td>
+<td>NVDA+shift+xóa lùi</td>
+<td>không có</td>
+<td>Bấm một lần để chuyển focus đến đối tượng điều hướng; bấm nhanh hai lần để chuyển dấu nháy đến vị trí của con trỏ duyệt</td>
+</tr>
+<tr>
+<td>Thông báo vị trí con trỏ duyệt</td>
+<td>NVDA+Shift+Delete bàn phím số</td>
+<td>NVDA+Shift+Delete</td>
+<td>không có</td>
+<td>Báo thông tin vị trí của văn bản hoặc đối tượng tại con trỏ duyệt. Ví dụ, có thể bao gồm tỉ lệ phần trăm theo tài liệu, khoảng cách đến mép của trang, hoặc vị trí chính xác trên màn hình. Bấm hai lần có thể cung cấp thêm thông tin.</td>
+</tr>
+<tr>
+<td>Chuyển con trỏ duyệt đến thanh trạng thái</td>
+<td>không có</td>
+<td>không có</td>
+<td>không có</td>
+<td>Thông báo thanh trạng thái của cửa sổ hiện tại nếu tìm thấy, và nó cũng sẽ đưa đối tượng điều hướng đến vị trí đó.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ReviewingText">Duyệt nội dung</h3>
+<table>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Phím máy bàn</th>
+<th>Phím xách tay</th>
+<th>Cảm ứng</th>
+<th>mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chuyển đến dòng trên cùng</td>
+<td>shift+7 bàn phím số</td>
+<td>NVDA+control+home</td>
+<td>không có</td>
+<td>Chuyển con trỏ duyệt lên dòng đầu tiên trên cùng</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng trước</td>
+<td>7 bàn phím số</td>
+<td>NVDA+mũi tên lên</td>
+<td>Vuốt lên (chế độ văn bản)</td>
+<td>Chuyển con trỏ duyệt lên dòng trước đó</td>
+</tr>
+<tr>
+<td>Thông báo nội dung của dòng hiện tại</td>
+<td>8 bàn phím số</td>
+<td>NVDA+shift+.</td>
+<td>không có</td>
+<td>Thông báo nội dung của dòng hiện tại của con trỏ duyệt. Bấm hai lần để đánh vần, bấm ba lần để đánh vần với phần mô tả cho từng ký tự</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng kế</td>
+<td>9 bàn phím số</td>
+<td>NVDA+mũi tên xuống</td>
+<td>Vuốt xuống (chế độ văn bản)</td>
+<td>Chuyển con trỏ duyệt xuống dòng dưới</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng dưới cùng</td>
+<td>shift+9 bàn phím số</td>
+<td>NVDA+control+end</td>
+<td>không có</td>
+<td>Chuyển con trỏ duyệt xuống dòng dưới cùng</td>
+</tr>
+<tr>
+<td>Chuyển qua từ trước</td>
+<td>4 bàn phím số</td>
+<td>NVDA+control+mũi tên trái</td>
+<td>Vuốt trái 2-ngón (chế độ văn bản)</td>
+<td>chuyển con trỏ duyệt sang từ bên trái</td>
+</tr>
+<tr>
+<td>thông báo từ hiện tại</td>
+<td>5 bàn phím số</td>
+<td>NVDA+control+.</td>
+<td>không có</td>
+<td>Thông báo từ tại vị trí con trỏ duyệt. Bấm hai lần để đánh vần. Bấm ba lần để đánh vần với phần mô tả của ký tự</td>
+</tr>
+<tr>
+<td>Chuyển qua từ kế</td>
+<td>6 bàn phím số</td>
+<td>NVDA+control+mũi tên phải</td>
+<td>Vuốt phải 2-ngón (chế độ văn bản)</td>
+<td>chuyển con trỏ duyệt sang từ kế tiếp bên phải</td>
+</tr>
+<tr>
+<td>Chuyển về đầu dòng</td>
+<td>shift+1 bàn phím số</td>
+<td>NVDA+home</td>
+<td>không có</td>
+<td>chuyển con trỏ duyệt về đầu dòng</td>
+</tr>
+<tr>
+<td>Chuyển qua ký tự trước</td>
+<td>1 bàn phím số</td>
+<td>NVDA+mũi tên trái</td>
+<td>Vuốt trái (chế độ văn bản)</td>
+<td>chuyển con trỏ duyệt sang ký tự bên trái</td>
+</tr>
+<tr>
+<td>Đọc ký tự hiện tại</td>
+<td>2 bàn phím số</td>
+<td>NVDA+.</td>
+<td>không có</td>
+<td>Đọc ký tự nơi có con trỏ duyệt. Bấm hai lần để nghe đánh vần mô tả hay ví dụ về ký tự đó. Bấm ba lần để nghe mã cơ số 10 và 16 của ký tự đó</td>
+</tr>
+<tr>
+<td>chuyển qua ký tự bên phải</td>
+<td>3 bàn phím số</td>
+<td>NVDA+mũi tên phải</td>
+<td>Vuốt phải (chế độ văn bản)</td>
+<td>chuyển con trỏ duyệt sang ký tự bên phải</td>
+</tr>
+<tr>
+<td>chuyển đến  cuối dòng</td>
+<td>shift+3 bàn phím số</td>
+<td>NVDA+end</td>
+<td>không có</td>
+<td>chuyển con trỏ duyệt đến cuối dòng hiện tại</td>
+</tr>
+<tr>
+<td>Chuyển đến trang trước</td>
+<td><code>NVDA+pageUp</code></td>
+<td><code>NVDA+shift+pageUp</code></td>
+<td>không có</td>
+<td>Chuyển con trỏ duyệt về trang trước của văn bản nếu được ứng dụng hỗ trợ</td>
+</tr>
+<tr>
+<td>Chuyển đến trang kế</td>
+<td><code>NVDA+pageDown</code></td>
+<td><code>NVDA+shift+pageDown</code></td>
+<td>không có</td>
+<td>Chuyển con trỏ duyệt về trang kế của văn bản nếu được ứng dụng hỗ trợ</td>
+</tr>
+<tr>
+<td>Move to start of selection in review</td>
+<td><code>NVDA+alt+home</code></td>
+<td><code>NVDA+alt+home</code></td>
+<td>None</td>
+<td>Moves the review cursor to the first character of the selected text</td>
+</tr>
+<tr>
+<td>Move to end of selection in review</td>
+<td><code>NVDA+alt+end</code></td>
+<td><code>NVDA+alt+end</code></td>
+<td>None</td>
+<td>Moves the review cursor to the last character of the selected text</td>
+</tr>
+<tr>
+<td>Đọc tất cả với con trỏ duyệt</td>
+<td>dấu cộng bàn phím số</td>
+<td>NVDA+shift+a</td>
+<td>Vuốt xuống 3-ngón (chế độ văn bản)</td>
+<td>Đọc cả vùng văn bản từ vị trí con trỏ duyệt hiện tại trở đi</td>
+</tr>
+<tr>
+<td>Bắt đầu chọn rồi sao chép với con trỏ duyệt</td>
+<td>NVDA+f9</td>
+<td>NVDA+f9</td>
+<td>không có</td>
+<td>Đánh dấu điểm bắt đầu của vùng chọn để sao chép. Hành động sao chép vẫn chưa được thực hiện cho đến khi bạn chọn điểm kết.</td>
+</tr>
+<tr>
+<td>Kết thúc chọn rồi sao chép với con trỏ duyệt</td>
+<td>NVDA+f10</td>
+<td>NVDA+f10</td>
+<td>không có</td>
+<td>Bấm lần đầu để đánh dấu điểm kết thúc và chọn vùng nội dung từ điểm bắt đầu đến điểm kết thúc.  Nếu dấu nháy hệ thống có thể tiếp cận với nội dung thì nó sẽ được đưa đến nội dung đã chọn. Bấm lần hai để thực hiện lệnh sao chép nội dung lên bộ nhớ tạm.</td>
+</tr>
+<tr>
+<td>Chuyển đến điểm bắt đầu để sao chép trong chế độ duyệt</td>
+<td>NVDA+shift+f9</td>
+<td>NVDA+shift+f9</td>
+<td>không có</td>
+<td>di chuyển con trỏ duyệt đến vị trí đã được chọn là điểm bắt đầu để sao chép</td>
+</tr>
+<tr>
+<td>Thông báo định dạng văn bản</td>
+<td>NVDA+shift+f</td>
+<td>NVDA+shift+f</td>
+<td>không có</td>
+<td>Thông báo định dạng của văn bản  tại vị trí con trỏ duyệt. Bấm hai lần để hiển thị thông tin trong chế độ duyệt</td>
+</tr>
+<tr>
+<td>Thông báo kí tự thay thế hiện tại</td>
+<td>Không có</td>
+<td>Không có</td>
+<td>Không có</td>
+<td>Nói kí tự tại vị trí con trỏ duyệt. Bấm hai lần để hiển thị kí hiệu và văn bản dùng để thay thế ở chế độ duyệt.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ReviewModes">Các chế độ duyệt</h3>
+<table>
+<thead>
+<tr>
+<th>chức năng</th>
+<th>Phím máy bàn</th>
+<th>Phím xách tay</th>
+<th>Cảm ứng</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chuyển qua chế độ duyệt kế</td>
+<td>NVDA+7 bàn phím số</td>
+<td>NVDA+trang trước</td>
+<td>Vuốt lên 2-ngón</td>
+<td>chuyển sang chế độ duyệt tiếp theo (nếu có)</td>
+</tr>
+<tr>
+<td>Chuyển về chế độ duyệt trước</td>
+<td>NVDA+1 bàn phím số</td>
+<td>NVDA+trang sau</td>
+<td>Vuốt xuống 2-ngón</td>
+<td>Chuyển về chế độ duyệt trước (nếu có)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="NavigatingWithTheMouse">Di chuyển với chuột</h3>
+<table>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Phím máy bàn</th>
+<th>Phím xách tay</th>
+<th>Cảm ứng</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kích hoạt nút chuột trái</td>
+<td>dấu chia bàn phím số</td>
+<td>NVDA+[</td>
+<td>không có</td>
+<td>Kích hoạt nút chuột trái, bấm nhanh hai lần sẽ tương tự như kích đúp nút chuột trái</td>
+</tr>
+<tr>
+<td>Khóa nút chuột trái</td>
+<td>shift+dấu chia bàn phím số</td>
+<td>NVDA+control+[</td>
+<td>không có</td>
+<td>Khóa nút chuột trái, bấm lần nữa để mở lại. Để kéo chuột, bấm lệnh này để khóa nút chuột trái rồi di chuyển bằng chuột  trên máy tính hoặc dùng các phím lệnh di chuyển chuột</td>
+</tr>
+<tr>
+<td>Kích hoạt nút chuột phải</td>
+<td>dấu nhân bàn phím số</td>
+<td>NVDA+]</td>
+<td>Bấm và giữ</td>
+<td>Kích hoạt nút chuột phải, thường dùng để mở thực đơn ngữ cảnh tại vị trí chuột.</td>
+</tr>
+<tr>
+<td>Khóa nút chuột phải</td>
+<td>shift+dấu nhân bàn phím số</td>
+<td>NVDA+control+]</td>
+<td>không có</td>
+<td>Khóa nút chuột phải, bấm một lần nữa để mở lại. Để kéo chuột, bấm lệnh này để khóa nút chuột phải rồi di chuyển bằng chuột  trên máy tính hoặc dùng các phím lệnh di chuyển chuột</td>
+</tr>
+<tr>
+<td>Cuộn lên từ vị trí chuột</td>
+<td>không có</td>
+<td>không có</td>
+<td>không có</td>
+<td>Cuộn con lăn chuột lên từ vị trí chuột hiện tại</td>
+</tr>
+<tr>
+<td>Cuộn xuống từ vị trí chuột</td>
+<td>không có</td>
+<td>không có</td>
+<td>không có</td>
+<td>Cuộn con lăn chuột xuống từ vị trí chuột hiện tại</td>
+</tr>
+<tr>
+<td>Cuộn qua trái từ vị trí chuột</td>
+<td>không có</td>
+<td>không có</td>
+<td>không có</td>
+<td>Cuộn con lăn chuột qua trái từ vị trí chuột hiện tại</td>
+</tr>
+<tr>
+<td>Cuộn qua phải từ vị trí chuột</td>
+<td>không có</td>
+<td>không có</td>
+<td>không có</td>
+<td>Cuộn con lăn chuột qua phải từ vị trí chuột hiện tại</td>
+</tr>
+<tr>
+<td>Di chuyển chuột đến vị trí đối tượng điều hướng</td>
+<td>NVDA+dấu chia bàn phím số</td>
+<td>NVDA+shift+m</td>
+<td>không có</td>
+<td>Di chuyển chuột đến vị trí đối tượng điều hướng hiện tại và con trỏ duyệt</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng dưới con trỏ chuột</td>
+<td>NVDA+dấu nhân bàn phím số</td>
+<td>NVDA+shift+n</td>
+<td>không có</td>
+<td>Đưa đối tượng điều hướng đến đối tượng tại vị trí chuột</td>
+</tr>
+</tbody>
+</table>
+<h2 id="BrowseMode">Chế độ duyệt</h2>
+<table>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Phím tắt</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chuyển qua lại giữa chế độ focus và chế độ duyệt</td>
+<td>NVDA+khoảng trắng</td>
+<td>Chuyển qua lại giữa chế độ focus và chế độ duyệt</td>
+</tr>
+<tr>
+<td>thoát khỏi chế độ focus</td>
+<td>escape</td>
+<td>thoát khỏi chế độ focus và quay trở lại chế độ duyệt</td>
+</tr>
+<tr>
+<td>Cập nhật nội dung tài liệu</td>
+<td>NVDA+f5</td>
+<td>Cập nhật lại nội dung tài liệu ví dụ như thông tin trong một trang web hiển thị chưa đầy đủ. Chức năng này không hỗ trợ trong Microsoft Word và Outlook</td>
+</tr>
+<tr>
+<td>Tìm kiếm</td>
+<td>NVDA+control+f</td>
+<td>hiển thị một hộp thoại để bạn có thể nhập nội dung tìm kiếm trong tài liệu hiện hành. Xem phần <a href="#SearchingForText" title="tìm kiếm văn bản">tìm kiếm văn bản</a> để biết thêm thông tin.</td>
+</tr>
+<tr>
+<td>Tìm kết quả tiếp theo</td>
+<td>NVDA+f3</td>
+<td>Tìm kết quả tiếp theo</td>
+</tr>
+<tr>
+<td>Tìm kết quả trước đó</td>
+<td>NVDA+shift+f3</td>
+<td>Tìm kết quả trước đó</td>
+</tr>
+</tbody>
+</table>
+<h3 id="SingleLetterNavigation">Ký tự di chuyển đơn</h3>
+<p>Dưới đây là các phím cho phép chuyển nhanh đến các đối tượng tiếp theo, nếu kết hợp với phím shift thì sẽ quay về đối tượng trước đó:</p>
+<ul>
+<li>h: heading (tiêu đề)</li>
+<li>l: list (danh sách)</li>
+<li>i: list item (mục trong danh sách)</li>
+<li>t: table (bảng)</li>
+<li>k: link (liên kết)</li>
+<li>n: nonLinked text (vùng nội dung không chứa liên kết)</li>
+<li>f: form field (trường biểu mẫu)</li>
+<li>u: unvisited link (liên kết chưa xem)</li>
+<li>v: visited link (liên kết đã xem)</li>
+<li>e: edit field (trường soạn thảo)</li>
+<li>b: button (nút)</li>
+<li>x: checkbox (hộp kiểm)</li>
+<li>c: combo box (hộp xổ)</li>
+<li>r: radio button (nút radio)</li>
+<li>q: block quote (đoạn trích dẫn)</li>
+<li>s: separator (dòng phân cách)</li>
+<li>m: frame (khung)</li>
+<li>g: graphic (hình ảnh)</li>
+<li>d: landmark (cột mốc)</li>
+<li>o: đối tượng nhúng (như trình phát âm thanh/video, ứng dụng, hộp thoại v...v...)</li>
+<li>1 to 9: headings at levels 1 to 9 respectively</li>
+<li>a: annotation (chú thích, phần chỉnh sửa, v...v..)</li>
+<li><code>p</code>: đoạn văn bản</li>
+<li>w: lỗi chính tả</li>
+</ul>
+<p>Còn đây là các phím để chuyển về đầu hoặc cuối các đối tượng chứa như danh sách (list) hay bảng (table):</p>
+<table>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Phím tắt</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chuyển về đầu đối tượng chứa</td>
+<td>shift+dấu phẩy</td>
+<td>chuyển về đầu đối tượng chứa</td>
+</tr>
+<tr>
+<td>chuyển đến cuối đối tượng chứa</td>
+<td>dấu phẩy</td>
+<td>chuyển đến cuối đối tượng chứa</td>
+</tr>
+</tbody>
+</table>
+<p>Bấm NVDA+shift+khoảng trắng để bật/tắt ký tự di chuyển đơn.</p>
+<h3 id="ElementsList">Hộp thoại danh sách các thành phần</h3>
+<table>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Phím tắt</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mở hộp thoại danh sách các thành phần</td>
+<td>NVDA+f7</td>
+<td>Mở hộp thoại danh sách các thành phần để lọc theo liên kết, tiêu đề hay cột mốc</td>
+</tr>
+</tbody>
+</table>
+<h3 id="SearchingForText">Tìm kiếm văn bản</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Find text</td>
+<td>NVDA+control+f</td>
+<td>Opens the search dialog</td>
+</tr>
+<tr>
+<td>Tìm tiếp</td>
+<td>NVDA+f3</td>
+<td>tìm sự xuất hiện tiếp theo của nội dung tìm kiếm hiện hành</td>
+</tr>
+<tr>
+<td>Find previous</td>
+<td>NVDA+shift+f3</td>
+<td>searches the previous occurrence of the current search term</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ImbeddedObjects">Thao tác trên đối tượng nhúng</h3>
+<table>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Phím tắt</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quay về chế độ duyệt tài liệu</td>
+<td>NVDA+control+khoảng trắng</td>
+<td>Quay về chế độ duyệt tài liệu</td>
+</tr>
+</tbody>
+</table>
+<h3 id="NativeSelectionMode">Chế độ chọn thực tế</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bật / tắt chế độ chọn thực tế</td>
+<td><code>NVDA+shift+f10</code></td>
+<td>Bật / tắt chế độ chọn thực tế</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ReadingMath">Đọc nội dung toán học</h2>
+<h3 id="InteractiveNavigation">Duyệt và Tương Tác</h3>
+<table>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Phím tắt</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tương tác với nội dung toán</td>
+<td>NVDA+alt+m</td>
+<td>Bắt đầu tương tác với nội dung toán.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Braille">Chữ Nổi</h2>
+<h3 id="BrailleInput">Nhập Liệu Chữ Nổi</h3>
+<p>Bấm chấm 7 để xóa ô hoặc ký tự vừa nhập.
+Chấm 8 dùng để chuyển dịch phần chữ nổi nhập liệu và bấm phím enter.
+Bấm chấm 7 + chấm 8 để chuyển dịch phần chữ nổi nhập liệu nhưng không thêm vào khoảng trắng hay bấm enter.</p>
+<h2 id="Vision">Hỗ trợ nhìn</h2>
+<h3 id="VisionScreenCurtain">Che màn hình</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chuyển đổi trạng thái của tính năng che màn hình</td>
+<td><code>NVDA+control+escape</code></td>
+<td>Bật tính năng làm đen màn hình hoặc tắt để hiển thị nội dung trên màn hình. Bấm một lần để bật tính năng này đến khi khởi động lại NVDA. Bấm hai lần để bật tính năng này đến khi nào bạn tắt nó.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ContentRecognition">Nhận Dạng Nội Dung</h2>
+<h3 id="Win10Ocr">Windows OCR</h3>
+<p>Bấm NVDA+r để nhận dạng văn bản ở đối tượng điều hướng hiện tại với Windows OCR.</p>
+<h2 id="ApplicationSpecificFeatures">Tính năng cụ thể cho một số ứng dụng</h2>
+<h3 id="MicrosoftWord">Microsoft Word</h3>
+<h4 id="WordAutomaticColumnAndRowHeaderReading">Tự động đọc tiêu đề dòng và cột</h4>
+<table>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Phím tắt</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Set column headers</td>
+<td><code>NVDA+shift+c</code></td>
+<td>Pressing this once tells NVDA this is the first header cell in the row that contains column headers, which should be automatically announced when moving between columns below this row. Pressing twice will clear the setting.</td>
+</tr>
+<tr>
+<td>Set row headers</td>
+<td><code>NVDA+shift+r</code></td>
+<td>Pressing this once tells NVDA this is the first header cell in the column that contains row headers, which should be automatically announced when moving between rows after this column. Pressing twice will clear the setting.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="BrowseModeInMicrosoftWord">Chế độ duyệt tài liệu trong Microsoft Word</h4>
+<p>Để bật tắt chế độ duyệt trong Word, bấm NVDA+khoảng trắng.</p>
+<h5 id="WordElementsList">Duyệt Danh sách các thành phần</h5>
+<p>Khi ở chế độ duyệt trong Word, bạn có thể duyệt các thành phần bằng cách bấm NVDA+f7.</p>
+<h4 id="WordReportingComments">Thông Báo Chú Thích</h4>
+<p>Bấm <code>NVDA+alt+c</code> để thông báo phần chú thích tại vị trí dấu nháy.
+Bấm hai lần để hiển thị thông tin dưới dạng thông điệp có thể duyệt.</p>
+<h3 id="MicrosoftExcel">Microsoft Excel</h3>
+<h4 id="ExcelAutomaticColumnAndRowHeaderReading">Tự Động Đọc Tiêu Đề Dòng Và Cột</h4>
+<table>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Phím tắt</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Set column headers</td>
+<td><code>NVDA+shift+c</code></td>
+<td>Pressing this once tells NVDA this is the first header cell in the row that contains column headers, which should be automatically announced when moving between columns below this row. Pressing twice will clear the setting.</td>
+</tr>
+<tr>
+<td>Set row headers</td>
+<td><code>NVDA+shift+r</code></td>
+<td>Pressing this once tells NVDA this is the first header cell in the column that contains row headers, which should be automatically announced when moving between rows after this column. Pressing twice will clear the setting.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ExcelElementsList">Danh Sách Thành Phần</h4>
+<p>Bấm NVDA+f7 để mở danh sách các thành phần trong Excel.</p>
+<h4 id="ExcelReportingComments">Thông Báo Chú Thích (notes)</h4>
+<p>Bấm <code>NVDA+alt+c</code> để đọc phần chú thích của ô hiện tại`.
+Bấm hai lần để hiển thị thông tin dưới dạng thông điệp có thể duyệt.
+Trong Microsoft 2016, 365 và mới hơn, thuật ngữ comments trong Microsoft Excel đã được đổi tên thành "notes". Trong tiếng Việt, chúng đều có thể hiểu là ghi chú hay chú thích.</p>
+<p>Để thêm hay chỉnh sửa một chú thích nhất định, tại ô đang có focus, bấm shift+f2.</p>
+<h4 id="ExcelReadingProtectedCells">Đọc Ô Được Bảo Vệ</h4>
+<p>Chuyển qua chế độ duyệt bằng cách bấm NVDA+khoảng trắng. Lúc này, bạn có thể dùng các phím di chuyển để đọc các ô trong bảng tính hiện tại.</p>
+<h3 id="MicrosoftPowerPoint">Microsoft PowerPoint</h3>
+<table>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Phím tắt</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bật / tắt chế độ đọc chú thích của slide</td>
+<td>control+shift+s</td>
+<td>Khi đang trình chiếu một slide, lệnh này có tác dụng chuyển giữa chú thích của slide cho diễn giả và nội dung của slide. Điều này chỉ  ảnh hưởng tới việc đọc của NVDA, không ảnh hưởng đến việc trình chiếu trên màn hình.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Foobar2000">foobar2000</h3>
+<table>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Phím tắt</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thông báo thời gian còn lại</td>
+<td>control+shift+r</td>
+<td>Thông báo thời gian còn lại của track đang phát.</td>
+</tr>
+<tr>
+<td>Thông báo thời gian đã qua</td>
+<td>control+shift+e</td>
+<td>Thông báo thời gian đã phát của  track đang phát.</td>
+</tr>
+<tr>
+<td>Thông báo độ dài</td>
+<td>control+shift+t</td>
+<td>Thông báo độ dài của track đang phát.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="MirandaIM">Miranda IM</h3>
+<table>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Phím tắt</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thông báo các tin nhắn gần đây</td>
+<td>NVDA+control+1-4</td>
+<td>Thông báo các tin nhắn gần đây, dựa trên số bạn bấm. Ví dụ: NVDA+control+2 đọc tin nhắn thứ hai.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Poedit">Poedit</h3>
+<table>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Phím tắt</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thông báo lưu ý cho người phiên dịch</td>
+<td><code>control+shift+a</code></td>
+<td>Thông báo chú thích cho người phiên dịch. Bấm hai lần để hiện thông tin đó trong chế độ duyệt</td>
+</tr>
+<tr>
+<td>Thông báo chú thích</td>
+<td><code>control+shift+c</code></td>
+<td>Thông báo chú thích trong cửa sổ chú thích. Bấm hai lần để hiện thông tin đó trong chế độ duyệt</td>
+</tr>
+<tr>
+<td>Thông báo văn bản nguồn cũ</td>
+<td><code>control+shift+o</code></td>
+<td>Thông báo văn bản nguồn cũ nếu có. Bấm hai lần để hiển thị nội dung trong chế độ duyệt</td>
+</tr>
+<tr>
+<td>Thông báo cảnh báo phiên dịch</td>
+<td><code>control+shift+w</code></td>
+<td>Thông báo các cảnh báo phiên dịch nếu có. Bấm hai lần để hiển thị nội dung trong chế độ duyệt</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Kindle">Kindle cho PC</h3>
+<p>Bạn có thể di chuyển bằng tay đến trang kế với phím trang sau và trở về bằng phím trang trước.</p>
+<h4 id="KindleTextSelection">Chọn văn bản</h4>
+<p>Sau khi chọn nội dung, bấm phím Application hoặc Shift+F10 để xem các tùy chọn hiện có.</p>
+<h3 id="Azardi">Azardi</h3>
+<p>Khi ở trong bảng xem các sách đã thêm vào:</p>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím tắt</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enter</td>
+<td>Enter</td>
+<td>Mở quyển sách được chọn.</td>
+</tr>
+<tr>
+<td>Trình đơn ngữ cảnh</td>
+<td>Applications</td>
+<td>Mở trình đơn ngữ cảnh cho quyển sách được chọn.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="WinConsole">Windows Console</h3>
+<p>Các phím tắt có sẵn sau đây của Windows Console  có thể hữu ích khi <a href="#ReviewingText" title="duyệt nội dung">duyệt nội dung</a> với NVDA trong các phiên bản cũ của Windows Console:</p>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn lên</td>
+<td>control+mũi tên lên</td>
+<td>Cuộn cửa sổ console lên để đọc các nội dung phía trên.</td>
+</tr>
+<tr>
+<td>Cuộn xuống</td>
+<td>control+mũi tên xuống</td>
+<td>Cuộn cửa sổ console xuống để đọc các nội dung bên dưới.</td>
+</tr>
+<tr>
+<td>Cuộn về đầu</td>
+<td>control+home</td>
+<td>Cuộn cửa sổ console về đầu màn hình.</td>
+</tr>
+<tr>
+<td>Cuộn về cuối</td>
+<td>control+end</td>
+<td>Cuộn cửa sổ console về cuối màn hình.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ConfiguringNVDA">Cấu hình NVDA</h2>
+<p>Khi ở trong một hộp thoại, bấm <code>f1</code> để mở hướng dẫn sử dụng tại đoạn liên quan đến cài đặt con trỏ hay hộp thoại hiện tại.</p>
+<h3 id="NVDASettings">Cài đặt NVDA</h3>
+<h4 id="GeneralSettings">Cài Đặt Chung</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím máy bàn</th>
+<th>Phím xách tay</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenGeneralSettings">Mở Cài Đặt Chung</td>
+<td><code>NVDA+control+g</code></td>
+<td><code>NVDA+control+g</code></td>
+<td>Phân loại thiết lập chung trong hộp thoại cấu hình NVDA cho phép thực hiện các thiết lập tổng thể như ngôn ngữ giao diện, có kiểm tra cập nhật phiên bản mới hay không.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="SpeechSettings">Thiết lập bộ đọc</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím máy bàn</th>
+<th>Phím xách tay</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenSpeechSettings">Mở cài đặt thiết lập bộ đọc</td>
+<td><code>NVDA+control+v</code></td>
+<td><code>NVDA+control+v</code></td>
+<td>Phân loại tiếng nói trong hộp thoại cấu hình NVDA chứa các tùy chọn cho phép bạn thay đổi bộ đọc cũng như các thuộc tính giọng đọc cho bộ đọc được chọn.</td>
+</tr>
+<tr>
+<td id="SpeechSettingsSymbolLevel">Mức độ đọc dấu câu và ký hiệu</td>
+<td>NVDA+p</td>
+<td>NVDA+p</td>
+<td>Cho phép bạn chọn chế độ đọc dấu câu và ký hiệu.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="SelectSynthesizer">Chọn bộ đọc</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím máy bàn</th>
+<th>Phím xách tay</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenSelectSynthesizer">Mở hộp thoại chọn bộ đọc</td>
+<td><code>NVDA+control+s</code></td>
+<td><code>NVDA+control+s</code></td>
+<td>Hộp thoại chọn bộ đọc, có thể mở bằng cách kích hoạt nút Thay đổi... trong phân loại  tiếng nói của hộp thoại cấu hình NVDA, cho phép bạn  chọn bộ đọc nào sẽ dùng với NVDA.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="SynthSettingsRing">Vòng thiết lập tham số cho giọng đọc</h4>
+<table>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Phím máy bàn</th>
+<th>Phím xách tay</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chuyển tới tham số tiếp theo của giọng đọc</td>
+<td>NVDA+control+mũi tên phải</td>
+<td>NVDA+shift+control+mũi tên phải</td>
+<td>Chuyển tới tham số tiếp theo của giọng đọc, nếu hết thì sẽ quay vòng</td>
+</tr>
+<tr>
+<td>Chuyển tới tham số trước đó của giọng đọc</td>
+<td>NVDA+control+mũi tên trái</td>
+<td>NVDA+shift+control+mũi tên trái</td>
+<td>Chuyển tới tham số trước đó của giọng đọc, nếu hết thì sẽ quay vòng</td>
+</tr>
+<tr>
+<td>Tăng giá trị cho tham số hiện tại</td>
+<td>NVDA+control+mũi tên lên</td>
+<td>NVDA+shift+control+mũi tên lên</td>
+<td>Tăng giá trị cho tham số hiện tại</td>
+</tr>
+<tr>
+<td>Tăng thiết lập hiện tại cho bộ đọc bằng bước nhảy dài hơn</td>
+<td><code>NVDA+control+pageUp</code></td>
+<td><code>NVDA+shift+control+pageUp</code></td>
+<td>Tăng giá trị của thiết lập bộ đọc hiện tại bằng bước nhảy dài hơn. Ví dụ: khi đang ở phần thiết lập giọng đọc, nó sẽ nhảy tới 20 giọng một lần; khi bạn ở các thiết lập dạng thanh trượt (tốc độ, cao độ, v...v...), nó sẽ nhảy tới 20%.</td>
+</tr>
+<tr>
+<td>Giảm giá trị cho tham số hiện tại</td>
+<td>NVDA+control+mũi tên xuống</td>
+<td>NVDA+shift+control+mũi tên xuống</td>
+<td>Giảm giá trị cho tham số hiện tại</td>
+</tr>
+<tr>
+<td>Giảm giá trị cho thiết lập hiện tại</td>
+<td><code>NVDA+control+mũi tên xuống</code></td>
+<td><code>NVDA+shift+control+mũi tên xuống</code></td>
+<td>giảm giá trị cho thiết lập hiện tại của bộ đọc. Ví dụ, giảm tốc độ, chọn giọng đọc trước, giảm âm lượng</td>
+</tr>
+</tbody>
+</table>
+<h4 id="BrailleSettings">Chữ Nổi</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím máy bàn</th>
+<th>Phím xách tay</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="BrailleMode">Chế độ chữ nổi</td>
+<td><code>NVDA+alt+t</code></td>
+<td><code>NVDA+alt+t</code></td>
+<td>Tùy chọn này cho phép bạn chọn giữa các chế độ chữ nổi.</td>
+</tr>
+<tr>
+<td id="BrailleTether">Đưa Braille Theo</td>
+<td>NVDA+control+t</td>
+<td>NVDA+control+t</td>
+<td>Tùy chọn này cho phép bạn chọn con trỏ nổi sẽ đi theo con trỏ / dấu nháy hệ thống, theo con trỏ duyệt / đối tượng điều hướng hay cả hai.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="SelectBrailleDisplay">Chọn màn hình chữ nổi</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím máy bàn</th>
+<th>Phím xách tay</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenSelectBrailleDisplay">Mở hộp thoại chọn màn hình chữ nổi</td>
+<td><code>NVDA+control+a</code></td>
+<td><code>NVDA+control+a</code></td>
+<td>Hộp thoại chọn màn hình chữ nổi, có thể mở bằng cách kích hoạt nút Thay đổi... trong phân loại chữ nổi của hộp thoại cấu hình NVDA,cho phép bạn chọn màn hình để hiển thị đầu ra chữ nổi trong NVDA.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="AudioSettings">Cài đặt âm thanh</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím máy bàn</th>
+<th>Phím xách tay</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenAudioSettings">Mở cài đặt âm thanh</td>
+<td><code>NVDA+control+u</code></td>
+<td><code>NVDA+control+u</code></td>
+<td>Phân loại âm thanh trong hộp thoại cài đặt của NVDA có các tùy chọn cho phép bạn thay đổi vài thông số của đầu ra âm thanh.</td>
+</tr>
+<tr>
+<td id="SelectSynthesizerDuckingMode">Chế Độ Giảm Âm</td>
+<td><code>NVDA+shift+d</code></td>
+<td><code>NVDA+shift+d</code></td>
+<td>Tùy chọn này cho phép bạn cấu hình NVDA sẽ giảm âm lượng của các ứng dụng khác khi NVDA đang đọc, hoặc luôn giảm khi chạy NVDA.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="SelectSoundSplitMode">Tách âm thanh</h5>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chuyển đổi chế độ tách âm thanh</td>
+<td><code>NVDA+alt+s</code></td>
+<td>Chuyển giữa các chế độ âm thanh.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="KeyboardSettings">Bàn phím</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím máy bàn</th>
+<th>Phím xách tay</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenKeyboardSettings">Mở cài đặt bàn phím</td>
+<td><code>NVDA+control+k</code></td>
+<td><code>NVDA+control+k</code></td>
+<td>Phân loại bàn phím  trong hộp thoại cấu hình NVDA có các tùy chọn cho việc dùng chương trình này với bàn phím.</td>
+</tr>
+<tr>
+<td id="KeyboardSettingsSpeakTypedCharacters">Đọc ký tự khi gõ</td>
+<td><code>NVDA+2</code></td>
+<td><code>NVDA+2</code></td>
+<td>This option controls when NVDA announces characters you type on the keyboard.</td>
+</tr>
+<tr>
+<td id="KeyboardSettingsSpeakTypedWords">Đọc từ khi gõ</td>
+<td><code>NVDA+3</code></td>
+<td><code>NVDA+3</code></td>
+<td>This option controls when NVDA announces words you type on the keyboard.</td>
+</tr>
+<tr>
+<td id="KeyboardSettingsSpeakCommandKeys">Đọc phím lệnh</td>
+<td>NVDA+4</td>
+<td>NVDA+4</td>
+<td>Nếu được chọn, NVDA sẽ thông báo các phím không phải là kí tự. Điều này cũng bao gồm các kết hợp như control cộng với một kí tự nào đó.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="MouseSettings">Thiết Lập Chuột</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím máy bàn</th>
+<th>Phím xách tay</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenMouseSettings">Mở  thiết lập chuột</td>
+<td><code>NVDA+control+m</code></td>
+<td><code>NVDA+control+m</code></td>
+<td>Phân loại chuột trong hộp thoại cấu hình của NVDA cho phép NVDA theo dõi chuột, phát tiếng beep theo tọa độ chuột và thiết lập các tùy chọn khác.</td>
+</tr>
+<tr>
+<td id="MouseSettingsTracking">Thông báo khi di chuyển chuột</td>
+<td>NVDA+m</td>
+<td>NVDA+m</td>
+<td>Nếu được chọn, NVDA sẽ đọc những nội dung dưới con trỏ chuột khi bạn di chuyển nó trên màn hình. Điều này cho phép bạn tìm các đối tượng trên màn hình bằng cách di chuyển chuột, thay vì dùng chức năng duyệt đối tượng.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ReviewCursorSettings">Con Trỏ Duyệt</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím máy bàn</th>
+<th>Phím xách tay</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="ReviewCursorFollowFocus">Theo focus hệ thống</td>
+<td>NVDA+7</td>
+<td>NVDA+7</td>
+<td>Nếu được bật thì con trỏ duyệt sẽ luôn nằm tại đối tượng có focus và nó sẽ thay đổi khi focus hệ thống thay đổi.</td>
+</tr>
+<tr>
+<td id="ReviewCursorFollowCaret">theo dấu nháy hệ thống</td>
+<td>NVDA+6</td>
+<td>NVDA+6</td>
+<td>Nếu được chọn thì vị trí con trỏ duyệt sẽ thay đổi theo vị trí con trỏ nháy.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ObjectPresentationSettings">Trình Bày Đối Tượng</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím máy bàn</th>
+<th>Phím xách tay</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenObjectPresentationSettings">Mở cài đặt trình bày đối tượng</td>
+<td><code>NVDA+control+o</code></td>
+<td><code>NVDA+control+o</code></td>
+<td>Phân loại trình bày đối tượng trong hộp thoại cấu hình NVDA được dùng để thiết lập các thông tin về các điều khiển được trình bày bởi NVDA như mô tả, vị trí, v...v...</td>
+</tr>
+<tr>
+<td id="ObjectPresentationProgressBarOutput">Cách thông báo thanh tiến độ</td>
+<td>NVDA+u</td>
+<td>NVDA+u</td>
+<td>Cho phép bạn chọn cách thông báo trạng thái của thanh tiến độ.</td>
+</tr>
+<tr>
+<td id="ObjectPresentationReportDynamicContent">Thông báo thay đổi nội dung động</td>
+<td>NVDA+5</td>
+<td>NVDA+5</td>
+<td>Bật tắt chế độ thông báo nội dung mới  trong các  đối tượng phổ biến như terminal hay lịch sử trong các ứng dụng trò chuyện.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="BrowseModeSettings">Chế Độ Duyệt</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím máy bàn</th>
+<th>Phím xách tay</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenBrowseModeSettings">Mở cài đặt chế độ duyệt</td>
+<td><code>NVDA+control+b</code></td>
+<td><code>NVDA+control+b</code></td>
+<td>Phân loại Chế Độ Duyệt trong hộp thoại cấu hình NVDA  dùng để thiết lập cách vận hành của NVDA  khi bạn đọc và di chuyển trên các tài liệu phức tạp như là các trang web.</td>
+</tr>
+<tr>
+<td id="BrowseModeSettingsScreenLayout">Sử dụng kiểu trình bày theo màn hình</td>
+<td>NVDA+v</td>
+<td>NVDA+v</td>
+<td>Tùy chọn này cho phép bạn thiết lập   để các nội dung có thể kích hoạt (liên kết, nút bấm và biểu mẫu) ở chế độ duyệt trên một dòng riêng biệt, hoặc trình bày trực quan như nó được hiển thị trên màn hình.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="DocumentFormattingSettings">Định Dạng Tài Liệu</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím máy bàn</th>
+<th>Phím xách tay</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenDocumentFormattingSettings">Mở cài đặt định dạng tài liệu</td>
+<td><code>NVDA+control+d</code></td>
+<td><code>NVDA+control+d</code></td>
+<td>Hầu hết các tùy chọn trong phân loại này là để cấu hình những định dạng nào sẽ được đọc lên khi bạn di chuyển con trỏ trong tài liệu.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="AdvancedSettings">Cài đặt nâng cao</h4>
+<h5 id="Annotations">các ghi chú</h5>
+<p>Để "Thông báo tổng quan cho mọi chi tiết chú thích tại dấu nháy", bấm NVDA+d.</p>
+<h3 id="SavingAndReloading">Lưu và cập nhật thông tin cấu hình</h3>
+<table>
+<thead>
+<tr>
+<th>chức năng</th>
+<th>Phím máy bàn</th>
+<th>Phím xách tay</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Save configuration</td>
+<td><code>NVDA+control+c</code></td>
+<td><code>NVDA+control+c</code></td>
+<td>Saves your current configuration so that it is not lost when you exit NVDA</td>
+</tr>
+<tr>
+<td>Revert configuration</td>
+<td><code>NVDA+control+r</code></td>
+<td><code>NVDA+control+r</code></td>
+<td>Pressing once resets your configuration to when you last saved it. Pressing three times will reset it back to factory defaults.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ConfigurationProfiles">Hồ Sơ Cấu Hình</h3>
+<h4 id="ProfilesBasicManagement">Quản lý cơ bản</h4>
+<ul>
+<li>NVDA+control+p: Mở hộp thoại Hồ sơ cấu hình.</li>
+</ul>
+<h2 id="RemoteAccess">Remote Access</h2>
+<h3 id="RemoteAccessGestures">Remote Access Key Commands Summary</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toggle Remote connection</td>
+<td><code>NVDA+alt+r</code></td>
+<td>Starts a new Remote Access session or, if a session is already in progress, disconnects from it.</td>
+</tr>
+<tr>
+<td>Toggle Control</td>
+<td><code>NVDA+alt+tab</code></td>
+<td>Switches between controlling the remote and local computer.</td>
+</tr>
+<tr>
+<td>Connect</td>
+<td>None</td>
+<td>Starts a new Remote Access session. Unavailable in <a href="#SecureMode" title="secure mode">secure mode</a>.</td>
+</tr>
+<tr>
+<td>Copy link</td>
+<td>None</td>
+<td>Copies a link to the remote session to the clipboard.</td>
+</tr>
+<tr>
+<td>Disconnect</td>
+<td>None</td>
+<td>Ends an existing Remote Access session.</td>
+</tr>
+<tr>
+<td>Mute remote</td>
+<td>None</td>
+<td>Mutes or unmutes the speech coming from the remote computer.</td>
+</tr>
+<tr>
+<td>Send clipboard</td>
+<td>None</td>
+<td>Sends the contents of the clipboard to the remote computer.</td>
+</tr>
+<tr>
+<td>Send <code>control+alt+delete</code></td>
+<td>None</td>
+<td>Sends <code>control+alt+delete</code> to the controlled computer.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ExtraTools">Các Công Cụ</h2>
+<h3 id="LogViewer">Trình hiển thị Log</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mở trình xem log</td>
+<td><code>NVDA+f1</code></td>
+<td>Mở trình xem log và hiển thị thông tin về đối tượng điều hướng hiện tại cho nhà phát triển.</td>
+</tr>
+<tr>
+<td>Sao chép một đoạn của log vào bộ nhớ tạm</td>
+<td><code>NVDA+control+shift+f1</code></td>
+<td>Khi bấm lệnh này một lần, nó sẽ thiết lập một điểm bắt đầu cho  nội dung sẽ được sao chép. Khi bấm thêm lần nữa, nó sẽ sao chép nội dung từ điểm bắt đầu vào bộ nhớ tạm.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ReloadPlugins">Cập nhật lại plugins</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cập nhật plugin</td>
+<td><code>NVDA+control+f3</code></td>
+<td>Cập nhật các mô đun cục bộ và mô đun toàn cục của NVDA.</td>
+</tr>
+<tr>
+<td>Thông báo các mô đun đã tải và thực thi</td>
+<td><code>NVDA+control+f1</code></td>
+<td>Thông báo tên của các mô đun cục bộ nếu có, và tên của tập tin thực thi tại vị trí con trỏ.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="SupportedBrailleDisplays">Các màn hình chữ nổi được hỗ trợ</h2>
+<h3 id="FreedomScientificFocus">Freedom Scientific dòng Focus / PAC Mate</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn màn hình chữ nổi về trước</td>
+<td>topRouting1 (ô đầu tiên trên màn hình)</td>
+</tr>
+<tr>
+<td>Cuộn màn hình chữ nổi tới</td>
+<td>topRouting20/40/80 (ô cuối trên màn hình)</td>
+</tr>
+<tr>
+<td>Cuộn màn hình chữ nổi về trước back</td>
+<td>leftAdvanceBar</td>
+</tr>
+<tr>
+<td>Cuộn màn hình chữ nổi tới</td>
+<td>rightAdvanceBar</td>
+</tr>
+<tr>
+<td>Bật/tắt con trỏ nổi đi theo</td>
+<td>leftGDFButton+rightGDFButton</td>
+</tr>
+<tr>
+<td>Bật/tắt thao tác bánh cuộn trái</td>
+<td>leftWizWheelPress</td>
+</tr>
+<tr>
+<td>Về trước với thao tác bánh cuộn trái</td>
+<td>leftWizWheelUp</td>
+</tr>
+<tr>
+<td>Chuyển tới với thao tác bánh cuộn trái</td>
+<td>leftWizWheelDown</td>
+</tr>
+<tr>
+<td>Bật/tắt thao tác bánh cuộn phải</td>
+<td>rightWizWheelPress</td>
+</tr>
+<tr>
+<td>Về trước với thao tác bánh cuộn phải</td>
+<td>rightWizWheelUp</td>
+</tr>
+<tr>
+<td>Chuyển tới với thao tác bánh cuộn phải</td>
+<td>rightWizWheelDown</td>
+</tr>
+<tr>
+<td>Chuyển về ô nổi</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Phím shift+tab</td>
+<td>brailleSpaceBar+dot1+dot2</td>
+</tr>
+<tr>
+<td>Phím tab</td>
+<td>brailleSpaceBar+dot4+dot5</td>
+</tr>
+<tr>
+<td>Mũi tên lên</td>
+<td>brailleSpaceBar+dot1</td>
+</tr>
+<tr>
+<td>Mũi tên xuống</td>
+<td>brailleSpaceBar+dot4</td>
+</tr>
+<tr>
+<td>Phím control+mũi tên trái</td>
+<td>brailleSpaceBar+dot2</td>
+</tr>
+<tr>
+<td>Phím control+mũi tên phải</td>
+<td>brailleSpaceBar+dot5</td>
+</tr>
+<tr>
+<td>Mũi tên trái</td>
+<td>brailleSpaceBar+dot3</td>
+</tr>
+<tr>
+<td>Mũi tên phải</td>
+<td>brailleSpaceBar+dot6</td>
+</tr>
+<tr>
+<td>Phím home</td>
+<td>brailleSpaceBar+dot1+dot3</td>
+</tr>
+<tr>
+<td>Phím end</td>
+<td>brailleSpaceBar+dot4+dot6</td>
+</tr>
+<tr>
+<td>Phím control+home</td>
+<td>brailleSpaceBar+dot1+dot2+dot3</td>
+</tr>
+<tr>
+<td>Phím control+end</td>
+<td>brailleSpaceBar+dot4+dot5+dot6</td>
+</tr>
+<tr>
+<td>Phím alt</td>
+<td>brailleSpaceBar+dot1+dot3+dot4</td>
+</tr>
+<tr>
+<td>Phím alt+tab</td>
+<td>brailleSpaceBar+dot2+dot3+dot4+dot5</td>
+</tr>
+<tr>
+<td>Phím alt+shift+tab</td>
+<td>brailleSpaceBar+dot1+dot2+dot5+dot6</td>
+</tr>
+<tr>
+<td>Phím windows+tab</td>
+<td>brailleSpaceBar+dot2+dot3+dot4</td>
+</tr>
+<tr>
+<td>Phím escape</td>
+<td>brailleSpaceBar+dot1+dot5</td>
+</tr>
+<tr>
+<td>Phím windows</td>
+<td>brailleSpaceBar+dot2+dot4+dot5+dot6</td>
+</tr>
+<tr>
+<td>Phím khoảng trắng</td>
+<td>brailleSpaceBar</td>
+</tr>
+<tr>
+<td>bật / tắt phím control</td>
+<td>brailleSpaceBar+dot3+dot8</td>
+</tr>
+<tr>
+<td>Bật / tắt phím alt</td>
+<td>brailleSpaceBar+dot6+dot8</td>
+</tr>
+<tr>
+<td>Bật / tắt phím windows</td>
+<td>brailleSpaceBar+dot4+dot8</td>
+</tr>
+<tr>
+<td>Bật / tắt phím  NVDA</td>
+<td>brailleSpaceBar+dot5+dot8</td>
+</tr>
+<tr>
+<td>Bật / tắt phím  shift</td>
+<td>brailleSpaceBar+dot7+dot8</td>
+</tr>
+<tr>
+<td>Bật / tắt các phím  control và shift</td>
+<td>brailleSpaceBar+dot3+dot7+dot8</td>
+</tr>
+<tr>
+<td>Bật / tắt các phím  alt và shift</td>
+<td>brailleSpaceBar+dot6+dot7+dot8</td>
+</tr>
+<tr>
+<td>Bật / tắt các phím  windows và shift</td>
+<td>brailleSpaceBar+dot4+dot7+dot8</td>
+</tr>
+<tr>
+<td>Bật / tắt các phím  NVDA và shift</td>
+<td>brailleSpaceBar+dot5+dot7+dot8</td>
+</tr>
+<tr>
+<td>Bật / tắt các phím  control và alt</td>
+<td>brailleSpaceBar+dot3+dot6+dot8</td>
+</tr>
+<tr>
+<td>Bật / tắt các phím control, alt và shift</td>
+<td>brailleSpaceBar+dot3+dot6+dot7+dot8</td>
+</tr>
+<tr>
+<td>Phím windows+d (thu nhỏ toàn bộ ứng dụng)</td>
+<td>brailleSpaceBar+dot1+dot2+dot3+dot4+dot5+dot6</td>
+</tr>
+<tr>
+<td>Đọc dòng hiện tại</td>
+<td>brailleSpaceBar+dot1+dot4</td>
+</tr>
+<tr>
+<td>Trình đơn NVDA</td>
+<td>brailleSpaceBar+dot1+dot3+dot4+dot5</td>
+</tr>
+</tbody>
+</table>
+<p>Những mẫu mới của Focus có thêm các phím rocker bar (focus 40, focus 80 và focus blue):</p>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Đi đến dòng trước</td>
+<td>leftRockerBarUp, rightRockerBarUp</td>
+</tr>
+<tr>
+<td>Đi đến dòng kế</td>
+<td>leftRockerBarDown, rightRockerBarDown</td>
+</tr>
+</tbody>
+</table>
+<p>Dành cho Focus 80:</p>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn màn hình chữ nổi về trước</td>
+<td>leftBumperBarUp, rightBumperBarUp</td>
+</tr>
+<tr>
+<td>Cuộn màn hình chữ nổi tới</td>
+<td>leftBumperBarDown, rightBumperBarDown</td>
+</tr>
+</tbody>
+</table>
+<h3 id="OptelecALVA">Optelec ALVA dòng 6 / có bộ chuyển giao thức</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn về trước</td>
+<td>t1, etouch1</td>
+</tr>
+<tr>
+<td>Về dòng trước</td>
+<td>t2</td>
+</tr>
+<tr>
+<td>Chuyển đến focus hiện tại</td>
+<td>t3</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng kế</td>
+<td>t4</td>
+</tr>
+<tr>
+<td>Cuộn tới</td>
+<td>t5, etouch3</td>
+</tr>
+<tr>
+<td>Rút về ô chữ nổi</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Thông báo định dạng văn bản tại ô chữ nổi</td>
+<td>secondary routing</td>
+</tr>
+<tr>
+<td>Bật tắt HID keyboard simulation</td>
+<td>t1+spEnter</td>
+</tr>
+<tr>
+<td>Về dòng đầu khi duyệt</td>
+<td>t1+t2</td>
+</tr>
+<tr>
+<td>Về dòng cuối khi duyệt</td>
+<td>t4+t5</td>
+</tr>
+<tr>
+<td>Bật/tắt con trỏ nổi đi theo</td>
+<td>t1+t3</td>
+</tr>
+<tr>
+<td>Thông báo tiêu đề</td>
+<td>etouch2</td>
+</tr>
+<tr>
+<td>Thông báo thanh trạng thái</td>
+<td>etouch4</td>
+</tr>
+<tr>
+<td>Phím shift+tab</td>
+<td>sp1</td>
+</tr>
+<tr>
+<td>Phím alt</td>
+<td>sp2, alt</td>
+</tr>
+<tr>
+<td>Phím escape</td>
+<td>sp3</td>
+</tr>
+<tr>
+<td>Phím tab</td>
+<td>sp4</td>
+</tr>
+<tr>
+<td>Phím mũi tên lên</td>
+<td>spUp</td>
+</tr>
+<tr>
+<td>Phím mũi tên xuống</td>
+<td>spDown</td>
+</tr>
+<tr>
+<td>Phím mũi tên trái</td>
+<td>spLeft</td>
+</tr>
+<tr>
+<td>Phím mũi tên phải</td>
+<td>spRight</td>
+</tr>
+<tr>
+<td>Phím enter</td>
+<td>spEnter, enter</td>
+</tr>
+<tr>
+<td>Thông báo ngày giờ</td>
+<td>sp2+sp3</td>
+</tr>
+<tr>
+<td>Trình đơn NVDA</td>
+<td>sp1+sp3</td>
+</tr>
+<tr>
+<td>Phím windows+d (thu nhỏ toàn bộ cửa sổ ứng dụng)</td>
+<td>sp1+sp4</td>
+</tr>
+<tr>
+<td>Phím windows+b (đến khay hệ thống)</td>
+<td>sp3+sp4</td>
+</tr>
+<tr>
+<td>Phím windows</td>
+<td>sp1+sp2, windows</td>
+</tr>
+<tr>
+<td>Phím alt+tab</td>
+<td>sp2+sp4</td>
+</tr>
+<tr>
+<td>Phím control+home</td>
+<td>t3+spUp</td>
+</tr>
+<tr>
+<td>Phím control+end</td>
+<td>t3+spDown</td>
+</tr>
+<tr>
+<td>Phím home</td>
+<td>t3+spLeft</td>
+</tr>
+<tr>
+<td>Phím end</td>
+<td>t3+spRight</td>
+</tr>
+<tr>
+<td>Phím control</td>
+<td>control</td>
+</tr>
+</tbody>
+</table>
+<h3 id="HandyTech">Các Màn Hình Handy Tech</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn về trước</td>
+<td>left, up, b3</td>
+</tr>
+<tr>
+<td>Cuộn tới</td>
+<td>right, down, b6</td>
+</tr>
+<tr>
+<td>Chuyển về dòng trước</td>
+<td>b4</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng kế</td>
+<td>b5</td>
+</tr>
+<tr>
+<td>Rút về ô chữ nổi</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Phím shift+tab</td>
+<td>esc, left triple action key up+down</td>
+</tr>
+<tr>
+<td>Phím alt</td>
+<td>b2+b4+b5</td>
+</tr>
+<tr>
+<td>Phím escape</td>
+<td>b4+b6</td>
+</tr>
+<tr>
+<td>Phím tab</td>
+<td>enter, right triple action key up+down</td>
+</tr>
+<tr>
+<td>Phím enter</td>
+<td>esc+enter, left+right triple action key up+down, joystickAction</td>
+</tr>
+<tr>
+<td>Phím mũi tên lên</td>
+<td>joystickUp</td>
+</tr>
+<tr>
+<td>Phím mũi tên xuống</td>
+<td>joystickDown</td>
+</tr>
+<tr>
+<td>Phím mũi tên trái</td>
+<td>joystickLeft</td>
+</tr>
+<tr>
+<td>Phím mũi tên phải</td>
+<td>joystickRight</td>
+</tr>
+<tr>
+<td>Trình đơn NVDA</td>
+<td>b2+b4+b5+b6</td>
+</tr>
+<tr>
+<td>Bật tắt con trỏ nổi đi theo</td>
+<td>b2</td>
+</tr>
+<tr>
+<td>Bật tắt con trỏ nổi</td>
+<td>b1</td>
+</tr>
+<tr>
+<td>Bật tắt con trỏ trình chiếu ngữ cảnh</td>
+<td>b7</td>
+</tr>
+<tr>
+<td>Bật tắt nhập liệu chữ nổi</td>
+<td>space+b1+b3+b4 (space+capital B)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="MDVLilli">MDV Lilli</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn về trước</td>
+<td>LF</td>
+</tr>
+<tr>
+<td>Cuộn tới</td>
+<td>RG</td>
+</tr>
+<tr>
+<td>Chuyển về dòng trước</td>
+<td>UP</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng kế</td>
+<td>DN</td>
+</tr>
+<tr>
+<td>Rút về ô chữ nổi</td>
+<td>route</td>
+</tr>
+<tr>
+<td>Phím shift+tab</td>
+<td>SLF</td>
+</tr>
+<tr>
+<td>Phím tab</td>
+<td>SRG</td>
+</tr>
+<tr>
+<td>Phím alt+tab</td>
+<td>SDN</td>
+</tr>
+<tr>
+<td>Phím alt+shift+tab</td>
+<td>SUP</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Baum">Màn Hình Chữ Nổi Baum/Humanware/APH/Orbit</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn màn hình chữ nổi về trước</td>
+<td><code>d2</code></td>
+</tr>
+<tr>
+<td>Cuộn màn hình chữ nổi về sau</td>
+<td><code>d5</code></td>
+</tr>
+<tr>
+<td>Chuyển màn hình chữ nổi về dòng trước</td>
+<td><code>d1</code></td>
+</tr>
+<tr>
+<td>Chuyển màn hình chữ nổi đến dòng kế</td>
+<td><code>d3</code></td>
+</tr>
+<tr>
+<td>Đưa đến ô chữ nổi</td>
+<td><code>routing</code></td>
+</tr>
+<tr>
+<td>Phím <code>shift+tab</code></td>
+<td><code>space+dot1+dot3</code></td>
+</tr>
+<tr>
+<td>Phím <code>tab</code></td>
+<td><code>space+dot4+dot6</code></td>
+</tr>
+<tr>
+<td>Phím <code>alt</code></td>
+<td><code>space+dot1+dot3+dot4</code> (<code>space+m</code>)</td>
+</tr>
+<tr>
+<td>Phím <code>escape</code></td>
+<td><code>space+dot1+dot5</code> (<code>space+e</code>)</td>
+</tr>
+<tr>
+<td>Phím <code>windows</code></td>
+<td><code>space+dot3+dot4</code></td>
+</tr>
+<tr>
+<td>Phím <code>alt+tab</code></td>
+<td><code>space+dot2+dot3+dot4+dot5</code> (<code>space+t</code>)</td>
+</tr>
+<tr>
+<td>Trình đơn NVDA</td>
+<td><code>space+dot1+dot3+dot4+dot5</code> (<code>space+n</code>)</td>
+</tr>
+<tr>
+<td>Phím <code>windows+d</code> (thu nhỏ toàn bộ ứng dụng)</td>
+<td><code>space+dot1+dot4+dot5</code> (<code>space+d</code>)</td>
+</tr>
+<tr>
+<td>Đọc tất cả</td>
+<td><code>space+dot1+dot2+dot3+dot4+dot5+dot6</code></td>
+</tr>
+</tbody>
+</table>
+<p>Dành cho các màn hình có cần điều khiển:</p>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phím mũi tên lên</td>
+<td>up</td>
+</tr>
+<tr>
+<td>Phím mũi tên xuống</td>
+<td>down</td>
+</tr>
+<tr>
+<td>Phím mũi tên trái</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Phím mũi tên phải</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Phím enter</td>
+<td>select</td>
+</tr>
+</tbody>
+</table>
+<h3 id="HedoProfiLine">hedo ProfiLine USB</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn về trước</td>
+<td>K1</td>
+</tr>
+<tr>
+<td>Cuộn tới</td>
+<td>K3</td>
+</tr>
+<tr>
+<td>Chuyển về dòng trước</td>
+<td>B2</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng kế</td>
+<td>B5</td>
+</tr>
+<tr>
+<td>Rút về ô chữ nổi</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Bật/tắt con trỏ nổi đi theo</td>
+<td>K2</td>
+</tr>
+<tr>
+<td>Đọc tất cả</td>
+<td>B6</td>
+</tr>
+</tbody>
+</table>
+<h3 id="HedoMobilLine">hedo MobilLine USB</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn về trước</td>
+<td>K1</td>
+</tr>
+<tr>
+<td>Cuộn tới</td>
+<td>K3</td>
+</tr>
+<tr>
+<td>Chuyển về dòng trước</td>
+<td>B2</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng kế</td>
+<td>B5</td>
+</tr>
+<tr>
+<td>Rút về ô chữ nổi</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Bật/tắt con trỏ nổi đi theo</td>
+<td>K2</td>
+</tr>
+<tr>
+<td>Đọc tất cả</td>
+<td>B6</td>
+</tr>
+</tbody>
+</table>
+<h3 id="HumanWareBrailliant">Các dòng HumanWare Brailliant BI/B / BrailleNote Touch</h3>
+<h4 id="HumanWareBrailliantKeyAssignmentForAllModels">Các phím được gán cho tất cả sản phẩm</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn về trước</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Cuộn tới</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Chuyển về dòng trước</td>
+<td>up</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng kế</td>
+<td>down</td>
+</tr>
+<tr>
+<td>Rút về ô chữ nổi</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Bật/tắt con trỏ nổi đi theo</td>
+<td>up+down</td>
+</tr>
+<tr>
+<td>Phím mũi tên lên</td>
+<td>space+dot1</td>
+</tr>
+<tr>
+<td>Phím mũi tên xuống</td>
+<td>space+dot4</td>
+</tr>
+<tr>
+<td>Phím mũi tên trái</td>
+<td>space+dot3</td>
+</tr>
+<tr>
+<td>Phím mũi tên phải</td>
+<td>space+dot6</td>
+</tr>
+<tr>
+<td>Trình đơn NVDA</td>
+<td>c1+c3+c4+c5 (command n)</td>
+</tr>
+<tr>
+<td>Phím shift+tab</td>
+<td>space+dot1+dot3</td>
+</tr>
+<tr>
+<td>Phím tab</td>
+<td>space+dot4+dot6</td>
+</tr>
+<tr>
+<td>Phím alt</td>
+<td>space+dot1+dot3+dot4 (space+m)</td>
+</tr>
+<tr>
+<td>Phím escape</td>
+<td>space+dot1+dot5 (space+e)</td>
+</tr>
+<tr>
+<td>Phím enter</td>
+<td>dot8</td>
+</tr>
+<tr>
+<td>Phím windows+d (thu nhỏ tất cả chương trình)</td>
+<td>c1+c4+c5 (command d)</td>
+</tr>
+<tr>
+<td>Phím windows</td>
+<td>space+dot3+dot4</td>
+</tr>
+<tr>
+<td>Phím alt+tab</td>
+<td>space+dot2+dot3+dot4+dot5 (space+t)</td>
+</tr>
+<tr>
+<td>Đọc tất cả</td>
+<td>c1+c2+c3+c4+c5+c6</td>
+</tr>
+</tbody>
+</table>
+<h4 id="HumanWareBrailliantKeyAssignmentForBI32BI40AndB80">Các phím gán cho màn hình Brailliant BI 32, BI 40 và B 80</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trình đơn NVDA</td>
+<td>c1+c3+c4+c5 (command n)</td>
+</tr>
+<tr>
+<td>Phím windows+d (thu nhỏ toàn bộ ứng dụng )</td>
+<td>c1+c4+c5 (command d)</td>
+</tr>
+<tr>
+<td>Đọc tất cả</td>
+<td>c1+c2+c3+c4+c5+c6</td>
+</tr>
+</tbody>
+</table>
+<h4 id="HumanWareBrailliantKeyAssignmentForBI14">Phím gán cho Brailliant BI 14</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phím mũi tên lên</td>
+<td>joystick up</td>
+</tr>
+<tr>
+<td>Phím mũi tên xuống</td>
+<td>joystick down</td>
+</tr>
+<tr>
+<td>Phím mũi tên trái</td>
+<td>joystick left</td>
+</tr>
+<tr>
+<td>Phím mũi tên phải</td>
+<td>joystick right</td>
+</tr>
+<tr>
+<td>Phím enter</td>
+<td>joystick action</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Hims">Các dòng HIMS Braille Sense/Braille EDGE/Smart Beetle</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chuyển đến ô chữ nổi</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Cuộn màn hình lùi</td>
+<td>leftSideScrollUp, rightSideScrollUp, leftSideScroll</td>
+</tr>
+<tr>
+<td>Cuộn màn hình tới</td>
+<td>leftSideScrollDown, rightSideScrollDown, rightSideScroll</td>
+</tr>
+<tr>
+<td>Chuyển màn hình về dòng trước</td>
+<td>leftSideScrollUp+rightSideScrollUp</td>
+</tr>
+<tr>
+<td>Chuyển màn hình đến dòng kế</td>
+<td>leftSideScrollDown+rightSideScrollDown</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng trước trong chế độ duyệt</td>
+<td>rightSideUpArrow</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng kế trong chế độ duyệt</td>
+<td>rightSideDownArrow</td>
+</tr>
+<tr>
+<td>Chuyển đến kí tự trước trong chế độ duyệt</td>
+<td>rightSideLeftArrow</td>
+</tr>
+<tr>
+<td>Chuyển đến kí tự kế trong chế độ duyệt</td>
+<td>rightSideRightArrow</td>
+</tr>
+<tr>
+<td>Chuyển đến focus hiện tại</td>
+<td>leftSideScrollUp+leftSideScrollDown, rightSideScrollUp+rightSideScrollDown, leftSideScroll+rightSideScroll</td>
+</tr>
+<tr>
+<td>Phím control</td>
+<td>smartbeetle:f1, brailleedge:f3</td>
+</tr>
+<tr>
+<td>Phím windows</td>
+<td>f7, smartbeetle:f2</td>
+</tr>
+<tr>
+<td>Phím alt</td>
+<td>dot1+dot3+dot4+space, f2, smartbeetle:f3, brailleedge:f4</td>
+</tr>
+<tr>
+<td>Phím shift</td>
+<td>f5</td>
+</tr>
+<tr>
+<td>Phím insert</td>
+<td>dot2+dot4+space, f6</td>
+</tr>
+<tr>
+<td>Phím applications</td>
+<td>dot1+dot2+dot3+dot4+space, f8</td>
+</tr>
+<tr>
+<td>Phím Caps Lock</td>
+<td>dot1+dot3+dot6+space</td>
+</tr>
+<tr>
+<td>Phím tab</td>
+<td>dot4+dot5+space, f3, brailleedge:f2</td>
+</tr>
+<tr>
+<td>Phím shift+alt+tab</td>
+<td>f2+f3+f1</td>
+</tr>
+<tr>
+<td>Phím alt+tab</td>
+<td>f2+f3</td>
+</tr>
+<tr>
+<td>Phím shift+tab</td>
+<td>dot1+dot2+space</td>
+</tr>
+<tr>
+<td>Phím end</td>
+<td>dot4+dot6+space</td>
+</tr>
+<tr>
+<td>Phím control+end</td>
+<td>dot4+dot5+dot6+space</td>
+</tr>
+<tr>
+<td>Phím home</td>
+<td>dot1+dot3+space, smartbeetle:f4</td>
+</tr>
+<tr>
+<td>Phím control+home</td>
+<td>dot1+dot2+dot3+space</td>
+</tr>
+<tr>
+<td>Phím alt+f4</td>
+<td>dot1+dot3+dot5+dot6+space</td>
+</tr>
+<tr>
+<td>Phím mũi tên trái</td>
+<td>dot3+space, leftSideLeftArrow</td>
+</tr>
+<tr>
+<td>Phím control+shift+mũi tên trái</td>
+<td>dot2+dot8+space+f1</td>
+</tr>
+<tr>
+<td>Phím control+mũi tên trái</td>
+<td>dot2+space</td>
+</tr>
+<tr>
+<td>Phím shift+alt+mũi tên trái</td>
+<td>dot2+dot7+f1</td>
+</tr>
+<tr>
+<td><code>Phím alt+mũi tên trái</code></td>
+<td><code>dot2+dot7+space</code></td>
+</tr>
+<tr>
+<td>Phím mũi tên phải</td>
+<td>dot6+space, leftSideRightArrow</td>
+</tr>
+<tr>
+<td>Phím control+shift+mũi tên phải</td>
+<td>dot5+dot8+space+f1</td>
+</tr>
+<tr>
+<td>Phím control+mũi tên phải</td>
+<td>dot5+space</td>
+</tr>
+<tr>
+<td>Phím shift+alt+mũi tên phải</td>
+<td>dot5+dot7+f1</td>
+</tr>
+<tr>
+<td><code>Phím alt+mũi tên phải</code></td>
+<td><code>dot5+dot7+space</code></td>
+</tr>
+<tr>
+<td>Phím trang trước</td>
+<td>dot1+dot2+dot6+space</td>
+</tr>
+<tr>
+<td>Phím control+trang trước</td>
+<td>dot1+dot2+dot6+dot8+space</td>
+</tr>
+<tr>
+<td>Phím mũi tên lên</td>
+<td>dot1+space, leftSideUpArrow</td>
+</tr>
+<tr>
+<td>Phím control+mũi tên lên</td>
+<td>dot2+dot3+space</td>
+</tr>
+<tr>
+<td>Phím control+shift+mũi tên lên</td>
+<td>dot2+dot3+dot8+space+f1</td>
+</tr>
+<tr>
+<td>Phím shift+alt+mũi tên lên</td>
+<td>dot2+dot3+dot7+f1</td>
+</tr>
+<tr>
+<td><code>Phím alt+mũi tên lên</code></td>
+<td><code>dot2+dot3+dot7+space</code></td>
+</tr>
+<tr>
+<td>Phím shift+mũi tên lên</td>
+<td>leftSideScrollDown+space</td>
+</tr>
+<tr>
+<td>Phím trang kế</td>
+<td>dot3+dot4+dot5+space</td>
+</tr>
+<tr>
+<td>Phím control+trang kế</td>
+<td>dot3+dot4+dot5+dot8+space</td>
+</tr>
+<tr>
+<td>Phím mũi tên xuống</td>
+<td>dot4+space, leftSideDownArrow</td>
+</tr>
+<tr>
+<td>Phím control+shift+mũi tên xuống</td>
+<td>dot5+dot6+dot8+space+f1</td>
+</tr>
+<tr>
+<td>Phím control+mũi tên xuống</td>
+<td>dot5+dot6+space</td>
+</tr>
+<tr>
+<td>Phím shift+alt+mũi tên xuống</td>
+<td>dot5+dot6+dot7+f1</td>
+</tr>
+<tr>
+<td><code>Phím alt+mũi tên xuống</code></td>
+<td><code>dot5+dot6+dot7+space</code></td>
+</tr>
+<tr>
+<td>Phím shift+mũi tên xuống</td>
+<td>space+rightSideScrollDown</td>
+</tr>
+<tr>
+<td>Phím escape</td>
+<td>dot1+dot5+space, f4, brailleedge:f1</td>
+</tr>
+<tr>
+<td>Phím delete</td>
+<td>dot1+dot3+dot5+space</td>
+</tr>
+<tr>
+<td>Phím f1</td>
+<td>dot1+dot2+dot5+space</td>
+</tr>
+<tr>
+<td>Phím f3</td>
+<td>dot1+dot4+dot8+space</td>
+</tr>
+<tr>
+<td>Phím f4</td>
+<td>dot7+f3</td>
+</tr>
+<tr>
+<td>Phím windows+b</td>
+<td>dot1+dot2+f1</td>
+</tr>
+<tr>
+<td>Phím windows+d</td>
+<td>dot1+dot4+dot5+f1</td>
+</tr>
+<tr>
+<td>Phím control+insert</td>
+<td>smartbeetle:f1+rightSideScroll</td>
+</tr>
+<tr>
+<td>Phím alt+insert</td>
+<td>smartbeetle:f3+rightSideScroll</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Seika">Màn hình chữ nổi Seika</h3>
+<h4 id="SeikaBrailleDisplays">Seika Phiên Bản 3, 4 và 5 (40 ô), Seika80 (80 ô)</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn về trước</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Cuộn tới</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Chuyển về dòng trước</td>
+<td>b3</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng kế</td>
+<td>b4</td>
+</tr>
+<tr>
+<td>Bật/tắt con trỏ nổi đi theo</td>
+<td>b5</td>
+</tr>
+<tr>
+<td>Đọc tất cả</td>
+<td>b6</td>
+</tr>
+<tr>
+<td>tab</td>
+<td>b</td>
+</tr>
+<tr>
+<td>shift+tab</td>
+<td>b2</td>
+</tr>
+<tr>
+<td>alt+tab</td>
+<td>b1+b2</td>
+</tr>
+<tr>
+<td>Trình đơn NVDA</td>
+<td>left+right</td>
+</tr>
+<tr>
+<td>Rút về ô chữ nổi</td>
+<td>routing</td>
+</tr>
+</tbody>
+</table>
+<h4 id="SeikaNotetaker">MiniSeika (16, 24 ô), V6 và V6Pro (40 ô)</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn màn hình lùi</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Cuộn màn hình tới</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Đọc tất cả</td>
+<td>space+Backspace</td>
+</tr>
+<tr>
+<td>Trình đơn NVDA</td>
+<td>Left+Right</td>
+</tr>
+<tr>
+<td>Chuyển màn hình đến dòng trước</td>
+<td>LJ up</td>
+</tr>
+<tr>
+<td>Chuyển màn hình đến dòng kế</td>
+<td>LJ down</td>
+</tr>
+<tr>
+<td>Bật / tắt con trỏ nổi đi theo</td>
+<td>LJ center</td>
+</tr>
+<tr>
+<td>tab</td>
+<td>LJ right</td>
+</tr>
+<tr>
+<td>shift+tab</td>
+<td>LJ left</td>
+</tr>
+<tr>
+<td>Phím mũi tên lên</td>
+<td>RJ up</td>
+</tr>
+<tr>
+<td>Phím mũi tên xuống</td>
+<td>RJ down</td>
+</tr>
+<tr>
+<td>Phím mũi tên trái</td>
+<td>RJ left</td>
+</tr>
+<tr>
+<td>Phím mũi tên phải</td>
+<td>RJ right</td>
+</tr>
+<tr>
+<td>Đưa đến ô chữ nổi</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>shift+phím mũi tên lên</td>
+<td>Space+RJ up, Backspace+RJ up</td>
+</tr>
+<tr>
+<td>shift+phím mũi tên xuống</td>
+<td>Space+RJ down, Backspace+RJ down</td>
+</tr>
+<tr>
+<td>shift+phím mũi tên trái</td>
+<td>Space+RJ left, Backspace+RJ left</td>
+</tr>
+<tr>
+<td>shift+phím mũi tên phải</td>
+<td>Space+RJ right, Backspace+RJ right</td>
+</tr>
+<tr>
+<td>Phím enter</td>
+<td>RJ center, dot8</td>
+</tr>
+<tr>
+<td>Phím escape</td>
+<td>Space+RJ center</td>
+</tr>
+<tr>
+<td>Phím windows</td>
+<td>Backspace+RJ center</td>
+</tr>
+<tr>
+<td>Phím khoảng trắng</td>
+<td>Space, Backspace</td>
+</tr>
+<tr>
+<td>Phím xóa lùi</td>
+<td>dot7</td>
+</tr>
+<tr>
+<td>Phím page up</td>
+<td>space+LJ right</td>
+</tr>
+<tr>
+<td>Phím page down</td>
+<td>space+LJ left</td>
+</tr>
+<tr>
+<td>Phím home</td>
+<td>space+LJ up</td>
+</tr>
+<tr>
+<td>Phím end</td>
+<td>space+LJ down</td>
+</tr>
+<tr>
+<td>Phím control+home</td>
+<td>backspace+LJ up</td>
+</tr>
+<tr>
+<td>Phím control+end</td>
+<td>backspace+LJ down</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Papenmeier">Các Mẫu Papenmeier BRAILLEX Mới</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn về trước</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Cuộn tới</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Chuyển về dòng trước</td>
+<td>up</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng kế</td>
+<td>dn</td>
+</tr>
+<tr>
+<td>Rút về ô chữ nổi</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Thông báo ký tự hiện tại khi duyệt</td>
+<td>l1</td>
+</tr>
+<tr>
+<td>Kích hoạt đối tượng điều hướng hiện tại</td>
+<td>l2</td>
+</tr>
+<tr>
+<td>Bật/tắt con trỏ nổi đi theo</td>
+<td>r2</td>
+</tr>
+<tr>
+<td>Thông báo tiêu đề</td>
+<td>l1+up</td>
+</tr>
+<tr>
+<td>Thông báo thanh trạng thái</td>
+<td>l2+down</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng cha</td>
+<td>up2</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng con thứ nhất</td>
+<td>dn2</td>
+</tr>
+<tr>
+<td>Chuyển về đối tượng trước</td>
+<td>left2</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng kế</td>
+<td>right2</td>
+</tr>
+<tr>
+<td>Thông báo định dạng  văn bản  tại ô chữ nổi</td>
+<td>upper routing row</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phím escape</td>
+<td>space with dot 7</td>
+</tr>
+<tr>
+<td>Phím mũi tên lên</td>
+<td>space with dot 2</td>
+</tr>
+<tr>
+<td>Phím mũi tên trái</td>
+<td>space with dot 1</td>
+</tr>
+<tr>
+<td>Phím mũi tên phải</td>
+<td>space with dot 4</td>
+</tr>
+<tr>
+<td>Mũi tên xuống</td>
+<td>space with dot 5</td>
+</tr>
+<tr>
+<td>Phím control</td>
+<td>lt+dot2</td>
+</tr>
+<tr>
+<td>Phím alt</td>
+<td>lt+dot3</td>
+</tr>
+<tr>
+<td>Phím control+escape</td>
+<td>space with dot 1 2 3 4 5 6</td>
+</tr>
+<tr>
+<td>Phím tab</td>
+<td>space with dot 3 7</td>
+</tr>
+</tbody>
+</table>
+<h3 id="PapenmeierOld">Các Mẫu Papenmeier Braille BRAILLEX Cũ</h3>
+<p>Thiết bị có EAB:</p>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn về trước</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Cuộn tới</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Chuyển về dòng trước</td>
+<td>up</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng kế</td>
+<td>dn</td>
+</tr>
+<tr>
+<td>Rút về ô chữ nổi</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Thông báo ký tự hiện tại khi duyệt</td>
+<td>l1</td>
+</tr>
+<tr>
+<td>Kích hoạt đối tượng điều hướng hiện tại</td>
+<td>l2</td>
+</tr>
+<tr>
+<td>Thông báo tiêu đề</td>
+<td>l1up</td>
+</tr>
+<tr>
+<td>Thông báo thanh trạng thái</td>
+<td>l2down</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng cha</td>
+<td>up2</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng con thứ nhất</td>
+<td>dn2</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng kế</td>
+<td>right2</td>
+</tr>
+<tr>
+<td>Chuyển về đối tượng trước</td>
+<td>left2</td>
+</tr>
+<tr>
+<td>Thông báo định dạng văn bản tại ô chữ nổi</td>
+<td>upper routing strip</td>
+</tr>
+</tbody>
+</table>
+<p>BRAILLEX Tiny:</p>
+<table>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thông báo ký tự hiện tại khi duyệt</td>
+<td>l1</td>
+</tr>
+<tr>
+<td>Kích hoạt đối tượng điều hướng hiện tại</td>
+<td>l2</td>
+</tr>
+<tr>
+<td>Cuộn về trước</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Cuộn tới</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Chuyển về dòng trước</td>
+<td>up</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng kế</td>
+<td>dn</td>
+</tr>
+<tr>
+<td>Bật/tắt con trỏ nổi đi theo</td>
+<td>r2</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng cha</td>
+<td>r1+up</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng con thứ nhất</td>
+<td>r1+dn</td>
+</tr>
+<tr>
+<td>Chuyển về đối tượng trước</td>
+<td>r1+left</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng kế</td>
+<td>r1+right</td>
+</tr>
+<tr>
+<td>Thông báo định dạng văn bản  tại ô chữ nổi</td>
+<td>upper routing strip</td>
+</tr>
+<tr>
+<td>Thông báo tiêu đề</td>
+<td>l1+up</td>
+</tr>
+<tr>
+<td>Thông báo thanh trạng thái</td>
+<td>l2+down</td>
+</tr>
+</tbody>
+</table>
+<p>BRAILLEX 2D Screen:</p>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thông báo ký tự hiện tại khi duyệt</td>
+<td>l1</td>
+</tr>
+<tr>
+<td>Kích hoạt đối tượng điều hướng hiện tại</td>
+<td>l2</td>
+</tr>
+<tr>
+<td>Bật/tắt con trỏ nổi đi theo</td>
+<td>r2</td>
+</tr>
+<tr>
+<td>Thông báo định dạng văn bản  tại ô chữ nổi</td>
+<td>upper routing strip</td>
+</tr>
+<tr>
+<td>Chuyển về dòng trước</td>
+<td>up</td>
+</tr>
+<tr>
+<td>Cuộn về trước</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Cuộn tới</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng kế</td>
+<td>dn</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng kế</td>
+<td>left2</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng cha</td>
+<td>up2</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng con thứ nhất</td>
+<td>dn2</td>
+</tr>
+<tr>
+<td>Chuyển về đối tượng trước</td>
+<td>right2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="HumanWareBrailleNote">HumanWare BrailleNote</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn về trước</td>
+<td>back</td>
+</tr>
+<tr>
+<td>Cuộn tới</td>
+<td>advance</td>
+</tr>
+<tr>
+<td>Chuyển về dòng trước</td>
+<td>previous</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng kế</td>
+<td>next</td>
+</tr>
+<tr>
+<td>Rút về ô chữ nổi</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Trình đơn NvDA</td>
+<td>space+dot1+dot3+dot4+dot5 (space+n)</td>
+</tr>
+<tr>
+<td>Bật/tắt con trỏ nổi đi theo</td>
+<td>previous+next</td>
+</tr>
+<tr>
+<td>Mũi tên lên</td>
+<td>space+dot1</td>
+</tr>
+<tr>
+<td>Mũi tên xuống</td>
+<td>space+dot4</td>
+</tr>
+<tr>
+<td>Mũi tên trái</td>
+<td>space+dot3</td>
+</tr>
+<tr>
+<td>Mũi tên phải</td>
+<td>space+dot6</td>
+</tr>
+<tr>
+<td>Phím trang trước</td>
+<td>space+dot1+dot3</td>
+</tr>
+<tr>
+<td>Phím trang kế</td>
+<td>space+dot4+dot6</td>
+</tr>
+<tr>
+<td>Phím home</td>
+<td>space+dot1+dot2</td>
+</tr>
+<tr>
+<td>Phím end</td>
+<td>space+dot4+dot5</td>
+</tr>
+<tr>
+<td>Control+home</td>
+<td>space+dot1+dot2+dot3</td>
+</tr>
+<tr>
+<td>Control+end</td>
+<td>space+dot4+dot5+dot6</td>
+</tr>
+<tr>
+<td>Phím khoảng trắng</td>
+<td>space</td>
+</tr>
+<tr>
+<td>Enter</td>
+<td>space+dot8</td>
+</tr>
+<tr>
+<td>Backspace</td>
+<td>space+dot7</td>
+</tr>
+<tr>
+<td>Tab</td>
+<td>space+dot2+dot3+dot4+dot5 (space+t)</td>
+</tr>
+<tr>
+<td>Shift+tab</td>
+<td>space+dot1+dot2+dot5+dot6</td>
+</tr>
+<tr>
+<td>Phím Windows</td>
+<td>space+dot2+dot4+dot5+dot6 (space+w)</td>
+</tr>
+<tr>
+<td>Phím Alt</td>
+<td>space+dot1+dot3+dot4 (space+m)</td>
+</tr>
+<tr>
+<td>Bật/tắt chế độ trợ giúp nhập</td>
+<td>space+dot2+dot3+dot6 (space+lower h)</td>
+</tr>
+</tbody>
+</table>
+<p>Sau đây là các phím được gán cho BrailleNote QT khi không ở trong chế độ nhập liệu chữ nổi.</p>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trình đơn NvDA</td>
+<td>read+n</td>
+</tr>
+<tr>
+<td>Phím mũi tên lên</td>
+<td>upArrow</td>
+</tr>
+<tr>
+<td>Phím mũi tên xuống</td>
+<td>downArrow</td>
+</tr>
+<tr>
+<td>Phím mũi tên trái</td>
+<td>leftArrow</td>
+</tr>
+<tr>
+<td>Phím mũi tên phải</td>
+<td>rightArrow</td>
+</tr>
+<tr>
+<td>Phím trang trước</td>
+<td>function+upArrow</td>
+</tr>
+<tr>
+<td>Phím trang sau</td>
+<td>function+downArrow</td>
+</tr>
+<tr>
+<td>Phím Home</td>
+<td>function+leftArrow</td>
+</tr>
+<tr>
+<td>Phím End</td>
+<td>function+rightArrow</td>
+</tr>
+<tr>
+<td>Phím Control+home</td>
+<td>read+t</td>
+</tr>
+<tr>
+<td>Phím Control+end</td>
+<td>read+b</td>
+</tr>
+<tr>
+<td>Phím Enter</td>
+<td>enter</td>
+</tr>
+<tr>
+<td>Phím xóa lùi</td>
+<td>backspace</td>
+</tr>
+<tr>
+<td>Phím Tab</td>
+<td>tab</td>
+</tr>
+<tr>
+<td>Phím Shift+tab</td>
+<td>shift+tab</td>
+</tr>
+<tr>
+<td>Phím Windows</td>
+<td>read+w</td>
+</tr>
+<tr>
+<td>Phím Alt</td>
+<td>read+m</td>
+</tr>
+<tr>
+<td>Bật tắt trợ giúp nhập</td>
+<td>read+1</td>
+</tr>
+</tbody>
+</table>
+<p>Sau đây là các lệnh được gán cho bánh xe cuộn:</p>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phím mũi tên lên</td>
+<td>upArrow</td>
+</tr>
+<tr>
+<td>Phím mũi tên xuống</td>
+<td>downArrow</td>
+</tr>
+<tr>
+<td>Phím mũi tên trái</td>
+<td>leftArrow</td>
+</tr>
+<tr>
+<td>Phím mũi tên phải</td>
+<td>rightArrow</td>
+</tr>
+<tr>
+<td>Phím Enter</td>
+<td>centre button</td>
+</tr>
+<tr>
+<td>Phím Tab</td>
+<td>scroll wheel clockwise</td>
+</tr>
+<tr>
+<td>Phím Shift+tab</td>
+<td>scroll wheel counterclockwise</td>
+</tr>
+</tbody>
+</table>
+<h3 id="EcoBraille">EcoBraille</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn về trước</td>
+<td>T2</td>
+</tr>
+<tr>
+<td>Cuộn tới</td>
+<td>T4</td>
+</tr>
+<tr>
+<td>Chuyển về dòng trước</td>
+<td>T1</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng kế</td>
+<td>T5</td>
+</tr>
+<tr>
+<td>Rút về ô chữ nổi</td>
+<td>Routing</td>
+</tr>
+<tr>
+<td>Kích hoạt đối tượng điều hướng hiện tại</td>
+<td>T3</td>
+</tr>
+<tr>
+<td>Chuyển qua chế độ duyệt kế tiếp</td>
+<td>F1</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng cha</td>
+<td>F2</td>
+</tr>
+<tr>
+<td>Chuyển về chế độ duyệt trước đó</td>
+<td>F3</td>
+</tr>
+<tr>
+<td>Chuyển về đối tượng trước</td>
+<td>F4</td>
+</tr>
+<tr>
+<td>Thông báo đối tượng hiện tại</td>
+<td>F5</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng kế</td>
+<td>F6</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng có focus</td>
+<td>F7</td>
+</tr>
+<tr>
+<td>Chuyển đến đối tượng con thứ nhất</td>
+<td>F8</td>
+</tr>
+<tr>
+<td>Chuyển dấu nháy hoặc focus hệ thống đến vị trí duyệt hiện tại</td>
+<td>F9</td>
+</tr>
+<tr>
+<td>Thông báo vị trí con trỏ duyệt</td>
+<td>F0</td>
+</tr>
+<tr>
+<td>Bật/tắt con trỏ nổi đi theo</td>
+<td>A</td>
+</tr>
+</tbody>
+</table>
+<h3 id="SuperBraille">SuperBraille</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộc về trước</td>
+<td>numpadMinus</td>
+</tr>
+<tr>
+<td>Cuộn tới</td>
+<td>numpadPlus</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Eurobraille">Các màn hình Eurobraille</h3>
+<h4 id="EurobrailleBraille">Các chức năng bàn phím chữ nổi</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Xóa kí tự được nhập hay ô cuối cùng</td>
+<td><code>xóa lùi</code></td>
+</tr>
+<tr>
+<td>Dịch chữ nổi đã nhập và bấm phím enter</td>
+<td><code>xóa lùi+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>bật / tắt phím <code>NVDA</code></td>
+<td><code>chấm 3+chấm 5+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>insert</code></td>
+<td><code>chấm 1+chấm 3+chấm 5+khoảng trắng</code>, <code>chấm 3+chấm 4+chấm 5+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>delete</code></td>
+<td><code>chấm 3+chấm 6+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>home</code></td>
+<td><code>chấm 1+chấm 2+chấm 3+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>end</code></td>
+<td><code>chấm 4+chấm 5+chấm 6+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>mũi tên trái</code></td>
+<td><code>chấm 2+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>mũi tên phải</code></td>
+<td><code>chấm 5+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>mũi tên lên</code></td>
+<td><code>chấm 1+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>mũi tên xuống</code></td>
+<td><code>chấm 6+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>trang trước</code></td>
+<td><code>chấm 1+chấm 3+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>trang sau</code></td>
+<td><code>chấm 4+chấm 6+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>numpad1</code></td>
+<td><code>chấm 1+chấm 6+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>numpad2</code></td>
+<td><code>chấm 1+chấm 2+chấm 6+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>numpad3</code></td>
+<td><code>chấm 1+chấm 4+chấm 6+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>numpad4</code></td>
+<td><code>chấm 1+chấm 4+chấm 5+chấm 6+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>numpad5</code></td>
+<td><code>chấm 1+chấm 5+chấm 6+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>numpad6</code></td>
+<td><code>chấm 1+chấm 2+chấm 4+chấm 6+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>numpad7</code></td>
+<td><code>chấm 1+chấm 2+chấm 4+chấm 5+chấm 6+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>numpad8</code></td>
+<td><code>chấm 1+chấm 2+chấm 5+chấm 6+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>numpad9</code></td>
+<td><code>chấm 2+chấm 4+chấm 6+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>numpadInsert</code></td>
+<td><code>chấm 3+chấm 4+chấm 5+chấm 6+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>numpadDecimal</code></td>
+<td><code>chấm 2+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>numpadDivide</code></td>
+<td><code>chấm 3+chấm 4+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>numpadMultiply</code></td>
+<td><code>chấm 3+chấm 5+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>numpadMinus</code></td>
+<td><code>chấm 3+chấm 6+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>numpadPlus</code></td>
+<td><code>chấm 2+chấm 3+chấm 5+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>numpadEnter</code></td>
+<td><code>chấm 3+chấm 4+chấm 5+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>escape</code></td>
+<td><code>chấm 1+chấm 2+chấm 4+chấm 5+khoảng trắng</code>, <code>l2</code></td>
+</tr>
+<tr>
+<td>Phím <code>tab</code></td>
+<td><code>chấm 2+chấm 5+chấm 6+khoảng trắng</code>, <code>l3</code></td>
+</tr>
+<tr>
+<td>Phím <code>shift+tab</code></td>
+<td><code>chấm 2+chấm 3+chấm 5+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>printScreen</code></td>
+<td><code>chấm 1+chấm 3+chấm 4+chấm 6+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>pause</code></td>
+<td><code>chấm 1+chấm 4+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>applications</code></td>
+<td><code>chấm 5+chấm 6+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>f1</code></td>
+<td><code>chấm 1+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>f2</code></td>
+<td><code>chấm 1+chấm 2+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>f3</code></td>
+<td><code>chấm 1+chấm 4+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>f4</code></td>
+<td><code>chấm 1+chấm 4+chấm 5+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>f5</code></td>
+<td><code>chấm 1+chấm 5+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>f6</code></td>
+<td><code>chấm 1+chấm 2+chấm 4+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>f7</code></td>
+<td><code>chấm 1+chấm 2+chấm 4+chấm 5+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>f8</code></td>
+<td><code>chấm 1+chấm 2+chấm 5+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>f9</code></td>
+<td><code>chấm 2+chấm 4+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>f10</code></td>
+<td><code>chấm 2+chấm 4+chấm 5+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>f11</code></td>
+<td><code>chấm 1+chấm 3+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>f12</code></td>
+<td><code>chấm 1+chấm 2+chấm 3+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>windows</code></td>
+<td><code>chấm 1+chấm 2+chấm 4+chấm 5+chấm 6+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Bật / tắt phím  <code>windows</code></td>
+<td><code>chấm 1+chấm 2+chấm 3+chấm 4+xóa lùi</code>, <code>chấm 2+chấm 4+chấm 5+chấm 6+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>capsLock</code></td>
+<td><code>chấm 7+xóa lùi</code>, <code>chấm 8+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>numLock</code></td>
+<td><code>chấm 3+xóa lùi</code>, <code>chấm 6+xóa lùi</code></td>
+</tr>
+<tr>
+<td>Phím <code>shift</code></td>
+<td><code>chấm 7+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Bật / tắt phím <code>shift</code></td>
+<td><code>chấm 1+chấm 7+khoảng trắng</code>, <code>chấm 4+chấm 7+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>control</code></td>
+<td><code>chấm 7+chấm 8+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Bật / tắt phím <code>control</code></td>
+<td><code>chấm 1+chấm 7+chấm 8+khoảng trắng</code>, <code>chấm 4+chấm 7+chấm 8+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Phím <code>alt</code></td>
+<td><code>chấm 8+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Bật / tắt phím <code>alt</code></td>
+<td><code>chấm 1+chấm 8+khoảng trắng</code>, <code>chấm 4+chấm 8+khoảng trắng</code></td>
+</tr>
+<tr>
+<td>Bật / tắt mô phỏng bàn phím HID</td>
+<td><code>switch1Left+joystick1Down</code>, <code>switch1Right+joystick1Down</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="Eurobraillebbook">Phím lệnh cho b.book</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn màn hình chữ nổi về trước</td>
+<td><code>backward</code></td>
+</tr>
+<tr>
+<td>Cuộn màn hình chữ nổi về sau</td>
+<td><code>forward</code></td>
+</tr>
+<tr>
+<td>Chuyển đến focus hiện tại</td>
+<td><code>backward+forward</code></td>
+</tr>
+<tr>
+<td>Đưa về ô chữ nổi</td>
+<td><code>routing</code></td>
+</tr>
+<tr>
+<td>Phím <code>mũi tên trái</code></td>
+<td><code>joystick2Left</code></td>
+</tr>
+<tr>
+<td>Phím <code>mũi tên phải</code></td>
+<td><code>joystick2Right</code></td>
+</tr>
+<tr>
+<td>Phím <code>mũi tên lên</code></td>
+<td><code>joystick2Up</code></td>
+</tr>
+<tr>
+<td>Phím <code>mũi tên xuống</code></td>
+<td><code>joystick2Down</code></td>
+</tr>
+<tr>
+<td>Phím <code>enter</code></td>
+<td><code>joystick2Center</code></td>
+</tr>
+<tr>
+<td>Phím <code>escape</code></td>
+<td><code>c1</code></td>
+</tr>
+<tr>
+<td>Phím <code>tab</code> ke</td>
+<td><code>c2</code></td>
+</tr>
+<tr>
+<td>Bật / tắt phím <code>shift</code></td>
+<td><code>c3</code></td>
+</tr>
+<tr>
+<td>Bật / tắt phím  <code>control</code></td>
+<td><code>c4</code></td>
+</tr>
+<tr>
+<td>Bật / tắt phím <code>alt</code></td>
+<td><code>c5</code></td>
+</tr>
+<tr>
+<td>Bật / tắt phím <code>NVDA</code></td>
+<td><code>c6</code></td>
+</tr>
+<tr>
+<td>Phím <code>control+Home</code></td>
+<td><code>c1+c2+c3</code></td>
+</tr>
+<tr>
+<td>Phím <code>control+End</code></td>
+<td><code>c4+c5+c6</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="Eurobraillebnote">Phím lệnh cho b.note</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn màn hình chữ nổi về trước</td>
+<td><code>leftKeypadLeft</code></td>
+</tr>
+<tr>
+<td>Cuộn màn hình chữ nổi về sau</td>
+<td><code>leftKeypadRight</code></td>
+</tr>
+<tr>
+<td>Đưa về ô chữ nổi</td>
+<td><code>routing</code></td>
+</tr>
+<tr>
+<td>Thông báo định dạng văn bản dưới con trỏ nổi</td>
+<td><code>doubleRouting</code></td>
+</tr>
+<tr>
+<td>Chuyển đến dòng kế trong chế độ duyệt</td>
+<td><code>leftKeypadDown</code></td>
+</tr>
+<tr>
+<td>Chuyển đến chế độ duyệt trước</td>
+<td><code>leftKeypadLeft+leftKeypadUp</code></td>
+</tr>
+<tr>
+<td>Chuyển đến chế độ duyệt kế</td>
+<td><code>leftKeypadRight+leftKeypadDown</code></td>
+</tr>
+<tr>
+<td>Phím <code>mũi tên trái</code></td>
+<td><code>rightKeypadLeft</code></td>
+</tr>
+<tr>
+<td>Phím <code>mũi tên phải</code></td>
+<td><code>rightKeypadRight</code></td>
+</tr>
+<tr>
+<td>Phím <code>mũi tên lên</code></td>
+<td><code>rightKeypadUp</code></td>
+</tr>
+<tr>
+<td>Phím <code>mũi tên xuống</code></td>
+<td><code>rightKeypadDown</code></td>
+</tr>
+<tr>
+<td>Phím <code>control+home</code></td>
+<td><code>rightKeypadLeft+rightKeypadUp</code></td>
+</tr>
+<tr>
+<td>Phím <code>control+end</code></td>
+<td><code>rightKeypadLeft+rightKeypadUp</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="Eurobrailleesys">Phím lệnh cho Esys</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn màn hình chữ nổi về trước</td>
+<td><code>switch1Left</code></td>
+</tr>
+<tr>
+<td>Cuộn màn hình chữ nổi về sau</td>
+<td><code>switch1Right</code></td>
+</tr>
+<tr>
+<td>Chuyển đến focus hiện tại</td>
+<td><code>switch1Center</code></td>
+</tr>
+<tr>
+<td>Đưa về ô chữ nổi</td>
+<td><code>routing</code></td>
+</tr>
+<tr>
+<td>Thông báo định dạng văn bản dưới ô chữ nổi</td>
+<td><code>doubleRouting</code></td>
+</tr>
+<tr>
+<td>Chuyển đến dòng trước trong chế độ duyệt</td>
+<td><code>joystick1Up</code></td>
+</tr>
+<tr>
+<td>Chuyển đến dòng kế trong chế độ duyệt</td>
+<td><code>joystick1Down</code></td>
+</tr>
+<tr>
+<td>Chuyển đến kí tự trước trong chế độ duyệt</td>
+<td><code>joystick1Left</code></td>
+</tr>
+<tr>
+<td>Chuyển đến kí tự kế trong chế độ duyệt</td>
+<td><code>joystick1Right</code></td>
+</tr>
+<tr>
+<td>Phím <code>mũi tên trái</code></td>
+<td><code>joystick2Left</code></td>
+</tr>
+<tr>
+<td>Phím <code>mũi tên phải</code></td>
+<td><code>joystick2Right</code></td>
+</tr>
+<tr>
+<td>Phím <code>mũi tên lên</code></td>
+<td><code>joystick2Up</code></td>
+</tr>
+<tr>
+<td>Phím <code>mũi tên xuống</code></td>
+<td><code>joystick2Down</code></td>
+</tr>
+<tr>
+<td>Phím <code>enter</code></td>
+<td><code>joystick2Center</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="EurobrailleEsytime">Phím lệnh cho Esytime</h4>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn màn hình chữ nổi về trước</td>
+<td><code>l1</code></td>
+</tr>
+<tr>
+<td>Cuộn màn hình chữ nổi tới</td>
+<td><code>l8</code></td>
+</tr>
+<tr>
+<td>Chuyển đến focus hiện tại</td>
+<td><code>l1+l8</code></td>
+</tr>
+<tr>
+<td>Đưa đến ô chữ nổi</td>
+<td><code>routing</code></td>
+</tr>
+<tr>
+<td>Thông báo định dạng văn bản dưới con trỏ nổi</td>
+<td><code>doubleRouting</code></td>
+</tr>
+<tr>
+<td>Chuyển đến dòng trước trong chế độ duyệt</td>
+<td><code>joystick1Up</code></td>
+</tr>
+<tr>
+<td>Chuyển đến dòng kế trong chế độ duyệt</td>
+<td><code>joystick1Down</code></td>
+</tr>
+<tr>
+<td>Chuyển đến kí tự trước trong chế độ duyệt</td>
+<td><code>joystick1Left</code></td>
+</tr>
+<tr>
+<td>Chuyển đến kí tự kế trong chế độ duyệt</td>
+<td><code>joystick1Right</code></td>
+</tr>
+<tr>
+<td>Phím <code>mũi tên trái</code></td>
+<td><code>joystick2Left</code></td>
+</tr>
+<tr>
+<td>Phím <code>mũi tên phải</code></td>
+<td><code>joystick2Right</code></td>
+</tr>
+<tr>
+<td>Phím <code>mũi tên lên</code></td>
+<td><code>joystick2Up</code></td>
+</tr>
+<tr>
+<td>Phím <code>mũi tên xuống</code></td>
+<td><code>joystick2Down</code></td>
+</tr>
+<tr>
+<td>Phím <code>enter</code></td>
+<td><code>joystick2Center</code></td>
+</tr>
+<tr>
+<td>Phím <code>escape</code></td>
+<td><code>l2</code></td>
+</tr>
+<tr>
+<td>Phím <code>tab</code></td>
+<td><code>l3</code></td>
+</tr>
+<tr>
+<td>bật / tắt phím <code>shift</code></td>
+<td><code>l4</code></td>
+</tr>
+<tr>
+<td>Bật / tắt phím  <code>control</code></td>
+<td><code>l5</code></td>
+</tr>
+<tr>
+<td>Bật / tắt phím <code>alt</code></td>
+<td><code>l6</code></td>
+</tr>
+<tr>
+<td>Bật / tắt phím <code>NVDA</code></td>
+<td><code>l7</code></td>
+</tr>
+<tr>
+<td>Phím <code>control+home</code></td>
+<td><code>l1+l2+l3</code>, <code>l2+l3+l4</code></td>
+</tr>
+<tr>
+<td>Phím <code>control+end</code></td>
+<td><code>l6+l7+l8</code>, <code>l5+l6+l7</code></td>
+</tr>
+<tr>
+<td>bật / tắt mô phỏng bàn phím HID</td>
+<td><code>l1+joystick1Down</code>, <code>l8+joystick1Down</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="NattiqTechnologies">Các màn hình của Nattiq nBraille</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn màn hình về trước</td>
+<td>up</td>
+</tr>
+<tr>
+<td>Cuộn màn hình về sau</td>
+<td>down</td>
+</tr>
+<tr>
+<td>Chuyển về dòng trước</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng kế</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Đưa đến ô chữ nổi</td>
+<td>routing</td>
+</tr>
+</tbody>
+</table>
+<h3 id="BRLTTY">BRLTTY</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Lệnh BRLTTY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn về trước</td>
+<td><code>fwinlt</code> (về trái một cửa sổ)</td>
+</tr>
+<tr>
+<td>Cuộn tới</td>
+<td><code>fwinrt</code> (qua phải một cửa sổ)</td>
+</tr>
+<tr>
+<td>Chuyển về dòng trước</td>
+<td><code>lnup</code> (lên một dòng)</td>
+</tr>
+<tr>
+<td>Chuyển đến dòng kế</td>
+<td><code>lndn</code> (đi xuống một dòng)</td>
+</tr>
+<tr>
+<td>Rút về ô chữ nổi</td>
+<td><code>route</code> (đưa con trỏ về ký tự hiện tại)</td>
+</tr>
+<tr>
+<td>Bật / tắt trợ giúp nhập</td>
+<td><code>learn</code> (bật / tắt chế độ trợ giúp nhập)</td>
+</tr>
+<tr>
+<td>Mở trình đơn NVDA</td>
+<td><code>prefmenu</code> (tắt / mởtrình đơn tùy chỉnh)</td>
+</tr>
+<tr>
+<td>Phục hồi cấu hình</td>
+<td><code>prefload</code> (phục hồi tùy chỉnh từ ổ đĩa)</td>
+</tr>
+<tr>
+<td>Lưu cấu hình</td>
+<td><code>prefsave</code> (lưu tùy chỉnh xuống đĩa)</td>
+</tr>
+<tr>
+<td>Thông báo thời gian</td>
+<td><code>time</code> (hiển thị ngày giờ hiện tại)</td>
+</tr>
+<tr>
+<td>Đọc dòng tại vị trí con trỏ duyệt</td>
+<td><code>say_line</code> (đọc dòng hiện tại)</td>
+</tr>
+<tr>
+<td>Đọc tất cả bằn con trỏ duyệt</td>
+<td><code>say_below</code> (đọc từ dòng hiện tại về cuối màn hình)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Albatross">Tivomatic Caiku Albatross 46/80</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chuyển về dòng đầu trong chế độ duyệt tài liệu</td>
+<td><code>home1</code>, <code>home2</code></td>
+</tr>
+<tr>
+<td>Chuyển về dòng cuối trong chế độ duyệt tài liệu</td>
+<td><code>end1</code>, <code>end2</code></td>
+</tr>
+<tr>
+<td>Đưa đối tượng điều hướng đến tiêu điểm hiện tại</td>
+<td><code>eCursor1</code>, <code>eCursor2</code></td>
+</tr>
+<tr>
+<td>Chuyển đến tiêu điểm hiện tại</td>
+<td><code>cursor1</code>, <code>cursor2</code></td>
+</tr>
+<tr>
+<td>Di chuyển chuột đến đối tượng điều hướng hiện tại</td>
+<td><code>home1+home2</code></td>
+</tr>
+<tr>
+<td>Đưa đối tượng điều hướng đến đối tượng hiện có dưới vị trí chuột và đọc nó lên</td>
+<td><code>end1+end2</code></td>
+</tr>
+<tr>
+<td>Đưa tiêu điểm đến đối tượng điều hướng hiện tại</td>
+<td><code>eCursor1+eCursor2</code></td>
+</tr>
+<tr>
+<td>Bật / tắt con trỏ nổi đi theo</td>
+<td><code>cursor1+cursor2</code></td>
+</tr>
+<tr>
+<td>Chuyển màn hình chữ nổi về dòng trước</td>
+<td><code>up1</code>, <code>up2</code>, <code>up3</code></td>
+</tr>
+<tr>
+<td>Chuyển màn hình chữ nổi về dòng kế</td>
+<td><code>down1</code>, <code>down2</code>, <code>down3</code></td>
+</tr>
+<tr>
+<td>Cuộn màn hình chữ nổi về trước</td>
+<td><code>left</code>, <code>lWheelLeft</code>, <code>rWheelLeft</code></td>
+</tr>
+<tr>
+<td>Cuộn màn hình chữ nổi về sau</td>
+<td><code>right</code>, <code>lWheelRight</code>, <code>rWheelRight</code></td>
+</tr>
+<tr>
+<td>Đưa đến ô chữ nổi</td>
+<td><code>routing</code></td>
+</tr>
+<tr>
+<td>Thông báo định dạng văn bản dưới ô chữ nổi</td>
+<td><code>secondary routing</code></td>
+</tr>
+<tr>
+<td>Bật / tắt thông tin ngữ cảnh được trình bày trong chữ nổi</td>
+<td><code>attribute1+attribute3</code></td>
+</tr>
+<tr>
+<td>Chuyển giữa các chế độ đọc</td>
+<td><code>attribute2+attribute4</code></td>
+</tr>
+<tr>
+<td>Chuyển đến chế độ duyệt tài liệu trước (duyệt theo đối tượng, duyệt tài liệu hay duyệt màn hình)</td>
+<td><code>f1</code></td>
+</tr>
+<tr>
+<td>Chuyển đến chế độ duyệt tài liệu kế (duyệt theo đối tượng, duyệt tài liệu hay duyệt màn hình</td>
+<td><code>f2</code></td>
+</tr>
+<tr>
+<td>Chuyển đối tượng điều hướng đến đối tượng chứa nó</td>
+<td><code>f3</code></td>
+</tr>
+<tr>
+<td>Chuyển đối tượng điều hướng đến đối tượng đầu tiên bên trong nó</td>
+<td><code>f4</code></td>
+</tr>
+<tr>
+<td>Chuyển đối tượng điều hướng đến đối tượng trước</td>
+<td><code>f5</code></td>
+</tr>
+<tr>
+<td>Chuyển đối tượng điều hướng đến đối tượng kế</td>
+<td><code>f6</code></td>
+</tr>
+<tr>
+<td>Thông báo đối tượng điều hướng hiện tại</td>
+<td><code>f7</code></td>
+</tr>
+<tr>
+<td>Báo thông tin về vị trí của văn bản hay đối tượng tại con trỏ duyệt</td>
+<td><code>f8</code></td>
+</tr>
+<tr>
+<td>Hiện cài đặt chữ nổi</td>
+<td><code>f1+home1</code>, <code>f9+home2</code></td>
+</tr>
+<tr>
+<td>Đọc thanh trạng thái và chuyển đối tượng điều hướng vào trong nó</td>
+<td><code>f1+end1</code>, <code>f9+end2</code></td>
+</tr>
+<tr>
+<td>Chuyển đổi giữa các hình dạng con trỏ nổi</td>
+<td><code>f1+eCursor1</code>, <code>f9+eCursor2</code></td>
+</tr>
+<tr>
+<td>Bật / tắt con trỏ nổi</td>
+<td><code>f1+cursor1</code>, <code>f9+cursor2</code></td>
+</tr>
+<tr>
+<td>Chuyển qua các chế độ hiển thị thông điệp chữ nổi</td>
+<td><code>f1+f2</code>, <code>f9+f10</code></td>
+</tr>
+<tr>
+<td>Chuyển đến các chế độ hiển thị trạng thái vùng chọn</td>
+<td><code>f1+f5</code>, <code>f9+f14</code></td>
+</tr>
+<tr>
+<td>Chuyển đến các chế độ "di chuyển dấu nháy hệ thống chữ nổi khi định tuyến con trỏ duyệt" states</td>
+<td><code>f1+f3</code>, <code>f9+f11</code></td>
+</tr>
+<tr>
+<td>Thực hiện hành động mặc định trên đối tượng điều hướng hiện tại</td>
+<td><code>f7+f8</code></td>
+</tr>
+<tr>
+<td>Thông báo ngày / giờ</td>
+<td><code>f9</code></td>
+</tr>
+<tr>
+<td>Thông báo trạng thái pin và thời gian còn lại nếu không cắm nguồn</td>
+<td><code>f10</code></td>
+</tr>
+<tr>
+<td>Thông báo tiêu đề</td>
+<td><code>f11</code></td>
+</tr>
+<tr>
+<td>Thông báo thanh trạng thái</td>
+<td><code>f12</code></td>
+</tr>
+<tr>
+<td>Thông báo dòng hiện tại dưới con trỏ của ứng dụng</td>
+<td><code>f13</code></td>
+</tr>
+<tr>
+<td>Đọc tất cả</td>
+<td><code>f14</code></td>
+</tr>
+<tr>
+<td>Thông báo kí tự hiện tại dưới con trỏ duyệt</td>
+<td><code>f15</code></td>
+</tr>
+<tr>
+<td>Thông báo dòng ở đối tượng điều hướng hiện tại của con trỏ duyệt</td>
+<td><code>f16</code></td>
+</tr>
+<tr>
+<td>Đọc từ của đối tượng điều hướng hiện tại ở vị trí con trỏ duyệt</td>
+<td><code>f15+f16</code></td>
+</tr>
+<tr>
+<td>Chuyển con trỏ duyệt đến dòng trước của đối tượng điều hướng hiện tại và đọc nó lên</td>
+<td><code>lWheelUp</code>, <code>rWheelUp</code></td>
+</tr>
+<tr>
+<td>Chuyển con trỏ duyệt đến dòng kế của đối tượng điều hướng hiện tại và đọc nó lên</td>
+<td><code>lWheelDown</code>, <code>rWheelDown</code></td>
+</tr>
+<tr>
+<td>Phím <code>Windows+d</code> (thu nhỏ tất cả các ứng dụng)</td>
+<td><code>attribute1</code></td>
+</tr>
+<tr>
+<td>Phím <code>Windows+e</code> (this computer)</td>
+<td><code>attribute2</code></td>
+</tr>
+<tr>
+<td>Phím <code>Windows+b</code> (đi đến khay hệ thống)</td>
+<td><code>attribute3</code></td>
+</tr>
+<tr>
+<td>Phím <code>Windows+i</code> (Windows settings)</td>
+<td><code>attribute4</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Zoomax">NLS eReader Zoomax</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Key</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scroll braille display back</td>
+<td><code>d2</code></td>
+</tr>
+<tr>
+<td>Scroll braille display forward</td>
+<td><code>d5</code></td>
+</tr>
+<tr>
+<td>Move braille display to previous line</td>
+<td><code>d1</code></td>
+</tr>
+<tr>
+<td>Move braille display to next line</td>
+<td><code>d3</code></td>
+</tr>
+<tr>
+<td>Route to braille cell</td>
+<td><code>routing</code></td>
+</tr>
+<tr>
+<td>Up arrow key</td>
+<td><code>up</code></td>
+</tr>
+<tr>
+<td>Down arrow key</td>
+<td><code>down</code></td>
+</tr>
+<tr>
+<td>Left arrow key</td>
+<td><code>left</code></td>
+</tr>
+<tr>
+<td>Right arrow key</td>
+<td><code>right</code></td>
+</tr>
+<tr>
+<td>Enter key</td>
+<td><code>select</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="HIDBraille">Các màn hình chữ nổi tiêu chuẩn</h3>
+<table>
+<thead>
+<tr>
+<th>Tên</th>
+<th>Phím</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuộn màn hình chữ nổi về trước</td>
+<td>pan left hoặc rocker up</td>
+</tr>
+<tr>
+<td>Cuộn màn hình chữ nổi về sau</td>
+<td>pan right hoặc rocker down</td>
+</tr>
+<tr>
+<td>Đưa về ô chữ nổi</td>
+<td>routing set 1</td>
+</tr>
+<tr>
+<td>Bật / tắt chữ nổi đi theo</td>
+<td>lên+xuống</td>
+</tr>
+<tr>
+<td>phím mũi tên lên</td>
+<td>joystick up, dpad up or space+dot1</td>
+</tr>
+<tr>
+<td>phím mũi tên xuống</td>
+<td>joystick down, dpad down or space+dot4</td>
+</tr>
+<tr>
+<td>leftArrow key</td>
+<td>space+dot3, joystick left or dpad left</td>
+</tr>
+<tr>
+<td>phím mũi tên phải</td>
+<td>space+dot6, joystick right or dpad right</td>
+</tr>
+<tr>
+<td>phím shift+tab</td>
+<td>khoảng trắng+chấm 1+chấm 3</td>
+</tr>
+<tr>
+<td>phím tab</td>
+<td>khoảng trắng+chấm 4+chấm 6</td>
+</tr>
+<tr>
+<td>phím alt</td>
+<td>khoảng trắng+chấm 1+chấm 3+chấm 4 (khoảng trắng+m)</td>
+</tr>
+<tr>
+<td>phím escape</td>
+<td>khoảng trắng+chấm 1+chấm 5 (khoảng trắng+e)</td>
+</tr>
+<tr>
+<td>phím enter</td>
+<td>dot8, joystick center or dpad center</td>
+</tr>
+<tr>
+<td>phím windows</td>
+<td>khoảng trắng+chấm 3+chấm 4</td>
+</tr>
+<tr>
+<td>phím alt+tab</td>
+<td>khoảng trắng+chấm 2+chấm 3+chấm 4+chấm 5 (khoảng trắng+t)</td>
+</tr>
+<tr>
+<td>Trình đơn NVDA</td>
+<td>khoảng trắng+chấm 1+chấm 3+chấm 4+chấm 5 (khoảng trắng+n)</td>
+</tr>
+<tr>
+<td>phím windows+d (thu nhỏ toàn bộ ứng dụng)</td>
+<td>khoảng trắng+chấm 1+chấm 4+chấm 5 (khoảng trắng+d)</td>
+</tr>
+<tr>
+<td>Đọc tất cả</td>
+<td>khoảng trắng+chấm 1+chấm 2+chấm 3+chấm 4+chấm 5+chấm 6</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dotPad">Dot Pad</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Key</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scroll braille display back</td>
+<td><code>pan_left</code></td>
+</tr>
+<tr>
+<td>Scroll braille display forward</td>
+<td><code>pan_right</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,4180 @@
+﻿symbols:
+_	low line	none
+،	arabic comma	none
+؛	arabic semicolon	none
+؟	arabic question mark	none
+.	period	none
+。	ideographic period	none
+'	typewriter apostrophe	none
+【	open black lens bracket	none
+】	close black lens bracket	none
+〖	open hollow lens bracket	none
+〗	close hollow lens bracket	none
+@	at-sign	none
+%	percent	none
+†	dagger sign	none
+‡	double dagger sign	none
+↚	leftwards arrow stroke	none
+↛	rightwards arrow stroke	none
+↞	leftwards two headed arrow	none
+↟	upwards two headed arrow	none
+↠	rightwards two headed arrow	none
+↡	downwards two headed arrow	none
+↢	leftwards arrow tail	none
+↣	rightwards arrow tail	none
+↨	up down arrow with base	none
+↫	leftwards arrow loop	none
+↬	rightwards arrow loop	none
+↭	left right wave arrow	none
+↰	upwards arrow tip leftwards	none
+↱	upwards arrow tip rightwards	none
+↲	downwards arrow tip leftwards	none
+↳	downwards arrow tip rightwards	none
+↴	rightwards arrow corner downwards	none
+↵	downwards arrow corner leftwards	none
+↶	anticlockwise top semicircle arrow	none
+↷	clockwise top semicircle arrow	none
+↸	north west arrow long bar	none
+↺	anticlockwise open circle arrow	none
+↻	clockwise open circle arrow	none
+↼	leftwards harpoon barb upwards	none
+↽	leftwards harpoon barb downwards	none
+↾	upwards harpoon barb rightwards	none
+↿	upwards harpoon barb leftwards	none
+⇀	rightwards harpoon barb upwards	none
+⇁	rightwards harpoon barb downwards	none
+⇂	downwards harpoon barb rightwards	none
+⇃	downwards harpoon barb leftwards	none
+⇍	leftwards double arrow stroke	none
+⇏	rightwards double arrow stroke	none
+⇔	left right double arrow	none
+⇎	left right double arrow stroke	none
+⇖	north west double arrow	none
+⇗	north east double arrow	none
+⇘	south east double arrow	none
+⇙	south west double arrow	none
+⇞	upwards arrow double stroke	none
+⇟	downwards arrow double stroke	none
+⇤	leftwards arrow bar	none
+⇥	rightwards arrow bar	none
+⇵	downwards arrow leftwards upwards arrow	none
+∎	end proof	none
+∝	proportional	none
+∥	parallel	none
+≃	asymptotically equal	none
+≅	approximately equal	none
+≌	all equal	none
+≣	strictly equivalent	none
+≳	greater-than equivalent	none
+⊃	superset	none
+⊆	subset equal	none
+⊇	superset equal	none
+⋭	does not contain as normal subgroup equal	none
+⊶	original	none
+⋰	up right diagonal ellipsis	none
+⋱	down right diagonal ellipsis	none
+▦	square orthogonal crosshatch fill	none
+▧	square upper left lower right fill	none
+▨	square upper right lower left fill	none
+▩	square diagonal crosshatch fill	none
+◐	circle left half filled	none
+◑	circle right half filled	none
+◒	circle lower half filled	none
+◓	circle upper half filled	none
+◔	circle upper right quadrant filled	none
+◕	circle all but upper left quadrant filled	none
+◜	upper left quadrant circular arc	none
+◝	upper right quadrant circular arc	none
+◞	lower right quadrant circular arc	none
+◟	lower left quadrant circular arc	none
+◢	filled lower right triangle	none
+◣	filled lower left triangle	none
+◤	filled upper left triangle	none
+◥	filled upper right triangle	none
+◳	hollow square upper right quadrant	none
+◷	hollow circle with upper right quadrant	none
+◿	lower right triangle	none
+♪	eighth note	none
+⨧	plus subscript two	none
+⨯	vector cross product	none
+⩣	logical or double underbar	none
+⩽	less-than slanted equal	none
+⪍	less-than above similar equal	none
+⪚	double-line equal greater-than	none
+😋	face savoring food	none
+🤐	zipper-mouth face	none
+🤶	Mrs. Claus	none
+🧑‍🦯	person with white cane	none
+👨‍🦯	man with white cane	none
+👩‍🦯	woman with white cane	none
+🧑‍🦼	person in motorized wheelchair	none
+👨‍🦼	man in motorized wheelchair	none
+👩‍🦼	woman in motorized wheelchair	none
+🐦‍⬛	black bird	none
+🫑	bell pepper	none
+🫚	ginger root	none
+🥫	canned food	none
+🧉	mate	none
+🗻	mount fuji	none
+🛕	hindu temple	none
+🕋	kaaba	none
+🦼	motorized wheelchair	none
+🛟	ring buoy	none
+⚽	soccer ball	none
+🏓	ping pong	none
+🛷	sled	none
+🪆	nesting dolls	none
+👔	necktie	none
+🩴	thong sandal	none
+📯	postal horn	none
+🪘	long drum	none
+🦯	white cane	none
+🩹	adhesive bandage	none
+🛗	elevator	none
+🛁	bathtub	none
+🪤	mouse trap	none
+🚻	restroom	none
+↮	left right arrow stroke	none
+🔄	counterclockwise arrows button	none
+✡	star of David	none
+✝	latin cross	none
+☦	orthodox cross	none
+✅	check mark button	none
+☑	check box with check	none
+✔	check mark	none
+₣	french franc	none
+₰	german penny	none
+₹	indian rupee	none
+₽	ruble	none
+{	open curly bracket	none
+🏻	light skin tone	none
+🏼	medium-light skin tone	none
+🏽	medium skin tone	none
+🏾	medium-dark skin tone	none
+🏿	dark skin tone	none
+‾	overline	none
+-	hyphen-minus	none
+‐	hyphen	none
+–	en dash	none
+—	em dash	none
+―	horizontal bar	none
+・	katakana middle dot	none
+,	comma	none
+、	ideographic comma	none
+;	semicolon	none
+:	colon	none
+!	exclamation mark	none
+¡	inverted exclamation mark	none
+?	question mark	none
+¿	inverted question mark	none
+‽	interrobang	none
+…	ellipsis	none
+·	middle dot	none
+‘	left apostrophe	none
+’	right apostrophe	none
+‚	low right apostrophe	none
+“	left quotation mark	none
+”	right quotation mark	none
+„	low right quotation mark	none
+«	left guillemet	none
+»	right guillemet	none
+)	close parenthesis	none
+[	open square bracket	none
+]	close square bracket	none
+}	close curly bracket	none
+〈	open angle bracket	none
+〉	close angle bracket	none
+《	open double angle bracket	none
+》	close double angle bracket	none
+「	open corner bracket	none
+」	close corner bracket	none
+『	open hollow corner bracket	none
+』	close hollow corner bracket	none
+〔	open tortoise shell bracket	none
+〕	close tortoise shell bracket	none
+§	section	none
+¶	paragraph mark	none
+*	asterisk	none
+/	slash	none
+\	backslash	none
+&	ampersand	none
+#	hash sign	none
+‰	per mille	none
+•	bullet	none
+‧	hyphenation point	none
+′	prime	none
+″	double prime	none
+‴	triple prime	none
+‸	caret	none
+※	reference mark	none
+⁂	asterism	none
+`	grave accent	none
+´	acute accent	none
+^	circumflex accent	none
+¨	diaeresis	none
+°	degree	none
+℗	sound recording copyright	none
+←	left-pointing arrow	none
+→	right-pointing arrow	none
+↑	up-pointing arrow	none
+↓	down-pointing arrow	none
+↜	leftwards wave arrow	none
+↝	rightwards wave arrow	none
+↤	leftwards arrow from bar	none
+↥	upwards arrow from bar	none
+↦	rightwards arrow from bar	none
+↧	downwards arrow from bar	none
+↯	downwards zigzag arrow	none
+↹	leftwards over rightwards arrow bars	none
+⇄	rightwards arrow over leftwards arrow	none
+⇅	up-pointing and down-pointing arrows	none
+⇆	left-pointing over right-pointing arrows	none
+⇇	leftwards paired arrows	none
+⇈	upwards paired arrows	none
+⇉	rightwards paired arrows	none
+⇊	downwards paired arrows	none
+⇋	leftwards harpoon over rightwards harpoon	none
+⇌	rightwards harpoon over leftwards harpoon	none
+⇐	leftwards double arrow	none
+⇑	upwards double arrow	none
+⇒	rightwards double arrow	none
+⇓	downwards double arrow	none
+⇚	leftwards triple arrow	none
+⇛	rightwards triple arrow	none
+⇜	leftwards squiggle arrow	none
+⇝	rightwards squiggle arrow	none
+⇠	leftwards dashed arrow	none
+⇡	upwards dashed arrow	none
+⇢	rightwards dashed arrow	none
+⇣	downwards dashed arrow	none
+⇦	leftwards hollow arrow	none
+⇧	upwards hollow arrow	none
+⇨	rightwards hollow arrow	none
+⇩	downwards hollow arrow	none
+⇪	upwards hollow arrow from bar	none
+∀	for all	none
+∂	partial differential	none
+∃	there exists	none
+∅	empty set	none
+∆	increment	none
+∇	nabla	none
+∈	element of	none
+∉	not an element	none
+∋	contains as member	none
+∏	n-ary product	none
+∑	n-ary summation	none
++	plus sign	none
+±	plus-minus	none
+÷	division sign	none
+×	multiplication sign	none
+<	less-than	none
+≮	not less-than	none
+=	equal	none
+≠	not equal	none
+>	greater-than	none
+≯	not greater-than	none
+¬	negation	none
+|	vertical line	none
+~	tilde	none
+−	minus sign	none
+⁻	superscript minus	none
+∓	minus-or-plus	none
+∕	division slash	none
+⁄	fraction slash	none
+∗	asterisk operator	none
+∘	ring operator	none
+∙	bullet operator	none
+√	square root	none
+∞	infinity sign	none
+∟	right angle	none
+∠	angle	none
+∣	divides	none
+∧	logical and	none
+∩	intersection	none
+∪	union	none
+∫	integral	none
+∬	double integral	none
+∮	contour integral	none
+∴	therefore	none
+∵	because	none
+∶	ratio	none
+∷	proportion	none
+∼	tilde operator	none
+∽	reversed tilde	none
+∾	inverted lazy s	none
+≈	almost equal	none
+≒	approximately equal the image	none
+≖	ring in equal	none
+≡	identical to	none
+≤	less-than or equal	none
+≥	greater-than or equal	none
+≦	less-than over equal	none
+≧	greater-than over equal	none
+≪	much less-than	none
+≫	much greater-than	none
+≬	between	none
+≺	precedes	none
+≻	succeeds	none
+⊁	does not succeed	none
+⊂	subset of	none
+⊕	circled plus	none
+⊖	circled minus	none
+⊗	circled times	none
+⊘	circled division slash	none
+⊙	circled dot operator	none
+⊚	circled ring operator	none
+⊛	circled asterisk operator	none
+⊞	squared plus	none
+⊟	squared minus	none
+⊥	up tack	none
+⊮	does not force	none
+⊰	precedes under relation	none
+⊱	succeeds under relation	none
+⊹	hermitian conjugate matrix	none
+⊿	right triangle	none
+⋁	n-ary logical or	none
+⋂	n-ary intersection	none
+⋃	n-ary union	none
+⋅	dot operator	none
+⋆	star operator	none
+⋈	natural join	none
+⋒	double intersection	none
+⋘	very much less-than	none
+⋙	very much greater-than	none
+⋮	vertical ellipsis	none
+⋯	midline horizontal ellipsis	none
+■	filled square	none
+□	hollow square	none
+▢	hollow square with rounded corners	none
+▣	hollow square containing filled square	none
+▤	square with horizontal fill	none
+▥	square with vertical fill	none
+▬	filled rectangle	none
+▭	hollow rectangle	none
+▮	filled vertical rectangle	none
+▰	filled parallelogram	none
+▲	filled up-pointing triangle	none
+△	hollow up-pointing triangle	none
+▴	filled up-pointing small triangle	none
+▵	hollow up-pointing small triangle	none
+▷	hollow right-pointing triangle	none
+▸	filled right-pointing small triangle	none
+▹	hollow right-pointing small triangle	none
+►	filled right-pointing pointer	none
+▻	hollow right-pointing pointer	none
+▼	filled down-pointing triangle	none
+▽	hollow down-pointing triangle	none
+▾	filled down-pointing small triangle	none
+▿	hollow down-pointing small triangle	none
+◁	hollow left-pointing triangle	none
+◂	filled left-pointing small triangle	none
+◃	hollow left-pointing small triangle	none
+◄	filled left-pointing pointer	none
+◅	hollow left-pointing pointer	none
+◆	filled diamond	none
+◇	hollow diamond	none
+◈	hollow diamond containing filled diamond	none
+◉	hollow circle containing filled circle	none
+◊	lozenge	none
+○	hollow circle	none
+◌	dotted circle	none
+◍	circle with vertical fill	none
+◎	concentric circles	none
+●	filled circle	none
+◖	left half filled circle	none
+◗	right half filled circle	none
+◘	inverse bullet	none
+◙	filled square containing hollow circle	none
+◠	upper half circle	none
+◡	lower half circle	none
+◦	hollow bullet	none
+◯	large hollow circle	none
+⨼	interior product	none
+⪺	succeeds above not almost equal	none
+♭	flat	none
+♯	sharp	none
+😀	grinning face	none
+😃	grinning face with big eyes	none
+😄	grinning face with smiling eyes	none
+😁	beaming face with smiling eyes	none
+😆	grinning squinting face	none
+😅	grinning face with sweat	none
+🤣	rolling on the floor laughing	none
+😂	face with tears of joy	none
+🙂	slightly smiling face	none
+🙃	upside-down face	none
+🫠	melting face	none
+😉	winking face	none
+😊	smiling face with smiling eyes	none
+😇	smiling face with halo	none
+🥰	smiling face with hearts	none
+😍	smiling face with heart-eyes	none
+🤩	star-struck	none
+😘	face blowing a kiss	none
+😗	kissing face	none
+☺	smiling face	none
+😚	kissing face with closed eyes	none
+😙	kissing face with smiling eyes	none
+🥲	smiling face with tear	none
+😛	face with tongue	none
+😜	winking face with tongue	none
+🤪	zany face	none
+😝	squinting face with tongue	none
+🤑	money-mouth face	none
+🤗	smiling face with open hands	none
+🤭	face with hand over mouth	none
+🫢	face with open eyes and hand over mouth	none
+🫣	face with peeking eye	none
+🤫	shushing face	none
+🤔	thinking face	none
+🫡	saluting face	none
+🤨	face with raised eyebrow	none
+😐	neutral face	none
+😑	expressionless face	none
+😶	face without mouth	none
+🫥	dotted line face	none
+😶‍🌫	face in clouds	none
+😏	smirking face	none
+😒	unamused face	none
+🙄	face with rolling eyes	none
+😬	grimacing face	none
+😮‍💨	face exhaling	none
+🤥	lying face	none
+🫨	shaking face	none
+🙂‍↔	head shaking horizontally	none
+🙂‍↕	head shaking vertically	none
+😌	relieved face	none
+😔	pensive face	none
+😪	sleepy face	none
+🤤	drooling face	none
+😴	sleeping face	none
+🫩	face with bags under eyes	none
+😷	face with medical mask	none
+🤒	face with thermometer	none
+🤕	face with head-bandage	none
+🤢	nauseated face	none
+🤮	face vomiting	none
+🤧	sneezing face	none
+🥵	hot face	none
+🥶	cold face	none
+🥴	woozy face	none
+😵	face with crossed-out eyes	none
+😵‍💫	face with spiral eyes	none
+🤯	exploding head	none
+🤠	cowboy hat face	none
+🥳	partying face	none
+🥸	disguised face	none
+😎	smiling face with sunglasses	none
+🤓	nerd face	none
+🧐	face with monocle	none
+😕	confused face	none
+🫤	face with diagonal mouth	none
+😟	worried face	none
+🙁	slightly frowning face	none
+☹	frowning face	none
+😮	face with open mouth	none
+😯	hushed face	none
+😲	astonished face	none
+😳	flushed face	none
+🥺	pleading face	none
+🥹	face holding back tears	none
+😦	frowning face with open mouth	none
+😧	anguished face	none
+😨	fearful face	none
+😰	anxious face with sweat	none
+😥	sad but relieved face	none
+😢	crying face	none
+😭	loudly crying face	none
+😱	face screaming in fear	none
+😖	confounded face	none
+😣	persevering face	none
+😞	disappointed face	none
+😓	downcast face with sweat	none
+😩	weary face	none
+😫	tired face	none
+🥱	yawning face	none
+😤	face with steam from nose	none
+😡	enraged face	none
+😠	angry face	none
+🤬	face with symbols on mouth	none
+😈	smiling face with horns	none
+👿	angry face with horns	none
+💀	skull	none
+☠	skull and crossbones	none
+💩	pile of poo	none
+🤡	clown face	none
+👹	ogre	none
+👺	goblin	none
+👻	ghost	none
+👽	alien	none
+👾	alien monster	none
+🤖	robot	none
+😺	grinning cat	none
+😸	grinning cat with smiling eyes	none
+😹	cat with tears of joy	none
+😻	smiling cat with heart-eyes	none
+😼	cat with wry smile	none
+😽	kissing cat	none
+🙀	weary cat	none
+😿	crying cat	none
+😾	pouting cat	none
+🙈	see-no-evil monkey	none
+🙉	hear-no-evil monkey	none
+🙊	speak-no-evil monkey	none
+💌	love letter	none
+💘	heart with arrow	none
+💝	heart with ribbon	none
+💖	sparkling heart	none
+💗	growing heart	none
+💓	beating heart	none
+💞	revolving hearts	none
+💕	two hearts	none
+💟	heart decoration	none
+❣	heart exclamation	none
+💔	broken heart	none
+❤‍🔥	heart on fire	none
+❤‍🩹	mending heart	none
+❤	red heart	none
+🩷	pink heart	none
+🧡	orange heart	none
+💛	yellow heart	none
+💚	green heart	none
+💙	blue heart	none
+🩵	light blue heart	none
+💜	purple heart	none
+🤎	brown heart	none
+🖤	black heart	none
+🩶	grey heart	none
+🤍	white heart	none
+💋	kiss mark	none
+💯	hundred points	none
+💢	anger symbol	none
+💥	collision	none
+💫	dizzy	none
+💦	sweat droplets	none
+💨	dashing away	none
+🕳	hole	none
+💬	speech balloon	none
+👁‍🗨	eye in speech bubble	none
+🗨	left speech bubble	none
+🗯	right anger bubble	none
+💭	thought balloon	none
+💤	ZZZ	none
+👋	waving hand	none
+🤚	raised back of hand	none
+🖐	hand with fingers splayed	none
+✋	raised hand	none
+🖖	vulcan salute	none
+🫱	rightwards hand	none
+🫲	leftwards hand	none
+🫳	palm down hand	none
+🫴	palm up hand	none
+🫷	leftwards pushing hand	none
+🫸	rightwards pushing hand	none
+👌	OK hand	none
+🤌	pinched fingers	none
+🤏	pinching hand	none
+✌	victory hand	none
+🤞	crossed fingers	none
+🫰	hand with index finger and thumb crossed	none
+🤟	love-you gesture	none
+🤘	sign of the horns	none
+🤙	call me hand	none
+👈	backhand index pointing left	none
+👉	backhand index pointing right	none
+👆	backhand index pointing up	none
+🖕	middle finger	none
+👇	backhand index pointing down	none
+☝	index pointing up	none
+🫵	index pointing at the viewer	none
+👍	thumbs up	none
+👎	thumbs down	none
+✊	raised fist	none
+👊	oncoming fist	none
+🤛	left-facing fist	none
+🤜	right-facing fist	none
+👏	clapping hands	none
+🙌	raising hands	none
+🫶	heart hands	none
+👐	open hands	none
+🤲	palms up together	none
+🤝	handshake	none
+🙏	folded hands	none
+✍	writing hand	none
+💅	nail polish	none
+🤳	selfie	none
+💪	flexed biceps	none
+🦾	mechanical arm	none
+🦿	mechanical leg	none
+🦵	leg	none
+🦶	foot	none
+👂	ear	none
+🦻	ear with hearing aid	none
+👃	nose	none
+🧠	brain	none
+🫀	anatomical heart	none
+🫁	lungs	none
+🦷	tooth	none
+🦴	bone	none
+👀	eyes	none
+👁	eye	none
+👅	tongue	none
+👄	mouth	none
+🫦	biting lip	none
+👶	baby	none
+🧒	child	none
+👦	boy	none
+👧	girl	none
+🧑	person	none
+👱	person blond hair	none
+👨	man	none
+🧔	person beard	none
+🧔‍♂	man beard	none
+👱‍♂	man blond hair	none
+👩	woman	none
+🧔‍♀	woman beard	none
+👱‍♀	woman blond hair	none
+🧓	older person	none
+👴	old man	none
+👵	old woman	none
+🙍	person frowning	none
+🙍‍♂	man frowning	none
+🙍‍♀	woman frowning	none
+🙎	person pouting	none
+🙎‍♂	man pouting	none
+🙎‍♀	woman pouting	none
+🙅	person gesturing NO	none
+🙅‍♂	man gesturing NO	none
+🙅‍♀	woman gesturing NO	none
+🙆	person gesturing OK	none
+🙆‍♂	man gesturing OK	none
+🙆‍♀	woman gesturing OK	none
+💁	person tipping hand	none
+💁‍♂	man tipping hand	none
+💁‍♀	woman tipping hand	none
+🙋	person raising hand	none
+🙋‍♂	man raising hand	none
+🙋‍♀	woman raising hand	none
+🧏	deaf person	none
+🧏‍♂	deaf man	none
+🧏‍♀	deaf woman	none
+🙇	person bowing	none
+🙇‍♂	man bowing	none
+🙇‍♀	woman bowing	none
+🤦	person facepalming	none
+🤦‍♂	man facepalming	none
+🤦‍♀	woman facepalming	none
+🤷	person shrugging	none
+🤷‍♂	man shrugging	none
+🤷‍♀	woman shrugging	none
+🧑‍⚕	health worker	none
+👨‍⚕	man health worker	none
+👩‍⚕	woman health worker	none
+🧑‍🎓	student	none
+👨‍🎓	man student	none
+👩‍🎓	woman student	none
+🧑‍🏫	teacher	none
+👨‍🏫	man teacher	none
+👩‍🏫	woman teacher	none
+🧑‍⚖	judge	none
+👨‍⚖	man judge	none
+👩‍⚖	woman judge	none
+🧑‍🌾	farmer	none
+👨‍🌾	man farmer	none
+👩‍🌾	woman farmer	none
+🧑‍🍳	cook	none
+👨‍🍳	man cook	none
+👩‍🍳	woman cook	none
+🧑‍🔧	mechanic	none
+👨‍🔧	man mechanic	none
+👩‍🔧	woman mechanic	none
+🧑‍🏭	factory worker	none
+👨‍🏭	man factory worker	none
+👩‍🏭	woman factory worker	none
+🧑‍💼	office worker	none
+👨‍💼	man office worker	none
+👩‍💼	woman office worker	none
+🧑‍🔬	scientist	none
+👨‍🔬	man scientist	none
+👩‍🔬	woman scientist	none
+🧑‍💻	technologist	none
+👨‍💻	man technologist	none
+👩‍💻	woman technologist	none
+🧑‍🎤	singer	none
+👨‍🎤	man singer	none
+👩‍🎤	woman singer	none
+🧑‍🎨	artist	none
+👨‍🎨	man artist	none
+👩‍🎨	woman artist	none
+🧑‍✈	pilot	none
+👨‍✈	man pilot	none
+👩‍✈	woman pilot	none
+🧑‍🚀	astronaut	none
+👨‍🚀	man astronaut	none
+👩‍🚀	woman astronaut	none
+🧑‍🚒	firefighter	none
+👨‍🚒	man firefighter	none
+👩‍🚒	woman firefighter	none
+👮	police officer	none
+👮‍♂	man police officer	none
+👮‍♀	woman police officer	none
+🕵	detective	none
+🕵‍♂	man detective	none
+🕵‍♀	woman detective	none
+💂	guard	none
+💂‍♂	man guard	none
+💂‍♀	woman guard	none
+🥷	ninja	none
+👷	construction worker	none
+👷‍♂	man construction worker	none
+👷‍♀	woman construction worker	none
+🫅	person with crown	none
+🤴	prince	none
+👸	princess	none
+👳	person wearing turban	none
+👳‍♂	man wearing turban	none
+👳‍♀	woman wearing turban	none
+👲	person with skullcap	none
+🧕	woman with headscarf	none
+🤵	person in tuxedo	none
+🤵‍♂	man in tuxedo	none
+🤵‍♀	woman in tuxedo	none
+👰	person with veil	none
+👰‍♂	man with veil	none
+👰‍♀	woman with veil	none
+🤰	pregnant woman	none
+🫃	pregnant man	none
+🫄	pregnant person	none
+🤱	breast-feeding	none
+👩‍🍼	woman feeding baby	none
+👨‍🍼	man feeding baby	none
+🧑‍🍼	person feeding baby	none
+👼	baby angel	none
+🎅	Santa Claus	none
+🧑‍🎄	Mx Claus	none
+🦸	superhero	none
+🦸‍♂	man superhero	none
+🦸‍♀	woman superhero	none
+🦹	supervillain	none
+🦹‍♂	man supervillain	none
+🦹‍♀	woman supervillain	none
+🧙	mage	none
+🧙‍♂	man mage	none
+🧙‍♀	woman mage	none
+🧚	fairy	none
+🧚‍♂	man fairy	none
+🧚‍♀	woman fairy	none
+🧛	vampire	none
+🧛‍♂	man vampire	none
+🧛‍♀	woman vampire	none
+🧜	merperson	none
+🧜‍♂	merman	none
+🧜‍♀	mermaid	none
+🧝	elf	none
+🧝‍♂	man elf	none
+🧝‍♀	woman elf	none
+🧞	genie	none
+🧞‍♂	man genie	none
+🧞‍♀	woman genie	none
+🧟	zombie	none
+🧟‍♂	man zombie	none
+🧟‍♀	woman zombie	none
+🧌	troll	none
+💆	person getting massage	none
+💆‍♂	man getting massage	none
+💆‍♀	woman getting massage	none
+💇	person getting haircut	none
+💇‍♂	man getting haircut	none
+💇‍♀	woman getting haircut	none
+🚶	person walking	none
+🚶‍♂	man walking	none
+🚶‍♀	woman walking	none
+🧍	person standing	none
+🧍‍♂	man standing	none
+🧍‍♀	woman standing	none
+🧎	person kneeling	none
+🧎‍♂	man kneeling	none
+🧎‍♀	woman kneeling	none
+🧑‍🦽	person in manual wheelchair	none
+👨‍🦽	man in manual wheelchair	none
+👩‍🦽	woman in manual wheelchair	none
+🏃	person running	none
+🏃‍♂	man running	none
+🏃‍♀	woman running	none
+💃	woman dancing	none
+🕺	man dancing	none
+🕴	person in suit levitating	none
+👯	people with bunny ears	none
+👯‍♂	men with bunny ears	none
+👯‍♀	women with bunny ears	none
+🧖	person in steamy room	none
+🧖‍♂	man in steamy room	none
+🧖‍♀	woman in steamy room	none
+🧗	person climbing	none
+🧗‍♂	man climbing	none
+🧗‍♀	woman climbing	none
+🤺	person fencing	none
+🏇	horse racing	none
+⛷	skier	none
+🏂	snowboarder	none
+🏌	person golfing	none
+🏌‍♂	man golfing	none
+🏌‍♀	woman golfing	none
+🏄	person surfing	none
+🏄‍♂	man surfing	none
+🏄‍♀	woman surfing	none
+🚣	person rowing boat	none
+🚣‍♂	man rowing boat	none
+🚣‍♀	woman rowing boat	none
+🏊	person swimming	none
+🏊‍♂	man swimming	none
+🏊‍♀	woman swimming	none
+⛹	person bouncing ball	none
+⛹‍♂	man bouncing ball	none
+⛹‍♀	woman bouncing ball	none
+🏋	person lifting weights	none
+🏋‍♂	man lifting weights	none
+🏋‍♀	woman lifting weights	none
+🚴	person biking	none
+🚴‍♂	man biking	none
+🚴‍♀	woman biking	none
+🚵	person mountain biking	none
+🚵‍♂	man mountain biking	none
+🚵‍♀	woman mountain biking	none
+🤸	person cartwheeling	none
+🤸‍♂	man cartwheeling	none
+🤸‍♀	woman cartwheeling	none
+🤼	people wrestling	none
+🤼‍♂	men wrestling	none
+🤼‍♀	women wrestling	none
+🤽	person playing water polo	none
+🤽‍♂	man playing water polo	none
+🤽‍♀	woman playing water polo	none
+🤾	person playing handball	none
+🤾‍♂	man playing handball	none
+🤾‍♀	woman playing handball	none
+🤹	person juggling	none
+🤹‍♂	man juggling	none
+🤹‍♀	woman juggling	none
+🧘	person in lotus position	none
+🧘‍♂	man in lotus position	none
+🧘‍♀	woman in lotus position	none
+🛀	person taking bath	none
+🛌	person in bed	none
+🧑‍🤝‍🧑	people holding hands	none
+👭	women holding hands	none
+👫	woman and man holding hands	none
+👬	men holding hands	none
+💏	kiss	none
+💑	couple with heart	none
+🗣	speaking head	none
+👤	bust in silhouette	none
+👥	busts in silhouette	none
+🫂	people hugging	none
+👪	family	none
+🧑‍🧑‍🧒	family adult, adult, child	none
+🧑‍🧑‍🧒‍🧒	family adult, adult, child, child	none
+🧑‍🧒	family adult, child	none
+🧑‍🧒‍🧒	family adult, child, child	none
+👣	footprints	none
+🫆	fingerprint	none
+🦰	red hair	none
+🦱	curly hair	none
+🦳	white hair	none
+🦲	bald	none
+🐵	monkey face	none
+🐒	monkey	none
+🦍	gorilla	none
+🦧	orangutan	none
+🐶	dog face	none
+🐕	dog	none
+🦮	guide dog	none
+🐕‍🦺	service dog	none
+🐩	poodle	none
+🐺	wolf	none
+🦊	fox	none
+🦝	raccoon	none
+🐱	cat face	none
+🐈	cat	none
+🐈‍⬛	black cat	none
+🦁	lion	none
+🐯	tiger face	none
+🐅	tiger	none
+🐆	leopard	none
+🐴	horse face	none
+🫎	moose	none
+🫏	donkey	none
+🐎	horse	none
+🦄	unicorn	none
+🦓	zebra	none
+🦌	deer	none
+🦬	bison	none
+🐮	cow face	none
+🐂	ox	none
+🐃	water buffalo	none
+🐄	cow	none
+🐷	pig face	none
+🐖	pig	none
+🐗	boar	none
+🐽	pig nose	none
+🐏	ram	none
+🐑	ewe	none
+🐐	goat	none
+🐪	camel	none
+🐫	two-hump camel	none
+🦙	llama	none
+🦒	giraffe	none
+🐘	elephant	none
+🦣	mammoth	none
+🦏	rhinoceros	none
+🦛	hippopotamus	none
+🐭	mouse face	none
+🐁	mouse	none
+🐀	rat	none
+🐹	hamster	none
+🐰	rabbit face	none
+🐇	rabbit	none
+🐿	chipmunk	none
+🦫	beaver	none
+🦔	hedgehog	none
+🦇	bat	none
+🐻	bear	none
+🐻‍❄	polar bear	none
+🐨	koala	none
+🐼	panda	none
+🦥	sloth	none
+🦦	otter	none
+🦨	skunk	none
+🦘	kangaroo	none
+🦡	badger	none
+🐾	paw prints	none
+🦃	turkey	none
+🐔	chicken	none
+🐓	rooster	none
+🐣	hatching chick	none
+🐤	baby chick	none
+🐥	front-facing baby chick	none
+🐦	bird	none
+🐧	penguin	none
+🕊	dove	none
+🦅	eagle	none
+🦆	duck	none
+🦢	swan	none
+🦉	owl	none
+🦤	dodo	none
+🪶	feather	none
+🦩	flamingo	none
+🦚	peacock	none
+🦜	parrot	none
+🪽	wing	none
+🪿	goose	none
+🐦‍🔥	phoenix	none
+🐸	frog	none
+🐊	crocodile	none
+🐢	turtle	none
+🦎	lizard	none
+🐍	snake	none
+🐲	dragon face	none
+🐉	dragon	none
+🦕	sauropod	none
+🦖	T-Rex	none
+🐳	spouting whale	none
+🐋	whale	none
+🐬	dolphin	none
+🦭	seal	none
+🐟	fish	none
+🐠	tropical fish	none
+🐡	blowfish	none
+🦈	shark	none
+🐙	octopus	none
+🐚	spiral shell	none
+🪸	coral	none
+🪼	jellyfish	none
+🦀	crab	none
+🦞	lobster	none
+🦐	shrimp	none
+🦑	squid	none
+🦪	oyster	none
+🐌	snail	none
+🦋	butterfly	none
+🐛	bug	none
+🐜	ant	none
+🐝	honeybee	none
+🪲	beetle	none
+🐞	lady beetle	none
+🦗	cricket	none
+🪳	cockroach	none
+🕷	spider	none
+🕸	spider web	none
+🦂	scorpion	none
+🦟	mosquito	none
+🪰	fly	none
+🪱	worm	none
+🦠	microbe	none
+💐	bouquet	none
+🌸	cherry blossom	none
+💮	white flower	none
+🪷	lotus	none
+🏵	rosette	none
+🌹	rose	none
+🥀	wilted flower	none
+🌺	hibiscus	none
+🌻	sunflower	none
+🌼	blossom	none
+🌷	tulip	none
+🪻	hyacinth	none
+🌱	seedling	none
+🪴	potted plant	none
+🌲	evergreen tree	none
+🌳	deciduous tree	none
+🌴	palm tree	none
+🌵	cactus	none
+🌾	sheaf of rice	none
+🌿	herb	none
+☘	shamrock	none
+🍀	four leaf clover	none
+🍁	maple leaf	none
+🍂	fallen leaf	none
+🍃	leaf fluttering in wind	none
+🪹	empty nest	none
+🪺	nest with eggs	none
+🍄	mushroom	none
+🪾	leafless tree	none
+🍇	grapes	none
+🍈	melon	none
+🍉	watermelon	none
+🍊	tangerine	none
+🍋	lemon	none
+🍋‍🟩	lime	none
+🍌	banana	none
+🍍	pineapple	none
+🥭	mango	none
+🍎	red apple	none
+🍏	green apple	none
+🍐	pear	none
+🍑	peach	none
+🍒	cherries	none
+🍓	strawberry	none
+🫐	blueberries	none
+🥝	kiwi fruit	none
+🍅	tomato	none
+🫒	olive	none
+🥥	coconut	none
+🥑	avocado	none
+🍆	eggplant	none
+🥔	potato	none
+🥕	carrot	none
+🌽	ear of corn	none
+🌶	hot pepper	none
+🥒	cucumber	none
+🥬	leafy green	none
+🥦	broccoli	none
+🧄	garlic	none
+🧅	onion	none
+🥜	peanuts	none
+🫘	beans	none
+🌰	chestnut	none
+🫛	pea pod	none
+🍄‍🟫	brown mushroom	none
+🫜	root vegetable	none
+🍞	bread	none
+🥐	croissant	none
+🥖	baguette bread	none
+🫓	flatbread	none
+🥨	pretzel	none
+🥯	bagel	none
+🥞	pancakes	none
+🧇	waffle	none
+🧀	cheese wedge	none
+🍖	meat on bone	none
+🍗	poultry leg	none
+🥩	cut of meat	none
+🥓	bacon	none
+🍔	hamburger	none
+🍟	french fries	none
+🍕	pizza	none
+🌭	hot dog	none
+🥪	sandwich	none
+🌮	taco	none
+🌯	burrito	none
+🫔	tamale	none
+🥙	stuffed flatbread	none
+🧆	falafel	none
+🥚	egg	none
+🍳	cooking	none
+🥘	shallow pan of food	none
+🍲	pot of food	none
+🫕	fondue	none
+🥣	bowl with spoon	none
+🥗	green salad	none
+🍿	popcorn	none
+🧈	butter	none
+🧂	salt	none
+🍱	bento box	none
+🍘	rice cracker	none
+🍙	rice ball	none
+🍚	cooked rice	none
+🍛	curry rice	none
+🍜	steaming bowl	none
+🍝	spaghetti	none
+🍠	roasted sweet potato	none
+🍢	oden	none
+🍣	sushi	none
+🍤	fried shrimp	none
+🍥	fish cake with swirl	none
+🥮	moon cake	none
+🍡	dango	none
+🥟	dumpling	none
+🥠	fortune cookie	none
+🥡	takeout box	none
+🍦	soft ice cream	none
+🍧	shaved ice	none
+🍨	ice cream	none
+🍩	doughnut	none
+🍪	cookie	none
+🎂	birthday cake	none
+🍰	shortcake	none
+🧁	cupcake	none
+🥧	pie	none
+🍫	chocolate bar	none
+🍬	candy	none
+🍭	lollipop	none
+🍮	custard	none
+🍯	honey pot	none
+🍼	baby bottle	none
+🥛	glass of milk	none
+☕	hot beverage	none
+🫖	teapot	none
+🍵	teacup without handle	none
+🍶	sake	none
+🍾	bottle with popping cork	none
+🍷	wine glass	none
+🍸	cocktail glass	none
+🍹	tropical drink	none
+🍺	beer mug	none
+🍻	clinking beer mugs	none
+🥂	clinking glasses	none
+🥃	tumbler glass	none
+🫗	pouring liquid	none
+🥤	cup with straw	none
+🧋	bubble tea	none
+🧃	beverage box	none
+🧊	ice	none
+🥢	chopsticks	none
+🍽	fork and knife with plate	none
+🍴	fork and knife	none
+🥄	spoon	none
+🔪	kitchen knife	none
+🫙	jar	none
+🏺	amphora	none
+🌍	globe showing Europe-Africa	none
+🌎	globe showing Americas	none
+🌏	globe showing Asia-Australia	none
+🌐	globe with meridians	none
+🗺	world map	none
+🗾	map of Japan	none
+🧭	compass	none
+🏔	snow-capped mountain	none
+⛰	mountain	none
+🌋	volcano	none
+🏕	camping	none
+🏖	beach with umbrella	none
+🏜	desert	none
+🏝	desert island	none
+🏞	national park	none
+🏟	stadium	none
+🏛	classical building	none
+🏗	building construction	none
+🧱	brick	none
+🪨	rock	none
+🪵	wood	none
+🛖	hut	none
+🏘	houses	none
+🏚	derelict house	none
+🏠	house	none
+🏡	house with garden	none
+🏢	office building	none
+🏣	Japanese post office	none
+🏤	post office	none
+🏥	hospital	none
+🏦	bank	none
+🏨	hotel	none
+🏩	love hotel	none
+🏪	convenience store	none
+🏫	school	none
+🏬	department store	none
+🏭	factory	none
+🏯	Japanese castle	none
+🏰	castle	none
+💒	wedding	none
+🗼	Tokyo tower	none
+🗽	Statue of Liberty	none
+⛪	church	none
+🕌	mosque	none
+🕍	synagogue	none
+⛩	shinto shrine	none
+⛲	fountain	none
+⛺	tent	none
+🌁	foggy	none
+🌃	night with stars	none
+🏙	cityscape	none
+🌄	sunrise over mountains	none
+🌅	sunrise	none
+🌆	cityscape at dusk	none
+🌇	sunset	none
+🌉	bridge at night	none
+♨	hot springs	none
+🎠	carousel horse	none
+🛝	playground slide	none
+🎡	ferris wheel	none
+🎢	roller coaster	none
+💈	barber pole	none
+🎪	circus tent	none
+🚂	locomotive	none
+🚃	railway car	none
+🚄	high-speed train	none
+🚅	bullet train	none
+🚆	train	none
+🚇	metro	none
+🚈	light rail	none
+🚉	station	none
+🚊	tram	none
+🚝	monorail	none
+🚞	mountain railway	none
+🚋	tram car	none
+🚌	bus	none
+🚍	oncoming bus	none
+🚎	trolleybus	none
+🚐	minibus	none
+🚑	ambulance	none
+🚒	fire engine	none
+🚓	police car	none
+🚔	oncoming police car	none
+🚕	taxi	none
+🚖	oncoming taxi	none
+🚗	automobile	none
+🚘	oncoming automobile	none
+🚙	sport utility vehicle	none
+🛻	pickup truck	none
+🚚	delivery truck	none
+🚛	articulated lorry	none
+🚜	tractor	none
+🏎	racing car	none
+🏍	motorcycle	none
+🛵	motor scooter	none
+🦽	manual wheelchair	none
+🛺	auto rickshaw	none
+🚲	bicycle	none
+🛴	kick scooter	none
+🛹	skateboard	none
+🛼	roller skate	none
+🚏	bus stop	none
+🛣	motorway	none
+🛤	railway track	none
+🛢	oil drum	none
+⛽	fuel pump	none
+🛞	wheel	none
+🚨	police car light	none
+🚥	horizontal traffic light	none
+🚦	vertical traffic light	none
+🛑	stop sign	none
+🚧	construction	none
+⚓	anchor	none
+⛵	sailboat	none
+🛶	canoe	none
+🚤	speedboat	none
+🛳	passenger ship	none
+⛴	ferry	none
+🛥	motor boat	none
+🚢	ship	none
+✈	airplane	none
+🛩	small airplane	none
+🛫	airplane departure	none
+🛬	airplane arrival	none
+🪂	parachute	none
+💺	seat	none
+🚁	helicopter	none
+🚟	suspension railway	none
+🚠	mountain cableway	none
+🚡	aerial tramway	none
+🛰	satellite	none
+🚀	rocket	none
+🛸	flying saucer	none
+🛎	bellhop bell	none
+🧳	luggage	none
+⌛	hourglass done	none
+⏳	hourglass not done	none
+⌚	watch	none
+⏰	alarm clock	none
+⏱	stopwatch	none
+⏲	timer clock	none
+🕰	mantelpiece clock	none
+🕛	twelve o’clock	none
+🕧	twelve-thirty	none
+🕐	one o’clock	none
+🕜	one-thirty	none
+🕑	two o’clock	none
+🕝	two-thirty	none
+🕒	three o’clock	none
+🕞	three-thirty	none
+🕓	four o’clock	none
+🕟	four-thirty	none
+🕔	five o’clock	none
+🕠	five-thirty	none
+🕕	six o’clock	none
+🕡	six-thirty	none
+🕖	seven o’clock	none
+🕢	seven-thirty	none
+🕗	eight o’clock	none
+🕣	eight-thirty	none
+🕘	nine o’clock	none
+🕤	nine-thirty	none
+🕙	ten o’clock	none
+🕥	ten-thirty	none
+🕚	eleven o’clock	none
+🕦	eleven-thirty	none
+🌑	new moon	none
+🌒	waxing crescent moon	none
+🌓	first quarter moon	none
+🌔	waxing gibbous moon	none
+🌕	full moon	none
+🌖	waning gibbous moon	none
+🌗	last quarter moon	none
+🌘	waning crescent moon	none
+🌙	crescent moon	none
+🌚	new moon face	none
+🌛	first quarter moon face	none
+🌜	last quarter moon face	none
+🌡	thermometer	none
+☀	sun	none
+🌝	full moon face	none
+🌞	sun with face	none
+🪐	ringed planet	none
+⭐	star	none
+🌟	glowing star	none
+🌠	shooting star	none
+🌌	milky way	none
+☁	cloud	none
+⛅	sun behind cloud	none
+⛈	cloud with lightning and rain	none
+🌤	sun behind small cloud	none
+🌥	sun behind large cloud	none
+🌦	sun behind rain cloud	none
+🌧	cloud with rain	none
+🌨	cloud with snow	none
+🌩	cloud with lightning	none
+🌪	tornado	none
+🌫	fog	none
+🌬	wind face	none
+🌀	cyclone	none
+🌈	rainbow	none
+🌂	closed umbrella	none
+☂	umbrella	none
+☔	umbrella with rain drops	none
+⛱	umbrella on ground	none
+⚡	high voltage	none
+❄	snowflake	none
+☃	snowman	none
+⛄	snowman without snow	none
+☄	comet	none
+🔥	fire	none
+💧	droplet	none
+🌊	water wave	none
+🎃	jack-o-lantern	none
+🎄	Christmas tree	none
+🎆	fireworks	none
+🎇	sparkler	none
+🧨	firecracker	none
+✨	sparkles	none
+🎈	balloon	none
+🎉	party popper	none
+🎊	confetti ball	none
+🎋	tanabata tree	none
+🎍	pine decoration	none
+🎎	Japanese dolls	none
+🎏	carp streamer	none
+🎐	wind chime	none
+🎑	moon viewing ceremony	none
+🧧	red envelope	none
+🎀	ribbon	none
+🎁	wrapped gift	none
+🎗	reminder ribbon	none
+🎟	admission tickets	none
+🎫	ticket	none
+🎖	military medal	none
+🏆	trophy	none
+🏅	sports medal	none
+🥇	1st place medal	none
+🥈	2nd place medal	none
+🥉	3rd place medal	none
+⚾	baseball	none
+🥎	softball	none
+🏀	basketball	none
+🏐	volleyball	none
+🏈	american football	none
+🏉	rugby football	none
+🎾	tennis	none
+🥏	flying disc	none
+🎳	bowling	none
+🏏	cricket game	none
+🏑	field hockey	none
+🏒	ice hockey	none
+🥍	lacrosse	none
+🏸	badminton	none
+🥊	boxing glove	none
+🥋	martial arts uniform	none
+🥅	goal net	none
+⛳	flag in hole	none
+⛸	ice skate	none
+🎣	fishing pole	none
+🤿	diving mask	none
+🎽	running shirt	none
+🎿	skis	none
+🥌	curling stone	none
+🎯	bullseye	none
+🪀	yo-yo	none
+🪁	kite	none
+🔫	water pistol	none
+🎱	pool 8 ball	none
+🔮	crystal ball	none
+🪄	magic wand	none
+🎮	video game	none
+🕹	joystick	none
+🎰	slot machine	none
+🎲	game die	none
+🧩	puzzle piece	none
+🧸	teddy bear	none
+🪅	piñata	none
+🪩	mirror ball	none
+♠	spade suit	none
+♥	heart suit	none
+♦	diamond suit	none
+♣	club suit	none
+♟	chess pawn	none
+🃏	joker	none
+🀄	mahjong red dragon	none
+🎴	flower playing cards	none
+🎭	performing arts	none
+🖼	framed picture	none
+🎨	artist palette	none
+🧵	thread	none
+🪡	sewing needle	none
+🧶	yarn	none
+🪢	knot	none
+👓	glasses	none
+🕶	sunglasses	none
+🥽	goggles	none
+🥼	lab coat	none
+🦺	safety vest	none
+👕	t-shirt	none
+👖	jeans	none
+🧣	scarf	none
+🧤	gloves	none
+🧥	coat	none
+🧦	socks	none
+👗	dress	none
+👘	kimono	none
+🥻	sari	none
+🩱	one-piece swimsuit	none
+🩲	briefs	none
+🩳	shorts	none
+👙	bikini	none
+👚	woman’s clothes	none
+🪭	folding hand fan	none
+👛	purse	none
+👜	handbag	none
+👝	clutch bag	none
+🛍	shopping bags	none
+🎒	backpack	none
+👞	man’s shoe	none
+👟	running shoe	none
+🥾	hiking boot	none
+🥿	flat shoe	none
+👠	high-heeled shoe	none
+👡	woman’s sandal	none
+🩰	ballet shoes	none
+👢	woman’s boot	none
+🪮	hair pick	none
+👑	crown	none
+👒	woman’s hat	none
+🎩	top hat	none
+🎓	graduation cap	none
+🧢	billed cap	none
+🪖	military helmet	none
+⛑	rescue worker’s helmet	none
+📿	prayer beads	none
+💄	lipstick	none
+💍	ring	none
+💎	gem stone	none
+🔇	muted speaker	none
+🔈	speaker low volume	none
+🔉	speaker medium volume	none
+🔊	speaker high volume	none
+📢	loudspeaker	none
+📣	megaphone	none
+🔔	bell	none
+🔕	bell with slash	none
+🎼	musical score	none
+🎵	musical note	none
+🎶	musical notes	none
+🎙	studio microphone	none
+🎚	level slider	none
+🎛	control knobs	none
+🎤	microphone	none
+🎧	headphone	none
+📻	radio	none
+🎷	saxophone	none
+🪗	accordion	none
+🎸	guitar	none
+🎹	musical keyboard	none
+🎺	trumpet	none
+🎻	violin	none
+🪕	banjo	none
+🥁	drum	none
+🪇	maracas	none
+🪈	flute	none
+🪉	harp	none
+📱	mobile phone	none
+📲	mobile phone with arrow	none
+☎	telephone	none
+📞	telephone receiver	none
+📟	pager	none
+📠	fax machine	none
+🔋	battery	none
+🪫	low battery	none
+🔌	electric plug	none
+💻	laptop	none
+🖥	desktop computer	none
+🖨	printer	none
+⌨	keyboard	none
+🖱	computer mouse	none
+🖲	trackball	none
+💽	computer disk	none
+💾	floppy disk	none
+💿	optical disk	none
+📀	dvd	none
+🧮	abacus	none
+🎥	movie camera	none
+🎞	film frames	none
+📽	film projector	none
+🎬	clapper board	none
+📺	television	none
+📷	camera	none
+📸	camera with flash	none
+📹	video camera	none
+📼	videocassette	none
+🔍	magnifying glass tilted left	none
+🔎	magnifying glass tilted right	none
+🕯	candle	none
+💡	light bulb	none
+🔦	flashlight	none
+🏮	red paper lantern	none
+🪔	diya lamp	none
+📔	notebook with decorative cover	none
+📕	closed book	none
+📖	open book	none
+📗	green book	none
+📘	blue book	none
+📙	orange book	none
+📚	books	none
+📓	notebook	none
+📒	ledger	none
+📃	page with curl	none
+📜	scroll	none
+📄	page facing up	none
+📰	newspaper	none
+🗞	rolled-up newspaper	none
+📑	bookmark tabs	none
+🔖	bookmark	none
+🏷	label	none
+💰	money bag	none
+🪙	coin	none
+💴	yen banknote	none
+💵	dollar banknote	none
+💶	euro banknote	none
+💷	pound banknote	none
+💸	money with wings	none
+💳	credit card	none
+🧾	receipt	none
+💹	chart increasing with yen	none
+✉	envelope	none
+📧	e-mail	none
+📨	incoming envelope	none
+📩	envelope with arrow	none
+📤	outbox tray	none
+📥	inbox tray	none
+📦	package	none
+📫	closed mailbox with raised flag	none
+📪	closed mailbox with lowered flag	none
+📬	open mailbox with raised flag	none
+📭	open mailbox with lowered flag	none
+📮	postbox	none
+🗳	ballot box with ballot	none
+✏	pencil	none
+✒	black nib	none
+🖋	fountain pen	none
+🖊	pen	none
+🖌	paintbrush	none
+🖍	crayon	none
+📝	memo	none
+💼	briefcase	none
+📁	file folder	none
+📂	open file folder	none
+🗂	card index dividers	none
+📅	calendar	none
+📆	tear-off calendar	none
+🗒	spiral notepad	none
+🗓	spiral calendar	none
+📇	card index	none
+📈	chart increasing	none
+📉	chart decreasing	none
+📊	bar chart	none
+📋	clipboard	none
+📌	pushpin	none
+📍	round pushpin	none
+📎	paperclip	none
+🖇	linked paperclips	none
+📏	straight ruler	none
+📐	triangular ruler	none
+✂	scissors	none
+🗃	card file box	none
+🗄	file cabinet	none
+🗑	wastebasket	none
+🔒	locked	none
+🔓	unlocked	none
+🔏	locked with pen	none
+🔐	locked with key	none
+🔑	key	none
+🗝	old key	none
+🔨	hammer	none
+🪓	axe	none
+⛏	pick	none
+⚒	hammer and pick	none
+🛠	hammer and wrench	none
+🗡	dagger	none
+⚔	crossed swords	none
+💣	bomb	none
+🪃	boomerang	none
+🏹	bow and arrow	none
+🛡	shield	none
+🪚	carpentry saw	none
+🔧	wrench	none
+🪛	screwdriver	none
+🔩	nut and bolt	none
+⚙	gear	none
+🗜	clamp	none
+⚖	balance scale	none
+🔗	link	none
+⛓‍💥	broken chain	none
+⛓	chains	none
+🪝	hook	none
+🧰	toolbox	none
+🧲	magnet	none
+🪜	ladder	none
+🪏	shovel	none
+⚗	alembic	none
+🧪	test tube	none
+🧫	petri dish	none
+🧬	dna	none
+🔬	microscope	none
+🔭	telescope	none
+📡	satellite antenna	none
+💉	syringe	none
+🩸	drop of blood	none
+💊	pill	none
+🩼	crutch	none
+🩺	stethoscope	none
+🩻	x-ray	none
+🚪	door	none
+🪞	mirror	none
+🪟	window	none
+🛏	bed	none
+🛋	couch and lamp	none
+🪑	chair	none
+🚽	toilet	none
+🪠	plunger	none
+🚿	shower	none
+🪒	razor	none
+🧴	lotion bottle	none
+🧷	safety pin	none
+🧹	broom	none
+🧺	basket	none
+🧻	roll of paper	none
+🪣	bucket	none
+🧼	soap	none
+🫧	bubbles	none
+🪥	toothbrush	none
+🧽	sponge	none
+🧯	fire extinguisher	none
+🛒	shopping cart	none
+🚬	cigarette	none
+⚰	coffin	none
+🪦	headstone	none
+⚱	funeral urn	none
+🧿	nazar amulet	none
+🪬	hamsa	none
+🗿	moai	none
+🪧	placard	none
+🪪	identification card	none
+🏧	ATM sign	none
+🚮	litter in bin sign	none
+🚰	potable water	none
+♿	wheelchair symbol	none
+🚹	men’s room	none
+🚺	women’s room	none
+🚼	baby symbol	none
+🚾	water closet	none
+🛂	passport control	none
+🛃	customs	none
+🛄	baggage claim	none
+🛅	left luggage	none
+⚠	warning	none
+🚸	children crossing	none
+⛔	no entry	none
+🚫	prohibited	none
+🚳	no bicycles	none
+🚭	no smoking	none
+🚯	no littering	none
+🚱	non-potable water	none
+🚷	no pedestrians	none
+📵	no mobile phones	none
+🔞	no one under eighteen	none
+☢	radioactive	none
+☣	biohazard	none
+⬆	up arrow	none
+↗	up-right arrow	none
+➡	right arrow	none
+↘	down-right arrow	none
+⬇	down arrow	none
+↙	down-left arrow	none
+⬅	left arrow	none
+↖	up-left arrow	none
+↕	up-down arrow	none
+↔	left-right arrow	none
+↩	right arrow curving left	none
+↪	left arrow curving right	none
+⤴	right arrow curving up	none
+⤵	right arrow curving down	none
+🔃	clockwise vertical arrows	none
+🔙	BACK arrow	none
+🔚	END arrow	none
+🔛	ON! arrow	none
+🔜	SOON arrow	none
+🔝	TOP arrow	none
+🛐	place of worship	none
+⚛	atom symbol	none
+🕉	om	none
+☸	wheel of dharma	none
+☯	yin yang	none
+☪	star and crescent	none
+☮	peace symbol	none
+🕎	menorah	none
+🔯	dotted six-pointed star	none
+🪯	khanda	none
+♈	Aries	none
+♉	Taurus	none
+♊	Gemini	none
+♋	Cancer	none
+♌	Leo	none
+♍	Virgo	none
+♎	Libra	none
+♏	Scorpio	none
+♐	Sagittarius	none
+♑	Capricorn	none
+♒	Aquarius	none
+♓	Pisces	none
+⛎	Ophiuchus	none
+🔀	shuffle tracks button	none
+🔁	repeat button	none
+🔂	repeat single button	none
+▶	play button	none
+⏩	fast-forward button	none
+⏭	next track button	none
+⏯	play or pause button	none
+◀	reverse button	none
+⏪	fast reverse button	none
+⏮	last track button	none
+🔼	upwards button	none
+⏫	fast up button	none
+🔽	downwards button	none
+⏬	fast down button	none
+⏸	pause button	none
+⏹	stop button	none
+⏺	record button	none
+⏏	eject button	none
+🎦	cinema	none
+🔅	dim button	none
+🔆	bright button	none
+📶	antenna bars	none
+🛜	wireless	none
+📳	vibration mode	none
+📴	mobile phone off	none
+♀	female sign	none
+♂	male sign	none
+⚧	transgender symbol	none
+✖	multiply	none
+➕	plus	none
+➖	minus	none
+➗	divide	none
+🟰	heavy equals sign	none
+♾	infinity	none
+‼	double exclamation mark	none
+⁉	exclamation question mark	none
+❓	red question mark	none
+❔	white question mark	none
+❕	white exclamation mark	none
+❗	red exclamation mark	none
+〰	wavy dash	none
+💱	currency exchange	none
+💲	heavy dollar sign	none
+⚕	medical symbol	none
+♻	recycling symbol	none
+⚜	fleur-de-lis	none
+🔱	trident emblem	none
+📛	name badge	none
+🔰	Japanese symbol for beginner	none
+⭕	hollow red circle	none
+❌	cross mark	none
+❎	cross mark button	none
+➰	curly loop	none
+➿	double curly loop	none
+〽	part alternation mark	none
+✳	eight-spoked asterisk	none
+✴	eight-pointed star	none
+❇	sparkle	none
+©	copyright	none
+®	registered	none
+™	trade mark	none
+🫟	splatter	none
+🔠	input latin uppercase	none
+🔡	input latin lowercase	none
+🔢	input numbers	none
+🔣	input symbols	none
+🔤	input latin letters	none
+🅰	A button (blood type)	none
+🆎	AB button (blood type)	none
+🅱	B button (blood type)	none
+🆑	CL button	none
+🆒	COOL button	none
+🆓	FREE button	none
+ℹ	information	none
+🆔	ID button	none
+Ⓜ	circled M	none
+🆕	NEW button	none
+🆖	NG button	none
+🅾	O button (blood type)	none
+🆗	OK button	none
+🅿	P button	none
+🆘	SOS button	none
+🆙	UP! button	none
+🆚	VS button	none
+🈁	Japanese “here” button	none
+🈂	Japanese “service charge” button	none
+🈷	Japanese “monthly amount” button	none
+🈶	Japanese “not free of charge” button	none
+🈯	Japanese “reserved” button	none
+🉐	Japanese “bargain” button	none
+🈹	Japanese “discount” button	none
+🈚	Japanese “free of charge” button	none
+🈲	Japanese “prohibited” button	none
+🉑	Japanese “acceptable” button	none
+🈸	Japanese “application” button	none
+🈴	Japanese “passing grade” button	none
+🈳	Japanese “vacancy” button	none
+㊗	Japanese “congratulations” button	none
+㊙	Japanese “secret” button	none
+🈺	Japanese “open for business” button	none
+🈵	Japanese “no vacancy” button	none
+🔴	red circle	none
+🟠	orange circle	none
+🟡	yellow circle	none
+🟢	green circle	none
+🔵	blue circle	none
+🟣	purple circle	none
+🟤	brown circle	none
+⚫	black circle	none
+⚪	white circle	none
+🟥	red square	none
+🟧	orange square	none
+🟨	yellow square	none
+🟩	green square	none
+🟦	blue square	none
+🟪	purple square	none
+🟫	brown square	none
+⬛	black large square	none
+⬜	white large square	none
+◼	black medium square	none
+◻	white medium square	none
+◾	black medium-small square	none
+◽	white medium-small square	none
+▪	black small square	none
+▫	white small square	none
+🔶	large orange diamond	none
+🔷	large blue diamond	none
+🔸	small orange diamond	none
+🔹	small blue diamond	none
+🔺	red triangle pointed up	none
+🔻	red triangle pointed down	none
+💠	diamond with a dot	none
+🔘	radio button	none
+🔳	white square button	none
+🔲	black square button	none
+🏁	chequered flag	none
+🚩	triangular flag	none
+🎌	crossed flags	none
+🏴	black flag	none
+🏳	white flag	none
+🏳‍🌈	rainbow flag	none
+🏳‍⚧	transgender flag	none
+🏴‍☠	pirate flag	none
+¢	cent	none
+$	dollar	none
+£	pound	none
+¥	yen	none
+₢	cruzeiro	none
+₤	lira	none
+₥	mill	none
+₩	won	none
+€	euro	none
+₱	peso	none
+₳	austral	none
+₶	livre tournois	none
+₷	spesmilo	none
+₿	bitcoin	none
+¹	superscript one	none
+²	superscript two	none
+³	superscript three	none
+₨	rupee	none
+µ	micro sign	none
+﷼	rial	none
+🤶🏻	Mrs. Claus light skin tone	none
+🤶🏼	Mrs. Claus medium-light skin tone	none
+🤶🏽	Mrs. Claus medium skin tone	none
+🤶🏾	Mrs. Claus medium-dark skin tone	none
+🤶🏿	Mrs. Claus dark skin tone	none
+🧑🏻‍🦯	person with white cane light skin tone	none
+🧑🏼‍🦯	person with white cane medium-light skin tone	none
+🧑🏽‍🦯	person with white cane medium skin tone	none
+🧑🏾‍🦯	person with white cane medium-dark skin tone	none
+🧑🏿‍🦯	person with white cane dark skin tone	none
+🧑‍🦯‍➡	person with white cane facing right	none
+🧑🏻‍🦯‍➡	person with white cane light skin tone, facing right	none
+🧑🏼‍🦯‍➡	person with white cane medium-light skin tone, facing right	none
+🧑🏽‍🦯‍➡	person with white cane medium skin tone, facing right	none
+🧑🏾‍🦯‍➡	person with white cane medium-dark skin tone, facing right	none
+🧑🏿‍🦯‍➡	person with white cane dark skin tone, facing right	none
+👨🏻‍🦯	man with white cane light skin tone	none
+👨🏼‍🦯	man with white cane medium-light skin tone	none
+👨🏽‍🦯	man with white cane medium skin tone	none
+👨🏾‍🦯	man with white cane medium-dark skin tone	none
+👨🏿‍🦯	man with white cane dark skin tone	none
+👨‍🦯‍➡	man with white cane facing right	none
+👨🏻‍🦯‍➡	man with white cane light skin tone, facing right	none
+👨🏼‍🦯‍➡	man with white cane medium-light skin tone, facing right	none
+👨🏽‍🦯‍➡	man with white cane medium skin tone, facing right	none
+👨🏾‍🦯‍➡	man with white cane medium-dark skin tone, facing right	none
+👨🏿‍🦯‍➡	man with white cane dark skin tone, facing right	none
+👩🏻‍🦯	woman with white cane light skin tone	none
+👩🏼‍🦯	woman with white cane medium-light skin tone	none
+👩🏽‍🦯	woman with white cane medium skin tone	none
+👩🏾‍🦯	woman with white cane medium-dark skin tone	none
+👩🏿‍🦯	woman with white cane dark skin tone	none
+👩‍🦯‍➡	woman with white cane facing right	none
+👩🏻‍🦯‍➡	woman with white cane light skin tone, facing right	none
+👩🏼‍🦯‍➡	woman with white cane medium-light skin tone, facing right	none
+👩🏽‍🦯‍➡	woman with white cane medium skin tone, facing right	none
+👩🏾‍🦯‍➡	woman with white cane medium-dark skin tone, facing right	none
+👩🏿‍🦯‍➡	woman with white cane dark skin tone, facing right	none
+🧑🏻‍🦼	person in motorized wheelchair light skin tone	none
+🧑🏼‍🦼	person in motorized wheelchair medium-light skin tone	none
+🧑🏽‍🦼	person in motorized wheelchair medium skin tone	none
+🧑🏾‍🦼	person in motorized wheelchair medium-dark skin tone	none
+🧑🏿‍🦼	person in motorized wheelchair dark skin tone	none
+🧑‍🦼‍➡	person in motorized wheelchair facing right	none
+🧑🏻‍🦼‍➡	person in motorized wheelchair light skin tone, facing right	none
+🧑🏼‍🦼‍➡	person in motorized wheelchair medium-light skin tone, facing right	none
+🧑🏽‍🦼‍➡	person in motorized wheelchair medium skin tone, facing right	none
+🧑🏾‍🦼‍➡	person in motorized wheelchair medium-dark skin tone, facing right	none
+🧑🏿‍🦼‍➡	person in motorized wheelchair dark skin tone, facing right	none
+👨🏻‍🦼	man in motorized wheelchair light skin tone	none
+👨🏼‍🦼	man in motorized wheelchair medium-light skin tone	none
+👨🏽‍🦼	man in motorized wheelchair medium skin tone	none
+👨🏾‍🦼	man in motorized wheelchair medium-dark skin tone	none
+👨🏿‍🦼	man in motorized wheelchair dark skin tone	none
+👨‍🦼‍➡	man in motorized wheelchair facing right	none
+👨🏻‍🦼‍➡	man in motorized wheelchair light skin tone, facing right	none
+👨🏼‍🦼‍➡	man in motorized wheelchair medium-light skin tone, facing right	none
+👨🏽‍🦼‍➡	man in motorized wheelchair medium skin tone, facing right	none
+👨🏾‍🦼‍➡	man in motorized wheelchair medium-dark skin tone, facing right	none
+👨🏿‍🦼‍➡	man in motorized wheelchair dark skin tone, facing right	none
+👩🏻‍🦼	woman in motorized wheelchair light skin tone	none
+👩🏼‍🦼	woman in motorized wheelchair medium-light skin tone	none
+👩🏽‍🦼	woman in motorized wheelchair medium skin tone	none
+👩🏾‍🦼	woman in motorized wheelchair medium-dark skin tone	none
+👩🏿‍🦼	woman in motorized wheelchair dark skin tone	none
+👩‍🦼‍➡	woman in motorized wheelchair facing right	none
+👩🏻‍🦼‍➡	woman in motorized wheelchair light skin tone, facing right	none
+👩🏼‍🦼‍➡	woman in motorized wheelchair medium-light skin tone, facing right	none
+👩🏽‍🦼‍➡	woman in motorized wheelchair medium skin tone, facing right	none
+👩🏾‍🦼‍➡	woman in motorized wheelchair medium-dark skin tone, facing right	none
+👩🏿‍🦼‍➡	woman in motorized wheelchair dark skin tone, facing right	none
+🇧🇱	flag St. Barthélemy	none
+🇰🇳	flag St. Kitts & Nevis	none
+🇱🇨	flag St. Lucia	none
+🇲🇫	flag St. Martin	none
+🇵🇲	flag St. Pierre & Miquelon	none
+🇸🇭	flag St. Helena	none
+🇺🇲	flag U.S. Outlying Islands	none
+🇻🇨	flag St. Vincent & Grenadines	none
+🇻🇮	flag U.S. Virgin Islands	none
+👋🏻	waving hand light skin tone	none
+👋🏼	waving hand medium-light skin tone	none
+👋🏽	waving hand medium skin tone	none
+👋🏾	waving hand medium-dark skin tone	none
+👋🏿	waving hand dark skin tone	none
+🤚🏻	raised back of hand light skin tone	none
+🤚🏼	raised back of hand medium-light skin tone	none
+🤚🏽	raised back of hand medium skin tone	none
+🤚🏾	raised back of hand medium-dark skin tone	none
+🤚🏿	raised back of hand dark skin tone	none
+🖐🏻	hand with fingers splayed light skin tone	none
+🖐🏼	hand with fingers splayed medium-light skin tone	none
+🖐🏽	hand with fingers splayed medium skin tone	none
+🖐🏾	hand with fingers splayed medium-dark skin tone	none
+🖐🏿	hand with fingers splayed dark skin tone	none
+✋🏻	raised hand light skin tone	none
+✋🏼	raised hand medium-light skin tone	none
+✋🏽	raised hand medium skin tone	none
+✋🏾	raised hand medium-dark skin tone	none
+✋🏿	raised hand dark skin tone	none
+🖖🏻	vulcan salute light skin tone	none
+🖖🏼	vulcan salute medium-light skin tone	none
+🖖🏽	vulcan salute medium skin tone	none
+🖖🏾	vulcan salute medium-dark skin tone	none
+🖖🏿	vulcan salute dark skin tone	none
+🫱🏻	rightwards hand light skin tone	none
+🫱🏼	rightwards hand medium-light skin tone	none
+🫱🏽	rightwards hand medium skin tone	none
+🫱🏾	rightwards hand medium-dark skin tone	none
+🫱🏿	rightwards hand dark skin tone	none
+🫱🏻‍🫲🏼	handshake light skin tone, medium-light skin tone	none
+🫱🏻‍🫲🏽	handshake light skin tone, medium skin tone	none
+🫱🏻‍🫲🏾	handshake light skin tone, medium-dark skin tone	none
+🫱🏻‍🫲🏿	handshake light skin tone, dark skin tone	none
+🫱🏼‍🫲🏻	handshake medium-light skin tone, light skin tone	none
+🫱🏼‍🫲🏽	handshake medium-light skin tone, medium skin tone	none
+🫱🏼‍🫲🏾	handshake medium-light skin tone, medium-dark skin tone	none
+🫱🏼‍🫲🏿	handshake medium-light skin tone, dark skin tone	none
+🫱🏽‍🫲🏻	handshake medium skin tone, light skin tone	none
+🫱🏽‍🫲🏼	handshake medium skin tone, medium-light skin tone	none
+🫱🏽‍🫲🏾	handshake medium skin tone, medium-dark skin tone	none
+🫱🏽‍🫲🏿	handshake medium skin tone, dark skin tone	none
+🫱🏾‍🫲🏻	handshake medium-dark skin tone, light skin tone	none
+🫱🏾‍🫲🏼	handshake medium-dark skin tone, medium-light skin tone	none
+🫱🏾‍🫲🏽	handshake medium-dark skin tone, medium skin tone	none
+🫱🏾‍🫲🏿	handshake medium-dark skin tone, dark skin tone	none
+🫱🏿‍🫲🏻	handshake dark skin tone, light skin tone	none
+🫱🏿‍🫲🏼	handshake dark skin tone, medium-light skin tone	none
+🫱🏿‍🫲🏽	handshake dark skin tone, medium skin tone	none
+🫱🏿‍🫲🏾	handshake dark skin tone, medium-dark skin tone	none
+🫲🏻	leftwards hand light skin tone	none
+🫲🏼	leftwards hand medium-light skin tone	none
+🫲🏽	leftwards hand medium skin tone	none
+🫲🏾	leftwards hand medium-dark skin tone	none
+🫲🏿	leftwards hand dark skin tone	none
+🫳🏻	palm down hand light skin tone	none
+🫳🏼	palm down hand medium-light skin tone	none
+🫳🏽	palm down hand medium skin tone	none
+🫳🏾	palm down hand medium-dark skin tone	none
+🫳🏿	palm down hand dark skin tone	none
+🫴🏻	palm up hand light skin tone	none
+🫴🏼	palm up hand medium-light skin tone	none
+🫴🏽	palm up hand medium skin tone	none
+🫴🏾	palm up hand medium-dark skin tone	none
+🫴🏿	palm up hand dark skin tone	none
+🫷🏻	leftwards pushing hand light skin tone	none
+🫷🏼	leftwards pushing hand medium-light skin tone	none
+🫷🏽	leftwards pushing hand medium skin tone	none
+🫷🏾	leftwards pushing hand medium-dark skin tone	none
+🫷🏿	leftwards pushing hand dark skin tone	none
+🫸🏻	rightwards pushing hand light skin tone	none
+🫸🏼	rightwards pushing hand medium-light skin tone	none
+🫸🏽	rightwards pushing hand medium skin tone	none
+🫸🏾	rightwards pushing hand medium-dark skin tone	none
+🫸🏿	rightwards pushing hand dark skin tone	none
+👌🏻	OK hand light skin tone	none
+👌🏼	OK hand medium-light skin tone	none
+👌🏽	OK hand medium skin tone	none
+👌🏾	OK hand medium-dark skin tone	none
+👌🏿	OK hand dark skin tone	none
+🤌🏻	pinched fingers light skin tone	none
+🤌🏼	pinched fingers medium-light skin tone	none
+🤌🏽	pinched fingers medium skin tone	none
+🤌🏾	pinched fingers medium-dark skin tone	none
+🤌🏿	pinched fingers dark skin tone	none
+🤏🏻	pinching hand light skin tone	none
+🤏🏼	pinching hand medium-light skin tone	none
+🤏🏽	pinching hand medium skin tone	none
+🤏🏾	pinching hand medium-dark skin tone	none
+🤏🏿	pinching hand dark skin tone	none
+✌🏻	victory hand light skin tone	none
+✌🏼	victory hand medium-light skin tone	none
+✌🏽	victory hand medium skin tone	none
+✌🏾	victory hand medium-dark skin tone	none
+✌🏿	victory hand dark skin tone	none
+🤞🏻	crossed fingers light skin tone	none
+🤞🏼	crossed fingers medium-light skin tone	none
+🤞🏽	crossed fingers medium skin tone	none
+🤞🏾	crossed fingers medium-dark skin tone	none
+🤞🏿	crossed fingers dark skin tone	none
+🫰🏻	hand with index finger and thumb crossed light skin tone	none
+🫰🏼	hand with index finger and thumb crossed medium-light skin tone	none
+🫰🏽	hand with index finger and thumb crossed medium skin tone	none
+🫰🏾	hand with index finger and thumb crossed medium-dark skin tone	none
+🫰🏿	hand with index finger and thumb crossed dark skin tone	none
+🤟🏻	love-you gesture light skin tone	none
+🤟🏼	love-you gesture medium-light skin tone	none
+🤟🏽	love-you gesture medium skin tone	none
+🤟🏾	love-you gesture medium-dark skin tone	none
+🤟🏿	love-you gesture dark skin tone	none
+🤘🏻	sign of the horns light skin tone	none
+🤘🏼	sign of the horns medium-light skin tone	none
+🤘🏽	sign of the horns medium skin tone	none
+🤘🏾	sign of the horns medium-dark skin tone	none
+🤘🏿	sign of the horns dark skin tone	none
+🤙🏻	call me hand light skin tone	none
+🤙🏼	call me hand medium-light skin tone	none
+🤙🏽	call me hand medium skin tone	none
+🤙🏾	call me hand medium-dark skin tone	none
+🤙🏿	call me hand dark skin tone	none
+👈🏻	backhand index pointing left light skin tone	none
+👈🏼	backhand index pointing left medium-light skin tone	none
+👈🏽	backhand index pointing left medium skin tone	none
+👈🏾	backhand index pointing left medium-dark skin tone	none
+👈🏿	backhand index pointing left dark skin tone	none
+👉🏻	backhand index pointing right light skin tone	none
+👉🏼	backhand index pointing right medium-light skin tone	none
+👉🏽	backhand index pointing right medium skin tone	none
+👉🏾	backhand index pointing right medium-dark skin tone	none
+👉🏿	backhand index pointing right dark skin tone	none
+👆🏻	backhand index pointing up light skin tone	none
+👆🏼	backhand index pointing up medium-light skin tone	none
+👆🏽	backhand index pointing up medium skin tone	none
+👆🏾	backhand index pointing up medium-dark skin tone	none
+👆🏿	backhand index pointing up dark skin tone	none
+🖕🏻	middle finger light skin tone	none
+🖕🏼	middle finger medium-light skin tone	none
+🖕🏽	middle finger medium skin tone	none
+🖕🏾	middle finger medium-dark skin tone	none
+🖕🏿	middle finger dark skin tone	none
+👇🏻	backhand index pointing down light skin tone	none
+👇🏼	backhand index pointing down medium-light skin tone	none
+👇🏽	backhand index pointing down medium skin tone	none
+👇🏾	backhand index pointing down medium-dark skin tone	none
+👇🏿	backhand index pointing down dark skin tone	none
+☝🏻	index pointing up light skin tone	none
+☝🏼	index pointing up medium-light skin tone	none
+☝🏽	index pointing up medium skin tone	none
+☝🏾	index pointing up medium-dark skin tone	none
+☝🏿	index pointing up dark skin tone	none
+🫵🏻	index pointing at the viewer light skin tone	none
+🫵🏼	index pointing at the viewer medium-light skin tone	none
+🫵🏽	index pointing at the viewer medium skin tone	none
+🫵🏾	index pointing at the viewer medium-dark skin tone	none
+🫵🏿	index pointing at the viewer dark skin tone	none
+👍🏻	thumbs up light skin tone	none
+👍🏼	thumbs up medium-light skin tone	none
+👍🏽	thumbs up medium skin tone	none
+👍🏾	thumbs up medium-dark skin tone	none
+👍🏿	thumbs up dark skin tone	none
+👎🏻	thumbs down light skin tone	none
+👎🏼	thumbs down medium-light skin tone	none
+👎🏽	thumbs down medium skin tone	none
+👎🏾	thumbs down medium-dark skin tone	none
+👎🏿	thumbs down dark skin tone	none
+✊🏻	raised fist light skin tone	none
+✊🏼	raised fist medium-light skin tone	none
+✊🏽	raised fist medium skin tone	none
+✊🏾	raised fist medium-dark skin tone	none
+✊🏿	raised fist dark skin tone	none
+👊🏻	oncoming fist light skin tone	none
+👊🏼	oncoming fist medium-light skin tone	none
+👊🏽	oncoming fist medium skin tone	none
+👊🏾	oncoming fist medium-dark skin tone	none
+👊🏿	oncoming fist dark skin tone	none
+🤛🏻	left-facing fist light skin tone	none
+🤛🏼	left-facing fist medium-light skin tone	none
+🤛🏽	left-facing fist medium skin tone	none
+🤛🏾	left-facing fist medium-dark skin tone	none
+🤛🏿	left-facing fist dark skin tone	none
+🤜🏻	right-facing fist light skin tone	none
+🤜🏼	right-facing fist medium-light skin tone	none
+🤜🏽	right-facing fist medium skin tone	none
+🤜🏾	right-facing fist medium-dark skin tone	none
+🤜🏿	right-facing fist dark skin tone	none
+👏🏻	clapping hands light skin tone	none
+👏🏼	clapping hands medium-light skin tone	none
+👏🏽	clapping hands medium skin tone	none
+👏🏾	clapping hands medium-dark skin tone	none
+👏🏿	clapping hands dark skin tone	none
+🙌🏻	raising hands light skin tone	none
+🙌🏼	raising hands medium-light skin tone	none
+🙌🏽	raising hands medium skin tone	none
+🙌🏾	raising hands medium-dark skin tone	none
+🙌🏿	raising hands dark skin tone	none
+🫶🏻	heart hands light skin tone	none
+🫶🏼	heart hands medium-light skin tone	none
+🫶🏽	heart hands medium skin tone	none
+🫶🏾	heart hands medium-dark skin tone	none
+🫶🏿	heart hands dark skin tone	none
+👐🏻	open hands light skin tone	none
+👐🏼	open hands medium-light skin tone	none
+👐🏽	open hands medium skin tone	none
+👐🏾	open hands medium-dark skin tone	none
+👐🏿	open hands dark skin tone	none
+🤲🏻	palms up together light skin tone	none
+🤲🏼	palms up together medium-light skin tone	none
+🤲🏽	palms up together medium skin tone	none
+🤲🏾	palms up together medium-dark skin tone	none
+🤲🏿	palms up together dark skin tone	none
+🤝🏻	handshake light skin tone	none
+🤝🏼	handshake medium-light skin tone	none
+🤝🏽	handshake medium skin tone	none
+🤝🏾	handshake medium-dark skin tone	none
+🤝🏿	handshake dark skin tone	none
+🙏🏻	folded hands light skin tone	none
+🙏🏼	folded hands medium-light skin tone	none
+🙏🏽	folded hands medium skin tone	none
+🙏🏾	folded hands medium-dark skin tone	none
+🙏🏿	folded hands dark skin tone	none
+✍🏻	writing hand light skin tone	none
+✍🏼	writing hand medium-light skin tone	none
+✍🏽	writing hand medium skin tone	none
+✍🏾	writing hand medium-dark skin tone	none
+✍🏿	writing hand dark skin tone	none
+💅🏻	nail polish light skin tone	none
+💅🏼	nail polish medium-light skin tone	none
+💅🏽	nail polish medium skin tone	none
+💅🏾	nail polish medium-dark skin tone	none
+💅🏿	nail polish dark skin tone	none
+🤳🏻	selfie light skin tone	none
+🤳🏼	selfie medium-light skin tone	none
+🤳🏽	selfie medium skin tone	none
+🤳🏾	selfie medium-dark skin tone	none
+🤳🏿	selfie dark skin tone	none
+💪🏻	flexed biceps light skin tone	none
+💪🏼	flexed biceps medium-light skin tone	none
+💪🏽	flexed biceps medium skin tone	none
+💪🏾	flexed biceps medium-dark skin tone	none
+💪🏿	flexed biceps dark skin tone	none
+🦵🏻	leg light skin tone	none
+🦵🏼	leg medium-light skin tone	none
+🦵🏽	leg medium skin tone	none
+🦵🏾	leg medium-dark skin tone	none
+🦵🏿	leg dark skin tone	none
+🦶🏻	foot light skin tone	none
+🦶🏼	foot medium-light skin tone	none
+🦶🏽	foot medium skin tone	none
+🦶🏾	foot medium-dark skin tone	none
+🦶🏿	foot dark skin tone	none
+👂🏻	ear light skin tone	none
+👂🏼	ear medium-light skin tone	none
+👂🏽	ear medium skin tone	none
+👂🏾	ear medium-dark skin tone	none
+👂🏿	ear dark skin tone	none
+🦻🏻	ear with hearing aid light skin tone	none
+🦻🏼	ear with hearing aid medium-light skin tone	none
+🦻🏽	ear with hearing aid medium skin tone	none
+🦻🏾	ear with hearing aid medium-dark skin tone	none
+🦻🏿	ear with hearing aid dark skin tone	none
+👃🏻	nose light skin tone	none
+👃🏼	nose medium-light skin tone	none
+👃🏽	nose medium skin tone	none
+👃🏾	nose medium-dark skin tone	none
+👃🏿	nose dark skin tone	none
+👶🏻	baby light skin tone	none
+👶🏼	baby medium-light skin tone	none
+👶🏽	baby medium skin tone	none
+👶🏾	baby medium-dark skin tone	none
+👶🏿	baby dark skin tone	none
+🧒🏻	child light skin tone	none
+🧒🏼	child medium-light skin tone	none
+🧒🏽	child medium skin tone	none
+🧒🏾	child medium-dark skin tone	none
+🧒🏿	child dark skin tone	none
+👦🏻	boy light skin tone	none
+👦🏼	boy medium-light skin tone	none
+👦🏽	boy medium skin tone	none
+👦🏾	boy medium-dark skin tone	none
+👦🏿	boy dark skin tone	none
+👧🏻	girl light skin tone	none
+👧🏼	girl medium-light skin tone	none
+👧🏽	girl medium skin tone	none
+👧🏾	girl medium-dark skin tone	none
+👧🏿	girl dark skin tone	none
+🧑🏻	person light skin tone	none
+🧑🏼	person medium-light skin tone	none
+🧑🏽	person medium skin tone	none
+🧑🏾	person medium-dark skin tone	none
+🧑🏿	person dark skin tone	none
+👱🏻	person light skin tone, blond hair	none
+👱🏼	person medium-light skin tone, blond hair	none
+👱🏽	person medium skin tone, blond hair	none
+👱🏾	person medium-dark skin tone, blond hair	none
+👱🏿	person dark skin tone, blond hair	none
+🧑🏻‍❤‍💋‍🧑🏼	kiss person, person, light skin tone, medium-light skin tone	none
+🧑🏻‍❤‍💋‍🧑🏽	kiss person, person, light skin tone, medium skin tone	none
+🧑🏻‍❤‍💋‍🧑🏾	kiss person, person, light skin tone, medium-dark skin tone	none
+🧑🏻‍❤‍💋‍🧑🏿	kiss person, person, light skin tone, dark skin tone	none
+🧑🏼‍❤‍💋‍🧑🏻	kiss person, person, medium-light skin tone, light skin tone	none
+🧑🏼‍❤‍💋‍🧑🏽	kiss person, person, medium-light skin tone, medium skin tone	none
+🧑🏼‍❤‍💋‍🧑🏾	kiss person, person, medium-light skin tone, medium-dark skin tone	none
+🧑🏼‍❤‍💋‍🧑🏿	kiss person, person, medium-light skin tone, dark skin tone	none
+🧑🏽‍❤‍💋‍🧑🏻	kiss person, person, medium skin tone, light skin tone	none
+🧑🏽‍❤‍💋‍🧑🏼	kiss person, person, medium skin tone, medium-light skin tone	none
+🧑🏽‍❤‍💋‍🧑🏾	kiss person, person, medium skin tone, medium-dark skin tone	none
+🧑🏽‍❤‍💋‍🧑🏿	kiss person, person, medium skin tone, dark skin tone	none
+🧑🏾‍❤‍💋‍🧑🏻	kiss person, person, medium-dark skin tone, light skin tone	none
+🧑🏾‍❤‍💋‍🧑🏼	kiss person, person, medium-dark skin tone, medium-light skin tone	none
+🧑🏾‍❤‍💋‍🧑🏽	kiss person, person, medium-dark skin tone, medium skin tone	none
+🧑🏾‍❤‍💋‍🧑🏿	kiss person, person, medium-dark skin tone, dark skin tone	none
+🧑🏿‍❤‍💋‍🧑🏻	kiss person, person, dark skin tone, light skin tone	none
+🧑🏿‍❤‍💋‍🧑🏼	kiss person, person, dark skin tone, medium-light skin tone	none
+🧑🏿‍❤‍💋‍🧑🏽	kiss person, person, dark skin tone, medium skin tone	none
+🧑🏿‍❤‍💋‍🧑🏾	kiss person, person, dark skin tone, medium-dark skin tone	none
+🧑🏻‍❤‍🧑🏼	couple with heart person, person, light skin tone, medium-light skin tone	none
+🧑🏻‍❤‍🧑🏽	couple with heart person, person, light skin tone, medium skin tone	none
+🧑🏻‍❤‍🧑🏾	couple with heart person, person, light skin tone, medium-dark skin tone	none
+🧑🏻‍❤‍🧑🏿	couple with heart person, person, light skin tone, dark skin tone	none
+🧑🏼‍❤‍🧑🏻	couple with heart person, person, medium-light skin tone, light skin tone	none
+🧑🏼‍❤‍🧑🏽	couple with heart person, person, medium-light skin tone, medium skin tone	none
+🧑🏼‍❤‍🧑🏾	couple with heart person, person, medium-light skin tone, medium-dark skin tone	none
+🧑🏼‍❤‍🧑🏿	couple with heart person, person, medium-light skin tone, dark skin tone	none
+🧑🏽‍❤‍🧑🏻	couple with heart person, person, medium skin tone, light skin tone	none
+🧑🏽‍❤‍🧑🏼	couple with heart person, person, medium skin tone, medium-light skin tone	none
+🧑🏽‍❤‍🧑🏾	couple with heart person, person, medium skin tone, medium-dark skin tone	none
+🧑🏽‍❤‍🧑🏿	couple with heart person, person, medium skin tone, dark skin tone	none
+🧑🏾‍❤‍🧑🏻	couple with heart person, person, medium-dark skin tone, light skin tone	none
+🧑🏾‍❤‍🧑🏼	couple with heart person, person, medium-dark skin tone, medium-light skin tone	none
+🧑🏾‍❤‍🧑🏽	couple with heart person, person, medium-dark skin tone, medium skin tone	none
+🧑🏾‍❤‍🧑🏿	couple with heart person, person, medium-dark skin tone, dark skin tone	none
+🧑🏿‍❤‍🧑🏻	couple with heart person, person, dark skin tone, light skin tone	none
+🧑🏿‍❤‍🧑🏼	couple with heart person, person, dark skin tone, medium-light skin tone	none
+🧑🏿‍❤‍🧑🏽	couple with heart person, person, dark skin tone, medium skin tone	none
+🧑🏿‍❤‍🧑🏾	couple with heart person, person, dark skin tone, medium-dark skin tone	none
+🧑‍🦰	person red hair	none
+🧑🏻‍🦰	person light skin tone, red hair	none
+🧑🏼‍🦰	person medium-light skin tone, red hair	none
+🧑🏽‍🦰	person medium skin tone, red hair	none
+🧑🏾‍🦰	person medium-dark skin tone, red hair	none
+🧑🏿‍🦰	person dark skin tone, red hair	none
+🧑‍🦱	person curly hair	none
+🧑🏻‍🦱	person light skin tone, curly hair	none
+🧑🏼‍🦱	person medium-light skin tone, curly hair	none
+🧑🏽‍🦱	person medium skin tone, curly hair	none
+🧑🏾‍🦱	person medium-dark skin tone, curly hair	none
+🧑🏿‍🦱	person dark skin tone, curly hair	none
+🧑‍🦳	person white hair	none
+🧑🏻‍🦳	person light skin tone, white hair	none
+🧑🏼‍🦳	person medium-light skin tone, white hair	none
+🧑🏽‍🦳	person medium skin tone, white hair	none
+🧑🏾‍🦳	person medium-dark skin tone, white hair	none
+🧑🏿‍🦳	person dark skin tone, white hair	none
+🧑‍🦲	person bald	none
+🧑🏻‍🦲	person light skin tone, bald	none
+🧑🏼‍🦲	person medium-light skin tone, bald	none
+🧑🏽‍🦲	person medium skin tone, bald	none
+🧑🏾‍🦲	person medium-dark skin tone, bald	none
+🧑🏿‍🦲	person dark skin tone, bald	none
+👨🏻	man light skin tone	none
+👨🏼	man medium-light skin tone	none
+👨🏽	man medium skin tone	none
+👨🏾	man medium-dark skin tone	none
+👨🏿	man dark skin tone	none
+🧔🏻	person light skin tone, beard	none
+🧔🏼	person medium-light skin tone, beard	none
+🧔🏽	person medium skin tone, beard	none
+🧔🏾	person medium-dark skin tone, beard	none
+🧔🏿	person dark skin tone, beard	none
+🧔🏻‍♂	man light skin tone, beard	none
+🧔🏼‍♂	man medium-light skin tone, beard	none
+🧔🏽‍♂	man medium skin tone, beard	none
+🧔🏾‍♂	man medium-dark skin tone, beard	none
+🧔🏿‍♂	man dark skin tone, beard	none
+👱🏻‍♂	man light skin tone, blond hair	none
+👱🏼‍♂	man medium-light skin tone, blond hair	none
+👱🏽‍♂	man medium skin tone, blond hair	none
+👱🏾‍♂	man medium-dark skin tone, blond hair	none
+👱🏿‍♂	man dark skin tone, blond hair	none
+👨🏻‍❤‍💋‍👨🏻	kiss man, man, light skin tone	none
+👨🏻‍❤‍💋‍👨🏼	kiss man, man, light skin tone, medium-light skin tone	none
+👨🏻‍❤‍💋‍👨🏽	kiss man, man, light skin tone, medium skin tone	none
+👨🏻‍❤‍💋‍👨🏾	kiss man, man, light skin tone, medium-dark skin tone	none
+👨🏻‍❤‍💋‍👨🏿	kiss man, man, light skin tone, dark skin tone	none
+👨🏼‍❤‍💋‍👨🏻	kiss man, man, medium-light skin tone, light skin tone	none
+👨🏼‍❤‍💋‍👨🏼	kiss man, man, medium-light skin tone	none
+👨🏼‍❤‍💋‍👨🏽	kiss man, man, medium-light skin tone, medium skin tone	none
+👨🏼‍❤‍💋‍👨🏾	kiss man, man, medium-light skin tone, medium-dark skin tone	none
+👨🏼‍❤‍💋‍👨🏿	kiss man, man, medium-light skin tone, dark skin tone	none
+👨🏽‍❤‍💋‍👨🏻	kiss man, man, medium skin tone, light skin tone	none
+👨🏽‍❤‍💋‍👨🏼	kiss man, man, medium skin tone, medium-light skin tone	none
+👨🏽‍❤‍💋‍👨🏽	kiss man, man, medium skin tone	none
+👨🏽‍❤‍💋‍👨🏾	kiss man, man, medium skin tone, medium-dark skin tone	none
+👨🏽‍❤‍💋‍👨🏿	kiss man, man, medium skin tone, dark skin tone	none
+👨🏾‍❤‍💋‍👨🏻	kiss man, man, medium-dark skin tone, light skin tone	none
+👨🏾‍❤‍💋‍👨🏼	kiss man, man, medium-dark skin tone, medium-light skin tone	none
+👨🏾‍❤‍💋‍👨🏽	kiss man, man, medium-dark skin tone, medium skin tone	none
+👨🏾‍❤‍💋‍👨🏾	kiss man, man, medium-dark skin tone	none
+👨🏾‍❤‍💋‍👨🏿	kiss man, man, medium-dark skin tone, dark skin tone	none
+👨🏿‍❤‍💋‍👨🏻	kiss man, man, dark skin tone, light skin tone	none
+👨🏿‍❤‍💋‍👨🏼	kiss man, man, dark skin tone, medium-light skin tone	none
+👨🏿‍❤‍💋‍👨🏽	kiss man, man, dark skin tone, medium skin tone	none
+👨🏿‍❤‍💋‍👨🏾	kiss man, man, dark skin tone, medium-dark skin tone	none
+👨🏿‍❤‍💋‍👨🏿	kiss man, man, dark skin tone	none
+👨🏻‍❤‍👨🏻	couple with heart man, man, light skin tone	none
+👨🏻‍❤‍👨🏼	couple with heart man, man, light skin tone, medium-light skin tone	none
+👨🏻‍❤‍👨🏽	couple with heart man, man, light skin tone, medium skin tone	none
+👨🏻‍❤‍👨🏾	couple with heart man, man, light skin tone, medium-dark skin tone	none
+👨🏻‍❤‍👨🏿	couple with heart man, man, light skin tone, dark skin tone	none
+👨🏼‍❤‍👨🏻	couple with heart man, man, medium-light skin tone, light skin tone	none
+👨🏼‍❤‍👨🏼	couple with heart man, man, medium-light skin tone	none
+👨🏼‍❤‍👨🏽	couple with heart man, man, medium-light skin tone, medium skin tone	none
+👨🏼‍❤‍👨🏾	couple with heart man, man, medium-light skin tone, medium-dark skin tone	none
+👨🏼‍❤‍👨🏿	couple with heart man, man, medium-light skin tone, dark skin tone	none
+👨🏽‍❤‍👨🏻	couple with heart man, man, medium skin tone, light skin tone	none
+👨🏽‍❤‍👨🏼	couple with heart man, man, medium skin tone, medium-light skin tone	none
+👨🏽‍❤‍👨🏽	couple with heart man, man, medium skin tone	none
+👨🏽‍❤‍👨🏾	couple with heart man, man, medium skin tone, medium-dark skin tone	none
+👨🏽‍❤‍👨🏿	couple with heart man, man, medium skin tone, dark skin tone	none
+👨🏾‍❤‍👨🏻	couple with heart man, man, medium-dark skin tone, light skin tone	none
+👨🏾‍❤‍👨🏼	couple with heart man, man, medium-dark skin tone, medium-light skin tone	none
+👨🏾‍❤‍👨🏽	couple with heart man, man, medium-dark skin tone, medium skin tone	none
+👨🏾‍❤‍👨🏾	couple with heart man, man, medium-dark skin tone	none
+👨🏾‍❤‍👨🏿	couple with heart man, man, medium-dark skin tone, dark skin tone	none
+👨🏿‍❤‍👨🏻	couple with heart man, man, dark skin tone, light skin tone	none
+👨🏿‍❤‍👨🏼	couple with heart man, man, dark skin tone, medium-light skin tone	none
+👨🏿‍❤‍👨🏽	couple with heart man, man, dark skin tone, medium skin tone	none
+👨🏿‍❤‍👨🏾	couple with heart man, man, dark skin tone, medium-dark skin tone	none
+👨🏿‍❤‍👨🏿	couple with heart man, man, dark skin tone	none
+👨‍🦰	man red hair	none
+👨🏻‍🦰	man light skin tone, red hair	none
+👨🏼‍🦰	man medium-light skin tone, red hair	none
+👨🏽‍🦰	man medium skin tone, red hair	none
+👨🏾‍🦰	man medium-dark skin tone, red hair	none
+👨🏿‍🦰	man dark skin tone, red hair	none
+👨‍🦱	man curly hair	none
+👨🏻‍🦱	man light skin tone, curly hair	none
+👨🏼‍🦱	man medium-light skin tone, curly hair	none
+👨🏽‍🦱	man medium skin tone, curly hair	none
+👨🏾‍🦱	man medium-dark skin tone, curly hair	none
+👨🏿‍🦱	man dark skin tone, curly hair	none
+👨‍🦳	man white hair	none
+👨🏻‍🦳	man light skin tone, white hair	none
+👨🏼‍🦳	man medium-light skin tone, white hair	none
+👨🏽‍🦳	man medium skin tone, white hair	none
+👨🏾‍🦳	man medium-dark skin tone, white hair	none
+👨🏿‍🦳	man dark skin tone, white hair	none
+👨‍🦲	man bald	none
+👨🏻‍🦲	man light skin tone, bald	none
+👨🏼‍🦲	man medium-light skin tone, bald	none
+👨🏽‍🦲	man medium skin tone, bald	none
+👨🏾‍🦲	man medium-dark skin tone, bald	none
+👨🏿‍🦲	man dark skin tone, bald	none
+👩🏻	woman light skin tone	none
+👩🏼	woman medium-light skin tone	none
+👩🏽	woman medium skin tone	none
+👩🏾	woman medium-dark skin tone	none
+👩🏿	woman dark skin tone	none
+🧔🏻‍♀	woman light skin tone, beard	none
+🧔🏼‍♀	woman medium-light skin tone, beard	none
+🧔🏽‍♀	woman medium skin tone, beard	none
+🧔🏾‍♀	woman medium-dark skin tone, beard	none
+🧔🏿‍♀	woman dark skin tone, beard	none
+👱🏻‍♀	woman light skin tone, blond hair	none
+👱🏼‍♀	woman medium-light skin tone, blond hair	none
+👱🏽‍♀	woman medium skin tone, blond hair	none
+👱🏾‍♀	woman medium-dark skin tone, blond hair	none
+👱🏿‍♀	woman dark skin tone, blond hair	none
+👩🏻‍❤‍💋‍👨🏻	kiss woman, man, light skin tone	none
+👩🏻‍❤‍💋‍👨🏼	kiss woman, man, light skin tone, medium-light skin tone	none
+👩🏻‍❤‍💋‍👨🏽	kiss woman, man, light skin tone, medium skin tone	none
+👩🏻‍❤‍💋‍👨🏾	kiss woman, man, light skin tone, medium-dark skin tone	none
+👩🏻‍❤‍💋‍👨🏿	kiss woman, man, light skin tone, dark skin tone	none
+👩🏼‍❤‍💋‍👨🏻	kiss woman, man, medium-light skin tone, light skin tone	none
+👩🏼‍❤‍💋‍👨🏼	kiss woman, man, medium-light skin tone	none
+👩🏼‍❤‍💋‍👨🏽	kiss woman, man, medium-light skin tone, medium skin tone	none
+👩🏼‍❤‍💋‍👨🏾	kiss woman, man, medium-light skin tone, medium-dark skin tone	none
+👩🏼‍❤‍💋‍👨🏿	kiss woman, man, medium-light skin tone, dark skin tone	none
+👩🏽‍❤‍💋‍👨🏻	kiss woman, man, medium skin tone, light skin tone	none
+👩🏽‍❤‍💋‍👨🏼	kiss woman, man, medium skin tone, medium-light skin tone	none
+👩🏽‍❤‍💋‍👨🏽	kiss woman, man, medium skin tone	none
+👩🏽‍❤‍💋‍👨🏾	kiss woman, man, medium skin tone, medium-dark skin tone	none
+👩🏽‍❤‍💋‍👨🏿	kiss woman, man, medium skin tone, dark skin tone	none
+👩🏾‍❤‍💋‍👨🏻	kiss woman, man, medium-dark skin tone, light skin tone	none
+👩🏾‍❤‍💋‍👨🏼	kiss woman, man, medium-dark skin tone, medium-light skin tone	none
+👩🏾‍❤‍💋‍👨🏽	kiss woman, man, medium-dark skin tone, medium skin tone	none
+👩🏾‍❤‍💋‍👨🏾	kiss woman, man, medium-dark skin tone	none
+👩🏾‍❤‍💋‍👨🏿	kiss woman, man, medium-dark skin tone, dark skin tone	none
+👩🏿‍❤‍💋‍👨🏻	kiss woman, man, dark skin tone, light skin tone	none
+👩🏿‍❤‍💋‍👨🏼	kiss woman, man, dark skin tone, medium-light skin tone	none
+👩🏿‍❤‍💋‍👨🏽	kiss woman, man, dark skin tone, medium skin tone	none
+👩🏿‍❤‍💋‍👨🏾	kiss woman, man, dark skin tone, medium-dark skin tone	none
+👩🏿‍❤‍💋‍👨🏿	kiss woman, man, dark skin tone	none
+👩🏻‍❤‍💋‍👩🏻	kiss woman, woman, light skin tone	none
+👩🏻‍❤‍💋‍👩🏼	kiss woman, woman, light skin tone, medium-light skin tone	none
+👩🏻‍❤‍💋‍👩🏽	kiss woman, woman, light skin tone, medium skin tone	none
+👩🏻‍❤‍💋‍👩🏾	kiss woman, woman, light skin tone, medium-dark skin tone	none
+👩🏻‍❤‍💋‍👩🏿	kiss woman, woman, light skin tone, dark skin tone	none
+👩🏼‍❤‍💋‍👩🏻	kiss woman, woman, medium-light skin tone, light skin tone	none
+👩🏼‍❤‍💋‍👩🏼	kiss woman, woman, medium-light skin tone	none
+👩🏼‍❤‍💋‍👩🏽	kiss woman, woman, medium-light skin tone, medium skin tone	none
+👩🏼‍❤‍💋‍👩🏾	kiss woman, woman, medium-light skin tone, medium-dark skin tone	none
+👩🏼‍❤‍💋‍👩🏿	kiss woman, woman, medium-light skin tone, dark skin tone	none
+👩🏽‍❤‍💋‍👩🏻	kiss woman, woman, medium skin tone, light skin tone	none
+👩🏽‍❤‍💋‍👩🏼	kiss woman, woman, medium skin tone, medium-light skin tone	none
+👩🏽‍❤‍💋‍👩🏽	kiss woman, woman, medium skin tone	none
+👩🏽‍❤‍💋‍👩🏾	kiss woman, woman, medium skin tone, medium-dark skin tone	none
+👩🏽‍❤‍💋‍👩🏿	kiss woman, woman, medium skin tone, dark skin tone	none
+👩🏾‍❤‍💋‍👩🏻	kiss woman, woman, medium-dark skin tone, light skin tone	none
+👩🏾‍❤‍💋‍👩🏼	kiss woman, woman, medium-dark skin tone, medium-light skin tone	none
+👩🏾‍❤‍💋‍👩🏽	kiss woman, woman, medium-dark skin tone, medium skin tone	none
+👩🏾‍❤‍💋‍👩🏾	kiss woman, woman, medium-dark skin tone	none
+👩🏾‍❤‍💋‍👩🏿	kiss woman, woman, medium-dark skin tone, dark skin tone	none
+👩🏿‍❤‍💋‍👩🏻	kiss woman, woman, dark skin tone, light skin tone	none
+👩🏿‍❤‍💋‍👩🏼	kiss woman, woman, dark skin tone, medium-light skin tone	none
+👩🏿‍❤‍💋‍👩🏽	kiss woman, woman, dark skin tone, medium skin tone	none
+👩🏿‍❤‍💋‍👩🏾	kiss woman, woman, dark skin tone, medium-dark skin tone	none
+👩🏿‍❤‍💋‍👩🏿	kiss woman, woman, dark skin tone	none
+👩🏻‍❤‍👨🏻	couple with heart woman, man, light skin tone	none
+👩🏻‍❤‍👨🏼	couple with heart woman, man, light skin tone, medium-light skin tone	none
+👩🏻‍❤‍👨🏽	couple with heart woman, man, light skin tone, medium skin tone	none
+👩🏻‍❤‍👨🏾	couple with heart woman, man, light skin tone, medium-dark skin tone	none
+👩🏻‍❤‍👨🏿	couple with heart woman, man, light skin tone, dark skin tone	none
+👩🏼‍❤‍👨🏻	couple with heart woman, man, medium-light skin tone, light skin tone	none
+👩🏼‍❤‍👨🏼	couple with heart woman, man, medium-light skin tone	none
+👩🏼‍❤‍👨🏽	couple with heart woman, man, medium-light skin tone, medium skin tone	none
+👩🏼‍❤‍👨🏾	couple with heart woman, man, medium-light skin tone, medium-dark skin tone	none
+👩🏼‍❤‍👨🏿	couple with heart woman, man, medium-light skin tone, dark skin tone	none
+👩🏽‍❤‍👨🏻	couple with heart woman, man, medium skin tone, light skin tone	none
+👩🏽‍❤‍👨🏼	couple with heart woman, man, medium skin tone, medium-light skin tone	none
+👩🏽‍❤‍👨🏽	couple with heart woman, man, medium skin tone	none
+👩🏽‍❤‍👨🏾	couple with heart woman, man, medium skin tone, medium-dark skin tone	none
+👩🏽‍❤‍👨🏿	couple with heart woman, man, medium skin tone, dark skin tone	none
+👩🏾‍❤‍👨🏻	couple with heart woman, man, medium-dark skin tone, light skin tone	none
+👩🏾‍❤‍👨🏼	couple with heart woman, man, medium-dark skin tone, medium-light skin tone	none
+👩🏾‍❤‍👨🏽	couple with heart woman, man, medium-dark skin tone, medium skin tone	none
+👩🏾‍❤‍👨🏾	couple with heart woman, man, medium-dark skin tone	none
+👩🏾‍❤‍👨🏿	couple with heart woman, man, medium-dark skin tone, dark skin tone	none
+👩🏿‍❤‍👨🏻	couple with heart woman, man, dark skin tone, light skin tone	none
+👩🏿‍❤‍👨🏼	couple with heart woman, man, dark skin tone, medium-light skin tone	none
+👩🏿‍❤‍👨🏽	couple with heart woman, man, dark skin tone, medium skin tone	none
+👩🏿‍❤‍👨🏾	couple with heart woman, man, dark skin tone, medium-dark skin tone	none
+👩🏿‍❤‍👨🏿	couple with heart woman, man, dark skin tone	none
+👩🏻‍❤‍👩🏻	couple with heart woman, woman, light skin tone	none
+👩🏻‍❤‍👩🏼	couple with heart woman, woman, light skin tone, medium-light skin tone	none
+👩🏻‍❤‍👩🏽	couple with heart woman, woman, light skin tone, medium skin tone	none
+👩🏻‍❤‍👩🏾	couple with heart woman, woman, light skin tone, medium-dark skin tone	none
+👩🏻‍❤‍👩🏿	couple with heart woman, woman, light skin tone, dark skin tone	none
+👩🏼‍❤‍👩🏻	couple with heart woman, woman, medium-light skin tone, light skin tone	none
+👩🏼‍❤‍👩🏼	couple with heart woman, woman, medium-light skin tone	none
+👩🏼‍❤‍👩🏽	couple with heart woman, woman, medium-light skin tone, medium skin tone	none
+👩🏼‍❤‍👩🏾	couple with heart woman, woman, medium-light skin tone, medium-dark skin tone	none
+👩🏼‍❤‍👩🏿	couple with heart woman, woman, medium-light skin tone, dark skin tone	none
+👩🏽‍❤‍👩🏻	couple with heart woman, woman, medium skin tone, light skin tone	none
+👩🏽‍❤‍👩🏼	couple with heart woman, woman, medium skin tone, medium-light skin tone	none
+👩🏽‍❤‍👩🏽	couple with heart woman, woman, medium skin tone	none
+👩🏽‍❤‍👩🏾	couple with heart woman, woman, medium skin tone, medium-dark skin tone	none
+👩🏽‍❤‍👩🏿	couple with heart woman, woman, medium skin tone, dark skin tone	none
+👩🏾‍❤‍👩🏻	couple with heart woman, woman, medium-dark skin tone, light skin tone	none
+👩🏾‍❤‍👩🏼	couple with heart woman, woman, medium-dark skin tone, medium-light skin tone	none
+👩🏾‍❤‍👩🏽	couple with heart woman, woman, medium-dark skin tone, medium skin tone	none
+👩🏾‍❤‍👩🏾	couple with heart woman, woman, medium-dark skin tone	none
+👩🏾‍❤‍👩🏿	couple with heart woman, woman, medium-dark skin tone, dark skin tone	none
+👩🏿‍❤‍👩🏻	couple with heart woman, woman, dark skin tone, light skin tone	none
+👩🏿‍❤‍👩🏼	couple with heart woman, woman, dark skin tone, medium-light skin tone	none
+👩🏿‍❤‍👩🏽	couple with heart woman, woman, dark skin tone, medium skin tone	none
+👩🏿‍❤‍👩🏾	couple with heart woman, woman, dark skin tone, medium-dark skin tone	none
+👩🏿‍❤‍👩🏿	couple with heart woman, woman, dark skin tone	none
+👩‍🦰	woman red hair	none
+👩🏻‍🦰	woman light skin tone, red hair	none
+👩🏼‍🦰	woman medium-light skin tone, red hair	none
+👩🏽‍🦰	woman medium skin tone, red hair	none
+👩🏾‍🦰	woman medium-dark skin tone, red hair	none
+👩🏿‍🦰	woman dark skin tone, red hair	none
+👩‍🦱	woman curly hair	none
+👩🏻‍🦱	woman light skin tone, curly hair	none
+👩🏼‍🦱	woman medium-light skin tone, curly hair	none
+👩🏽‍🦱	woman medium skin tone, curly hair	none
+👩🏾‍🦱	woman medium-dark skin tone, curly hair	none
+👩🏿‍🦱	woman dark skin tone, curly hair	none
+👩‍🦳	woman white hair	none
+👩🏻‍🦳	woman light skin tone, white hair	none
+👩🏼‍🦳	woman medium-light skin tone, white hair	none
+👩🏽‍🦳	woman medium skin tone, white hair	none
+👩🏾‍🦳	woman medium-dark skin tone, white hair	none
+👩🏿‍🦳	woman dark skin tone, white hair	none
+👩‍🦲	woman bald	none
+👩🏻‍🦲	woman light skin tone, bald	none
+👩🏼‍🦲	woman medium-light skin tone, bald	none
+👩🏽‍🦲	woman medium skin tone, bald	none
+👩🏾‍🦲	woman medium-dark skin tone, bald	none
+👩🏿‍🦲	woman dark skin tone, bald	none
+🧓🏻	older person light skin tone	none
+🧓🏼	older person medium-light skin tone	none
+🧓🏽	older person medium skin tone	none
+🧓🏾	older person medium-dark skin tone	none
+🧓🏿	older person dark skin tone	none
+👴🏻	old man light skin tone	none
+👴🏼	old man medium-light skin tone	none
+👴🏽	old man medium skin tone	none
+👴🏾	old man medium-dark skin tone	none
+👴🏿	old man dark skin tone	none
+👵🏻	old woman light skin tone	none
+👵🏼	old woman medium-light skin tone	none
+👵🏽	old woman medium skin tone	none
+👵🏾	old woman medium-dark skin tone	none
+👵🏿	old woman dark skin tone	none
+🙍🏻	person frowning light skin tone	none
+🙍🏼	person frowning medium-light skin tone	none
+🙍🏽	person frowning medium skin tone	none
+🙍🏾	person frowning medium-dark skin tone	none
+🙍🏿	person frowning dark skin tone	none
+🙍🏻‍♂	man frowning light skin tone	none
+🙍🏼‍♂	man frowning medium-light skin tone	none
+🙍🏽‍♂	man frowning medium skin tone	none
+🙍🏾‍♂	man frowning medium-dark skin tone	none
+🙍🏿‍♂	man frowning dark skin tone	none
+🙍🏻‍♀	woman frowning light skin tone	none
+🙍🏼‍♀	woman frowning medium-light skin tone	none
+🙍🏽‍♀	woman frowning medium skin tone	none
+🙍🏾‍♀	woman frowning medium-dark skin tone	none
+🙍🏿‍♀	woman frowning dark skin tone	none
+🙎🏻	person pouting light skin tone	none
+🙎🏼	person pouting medium-light skin tone	none
+🙎🏽	person pouting medium skin tone	none
+🙎🏾	person pouting medium-dark skin tone	none
+🙎🏿	person pouting dark skin tone	none
+🙎🏻‍♂	man pouting light skin tone	none
+🙎🏼‍♂	man pouting medium-light skin tone	none
+🙎🏽‍♂	man pouting medium skin tone	none
+🙎🏾‍♂	man pouting medium-dark skin tone	none
+🙎🏿‍♂	man pouting dark skin tone	none
+🙎🏻‍♀	woman pouting light skin tone	none
+🙎🏼‍♀	woman pouting medium-light skin tone	none
+🙎🏽‍♀	woman pouting medium skin tone	none
+🙎🏾‍♀	woman pouting medium-dark skin tone	none
+🙎🏿‍♀	woman pouting dark skin tone	none
+🙅🏻	person gesturing NO light skin tone	none
+🙅🏼	person gesturing NO medium-light skin tone	none
+🙅🏽	person gesturing NO medium skin tone	none
+🙅🏾	person gesturing NO medium-dark skin tone	none
+🙅🏿	person gesturing NO dark skin tone	none
+🙅🏻‍♂	man gesturing NO light skin tone	none
+🙅🏼‍♂	man gesturing NO medium-light skin tone	none
+🙅🏽‍♂	man gesturing NO medium skin tone	none
+🙅🏾‍♂	man gesturing NO medium-dark skin tone	none
+🙅🏿‍♂	man gesturing NO dark skin tone	none
+🙅🏻‍♀	woman gesturing NO light skin tone	none
+🙅🏼‍♀	woman gesturing NO medium-light skin tone	none
+🙅🏽‍♀	woman gesturing NO medium skin tone	none
+🙅🏾‍♀	woman gesturing NO medium-dark skin tone	none
+🙅🏿‍♀	woman gesturing NO dark skin tone	none
+🙆🏻	person gesturing OK light skin tone	none
+🙆🏼	person gesturing OK medium-light skin tone	none
+🙆🏽	person gesturing OK medium skin tone	none
+🙆🏾	person gesturing OK medium-dark skin tone	none
+🙆🏿	person gesturing OK dark skin tone	none
+🙆🏻‍♂	man gesturing OK light skin tone	none
+🙆🏼‍♂	man gesturing OK medium-light skin tone	none
+🙆🏽‍♂	man gesturing OK medium skin tone	none
+🙆🏾‍♂	man gesturing OK medium-dark skin tone	none
+🙆🏿‍♂	man gesturing OK dark skin tone	none
+🙆🏻‍♀	woman gesturing OK light skin tone	none
+🙆🏼‍♀	woman gesturing OK medium-light skin tone	none
+🙆🏽‍♀	woman gesturing OK medium skin tone	none
+🙆🏾‍♀	woman gesturing OK medium-dark skin tone	none
+🙆🏿‍♀	woman gesturing OK dark skin tone	none
+💁🏻	person tipping hand light skin tone	none
+💁🏼	person tipping hand medium-light skin tone	none
+💁🏽	person tipping hand medium skin tone	none
+💁🏾	person tipping hand medium-dark skin tone	none
+💁🏿	person tipping hand dark skin tone	none
+💁🏻‍♂	man tipping hand light skin tone	none
+💁🏼‍♂	man tipping hand medium-light skin tone	none
+💁🏽‍♂	man tipping hand medium skin tone	none
+💁🏾‍♂	man tipping hand medium-dark skin tone	none
+💁🏿‍♂	man tipping hand dark skin tone	none
+💁🏻‍♀	woman tipping hand light skin tone	none
+💁🏼‍♀	woman tipping hand medium-light skin tone	none
+💁🏽‍♀	woman tipping hand medium skin tone	none
+💁🏾‍♀	woman tipping hand medium-dark skin tone	none
+💁🏿‍♀	woman tipping hand dark skin tone	none
+🙋🏻	person raising hand light skin tone	none
+🙋🏼	person raising hand medium-light skin tone	none
+🙋🏽	person raising hand medium skin tone	none
+🙋🏾	person raising hand medium-dark skin tone	none
+🙋🏿	person raising hand dark skin tone	none
+🙋🏻‍♂	man raising hand light skin tone	none
+🙋🏼‍♂	man raising hand medium-light skin tone	none
+🙋🏽‍♂	man raising hand medium skin tone	none
+🙋🏾‍♂	man raising hand medium-dark skin tone	none
+🙋🏿‍♂	man raising hand dark skin tone	none
+🙋🏻‍♀	woman raising hand light skin tone	none
+🙋🏼‍♀	woman raising hand medium-light skin tone	none
+🙋🏽‍♀	woman raising hand medium skin tone	none
+🙋🏾‍♀	woman raising hand medium-dark skin tone	none
+🙋🏿‍♀	woman raising hand dark skin tone	none
+🧏🏻	deaf person light skin tone	none
+🧏🏼	deaf person medium-light skin tone	none
+🧏🏽	deaf person medium skin tone	none
+🧏🏾	deaf person medium-dark skin tone	none
+🧏🏿	deaf person dark skin tone	none
+🧏🏻‍♂	deaf man light skin tone	none
+🧏🏼‍♂	deaf man medium-light skin tone	none
+🧏🏽‍♂	deaf man medium skin tone	none
+🧏🏾‍♂	deaf man medium-dark skin tone	none
+🧏🏿‍♂	deaf man dark skin tone	none
+🧏🏻‍♀	deaf woman light skin tone	none
+🧏🏼‍♀	deaf woman medium-light skin tone	none
+🧏🏽‍♀	deaf woman medium skin tone	none
+🧏🏾‍♀	deaf woman medium-dark skin tone	none
+🧏🏿‍♀	deaf woman dark skin tone	none
+🙇🏻	person bowing light skin tone	none
+🙇🏼	person bowing medium-light skin tone	none
+🙇🏽	person bowing medium skin tone	none
+🙇🏾	person bowing medium-dark skin tone	none
+🙇🏿	person bowing dark skin tone	none
+🙇🏻‍♂	man bowing light skin tone	none
+🙇🏼‍♂	man bowing medium-light skin tone	none
+🙇🏽‍♂	man bowing medium skin tone	none
+🙇🏾‍♂	man bowing medium-dark skin tone	none
+🙇🏿‍♂	man bowing dark skin tone	none
+🙇🏻‍♀	woman bowing light skin tone	none
+🙇🏼‍♀	woman bowing medium-light skin tone	none
+🙇🏽‍♀	woman bowing medium skin tone	none
+🙇🏾‍♀	woman bowing medium-dark skin tone	none
+🙇🏿‍♀	woman bowing dark skin tone	none
+🤦🏻	person facepalming light skin tone	none
+🤦🏼	person facepalming medium-light skin tone	none
+🤦🏽	person facepalming medium skin tone	none
+🤦🏾	person facepalming medium-dark skin tone	none
+🤦🏿	person facepalming dark skin tone	none
+🤦🏻‍♂	man facepalming light skin tone	none
+🤦🏼‍♂	man facepalming medium-light skin tone	none
+🤦🏽‍♂	man facepalming medium skin tone	none
+🤦🏾‍♂	man facepalming medium-dark skin tone	none
+🤦🏿‍♂	man facepalming dark skin tone	none
+🤦🏻‍♀	woman facepalming light skin tone	none
+🤦🏼‍♀	woman facepalming medium-light skin tone	none
+🤦🏽‍♀	woman facepalming medium skin tone	none
+🤦🏾‍♀	woman facepalming medium-dark skin tone	none
+🤦🏿‍♀	woman facepalming dark skin tone	none
+🤷🏻	person shrugging light skin tone	none
+🤷🏼	person shrugging medium-light skin tone	none
+🤷🏽	person shrugging medium skin tone	none
+🤷🏾	person shrugging medium-dark skin tone	none
+🤷🏿	person shrugging dark skin tone	none
+🤷🏻‍♂	man shrugging light skin tone	none
+🤷🏼‍♂	man shrugging medium-light skin tone	none
+🤷🏽‍♂	man shrugging medium skin tone	none
+🤷🏾‍♂	man shrugging medium-dark skin tone	none
+🤷🏿‍♂	man shrugging dark skin tone	none
+🤷🏻‍♀	woman shrugging light skin tone	none
+🤷🏼‍♀	woman shrugging medium-light skin tone	none
+🤷🏽‍♀	woman shrugging medium skin tone	none
+🤷🏾‍♀	woman shrugging medium-dark skin tone	none
+🤷🏿‍♀	woman shrugging dark skin tone	none
+🧑🏻‍⚕	health worker light skin tone	none
+🧑🏼‍⚕	health worker medium-light skin tone	none
+🧑🏽‍⚕	health worker medium skin tone	none
+🧑🏾‍⚕	health worker medium-dark skin tone	none
+🧑🏿‍⚕	health worker dark skin tone	none
+👨🏻‍⚕	man health worker light skin tone	none
+👨🏼‍⚕	man health worker medium-light skin tone	none
+👨🏽‍⚕	man health worker medium skin tone	none
+👨🏾‍⚕	man health worker medium-dark skin tone	none
+👨🏿‍⚕	man health worker dark skin tone	none
+👩🏻‍⚕	woman health worker light skin tone	none
+👩🏼‍⚕	woman health worker medium-light skin tone	none
+👩🏽‍⚕	woman health worker medium skin tone	none
+👩🏾‍⚕	woman health worker medium-dark skin tone	none
+👩🏿‍⚕	woman health worker dark skin tone	none
+🧑🏻‍🎓	student light skin tone	none
+🧑🏼‍🎓	student medium-light skin tone	none
+🧑🏽‍🎓	student medium skin tone	none
+🧑🏾‍🎓	student medium-dark skin tone	none
+🧑🏿‍🎓	student dark skin tone	none
+👨🏻‍🎓	man student light skin tone	none
+👨🏼‍🎓	man student medium-light skin tone	none
+👨🏽‍🎓	man student medium skin tone	none
+👨🏾‍🎓	man student medium-dark skin tone	none
+👨🏿‍🎓	man student dark skin tone	none
+👩🏻‍🎓	woman student light skin tone	none
+👩🏼‍🎓	woman student medium-light skin tone	none
+👩🏽‍🎓	woman student medium skin tone	none
+👩🏾‍🎓	woman student medium-dark skin tone	none
+👩🏿‍🎓	woman student dark skin tone	none
+🧑🏻‍🏫	teacher light skin tone	none
+🧑🏼‍🏫	teacher medium-light skin tone	none
+🧑🏽‍🏫	teacher medium skin tone	none
+🧑🏾‍🏫	teacher medium-dark skin tone	none
+🧑🏿‍🏫	teacher dark skin tone	none
+👨🏻‍🏫	man teacher light skin tone	none
+👨🏼‍🏫	man teacher medium-light skin tone	none
+👨🏽‍🏫	man teacher medium skin tone	none
+👨🏾‍🏫	man teacher medium-dark skin tone	none
+👨🏿‍🏫	man teacher dark skin tone	none
+👩🏻‍🏫	woman teacher light skin tone	none
+👩🏼‍🏫	woman teacher medium-light skin tone	none
+👩🏽‍🏫	woman teacher medium skin tone	none
+👩🏾‍🏫	woman teacher medium-dark skin tone	none
+👩🏿‍🏫	woman teacher dark skin tone	none
+🧑🏻‍⚖	judge light skin tone	none
+🧑🏼‍⚖	judge medium-light skin tone	none
+🧑🏽‍⚖	judge medium skin tone	none
+🧑🏾‍⚖	judge medium-dark skin tone	none
+🧑🏿‍⚖	judge dark skin tone	none
+👨🏻‍⚖	man judge light skin tone	none
+👨🏼‍⚖	man judge medium-light skin tone	none
+👨🏽‍⚖	man judge medium skin tone	none
+👨🏾‍⚖	man judge medium-dark skin tone	none
+👨🏿‍⚖	man judge dark skin tone	none
+👩🏻‍⚖	woman judge light skin tone	none
+👩🏼‍⚖	woman judge medium-light skin tone	none
+👩🏽‍⚖	woman judge medium skin tone	none
+👩🏾‍⚖	woman judge medium-dark skin tone	none
+👩🏿‍⚖	woman judge dark skin tone	none
+🧑🏻‍🌾	farmer light skin tone	none
+🧑🏼‍🌾	farmer medium-light skin tone	none
+🧑🏽‍🌾	farmer medium skin tone	none
+🧑🏾‍🌾	farmer medium-dark skin tone	none
+🧑🏿‍🌾	farmer dark skin tone	none
+👨🏻‍🌾	man farmer light skin tone	none
+👨🏼‍🌾	man farmer medium-light skin tone	none
+👨🏽‍🌾	man farmer medium skin tone	none
+👨🏾‍🌾	man farmer medium-dark skin tone	none
+👨🏿‍🌾	man farmer dark skin tone	none
+👩🏻‍🌾	woman farmer light skin tone	none
+👩🏼‍🌾	woman farmer medium-light skin tone	none
+👩🏽‍🌾	woman farmer medium skin tone	none
+👩🏾‍🌾	woman farmer medium-dark skin tone	none
+👩🏿‍🌾	woman farmer dark skin tone	none
+🧑🏻‍🍳	cook light skin tone	none
+🧑🏼‍🍳	cook medium-light skin tone	none
+🧑🏽‍🍳	cook medium skin tone	none
+🧑🏾‍🍳	cook medium-dark skin tone	none
+🧑🏿‍🍳	cook dark skin tone	none
+👨🏻‍🍳	man cook light skin tone	none
+👨🏼‍🍳	man cook medium-light skin tone	none
+👨🏽‍🍳	man cook medium skin tone	none
+👨🏾‍🍳	man cook medium-dark skin tone	none
+👨🏿‍🍳	man cook dark skin tone	none
+👩🏻‍🍳	woman cook light skin tone	none
+👩🏼‍🍳	woman cook medium-light skin tone	none
+👩🏽‍🍳	woman cook medium skin tone	none
+👩🏾‍🍳	woman cook medium-dark skin tone	none
+👩🏿‍🍳	woman cook dark skin tone	none
+🧑🏻‍🔧	mechanic light skin tone	none
+🧑🏼‍🔧	mechanic medium-light skin tone	none
+🧑🏽‍🔧	mechanic medium skin tone	none
+🧑🏾‍🔧	mechanic medium-dark skin tone	none
+🧑🏿‍🔧	mechanic dark skin tone	none
+👨🏻‍🔧	man mechanic light skin tone	none
+👨🏼‍🔧	man mechanic medium-light skin tone	none
+👨🏽‍🔧	man mechanic medium skin tone	none
+👨🏾‍🔧	man mechanic medium-dark skin tone	none
+👨🏿‍🔧	man mechanic dark skin tone	none
+👩🏻‍🔧	woman mechanic light skin tone	none
+👩🏼‍🔧	woman mechanic medium-light skin tone	none
+👩🏽‍🔧	woman mechanic medium skin tone	none
+👩🏾‍🔧	woman mechanic medium-dark skin tone	none
+👩🏿‍🔧	woman mechanic dark skin tone	none
+🧑🏻‍🏭	factory worker light skin tone	none
+🧑🏼‍🏭	factory worker medium-light skin tone	none
+🧑🏽‍🏭	factory worker medium skin tone	none
+🧑🏾‍🏭	factory worker medium-dark skin tone	none
+🧑🏿‍🏭	factory worker dark skin tone	none
+👨🏻‍🏭	man factory worker light skin tone	none
+👨🏼‍🏭	man factory worker medium-light skin tone	none
+👨🏽‍🏭	man factory worker medium skin tone	none
+👨🏾‍🏭	man factory worker medium-dark skin tone	none
+👨🏿‍🏭	man factory worker dark skin tone	none
+👩🏻‍🏭	woman factory worker light skin tone	none
+👩🏼‍🏭	woman factory worker medium-light skin tone	none
+👩🏽‍🏭	woman factory worker medium skin tone	none
+👩🏾‍🏭	woman factory worker medium-dark skin tone	none
+👩🏿‍🏭	woman factory worker dark skin tone	none
+🧑🏻‍💼	office worker light skin tone	none
+🧑🏼‍💼	office worker medium-light skin tone	none
+🧑🏽‍💼	office worker medium skin tone	none
+🧑🏾‍💼	office worker medium-dark skin tone	none
+🧑🏿‍💼	office worker dark skin tone	none
+👨🏻‍💼	man office worker light skin tone	none
+👨🏼‍💼	man office worker medium-light skin tone	none
+👨🏽‍💼	man office worker medium skin tone	none
+👨🏾‍💼	man office worker medium-dark skin tone	none
+👨🏿‍💼	man office worker dark skin tone	none
+👩🏻‍💼	woman office worker light skin tone	none
+👩🏼‍💼	woman office worker medium-light skin tone	none
+👩🏽‍💼	woman office worker medium skin tone	none
+👩🏾‍💼	woman office worker medium-dark skin tone	none
+👩🏿‍💼	woman office worker dark skin tone	none
+🧑🏻‍🔬	scientist light skin tone	none
+🧑🏼‍🔬	scientist medium-light skin tone	none
+🧑🏽‍🔬	scientist medium skin tone	none
+🧑🏾‍🔬	scientist medium-dark skin tone	none
+🧑🏿‍🔬	scientist dark skin tone	none
+👨🏻‍🔬	man scientist light skin tone	none
+👨🏼‍🔬	man scientist medium-light skin tone	none
+👨🏽‍🔬	man scientist medium skin tone	none
+👨🏾‍🔬	man scientist medium-dark skin tone	none
+👨🏿‍🔬	man scientist dark skin tone	none
+👩🏻‍🔬	woman scientist light skin tone	none
+👩🏼‍🔬	woman scientist medium-light skin tone	none
+👩🏽‍🔬	woman scientist medium skin tone	none
+👩🏾‍🔬	woman scientist medium-dark skin tone	none
+👩🏿‍🔬	woman scientist dark skin tone	none
+🧑🏻‍💻	technologist light skin tone	none
+🧑🏼‍💻	technologist medium-light skin tone	none
+🧑🏽‍💻	technologist medium skin tone	none
+🧑🏾‍💻	technologist medium-dark skin tone	none
+🧑🏿‍💻	technologist dark skin tone	none
+👨🏻‍💻	man technologist light skin tone	none
+👨🏼‍💻	man technologist medium-light skin tone	none
+👨🏽‍💻	man technologist medium skin tone	none
+👨🏾‍💻	man technologist medium-dark skin tone	none
+👨🏿‍💻	man technologist dark skin tone	none
+👩🏻‍💻	woman technologist light skin tone	none
+👩🏼‍💻	woman technologist medium-light skin tone	none
+👩🏽‍💻	woman technologist medium skin tone	none
+👩🏾‍💻	woman technologist medium-dark skin tone	none
+👩🏿‍💻	woman technologist dark skin tone	none
+🧑🏻‍🎤	singer light skin tone	none
+🧑🏼‍🎤	singer medium-light skin tone	none
+🧑🏽‍🎤	singer medium skin tone	none
+🧑🏾‍🎤	singer medium-dark skin tone	none
+🧑🏿‍🎤	singer dark skin tone	none
+👨🏻‍🎤	man singer light skin tone	none
+👨🏼‍🎤	man singer medium-light skin tone	none
+👨🏽‍🎤	man singer medium skin tone	none
+👨🏾‍🎤	man singer medium-dark skin tone	none
+👨🏿‍🎤	man singer dark skin tone	none
+👩🏻‍🎤	woman singer light skin tone	none
+👩🏼‍🎤	woman singer medium-light skin tone	none
+👩🏽‍🎤	woman singer medium skin tone	none
+👩🏾‍🎤	woman singer medium-dark skin tone	none
+👩🏿‍🎤	woman singer dark skin tone	none
+🧑🏻‍🎨	artist light skin tone	none
+🧑🏼‍🎨	artist medium-light skin tone	none
+🧑🏽‍🎨	artist medium skin tone	none
+🧑🏾‍🎨	artist medium-dark skin tone	none
+🧑🏿‍🎨	artist dark skin tone	none
+👨🏻‍🎨	man artist light skin tone	none
+👨🏼‍🎨	man artist medium-light skin tone	none
+👨🏽‍🎨	man artist medium skin tone	none
+👨🏾‍🎨	man artist medium-dark skin tone	none
+👨🏿‍🎨	man artist dark skin tone	none
+👩🏻‍🎨	woman artist light skin tone	none
+👩🏼‍🎨	woman artist medium-light skin tone	none
+👩🏽‍🎨	woman artist medium skin tone	none
+👩🏾‍🎨	woman artist medium-dark skin tone	none
+👩🏿‍🎨	woman artist dark skin tone	none
+🧑🏻‍✈	pilot light skin tone	none
+🧑🏼‍✈	pilot medium-light skin tone	none
+🧑🏽‍✈	pilot medium skin tone	none
+🧑🏾‍✈	pilot medium-dark skin tone	none
+🧑🏿‍✈	pilot dark skin tone	none
+👨🏻‍✈	man pilot light skin tone	none
+👨🏼‍✈	man pilot medium-light skin tone	none
+👨🏽‍✈	man pilot medium skin tone	none
+👨🏾‍✈	man pilot medium-dark skin tone	none
+👨🏿‍✈	man pilot dark skin tone	none
+👩🏻‍✈	woman pilot light skin tone	none
+👩🏼‍✈	woman pilot medium-light skin tone	none
+👩🏽‍✈	woman pilot medium skin tone	none
+👩🏾‍✈	woman pilot medium-dark skin tone	none
+👩🏿‍✈	woman pilot dark skin tone	none
+🧑🏻‍🚀	astronaut light skin tone	none
+🧑🏼‍🚀	astronaut medium-light skin tone	none
+🧑🏽‍🚀	astronaut medium skin tone	none
+🧑🏾‍🚀	astronaut medium-dark skin tone	none
+🧑🏿‍🚀	astronaut dark skin tone	none
+👨🏻‍🚀	man astronaut light skin tone	none
+👨🏼‍🚀	man astronaut medium-light skin tone	none
+👨🏽‍🚀	man astronaut medium skin tone	none
+👨🏾‍🚀	man astronaut medium-dark skin tone	none
+👨🏿‍🚀	man astronaut dark skin tone	none
+👩🏻‍🚀	woman astronaut light skin tone	none
+👩🏼‍🚀	woman astronaut medium-light skin tone	none
+👩🏽‍🚀	woman astronaut medium skin tone	none
+👩🏾‍🚀	woman astronaut medium-dark skin tone	none
+👩🏿‍🚀	woman astronaut dark skin tone	none
+🧑🏻‍🚒	firefighter light skin tone	none
+🧑🏼‍🚒	firefighter medium-light skin tone	none
+🧑🏽‍🚒	firefighter medium skin tone	none
+🧑🏾‍🚒	firefighter medium-dark skin tone	none
+🧑🏿‍🚒	firefighter dark skin tone	none
+👨🏻‍🚒	man firefighter light skin tone	none
+👨🏼‍🚒	man firefighter medium-light skin tone	none
+👨🏽‍🚒	man firefighter medium skin tone	none
+👨🏾‍🚒	man firefighter medium-dark skin tone	none
+👨🏿‍🚒	man firefighter dark skin tone	none
+👩🏻‍🚒	woman firefighter light skin tone	none
+👩🏼‍🚒	woman firefighter medium-light skin tone	none
+👩🏽‍🚒	woman firefighter medium skin tone	none
+👩🏾‍🚒	woman firefighter medium-dark skin tone	none
+👩🏿‍🚒	woman firefighter dark skin tone	none
+👮🏻	police officer light skin tone	none
+👮🏼	police officer medium-light skin tone	none
+👮🏽	police officer medium skin tone	none
+👮🏾	police officer medium-dark skin tone	none
+👮🏿	police officer dark skin tone	none
+👮🏻‍♂	man police officer light skin tone	none
+👮🏼‍♂	man police officer medium-light skin tone	none
+👮🏽‍♂	man police officer medium skin tone	none
+👮🏾‍♂	man police officer medium-dark skin tone	none
+👮🏿‍♂	man police officer dark skin tone	none
+👮🏻‍♀	woman police officer light skin tone	none
+👮🏼‍♀	woman police officer medium-light skin tone	none
+👮🏽‍♀	woman police officer medium skin tone	none
+👮🏾‍♀	woman police officer medium-dark skin tone	none
+👮🏿‍♀	woman police officer dark skin tone	none
+🕵🏻	detective light skin tone	none
+🕵🏼	detective medium-light skin tone	none
+🕵🏽	detective medium skin tone	none
+🕵🏾	detective medium-dark skin tone	none
+🕵🏿	detective dark skin tone	none
+🕵🏻‍♂	man detective light skin tone	none
+🕵🏼‍♂	man detective medium-light skin tone	none
+🕵🏽‍♂	man detective medium skin tone	none
+🕵🏾‍♂	man detective medium-dark skin tone	none
+🕵🏿‍♂	man detective dark skin tone	none
+🕵🏻‍♀	woman detective light skin tone	none
+🕵🏼‍♀	woman detective medium-light skin tone	none
+🕵🏽‍♀	woman detective medium skin tone	none
+🕵🏾‍♀	woman detective medium-dark skin tone	none
+🕵🏿‍♀	woman detective dark skin tone	none
+💂🏻	guard light skin tone	none
+💂🏼	guard medium-light skin tone	none
+💂🏽	guard medium skin tone	none
+💂🏾	guard medium-dark skin tone	none
+💂🏿	guard dark skin tone	none
+💂🏻‍♂	man guard light skin tone	none
+💂🏼‍♂	man guard medium-light skin tone	none
+💂🏽‍♂	man guard medium skin tone	none
+💂🏾‍♂	man guard medium-dark skin tone	none
+💂🏿‍♂	man guard dark skin tone	none
+💂🏻‍♀	woman guard light skin tone	none
+💂🏼‍♀	woman guard medium-light skin tone	none
+💂🏽‍♀	woman guard medium skin tone	none
+💂🏾‍♀	woman guard medium-dark skin tone	none
+💂🏿‍♀	woman guard dark skin tone	none
+🥷🏻	ninja light skin tone	none
+🥷🏼	ninja medium-light skin tone	none
+🥷🏽	ninja medium skin tone	none
+🥷🏾	ninja medium-dark skin tone	none
+🥷🏿	ninja dark skin tone	none
+👷🏻	construction worker light skin tone	none
+👷🏼	construction worker medium-light skin tone	none
+👷🏽	construction worker medium skin tone	none
+👷🏾	construction worker medium-dark skin tone	none
+👷🏿	construction worker dark skin tone	none
+👷🏻‍♂	man construction worker light skin tone	none
+👷🏼‍♂	man construction worker medium-light skin tone	none
+👷🏽‍♂	man construction worker medium skin tone	none
+👷🏾‍♂	man construction worker medium-dark skin tone	none
+👷🏿‍♂	man construction worker dark skin tone	none
+👷🏻‍♀	woman construction worker light skin tone	none
+👷🏼‍♀	woman construction worker medium-light skin tone	none
+👷🏽‍♀	woman construction worker medium skin tone	none
+👷🏾‍♀	woman construction worker medium-dark skin tone	none
+👷🏿‍♀	woman construction worker dark skin tone	none
+🫅🏻	person with crown light skin tone	none
+🫅🏼	person with crown medium-light skin tone	none
+🫅🏽	person with crown medium skin tone	none
+🫅🏾	person with crown medium-dark skin tone	none
+🫅🏿	person with crown dark skin tone	none
+🤴🏻	prince light skin tone	none
+🤴🏼	prince medium-light skin tone	none
+🤴🏽	prince medium skin tone	none
+🤴🏾	prince medium-dark skin tone	none
+🤴🏿	prince dark skin tone	none
+👸🏻	princess light skin tone	none
+👸🏼	princess medium-light skin tone	none
+👸🏽	princess medium skin tone	none
+👸🏾	princess medium-dark skin tone	none
+👸🏿	princess dark skin tone	none
+👳🏻	person wearing turban light skin tone	none
+👳🏼	person wearing turban medium-light skin tone	none
+👳🏽	person wearing turban medium skin tone	none
+👳🏾	person wearing turban medium-dark skin tone	none
+👳🏿	person wearing turban dark skin tone	none
+👳🏻‍♂	man wearing turban light skin tone	none
+👳🏼‍♂	man wearing turban medium-light skin tone	none
+👳🏽‍♂	man wearing turban medium skin tone	none
+👳🏾‍♂	man wearing turban medium-dark skin tone	none
+👳🏿‍♂	man wearing turban dark skin tone	none
+👳🏻‍♀	woman wearing turban light skin tone	none
+👳🏼‍♀	woman wearing turban medium-light skin tone	none
+👳🏽‍♀	woman wearing turban medium skin tone	none
+👳🏾‍♀	woman wearing turban medium-dark skin tone	none
+👳🏿‍♀	woman wearing turban dark skin tone	none
+👲🏻	person with skullcap light skin tone	none
+👲🏼	person with skullcap medium-light skin tone	none
+👲🏽	person with skullcap medium skin tone	none
+👲🏾	person with skullcap medium-dark skin tone	none
+👲🏿	person with skullcap dark skin tone	none
+🧕🏻	woman with headscarf light skin tone	none
+🧕🏼	woman with headscarf medium-light skin tone	none
+🧕🏽	woman with headscarf medium skin tone	none
+🧕🏾	woman with headscarf medium-dark skin tone	none
+🧕🏿	woman with headscarf dark skin tone	none
+🤵🏻	person in tuxedo light skin tone	none
+🤵🏼	person in tuxedo medium-light skin tone	none
+🤵🏽	person in tuxedo medium skin tone	none
+🤵🏾	person in tuxedo medium-dark skin tone	none
+🤵🏿	person in tuxedo dark skin tone	none
+🤵🏻‍♂	man in tuxedo light skin tone	none
+🤵🏼‍♂	man in tuxedo medium-light skin tone	none
+🤵🏽‍♂	man in tuxedo medium skin tone	none
+🤵🏾‍♂	man in tuxedo medium-dark skin tone	none
+🤵🏿‍♂	man in tuxedo dark skin tone	none
+🤵🏻‍♀	woman in tuxedo light skin tone	none
+🤵🏼‍♀	woman in tuxedo medium-light skin tone	none
+🤵🏽‍♀	woman in tuxedo medium skin tone	none
+🤵🏾‍♀	woman in tuxedo medium-dark skin tone	none
+🤵🏿‍♀	woman in tuxedo dark skin tone	none
+👰🏻	person with veil light skin tone	none
+👰🏼	person with veil medium-light skin tone	none
+👰🏽	person with veil medium skin tone	none
+👰🏾	person with veil medium-dark skin tone	none
+👰🏿	person with veil dark skin tone	none
+👰🏻‍♂	man with veil light skin tone	none
+👰🏼‍♂	man with veil medium-light skin tone	none
+👰🏽‍♂	man with veil medium skin tone	none
+👰🏾‍♂	man with veil medium-dark skin tone	none
+👰🏿‍♂	man with veil dark skin tone	none
+👰🏻‍♀	woman with veil light skin tone	none
+👰🏼‍♀	woman with veil medium-light skin tone	none
+👰🏽‍♀	woman with veil medium skin tone	none
+👰🏾‍♀	woman with veil medium-dark skin tone	none
+👰🏿‍♀	woman with veil dark skin tone	none
+🤰🏻	pregnant woman light skin tone	none
+🤰🏼	pregnant woman medium-light skin tone	none
+🤰🏽	pregnant woman medium skin tone	none
+🤰🏾	pregnant woman medium-dark skin tone	none
+🤰🏿	pregnant woman dark skin tone	none
+🫃🏻	pregnant man light skin tone	none
+🫃🏼	pregnant man medium-light skin tone	none
+🫃🏽	pregnant man medium skin tone	none
+🫃🏾	pregnant man medium-dark skin tone	none
+🫃🏿	pregnant man dark skin tone	none
+🫄🏻	pregnant person light skin tone	none
+🫄🏼	pregnant person medium-light skin tone	none
+🫄🏽	pregnant person medium skin tone	none
+🫄🏾	pregnant person medium-dark skin tone	none
+🫄🏿	pregnant person dark skin tone	none
+🤱🏻	breast-feeding light skin tone	none
+🤱🏼	breast-feeding medium-light skin tone	none
+🤱🏽	breast-feeding medium skin tone	none
+🤱🏾	breast-feeding medium-dark skin tone	none
+🤱🏿	breast-feeding dark skin tone	none
+👩🏻‍🍼	woman feeding baby light skin tone	none
+👩🏼‍🍼	woman feeding baby medium-light skin tone	none
+👩🏽‍🍼	woman feeding baby medium skin tone	none
+👩🏾‍🍼	woman feeding baby medium-dark skin tone	none
+👩🏿‍🍼	woman feeding baby dark skin tone	none
+👨🏻‍🍼	man feeding baby light skin tone	none
+👨🏼‍🍼	man feeding baby medium-light skin tone	none
+👨🏽‍🍼	man feeding baby medium skin tone	none
+👨🏾‍🍼	man feeding baby medium-dark skin tone	none
+👨🏿‍🍼	man feeding baby dark skin tone	none
+🧑🏻‍🍼	person feeding baby light skin tone	none
+🧑🏼‍🍼	person feeding baby medium-light skin tone	none
+🧑🏽‍🍼	person feeding baby medium skin tone	none
+🧑🏾‍🍼	person feeding baby medium-dark skin tone	none
+🧑🏿‍🍼	person feeding baby dark skin tone	none
+👼🏻	baby angel light skin tone	none
+👼🏼	baby angel medium-light skin tone	none
+👼🏽	baby angel medium skin tone	none
+👼🏾	baby angel medium-dark skin tone	none
+👼🏿	baby angel dark skin tone	none
+🎅🏻	Santa Claus light skin tone	none
+🎅🏼	Santa Claus medium-light skin tone	none
+🎅🏽	Santa Claus medium skin tone	none
+🎅🏾	Santa Claus medium-dark skin tone	none
+🎅🏿	Santa Claus dark skin tone	none
+🧑🏻‍🎄	Mx Claus light skin tone	none
+🧑🏼‍🎄	Mx Claus medium-light skin tone	none
+🧑🏽‍🎄	Mx Claus medium skin tone	none
+🧑🏾‍🎄	Mx Claus medium-dark skin tone	none
+🧑🏿‍🎄	Mx Claus dark skin tone	none
+🦸🏻	superhero light skin tone	none
+🦸🏼	superhero medium-light skin tone	none
+🦸🏽	superhero medium skin tone	none
+🦸🏾	superhero medium-dark skin tone	none
+🦸🏿	superhero dark skin tone	none
+🦸🏻‍♂	man superhero light skin tone	none
+🦸🏼‍♂	man superhero medium-light skin tone	none
+🦸🏽‍♂	man superhero medium skin tone	none
+🦸🏾‍♂	man superhero medium-dark skin tone	none
+🦸🏿‍♂	man superhero dark skin tone	none
+🦸🏻‍♀	woman superhero light skin tone	none
+🦸🏼‍♀	woman superhero medium-light skin tone	none
+🦸🏽‍♀	woman superhero medium skin tone	none
+🦸🏾‍♀	woman superhero medium-dark skin tone	none
+🦸🏿‍♀	woman superhero dark skin tone	none
+🦹🏻	supervillain light skin tone	none
+🦹🏼	supervillain medium-light skin tone	none
+🦹🏽	supervillain medium skin tone	none
+🦹🏾	supervillain medium-dark skin tone	none
+🦹🏿	supervillain dark skin tone	none
+🦹🏻‍♂	man supervillain light skin tone	none
+🦹🏼‍♂	man supervillain medium-light skin tone	none
+🦹🏽‍♂	man supervillain medium skin tone	none
+🦹🏾‍♂	man supervillain medium-dark skin tone	none
+🦹🏿‍♂	man supervillain dark skin tone	none
+🦹🏻‍♀	woman supervillain light skin tone	none
+🦹🏼‍♀	woman supervillain medium-light skin tone	none
+🦹🏽‍♀	woman supervillain medium skin tone	none
+🦹🏾‍♀	woman supervillain medium-dark skin tone	none
+🦹🏿‍♀	woman supervillain dark skin tone	none
+🧙🏻	mage light skin tone	none
+🧙🏼	mage medium-light skin tone	none
+🧙🏽	mage medium skin tone	none
+🧙🏾	mage medium-dark skin tone	none
+🧙🏿	mage dark skin tone	none
+🧙🏻‍♂	man mage light skin tone	none
+🧙🏼‍♂	man mage medium-light skin tone	none
+🧙🏽‍♂	man mage medium skin tone	none
+🧙🏾‍♂	man mage medium-dark skin tone	none
+🧙🏿‍♂	man mage dark skin tone	none
+🧙🏻‍♀	woman mage light skin tone	none
+🧙🏼‍♀	woman mage medium-light skin tone	none
+🧙🏽‍♀	woman mage medium skin tone	none
+🧙🏾‍♀	woman mage medium-dark skin tone	none
+🧙🏿‍♀	woman mage dark skin tone	none
+🧚🏻	fairy light skin tone	none
+🧚🏼	fairy medium-light skin tone	none
+🧚🏽	fairy medium skin tone	none
+🧚🏾	fairy medium-dark skin tone	none
+🧚🏿	fairy dark skin tone	none
+🧚🏻‍♂	man fairy light skin tone	none
+🧚🏼‍♂	man fairy medium-light skin tone	none
+🧚🏽‍♂	man fairy medium skin tone	none
+🧚🏾‍♂	man fairy medium-dark skin tone	none
+🧚🏿‍♂	man fairy dark skin tone	none
+🧚🏻‍♀	woman fairy light skin tone	none
+🧚🏼‍♀	woman fairy medium-light skin tone	none
+🧚🏽‍♀	woman fairy medium skin tone	none
+🧚🏾‍♀	woman fairy medium-dark skin tone	none
+🧚🏿‍♀	woman fairy dark skin tone	none
+🧛🏻	vampire light skin tone	none
+🧛🏼	vampire medium-light skin tone	none
+🧛🏽	vampire medium skin tone	none
+🧛🏾	vampire medium-dark skin tone	none
+🧛🏿	vampire dark skin tone	none
+🧛🏻‍♂	man vampire light skin tone	none
+🧛🏼‍♂	man vampire medium-light skin tone	none
+🧛🏽‍♂	man vampire medium skin tone	none
+🧛🏾‍♂	man vampire medium-dark skin tone	none
+🧛🏿‍♂	man vampire dark skin tone	none
+🧛🏻‍♀	woman vampire light skin tone	none
+🧛🏼‍♀	woman vampire medium-light skin tone	none
+🧛🏽‍♀	woman vampire medium skin tone	none
+🧛🏾‍♀	woman vampire medium-dark skin tone	none
+🧛🏿‍♀	woman vampire dark skin tone	none
+🧜🏻	merperson light skin tone	none
+🧜🏼	merperson medium-light skin tone	none
+🧜🏽	merperson medium skin tone	none
+🧜🏾	merperson medium-dark skin tone	none
+🧜🏿	merperson dark skin tone	none
+🧜🏻‍♂	merman light skin tone	none
+🧜🏼‍♂	merman medium-light skin tone	none
+🧜🏽‍♂	merman medium skin tone	none
+🧜🏾‍♂	merman medium-dark skin tone	none
+🧜🏿‍♂	merman dark skin tone	none
+🧜🏻‍♀	mermaid light skin tone	none
+🧜🏼‍♀	mermaid medium-light skin tone	none
+🧜🏽‍♀	mermaid medium skin tone	none
+🧜🏾‍♀	mermaid medium-dark skin tone	none
+🧜🏿‍♀	mermaid dark skin tone	none
+🧝🏻	elf light skin tone	none
+🧝🏼	elf medium-light skin tone	none
+🧝🏽	elf medium skin tone	none
+🧝🏾	elf medium-dark skin tone	none
+🧝🏿	elf dark skin tone	none
+🧝🏻‍♂	man elf light skin tone	none
+🧝🏼‍♂	man elf medium-light skin tone	none
+🧝🏽‍♂	man elf medium skin tone	none
+🧝🏾‍♂	man elf medium-dark skin tone	none
+🧝🏿‍♂	man elf dark skin tone	none
+🧝🏻‍♀	woman elf light skin tone	none
+🧝🏼‍♀	woman elf medium-light skin tone	none
+🧝🏽‍♀	woman elf medium skin tone	none
+🧝🏾‍♀	woman elf medium-dark skin tone	none
+🧝🏿‍♀	woman elf dark skin tone	none
+💆🏻	person getting massage light skin tone	none
+💆🏼	person getting massage medium-light skin tone	none
+💆🏽	person getting massage medium skin tone	none
+💆🏾	person getting massage medium-dark skin tone	none
+💆🏿	person getting massage dark skin tone	none
+💆🏻‍♂	man getting massage light skin tone	none
+💆🏼‍♂	man getting massage medium-light skin tone	none
+💆🏽‍♂	man getting massage medium skin tone	none
+💆🏾‍♂	man getting massage medium-dark skin tone	none
+💆🏿‍♂	man getting massage dark skin tone	none
+💆🏻‍♀	woman getting massage light skin tone	none
+💆🏼‍♀	woman getting massage medium-light skin tone	none
+💆🏽‍♀	woman getting massage medium skin tone	none
+💆🏾‍♀	woman getting massage medium-dark skin tone	none
+💆🏿‍♀	woman getting massage dark skin tone	none
+💇🏻	person getting haircut light skin tone	none
+💇🏼	person getting haircut medium-light skin tone	none
+💇🏽	person getting haircut medium skin tone	none
+💇🏾	person getting haircut medium-dark skin tone	none
+💇🏿	person getting haircut dark skin tone	none
+💇🏻‍♂	man getting haircut light skin tone	none
+💇🏼‍♂	man getting haircut medium-light skin tone	none
+💇🏽‍♂	man getting haircut medium skin tone	none
+💇🏾‍♂	man getting haircut medium-dark skin tone	none
+💇🏿‍♂	man getting haircut dark skin tone	none
+💇🏻‍♀	woman getting haircut light skin tone	none
+💇🏼‍♀	woman getting haircut medium-light skin tone	none
+💇🏽‍♀	woman getting haircut medium skin tone	none
+💇🏾‍♀	woman getting haircut medium-dark skin tone	none
+💇🏿‍♀	woman getting haircut dark skin tone	none
+🚶🏻	person walking light skin tone	none
+🚶🏼	person walking medium-light skin tone	none
+🚶🏽	person walking medium skin tone	none
+🚶🏾	person walking medium-dark skin tone	none
+🚶🏿	person walking dark skin tone	none
+🚶🏻‍♂	man walking light skin tone	none
+🚶🏼‍♂	man walking medium-light skin tone	none
+🚶🏽‍♂	man walking medium skin tone	none
+🚶🏾‍♂	man walking medium-dark skin tone	none
+🚶🏿‍♂	man walking dark skin tone	none
+🚶🏻‍♀	woman walking light skin tone	none
+🚶🏼‍♀	woman walking medium-light skin tone	none
+🚶🏽‍♀	woman walking medium skin tone	none
+🚶🏾‍♀	woman walking medium-dark skin tone	none
+🚶🏿‍♀	woman walking dark skin tone	none
+🚶‍➡	person walking facing right	none
+🚶🏻‍➡	person walking light skin tone, facing right	none
+🚶🏼‍➡	person walking medium-light skin tone, facing right	none
+🚶🏽‍➡	person walking medium skin tone, facing right	none
+🚶🏾‍➡	person walking medium-dark skin tone, facing right	none
+🚶🏿‍➡	person walking dark skin tone, facing right	none
+🚶‍♀‍➡	woman walking facing right	none
+🚶🏻‍♀‍➡	woman walking light skin tone, facing right	none
+🚶🏼‍♀‍➡	woman walking medium-light skin tone, facing right	none
+🚶🏽‍♀‍➡	woman walking medium skin tone, facing right	none
+🚶🏾‍♀‍➡	woman walking medium-dark skin tone, facing right	none
+🚶🏿‍♀‍➡	woman walking dark skin tone, facing right	none
+🚶‍♂‍➡	man walking facing right	none
+🚶🏻‍♂‍➡	man walking light skin tone, facing right	none
+🚶🏼‍♂‍➡	man walking medium-light skin tone, facing right	none
+🚶🏽‍♂‍➡	man walking medium skin tone, facing right	none
+🚶🏾‍♂‍➡	man walking medium-dark skin tone, facing right	none
+🚶🏿‍♂‍➡	man walking dark skin tone, facing right	none
+🧍🏻	person standing light skin tone	none
+🧍🏼	person standing medium-light skin tone	none
+🧍🏽	person standing medium skin tone	none
+🧍🏾	person standing medium-dark skin tone	none
+🧍🏿	person standing dark skin tone	none
+🧍🏻‍♂	man standing light skin tone	none
+🧍🏼‍♂	man standing medium-light skin tone	none
+🧍🏽‍♂	man standing medium skin tone	none
+🧍🏾‍♂	man standing medium-dark skin tone	none
+🧍🏿‍♂	man standing dark skin tone	none
+🧍🏻‍♀	woman standing light skin tone	none
+🧍🏼‍♀	woman standing medium-light skin tone	none
+🧍🏽‍♀	woman standing medium skin tone	none
+🧍🏾‍♀	woman standing medium-dark skin tone	none
+🧍🏿‍♀	woman standing dark skin tone	none
+🧎🏻	person kneeling light skin tone	none
+🧎🏼	person kneeling medium-light skin tone	none
+🧎🏽	person kneeling medium skin tone	none
+🧎🏾	person kneeling medium-dark skin tone	none
+🧎🏿	person kneeling dark skin tone	none
+🧎🏻‍♂	man kneeling light skin tone	none
+🧎🏼‍♂	man kneeling medium-light skin tone	none
+🧎🏽‍♂	man kneeling medium skin tone	none
+🧎🏾‍♂	man kneeling medium-dark skin tone	none
+🧎🏿‍♂	man kneeling dark skin tone	none
+🧎🏻‍♀	woman kneeling light skin tone	none
+🧎🏼‍♀	woman kneeling medium-light skin tone	none
+🧎🏽‍♀	woman kneeling medium skin tone	none
+🧎🏾‍♀	woman kneeling medium-dark skin tone	none
+🧎🏿‍♀	woman kneeling dark skin tone	none
+🧎‍➡	person kneeling facing right	none
+🧎🏻‍➡	person kneeling light skin tone, facing right	none
+🧎🏼‍➡	person kneeling medium-light skin tone, facing right	none
+🧎🏽‍➡	person kneeling medium skin tone, facing right	none
+🧎🏾‍➡	person kneeling medium-dark skin tone, facing right	none
+🧎🏿‍➡	person kneeling dark skin tone, facing right	none
+🧎‍♀‍➡	woman kneeling facing right	none
+🧎🏻‍♀‍➡	woman kneeling light skin tone, facing right	none
+🧎🏼‍♀‍➡	woman kneeling medium-light skin tone, facing right	none
+🧎🏽‍♀‍➡	woman kneeling medium skin tone, facing right	none
+🧎🏾‍♀‍➡	woman kneeling medium-dark skin tone, facing right	none
+🧎🏿‍♀‍➡	woman kneeling dark skin tone, facing right	none
+🧎‍♂‍➡	man kneeling facing right	none
+🧎🏻‍♂‍➡	man kneeling light skin tone, facing right	none
+🧎🏼‍♂‍➡	man kneeling medium-light skin tone, facing right	none
+🧎🏽‍♂‍➡	man kneeling medium skin tone, facing right	none
+🧎🏾‍♂‍➡	man kneeling medium-dark skin tone, facing right	none
+🧎🏿‍♂‍➡	man kneeling dark skin tone, facing right	none
+🧑🏻‍🦽	person in manual wheelchair light skin tone	none
+🧑🏼‍🦽	person in manual wheelchair medium-light skin tone	none
+🧑🏽‍🦽	person in manual wheelchair medium skin tone	none
+🧑🏾‍🦽	person in manual wheelchair medium-dark skin tone	none
+🧑🏿‍🦽	person in manual wheelchair dark skin tone	none
+🧑‍🦽‍➡	person in manual wheelchair facing right	none
+🧑🏻‍🦽‍➡	person in manual wheelchair light skin tone, facing right	none
+🧑🏼‍🦽‍➡	person in manual wheelchair medium-light skin tone, facing right	none
+🧑🏽‍🦽‍➡	person in manual wheelchair medium skin tone, facing right	none
+🧑🏾‍🦽‍➡	person in manual wheelchair medium-dark skin tone, facing right	none
+🧑🏿‍🦽‍➡	person in manual wheelchair dark skin tone, facing right	none
+👨🏻‍🦽	man in manual wheelchair light skin tone	none
+👨🏼‍🦽	man in manual wheelchair medium-light skin tone	none
+👨🏽‍🦽	man in manual wheelchair medium skin tone	none
+👨🏾‍🦽	man in manual wheelchair medium-dark skin tone	none
+👨🏿‍🦽	man in manual wheelchair dark skin tone	none
+👨‍🦽‍➡	man in manual wheelchair facing right	none
+👨🏻‍🦽‍➡	man in manual wheelchair light skin tone, facing right	none
+👨🏼‍🦽‍➡	man in manual wheelchair medium-light skin tone, facing right	none
+👨🏽‍🦽‍➡	man in manual wheelchair medium skin tone, facing right	none
+👨🏾‍🦽‍➡	man in manual wheelchair medium-dark skin tone, facing right	none
+👨🏿‍🦽‍➡	man in manual wheelchair dark skin tone, facing right	none
+👩🏻‍🦽	woman in manual wheelchair light skin tone	none
+👩🏼‍🦽	woman in manual wheelchair medium-light skin tone	none
+👩🏽‍🦽	woman in manual wheelchair medium skin tone	none
+👩🏾‍🦽	woman in manual wheelchair medium-dark skin tone	none
+👩🏿‍🦽	woman in manual wheelchair dark skin tone	none
+👩‍🦽‍➡	woman in manual wheelchair facing right	none
+👩🏻‍🦽‍➡	woman in manual wheelchair light skin tone, facing right	none
+👩🏼‍🦽‍➡	woman in manual wheelchair medium-light skin tone, facing right	none
+👩🏽‍🦽‍➡	woman in manual wheelchair medium skin tone, facing right	none
+👩🏾‍🦽‍➡	woman in manual wheelchair medium-dark skin tone, facing right	none
+👩🏿‍🦽‍➡	woman in manual wheelchair dark skin tone, facing right	none
+🏃🏻	person running light skin tone	none
+🏃🏼	person running medium-light skin tone	none
+🏃🏽	person running medium skin tone	none
+🏃🏾	person running medium-dark skin tone	none
+🏃🏿	person running dark skin tone	none
+🏃🏻‍♂	man running light skin tone	none
+🏃🏼‍♂	man running medium-light skin tone	none
+🏃🏽‍♂	man running medium skin tone	none
+🏃🏾‍♂	man running medium-dark skin tone	none
+🏃🏿‍♂	man running dark skin tone	none
+🏃🏻‍♀	woman running light skin tone	none
+🏃🏼‍♀	woman running medium-light skin tone	none
+🏃🏽‍♀	woman running medium skin tone	none
+🏃🏾‍♀	woman running medium-dark skin tone	none
+🏃🏿‍♀	woman running dark skin tone	none
+🏃‍➡	person running facing right	none
+🏃🏻‍➡	person running light skin tone, facing right	none
+🏃🏼‍➡	person running medium-light skin tone, facing right	none
+🏃🏽‍➡	person running medium skin tone, facing right	none
+🏃🏾‍➡	person running medium-dark skin tone, facing right	none
+🏃🏿‍➡	person running dark skin tone, facing right	none
+🏃‍♀‍➡	woman running facing right	none
+🏃🏻‍♀‍➡	woman running light skin tone, facing right	none
+🏃🏼‍♀‍➡	woman running medium-light skin tone, facing right	none
+🏃🏽‍♀‍➡	woman running medium skin tone, facing right	none
+🏃🏾‍♀‍➡	woman running medium-dark skin tone, facing right	none
+🏃🏿‍♀‍➡	woman running dark skin tone, facing right	none
+🏃‍♂‍➡	man running facing right	none
+🏃🏻‍♂‍➡	man running light skin tone, facing right	none
+🏃🏼‍♂‍➡	man running medium-light skin tone, facing right	none
+🏃🏽‍♂‍➡	man running medium skin tone, facing right	none
+🏃🏾‍♂‍➡	man running medium-dark skin tone, facing right	none
+🏃🏿‍♂‍➡	man running dark skin tone, facing right	none
+💃🏻	woman dancing light skin tone	none
+💃🏼	woman dancing medium-light skin tone	none
+💃🏽	woman dancing medium skin tone	none
+💃🏾	woman dancing medium-dark skin tone	none
+💃🏿	woman dancing dark skin tone	none
+🕺🏻	man dancing light skin tone	none
+🕺🏼	man dancing medium-light skin tone	none
+🕺🏽	man dancing medium skin tone	none
+🕺🏾	man dancing medium-dark skin tone	none
+🕺🏿	man dancing dark skin tone	none
+🕴🏻	person in suit levitating light skin tone	none
+🕴🏼	person in suit levitating medium-light skin tone	none
+🕴🏽	person in suit levitating medium skin tone	none
+🕴🏾	person in suit levitating medium-dark skin tone	none
+🕴🏿	person in suit levitating dark skin tone	none
+🧖🏻	person in steamy room light skin tone	none
+🧖🏼	person in steamy room medium-light skin tone	none
+🧖🏽	person in steamy room medium skin tone	none
+🧖🏾	person in steamy room medium-dark skin tone	none
+🧖🏿	person in steamy room dark skin tone	none
+🧖🏻‍♂	man in steamy room light skin tone	none
+🧖🏼‍♂	man in steamy room medium-light skin tone	none
+🧖🏽‍♂	man in steamy room medium skin tone	none
+🧖🏾‍♂	man in steamy room medium-dark skin tone	none
+🧖🏿‍♂	man in steamy room dark skin tone	none
+🧖🏻‍♀	woman in steamy room light skin tone	none
+🧖🏼‍♀	woman in steamy room medium-light skin tone	none
+🧖🏽‍♀	woman in steamy room medium skin tone	none
+🧖🏾‍♀	woman in steamy room medium-dark skin tone	none
+🧖🏿‍♀	woman in steamy room dark skin tone	none
+🧗🏻	person climbing light skin tone	none
+🧗🏼	person climbing medium-light skin tone	none
+🧗🏽	person climbing medium skin tone	none
+🧗🏾	person climbing medium-dark skin tone	none
+🧗🏿	person climbing dark skin tone	none
+🧗🏻‍♂	man climbing light skin tone	none
+🧗🏼‍♂	man climbing medium-light skin tone	none
+🧗🏽‍♂	man climbing medium skin tone	none
+🧗🏾‍♂	man climbing medium-dark skin tone	none
+🧗🏿‍♂	man climbing dark skin tone	none
+🧗🏻‍♀	woman climbing light skin tone	none
+🧗🏼‍♀	woman climbing medium-light skin tone	none
+🧗🏽‍♀	woman climbing medium skin tone	none
+🧗🏾‍♀	woman climbing medium-dark skin tone	none
+🧗🏿‍♀	woman climbing dark skin tone	none
+🏇🏻	horse racing light skin tone	none
+🏇🏼	horse racing medium-light skin tone	none
+🏇🏽	horse racing medium skin tone	none
+🏇🏾	horse racing medium-dark skin tone	none
+🏇🏿	horse racing dark skin tone	none
+🏂🏻	snowboarder light skin tone	none
+🏂🏼	snowboarder medium-light skin tone	none
+🏂🏽	snowboarder medium skin tone	none
+🏂🏾	snowboarder medium-dark skin tone	none
+🏂🏿	snowboarder dark skin tone	none
+🏌🏻	person golfing light skin tone	none
+🏌🏼	person golfing medium-light skin tone	none
+🏌🏽	person golfing medium skin tone	none
+🏌🏾	person golfing medium-dark skin tone	none
+🏌🏿	person golfing dark skin tone	none
+🏌🏻‍♂	man golfing light skin tone	none
+🏌🏼‍♂	man golfing medium-light skin tone	none
+🏌🏽‍♂	man golfing medium skin tone	none
+🏌🏾‍♂	man golfing medium-dark skin tone	none
+🏌🏿‍♂	man golfing dark skin tone	none
+🏌🏻‍♀	woman golfing light skin tone	none
+🏌🏼‍♀	woman golfing medium-light skin tone	none
+🏌🏽‍♀	woman golfing medium skin tone	none
+🏌🏾‍♀	woman golfing medium-dark skin tone	none
+🏌🏿‍♀	woman golfing dark skin tone	none
+🏄🏻	person surfing light skin tone	none
+🏄🏼	person surfing medium-light skin tone	none
+🏄🏽	person surfing medium skin tone	none
+🏄🏾	person surfing medium-dark skin tone	none
+🏄🏿	person surfing dark skin tone	none
+🏄🏻‍♂	man surfing light skin tone	none
+🏄🏼‍♂	man surfing medium-light skin tone	none
+🏄🏽‍♂	man surfing medium skin tone	none
+🏄🏾‍♂	man surfing medium-dark skin tone	none
+🏄🏿‍♂	man surfing dark skin tone	none
+🏄🏻‍♀	woman surfing light skin tone	none
+🏄🏼‍♀	woman surfing medium-light skin tone	none
+🏄🏽‍♀	woman surfing medium skin tone	none
+🏄🏾‍♀	woman surfing medium-dark skin tone	none
+🏄🏿‍♀	woman surfing dark skin tone	none
+🚣🏻	person rowing boat light skin tone	none
+🚣🏼	person rowing boat medium-light skin tone	none
+🚣🏽	person rowing boat medium skin tone	none
+🚣🏾	person rowing boat medium-dark skin tone	none
+🚣🏿	person rowing boat dark skin tone	none
+🚣🏻‍♂	man rowing boat light skin tone	none
+🚣🏼‍♂	man rowing boat medium-light skin tone	none
+🚣🏽‍♂	man rowing boat medium skin tone	none
+🚣🏾‍♂	man rowing boat medium-dark skin tone	none
+🚣🏿‍♂	man rowing boat dark skin tone	none
+🚣🏻‍♀	woman rowing boat light skin tone	none
+🚣🏼‍♀	woman rowing boat medium-light skin tone	none
+🚣🏽‍♀	woman rowing boat medium skin tone	none
+🚣🏾‍♀	woman rowing boat medium-dark skin tone	none
+🚣🏿‍♀	woman rowing boat dark skin tone	none
+🏊🏻	person swimming light skin tone	none
+🏊🏼	person swimming medium-light skin tone	none
+🏊🏽	person swimming medium skin tone	none
+🏊🏾	person swimming medium-dark skin tone	none
+🏊🏿	person swimming dark skin tone	none
+🏊🏻‍♂	man swimming light skin tone	none
+🏊🏼‍♂	man swimming medium-light skin tone	none
+🏊🏽‍♂	man swimming medium skin tone	none
+🏊🏾‍♂	man swimming medium-dark skin tone	none
+🏊🏿‍♂	man swimming dark skin tone	none
+🏊🏻‍♀	woman swimming light skin tone	none
+🏊🏼‍♀	woman swimming medium-light skin tone	none
+🏊🏽‍♀	woman swimming medium skin tone	none
+🏊🏾‍♀	woman swimming medium-dark skin tone	none
+🏊🏿‍♀	woman swimming dark skin tone	none
+⛹🏻	person bouncing ball light skin tone	none
+⛹🏼	person bouncing ball medium-light skin tone	none
+⛹🏽	person bouncing ball medium skin tone	none
+⛹🏾	person bouncing ball medium-dark skin tone	none
+⛹🏿	person bouncing ball dark skin tone	none
+⛹🏻‍♂	man bouncing ball light skin tone	none
+⛹🏼‍♂	man bouncing ball medium-light skin tone	none
+⛹🏽‍♂	man bouncing ball medium skin tone	none
+⛹🏾‍♂	man bouncing ball medium-dark skin tone	none
+⛹🏿‍♂	man bouncing ball dark skin tone	none
+⛹🏻‍♀	woman bouncing ball light skin tone	none
+⛹🏼‍♀	woman bouncing ball medium-light skin tone	none
+⛹🏽‍♀	woman bouncing ball medium skin tone	none
+⛹🏾‍♀	woman bouncing ball medium-dark skin tone	none
+⛹🏿‍♀	woman bouncing ball dark skin tone	none
+🏋🏻	person lifting weights light skin tone	none
+🏋🏼	person lifting weights medium-light skin tone	none
+🏋🏽	person lifting weights medium skin tone	none
+🏋🏾	person lifting weights medium-dark skin tone	none
+🏋🏿	person lifting weights dark skin tone	none
+🏋🏻‍♂	man lifting weights light skin tone	none
+🏋🏼‍♂	man lifting weights medium-light skin tone	none
+🏋🏽‍♂	man lifting weights medium skin tone	none
+🏋🏾‍♂	man lifting weights medium-dark skin tone	none
+🏋🏿‍♂	man lifting weights dark skin tone	none
+🏋🏻‍♀	woman lifting weights light skin tone	none
+🏋🏼‍♀	woman lifting weights medium-light skin tone	none
+🏋🏽‍♀	woman lifting weights medium skin tone	none
+🏋🏾‍♀	woman lifting weights medium-dark skin tone	none
+🏋🏿‍♀	woman lifting weights dark skin tone	none
+🚴🏻	person biking light skin tone	none
+🚴🏼	person biking medium-light skin tone	none
+🚴🏽	person biking medium skin tone	none
+🚴🏾	person biking medium-dark skin tone	none
+🚴🏿	person biking dark skin tone	none
+🚴🏻‍♂	man biking light skin tone	none
+🚴🏼‍♂	man biking medium-light skin tone	none
+🚴🏽‍♂	man biking medium skin tone	none
+🚴🏾‍♂	man biking medium-dark skin tone	none
+🚴🏿‍♂	man biking dark skin tone	none
+🚴🏻‍♀	woman biking light skin tone	none
+🚴🏼‍♀	woman biking medium-light skin tone	none
+🚴🏽‍♀	woman biking medium skin tone	none
+🚴🏾‍♀	woman biking medium-dark skin tone	none
+🚴🏿‍♀	woman biking dark skin tone	none
+🚵🏻	person mountain biking light skin tone	none
+🚵🏼	person mountain biking medium-light skin tone	none
+🚵🏽	person mountain biking medium skin tone	none
+🚵🏾	person mountain biking medium-dark skin tone	none
+🚵🏿	person mountain biking dark skin tone	none
+🚵🏻‍♂	man mountain biking light skin tone	none
+🚵🏼‍♂	man mountain biking medium-light skin tone	none
+🚵🏽‍♂	man mountain biking medium skin tone	none
+🚵🏾‍♂	man mountain biking medium-dark skin tone	none
+🚵🏿‍♂	man mountain biking dark skin tone	none
+🚵🏻‍♀	woman mountain biking light skin tone	none
+🚵🏼‍♀	woman mountain biking medium-light skin tone	none
+🚵🏽‍♀	woman mountain biking medium skin tone	none
+🚵🏾‍♀	woman mountain biking medium-dark skin tone	none
+🚵🏿‍♀	woman mountain biking dark skin tone	none
+🤸🏻	person cartwheeling light skin tone	none
+🤸🏼	person cartwheeling medium-light skin tone	none
+🤸🏽	person cartwheeling medium skin tone	none
+🤸🏾	person cartwheeling medium-dark skin tone	none
+🤸🏿	person cartwheeling dark skin tone	none
+🤸🏻‍♂	man cartwheeling light skin tone	none
+🤸🏼‍♂	man cartwheeling medium-light skin tone	none
+🤸🏽‍♂	man cartwheeling medium skin tone	none
+🤸🏾‍♂	man cartwheeling medium-dark skin tone	none
+🤸🏿‍♂	man cartwheeling dark skin tone	none
+🤸🏻‍♀	woman cartwheeling light skin tone	none
+🤸🏼‍♀	woman cartwheeling medium-light skin tone	none
+🤸🏽‍♀	woman cartwheeling medium skin tone	none
+🤸🏾‍♀	woman cartwheeling medium-dark skin tone	none
+🤸🏿‍♀	woman cartwheeling dark skin tone	none
+🤽🏻	person playing water polo light skin tone	none
+🤽🏼	person playing water polo medium-light skin tone	none
+🤽🏽	person playing water polo medium skin tone	none
+🤽🏾	person playing water polo medium-dark skin tone	none
+🤽🏿	person playing water polo dark skin tone	none
+🤽🏻‍♂	man playing water polo light skin tone	none
+🤽🏼‍♂	man playing water polo medium-light skin tone	none
+🤽🏽‍♂	man playing water polo medium skin tone	none
+🤽🏾‍♂	man playing water polo medium-dark skin tone	none
+🤽🏿‍♂	man playing water polo dark skin tone	none
+🤽🏻‍♀	woman playing water polo light skin tone	none
+🤽🏼‍♀	woman playing water polo medium-light skin tone	none
+🤽🏽‍♀	woman playing water polo medium skin tone	none
+🤽🏾‍♀	woman playing water polo medium-dark skin tone	none
+🤽🏿‍♀	woman playing water polo dark skin tone	none
+🤾🏻	person playing handball light skin tone	none
+🤾🏼	person playing handball medium-light skin tone	none
+🤾🏽	person playing handball medium skin tone	none
+🤾🏾	person playing handball medium-dark skin tone	none
+🤾🏿	person playing handball dark skin tone	none
+🤾🏻‍♂	man playing handball light skin tone	none
+🤾🏼‍♂	man playing handball medium-light skin tone	none
+🤾🏽‍♂	man playing handball medium skin tone	none
+🤾🏾‍♂	man playing handball medium-dark skin tone	none
+🤾🏿‍♂	man playing handball dark skin tone	none
+🤾🏻‍♀	woman playing handball light skin tone	none
+🤾🏼‍♀	woman playing handball medium-light skin tone	none
+🤾🏽‍♀	woman playing handball medium skin tone	none
+🤾🏾‍♀	woman playing handball medium-dark skin tone	none
+🤾🏿‍♀	woman playing handball dark skin tone	none
+🤹🏻	person juggling light skin tone	none
+🤹🏼	person juggling medium-light skin tone	none
+🤹🏽	person juggling medium skin tone	none
+🤹🏾	person juggling medium-dark skin tone	none
+🤹🏿	person juggling dark skin tone	none
+🤹🏻‍♂	man juggling light skin tone	none
+🤹🏼‍♂	man juggling medium-light skin tone	none
+🤹🏽‍♂	man juggling medium skin tone	none
+🤹🏾‍♂	man juggling medium-dark skin tone	none
+🤹🏿‍♂	man juggling dark skin tone	none
+🤹🏻‍♀	woman juggling light skin tone	none
+🤹🏼‍♀	woman juggling medium-light skin tone	none
+🤹🏽‍♀	woman juggling medium skin tone	none
+🤹🏾‍♀	woman juggling medium-dark skin tone	none
+🤹🏿‍♀	woman juggling dark skin tone	none
+🧘🏻	person in lotus position light skin tone	none
+🧘🏼	person in lotus position medium-light skin tone	none
+🧘🏽	person in lotus position medium skin tone	none
+🧘🏾	person in lotus position medium-dark skin tone	none
+🧘🏿	person in lotus position dark skin tone	none
+🧘🏻‍♂	man in lotus position light skin tone	none
+🧘🏼‍♂	man in lotus position medium-light skin tone	none
+🧘🏽‍♂	man in lotus position medium skin tone	none
+🧘🏾‍♂	man in lotus position medium-dark skin tone	none
+🧘🏿‍♂	man in lotus position dark skin tone	none
+🧘🏻‍♀	woman in lotus position light skin tone	none
+🧘🏼‍♀	woman in lotus position medium-light skin tone	none
+🧘🏽‍♀	woman in lotus position medium skin tone	none
+🧘🏾‍♀	woman in lotus position medium-dark skin tone	none
+🧘🏿‍♀	woman in lotus position dark skin tone	none
+🛀🏻	person taking bath light skin tone	none
+🛀🏼	person taking bath medium-light skin tone	none
+🛀🏽	person taking bath medium skin tone	none
+🛀🏾	person taking bath medium-dark skin tone	none
+🛀🏿	person taking bath dark skin tone	none
+🛌🏻	person in bed light skin tone	none
+🛌🏼	person in bed medium-light skin tone	none
+🛌🏽	person in bed medium skin tone	none
+🛌🏾	person in bed medium-dark skin tone	none
+🛌🏿	person in bed dark skin tone	none
+🧑🏻‍🤝‍🧑🏻	people holding hands light skin tone	none
+🧑🏻‍🤝‍🧑🏼	people holding hands light skin tone, medium-light skin tone	none
+🧑🏻‍🤝‍🧑🏽	people holding hands light skin tone, medium skin tone	none
+🧑🏻‍🤝‍🧑🏾	people holding hands light skin tone, medium-dark skin tone	none
+🧑🏻‍🤝‍🧑🏿	people holding hands light skin tone, dark skin tone	none
+🧑🏼‍🤝‍🧑🏻	people holding hands medium-light skin tone, light skin tone	none
+🧑🏼‍🤝‍🧑🏼	people holding hands medium-light skin tone	none
+🧑🏼‍🤝‍🧑🏽	people holding hands medium-light skin tone, medium skin tone	none
+🧑🏼‍🤝‍🧑🏾	people holding hands medium-light skin tone, medium-dark skin tone	none
+🧑🏼‍🤝‍🧑🏿	people holding hands medium-light skin tone, dark skin tone	none
+🧑🏽‍🤝‍🧑🏻	people holding hands medium skin tone, light skin tone	none
+🧑🏽‍🤝‍🧑🏼	people holding hands medium skin tone, medium-light skin tone	none
+🧑🏽‍🤝‍🧑🏽	people holding hands medium skin tone	none
+🧑🏽‍🤝‍🧑🏾	people holding hands medium skin tone, medium-dark skin tone	none
+🧑🏽‍🤝‍🧑🏿	people holding hands medium skin tone, dark skin tone	none
+🧑🏾‍🤝‍🧑🏻	people holding hands medium-dark skin tone, light skin tone	none
+🧑🏾‍🤝‍🧑🏼	people holding hands medium-dark skin tone, medium-light skin tone	none
+🧑🏾‍🤝‍🧑🏽	people holding hands medium-dark skin tone, medium skin tone	none
+🧑🏾‍🤝‍🧑🏾	people holding hands medium-dark skin tone	none
+🧑🏾‍🤝‍🧑🏿	people holding hands medium-dark skin tone, dark skin tone	none
+🧑🏿‍🤝‍🧑🏻	people holding hands dark skin tone, light skin tone	none
+🧑🏿‍🤝‍🧑🏼	people holding hands dark skin tone, medium-light skin tone	none
+🧑🏿‍🤝‍🧑🏽	people holding hands dark skin tone, medium skin tone	none
+🧑🏿‍🤝‍🧑🏾	people holding hands dark skin tone, medium-dark skin tone	none
+🧑🏿‍🤝‍🧑🏿	people holding hands dark skin tone	none
+👭🏻	women holding hands light skin tone	none
+👩🏻‍🤝‍👩🏼	women holding hands light skin tone, medium-light skin tone	none
+👩🏻‍🤝‍👩🏽	women holding hands light skin tone, medium skin tone	none
+👩🏻‍🤝‍👩🏾	women holding hands light skin tone, medium-dark skin tone	none
+👩🏻‍🤝‍👩🏿	women holding hands light skin tone, dark skin tone	none
+👩🏼‍🤝‍👩🏻	women holding hands medium-light skin tone, light skin tone	none
+👭🏼	women holding hands medium-light skin tone	none
+👩🏼‍🤝‍👩🏽	women holding hands medium-light skin tone, medium skin tone	none
+👩🏼‍🤝‍👩🏾	women holding hands medium-light skin tone, medium-dark skin tone	none
+👩🏼‍🤝‍👩🏿	women holding hands medium-light skin tone, dark skin tone	none
+👩🏽‍🤝‍👩🏻	women holding hands medium skin tone, light skin tone	none
+👩🏽‍🤝‍👩🏼	women holding hands medium skin tone, medium-light skin tone	none
+👭🏽	women holding hands medium skin tone	none
+👩🏽‍🤝‍👩🏾	women holding hands medium skin tone, medium-dark skin tone	none
+👩🏽‍🤝‍👩🏿	women holding hands medium skin tone, dark skin tone	none
+👩🏾‍🤝‍👩🏻	women holding hands medium-dark skin tone, light skin tone	none
+👩🏾‍🤝‍👩🏼	women holding hands medium-dark skin tone, medium-light skin tone	none
+👩🏾‍🤝‍👩🏽	women holding hands medium-dark skin tone, medium skin tone	none
+👭🏾	women holding hands medium-dark skin tone	none
+👩🏾‍🤝‍👩🏿	women holding hands medium-dark skin tone, dark skin tone	none
+👩🏿‍🤝‍👩🏻	women holding hands dark skin tone, light skin tone	none
+👩🏿‍🤝‍👩🏼	women holding hands dark skin tone, medium-light skin tone	none
+👩🏿‍🤝‍👩🏽	women holding hands dark skin tone, medium skin tone	none
+👩🏿‍🤝‍👩🏾	women holding hands dark skin tone, medium-dark skin tone	none
+👭🏿	women holding hands dark skin tone	none
+👫🏻	woman and man holding hands light skin tone	none
+👩🏻‍🤝‍👨🏼	woman and man holding hands light skin tone, medium-light skin tone	none
+👩🏻‍🤝‍👨🏽	woman and man holding hands light skin tone, medium skin tone	none
+👩🏻‍🤝‍👨🏾	woman and man holding hands light skin tone, medium-dark skin tone	none
+👩🏻‍🤝‍👨🏿	woman and man holding hands light skin tone, dark skin tone	none
+👩🏼‍🤝‍👨🏻	woman and man holding hands medium-light skin tone, light skin tone	none
+👫🏼	woman and man holding hands medium-light skin tone	none
+👩🏼‍🤝‍👨🏽	woman and man holding hands medium-light skin tone, medium skin tone	none
+👩🏼‍🤝‍👨🏾	woman and man holding hands medium-light skin tone, medium-dark skin tone	none
+👩🏼‍🤝‍👨🏿	woman and man holding hands medium-light skin tone, dark skin tone	none
+👩🏽‍🤝‍👨🏻	woman and man holding hands medium skin tone, light skin tone	none
+👩🏽‍🤝‍👨🏼	woman and man holding hands medium skin tone, medium-light skin tone	none
+👫🏽	woman and man holding hands medium skin tone	none
+👩🏽‍🤝‍👨🏾	woman and man holding hands medium skin tone, medium-dark skin tone	none
+👩🏽‍🤝‍👨🏿	woman and man holding hands medium skin tone, dark skin tone	none
+👩🏾‍🤝‍👨🏻	woman and man holding hands medium-dark skin tone, light skin tone	none
+👩🏾‍🤝‍👨🏼	woman and man holding hands medium-dark skin tone, medium-light skin tone	none
+👩🏾‍🤝‍👨🏽	woman and man holding hands medium-dark skin tone, medium skin tone	none
+👫🏾	woman and man holding hands medium-dark skin tone	none
+👩🏾‍🤝‍👨🏿	woman and man holding hands medium-dark skin tone, dark skin tone	none
+👩🏿‍🤝‍👨🏻	woman and man holding hands dark skin tone, light skin tone	none
+👩🏿‍🤝‍👨🏼	woman and man holding hands dark skin tone, medium-light skin tone	none
+👩🏿‍🤝‍👨🏽	woman and man holding hands dark skin tone, medium skin tone	none
+👩🏿‍🤝‍👨🏾	woman and man holding hands dark skin tone, medium-dark skin tone	none
+👫🏿	woman and man holding hands dark skin tone	none
+👬🏻	men holding hands light skin tone	none
+👨🏻‍🤝‍👨🏼	men holding hands light skin tone, medium-light skin tone	none
+👨🏻‍🤝‍👨🏽	men holding hands light skin tone, medium skin tone	none
+👨🏻‍🤝‍👨🏾	men holding hands light skin tone, medium-dark skin tone	none
+👨🏻‍🤝‍👨🏿	men holding hands light skin tone, dark skin tone	none
+👨🏼‍🤝‍👨🏻	men holding hands medium-light skin tone, light skin tone	none
+👬🏼	men holding hands medium-light skin tone	none
+👨🏼‍🤝‍👨🏽	men holding hands medium-light skin tone, medium skin tone	none
+👨🏼‍🤝‍👨🏾	men holding hands medium-light skin tone, medium-dark skin tone	none
+👨🏼‍🤝‍👨🏿	men holding hands medium-light skin tone, dark skin tone	none
+👨🏽‍🤝‍👨🏻	men holding hands medium skin tone, light skin tone	none
+👨🏽‍🤝‍👨🏼	men holding hands medium skin tone, medium-light skin tone	none
+👬🏽	men holding hands medium skin tone	none
+👨🏽‍🤝‍👨🏾	men holding hands medium skin tone, medium-dark skin tone	none
+👨🏽‍🤝‍👨🏿	men holding hands medium skin tone, dark skin tone	none
+👨🏾‍🤝‍👨🏻	men holding hands medium-dark skin tone, light skin tone	none
+👨🏾‍🤝‍👨🏼	men holding hands medium-dark skin tone, medium-light skin tone	none
+👨🏾‍🤝‍👨🏽	men holding hands medium-dark skin tone, medium skin tone	none
+👬🏾	men holding hands medium-dark skin tone	none
+👨🏾‍🤝‍👨🏿	men holding hands medium-dark skin tone, dark skin tone	none
+👨🏿‍🤝‍👨🏻	men holding hands dark skin tone, light skin tone	none
+👨🏿‍🤝‍👨🏼	men holding hands dark skin tone, medium-light skin tone	none
+👨🏿‍🤝‍👨🏽	men holding hands dark skin tone, medium skin tone	none
+👨🏿‍🤝‍👨🏾	men holding hands dark skin tone, medium-dark skin tone	none
+👬🏿	men holding hands dark skin tone	none
+💏🏻	kiss light skin tone	none
+💏🏼	kiss medium-light skin tone	none
+💏🏽	kiss medium skin tone	none
+💏🏾	kiss medium-dark skin tone	none
+💏🏿	kiss dark skin tone	none
+👩‍❤‍💋‍👨	kiss woman, man	none
+👨‍❤‍💋‍👨	kiss man, man	none
+👩‍❤‍💋‍👩	kiss woman, woman	none
+💑🏻	couple with heart light skin tone	none
+💑🏼	couple with heart medium-light skin tone	none
+💑🏽	couple with heart medium skin tone	none
+💑🏾	couple with heart medium-dark skin tone	none
+💑🏿	couple with heart dark skin tone	none
+👩‍❤‍👨	couple with heart woman, man	none
+👨‍❤‍👨	couple with heart man, man	none
+👩‍❤‍👩	couple with heart woman, woman	none
+👨‍👩‍👦	family man, woman, boy	none
+👨‍👩‍👧	family man, woman, girl	none
+👨‍👩‍👧‍👦	family man, woman, girl, boy	none
+👨‍👩‍👦‍👦	family man, woman, boy, boy	none
+👨‍👩‍👧‍👧	family man, woman, girl, girl	none
+👨‍👨‍👦	family man, man, boy	none
+👨‍👨‍👧	family man, man, girl	none
+👨‍👨‍👧‍👦	family man, man, girl, boy	none
+👨‍👨‍👦‍👦	family man, man, boy, boy	none
+👨‍👨‍👧‍👧	family man, man, girl, girl	none
+👩‍👩‍👦	family woman, woman, boy	none
+👩‍👩‍👧	family woman, woman, girl	none
+👩‍👩‍👧‍👦	family woman, woman, girl, boy	none
+👩‍👩‍👦‍👦	family woman, woman, boy, boy	none
+👩‍👩‍👧‍👧	family woman, woman, girl, girl	none
+👨‍👦	family man, boy	none
+👨‍👦‍👦	family man, boy, boy	none
+👨‍👧	family man, girl	none
+👨‍👧‍👦	family man, girl, boy	none
+👨‍👧‍👧	family man, girl, girl	none
+👩‍👦	family woman, boy	none
+👩‍👦‍👦	family woman, boy, boy	none
+👩‍👧	family woman, girl	none
+👩‍👧‍👦	family woman, girl, boy	none
+👩‍👧‍👧	family woman, girl, girl	none
+#⃣	keycap #	none
+*⃣	keycap *	none
+🔟	keycap 10	none
+🇦🇨	flag Ascension Island	none
+🇦🇩	flag Andorra	none
+🇦🇪	flag United Arab Emirates	none
+🇦🇫	flag Afghanistan	none
+🇦🇬	flag Antigua & Barbuda	none
+🇦🇮	flag Anguilla	none
+🇦🇱	flag Albania	none
+🇦🇲	flag Armenia	none
+🇦🇴	flag Angola	none
+🇦🇶	flag Antarctica	none
+🇦🇷	flag Argentina	none
+🇦🇸	flag American Samoa	none
+🇦🇹	flag Austria	none
+🇦🇺	flag Australia	none
+🇦🇼	flag Aruba	none
+🇦🇽	flag Åland Islands	none
+🇦🇿	flag Azerbaijan	none
+🇧🇦	flag Bosnia & Herzegovina	none
+🇧🇧	flag Barbados	none
+🇧🇩	flag Bangladesh	none
+🇧🇪	flag Belgium	none
+🇧🇫	flag Burkina Faso	none
+🇧🇬	flag Bulgaria	none
+🇧🇭	flag Bahrain	none
+🇧🇮	flag Burundi	none
+🇧🇯	flag Benin	none
+🇧🇲	flag Bermuda	none
+🇧🇳	flag Brunei	none
+🇧🇴	flag Bolivia	none
+🇧🇶	flag Caribbean Netherlands	none
+🇧🇷	flag Brazil	none
+🇧🇸	flag Bahamas	none
+🇧🇹	flag Bhutan	none
+🇧🇻	flag Bouvet Island	none
+🇧🇼	flag Botswana	none
+🇧🇾	flag Belarus	none
+🇧🇿	flag Belize	none
+🇨🇦	flag Canada	none
+🇨🇨	flag Cocos (Keeling) Islands	none
+🇨🇩	flag Congo - Kinshasa	none
+🇨🇫	flag Central African Republic	none
+🇨🇬	flag Congo - Brazzaville	none
+🇨🇭	flag Switzerland	none
+🇨🇮	flag Côte d’Ivoire	none
+🇨🇰	flag Cook Islands	none
+🇨🇱	flag Chile	none
+🇨🇲	flag Cameroon	none
+🇨🇳	flag China	none
+🇨🇴	flag Colombia	none
+🇨🇵	flag Clipperton Island	none
+🇨🇶	flag Sark	none
+🇨🇷	flag Costa Rica	none
+🇨🇺	flag Cuba	none
+🇨🇻	flag Cape Verde	none
+🇨🇼	flag Curaçao	none
+🇨🇽	flag Christmas Island	none
+🇨🇾	flag Cyprus	none
+🇨🇿	flag Czechia	none
+🇩🇪	flag Germany	none
+🇩🇬	flag Diego Garcia	none
+🇩🇯	flag Djibouti	none
+🇩🇰	flag Denmark	none
+🇩🇲	flag Dominica	none
+🇩🇴	flag Dominican Republic	none
+🇩🇿	flag Algeria	none
+🇪🇦	flag Ceuta & Melilla	none
+🇪🇨	flag Ecuador	none
+🇪🇪	flag Estonia	none
+🇪🇬	flag Egypt	none
+🇪🇭	flag Western Sahara	none
+🇪🇷	flag Eritrea	none
+🇪🇸	flag Spain	none
+🇪🇹	flag Ethiopia	none
+🇪🇺	flag European Union	none
+🇫🇮	flag Finland	none
+🇫🇯	flag Fiji	none
+🇫🇰	flag Falkland Islands	none
+🇫🇲	flag Micronesia	none
+🇫🇴	flag Faroe Islands	none
+🇫🇷	flag France	none
+🇬🇦	flag Gabon	none
+🇬🇧	flag United Kingdom	none
+🇬🇩	flag Grenada	none
+🇬🇪	flag Georgia	none
+🇬🇫	flag French Guiana	none
+🇬🇬	flag Guernsey	none
+🇬🇭	flag Ghana	none
+🇬🇮	flag Gibraltar	none
+🇬🇱	flag Greenland	none
+🇬🇲	flag Gambia	none
+🇬🇳	flag Guinea	none
+🇬🇵	flag Guadeloupe	none
+🇬🇶	flag Equatorial Guinea	none
+🇬🇷	flag Greece	none
+🇬🇸	flag South Georgia & South Sandwich Islands	none
+🇬🇹	flag Guatemala	none
+🇬🇺	flag Guam	none
+🇬🇼	flag Guinea-Bissau	none
+🇬🇾	flag Guyana	none
+🇭🇰	flag Hong Kong SAR China	none
+🇭🇲	flag Heard & McDonald Islands	none
+🇭🇳	flag Honduras	none
+🇭🇷	flag Croatia	none
+🇭🇹	flag Haiti	none
+🇭🇺	flag Hungary	none
+🇮🇨	flag Canary Islands	none
+🇮🇩	flag Indonesia	none
+🇮🇪	flag Ireland	none
+🇮🇱	flag Israel	none
+🇮🇲	flag Isle of Man	none
+🇮🇳	flag India	none
+🇮🇴	flag British Indian Ocean Territory	none
+🇮🇶	flag Iraq	none
+🇮🇷	flag Iran	none
+🇮🇸	flag Iceland	none
+🇮🇹	flag Italy	none
+🇯🇪	flag Jersey	none
+🇯🇲	flag Jamaica	none
+🇯🇴	flag Jordan	none
+🇯🇵	flag Japan	none
+🇰🇪	flag Kenya	none
+🇰🇬	flag Kyrgyzstan	none
+🇰🇭	flag Cambodia	none
+🇰🇮	flag Kiribati	none
+🇰🇲	flag Comoros	none
+🇰🇵	flag North Korea	none
+🇰🇷	flag South Korea	none
+🇰🇼	flag Kuwait	none
+🇰🇾	flag Cayman Islands	none
+🇰🇿	flag Kazakhstan	none
+🇱🇦	flag Laos	none
+🇱🇧	flag Lebanon	none
+🇱🇮	flag Liechtenstein	none
+🇱🇰	flag Sri Lanka	none
+🇱🇷	flag Liberia	none
+🇱🇸	flag Lesotho	none
+🇱🇹	flag Lithuania	none
+🇱🇺	flag Luxembourg	none
+🇱🇻	flag Latvia	none
+🇱🇾	flag Libya	none
+🇲🇦	flag Morocco	none
+🇲🇨	flag Monaco	none
+🇲🇩	flag Moldova	none
+🇲🇪	flag Montenegro	none
+🇲🇬	flag Madagascar	none
+🇲🇭	flag Marshall Islands	none
+🇲🇰	flag North Macedonia	none
+🇲🇱	flag Mali	none
+🇲🇲	flag Myanmar (Burma)	none
+🇲🇳	flag Mongolia	none
+🇲🇴	flag Macao SAR China	none
+🇲🇵	flag Northern Mariana Islands	none
+🇲🇶	flag Martinique	none
+🇲🇷	flag Mauritania	none
+🇲🇸	flag Montserrat	none
+🇲🇹	flag Malta	none
+🇲🇺	flag Mauritius	none
+🇲🇻	flag Maldives	none
+🇲🇼	flag Malawi	none
+🇲🇽	flag Mexico	none
+🇲🇾	flag Malaysia	none
+🇲🇿	flag Mozambique	none
+🇳🇦	flag Namibia	none
+🇳🇨	flag New Caledonia	none
+🇳🇪	flag Niger	none
+🇳🇫	flag Norfolk Island	none
+🇳🇬	flag Nigeria	none
+🇳🇮	flag Nicaragua	none
+🇳🇱	flag Netherlands	none
+🇳🇴	flag Norway	none
+🇳🇵	flag Nepal	none
+🇳🇷	flag Nauru	none
+🇳🇺	flag Niue	none
+🇳🇿	flag New Zealand	none
+🇴🇲	flag Oman	none
+🇵🇦	flag Panama	none
+🇵🇪	flag Peru	none
+🇵🇫	flag French Polynesia	none
+🇵🇬	flag Papua New Guinea	none
+🇵🇭	flag Philippines	none
+🇵🇰	flag Pakistan	none
+🇵🇱	flag Poland	none
+🇵🇳	flag Pitcairn Islands	none
+🇵🇷	flag Puerto Rico	none
+🇵🇸	flag Palestinian Territories	none
+🇵🇹	flag Portugal	none
+🇵🇼	flag Palau	none
+🇵🇾	flag Paraguay	none
+🇶🇦	flag Qatar	none
+🇷🇪	flag Réunion	none
+🇷🇴	flag Romania	none
+🇷🇸	flag Serbia	none
+🇷🇺	flag Russia	none
+🇷🇼	flag Rwanda	none
+🇸🇦	flag Saudi Arabia	none
+🇸🇧	flag Solomon Islands	none
+🇸🇨	flag Seychelles	none
+🇸🇩	flag Sudan	none
+🇸🇪	flag Sweden	none
+🇸🇬	flag Singapore	none
+🇸🇮	flag Slovenia	none
+🇸🇯	flag Svalbard & Jan Mayen	none
+🇸🇰	flag Slovakia	none
+🇸🇱	flag Sierra Leone	none
+🇸🇲	flag San Marino	none
+🇸🇳	flag Senegal	none
+🇸🇴	flag Somalia	none
+🇸🇷	flag Suriname	none
+🇸🇸	flag South Sudan	none
+🇸🇹	flag São Tomé & Príncipe	none
+🇸🇻	flag El Salvador	none
+🇸🇽	flag Sint Maarten	none
+🇸🇾	flag Syria	none
+🇸🇿	flag Eswatini	none
+🇹🇦	flag Tristan da Cunha	none
+🇹🇨	flag Turks & Caicos Islands	none
+🇹🇩	flag Chad	none
+🇹🇫	flag French Southern Territories	none
+🇹🇬	flag Togo	none
+🇹🇭	flag Thailand	none
+🇹🇯	flag Tajikistan	none
+🇹🇰	flag Tokelau	none
+🇹🇱	flag Timor-Leste	none
+🇹🇲	flag Turkmenistan	none
+🇹🇳	flag Tunisia	none
+🇹🇴	flag Tonga	none
+🇹🇷	flag Türkiye	none
+🇹🇹	flag Trinidad & Tobago	none
+🇹🇻	flag Tuvalu	none
+🇹🇼	flag Taiwan	none
+🇹🇿	flag Tanzania	none
+🇺🇦	flag Ukraine	none
+🇺🇬	flag Uganda	none
+🇺🇳	flag United Nations	none
+🇺🇸	flag United States	none
+🇺🇾	flag Uruguay	none
+🇺🇿	flag Uzbekistan	none
+🇻🇦	flag Vatican City	none
+🇻🇪	flag Venezuela	none
+🇻🇬	flag British Virgin Islands	none
+🇻🇳	flag Vietnam	none
+🇻🇺	flag Vanuatu	none
+🇼🇫	flag Wallis & Futuna	none
+🇼🇸	flag Samoa	none
+🇽🇰	flag Kosovo	none
+🇾🇪	flag Yemen	none
+🇾🇹	flag Mayotte	none
+🇿🇦	flag South Africa	none
+🇿🇲	flag Zambia	none
+🇿🇼	flag Zimbabwe	none
+🏴󠁧󠁢󠁥󠁮󠁧󠁿	flag England	none
+🏴󠁧󠁢󠁳󠁣󠁴󠁿	flag Scotland	none
+🏴󠁧󠁢󠁷󠁬󠁳󠁿	flag Wales	none
+¤	Unknown Currency	none
+֏	Armenian Dram	none
+؋	Afghan Afghani	none
+৳	Bangladeshi Taka	none
+฿	Thai Baht	none
+៛	Cambodian Riel	none
+₡	Costa Rican Colón	none
+₦	Nigerian Naira	none
+₪	Israeli New Shekel	none
+₫	Vietnamese Dong	none
+₭	Laotian Kip	none
+₮	Mongolian Tugrik	none
+₲	Paraguayan Guarani	none
+₴	Ukrainian Hryvnia	none
+₵	Ghanaian Cedi	none
+₸	Kazakhstani Tenge	none
+₺	Turkish Lira	none
+₼	Azerbaijani Manat	none
+₾	Georgian Lari	none
+0⃣	keycap 0	none
+1⃣	keycap 1	none
+2⃣	keycap 2	none
+3⃣	keycap 3	none
+4⃣	keycap 4	none
+5⃣	keycap 5	none
+6⃣	keycap 6	none
+7⃣	keycap 7	none
+8⃣	keycap 8	none
+9⃣	keycap 9	none
+₧	Spanish Peseta	none

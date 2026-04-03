@@ -1,0 +1,692 @@
+#A part of NonVisual Desktop Access (NVDA)
+#Copyright (c) 2011-2024 NVDA Contributors
+#This file is covered by the GNU General Public License.
+
+complexSymbols:
+# identifier	regexp
+# Sentence endings.
+. sentence ending	(?<=[^\s.])\.(?=[\"'„“)\s]|$)
+! sentence ending	(?<=[^\s!])\!(?=[\"'„“)\s]|$)
+? sentence ending	(?<=[^\s?])\?(?=[\"'„“)\s]|$)
+# Phrase endings.
+; phrase ending	(?<=[^\s;]);(?=\s|$)
+: phrase ending	(?<=[^\s:]):(?=\s|$)
+# Series of dots used for visual presentation, e.g. in table of contents
+multiple .	\.{4,}
+# Others
+decimal point	(?<![^\d -])\.(?=\d)
+in-word '	(?<=[^\W_])['’]
+negative number	(?<!\w)[-−]{1}(?=[$£€¥.]?\d)
+
+symbols:
+# identifier	replacement[[	level][	preserve]][	# display name]
+
+# Complex symbols
+. sentence ending	bodka	all	always
+! sentence ending	výkričník	all	always
+? sentence ending	otáznik	all	always
+; phrase ending	bodkočiarka	most	always
+: phrase ending	dvojbodka	most	always
+multiple .	skupina symbolov bodka	all	always
+decimal point		none	always
+in-word '	apostrof	all	norep
+negative number	mínus	none	norep
+
+# Whitespace
+\0	prázdny	char	# null
+\t	tab
+\v	vertikálny tab
+\n	nový riadok	char
+\f	zlom strany	none
+\r	koniec riadku	char
+ 	medzera	char
+ 	medzera	char	# no-break space
+
+# Standard punctuation/symbols
+!	výkričník	all
+！	široký výkričník	all
+"	úvodzovky	most
+\#	mriežka	some
+❌	krížik	some
+$	dolár	all	norep
+£	libra	all	norep
+€	euro	all	norep
+¢	centov	all	norep
+¥	jen	all	norep
+₹	rupia	some	norep
+ƒ	florén	all	norep
+¤	mena	all	norep
+%	percento	some
+‰	promile	some
+&	and	some
+'	apostrof	all
+(	zátvorka	most	always
+)	zatvoriť	most	always
+*	hviezda	some
+,	čiarka	all	always
+、	ideografická čiarka	all	always
+،	arabská čiarka	all	always
+-	spojovník	most	always
+.	bodka	some
+．	široká bodka	some
+/	lomka	some
+:	dvojbodka	most	norep
+：	široká dvojbodka	most	norep
+;	bodkočiarka	most
+؛	arabská bodkočiarka	most
+；	široká bodkočiarka	most
+?	otáznik	all
+؟	arabský otáznik	all
+？	široký otáznik	all
+@	zavináč	some
+[	hranatá zátvorka	most
+]	hranatá zatvoriť	most
+\\	opačná lomka	most
+^	vokáň	most
+ˆ	vokáň modifikátor	most
+_	podčiarkovník	most
+`	prízvuk	most
+̀	prízvuk	most
+ˋ	prízvuk modifikátor	most
+{	zložená zátvorka	most
+}	zložená zatvoriť	most
+|	zvislá čiara	most
+¦	prerušená čiara	most
+~	vlnovka	most
+̃	vlnovka	most
+˜	vlnovka modifikátor	most
+¡	obrátený výkričník	some
+¿	obrátený otáznik	some
+·	bodka v prostriedku	most
+‚	dolné jednoduché úvodzovky	most
+‛	pravá jednoduchá opačná úvodzovka	most
+“	horné úvodzovky	most
+”	pravá dvojitá úvodzovka	most
+„	dolné úvodzovky	most
+‟	horná dvojitá opačná úvodzovka	most
+‹	ľavá jednoduchá lomená úvodzovka	most
+›	pravá jednoduchá lomená úvodzovka	most
+⹂	dolná dvojitá opačná úvodzovka	most
+′	indexová čiarka	some
+″	dvojitá indexová čiarka	some
+‴	trojitá indexová čiarka	some
+
+# Other characters
+•	odrážka	some
+…	bodka bodka bodka	all	always
+...	bodka bodka bodka	all	always
+‘	horné jednoduché úvodzovky	most
+’	odsuvník	most
+–	pomlčka	most	always
+—	dlhá pomlčka	most	always
+­	voliteľný rozdeľovník	most
+⁃	odrážka v tvare pomlčky	none
+●	čierny kruh	most
+○	biely kruh	most
+¨	prehláska	most
+̈	prehláska	most
+̉	háčik nad	most
+̊	krúžok	most
+¯	makron	most
+̄	makron	most
+ˉ	makron modifikátor	most
+´	dĺžeň	most
+́	dĺžeň	most
+ˊ	dĺžeň modifikátor	most
+¸	cedila	most
+̧	cedila	most
+̨	ogonek	most
+˛	ogonek modifikátor	most
+̩	vertikálna čiara pod	most
+ˌ	vertikálna čiara pod modifikátor	most
+̭	vokáň pod	most
+̮	oblúčik breve pod	most
+̱	makron pod	most
+ˍ	makron pod modifikátor	most
+̲	vertikálna čiara pod	most
+˝	dvojitý dĺžeň modifikátor	most
+̋	dvojitý dĺžeň	most
+̇	bodka nad	most
+˙	bodka nad modifikátor	most
+̌	mäkčeň	most
+ˇ	mäkčeň modifikátor	most
+̆	oblúčik breve	most
+˘	oblúčik breve modifikátor	most
+̍	vertikálna čiara nad	most
+ˈ	vertikálna čiara modifikátor	most
+̏	dvojitý prízvuk	most
+˵	dvojitý prízvuk modifikátor	most
+̖	prízvuk pod	most
+ˎ	prízvuk pod modifikátor	most
+̗	dĺžeň pod	most
+ˏ	dĺžeň pod modifikátor	most
+̣	bodka pod	most
+̤	prehláska pod	most
+̥	krúžok pod	most
+‎	znak z ľava do prava	char
++‏	right to left mark	char
+¶	označenie odseku	most
+■	čierny štvorec	some
+▪	čierny štvorec	some
+◾	čierny štvorec	some
+□	biely štvorec	some
+◦	biela odrážka	some
+⇨	biela šípka vpravo	some
+➔	šípka v pravo	some
+➢	hrot šípky ukazujúcej vpravo	some
+❖	čierny štvorec bez bieleho x	some
+♣	kríž	some
+♦	káro	some
+◆	čierny diamant	some
+♠	pika	some
+♡	Biele srdce	some
+♢	Biele káro	some
+♤	biela pika	some
+♥	srdce	some
+♧	Biely kríž	some
+§	paragraf	all
+°	stupňov	some
+〈	lomená zátvorka	most
+〉	lomená zatvoriť	most
+《	dvojitá lomená zátvorka	most
+》	dvojitá lomená zatvoriť	most
+「	rohová zátvorka	most
+」	rohová zatvoriť	most
+『	dutá rohová zátvorka	most
+』	dutá rohová zatvoriť	most
+«	ľavá dvojitá lomená úvodzovka	most
+»	pravá dvojitá lomená úvodzovka	most
+µ	mí	some
+⁰	horný index 0	some
+¹	horný index 1	some
+²	horný index 2	some
+³	horný index 3	some
+⁴	horný index 4	some
+⁵	horný index 5	some
+⁶	horný index 6	some
+⁷	horný index 7	some
+⁸	horný index 8	some
+⁹	horný index 9	some
+⁺	horný index plus	some
+⁼	horný index rovná sa	some
+⁽	horný index zátvorka	some
+⁾	horný index zatvoriť	some
+ⁿ	horný index n	some
+₀	dolný index 0	some
+₁	dolný index 1	some
+₂	dolný index 2	some
+₃	dolný index 3	some
+₄	dolný index 4	some
+₅	dolný index 5	some
+₆	dolný index 6	some
+₇	dolný index 7	some
+₈	dolný index 8	some
+₉	dolný index 9	some
+₊	dolný index plus	some
+₋	dolný index mínus	some
+₌	dolný index rovná sa	some
+₍	dolný index zátvorka	some
+₎	dolný index zatvoriť	some
+®	registrovaná známka	some
+™	obchodná známka	some
+©	kopirajt	some
+℠	servisná značka	some
+←	šípka vľavo	some
+↑	šípka hore	some
+→	šípka vpravo	some
+↓	šípka dole	some
+✓	začiarknutie	some
+✔	tučné začiarknutie	some
+🡺	šípka vpravo	some
+†	krížik	some
+‡	dvojitý krížik	some
+‣	trojuholníková odrážka	none
+✗	Odrážka v tvare X	none
+⊕	plus v krúžku	none
+⊖	mínus v krúžku	none
+⇄	šípka vpravo cez šípku vľavo	none
+⇒	dvojitá šípka vpravo	none
+
+#Arithmetic operators
++	plus	some
+−	mínus	some
+×	krát	some
+⋅	krát	some
+⨯	krát	none
+∕	deleno	some
+⁄	deleno	some
+÷	deleno	some
+∓	mínus plus	some
+±	plus mínus	some
+
+#Set operations
+∖	množinové mínus	none
+⊍	násobenie multimnožín	none
+𝒫	potenčná množina množiny	none
+𝔓	potenčná množina množiny	none
+℘	potenčná množina množiny	none
+∁	doplnok	none
+
+#Set relations and set constructions
+∅	prázdna množina	none
+⊂	je podmnožina	none
+⊄	nie je podmnožina	none
+⊃	je nadmnožina	none
+⊅	nie je nadmnožina	none
+⊆	podmnožina alebo sa rovná	none
+⊈	ani podmnožina ani sa nerovná	none
+⊇	nadmnožina alebo sa rovná	none
+⊉	ani nadmnožina ani sa nerovná	none
+⊌	multimnožina	none
+
+#Equality signs
+=	rovná sa	some
+≃	asymptoticky sa rovná	none
+≄	asymptoticky sa nerovná	none
+≅	približne sa rovná	none
+≆	približne ale nie úplne sa rovná	none
+≈	takmer úplne sa rovná	none
+≌	všetko sa rovná	none
+≍	ekvivalentný	none
+≭	nie je ekvivalentný	none
+≎	geometricky ekvivalentný	none
+≑	geometricky sa rovná	none
+≚	má zhodné uhly	none
+≬	medzi	none
+≠	nerovná sa	none
+≡	totožné	none
+≣	presne totožné	none
+≢	nie je totožné	none
+∼	podobný	none
+≙	odhaduje sa	none
+≟	rovná sa s otáznikom	none
+
+#comparison signs
+<	menší	some
+>	väčší	some
+≤	menší alebo sa rovná	none
+≦	menší alebo sa rovná	none
+≪	omnoho menší	none
+≥	väčší alebo sa rovná	none
+≧	väčší alebo sa rovná	none
+≫	omnoho väčší	none
+≶	menší alebo väčší	none
+≷	väčší alebo menší	none
+≮	nie je menší	none
+≯	nie je väčší	none
+
+#Functions
+⁻	inverzná funkcia	some
+∘	operátor krúžok	none
+∂	parciálna derivácia	none
+∇	nabla	none
+
+#Geometry and linear Algebra
+⃗	vector between	none
+△	trojuholník	none
+▭	obdĺžnik	none
+∟	pravý uhol	none
+∠	uhol	none
+∥	rovnobežka	none
+∦	nerovnobežka	none
+⊥	kolmica	none
+⟂	ortogonálna	none
+‖	vektorová norma	none
+̂	normalizuje	none
+∿	sínusovka	none
+∡	meraný uhol	none
+∢	sférický uhol	none
+
+#Logical operators
+∀	pre všetky	none
+∃	existuje	none
+∄	neexistuje	none
+⇏	neimplikuje	none
+⇐	implikované	none
+
+#Other mathematical Operators
+∈	je prvkom	none
+∉	nie je prvkom	none
+∊	malé je prvkom	none
+∋	obsahuje ako člen	none
+∌	neobsahuje ako člen	none
+∍	malé obsahuje ako člen	none
+∎	koniec dôkazu	none
+∏	n-árny súčin	none
+∐	vedľajší súčin	none
+∑	n-árny súčet	none
+√	druhá odmocnina	none
+∛	tretia odmocnina	none
+∜	štvrta odmocnina	none
+∝	úmerné	none
+∞	nekonečno	none
+∧	logické a	none
+∨	logické alebo	none
+¬	logický zápor	none
+∩	prienik	none
+∪	zjednotenie	none
+∫	integrál	none
+∬	dvojitý integrál	none
+∭	trojitý integrál	none
+∮	krivkový integrál	none
+∯	plošný integrál	none
+∰	objemový integrál	none
+∱	integrál v smere hodinových ručičiek	none
+∲	krivkový integrál v smere hodinových ručičiek	none
+∳	krivkový integrál v proti smere hodinových ručičiek	none
+∴	preto	none
+∵	pretože	none
+∶	pomer	none
+∷	proporcia	none
+∹	prevyšuje	none
+∺	geometrická proporcia	none
+≀	wreath product	none
+≏	rozdiel oproti	none
+≐	približuje sa k limitu	none
+∙	operátor bodka	none
+∣	delí	none
+∤	nedelí	none
+≔	dvojbodka rovná sa	none
+≕	rovná sa dvojbodka	none
+≺	predchádza	none
+≻	nasleduje	none
+⊀	nepredchádza	none
+⊁	nenasleduje	none
+
+# Vulgar Fractions U+2150 to U+215E
+¼	štvrtina	none
+½	polovica	none
+¾	tri štvrtiny	none
+⅐	sedmina	none
+⅑	devätina	none
+⅒	desatina	none
+⅓	tretina	none
+⅔	dve tretiny	none
+⅕	pätina	none
+⅖	dve pätiny	none
+⅗	tri pätiny	none
+⅘	štyri pätiny	none
+⅙	šestina	none
+⅚	päť šestín	none
+⅛	osmina	none
+⅜	tri osminy	none
+⅝	päť osmín	none
+⅞	sedem osmín	none
+
+#Number sets
+𝔸	algebrické čísla	none
+ℂ	komplexné čísla	none
+ℑ	imaginárna časť komplexného čísla	none
+ℍ	zlomky	none
+ℕ	prirodzené čísla	none
+𝕁	kladné (celé) čísla	none
+ℚ	racionálne čísla	none
+ℝ	reálne čísla	none
+ℜ	reálna časť komplexného čísla	none
+ℤ	celé čísla	none
+ℵ	aleph číslo	none
+ℶ	beth číslo	none
+
+# Miscellaneous Technical
+⌘	kláves príkazov mac	none
+⌥	Kláves Option mac	none
+
+## 6-dot cell
+### note: the character on the next line is U2800 (brail  space), not U0020 (ASCII space)
+⠀	brail medzera
+⠁	brail  1
+⠂	brail  2
+⠃	brail  1 2
+⠄	brail  3
+⠅	brail  1 3
+⠆	brail  2 3
+⠇	brail  1 2 3
+⠈	brail  4
+⠉	brail  1 4
+⠊	brail  2 4
+⠋	brail  1 2 4
+⠌	brail  3 4
+⠍	brail  1 3 4
+⠎	brail  2 3 4
+⠏	brail  1 2 3 4
+⠐	brail  5
+⠑	brail  1 5
+⠒	brail  2 5
+⠓	brail  1 2 5
+⠔	brail  3 5
+⠕	brail  1 3 5
+⠖	brail  2 3 5
+⠗	brail  1 2 3 5
+⠘	brail  4 5
+⠙	brail  1 4 5
+⠚	brail  2 4 5
+⠛	brail  1 2 4 5
+⠜	brail  3 4 5
+⠝	brail  1 3 4 5
+⠞	brail  2 3 4 5
+⠟	brail  1 2 3 4 5
+⠠	brail  6
+⠡	brail  1 6
+⠢	brail  2 6
+⠣	brail  1 2 6
+⠤	brail  3 6
+⠥	brail  1 3 6
+⠦	brail  2 3 6
+⠧	brail  1 2 3 6
+⠨	brail  4 6
+⠩	brail  1 4 6
+⠪	brail  2 4 6
+⠫	brail  1 2 4 6
+⠬	brail  3 4 6
+⠭	brail  1 3 4 6
+⠮	brail  2 3 4 6
+⠯	brail  1 2 3 4 6
+⠰	brail  5 6
+⠱	brail  1 5 6
+⠲	brail  2 5 6
+⠳	brail  1 2 5 6
+⠴	brail  3 5 6
+⠵	brail  1 3 5 6
+⠶	brail  2 3 5 6
+⠷	brail  1 2 3 5 6
+⠸	brail  4 5 6
+⠹	brail  1 4 5 6
+⠺	brail  2 4 5 6
+⠻	brail  1 2 4 5 6
+⠼	brail  3 4 5 6
+⠽	brail  1 3 4 5 6
+⠾	brail  2 3 4 5 6
+⠿	brail  1 2 3 4 5 6
+## 8-brail  cell
+⡀	brail  7
+⡁	brail  1 7
+⡂	brail  2 7
+⡃	brail  1 2 7
+⡄	brail  3 7
+⡅	brail  1 3 7
+⡆	brail  2 3 7
+⡇	brail  1 2 3 7
+⡈	brail  4 7
+⡉	brail  1 4 7
+⡊	brail  2 4 7
+⡋	brail  1 2 4 7
+⡌	brail  3 4 7
+⡍	brail  1 3 4 7
+⡎	brail  2 3 4 7
+⡏	brail  1 2 3 4 7
+⡐	brail  5 7
+⡑	brail  1 5 7
+⡒	brail  2 5 7
+⡓	brail  1 2 5 7
+⡔	brail  3 5 7
+⡕	brail  1 3 5 7
+⡖	brail  2 3 5 7
+⡗	brail  1 2 3 5 7
+⡘	brail  4 5 7
+⡙	brail  1 4 5 7
+⡚	brail  2 4 5 7
+⡛	brail  1 2 4 5 7
+⡜	brail  3 4 5 7
+⡝	brail  1 3 4 5 7
+⡞	brail  2 3 4 5 7
+⡟	brail  1 2 3 4 5 7
+⡠	brail  6 7
+⡡	brail  1 6 7
+⡢	brail  2 6 7
+⡣	brail  1 2 6 7
+⡤	brail  3 6 7
+⡥	brail  1 3 6 7
+⡦	brail  2 3 6 7
+⡧	brail  1 2 3 6 7
+⡨	brail  4 6 7
+⡩	brail  1 4 6 7
+⡪	brail  2 4 6 7
+⡫	brail  1 2 4 6 7
+⡬	brail  3 4 6 7
+⡭	brail  1 3 4 6 7
+⡮	brail  2 3 4 6 7
+⡯	brail  1 2 3 4 6 7
+⡰	brail  5 6 7
+⡱	brail  1 5 6 7
+⡲	brail  2 5 6 7
+⡳	brail  1 2 5 6 7
+⡴	brail  3 5 6 7
+⡵	brail  1 3 5 6 7
+⡶	brail  2 3 5 6 7
+⡷	brail  1 2 3 5 6 7
+⡸	brail  1 2 3 7
+⡹	brail  1 4 5 6 7
+⡺	brail  2 4 5 6 7
+⡻	brail  1 2 4 5 6 7
+⡼	brail  3 4 5 6 7
+⡽	brail  1 3 4 5 6 7
+⡾	brail  2 3 4 5 6 7
+⡿	brail  1 2 3 4 5 6 7
+⢀	brail  8
+⢁	brail  1 8
+⢂	brail  2 8
+⢃	brail  1 2 8
+⢄	brail  3 8
+⢅	brail  1 3 8
+⢆	brail  2 3 8
+⢇	brail  1 2 3 8
+⢈	brail  4 8
+⢉	brail  1 4 8
+⢊	brail  2 4 8
+⢋	brail  1 2 4 8
+⢌	brail  3 4 8
+⢍	brail  1 3 4 8
+⢎	brail  2 3 4 8
+⢏	brail  1 2 3 4 8
+⢐	brail  5 8
+⢑	brail  1 5 8
+⢒	brail  2 5 8
+⢓	brail  1 2 5 8
+⢔	brail  3 5 8
+⢕	brail  1 3 5 8
+⢖	brail  2 3 5 8
+⢗	brail  1 2 3 5 8
+⢘	brail  4 5 8
+⢙	brail  1 4 5 8
+⢚	brail  2 4 5 8
+⢛	brail  1 2 4 5 8
+⢜	brail  3 4 5 8
+⢝	brail  1 3 4 5 8
+⢞	brail  2 3 4 5 8
+⢟	brail  1 2 3 4 5 8
+⢠	brail  6 8
+⢡	brail  1 6 8
+⢢	brail  2 6 8
+⢣	brail  1 2 6 8
+⢤	brail  3 6 8
+⢥	brail  1 3 6 8
+⢦	brail  2 3 6 8
+⢧	brail  1 2 3 6 8
+⢨	brail  4 6 8
+⢩	brail  1 4 6 8
+⢪	brail  2 4 6 8
+⢫	brail  1 2 4 6 8
+⢬	brail  3 4 6 8
+⢭	brail  1 3 4 6 8
+⢮	brail  2 3 4 6 8
+⢯	brail  1 2 3 4 6 8
+⢰	brail  5 6 8
+⢱	brail  1 5 6 8
+⢲	brail  2 5 6 8
+⢳	brail  1 2 5 6 8
+⢴	brail  3 5 6 8
+⢵	brail  1 3 5 6 8
+⢶	brail  2 3 5 6 8
+⢷	brail  1 2 3 5 6 8
+⢸	brail  1 2 3 8
+⢹	brail  1 4 5 6 8
+⢺	brail  2 4 5 6 8
+⢻	brail  1 2 4 5 6 8
+⢼	brail  3 4 5 6 8
+⢽	brail  1 3 4 5 6 8
+⢾	brail  2 3 4 5 6 8
+⢿	brail  1 2 3 4 5 6 8
+⣀	brail  7 8
+⣁	brail  1 7 8
+⣂	brail  2 7 8
+⣃	brail  1 2 7 8
+⣄	brail  3 7 8
+⣅	brail  1 3 7 8
+⣆	brail  2 3 7 8
+⣇	brail  1 2 3 7 8
+⣈	brail  4 7 8
+⣉	brail  1 4 7 8
+⣊	brail  2 4 7 8
+⣋	brail  1 2 4 7 8
+⣌	brail  3 4 7 8
+⣍	brail  1 3 4 7 8
+⣎	brail  2 3 4 7 8
+⣏	brail  1 2 3 4 7 8
+⣐	brail  5 7 8
+⣑	brail  1 5 7 8
+⣒	brail  2 5 7 8
+⣓	brail  1 2 5 7 8
+⣔	brail  3 5 7 8
+⣕	brail  1 3 5 7 8
+⣖	brail  2 3 5 7 8
+⣗	brail  1 2 3 5 7 8
+⣘	brail  4 5 7 8
+⣙	brail  1 4 5 7 8
+⣚	brail  2 4 5 7 8
+⣛	brail  1 2 4 5 7 8
+⣜	brail  3 4 5 7 8
+⣝	brail  1 3 4 5 7 8
+⣞	brail  2 3 4 5 7 8
+⣟	brail  1 2 3 4 5 7 8
+⣠	brail  6 7 8
+⣡	brail  1 6 7 8
+⣢	brail  2 6 7 8
+⣣	brail  1 2 6 7 8
+⣤	brail  3 6 7 8
+⣥	brail  1 3 6 7 8
+⣦	brail  2 3 6 7 8
+⣧	brail  1 2 3 6 7 8
+⣨	brail  4 6 7 8
+⣩	brail  1 4 6 7 8
+⣪	brail  2 4 6 7 8
+⣫	brail  1 2 4 6 7 8
+⣬	brail  3 4 6 7 8
+⣭	brail  1 3 4 6 7 8
+⣮	brail  2 3 4 6 7 8
+⣯	brail  1 2 3 4 6 7 8
+⣰	brail  5 6 7 8
+⣱	brail  1 5 6 7 8
+⣲	brail  2 5 6 7 8
+⣳	brail  1 2 5 6 7 8
+⣴	brail  3 5 6 7 8
+⣵	brail  1 3 5 6 7 8
+⣶	brail  2 3 5 6 7 8
+⣷	brail  1 2 3 5 6 7 8
+⣸	brail  1 2 3 7 8
+⣹	brail  1 4 5 6 7 8
+⣺	brail  2 4 5 6 7 8
+⣻	brail  1 2 4 5 6 7 8
+⣼	brail  3 4 5 6 7 8
+⣽	brail  1 3 4 5 6 7 8
+⣾	brail  2 3 4 5 6 7 8
+⣿	brail  1 2 3 4 5 6 7 8

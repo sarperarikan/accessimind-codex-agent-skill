@@ -3,8 +3,9 @@
 ## 1.0.0.3 - 2026-04-03
 
 ### Added
-- Integrated skill bundle delivery with `accessimind-accessible-ui-agent-skill`, `playwright`, `nvda-portable-a11y-audit`, and `senior-developer-20y`.
+- Integrated skill bundle delivery with `accessimind-accessible-ui-agent-skill`, `playwright`, `nvda-portable-a11y-audit`, `full-persona-a11y-audit`, and `senior-developer-20y`.
 - New `nvda-portable-a11y-audit` skill for portable NVDA-based screen-reader evidence and screenshot-driven visual analysis.
+- New `full-persona-a11y-audit` skill and runner for blind/low-vision/motor reports in one command.
 - AccessiMind skill workflow integration for Playwright runtime evidence and senior engineering production hardening.
 - Senior skill integration rules for production handoff and release-risk framing.
 - Bundle packaging output: `dist/accessimind-integrated-skill-bundle.zip`.

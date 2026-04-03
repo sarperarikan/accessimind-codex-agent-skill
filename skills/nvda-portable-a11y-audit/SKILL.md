@@ -48,3 +48,7 @@ The script must produce:
 - Never claim NVDA evidence unless NVDA process was started successfully.
 - If NVDA cannot start, mark the run as blocked.
 - Keep URLs explicit and in-scope.
+
+## Recommended next step
+
+After NVDA evidence is captured, run `full-persona-a11y-audit` for low-vision and motor tracks in the same audit cycle.

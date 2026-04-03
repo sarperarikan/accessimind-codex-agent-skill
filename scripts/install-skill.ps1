@@ -5,7 +5,8 @@ $bundleSkillNames = @(
   'accessimind-accessible-ui-agent-skill',
   'playwright',
   'senior-developer-20y',
-  'nvda-portable-a11y-audit'
+  'nvda-portable-a11y-audit',
+  'full-persona-a11y-audit'
 )
 
 if (-not (Test-Path $skillsRoot)) {

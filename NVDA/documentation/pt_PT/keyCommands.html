@@ -1,0 +1,4686 @@
+<!DOCTYPE html>
+<html lang="pt_PT" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Referência rápida dos comandos NVDA 2025.3.3</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="styles.css">
+<link rel="shortcut icon" href="favicon.ico">
+
+</head>
+<body><h1 id="referencia-rapida-dos-comandos-nvda-202533">Referência rápida dos comandos NVDA 2025.3.3</h1>
+<div class="toc">
+<ul>
+<li><a href="#referencia-rapida-dos-comandos-nvda-202533" title="Referência rápida dos comandos NVDA 2025.3.3">Referência rápida dos comandos NVDA 2025.3.3</a><ul>
+<li><a href="#GettingStartedWithNVDA" title="Começar Com O NVDA">Começar Com O NVDA</a><ul>
+<li><a href="#NVDATouchGestures" title="Gestos de Toque do NVDA">Gestos de Toque do NVDA</a><ul>
+<li><a href="#TouchModes" title="Modos de Toque">Modos de Toque</a></li>
+</ul>
+</li>
+<li><a href="#BasicNVDACommands" title="Comandos Básicos do NVDA">Comandos Básicos do NVDA</a></li>
+<li><a href="#ReportingSystemInformation" title="Anunciar Informação do Sistema">Anunciar Informação do Sistema</a></li>
+<li><a href="#SpeechModes" title="Modos de voz">Modos de voz</a></li>
+</ul>
+</li>
+<li><a href="#NavigatingWithNVDA" title="Navegar Com O NVDA">Navegar Com O NVDA</a><ul>
+<li><a href="#SystemFocus" title="Navegar com o Foco do Sistema">Navegar com o Foco do Sistema</a></li>
+<li><a href="#SystemCaret" title="Navegar com o Cursor do Sistema">Navegar com o Cursor do Sistema</a></li>
+<li><a href="#ObjectNavigation" title="Navegação Por Objetos">Navegação Por Objetos</a></li>
+<li><a href="#ReviewingText" title="Rever Texto">Rever Texto</a></li>
+<li><a href="#ReviewModes" title="Modos de Revisão">Modos de Revisão</a></li>
+<li><a href="#NavigatingWithTheMouse" title="Navegar com o Rato">Navegar com o Rato</a></li>
+</ul>
+</li>
+<li><a href="#BrowseMode" title="Modo de Navegação">Modo de Navegação</a><ul>
+<li><a href="#SingleLetterNavigation" title="Navegação por Carater">Navegação por Carater</a></li>
+<li><a href="#ElementsList" title="A Lista de Elementos">A Lista de Elementos</a></li>
+<li><a href="#SearchingForText" title="Localizar texto">Localizar texto</a></li>
+<li><a href="#ImbeddedObjects" title="Objetos Embutidos">Objetos Embutidos</a></li>
+<li><a href="#NativeSelectionMode" title="Modo de Selecção Nativo Mode">Modo de Selecção Nativo Mode</a></li>
+</ul>
+</li>
+<li><a href="#ReadingMath" title="Leitura de conteúdo Matemático">Leitura de conteúdo Matemático</a><ul>
+<li><a href="#InteractiveNavigation" title="Navegação Interativa">Navegação Interativa</a></li>
+</ul>
+</li>
+<li><a href="#Braille" title="Braille">Braille</a><ul>
+<li><a href="#BrailleInput" title="Escrita Braille">Escrita Braille</a></li>
+</ul>
+</li>
+<li><a href="#Vision" title="Visão">Visão</a><ul>
+<li><a href="#VisionScreenCurtain" title="Cortina de ecrã">Cortina de ecrã</a></li>
+</ul>
+</li>
+<li><a href="#ContentRecognition" title="Reconhecimento de Conteúdo">Reconhecimento de Conteúdo</a><ul>
+<li><a href="#Win10Ocr" title="OCR do Windows">OCR do Windows</a></li>
+</ul>
+</li>
+<li><a href="#ApplicationSpecificFeatures" title="Funcionalidades Específicas para Aplicações">Funcionalidades Específicas para Aplicações</a><ul>
+<li><a href="#MicrosoftWord" title="Microsoft Word">Microsoft Word</a><ul>
+<li><a href="#WordAutomaticColumnAndRowHeaderReading" title="Leitura Automática de Títulos de Coluna e Linha">Leitura Automática de Títulos de Coluna e Linha</a></li>
+<li><a href="#BrowseModeInMicrosoftWord" title="Modo de Navegação no Microsoft Word">Modo de Navegação no Microsoft Word</a><ul>
+<li><a href="#WordElementsList" title="A lista de Elementos">A lista de Elementos</a></li>
+</ul>
+</li>
+<li><a href="#WordReportingComments" title="Anúncio de Comentários">Anúncio de Comentários</a></li>
+</ul>
+</li>
+<li><a href="#MicrosoftExcel" title="Microsoft Excel">Microsoft Excel</a><ul>
+<li><a href="#ExcelAutomaticColumnAndRowHeaderReading" title="Leitura Automática de Títulos de Coluna e Linha">Leitura Automática de Títulos de Coluna e Linha</a></li>
+<li><a href="#ExcelElementsList" title="A lista de Elementos">A lista de Elementos</a></li>
+<li><a href="#ExcelReportingComments" title="Anunciar Notas">Anunciar Notas</a></li>
+<li><a href="#ExcelReadingProtectedCells" title="Leitura de Células Protegidas">Leitura de Células Protegidas</a></li>
+</ul>
+</li>
+<li><a href="#MicrosoftPowerPoint" title="Microsoft PowerPoint">Microsoft PowerPoint</a></li>
+<li><a href="#Foobar2000" title="foobar2000">foobar2000</a></li>
+<li><a href="#MirandaIM" title="Miranda IM">Miranda IM</a></li>
+<li><a href="#Poedit" title="Poedit">Poedit</a></li>
+<li><a href="#Kindle" title="Kindle para PC">Kindle para PC</a><ul>
+<li><a href="#KindleTextSelection" title="Selecção de Texto">Selecção de Texto</a></li>
+</ul>
+</li>
+<li><a href="#Azardi" title="Azardi">Azardi</a></li>
+<li><a href="#WinConsole" title="Consola Windows">Consola Windows</a></li>
+</ul>
+</li>
+<li><a href="#ConfiguringNVDA" title="Configurar O NVDA">Configurar O NVDA</a><ul>
+<li><a href="#NVDASettings" title="Configurações">Configurações</a><ul>
+<li><a href="#GeneralSettings" title="Gerais">Gerais</a></li>
+<li><a href="#SpeechSettings" title="Voz">Voz</a></li>
+<li><a href="#SelectSynthesizer" title="Seleccionar Sintetizador">Seleccionar Sintetizador</a></li>
+<li><a href="#SynthSettingsRing" title="Anel de configurações de Voz">Anel de configurações de Voz</a></li>
+<li><a href="#BrailleSettings" title="Braille">Braille</a></li>
+<li><a href="#SelectBrailleDisplay" title="Seleccionar dispositivo Braille">Seleccionar dispositivo Braille</a></li>
+<li><a href="#AudioSettings" title="Configurações de áudio">Configurações de áudio</a><ul>
+<li><a href="#SelectSoundSplitMode" title="Divisão de som">Divisão de som</a></li>
+</ul>
+</li>
+<li><a href="#KeyboardSettings" title="Configurações de teclado">Configurações de teclado</a></li>
+<li><a href="#MouseSettings" title="Configurações do rato">Configurações do rato</a></li>
+<li><a href="#ReviewCursorSettings" title="Cursor de Revisão">Cursor de Revisão</a></li>
+<li><a href="#ObjectPresentationSettings" title="Apresentação de Objetos">Apresentação de Objetos</a></li>
+<li><a href="#BrowseModeSettings" title="Modo de Navegação">Modo de Navegação</a></li>
+<li><a href="#DocumentFormattingSettings" title="Formatação de Documentos">Formatação de Documentos</a></li>
+<li><a href="#AdvancedSettings" title="Configurações Avançadas">Configurações Avançadas</a><ul>
+<li><a href="#Annotations" title="Anotações">Anotações</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#SavingAndReloading" title="Guardar E Recarregar Configuração">Guardar E Recarregar Configuração</a></li>
+<li><a href="#ConfigurationProfiles" title="Perfis de Configuração">Perfis de Configuração</a><ul>
+<li><a href="#ProfilesBasicManagement" title="Gestão Básica">Gestão Básica</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#RemoteAccess" title="Acesso remoto">Acesso remoto</a><ul>
+<li><a href="#RemoteAccessGestures" title="Resumo dos comandos de teclas de acesso remoto">Resumo dos comandos de teclas de acesso remoto</a></li>
+</ul>
+</li>
+<li><a href="#ExtraTools" title="Ferramentas">Ferramentas</a><ul>
+<li><a href="#LogViewer" title="Visualizador de Registo">Visualizador de Registo</a></li>
+<li><a href="#ReloadPlugins" title="Recarregar extras">Recarregar extras</a></li>
+</ul>
+</li>
+<li><a href="#SupportedBrailleDisplays" title="Dispositivos Braille Suportados">Dispositivos Braille Suportados</a><ul>
+<li><a href="#FreedomScientificFocus" title="Freedom Scientific: Séries Focus e PM">Freedom Scientific: Séries Focus e PM</a></li>
+<li><a href="#OptelecALVA" title="Optelec: ALVA série 6 / protocol converter">Optelec: ALVA série 6 / protocol converter</a></li>
+<li><a href="#HandyTech" title="Handy Tech">Handy Tech</a></li>
+<li><a href="#MDVLilli" title="MDV Lilli">MDV Lilli</a></li>
+<li><a href="#Baum" title="Baum, HumanWare, APH e Orbit">Baum, HumanWare, APH e Orbit</a></li>
+<li><a href="#HedoProfiLine" title="hedo ProfiLine USB">hedo ProfiLine USB</a></li>
+<li><a href="#HedoMobilLine" title="hedo MobilLine USB">hedo MobilLine USB</a></li>
+<li><a href="#HumanWareBrailliant" title="HumanWare séries Brailliant BI/B / BrailleNote Touch">HumanWare séries Brailliant BI/B / BrailleNote Touch</a><ul>
+<li><a href="#HumanWareBrailliantKeyAssignmentForAllModels" title="Comandos para todos os modelos">Comandos para todos os modelos</a></li>
+<li><a href="#HumanWareBrailliantKeyAssignmentForBI32BI40AndB80" title="Comandos para Brailliant BI 32, BI 40 e B 80">Comandos para Brailliant BI 32, BI 40 e B 80</a></li>
+<li><a href="#HumanWareBrailliantKeyAssignmentForBI14" title="Comandos para Brailliant BI 14">Comandos para Brailliant BI 14</a></li>
+</ul>
+</li>
+<li><a href="#Hims" title="HIMS: Séries Braille Sense, Braille EDGE, Smart Beetle e Sync Braille">HIMS: Séries Braille Sense, Braille EDGE, Smart Beetle e Sync Braille</a></li>
+<li><a href="#Seika" title="Dispositivos Braille Seika">Dispositivos Braille Seika</a><ul>
+<li><a href="#SeikaBrailleDisplays" title="Seika Versão 3, 4 e 5 (40 células), Seika80 (80 células)">Seika Versão 3, 4 e 5 (40 células), Seika80 (80 células)</a></li>
+<li><a href="#SeikaNotetaker" title="MiniSeika (16 ou 24 células), V6 e V6Pro (40 células)">MiniSeika (16 ou 24 células), V6 e V6Pro (40 células)</a></li>
+</ul>
+</li>
+<li><a href="#Papenmeier" title="Papenmeier BRAILLEX (Modelos recentes)">Papenmeier BRAILLEX (Modelos recentes)</a></li>
+<li><a href="#PapenmeierOld" title="Papenmeier BRAILLEX (Modelos antigos)">Papenmeier BRAILLEX (Modelos antigos)</a></li>
+<li><a href="#HumanWareBrailleNote" title="HumanWare BrailleNote">HumanWare BrailleNote</a></li>
+<li><a href="#EcoBraille" title="EcoBraille">EcoBraille</a></li>
+<li><a href="#SuperBraille" title="SuperBraille">SuperBraille</a></li>
+<li><a href="#Eurobraille" title="Dispositivos Eurobraille">Dispositivos Eurobraille</a><ul>
+<li><a href="#EurobrailleBraille" title="Funções do teclado Braille">Funções do teclado Braille</a></li>
+<li><a href="#Eurobraillebbook" title="comandos de teclado do b.book">comandos de teclado do b.book</a></li>
+<li><a href="#Eurobraillebnote" title="comandos de teclado do b.note">comandos de teclado do b.note</a></li>
+<li><a href="#Eurobrailleesys" title="Comandos de teclado Esys">Comandos de teclado Esys</a></li>
+<li><a href="#EurobrailleEsytime" title="Comandos de teclado do Esytime">Comandos de teclado do Esytime</a></li>
+</ul>
+</li>
+<li><a href="#NattiqTechnologies" title="Linhas Nattiq nBraille">Linhas Nattiq nBraille</a></li>
+<li><a href="#BRLTTY" title="BRLTTY">BRLTTY</a></li>
+<li><a href="#Albatross" title="Tivomatic Caiku Albatross 46 / 80">Tivomatic Caiku Albatross 46 / 80</a></li>
+<li><a href="#Zoomax" title="NLS eReader Zoomax">NLS eReader Zoomax</a></li>
+<li><a href="#HIDBraille" title="Dispositivos Braille com protocolo HID">Dispositivos Braille com protocolo HID</a></li>
+<li><a href="#dotPad" title="Dot Pad">Dot Pad</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="GettingStartedWithNVDA">Começar Com O NVDA</h2>
+<h3 id="NVDATouchGestures">Gestos de Toque do NVDA</h3>
+<p>Para alternar o suporte à Interacção tátil pressione NVDA+control+alt+t.</p>
+<h4 id="TouchModes">Modos de Toque</h4>
+<p>Para alternar entre modos de toque, realize um toque com três dedos.</p>
+<h3 id="BasicNVDACommands">Comandos Básicos do NVDA</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado de Desktop</th>
+<th>Comando de Teclado de Laptop</th>
+<th>Toque</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Iniciar ou reiniciar o NVDA</td>
+<td>Control+alt+n</td>
+<td>Control+alt+n</td>
+<td>nenhum</td>
+<td>Inicia ou reinicia o NVDA pelo ícone no Ambiente de trabalho, se este atalho do Windows for ativado na instalação do NVDA. Este é um atalho do Windows, por isso não pode ser alterado no diálogo "Definir comandos" do NVDA.</td>
+</tr>
+<tr>
+<td>Parar a voz</td>
+<td>Control</td>
+<td>Control</td>
+<td>Toque com dois dedos</td>
+<td>Pára instantaneamente a voz</td>
+</tr>
+<tr>
+<td>Pausar a voz</td>
+<td>shift</td>
+<td>shift</td>
+<td>nenhum</td>
+<td>Pausa instantaneamente a voz. Se pressionar novamente, recomeçará a falar, desde onde parou (se a pausa for suportada pelo sintetizador atual)</td>
+</tr>
+<tr>
+<td>Menu do NVDA</td>
+<td>NVDA+n</td>
+<td>NVDA+n</td>
+<td>Toque duplo com dois dedos</td>
+<td>Mostra o Menu do NVDA, que lhe permite aceder às preferências, ferramentas, ajuda, etc.</td>
+</tr>
+<tr>
+<td>Ativar/desativar o modo de ajuda de entrada</td>
+<td>NVDA+1</td>
+<td>NVDA+1</td>
+<td>nenhum</td>
+<td>Ao pressionar qualquer tecla neste modo, será anunciada a tecla e a descrição de qualquer comando do NVDA a ela associado</td>
+</tr>
+<tr>
+<td>Sair do NVDA</td>
+<td>NVDA+q</td>
+<td>NVDA+q</td>
+<td>nenhum</td>
+<td>Sai do NVDA</td>
+</tr>
+<tr>
+<td>Passar a próxima tecla diretamente para a aplicação</td>
+<td>NVDA+f2</td>
+<td>NVDA+f2</td>
+<td>nenhum</td>
+<td>Indica ao NVDA para deixar passar a próxima tecla pressionada para a aplicação ativa, mesmo que seja um comando do NVDA</td>
+</tr>
+<tr>
+<td>Alternar entre ativar e desativar o modo de suspensão numa aplicação</td>
+<td>NVDA+shift+s</td>
+<td>NVDA+shift+z</td>
+<td>nenhum</td>
+<td>O modo de suspensão desativa todos os comandos do NVDA e a saída de voz/Braille, para a aplicação atual. Isto é muito útil em aplicações que fornecem voz ou caraterísticas de leitores de ecrã. Pressione este comando novamente, para desativar o modo de suspensão.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ReportingSystemInformation">Anunciar Informação do Sistema</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anunciar a hora/data</td>
+<td>NVDA+f12</td>
+<td>Ao pressionar uma vez, informa a hora atual; se pressionar duas vezes, anuncia a data</td>
+</tr>
+<tr>
+<td>Anunciar o estado da bateria</td>
+<td>NVDA+shift+b</td>
+<td>Anuncia o estado da bateria. Ex: quando a fonte de alimentação está em utilização ou a percentagem atual da bateria.</td>
+</tr>
+<tr>
+<td>Anunciar o texto na área de transferência</td>
+<td>NVDA+c</td>
+<td>Anuncia o texto que se encontra na área de transferência, caso exista.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="SpeechModes">Modos de voz</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de teclado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alternar entre os modos de voz</td>
+<td><code>NVDA+s</code></td>
+<td>Alterna entre os vários modos de voz.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="NavigatingWithNVDA">Navegar Com O NVDA</h2>
+<h3 id="SystemFocus">Navegar com o Foco do Sistema</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado de Desktop</th>
+<th>Comando de Teclado de Laptop</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anunciar o foco atual</td>
+<td>NVDA+tab</td>
+<td>NVDA+tab</td>
+<td>Anuncia o objeto atual ou o controlo que tem o cursor do sistema. Ao pressionar duas vezes, soletrará a informação</td>
+</tr>
+<tr>
+<td>Anunciar o título</td>
+<td>NVDA+t</td>
+<td>NVDA+t</td>
+<td>Anuncia o título da janela atualmente em execução. Ao pressionar duas vezes, soletrará a informação. Se pressionar três vezes, copiará a informação para a área de transferência</td>
+</tr>
+<tr>
+<td>Ler a janela ativa</td>
+<td>NVDA+b</td>
+<td>NVDA+b</td>
+<td>Lê todos os controlos da janela atualmente em execução (útil para diálogos)</td>
+</tr>
+<tr>
+<td>Anunciar a Barra de Estado</td>
+<td>NVDA+end</td>
+<td>NVDA+shift+end</td>
+<td>Lê a Barra de Estado, se for encontrada. Se pressionar duas vezes soletra a informação. Se pressionar três vezes, copiará a informação para a área de transferência</td>
+</tr>
+<tr>
+<td>Anunciar tecla de atalho</td>
+<td><code>Shift+2 do numérico</code></td>
+<td><code>NVDA+control+shift+.</code></td>
+<td>Anuncia a tecla de atalho ou tecla aceleradora do objeto em foco</td>
+</tr>
+</tbody>
+</table>
+<h3 id="SystemCaret">Navegar com o Cursor do Sistema</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado de Desktop</th>
+<th>Comando de Teclado de Laptop</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leitura Contínua</td>
+<td>NVDA+Seta Abaixo</td>
+<td>NVDA+a</td>
+<td>Inicia a leitura, a partir da posição atual do cursor do sistema, movendo-o ao longo do texto, enquanto Lê</td>
+</tr>
+<tr>
+<td>Ler a linha atual</td>
+<td>NVDA+Seta Acima</td>
+<td>NVDA+l</td>
+<td>Lê a linha onde o cursor do sistema está posicionado atualmente. Ao pressionar duas vezes, soletra a linha. Ao pressionar três vezes, é soletrado com o alfabeto rádio internacional.</td>
+</tr>
+<tr>
+<td>Ler o texto atualmente seleccionado</td>
+<td>NVDA+Shift+Seta Acima</td>
+<td>NVDA+shift+s</td>
+<td>Lê qualquer texto seleccionado atualmente</td>
+</tr>
+<tr>
+<td>Anuncia as informações de formatação do texto</td>
+<td>NVDA+f</td>
+<td>NVDA+f</td>
+<td>Anuncia as informações de formatação do texto onde o cursor de inserção está localizado. Se pressionar duas vezes mostra a informação numa janela em modo de navegação</td>
+</tr>
+<tr>
+<td>Anuncia o URL de destino do link</td>
+<td><code>NVDA+k</code></td>
+<td><code>NVDA+k</code></td>
+<td>Pressionando uma vez anuncia o URL de destino do link na posição atual do cursor ou do foco. Pressionando duas vezes mostra-o numa janela para uma melhor revisão</td>
+</tr>
+<tr>
+<td>Anuncia a posição do cursor do sistema</td>
+<td>NVDA+Delete (ponto) do teclado numérico</td>
+<td>NVDA+delete</td>
+<td>Anuncia a informação sobre a posição do texto ou objeto na posição do cursor do sistema. Por exemplo, pode incluir a percentagem no documento, a distância da borda da página ou a posição exata no ecrã. Pressionando duas vezes pode fornecer mais informações.</td>
+</tr>
+<tr>
+<td>Frase seguinte</td>
+<td>alt+Seta Abaixo</td>
+<td>alt+Seta Abaixo</td>
+<td>Move o cursor para a frase seguinte e anuncia-a. (Suportado apenas no Microsoft Word)</td>
+</tr>
+<tr>
+<td>Frase anterior</td>
+<td>alt+Seta Acima</td>
+<td>alt+Seta Acima</td>
+<td>Move o cursor para a frase anterior e anuncia-a. (Suportado apenas no Microsoft Word)</td>
+</tr>
+</tbody>
+</table>
+<p>Quando estiver numa tabela, os seguintes comandos de teclado também estarão disponíveis:</p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mover para a coluna anterior</td>
+<td>Ctrl+Alt+Seta Esquerda</td>
+<td>Move o cursor do sistema para a coluna anterior (permanecendo na mesma linha)</td>
+</tr>
+<tr>
+<td>Mover para a coluna seguinte</td>
+<td>Ctrl+Alt+Seta Direita</td>
+<td>Move o cursor do sistema para a próxima coluna (permanecendo na mesma linha)</td>
+</tr>
+<tr>
+<td>Mover para a linha anterior</td>
+<td>Ctrl+Alt+Seta Acima</td>
+<td>Move o cursor do sistema para a linha anterior (permanecendo na mesma coluna)</td>
+</tr>
+<tr>
+<td>Mover para a linha seguinte</td>
+<td>Ctrl+Alt+Seta Abaixo</td>
+<td>Move o cursor do sistema para a linha seguinte (permanecendo na mesma coluna)</td>
+</tr>
+<tr>
+<td>Mover para a primeira coluna</td>
+<td>control+alt+home</td>
+<td>Move o cursor do sistema para a primeira coluna (permanecendo na mesma linha)</td>
+</tr>
+<tr>
+<td>Mover para a última coluna</td>
+<td>control+alt+end</td>
+<td>Move o cursor do sistema para a última coluna (permanecendo na mesma linha)</td>
+</tr>
+<tr>
+<td>Mover para a primeira linha</td>
+<td>control+alt+pageUp</td>
+<td>Move o cursor do sistema para a primeira linha (permanecendo na mesma coluna)</td>
+</tr>
+<tr>
+<td>Mover para a última linha</td>
+<td>control+alt+pageDown</td>
+<td>Move o cursor do sistema para a última linha (permanecendo na mesma coluna)</td>
+</tr>
+<tr>
+<td>Leitura contínua em colunas</td>
+<td><code>NVDA+control+alt+seta abaixo</code></td>
+<td>Lê a coluna verticalmente da célula atual até ao fim.</td>
+</tr>
+<tr>
+<td>Leitura contínua em linhas</td>
+<td><code>NVDA+control+alt+seta à direita</code></td>
+<td>Lê a linha horizontalmente da célula atual até ao fim.</td>
+</tr>
+<tr>
+<td>Lê a coluna toda</td>
+<td><code>NVDA+control+alt+seta acima</code></td>
+<td>Lê a coluna atual de cima a baixo sem deslocar o cursor.</td>
+</tr>
+<tr>
+<td>Lê a linha toda</td>
+<td><code>NVDA+control+alt+seta à esquerda</code></td>
+<td>Lê a linha atual da esquerda para a direita sem deslocar o cursor.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ObjectNavigation">Navegação Por Objetos</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado de Desktop</th>
+<th>Comando de Teclado de Laptop</th>
+<th>Toque</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anunciar o objeto atual</td>
+<td>NVDA+5 do bloco numérico</td>
+<td>NVDA+shift+o</td>
+<td>nenhum</td>
+<td>Anuncia o objeto de navegação atual. Se pressionar duas vezes, soletra o objeto e, se pressionar três vezes, copia nome e valor para a área de transferência.</td>
+</tr>
+<tr>
+<td>Mover para o objeto ascendente</td>
+<td>NVDA+8 do teclado numérico</td>
+<td>NVDA+shift+Seta Acima</td>
+<td>Varrer para cima (modo de objetos)</td>
+<td>Move para o objeto que contém o objeto de navegação atual</td>
+</tr>
+<tr>
+<td>Mover para o objeto anterior</td>
+<td>NVDA4 do bloco numérico</td>
+<td>NVDA+shift+Seta Esquerda</td>
+<td>nenhum</td>
+<td>Move para o objeto anterior ao objeto de navegação atual</td>
+</tr>
+<tr>
+<td>Mover para o objeto anterior em revisão plana</td>
+<td>NVDA+9 do teclado numérico</td>
+<td>NVDA+shift+Sinal de mais</td>
+<td>Varrer para a esquerda (em modo de objeto)</td>
+<td>Move para o objeto anterior em revisão plana</td>
+</tr>
+<tr>
+<td>Mover para o objeto seguinte</td>
+<td>NVDA+6 do bloco numérico</td>
+<td>NVDA+shift+Seta Direita</td>
+<td>Nenhum</td>
+<td>Move para o objeto seguinte ao objeto de navegação atual</td>
+</tr>
+<tr>
+<td>Mover para o objeto seguinte em revisão plana</td>
+<td>NVDA+3 do teclado numérico</td>
+<td>NVDA+shift+agudo</td>
+<td>Varrer para a esquerda (em modo de objeto)</td>
+<td>Move para o objeto seguinte em revisão plana</td>
+</tr>
+<tr>
+<td>Mover para o primeiro objeto descendente</td>
+<td>NVDA+2 do bloco numérico</td>
+<td>NVDA+shift+Seta Abaixo</td>
+<td>Varrer para baixo (modo de objetos)</td>
+<td>Move para o primeiro objeto contido pelo objeto de navegação atual</td>
+</tr>
+<tr>
+<td>Mover para o objeto em foco</td>
+<td>NVDA+Menos do bloco numérico</td>
+<td>NVDA+Backspace</td>
+<td>Nenhum</td>
+<td>Move para o objeto que tem o foco do sistema atual e também posiciona o cursor de revisão na posição do cursor do sistema, se o mesmo estiver visível</td>
+</tr>
+<tr>
+<td>Ativar o objeto de navegação atual</td>
+<td>NVDA+Enter do bloco numérico</td>
+<td>NVDA+Enter</td>
+<td>Toque duplo</td>
+<td>Ativa o objeto de navegação atual (semelhante ao clicar com o rato ou pressionar espaço quando o mesmo tem o foco do sistema)</td>
+</tr>
+<tr>
+<td>Mover o foco do sistema ou o cursor para o objeto atual da revisão</td>
+<td>NVDA+Shift+Menos do bloco numérico</td>
+<td>NVDA+Shift+Backspace</td>
+<td>Nenhum</td>
+<td>Ao pressionar uma vez, move o foco para o objeto de navegação atual, ao pressionar duas vezes, move o cursor do sistema para a posição do cursor de revisão</td>
+</tr>
+<tr>
+<td>Anunciar localização do cursor de revisão</td>
+<td>NVDA+Shift+delete do bloco numérico</td>
+<td>NVDA+Shift+delete</td>
+<td>nenhum</td>
+<td>Anuncia informação sobre a posição do texto ou objeto onde se encontra o cursor de revisão. Isto poderá incluir, por exemplo, a percentagem no documento, a distância desde a margem da página ou a posição exata no ecrã. Pressionando duas vezes irá fornecer mais detalhes.</td>
+</tr>
+<tr>
+<td>Mover o cursor de revisão para a barra de estado</td>
+<td>nenhum</td>
+<td>nenhum</td>
+<td>nenhum</td>
+<td>Lê a Barra de Estado, se for encontrada. Também move o objeto de navegação para esta localização.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ReviewingText">Rever Texto</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado de Desktop</th>
+<th>Comando de Teclado de Laptop</th>
+<th>Toque</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mover para a primeira linha em revisão</td>
+<td>shift+7 do bloco numérico</td>
+<td>NVDA+control+home</td>
+<td>nenhum</td>
+<td>Move o cursor de revisão para a primeira linha do texto</td>
+</tr>
+<tr>
+<td>Mover para a linha anterior em revisão</td>
+<td>7 do bloco numérico</td>
+<td>NVDA+Seta Acima</td>
+<td>Varrer para cima (modo de texto)</td>
+<td>Move o cursor de revisão para a linha anterior do texto</td>
+</tr>
+<tr>
+<td>Anunciar a linha atual em revisão</td>
+<td>8 do bloco numérico</td>
+<td>NVDA+shift+ponto</td>
+<td>nenhum</td>
+<td>Anuncia a linha atual do texto, onde está posicionado o cursor de revisão. Ao pressionar duas vezes, soletra a linha. Se pressionar três vezes, soletra-a, utilizando a descrição de carateres.</td>
+</tr>
+<tr>
+<td>Mover para a próxima linha em revisão</td>
+<td>9 do bloco numérico</td>
+<td>NVDA+Seta Abaixo</td>
+<td>Varrer para baixo (modo de texto)</td>
+<td>Move o cursor de revisão para a próxima linha do texto</td>
+</tr>
+<tr>
+<td>Mover para a última linha em revisão</td>
+<td>Shift+9 do bloco numérico</td>
+<td>NVDA+control+end</td>
+<td>nenhum</td>
+<td>Move o cursor de revisão para a última linha do texto</td>
+</tr>
+<tr>
+<td>Mover para a palavra anterior em revisão</td>
+<td>4 do bloco numérico</td>
+<td>NVDA+control+Seta Esquerda</td>
+<td>Varrer para a esquerda com dois dedos (modo de texto)</td>
+<td>Move o cursor de revisão para a palavra anterior no texto</td>
+</tr>
+<tr>
+<td>Anunciar a palavra atual em revisão</td>
+<td>5 do bloco numérico</td>
+<td>NVDA+control+ponto</td>
+<td>nenhum</td>
+<td>Anuncia a palavra atual no texto, onde está posicionado o cursor de revisão. Ao pressionar duas vezes, soletra a palavra. Se pressionar três vezes, soletra-a, utilizando a descrição de carateres.</td>
+</tr>
+<tr>
+<td>Mover para a próxima palavra em revisão</td>
+<td>6 do bloco numérico</td>
+<td>NVDA+control+Seta Direita</td>
+<td>Varrer para a direita com dois dedos (modo de texto)</td>
+<td>Move o cursor de revisão para a próxima palavra no texto</td>
+</tr>
+<tr>
+<td>Mover para o início da linha em revisão</td>
+<td>shift+1 do bloco numérico</td>
+<td>NVDA+home</td>
+<td>nenhum</td>
+<td>Move o cursor de revisão para o início da linha atual no texto</td>
+</tr>
+<tr>
+<td>Mover para o carater anterior em revisão</td>
+<td>1 do bloco numérico</td>
+<td>NVDA+Seta Esquerda</td>
+<td>Varrer para a esquerda (modo de texto)</td>
+<td>Move o cursor de revisão para o carater anterior, na linha atual no texto</td>
+</tr>
+<tr>
+<td>Anunciar o carater atual em revisão</td>
+<td>2 do bloco numérico</td>
+<td>NVDA+ponto</td>
+<td>nenhum</td>
+<td>Anuncia o carater atual na linha do texto, onde está posicionado o cursor de revisão. Se pressionar duas vezes, informa-o através da descrição de carateres ou o respetivo exemplo. Ao pressionar três vezes, informa o valor numérico do carater em decimal e hexadecimal.</td>
+</tr>
+<tr>
+<td>Mover para o próximo carater em revisão</td>
+<td>3 do bloco numérico</td>
+<td>NVDA+Seta Direita</td>
+<td>Varrer para a direita (modo de texto)</td>
+<td>Move o cursor de revisão para o carater seguinte na linha atual do texto</td>
+</tr>
+<tr>
+<td>Mover para o fim da linha em revisão</td>
+<td>Shift+3 do bloco numérico</td>
+<td>NVDA+end</td>
+<td>nenhum</td>
+<td>Move o cursor de revisão para o fim da linha atual do texto</td>
+</tr>
+<tr>
+<td>Mover para a página anterior em revisão</td>
+<td><code>NVDA+pageUp</code></td>
+<td><code>NVDA+shift+pageUp</code></td>
+<td>none</td>
+<td>Move o cursor de revisão para a página de texto anterior se suportado pela aplicação</td>
+</tr>
+<tr>
+<td>Mover para a página seguinte em revisão</td>
+<td><code>NVDA+pageDown</code></td>
+<td><code>NVDA+shift+pageDown</code></td>
+<td>none</td>
+<td>Move o cursor de revisão para a página de texto seguinte se suportado pela aplicação</td>
+</tr>
+<tr>
+<td>Mover para o início da seleção na revisão</td>
+<td><code>NVDA+alt+home</code></td>
+<td><code>NVDA+alt+home</code></td>
+<td>None</td>
+<td>Move o cursor de revisão para o primeiro caratere do texto selecionado</td>
+</tr>
+<tr>
+<td>Mover para o fim da seleção na revisão</td>
+<td><code>NVDA+alt+end</code></td>
+<td><code>NVDA+alt+end</code></td>
+<td>None</td>
+<td>Move o cursor de revisão para o último caráter do texto selecionado</td>
+</tr>
+<tr>
+<td>Ler continuamente com a revisão</td>
+<td>Mais do bloco numérico</td>
+<td>NVDA+shift+a</td>
+<td>Varrer para baixo com três dedos (modo de texto)</td>
+<td>Lê a partir da posição atual do cursor de revisão e move-o até ao final do texto</td>
+</tr>
+<tr>
+<td>Seleccionar e copiar a partir do cursor de revisão</td>
+<td>NVDA+F9</td>
+<td>NVDA+F9</td>
+<td>Nenhum</td>
+<td>Inicia o Seleccionar e copiar o texto a partir da posição atual do cursor de revisão. A função não será efetuada até que informe o NVDA até onde é que pretende copiar</td>
+</tr>
+<tr>
+<td>Seleccionar e copiar até ao cursor de revisão</td>
+<td>NVDA+F10</td>
+<td>NVDA+F10</td>
+<td>Nenhum</td>
+<td>Ao pressionar a primeira vez o texto, se possível, é seleccionado até à posição do cursor. Se o cursor de inserção puder, será movido para esse local. Ao pressionar segunda vez copia o texto para a área de transferência do Windows</td>
+</tr>
+<tr>
+<td>Mover o cursor de revisão para a posição marcada como início do bloco:</td>
+<td>NVDA+shift+f9</td>
+<td>NVDA+shift+f9</td>
+<td>none</td>
+<td>Move o cursor de revisão para a marca de início de texto a ser copiado ou seleccionado</td>
+</tr>
+<tr>
+<td>Anunciar informações de formatação do texto</td>
+<td>NVDA+Shift+f</td>
+<td>NVDA+Shift+f</td>
+<td>Nenhum</td>
+<td>Anuncia a formatação do texto onde o cursor de revisão está localizado atualmente. Pressionando duas vezes, as informações serão mostradas numa janela em modo de navegação</td>
+</tr>
+<tr>
+<td>Anunciar substituto do símbolo atual</td>
+<td>Nenhum</td>
+<td>Nenhum</td>
+<td>Nenhum</td>
+<td>Anuncia o símbolo sob o cursor de revisão. Pressionado duas vezes, anuncia o símbolo e o texto com que é anunciado em modo de navegação.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ReviewModes">Modos de Revisão</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado de Desktop</th>
+<th>Comando de Teclado de Laptop</th>
+<th>Gesto</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Muda para o modo de revisão seguinte</td>
+<td>NVDA+7 do bloco numérico</td>
+<td>NVDA+pageUp</td>
+<td>Varrer com dois dedos para cima</td>
+<td>Muda para o modo de revisão seguinte disponível</td>
+</tr>
+<tr>
+<td>Muda para o modo de revisão anterior</td>
+<td>NVDA+1 do bloco numérico</td>
+<td>NVDA+pageDown</td>
+<td>Varrer com dois dedos para baixo</td>
+<td>Muda para o modo de revisão anterior disponível</td>
+</tr>
+</tbody>
+</table>
+<h3 id="NavigatingWithTheMouse">Navegar com o Rato</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comandos de Teclado de Desktop</th>
+<th>Comandos de Teclado de Laptop</th>
+<th>Toque</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clicar com o botão esquerdo do rato</td>
+<td>Barra do bloco numérico</td>
+<td>NVDA+Sinal de Mais</td>
+<td>nenhum</td>
+<td>Clica uma vez com o botão esquerdo do rato. O duplo clique pode ser realizado se pressionar este comando duas vezes, rapidamente</td>
+</tr>
+<tr>
+<td>Bloquear o botão esquerdo do rato</td>
+<td>Shift+Barra do bloco numérico</td>
+<td>NVDA+control+Sinal de Mais</td>
+<td>nenhum</td>
+<td>Bloqueia o botão esquerdo do rato, na posição de  pressionado. Pressione novamente para desbloqueá-lo. Para arrastar o rato, pressione esta tecla de atalho para bloquear o botão esquerdo do rato, na posição de  pressionado e mova o rato quer seja fisicamente ou utilizando qualquer comando de movimento do rato</td>
+</tr>
+<tr>
+<td>Clicar com o botão direito do rato</td>
+<td>Asterisco do bloco numérico</td>
+<td>NVDA+Acento agudo</td>
+<td>Tocar e manter</td>
+<td>Clica uma vez com o botão direito do rato.</td>
+</tr>
+<tr>
+<td>Bloquear o botão direito do rato</td>
+<td>Shift+Asterisco do bloco numérico</td>
+<td>NVDA+control+Acento agudo</td>
+<td>nenhum</td>
+<td>Bloqueia o botão direito do rato, na posição de pressionado. Pressione novamente para desbloqueá-lo. Para arrastar o rato, pressione esta tecla de atalho para bloquear o botão direito do rato, na posição de pressionado e mova o rato quer seja fisicamente ou utilizando qualquer comando de movimento do rato</td>
+</tr>
+<tr>
+<td>Deslocar para cima na posição do rato</td>
+<td>nenhum</td>
+<td>nenhum</td>
+<td>nenhum</td>
+<td>Desloca a roda do rato para cima na posição atual do</td>
+</tr>
+<tr>
+<td>Deslocar para baixo na posição do rato</td>
+<td>nenhum</td>
+<td>nenhum</td>
+<td>nenhum</td>
+<td>Desloca a roda do rato para baixo na posição atual do</td>
+</tr>
+<tr>
+<td>Deslocar para a esquerda na posição do rato</td>
+<td>nenhum</td>
+<td>nenhum</td>
+<td>nenhum</td>
+<td>Desloca a roda do rato para a esquerda na posição atual do</td>
+</tr>
+<tr>
+<td>Deslocar para a direita na posição do rato</td>
+<td>nenhum</td>
+<td>nenhum</td>
+<td>nenhum</td>
+<td>Desloca a roda do rato para a direita na posição atual do</td>
+</tr>
+<tr>
+<td>Mover o rato para o objeto de navegação atual</td>
+<td>NVDA+Barra do bloco numérico</td>
+<td>NVDA+shift+m</td>
+<td>nenhum</td>
+<td>Move o rato para a localização do objeto de navegação atual e do cursor de revisão</td>
+</tr>
+<tr>
+<td>Navegar para o objeto sob o rato</td>
+<td>NVDA+Asterisco do bloco numérico</td>
+<td>NVDA+shift+n</td>
+<td>nenhum</td>
+<td>Define o objeto de navegação para o objeto localizado na posição do rato</td>
+</tr>
+</tbody>
+</table>
+<h2 id="BrowseMode">Modo de Navegação</h2>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alternar entre os modos de Foco e de Navegação</td>
+<td>NVDA+Espaço</td>
+<td>Alterna entre o modo de foco e o modo de navegação</td>
+</tr>
+<tr>
+<td>Sair do modo de foco</td>
+<td>Escape</td>
+<td>Volta para o modo de navegação, se o modo de foco foi ativado manualmente ou automaticamente</td>
+</tr>
+<tr>
+<td>Atualizar o Documento no Modo de Navegação</td>
+<td>NVDA+F5</td>
+<td>Recarrega o conteúdo do documento atual (muito útil se determinado conteúdo está em falta no documento. Não disponível no Microsoft Word e Outlook.)</td>
+</tr>
+<tr>
+<td>Localizar</td>
+<td>NVDA+Ctrl+F</td>
+<td>Abre uma janela, onde pode escrever texto a ser localizado no documento atual. Para mais informações, consulte <a href="#SearchingForText" title="Pesquisa de texto">Pesquisa de texto</a>.</td>
+</tr>
+<tr>
+<td>Localizar seguinte</td>
+<td>NVDA+F3</td>
+<td>Localiza a próxima ocorrência de texto que já localizou no documento</td>
+</tr>
+<tr>
+<td>Localizar anterior</td>
+<td>NVDA+Shift+F3</td>
+<td>Localiza a ocorrência de texto anterior que já localizou no documento</td>
+</tr>
+</tbody>
+</table>
+<h3 id="SingleLetterNavigation">Navegação por Carater</h3>
+<p>As teclas seguintes, por si mesmas, saltam para o próximo elemento disponível. Adicionando-se a tecla Shift, faz com que saltem para o elemento anterior:</p>
+<ul>
+<li>h: Título</li>
+<li>l: Lista</li>
+<li>i: Item de lista</li>
+<li>t: Tabela</li>
+<li>k: Link</li>
+<li>n: Texto que não é um link</li>
+<li>f: Campo de formulário</li>
+<li>u: Link não visitado</li>
+<li>v: Link visitado</li>
+<li>e: Campo de edição</li>
+<li>b: Botão</li>
+<li>x: Caixa de verificação</li>
+<li>c: Caixa de combinação</li>
+<li>r: Botão de opção</li>
+<li>q: Bloco de citação</li>
+<li>s: Separador</li>
+<li>m: Frame</li>
+<li>g: Gráfico</li>
+<li>d: Marca</li>
+<li>o: Objeto embutido (reprodutores de áudio e vídeo, diálogos, aplicações, etc)</li>
+<li>1 a 9: títulos nos níveis 1 a 9, respectivamente</li>
+<li>a: anotação (comentário, revisão do editor, etc.)</li>
+<li><code>p</code>: parágrafo de texto</li>
+<li>w: erro ortográfico</li>
+</ul>
+<p>Para se mover para o início ou fim de elementos contentores como listas ou tabelas, que contêm outros elementos:</p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mover para o início do contentor</td>
+<td>shift+vírgula</td>
+<td>Move para o início do contentor (lista, tabela, etc.) que contém o cursor</td>
+</tr>
+<tr>
+<td>Mover para depois do fim do contentor</td>
+<td>Vírgula</td>
+<td>Move para depois do fim do contentor (lista, tabela, etc.) que contém o cursor</td>
+</tr>
+</tbody>
+</table>
+<p>Para ativar e desativar a navegação por carater para o documento atual, pressione NVDA+shift+espaço.</p>
+<h3 id="ElementsList">A Lista de Elementos</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lista de elementos do Modo de Navegação</td>
+<td>NVDA+F7</td>
+<td>Ativa a lista de elementos que contém links, títulos e marcas, no documento atual</td>
+</tr>
+</tbody>
+</table>
+<h3 id="SearchingForText">Localizar texto</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Localizar texto</td>
+<td>NVDA+control+f</td>
+<td>Abre a caixa de diálogo de pesquisa</td>
+</tr>
+<tr>
+<td>Localizar seguinte</td>
+<td>NVDA+F3</td>
+<td>Localiza a próxima ocorrência de texto que já localizou no documento</td>
+</tr>
+<tr>
+<td>Localizar anterior</td>
+<td>NVDA+shift+f3</td>
+<td>procura a ocorrência anterior do termo de pesquisa atual</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ImbeddedObjects">Objetos Embutidos</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mover para o documento em Modo de Navegação que contém o objeto embutido</td>
+<td>NVDA+Ctrl+Espaço</td>
+<td>Move o foco para fora do objeto embutido atual e entra no documento que o contém</td>
+</tr>
+</tbody>
+</table>
+<h3 id="NativeSelectionMode">Modo de Selecção Nativo Mode</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de teclado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ativva e desativa o modo de sellecção nativa</td>
+<td><code>NVDA+shift+f10</code></td>
+<td>Ativva e desativa o modo de sellecção nativa</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ReadingMath">Leitura de conteúdo Matemático</h2>
+<h3 id="InteractiveNavigation">Navegação Interativa</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interagir com conteúdo matemático</td>
+<td>NVDA+alt+m</td>
+<td>Inicia a interacção com o conteúdo matemático.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Braille">Braille</h2>
+<h3 id="BrailleInput">Escrita Braille</h3>
+<p>Pressionando o ponto 7 apagará a última célula Braille ou carater introduzido.
+Pressionando o  ponto 8 converte o Braille abreviado e pressiona a tecla Enter.
+Pressionando os pontos 7 + 8 converte o Braille abreviado, mas sem introduzir um espaço ou simular a tecla Enter.</p>
+<h2 id="Vision">Visão</h2>
+<h3 id="VisionScreenCurtain">Cortina de ecrã</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de teclado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alterna o estado da cortina de ecrã</td>
+<td><code>NVDA+control+escape</code></td>
+<td>Ativa para tornar o ecrã preto ou desativa para mostrar o conteúdo do ecrã. Pressionado uma vez ativa a cortina de ecrã até reiniciar o NVDA. Pressionado duas vezes a cortina de ecrã ficará ativa até a desativar.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ContentRecognition">Reconhecimento de Conteúdo</h2>
+<h3 id="Win10Ocr">OCR do Windows</h3>
+<p>Para reconhecer o texto no objeto de navegação atual, usando o OCR do Windows, pressione NVDA+r.</p>
+<h2 id="ApplicationSpecificFeatures">Funcionalidades Específicas para Aplicações</h2>
+<h3 id="MicrosoftWord">Microsoft Word</h3>
+<h4 id="WordAutomaticColumnAndRowHeaderReading">Leitura Automática de Títulos de Coluna e Linha</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Definir cabeçalhos de coluna</td>
+<td><code>NVDA+shift+c</code></td>
+<td>Pressionar este comando uma vez indica ao NVDA que esta é a primeira célula de cabeçalho na linha que contém os cabeçalhos de coluna, que devem ser anunciados automaticamente quando se move entre colunas abaixo desta linha. Pressionar duas vezes apaga a definição.</td>
+</tr>
+<tr>
+<td>Definir cabeçalhos de linha</td>
+<td><code>NVDA+shift+r</code></td>
+<td>Pressionar esta tecla uma vez diz ao NVDA que esta é a primeira célula de cabeçalho na coluna que contém os cabeçalhos de linha, que devem ser anunciados automaticamente ao mover-se entre linhas após esta coluna. Pressionar duas vezes apaga a definição.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="BrowseModeInMicrosoftWord">Modo de Navegação no Microsoft Word</h4>
+<p>Para alternar entre o Modo de Navegação ativado ou desativado no Microsoft Word, pressione NVDA+Espaço.</p>
+<h5 id="WordElementsList">A lista de Elementos</h5>
+<p>Em Modo de Navegação no Microsoft Word, pode invocar a Lista de Elementos pressionando NVDA+f7.</p>
+<h4 id="WordReportingComments">Anúncio de Comentários</h4>
+<p>Para anunciar quaisquer comentários na posição atual do cursor, pressione <code>NVDA+alt+c</code>.
+Pressionando duas vezes mostra as informações numa mensagem navegável.</p>
+<h3 id="MicrosoftExcel">Microsoft Excel</h3>
+<h4 id="ExcelAutomaticColumnAndRowHeaderReading">Leitura Automática de Títulos de Coluna e Linha</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Definir cabeçalhos de coluna</td>
+<td><code>NVDA+shift+c</code></td>
+<td>Pressionar este comando uma vez indica ao NVDA que esta é a primeira célula de cabeçalho na linha que contém os cabeçalhos de coluna, que devem ser anunciados automaticamente quando se move entre colunas abaixo desta linha. Pressionar duas vezes apaga a definição.</td>
+</tr>
+<tr>
+<td>Definir cabeçalhos de linha</td>
+<td><code>NVDA+shift+r</code></td>
+<td>Pressionar este comando uma vez diz ao NVDA que esta é a primeira célula de cabeçalho na coluna que contém os cabeçalhos de linha, que devem ser anunciados automaticamente ao mover-se entre linhas após esta coluna. Pressionar duas vezes apaga a definição.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ExcelElementsList">A lista de Elementos</h4>
+<p>Para aceder à Lista de Elementos, no Microsoft Excel, pressione NVDA+f7.</p>
+<h4 id="ExcelReportingComments">Anunciar Notas</h4>
+<p>Para anunciar quaisquer notas relativas à célula atualmente em foco, pressione <code>NVDA+alt+c</code>.
+Pressionando duas vezes mostra as informações numa mensagem navegável.
+No Microsoft Excel 2016, 365 ou mais recente, os comentários foram renomeados para notas.</p>
+<p>Para adicionar ou editar uma  nota numa célula, pressione shift+f2.</p>
+<h4 id="ExcelReadingProtectedCells">Leitura de Células Protegidas</h4>
+<p>Para permitir a navegação para células que foram bloqueadas, alterne para o Modo de Navegação, pressionando NVDA+espaço, e use os comandos normais para o Excel, como as setas, para se mover por toda a folha.</p>
+<h3 id="MicrosoftPowerPoint">Microsoft PowerPoint</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alterna a leitura das notas do apresentador</td>
+<td>control+shift+s</td>
+<td>Quando está a correr uma apresentação de diapositivos, este comando alternará entre ler as notas do apresentador para o diapositivo, ou o conteúdo do mesmo. Isto afeta apenas o que o NVDA lê, e não o que é mostrado no ecrã.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Foobar2000">foobar2000</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anunciar Tempo Restante</td>
+<td>control+shift+r</td>
+<td>Anuncia o tempo restante de qualquer faixa em execução.</td>
+</tr>
+<tr>
+<td>Anunciar tempo passado</td>
+<td>control+shift+e</td>
+<td>Anuncia o tempo passado de qualquer faixa em execução.</td>
+</tr>
+<tr>
+<td>Anunciar tempo total</td>
+<td>control+shift+t</td>
+<td>Anuncia o tempo total de qualquer faixa em execução.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="MirandaIM">Miranda IM</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anunciar Mensagem Recente</td>
+<td>NVDA+control+1-4</td>
+<td>Anuncia uma das mensagens recentes, dependendo do número pressionado, por exemplo: NVDA+control+2 lê a segunda mensagem mais recente.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Poedit">Poedit</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anunciar notas para os tradutores</td>
+<td><code>control+shift+a</code></td>
+<td>Anuncia quaisquer notas para os tradutores. Se pressionado duas vezes mostra as notas numa mensagem em modo de navegação</td>
+</tr>
+<tr>
+<td>Anunciar comentários</td>
+<td><code>control+shift+c</code></td>
+<td>Anuncia quaisquer comentários na janela de comentários. Se pressionado duas vezes mostra o comentário numa mensagem em modo de navegação</td>
+</tr>
+<tr>
+<td>Anuncia o antigo Texto fonte</td>
+<td><code>control+shift+o</code></td>
+<td>Anuncia o antigo texto fonte. Se pressionado duas vezes mostra o texto numa mensagem em modo de navegação</td>
+</tr>
+<tr>
+<td>Anuncia avisos de tradução</td>
+<td><code>control+shift+w</code></td>
+<td>Anuncia qualquer aviso de problemas na tradução  Se pressionado duas vezes mostra o aviso numa mensagem em modo de navegação</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Kindle">Kindle para PC</h3>
+<p>Pode mudar manualmente para a página seguinte com Page Down ou para a anterior com Page Up.</p>
+<h4 id="KindleTextSelection">Selecção de Texto</h4>
+<p>Após ter seleccionado o texto, pressione a tecla de Aplicações ou shift+f10 para ver as opções disponíveis para essa selecção.</p>
+<h3 id="Azardi">Azardi</h3>
+<p>Na tabela de livros adicionados:</p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enter</td>
+<td>enter</td>
+<td>Abre o livro seleccionado.</td>
+</tr>
+<tr>
+<td>Menu de contexto</td>
+<td>aplicações</td>
+<td>Abre o menu de contexto para o livro seleccionado.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="WinConsole">Consola Windows</h3>
+<p>Os seguintes comandos da consola do Windows podem ser usados para <a href="#ReviewingText" title="rever o texto">rever o texto</a> com o NVDA em versões antigas das consolas do Windows:</p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar para cima</td>
+<td>control+seta acima</td>
+<td>Desloca a consola para cima para o texto anterior ficar visível.</td>
+</tr>
+<tr>
+<td>Deslocar para baixo</td>
+<td>control+seta abaixo</td>
+<td>Desloca a consola para baixo para o texto seguinte ficar visível.</td>
+</tr>
+<tr>
+<td>Deslocar para o início</td>
+<td>control+home</td>
+<td>Desloca a consola para o início para o texto inicial ficar visível.</td>
+</tr>
+<tr>
+<td>Deslocar para o fim</td>
+<td>control+end</td>
+<td>Desloca a consola para o fim para o texto final ficar visível.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ConfiguringNVDA">Configurar O NVDA</h2>
+<p>Em qualquer janela pode pressionar <code>f1</code> para abrir o Manual do utilizador no parágrafo relacionado com a opção em foco ou com o diálogo aberto.</p>
+<h3 id="NVDASettings">Configurações</h3>
+<h4 id="GeneralSettings">Gerais</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de Atalho de Desktop</th>
+<th>Tecla de Atalho de Laptop</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenGeneralSettings">Abrir as configurações gerais</td>
+<td><code>NVDA+control+g</code></td>
+<td><code>NVDA+control+g</code></td>
+<td>A secção "Gerais", do diálogo "Configurações" define o comportamento global do NVDA, tais como, o idioma da interface, se deve, ou não, pesquisar por atualizações no arranque, etc.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="SpeechSettings">Voz</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de Atalho de Desktop</th>
+<th>Tecla de Atalho de Laptop</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenSpeechSettings">Abrir as configurações de voz</td>
+<td><code>NVDA+control+v</code></td>
+<td><code>NVDA+control+v</code></td>
+<td>Esta secção permite-lhe seleccionar o sintetizador e as caraterísticas da voz do sintetizador escolhido.</td>
+</tr>
+<tr>
+<td id="SpeechSettingsSymbolLevel">Nível de Pontuação / Símbolo</td>
+<td>NVDA+P</td>
+<td>NVDA+P</td>
+<td>Esta opção permite-lhe escolher que pontuações e outros símbolos deverão ser anunciados como palavras.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="SelectSynthesizer">Seleccionar Sintetizador</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de Atalho de Desktop</th>
+<th>Tecla de Atalho de Laptop</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenSelectSynthesizer">Abrir o diálogo de selecção de sintetizador</td>
+<td><code>NVDA+control+s</code></td>
+<td><code>NVDA+control+s</code></td>
+<td>O diálogo "Seleccionar Sintetizador" pode ser aberto usando o botão "Alterar..." da secção "Voz" do diálogo de configurações e permite-lhe seleccionar qual o sintetizador que o NVDA utilizará para falar.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="SynthSettingsRing">Anel de configurações de Voz</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado de Desktop</th>
+<th>Comando de Teclado de Laptop</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mover para a próxima definição de voz</td>
+<td>NVDA+control+Seta Direita</td>
+<td>NVDA+shift+control+Seta Direita</td>
+<td>Move para a seguinte definição de voz disponível depois da atual, circulando para a primeira definição de voz, depois de atingir a última</td>
+</tr>
+<tr>
+<td>Mover para a definição de voz anterior</td>
+<td>NVDA+control+Seta Esquerda</td>
+<td>NVDA+shift+control+Seta Esquerda</td>
+<td>Move para a anterior definição de voz disponível depois da atual, circulando para a primeira definição de voz, depois de atingir a última</td>
+</tr>
+<tr>
+<td>Aumentar a definição de voz atual</td>
+<td>NVDA+control+Seta Acima</td>
+<td>NVDA+shift+control+Seta Acima</td>
+<td>aumenta a definição de voz atual. Por exemplo: aumenta a velocidade, escolhe a voz seguinte, aumenta o volume</td>
+</tr>
+<tr>
+<td>Aumentar a definição de voz atual por um valor maior</td>
+<td><code>NVDA+control+pageUp</code></td>
+<td><code>NVDA+shift+control+pageUp</code></td>
+<td>aumenta a definição de voz atual por um valor maior. Por exemplo: aumenta a velocidade em 20%, selecciona a voz 20 posições acima, aumenta o volume 20%</td>
+</tr>
+<tr>
+<td>Diminuir a definição de voz atual</td>
+<td>NVDA+control+Seta Abaixo</td>
+<td>NVDA+shift+control+Seta Abaixo</td>
+<td>Diminui a definição de voz atual. Ex: diminui a velocidade, escolhe a voz anterior, diminui o volume</td>
+</tr>
+<tr>
+<td>Diminuir a definição de voz atual por um valor maior</td>
+<td><code>NVDA+control+pageUp</code></td>
+<td><code>NVDA+shift+control+pageUp</code></td>
+<td>Diminui a definição de voz atual por um valor maior. Por exemplo: diminui a velocidade em 20%, selecciona a voz 20 posições abaixo, diminui o volume 20%</td>
+</tr>
+</tbody>
+</table>
+<h4 id="BrailleSettings">Braille</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de Atalho de Desktop</th>
+<th>Tecla de Atalho de Laptop</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="BrailleMode">Modo Braille</td>
+<td><code>NVDA+alt+t</code></td>
+<td><code>NVDA+alt+t</code></td>
+<td>Esta opção permite-lhe alternar entre os modos Braille disponíveis.</td>
+</tr>
+<tr>
+<td id="BrailleTether">Ligação Braill</td>
+<td>NVDA+Ctrl+T</td>
+<td>NVDA+Ctrl+T</td>
+<td>Esta opção permite-lhe escolher se o Braille seguirá o foco do sistema,/cursor de inserção, o objeto de navegação / cursor de revisão ou ambos.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="SelectBrailleDisplay">Seleccionar dispositivo Braille</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de Atalho de Desktop</th>
+<th>Tecla de Atalho de Laptop</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenSelectBrailleDisplay">Abrir o diálogo de selecção de dispositivo Braille</td>
+<td><code>NVDA+control+a</code></td>
+<td><code>NVDA+control+a</code></td>
+<td>O diálogo "Seleccionar dispositivo Braille", que pode ser aberto ativando o botão "Alterar..." na secção Braille das configurações do NVDA, permite escolher o dispositivo Braille a ser usada.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="AudioSettings">Configurações de áudio</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de Atalho de Desktop</th>
+<th>Tecla de Atalho de Laptop</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenAudioSettings">Abrir configurações de áudio</td>
+<td><code>NVDA+control+u</code></td>
+<td><code>NVDA+control+u</code></td>
+<td>A secção Áudio das configurações do NVDA contém opções que permitem alterar alguns aspetos da saída de áudio.</td>
+</tr>
+<tr>
+<td id="SelectSynthesizerDuckingMode">Modo de Diminuição do Volume</td>
+<td><code>NVDA+shift+d</code></td>
+<td><code>NVDA+shift+d</code></td>
+<td>Esta opção permite definir se o NVDA deve diminuir o volume das outras aplicações, enquanto o NVDA está a falar ou sempre que o NVDA está em execução.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="SelectSoundSplitMode">Divisão de som</h5>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alterna entre os modos de divisão de som</td>
+<td><code>NVDA+alt+s</code></td>
+<td>Alterna entre os modos de divisão de som.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="KeyboardSettings">Configurações de teclado</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de Atalho de Desktop</th>
+<th>Tecla de Atalho de Laptop</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenKeyboardSettings">Abrir configurações de teclado</td>
+<td><code>NVDA+control+k</code></td>
+<td><code>NVDA+control+k</code></td>
+<td>Esta secção das configurações do NVDA contém os parâmetros que definem como o NVDA se comporta, quando usa o teclado para escrever ou para dar comandos.</td>
+</tr>
+<tr>
+<td id="KeyboardSettingsSpeakTypedCharacters">Anunciar Carateres Escritos</td>
+<td><code>NVDA+2</code></td>
+<td><code>NVDA+2</code></td>
+<td>Esta opção controla quando o NVDA anuncia os carateres digitados no teclado.</td>
+</tr>
+<tr>
+<td id="KeyboardSettingsSpeakTypedWords">Anunciar Palavras Escritas</td>
+<td><code>NVDA+3</code></td>
+<td><code>NVDA+3</code></td>
+<td>Esta opção controla quando o NVDA anuncia as palavras que escreve no teclado.</td>
+</tr>
+<tr>
+<td id="KeyboardSettingsSpeakCommandKeys">Anunciar Teclas de Comando</td>
+<td>NVDA+4</td>
+<td>NVDA+4</td>
+<td>Se ativada, o NVDA irá anunciar todas as teclas, que não sejam carateres ou pontuações, que pressione no teclado. Isto inclui Control mais uma letra ou as setas direccionais.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="MouseSettings">Configurações do rato</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de Atalho de Desktop</th>
+<th>Tecla de Atalho de Laptop</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenMouseSettings">Abrir configurações do rato</td>
+<td><code>NVDA+control+m</code></td>
+<td><code>NVDA+control+m</code></td>
+<td>A secção Rato do diálogo das configurações do NVDA permite configurar as opções relativas ao seguimento do rato, ao anúncio da posição do mesmo, etc.</td>
+</tr>
+<tr>
+<td id="MouseSettingsTracking">Ativar seguimento do rato</td>
+<td>NVDA+M</td>
+<td>NVDA+M</td>
+<td>Quando ativada, o NVDA irá anunciar o texto atualmente sob o ponteiro do rato, enquanto o movimenta ao longo do ecrã. Isto permite que encontre coisas no ecrã, movendo fisicamente o rato, em vez de tentar encontrá-las através da navegação por objetos.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ReviewCursorSettings">Cursor de Revisão</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de Atalho de Desktop</th>
+<th>Tecla de Atalho de Laptop</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="ReviewCursorFollowFocus">Seguir Foco do Sistema</td>
+<td>NVDA+7</td>
+<td>NVDA+7</td>
+<td>Se esta opção estiver ativa, o cursor de revisão será sempre colocado no mesmo objeto que o foco do sistema, quando o foco mudar.</td>
+</tr>
+<tr>
+<td id="ReviewCursorFollowCaret">Seguir o Cursor do Sistema</td>
+<td>NVDA+6</td>
+<td>NVDA+6</td>
+<td>Quando ativada, o cursor de revisão será movido automaticamente para a posição do cursor do sistema, de cada vez que este se movimentar.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ObjectPresentationSettings">Apresentação de Objetos</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de Atalho de Desktop</th>
+<th>Tecla de Atalho de Laptop</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenObjectPresentationSettings">Abrir configurações da apresentação de objetos</td>
+<td><code>NVDA+control+o</code></td>
+<td><code>NVDA+control+o</code></td>
+<td>A secção "Apresentação de objetos" permite-lhe configurar o nível de informação que o NVDA dará sobre os objetos em foco, como descrição, posição, etc.</td>
+</tr>
+<tr>
+<td id="ObjectPresentationProgressBarOutput">Anúncio da barra de progresso</td>
+<td>NVDA+u</td>
+<td>NVDA+u</td>
+<td>Esta opção controla o modo como o NVDA anuncia a evolução das barras de progresso.</td>
+</tr>
+<tr>
+<td id="ObjectPresentationReportDynamicContent">Anunciar mudanças em Conteúdo Dinâmico</td>
+<td>NVDA+5</td>
+<td>NVDA+5</td>
+<td>Alterna entre ligar e desligar o anúncio de novo conteúdo, especificamente em objetos como terminais ou histórico, em programas de chat.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="BrowseModeSettings">Modo de Navegação</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de Atalho de Desktop</th>
+<th>Tecla de Atalho de Laptop</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenBrowseModeSettings">Abrir configurações do modo de navegação</td>
+<td><code>NVDA+control+b</code></td>
+<td><code>NVDA+control+b</code></td>
+<td>A secção "Modo de navegação" permite-lhe configurar o comportamento do NVDA, ao ler documentos complexos, como páginas Web, documentos do Word e Excel e PDF.</td>
+</tr>
+<tr>
+<td id="BrowseModeSettingsScreenLayout">Utilizar a Disposição no ecrã</td>
+<td>NVDA+V</td>
+<td>NVDA+V</td>
+<td>Esta opção permite especificar se o conteúdo no Buffer Virtual deve posicionar os elementos clicáveis (links botões e outros campos) numa linha individual, ou se deve conservá-los dentro do texto, tal como é mostrado visualmente.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="DocumentFormattingSettings">Formatação de Documentos</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de Atalho de Desktop</th>
+<th>Tecla de Atalho de Laptop</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenDocumentFormattingSettings">Abrir configurações da formatação de documentos</td>
+<td><code>NVDA+control+d</code></td>
+<td><code>NVDA+control+d</code></td>
+<td>A maioria das opções desta secção permitem configurar qual é o tipo de formatação que pretende ouvir automaticamente, conforme se move com o cursor pelos documentos.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="AdvancedSettings">Configurações Avançadas</h4>
+<h5 id="Annotations">Anotações</h5>
+<p>Para "Anunciar sumário de quaisquer detalhes da nota no ponto de inserção", pressione NVDA+d.</p>
+<h3 id="SavingAndReloading">Guardar E Recarregar Configuração</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de Teclado Desktop</th>
+<th>Comando de Teclado Laptop</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Guardar configuração</td>
+<td><code>NVDA+control+c</code></td>
+<td><code>NVDA+control+c</code></td>
+<td>Guarda a configuração atual para que não seja perdida ao sair do NVDA</td>
+</tr>
+<tr>
+<td>Restaurar configuração</td>
+<td><code>NVDA+control+r</code></td>
+<td><code>NVDA+control+r</code></td>
+<td>Pressionar uma vez volta para a configuração guardada. Se pressionar três vezes, volta para a configuração padrão original.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ConfigurationProfiles">Perfis de Configuração</h3>
+<h4 id="ProfilesBasicManagement">Gestão Básica</h4>
+<ul>
+<li>NVDA+control+p: Apresenta o diálogo Perfis de Configuração.</li>
+</ul>
+<h2 id="RemoteAccess">Acesso remoto</h2>
+<h3 id="RemoteAccessGestures">Resumo dos comandos de teclas de acesso remoto</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alternar ligação remota</td>
+<td><code>NVDA+alt+r</code></td>
+<td>Inicia uma nova sessão de acesso remoto ou, se uma sessão já estiver em andamento, desliga-a.</td>
+</tr>
+<tr>
+<td>Alternar controlo</td>
+<td><code>NVDA+alt+tab</code></td>
+<td>Alterna entre o controlo do computador remoto e do computador local.</td>
+</tr>
+<tr>
+<td>Ligar Nenhum</td>
+<td>Inicia uma nova sessão de Acesso Remoto. Indisponível em <a href="#SecureMode" title="modo seguro">modo seguro</a>.</td>
+<td></td>
+</tr>
+<tr>
+<td>Copiar link</td>
+<td>Nenhum</td>
+<td>Copia um link da sessão remota para a área de transferência.</td>
+</tr>
+<tr>
+<td>Desligar</td>
+<td>Nenhum</td>
+<td>Encerra uma sessão de acesso remoto existente.</td>
+</tr>
+<tr>
+<td>Mudo remoto</td>
+<td>Nenhum</td>
+<td>Silencia ou não a fala proveniente do computador remoto.</td>
+</tr>
+<tr>
+<td>Enviar área de transferência</td>
+<td>Nenhum</td>
+<td>Envia o conteúdo da área de transferência para o computador remoto.</td>
+</tr>
+<tr>
+<td>Enviar <code>control+alt+delete</code></td>
+<td>Nenhum</td>
+<td>Envia <code>control+alt+delete</code> para o computador controlado.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ExtraTools">Ferramentas</h2>
+<h3 id="LogViewer">Visualizador de Registo</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de teclado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Abrir o Visualizador de registo</td>
+<td><code>NVDA+f1</code></td>
+<td>Abre o Visualizador de registo e mostra informações para desenvolvimento sobre o objeto de navegação em foco.</td>
+</tr>
+<tr>
+<td>Copiar um fragmento do registo para a área de transferência</td>
+<td><code>NVDA+control+shift+f1</code></td>
+<td>Quando este comando é executado uma vez marca o início do fragmento do registo a ser copiado. Quando pressionado outra vez é marcado o fim do fragmento e é copiado para a área de transferêmncia.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ReloadPlugins">Recarregar extras</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de teclado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recarregar os extras</td>
+<td><code>NVDA+control+f3</code></td>
+<td>Recarrega todos os extras.</td>
+</tr>
+<tr>
+<td>Anuncia o executável e o extra (appModule) carregado</td>
+<td><code>NVDA+control+f1</code></td>
+<td>Anuncia o nome do extra (app module), se algum, e o nome do executável associado que tem o foco.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="SupportedBrailleDisplays">Dispositivos Braille Suportados</h2>
+<h3 id="FreedomScientificFocus">Freedom Scientific: Séries Focus e PM</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar a linha braille para trás</td>
+<td>topRouting1 (primeira célula da linha)</td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para a frente</td>
+<td>topRouting20/40/80 (última célula da linha)</td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para trás</td>
+<td>leftAdvanceBar</td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para a frente</td>
+<td>rightAdvanceBar</td>
+</tr>
+<tr>
+<td>Alternar "Ligação Braille:"</td>
+<td>leftGDFButton+rightGDFButton</td>
+</tr>
+<tr>
+<td>Alternar a acção da roda de deslocamento esquerda</td>
+<td>leftWizWheelPress</td>
+</tr>
+<tr>
+<td>Mover para trás usando  a acção da roda de deslocamento esquerda</td>
+<td>leftWizWheelUp</td>
+</tr>
+<tr>
+<td>Mover para a frente usando  a acção da roda de deslocamento esquerda</td>
+<td>leftWizWheelDown</td>
+</tr>
+<tr>
+<td>Alternar a acção da roda de deslocamento direita</td>
+<td>rightWizWheelPress</td>
+</tr>
+<tr>
+<td>Mover para Trás usando a acção da roda de deslocamento direita</td>
+<td>rightWizWheelUp</td>
+</tr>
+<tr>
+<td>Mover para a frente usando a acção da roda de deslocamento Direita</td>
+<td>rightWizWheelDown</td>
+</tr>
+<tr>
+<td>Encaminhar para a célula braille</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>tecla shift+tab</td>
+<td>espaço+ponto 1+ponto 2</td>
+</tr>
+<tr>
+<td>tecla tab</td>
+<td>espaço+ponto 4+ponto 5</td>
+</tr>
+<tr>
+<td>tecla seta cima</td>
+<td>espaço+ponto 1</td>
+</tr>
+<tr>
+<td>tecla seta baixo</td>
+<td>espaço+ponto 4</td>
+</tr>
+<tr>
+<td>teclas control+seta esquerda</td>
+<td>espaço+ponto 2</td>
+</tr>
+<tr>
+<td>teclas control+seta direita</td>
+<td>espaço+ponto 5</td>
+</tr>
+<tr>
+<td>tecla seta esquerda</td>
+<td>espaço+ponto 3</td>
+</tr>
+<tr>
+<td>tecla seta direita</td>
+<td>espaço+ponto 6</td>
+</tr>
+<tr>
+<td>tecla home</td>
+<td>espaço+ponto 1+ponto 3</td>
+</tr>
+<tr>
+<td>tecla end</td>
+<td>espaço+ponto 4+ponto 6</td>
+</tr>
+<tr>
+<td>teclas control+home</td>
+<td>espaço+ponto 1+ponto 2+ponto 3</td>
+</tr>
+<tr>
+<td>teclas control+end</td>
+<td>espaço+ponto 4+ponto 5+ponto 6</td>
+</tr>
+<tr>
+<td>tecla alt</td>
+<td>espaço+ponto 1+ponto 3+ponto 4</td>
+</tr>
+<tr>
+<td>teclas alt+tab</td>
+<td>espaço+ponto 2+ponto 3+ponto 4+ponto 5</td>
+</tr>
+<tr>
+<td>teclas Alt+Shift+Tab</td>
+<td>Espaço+ponto1+ponto2+ponto5+ponto6</td>
+</tr>
+<tr>
+<td>teclas Windows+Tab</td>
+<td>Espaço+ponto2+ponto3+ponto4</td>
+</tr>
+<tr>
+<td>tecla escape</td>
+<td>espaço+ponto 1+ponto 5</td>
+</tr>
+<tr>
+<td>tecla windows</td>
+<td>espaço+ponto 2+ponto 4+ponto 5+ponto 6</td>
+</tr>
+<tr>
+<td>tecla Espaço</td>
+<td>espaço</td>
+</tr>
+<tr>
+<td>Alternar tecla control</td>
+<td>Espaço+ponto 3+ponto 8</td>
+</tr>
+<tr>
+<td>Alternar tecla alt</td>
+<td>Espaço+ponto 6+ponto 8</td>
+</tr>
+<tr>
+<td>Alternar tecla windows</td>
+<td>Espaço+ponto 4+ponto 8</td>
+</tr>
+<tr>
+<td>Alternar tecla NVDA</td>
+<td>Espaço+ponto 5+ponto 8</td>
+</tr>
+<tr>
+<td>Alternar tecla shift</td>
+<td>Espaço+ponto 7+ponto 8</td>
+</tr>
+<tr>
+<td>Alternar teclas control e shift</td>
+<td>Espaço+ponto 3+ponto 7+ponto 8</td>
+</tr>
+<tr>
+<td>Alternar teclas alt e shift</td>
+<td>Espaço+ ponto 6+ponto 7+ponto 8</td>
+</tr>
+<tr>
+<td>Alternar teclas windows e shift</td>
+<td>Espaço+ponto 4+ponto 7+ponto 8</td>
+</tr>
+<tr>
+<td>Alternar teclas NVDA e shift</td>
+<td>Espaço+ponto 5+ponto 7+ponto 8</td>
+</tr>
+<tr>
+<td>Alternar teclas control e alt</td>
+<td>Espaço+ponto 3+ponto 6+ponto 8</td>
+</tr>
+<tr>
+<td>Alternar teclas control, alt e shift</td>
+<td>Espaço+ponto 3+ponto 6+ponto 7+ponto 8</td>
+</tr>
+<tr>
+<td>teclas windows+d (minimizar todas as aplicações)</td>
+<td>espaço+ponto 1+ponto 2+ponto 3+ponto 4+ponto 5+ponto 6</td>
+</tr>
+<tr>
+<td>Anunciar a linha atual</td>
+<td>espaço+ponto 1+ponto 4</td>
+</tr>
+<tr>
+<td>Menu do NVDA</td>
+<td>espaço+ponto 1+ponto 3+ponto 4+ponto 5</td>
+</tr>
+</tbody>
+</table>
+<p>Para modelos mais recentes da Focus que têm teclas "rocker bar" (focus 40, focus 80 e focus blue):</p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Move a linha braille para a linha anterior</td>
+<td>leftRockerBarUp, rightRockerBarUp</td>
+</tr>
+<tr>
+<td>Move a linha braille para a linha seguinte</td>
+<td>leftRockerBarDown, rightRockerBarDown</td>
+</tr>
+</tbody>
+</table>
+<p>Apenas para a Focus 80:</p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar a linha braille para trás</td>
+<td>leftBumperBarUp, rightBumperBarUp</td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para a frente</td>
+<td>leftBumperBarDown, rightBumperBarDown</td>
+</tr>
+</tbody>
+</table>
+<h3 id="OptelecALVA">Optelec: ALVA série 6 / protocol converter</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de Atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar a linha braille para trás</td>
+<td>t1, etouch1</td>
+</tr>
+<tr>
+<td>Mover a linha braille para a linha anterior</td>
+<td>t2</td>
+</tr>
+<tr>
+<td>Mover a linha Braille para o foco atual</td>
+<td>t3</td>
+</tr>
+<tr>
+<td>Mover a linha braille para a linha seguinte</td>
+<td>t4</td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para a frente</td>
+<td>t5, etouch3</td>
+</tr>
+<tr>
+<td>Encaminhar para a célula braille</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Anunciar formatação do carater da célula Braille</td>
+<td>secondary routing</td>
+</tr>
+<tr>
+<td>Alternar simulação de teclado HID</td>
+<td>t1+spEnter</td>
+</tr>
+<tr>
+<td>Mover para a primeira linha em revisão</td>
+<td>t1+t2</td>
+</tr>
+<tr>
+<td>Mover para a última linha em revisão</td>
+<td>t4+t5</td>
+</tr>
+<tr>
+<td>Alternar "Ligação Braille:"</td>
+<td>t1+t3</td>
+</tr>
+<tr>
+<td>Anunciar o título</td>
+<td>etouch2</td>
+</tr>
+<tr>
+<td>Anunciar a Barra de Estado</td>
+<td>etouch4</td>
+</tr>
+<tr>
+<td>teclas shift+tab</td>
+<td>sp1</td>
+</tr>
+<tr>
+<td>tecla alt</td>
+<td>sp2, Alt</td>
+</tr>
+<tr>
+<td>tecla escape</td>
+<td>sp3</td>
+</tr>
+<tr>
+<td>tecla tab</td>
+<td>sp4</td>
+</tr>
+<tr>
+<td>tecla seta acima</td>
+<td>spUp</td>
+</tr>
+<tr>
+<td>tecla seta abaixo</td>
+<td>spDown</td>
+</tr>
+<tr>
+<td>tecla seta esquerda</td>
+<td>spLeft</td>
+</tr>
+<tr>
+<td>tecla seta direita</td>
+<td>spRight</td>
+</tr>
+<tr>
+<td>tecla Enter</td>
+<td>spEnter, Enter</td>
+</tr>
+<tr>
+<td>Anunciar hora/data</td>
+<td>sp2+sp3</td>
+</tr>
+<tr>
+<td>Menu do NVDA</td>
+<td>sp1+sp3</td>
+</tr>
+<tr>
+<td>teclas Windows+d (Minimizar todas as aplicações)</td>
+<td>sp1+sp4</td>
+</tr>
+<tr>
+<td>teclas windows+b (Mover para a Área de notificações)</td>
+<td>sp3+sp4</td>
+</tr>
+<tr>
+<td>tecla Windows</td>
+<td>sp1+sp2, Windows</td>
+</tr>
+<tr>
+<td>teclas alt+tab</td>
+<td>sp2+sp4</td>
+</tr>
+<tr>
+<td>teclas control+home</td>
+<td>t3+spUp</td>
+</tr>
+<tr>
+<td>teclas control+end</td>
+<td>t3+spDown</td>
+</tr>
+<tr>
+<td>tecla home</td>
+<td>t3+spLeft</td>
+</tr>
+<tr>
+<td>tecla end</td>
+<td>t3+spRight</td>
+</tr>
+<tr>
+<td>tecla Control</td>
+<td>control</td>
+</tr>
+</tbody>
+</table>
+<h3 id="HandyTech">Handy Tech</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de Atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar a linha braille para trás</td>
+<td>left, up, B3</td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para a frente</td>
+<td>right, down, B6</td>
+</tr>
+<tr>
+<td>Mover a linha braille para a linha anterior</td>
+<td>B4</td>
+</tr>
+<tr>
+<td>Mover a linha braille para a linha seguinte</td>
+<td>B5</td>
+</tr>
+<tr>
+<td>Encaminhar para a célula braille</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>tecla shift+tab</td>
+<td>esc, triple ation key up+down</td>
+</tr>
+<tr>
+<td>tecla alt</td>
+<td>B2+B4+B5</td>
+</tr>
+<tr>
+<td>tecla escape</td>
+<td>B4+B6</td>
+</tr>
+<tr>
+<td>tecla tab</td>
+<td>enter, right triple ation key up+down</td>
+</tr>
+<tr>
+<td>tecla enter</td>
+<td>esc+enter, left+right triple ation key up+down, joystickAtion</td>
+</tr>
+<tr>
+<td>tecla Seta Acima</td>
+<td>joystickUp</td>
+</tr>
+<tr>
+<td>tecla seta Abaixo</td>
+<td>joystickDown</td>
+</tr>
+<tr>
+<td>tecla Seta à esquerda</td>
+<td>joystickLeft</td>
+</tr>
+<tr>
+<td>tecla seta à direita</td>
+<td>joystickRight</td>
+</tr>
+<tr>
+<td>Menu do NVDA</td>
+<td>B2+B4+B5+B6</td>
+</tr>
+<tr>
+<td>Alternar Braille segue:</td>
+<td>B2</td>
+</tr>
+<tr>
+<td>Alternar cursor Braille</td>
+<td>B1</td>
+</tr>
+<tr>
+<td>Alternar Apresentação do contexto do foco:</td>
+<td>B7</td>
+</tr>
+<tr>
+<td>Alternar teclado Braille</td>
+<td>space+B1+B3+B4 (espaço+B maiúsculo)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="MDVLilli">MDV Lilli</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de Atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar a linha braille para Trás</td>
+<td>LF</td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para a frente</td>
+<td>RG</td>
+</tr>
+<tr>
+<td>Mover a linha braille para a linha anterior</td>
+<td>UP</td>
+</tr>
+<tr>
+<td>Mover a linha braille para a linha seguinte</td>
+<td>DN</td>
+</tr>
+<tr>
+<td>Encaminhar para a célula braille</td>
+<td>route</td>
+</tr>
+<tr>
+<td>tecla shift+tab</td>
+<td>SLF</td>
+</tr>
+<tr>
+<td>tecla tab</td>
+<td>SRG</td>
+</tr>
+<tr>
+<td>teclas alt+tab</td>
+<td>SDN</td>
+</tr>
+<tr>
+<td>teclas alt+shift+tab</td>
+<td>SUP</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Baum">Baum, HumanWare, APH e Orbit</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de Atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar a linha braille para trás</td>
+<td><code>d2</code></td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para a frente</td>
+<td><code>d5</code></td>
+</tr>
+<tr>
+<td>Mover a linha braille para a linha anterior</td>
+<td><code>d1</code></td>
+</tr>
+<tr>
+<td>Mover a linha braille para a linha seguinte</td>
+<td><code>d3</code></td>
+</tr>
+<tr>
+<td>Encaminhar</td>
+<td><code>routing</code></td>
+</tr>
+<tr>
+<td>tecla <code>shift+tab</code></td>
+<td><code>espaço+ponto 1+ponto 3</code></td>
+</tr>
+<tr>
+<td>tecla <code>tab</code></td>
+<td><code>espaço+ponto 4+ponto 6</code></td>
+</tr>
+<tr>
+<td>tecla <code>alt</code></td>
+<td><code>espaço+ponto 1+ponto 3+ponto 4</code> (<code>espaço+m</code>)</td>
+</tr>
+<tr>
+<td>tecla <code>escape</code></td>
+<td><code>espaço+ponto 1+ponto 5</code> (<code>espaço+e</code>)</td>
+</tr>
+<tr>
+<td>tecla <code>windows</code></td>
+<td><code>espaço+ponto 3+ponto 4</code></td>
+</tr>
+<tr>
+<td>teclas <code>alt+tab</code></td>
+<td><code>espaço+ponto 2+ponto 3+ponto 4+ponto 5</code> (<code>espaço+t</code>)</td>
+</tr>
+<tr>
+<td>Menu NVDA</td>
+<td><code>espaço+ponto 1+ponto 3+ponto 4+ponto 5</code> (<code>espaço+n</code>)</td>
+</tr>
+<tr>
+<td>Teclas <code>Windows+d</code> (minimizar todos os aplicativos)</td>
+<td><code>espaço+ponto 1+ponto 4+ponto 5</code> (<code>espaço+d</code>)</td>
+</tr>
+<tr>
+<td>Leitura contínua</td>
+<td><code>espaço+ponto 1+ponto 2+ponto 3+ponto 4+ponto 5+ponto 6</code></td>
+</tr>
+</tbody>
+</table>
+<p>Para dispositivos braille que tenham um joistick:</p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tecla seta acima</td>
+<td>up</td>
+</tr>
+<tr>
+<td>tecla seta abaixo</td>
+<td>down</td>
+</tr>
+<tr>
+<td>tecla seta esquerda</td>
+<td>left</td>
+</tr>
+<tr>
+<td>tecla seta direita</td>
+<td>right</td>
+</tr>
+<tr>
+<td>tecla Enter</td>
+<td>selet</td>
+</tr>
+</tbody>
+</table>
+<h3 id="HedoProfiLine">hedo ProfiLine USB</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de Atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar a linha braille para trás</td>
+<td>K1</td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para a frente</td>
+<td>K3</td>
+</tr>
+<tr>
+<td>Mover a linha braille para a linha anterior</td>
+<td>B2</td>
+</tr>
+<tr>
+<td>Mover a linha braille para a linha seguinte</td>
+<td>B5</td>
+</tr>
+<tr>
+<td>Encaminhar para a célula</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Alternar "Braille segue:"</td>
+<td>K2</td>
+</tr>
+<tr>
+<td>Leitura contínua</td>
+<td>B6</td>
+</tr>
+</tbody>
+</table>
+<h3 id="HedoMobilLine">hedo MobilLine USB</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de Atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar a linha braille para trás</td>
+<td>K1</td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para a frente</td>
+<td>K3</td>
+</tr>
+<tr>
+<td>Mover a linha braille para a linha anterior</td>
+<td>B2</td>
+</tr>
+<tr>
+<td>Mover a linha braille para a linha seguinte</td>
+<td>B5</td>
+</tr>
+<tr>
+<td>Encaminhar para a célula</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Alternar "Braille segue:"</td>
+<td>K2</td>
+</tr>
+<tr>
+<td>Leitura contínua</td>
+<td>B6</td>
+</tr>
+</tbody>
+</table>
+<h3 id="HumanWareBrailliant">HumanWare séries Brailliant BI/B / BrailleNote Touch</h3>
+<h4 id="HumanWareBrailliantKeyAssignmentForAllModels">Comandos para todos os modelos</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar a linha braille para trás</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para a frente</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Mover a linha braille para a linha anterior</td>
+<td>up</td>
+</tr>
+<tr>
+<td>Mover a linha braille para a linha seguinte</td>
+<td>down</td>
+</tr>
+<tr>
+<td>Encaminhar para a célula braille</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Alternar "Braille segue:"</td>
+<td>up+down</td>
+</tr>
+<tr>
+<td>tecla seta cima</td>
+<td>espaço+ponto 1</td>
+</tr>
+<tr>
+<td>tecla seta baixo</td>
+<td>espaço+ponto 4</td>
+</tr>
+<tr>
+<td>tecla seta esquerda</td>
+<td>espaço+ponto 3</td>
+</tr>
+<tr>
+<td>tecla seta direita</td>
+<td>espaço+ponto 6</td>
+</tr>
+<tr>
+<td>tecla shift+tab</td>
+<td>espaço+ponto 1+ponto 3</td>
+</tr>
+<tr>
+<td>tecla tab</td>
+<td>espaço+ponto 4+ponto 6</td>
+</tr>
+<tr>
+<td>tecla alt</td>
+<td>espaço+ponto 1+ponto 3+ponto 4 (espaço+m)</td>
+</tr>
+<tr>
+<td>tecla escape</td>
+<td>espaço+ponto 1+ponto 5 (espaço+e)</td>
+</tr>
+<tr>
+<td>tecla enter</td>
+<td>ponto 8</td>
+</tr>
+<tr>
+<td>tecla windows</td>
+<td>espaço+ponto 3+ponto 4</td>
+</tr>
+<tr>
+<td>teclas alt+tab</td>
+<td>espaço+ponto 2+ponto 3+ponto 4+ponto 5 (espaço+t)</td>
+</tr>
+<tr>
+<td>Menu do NVDA</td>
+<td>Espaço + ponto 1+ponto 3+ponto 4+ponto 5 (Espaço+n)</td>
+</tr>
+<tr>
+<td>teclas windows+d (Minimizar todas as aplicações)</td>
+<td>Espaço + ponto 1+ponto 4+ponto 5 (Espaço+d)</td>
+</tr>
+<tr>
+<td>Leitura contínua</td>
+<td>Espaço + ponto 1+ponto 2+ponto 3+ponto 4+ponto 5+ponto 6</td>
+</tr>
+</tbody>
+</table>
+<h4 id="HumanWareBrailliantKeyAssignmentForBI32BI40AndB80">Comandos para Brailliant BI 32, BI 40 e B 80</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Menu do NVDA</td>
+<td>c1+c3+c4+c5 (command n)</td>
+</tr>
+<tr>
+<td>teclas windows+d (Minimizar todas as aplicações)</td>
+<td>c1+c4+c5 (command d)</td>
+</tr>
+<tr>
+<td>Leitura contínua</td>
+<td>c1+c2+c3+c4+c5+c6</td>
+</tr>
+</tbody>
+</table>
+<h4 id="HumanWareBrailliantKeyAssignmentForBI14">Comandos para Brailliant BI 14</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tecla seta cima</td>
+<td>joystick up</td>
+</tr>
+<tr>
+<td>tecla seta baixo</td>
+<td>joystick down</td>
+</tr>
+<tr>
+<td>tecla seta esquerda</td>
+<td>joystick left</td>
+</tr>
+<tr>
+<td>tecla seta direita</td>
+<td>joystick right</td>
+</tr>
+<tr>
+<td>tecla enter</td>
+<td>joystick ation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Hims">HIMS: Séries Braille Sense, Braille EDGE, Smart Beetle e Sync Braille</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Encaminhar para a célula braille</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Deslocar a linha Braille para trás</td>
+<td>leftSideScrollUp, rightSideScrollUp, leftSideScroll</td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para a frente</td>
+<td>leftSideScrollDown, rightSideScrollDown, rightSideScroll</td>
+</tr>
+<tr>
+<td>Move a linha braille para a linha anterior</td>
+<td>leftSideScrollUp+rightSideScrollUp</td>
+</tr>
+<tr>
+<td>Move a linha braille para a linha seguinte</td>
+<td>leftSideScrollDown+rightSideScrollDown</td>
+</tr>
+<tr>
+<td>Move a linha Braille para a linha anterior em revisão</td>
+<td>rightSideseta acima</td>
+</tr>
+<tr>
+<td>Move a linha Braille para a linha seguinte em revisão</td>
+<td>rightSideseta abaixo</td>
+</tr>
+<tr>
+<td>Move para o carater anterior em revisão</td>
+<td>rightSideLeftArrow</td>
+</tr>
+<tr>
+<td>Move para o carater seguinte em revisão</td>
+<td>rightSideRightArrow</td>
+</tr>
+<tr>
+<td>Move para o foco atual</td>
+<td>leftSideScrollUp+leftSideScrollDown, rightSideScrollUp+rightSideScrollDown, leftSideScroll+rightSideScroll</td>
+</tr>
+<tr>
+<td>tecla control</td>
+<td>smartbeetle: f1, brailleedge: f3</td>
+</tr>
+<tr>
+<td>tecla Windows</td>
+<td>f7, smartbeetle: f2</td>
+</tr>
+<tr>
+<td>tecla Alt</td>
+<td>Ponto1+ponto3+ponto4+Espaço, f2, smartbeetle: f3, brailleedge: f4</td>
+</tr>
+<tr>
+<td>tecla Shift</td>
+<td>f5</td>
+</tr>
+<tr>
+<td>tecla Insert</td>
+<td>Ponto2+ponto4+Espaço, f6</td>
+</tr>
+<tr>
+<td>tecla Aplicações</td>
+<td>Ponto1+ponto2+ponto3+ponto4+Espaço, f8</td>
+</tr>
+<tr>
+<td>Tecla CapsLock</td>
+<td>Ponto1+ponto3+ponto6+Espaço</td>
+</tr>
+<tr>
+<td>tecla Tab</td>
+<td>Ponto4+ponto5+Espaço, f3, brailleedge: f2</td>
+</tr>
+<tr>
+<td>teclas Shift+Alt+Tab</td>
+<td>f2+f3+f1</td>
+</tr>
+<tr>
+<td>teclas Alt+Tab</td>
+<td>f2+f3</td>
+</tr>
+<tr>
+<td>teclas shift+tab</td>
+<td>Ponto1+ponto2+espaço</td>
+</tr>
+<tr>
+<td>tecla End</td>
+<td>Ponto4+ponto6+Espaço</td>
+</tr>
+<tr>
+<td>teclas Control+End</td>
+<td>Ponto4+ponto5+ponto6+Espaço</td>
+</tr>
+<tr>
+<td>tecla Home</td>
+<td>Ponto1+ponto3+Espaço, smartbeetle: f4</td>
+</tr>
+<tr>
+<td>teclas Control+Home</td>
+<td>ponto1+ponto2+ponto3+Espaço</td>
+</tr>
+<tr>
+<td>teclas Alt+F4</td>
+<td>Ponto1+ponto3+ponto5+ponto6+Espaço</td>
+</tr>
+<tr>
+<td>tecla Seta à esquerda</td>
+<td>Ponto3+Espaço, leftSideLeftArrow</td>
+</tr>
+<tr>
+<td>teclas Control+Shift+Seta à esquerda</td>
+<td>Ponto2+ponto8+Espaço+F1</td>
+</tr>
+<tr>
+<td>teclas control+Seta à esquerda</td>
+<td>Ponto2+Espaço</td>
+</tr>
+<tr>
+<td>teclas Shift+Alt+Seta à esquerda</td>
+<td>Ponto2+ponto7+F1</td>
+</tr>
+<tr>
+<td>Teclas <code>Alt+Seta à esquerda</code></td>
+<td><code>Ponto2+ponto7+espaço</code></td>
+</tr>
+<tr>
+<td>tecla Seta à direita</td>
+<td>Ponto6+Espaço, leftSideRightArrow</td>
+</tr>
+<tr>
+<td>teclas Control+Shift+Seta à direita</td>
+<td>Ponto5+ponto8+Espaço+F1</td>
+</tr>
+<tr>
+<td>teclas Control+Seta à direita</td>
+<td>Ponto5+Espaço</td>
+</tr>
+<tr>
+<td>teclas Shift+Alt+Seta à direita</td>
+<td>Ponto5+ponto7+F1</td>
+</tr>
+<tr>
+<td>Teclas <code>Alt+Seta à direita</code></td>
+<td><code>Ponto5+ponto7+espaço</code></td>
+</tr>
+<tr>
+<td>tecla pageUp</td>
+<td>Ponto1+ponto2+ponto6+Espaço</td>
+</tr>
+<tr>
+<td>teclas Control+PageUp</td>
+<td>Ponto1+ponto2+ponto6+ponto8+Espaço</td>
+</tr>
+<tr>
+<td>tecla Seta acima</td>
+<td>Ponto1+Espaço, leftSideseta acima</td>
+</tr>
+<tr>
+<td>teclas Control+Shift+Seta acima</td>
+<td>Ponto2+ponto3+ponto8+Espaço+F1</td>
+</tr>
+<tr>
+<td>teclas Control+Seta acima</td>
+<td>Ponto2+ponto3+Espaço</td>
+</tr>
+<tr>
+<td>teclas Shift+Alt+Seta acima</td>
+<td>Ponto2+ponto3+ponto7+F1</td>
+</tr>
+<tr>
+<td>Teclas <code>alt+Seta acima</code></td>
+<td><code>Ponto2+ponto3+ponto7+espaço</code></td>
+</tr>
+<tr>
+<td>teclas Shift+Seta acima</td>
+<td>leftSideScrollDown+Espaço</td>
+</tr>
+<tr>
+<td>tecla pageDown</td>
+<td>Ponto3+ponto4+ponto5+Espaço</td>
+</tr>
+<tr>
+<td>teclas Control+pageDown</td>
+<td>Ponto3+ponto4+ponto5+ponto8+Espaço</td>
+</tr>
+<tr>
+<td>tecla Seta abaixo</td>
+<td>Ponto4+Espaço, leftSideseta abaixo</td>
+</tr>
+<tr>
+<td>teclas Control+Shift+Seta abaixo</td>
+<td>Ponto5+ponto6+ponto8+Espaço+F1</td>
+</tr>
+<tr>
+<td>teclas Control+Seta abaixo</td>
+<td>Ponto5+ponto6+Espaço</td>
+</tr>
+<tr>
+<td>teclas Shift+Alt+Seta abaixo</td>
+<td>ponto5+ponto6+ponto7+F1</td>
+</tr>
+<tr>
+<td>Teclas <code>Alt+Seta abaixo</code></td>
+<td><code>Ponto5+ponto6+ponto7+espaço</code></td>
+</tr>
+<tr>
+<td>teclas Shift+Seta abaixo</td>
+<td>Espaço+rightSideScrollDown</td>
+</tr>
+<tr>
+<td>tecla Escape</td>
+<td>Ponto1+ponto5+Espaço, F4, brailleedge: F1</td>
+</tr>
+<tr>
+<td>tecla Delete</td>
+<td>Ponto1+ponto3+ponto5+Espaço, Ponto1+ponto4+ponto5+Espaço</td>
+</tr>
+<tr>
+<td>tecla F1</td>
+<td>Ponto1+ponto2+ponto5+Espaço</td>
+</tr>
+<tr>
+<td>tecla F3</td>
+<td>Ponto1+ponto4+ponto8+espaço</td>
+</tr>
+<tr>
+<td>tecla F4</td>
+<td>Ponto7+F3</td>
+</tr>
+<tr>
+<td>teclas Windows+B</td>
+<td>Ponto1+ponto2+F1</td>
+</tr>
+<tr>
+<td>teclas Windows+D</td>
+<td>Ponto1+Ponto4+ponto5+F1</td>
+</tr>
+<tr>
+<td>teclas Control+Insert</td>
+<td>smartbeetle: F1+rightSideScroll</td>
+</tr>
+<tr>
+<td>teclas Alt+Insert</td>
+<td>smartbeetle: F3+rightSideScroll</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Seika">Dispositivos Braille Seika</h3>
+<h4 id="SeikaBrailleDisplays">Seika Versão 3, 4 e 5 (40 células), Seika80 (80 células)</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar a linha braille para trás</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para a frente</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Move a linha braille para a linha anterior</td>
+<td>b3</td>
+</tr>
+<tr>
+<td>Move a linha braille para a linha seguinte</td>
+<td>b4</td>
+</tr>
+<tr>
+<td>Alternar "Braille segue:"</td>
+<td>b5</td>
+</tr>
+<tr>
+<td>Leitura contínua</td>
+<td>b6</td>
+</tr>
+<tr>
+<td>tecla tab</td>
+<td>b1</td>
+</tr>
+<tr>
+<td>teclas shift+tab</td>
+<td>b2</td>
+</tr>
+<tr>
+<td>teclas alt+tab</td>
+<td>b1+b2</td>
+</tr>
+<tr>
+<td>Menu do NVDA</td>
+<td>left+right</td>
+</tr>
+<tr>
+<td>Encaminhar para a célula braille</td>
+<td>routing</td>
+</tr>
+</tbody>
+</table>
+<h4 id="SeikaNotetaker">MiniSeika (16 ou 24 células), V6 e V6Pro (40 células)</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar a linha braille para trás</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para a frente</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Leitura contínua</td>
+<td>space+Backspace</td>
+</tr>
+<tr>
+<td>Menu do NVDA</td>
+<td>Left+Right</td>
+</tr>
+<tr>
+<td>Move a linha braille para a linha anterior</td>
+<td>LJ up</td>
+</tr>
+<tr>
+<td>Move a linha braille para a linha seguinte</td>
+<td>LJ down</td>
+</tr>
+<tr>
+<td>Alternar "Braille segue:"</td>
+<td>LJ center</td>
+</tr>
+<tr>
+<td>tab</td>
+<td>LJ direito</td>
+</tr>
+<tr>
+<td>teclas shift+tab</td>
+<td>LJ left</td>
+</tr>
+<tr>
+<td>tecla seta acima</td>
+<td>RJ up</td>
+</tr>
+<tr>
+<td>tecla seta abaixo</td>
+<td>RJ down</td>
+</tr>
+<tr>
+<td>tecla seta à esquerda</td>
+<td>RJ left</td>
+</tr>
+<tr>
+<td>tecla seta à direita</td>
+<td>RJ right</td>
+</tr>
+<tr>
+<td>Encaminhar para a célula braille</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>shift+tecla acima</td>
+<td>Space+RJ up, Backspace+RJ up</td>
+</tr>
+<tr>
+<td>shift+tecla abaixo</td>
+<td>Space+RJ down, Backspace+RJ down</td>
+</tr>
+<tr>
+<td>shift+tecla seta à esquerda</td>
+<td>Space+RJ left, Backspace+RJ left</td>
+</tr>
+<tr>
+<td>shift+tecla seta à direita</td>
+<td>Space+RJ right, Backspace+RJ right</td>
+</tr>
+<tr>
+<td>tecla enter</td>
+<td>RJ center, ponto 8</td>
+</tr>
+<tr>
+<td>tecla escape</td>
+<td>Space+RJ center</td>
+</tr>
+<tr>
+<td>tecla windows</td>
+<td>Backspace+RJ center</td>
+</tr>
+<tr>
+<td>tecla espaço</td>
+<td>Space, Backspace</td>
+</tr>
+<tr>
+<td>tecla backspace</td>
+<td>ponto 7</td>
+</tr>
+<tr>
+<td>tecla pageUp</td>
+<td>space+LJ right</td>
+</tr>
+<tr>
+<td>tecla pageDown</td>
+<td>space+LJ left</td>
+</tr>
+<tr>
+<td>tecla home</td>
+<td>space+LJ up</td>
+</tr>
+<tr>
+<td>tecla end</td>
+<td>space+LJ down</td>
+</tr>
+<tr>
+<td>teclas control+home</td>
+<td>backspace+LJ up</td>
+</tr>
+<tr>
+<td>teclas control+end</td>
+<td>backspace+LJ down</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Papenmeier">Papenmeier BRAILLEX (Modelos recentes)</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar a linha braille para trás</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para a frente</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Mover a linha braille para a linha anterior</td>
+<td>up</td>
+</tr>
+<tr>
+<td>Mover a linha braille para a linha seguinte</td>
+<td>dn</td>
+</tr>
+<tr>
+<td>Encaminhar para a célula braille</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Anuncia o carater atual em revisão</td>
+<td>l1</td>
+</tr>
+<tr>
+<td>Ativa o objeto de navegação atual</td>
+<td>l2</td>
+</tr>
+<tr>
+<td>Alternar "Braille segue:"</td>
+<td>r2</td>
+</tr>
+<tr>
+<td>Anuncia o título</td>
+<td>l1+up</td>
+</tr>
+<tr>
+<td>Anuncia a barra de estado</td>
+<td>l2+down</td>
+</tr>
+<tr>
+<td>Move para o objeto que contém</td>
+<td>up2</td>
+</tr>
+<tr>
+<td>Move para o primeiro objeto contido</td>
+<td>dn2</td>
+</tr>
+<tr>
+<td>Move para o objeto anterior</td>
+<td>left2</td>
+</tr>
+<tr>
+<td>Move para o objeto seguinte</td>
+<td>right2</td>
+</tr>
+<tr>
+<td>Anunciar formatação do carater da célula Braille</td>
+<td>Linha de encaminhamento superior</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tecla escape</td>
+<td>espaço mais  ponto 7</td>
+</tr>
+<tr>
+<td>tecla Seta Acima</td>
+<td>espaço mais  ponto 2</td>
+</tr>
+<tr>
+<td>tecla Seta Esquerda</td>
+<td>espaço mais  ponto 1</td>
+</tr>
+<tr>
+<td>tecla Seta Direita</td>
+<td>espaço mais  ponto 4</td>
+</tr>
+<tr>
+<td>tecla Seta Abaixo</td>
+<td>espaço mais  ponto 5</td>
+</tr>
+<tr>
+<td>tecla control</td>
+<td>lt+ponto 2</td>
+</tr>
+<tr>
+<td>tecla alt</td>
+<td>lt+ponto 3</td>
+</tr>
+<tr>
+<td>teclas control+escape</td>
+<td>espaço mais  ponto 1 2 3 4 5 6</td>
+</tr>
+<tr>
+<td>tecla tab</td>
+<td>espaço mais  ponto 3 7</td>
+</tr>
+</tbody>
+</table>
+<h3 id="PapenmeierOld">Papenmeier BRAILLEX (Modelos antigos)</h3>
+<p>Dispositivos com EAB:</p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Desloca a linha braille para trás</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Desloca a linha braille para a frente</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Move a linha braille para a linha anterior</td>
+<td>up</td>
+</tr>
+<tr>
+<td>Move a linha braille para a linha seguinte</td>
+<td>dn</td>
+</tr>
+<tr>
+<td>Encaminhar para a célula braille</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Anuncia o carater atual em revisão</td>
+<td>l1</td>
+</tr>
+<tr>
+<td>Ativa o objeto de navegação atual</td>
+<td>l2</td>
+</tr>
+<tr>
+<td>Anuncia o título</td>
+<td>l1+up</td>
+</tr>
+<tr>
+<td>Anuncia a barra de estado</td>
+<td>l2+down</td>
+</tr>
+<tr>
+<td>Move para o objeto que contém</td>
+<td>up2</td>
+</tr>
+<tr>
+<td>Move para o primeiro objeto contido</td>
+<td>dn2</td>
+</tr>
+<tr>
+<td>Move para o objeto anterior</td>
+<td>left2</td>
+</tr>
+<tr>
+<td>Move para o objeto seguinte</td>
+<td>right2</td>
+</tr>
+<tr>
+<td>Anuncia a formatação do carater da célula Braille</td>
+<td>Linha de encaminhamento superior</td>
+</tr>
+</tbody>
+</table>
+<p>BRAILLEX Tiny:</p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Desloca a linha braille para trás</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Desloca a linha braille para a frente</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Move a linha braille para a linha anterior</td>
+<td>up</td>
+</tr>
+<tr>
+<td>Move a linha braille para a linha seguinte</td>
+<td>dn</td>
+</tr>
+<tr>
+<td>Anuncia o carater atual em revisão</td>
+<td>l1</td>
+</tr>
+<tr>
+<td>Ativa o objeto de navegação atual</td>
+<td>l2</td>
+</tr>
+<tr>
+<td>Alternar "Braille segue:"</td>
+<td>r2</td>
+</tr>
+<tr>
+<td>Move para o objeto que contém</td>
+<td>r1+up</td>
+</tr>
+<tr>
+<td>Move para o primeiro objeto contido</td>
+<td>r1+dn</td>
+</tr>
+<tr>
+<td>Move para o objeto anterior</td>
+<td>r1+left</td>
+</tr>
+<tr>
+<td>Move para o objeto seguinte</td>
+<td>r1+right</td>
+</tr>
+<tr>
+<td>Anuncia a formatação do carater da célula Braille</td>
+<td>Linha de encaminhamento superior</td>
+</tr>
+<tr>
+<td>Anuncia o título</td>
+<td>l1+up</td>
+</tr>
+<tr>
+<td>Anuncia a barra de estado</td>
+<td>l2+down</td>
+</tr>
+</tbody>
+</table>
+<p>BRAILLEX 2D Screen:</p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Desloca a linha braille para trás</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Desloca a linha braille para a frente</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Move a linha braille para a linha anterior</td>
+<td>up</td>
+</tr>
+<tr>
+<td>Move a linha braille para a linha seguinte</td>
+<td>dn</td>
+</tr>
+<tr>
+<td>Anuncia o carater atual em revisão</td>
+<td>l1</td>
+</tr>
+<tr>
+<td>Ativa o objeto de navegação atual</td>
+<td>l2</td>
+</tr>
+<tr>
+<td>Alternar "Braille segue:"</td>
+<td>r2</td>
+</tr>
+<tr>
+<td>Move para o objeto que contém</td>
+<td>up2</td>
+</tr>
+<tr>
+<td>Move para o primeiro objeto contido</td>
+<td>dn2</td>
+</tr>
+<tr>
+<td>Move para o objeto anterior</td>
+<td>left2</td>
+</tr>
+<tr>
+<td>Move para o objeto seguinte</td>
+<td>right2</td>
+</tr>
+<tr>
+<td>Anuncia a formatação do carater da célula Braille</td>
+<td>Linha de encaminhamento superior</td>
+</tr>
+</tbody>
+</table>
+<h3 id="HumanWareBrailleNote">HumanWare BrailleNote</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar a linha braille para trás</td>
+<td>back</td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para a frente</td>
+<td>advance</td>
+</tr>
+<tr>
+<td>Mover a linha braille para a linha anterior</td>
+<td>previous</td>
+</tr>
+<tr>
+<td>Mover a linha braille para a linha seguinte</td>
+<td>next</td>
+</tr>
+<tr>
+<td>Encaminhar para a célula braille</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Menu do NVDA</td>
+<td>Espaço+ponto1+ponto3+ponto4+ponto5 (Espaço+n)</td>
+</tr>
+<tr>
+<td>Alternar "Braille segue:"</td>
+<td>previous+next</td>
+</tr>
+<tr>
+<td>Tecla Seta Acima</td>
+<td>espaço+ponto 1</td>
+</tr>
+<tr>
+<td>Tecla Seta Abaixo</td>
+<td>espaço+ponto 4</td>
+</tr>
+<tr>
+<td>Tecla Seta Esquerda</td>
+<td>espaço+ponto 3</td>
+</tr>
+<tr>
+<td>Tecla Seta Direita</td>
+<td>espaço+ponto 6</td>
+</tr>
+<tr>
+<td>Tecla Page up</td>
+<td>espaço+ponto 1+ponto 3</td>
+</tr>
+<tr>
+<td>Tecla Page down</td>
+<td>espaço+ponto 4+ponto 6</td>
+</tr>
+<tr>
+<td>Tecla Home</td>
+<td>espaço+ponto 1+ponto 2</td>
+</tr>
+<tr>
+<td>Tecla End</td>
+<td>espaço+ponto 4+ponto 5</td>
+</tr>
+<tr>
+<td>Teclas Control+home</td>
+<td>espaço+ponto 1+ponto 2+ponto 3</td>
+</tr>
+<tr>
+<td>Teclas Control+end</td>
+<td>espaço+ponto 4+ponto 5+ponto 6</td>
+</tr>
+<tr>
+<td>Tecla Espaço</td>
+<td>space</td>
+</tr>
+<tr>
+<td>Tecla Enter</td>
+<td>espaço+ponto 8</td>
+</tr>
+<tr>
+<td>Tecla Backspace</td>
+<td>espaço+ponto 7</td>
+</tr>
+<tr>
+<td>Tecla Tab</td>
+<td>espaço+ponto 2+ponto 3+ponto 4+ponto 5 (espaço+t)</td>
+</tr>
+<tr>
+<td>Teclas Shift+tab</td>
+<td>espaço+ponto 1+ponto 2+ponto 5+ponto 6</td>
+</tr>
+<tr>
+<td>Tecla Windows</td>
+<td>espaço+ponto 2+ponto 4+ponto 5+ponto 6 (espaço+w)</td>
+</tr>
+<tr>
+<td>Tecla Alt</td>
+<td>espaço+ponto 1+ponto 3+ponto 4 (espaço+m)</td>
+</tr>
+<tr>
+<td>Alternar o modo de ajuda de entrada</td>
+<td>espaço+ponto 2+ponto 3+ponto 6 (espaço+h rebaixado)</td>
+</tr>
+</tbody>
+</table>
+<p>Seguem-se os comandos para o BrailleNote QT quando não está no modo de digitação Braille.</p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Menu do NVDA</td>
+<td>read+n</td>
+</tr>
+<tr>
+<td>Tecla Seta acima</td>
+<td>seta acima</td>
+</tr>
+<tr>
+<td>Tecla Seta abaixo</td>
+<td>seta abaixo</td>
+</tr>
+<tr>
+<td>Tecla seta esquerda</td>
+<td>leftArrow</td>
+</tr>
+<tr>
+<td>Tecla seta direita</td>
+<td>rightArrow</td>
+</tr>
+<tr>
+<td>Tecla Página acima</td>
+<td>funtion+seta acima</td>
+</tr>
+<tr>
+<td>Tecla Página abaixo</td>
+<td>funtion+seta abaixo</td>
+</tr>
+<tr>
+<td>Tecla Home</td>
+<td>funtion+leftArrow</td>
+</tr>
+<tr>
+<td>Tecla End</td>
+<td>funtion+rightArrow</td>
+</tr>
+<tr>
+<td>Teclas Control+home</td>
+<td>read+t</td>
+</tr>
+<tr>
+<td>Teclas Control+end</td>
+<td>read+b</td>
+</tr>
+<tr>
+<td>Tecla Enter</td>
+<td>enter</td>
+</tr>
+<tr>
+<td>Tecla Backspace</td>
+<td>backspace</td>
+</tr>
+<tr>
+<td>Tecla Tab</td>
+<td>tab</td>
+</tr>
+<tr>
+<td>Teclas Shift+tab</td>
+<td>shift+tab</td>
+</tr>
+<tr>
+<td>Tecla Windows</td>
+<td>read+w</td>
+</tr>
+<tr>
+<td>Tecla Alt</td>
+<td>read+m</td>
+</tr>
+<tr>
+<td>Alternar o modo de ajuda de entrada</td>
+<td>read+1</td>
+</tr>
+</tbody>
+</table>
+<p>Seguem-se os comandos associados à roda de deslocamento:</p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tecla Seta acima</td>
+<td>seta acima</td>
+</tr>
+<tr>
+<td>Tecla Seta abaixo</td>
+<td>seta abaixo</td>
+</tr>
+<tr>
+<td>Tecla Seta esquerda</td>
+<td>leftArrow</td>
+</tr>
+<tr>
+<td>Tecla Seta direita</td>
+<td>rightArrow</td>
+</tr>
+<tr>
+<td>Tecla Enter</td>
+<td>center button</td>
+</tr>
+<tr>
+<td>Tecla Tab</td>
+<td>scroll wheel no sentido dos ponteiros do relógio</td>
+</tr>
+<tr>
+<td>Teclas Shift+tab</td>
+<td>scroll wheel no sentido contrário ao dos ponteiros do relógio</td>
+</tr>
+</tbody>
+</table>
+<h3 id="EcoBraille">EcoBraille</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla de atalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar a linha braille para trás</td>
+<td>T2</td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para a frente</td>
+<td>T4</td>
+</tr>
+<tr>
+<td>Mover a linha braille para a linha anterior</td>
+<td>T1</td>
+</tr>
+<tr>
+<td>Mover a linha Braille para a linha seguinte</td>
+<td>T5</td>
+</tr>
+<tr>
+<td>Encaminhar para a célula Braille</td>
+<td>Routing</td>
+</tr>
+<tr>
+<td>Ativar o objeto de navegação atual</td>
+<td>T3</td>
+</tr>
+<tr>
+<td>Mudar para o modo de revisão seguinte</td>
+<td>F1</td>
+</tr>
+<tr>
+<td>Mover para o objeto que contém</td>
+<td>F2</td>
+</tr>
+<tr>
+<td>Mudar para o modo de revisão anterior</td>
+<td>F3</td>
+</tr>
+<tr>
+<td>Mover para o objeto anterior</td>
+<td>F4</td>
+</tr>
+<tr>
+<td>Anunciar o objeto atual</td>
+<td>F5</td>
+</tr>
+<tr>
+<td>Mover para o objeto seguinte</td>
+<td>F6</td>
+</tr>
+<tr>
+<td>Mover para o objeto em foco</td>
+<td>F7</td>
+</tr>
+<tr>
+<td>Mover para o primeiro objeto contido</td>
+<td>F8</td>
+</tr>
+<tr>
+<td>Mover o foco do sistema ou o cursor para o objeto atual da revisão</td>
+<td>F9</td>
+</tr>
+<tr>
+<td>Anunciar localização do cursor de revisão</td>
+<td>F0</td>
+</tr>
+<tr>
+<td>Alternar "Braille segue:"</td>
+<td>A</td>
+</tr>
+</tbody>
+</table>
+<h3 id="SuperBraille">SuperBraille</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mover a linha Braille para trás</td>
+<td>Menos do bloco numérico</td>
+</tr>
+<tr>
+<td>Mover a linha Braille para a frente</td>
+<td>Mais do bloco numérico</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Eurobraille">Dispositivos Eurobraille</h3>
+<h4 id="EurobrailleBraille">Funções do teclado Braille</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Apagar a última célula ou caráter braille introduzido</td>
+<td><code>backspace</code></td>
+</tr>
+<tr>
+<td>Converter qualquer entrada em braille e premir a tecla Enter</td>
+<td><code>backspace+space</code></td>
+</tr>
+<tr>
+<td>Alternar a tecla <code>NVDA</code></td>
+<td><code>dot3+dot5+space</code></td>
+</tr>
+<tr>
+<td>Tecla <code>insert</code></td>
+<td><code>dot1+dot3+dot5+space</code>, <code>dot3+dot4+dot5+space</code></td>
+</tr>
+<tr>
+<td>Tecla <code>delete</code></td>
+<td><code>dot3+dot6+space</code></td>
+</tr>
+<tr>
+<td>Tecla <code>home</code></td>
+<td><code>dot1+dot2+dot3+space</code></td>
+</tr>
+<tr>
+<td>Tecla <code>end</code></td>
+<td><code>dot4+dot5+dot6+space</code></td>
+</tr>
+<tr>
+<td><code>seta à esquerda</code></td>
+<td><code>dot2+space</code></td>
+</tr>
+<tr>
+<td><code>seta à direita</code></td>
+<td><code>dot5+space</code></td>
+</tr>
+<tr>
+<td><code>seta acima</code></td>
+<td><code>dot1+space</code></td>
+</tr>
+<tr>
+<td><code>seta abaixo</code></td>
+<td><code>dot6+space</code></td>
+</tr>
+<tr>
+<td><code>pageUp</code></td>
+<td><code>dot1+dot3+space</code></td>
+</tr>
+<tr>
+<td><code>pageDown</code></td>
+<td><code>dot4+dot6+space</code></td>
+</tr>
+<tr>
+<td>tecla <code>numpad1</code></td>
+<td><code>dot1+dot6+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>numpad2</code></td>
+<td><code>dot1+dot2+dot6+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>numpad3</code></td>
+<td><code>dot1+dot4+dot6+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>numpad4</code></td>
+<td><code>dot1+dot4+dot5+dot6+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>numpad5</code></td>
+<td><code>dot1+dot5+dot6+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>numpad6</code></td>
+<td><code>dot1+dot2+dot4+dot6+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>numpad7</code></td>
+<td><code>dot1+dot2+dot4+dot5+dot6+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>numpad8</code></td>
+<td><code>dot1+dot2+dot5+dot6+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>numpad9</code></td>
+<td><code>dot2+dot4+dot6+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>numpadInsert</code></td>
+<td><code>dot3+dot4+dot5+dot6+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>ponto do numérico</code></td>
+<td><code>dot2+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>barra do numérico</code></td>
+<td><code>dot3+dot4+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>asterisco do numérico</code></td>
+<td><code>dot3+dot5+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>menos do numérico</code></td>
+<td><code>dot3+dot6+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>mais do numérico</code></td>
+<td><code>dot2+dot3+dot5+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>enter do numérico</code></td>
+<td><code>dot3+dot4+dot5+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>escape</code></td>
+<td><code>dot1+dot2+dot4+dot5+espaço</code>, <code>l2</code></td>
+</tr>
+<tr>
+<td>tecla <code>tab</code></td>
+<td><code>dot2+dot5+dot6+espaço</code>, <code>l3</code></td>
+</tr>
+<tr>
+<td>teclas <code>shift+tab</code></td>
+<td><code>dot2+dot3+dot5+espaço</code></td>
+</tr>
+<tr>
+<td>tecla <code>printScreen</code></td>
+<td><code>dot1+dot3+dot4+dot6+espaço</code></td>
+</tr>
+<tr>
+<td>tecla <code>pause</code></td>
+<td><code>dot1+dot4+espaço</code></td>
+</tr>
+<tr>
+<td>tecla <code>applications</code></td>
+<td><code>dot5+dot6+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>f1</code></td>
+<td><code>dot1+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>f2</code></td>
+<td><code>dot1+dot2+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>f3</code></td>
+<td><code>dot1+dot4+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>f4</code></td>
+<td><code>dot1+dot4+dot5+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>f5</code></td>
+<td><code>dot1+dot5+backspace</code></td>
+</tr>
+<tr>
+<td><code>f6</code> chave</td>
+<td><code>dot1+dot2+dot4+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>f7</code></td>
+<td><code>dot1+dot2+dot4+dot5+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>f8</code></td>
+<td><code>dot1+dot2+dot5+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>f9</code></td>
+<td><code>dot2+dot4+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>f10</code></td>
+<td><code>dot2+dot4+dot5+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>f11</code></td>
+<td><code>dot1+dot3+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>f12</code></td>
+<td><code>dot1+dot2+dot3+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>windows</code></td>
+<td><code>dot1+dot2+dot4+dot5+dot6+espaço</code></td>
+</tr>
+<tr>
+<td>Alternar a tecla <code>windows</code></td>
+<td><code>dot1+dot2+dot3+dot4+backspace</code>, <code>dot2+dot4+dot5+dot6+space</code></td>
+</tr>
+<tr>
+<td>tecla <code>capsLock</code></td>
+<td><code>dot7+backspace</code>, <code>dot8+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>numLock</code></td>
+<td><code>dot3+backspace</code>, <code>dot6+backspace</code></td>
+</tr>
+<tr>
+<td>tecla <code>shift</code></td>
+<td><code>dot7+espaço</code></td>
+</tr>
+<tr>
+<td>Alternar a tecla <code>shift</code></td>
+<td><code>dot1+dot7+espaço</code>, <code>dot4+dot7+espaço</code></td>
+</tr>
+<tr>
+<td>tecla <code>control</code></td>
+<td><code>dot7+dot8+espaço</code></td>
+</tr>
+<tr>
+<td>Alternar a tecla <code>control</code></td>
+<td><code>dot1+dot7+dot8+espaço</code>, <code>dot4+dot7+dot8+espaço</code></td>
+</tr>
+<tr>
+<td>tecla  <code>alt</code></td>
+<td><code>dot8+espaço</code></td>
+</tr>
+<tr>
+<td>Alternar a tecla <code>alt</code></td>
+<td><code>dot1+dot8+espaço</code>, <code>dot4+dot8+espaço</code></td>
+</tr>
+<tr>
+<td>Alternar a simulação do teclado HID</td>
+<td><code>switch1Esquerda+joystick1Down</code>, <code>switch1Direita+joystick1Down</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="Eurobraillebbook">comandos de teclado do b.book</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de teclado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar a linha braille para trás</td>
+<td><code>backward</code></td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para a frente</td>
+<td><code>forward</code></td>
+</tr>
+<tr>
+<td>Mover para o foco atual</td>
+<td><code>backward+forward</code></td>
+</tr>
+<tr>
+<td>Encaminhar para a célula Braille</td>
+<td><code>routing</code></td>
+</tr>
+<tr>
+<td>tecla <code>seta à esquerda</code></td>
+<td><code>joystick2Esquerda</code></td>
+</tr>
+<tr>
+<td>tecla <code>seta à direita</code></td>
+<td><code>joystick2Direita</code></td>
+</tr>
+<tr>
+<td>tecla <code>seta para cima</code></td>
+<td><code>joystick2Up</code></td>
+</tr>
+<tr>
+<td>tecla <code>seta para baixo</code></td>
+<td><code>joystick2Down</code></td>
+</tr>
+<tr>
+<td>tecla <code>enter</code></td>
+<td><code>joystick2Center</code></td>
+</tr>
+<tr>
+<td>tecla <code>escape</code></td>
+<td><code>c1</code></td>
+</tr>
+<tr>
+<td>tecla <code>tab</code></td>
+<td><code>c2</code></td>
+</tr>
+<tr>
+<td>Alternar a tecla <code>shift</code></td>
+<td><code>c3</code></td>
+</tr>
+<tr>
+<td>Alternar a tecla <code>control</code></td>
+<td><code>c4</code></td>
+</tr>
+<tr>
+<td>Alternar a tecla <code>alt</code></td>
+<td><code>c5</code></td>
+</tr>
+<tr>
+<td>Alternar a tecla <code>NVDA</code></td>
+<td><code>c6</code></td>
+</tr>
+<tr>
+<td>teclas <code>control+Home</code></td>
+<td><code>c1+c2+c3</code></td>
+</tr>
+<tr>
+<td>teclas <code>control+End</code></td>
+<td><code>c4+c5+c6</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="Eurobraillebnote">comandos de teclado do b.note</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de teclado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar a linha braille para trás</td>
+<td><code>leftKeypadLeft</code></td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para a frente</td>
+<td><code>leftKeypadRight</code></td>
+</tr>
+<tr>
+<td>Encaminhar para a célula Braille</td>
+<td><code>routing</code></td>
+</tr>
+<tr>
+<td>Anunciar a formatação do texto na célula Braille</td>
+<td><code>doubleRouting</code></td>
+</tr>
+<tr>
+<td>Mover para a linha seguinte na revisão</td>
+<td><code>leftKeypadDown</code></td>
+</tr>
+<tr>
+<td>Mudar para o modo de revisão anterior</td>
+<td><code>leftKeypadLeft+leftKeypadUp</code></td>
+</tr>
+<tr>
+<td>Mudar para o modo de revisão seguinte</td>
+<td><code>leftKeypadRight+leftKeypadDown</code></td>
+</tr>
+<tr>
+<td>tecla <code>seta esquerda</code></td>
+<td><code>rightKeypadLeft</code></td>
+</tr>
+<tr>
+<td>tecla <code>seta à direita</code></td>
+<td><code>rightKeypadRight</code></td>
+</tr>
+<tr>
+<td>tecla <code>seta para cima</code></td>
+<td><code>rightKeypadUp</code></td>
+</tr>
+<tr>
+<td>tecla <code>seta para baixo</code></td>
+<td><code>rightKeypadDown</code></td>
+</tr>
+<tr>
+<td>teclas <code>control+home</code></td>
+<td><code>rightKeypadLeft+rightKeypadUp</code></td>
+</tr>
+<tr>
+<td>teclas <code>control+end</code></td>
+<td><code>rightKeypadLeft+rightKeypadUp</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="Eurobrailleesys">Comandos de teclado Esys</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de teclado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar a linha braille para trás</td>
+<td><code>switch1Left</code></td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para a frente</td>
+<td><code>switch1Right</code></td>
+</tr>
+<tr>
+<td>Mover para o foco atual</td>
+<td><code>switch1Center</code></td>
+</tr>
+<tr>
+<td>Encaminhar para a célula Braille</td>
+<td><code>routing</code></td>
+</tr>
+<tr>
+<td>Anunciar a formatação do texto na célula Braille</td>
+<td><code>doubleRouting</code></td>
+</tr>
+<tr>
+<td>Mover para a linha anterior na revisão</td>
+<td><code>joystick1Up</code></td>
+</tr>
+<tr>
+<td>Mover para a próxima linha na revisão</td>
+<td><code>joystick1Down</code></td>
+</tr>
+<tr>
+<td>Mover para o caratere anterior na revisão</td>
+<td><code>joystick1Left</code></td>
+</tr>
+<tr>
+<td>Mover para o próximo caratere na revisão</td>
+<td><code>joystick1Right</code></td>
+</tr>
+<tr>
+<td>tecla <code>seta à esquerda</code></td>
+<td><code>joystick2Esquerda</code></td>
+</tr>
+<tr>
+<td>tecla <code>seta à direita</code></td>
+<td><code>joystick2Direita</code></td>
+</tr>
+<tr>
+<td>tecla <code>seta para cima</code></td>
+<td><code>joystick2Up</code></td>
+</tr>
+<tr>
+<td>tecla <code>seta para baixo</code></td>
+<td><code>joystick2Down</code></td>
+</tr>
+<tr>
+<td>tecla <code>enter</code></td>
+<td><code>joystick2Center</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="EurobrailleEsytime">Comandos de teclado do Esytime</h4>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de teclado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar a linha braille para trás</td>
+<td><code>l1</code></td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para a frente</td>
+<td><code>l8</code></td>
+</tr>
+<tr>
+<td>Mover para o foco atual</td>
+<td><code>l1+l8</code></td>
+</tr>
+<tr>
+<td>Encaminhar para a célula Braille</td>
+<td><code>routing</code></td>
+</tr>
+<tr>
+<td>Anunciar a formatação do texto na célula Braille</td>
+<td><code>doubleRouting</code></td>
+</tr>
+<tr>
+<td>Mover para a linha anterior na revisão</td>
+<td><code>joystick1Up</code></td>
+</tr>
+<tr>
+<td>Mover para a próxima linha na revisão</td>
+<td><code>joystick1Down</code></td>
+</tr>
+<tr>
+<td>Mover para o caratere anterior na revisão</td>
+<td><code>joystick1Left</code></td>
+</tr>
+<tr>
+<td>Mover para o próximo caratere na revisão</td>
+<td><code>joystick1Right</code></td>
+</tr>
+<tr>
+<td>tecla <code>seta à esquerda</code></td>
+<td><code>joystick2Esquerda</code></td>
+</tr>
+<tr>
+<td>tecla <code>seta à direita</code></td>
+<td><code>joystick2Direita</code></td>
+</tr>
+<tr>
+<td>tecla <code>seta para cima</code></td>
+<td><code>joystick2Up</code></td>
+</tr>
+<tr>
+<td>tecla <code>seta para baixo</code></td>
+<td><code>joystick2Down</code></td>
+</tr>
+<tr>
+<td>tecla <code>enter</code></td>
+<td><code>joystick2Center</code></td>
+</tr>
+<tr>
+<td>tecla <code>escape</code></td>
+<td><code>l2</code></td>
+</tr>
+<tr>
+<td>tecla <code>tab</code></td>
+<td><code>l3</code></td>
+</tr>
+<tr>
+<td>Alternar a tecla <code>shift</code></td>
+<td><code>l4</code></td>
+</tr>
+<tr>
+<td>Alternar a tecla <code>control</code></td>
+<td><code>l5</code></td>
+</tr>
+<tr>
+<td>Alternar a tecla <code>alt</code></td>
+<td><code>l6</code></td>
+</tr>
+<tr>
+<td>Alternar a tecla <code>NVDA</code></td>
+<td><code>l7</code></td>
+</tr>
+<tr>
+<td>teclas <code>control+home</code></td>
+<td><code>l1+l2+l3</code>, <code>l2+l3+l4</code></td>
+</tr>
+<tr>
+<td>teclas <code>control+end</code></td>
+<td><code>l6+l7+l8</code>, <code>l5+l6+l7</code></td>
+</tr>
+<tr>
+<td>Alternar simulação do teclado HID</td>
+<td><code>l1+joystick1Down</code>, <code>l8+joystick1Down</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="NattiqTechnologies">Linhas Nattiq nBraille</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar a linha Braille para trás</td>
+<td>up</td>
+</tr>
+<tr>
+<td>Deslocar a linha Braille para a frente</td>
+<td>down</td>
+</tr>
+<tr>
+<td>Move a linha braille para a linha anterior</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Move a linha braille para a linha seguinte</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Encaminhar para a célula braille</td>
+<td>routing</td>
+</tr>
+</tbody>
+</table>
+<h3 id="BRLTTY">BRLTTY</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando BRLTTY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mover a linha braille para trás</td>
+<td><code>fwinlt</code> (go left one window)</td>
+</tr>
+<tr>
+<td>Mover a linha braille para a frennte</td>
+<td><code>fwinrt</code> (go right one window)</td>
+</tr>
+<tr>
+<td>Mover a linha braille para a linha anterior</td>
+<td><code>lnup</code> (go up one line)</td>
+</tr>
+<tr>
+<td>Mover a linha braille para a linha seguinte</td>
+<td><code>lndn</code> (go down one line)</td>
+</tr>
+<tr>
+<td>Encaminhar para a célula braille</td>
+<td><code>route</code> (bring cursor to charater)</td>
+</tr>
+<tr>
+<td>Alternar ajuda de comandos</td>
+<td><code>learn</code> (Ativar/desativar a ajuda de comandos)</td>
+</tr>
+<tr>
+<td>Abrir menu NVDA</td>
+<td><code>prefmenu</code> (Abrir o menu do NVDA)</td>
+</tr>
+<tr>
+<td>Reverter para as últimas configurações</td>
+<td><code>prefload</code> (restaura as configurações guardadas)</td>
+</tr>
+<tr>
+<td>Guardar configurações</td>
+<td><code>prefsave</code> (Guarda as configurações)</td>
+</tr>
+<tr>
+<td>Anunciar hora e data</td>
+<td><code>time</code> (Mostrar data e hora atual)</td>
+</tr>
+<tr>
+<td>Ler a linha do cursor de revisão</td>
+<td><code>say_line</code> (Ler linha atual do cursor de revisão)</td>
+</tr>
+<tr>
+<td>Ler tudo com cursor de revisão</td>
+<td><code>say_below</code> (Ler da posição atual até ao fim com cursor de revisão)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Albatross">Tivomatic Caiku Albatross 46 / 80</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tecla</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mover para a primeira linha em revisão</td>
+<td><code>home1</code>, <code>home2</code></td>
+</tr>
+<tr>
+<td>Mover para a última linha em revisão</td>
+<td><code>end1</code>, <code>end2</code></td>
+</tr>
+<tr>
+<td>Mover para o objeto em foco</td>
+<td><code>eCursor1</code>, <code>eCursor2</code></td>
+</tr>
+<tr>
+<td>Mover a linha Braille para o foco atual</td>
+<td><code>cursor1</code>, <code>cursor2</code></td>
+</tr>
+<tr>
+<td>Mover o rato para o objeto de navegação atual</td>
+<td><code>home1+home2</code></td>
+</tr>
+<tr>
+<td>Navegar para o objeto sob o rato</td>
+<td><code>end1+end2</code></td>
+</tr>
+<tr>
+<td>Mover o foco do sistema ou o cursor para o objeto atual da revisão</td>
+<td><code>eCursor1+eCursor2</code></td>
+</tr>
+<tr>
+<td>Alternar Braille segue</td>
+<td><code>cursor1+cursor2</code></td>
+</tr>
+<tr>
+<td>Move a linha braille para a linha anterior</td>
+<td><code>up1</code>, <code>up2</code>, <code>up3</code></td>
+</tr>
+<tr>
+<td>Move a linha braille para a linha seguinte</td>
+<td><code>down1</code>, <code>down2</code>, <code>down3</code></td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para trás</td>
+<td><code>left</code>, <code>lWheelLeft</code>, <code>rWheelLeft</code></td>
+</tr>
+<tr>
+<td>Deslocar a linha braille para a frente</td>
+<td><code>right</code>, <code>lWheelRight</code>, <code>rWheelRight</code></td>
+</tr>
+<tr>
+<td>Encaminhar para a célula braille</td>
+<td><code>routing</code></td>
+</tr>
+<tr>
+<td>Anunciar formatação do carater da célula Braille</td>
+<td><code>secondary routing</code></td>
+</tr>
+<tr>
+<td>Alternar Apresentação do contexto do foco</td>
+<td><code>attribute1+attribute3</code></td>
+</tr>
+<tr>
+<td>Alternar entre os Modos de Voz</td>
+<td><code>attribute2+attribute4</code></td>
+</tr>
+<tr>
+<td>Muda para o modo de revisão anterior</td>
+<td><code>f1</code></td>
+</tr>
+<tr>
+<td>Muda para o modo de revisão seguinte</td>
+<td><code>f2</code></td>
+</tr>
+<tr>
+<td>Mover para o objeto ascendente</td>
+<td><code>f3</code></td>
+</tr>
+<tr>
+<td>Mover para o primeiro objeto descendente</td>
+<td><code>f4</code></td>
+</tr>
+<tr>
+<td>Mover para o objeto anterior</td>
+<td><code>f5</code></td>
+</tr>
+<tr>
+<td>Mover para o objeto seguinte</td>
+<td><code>f6</code></td>
+</tr>
+<tr>
+<td>Anunciar o objeto de navegação atual</td>
+<td><code>f7</code></td>
+</tr>
+<tr>
+<td>Anunciar localização do cursor de revisão</td>
+<td><code>f8</code></td>
+</tr>
+<tr>
+<td>Mostra as configurações em braile</td>
+<td><code>f1+home1</code>, <code>f9+home2</code></td>
+</tr>
+<tr>
+<td>Lê a barra de estado e move o objeto de navegação para ela</td>
+<td><code>f1+end1</code>, <code>f9+end2</code></td>
+</tr>
+<tr>
+<td>Alternar entre as formas do cursor Braile</td>
+<td><code>f1+eCursor1</code>, <code>f9+eCursor2</code></td>
+</tr>
+<tr>
+<td>Alternar o cursor Braille</td>
+<td><code>f1+cursor1</code>, <code>f9+cursor2</code></td>
+</tr>
+<tr>
+<td>Alternar modo Mostrar mensagens Braille</td>
+<td><code>f1+f2</code>, <code>f9+f10</code></td>
+</tr>
+<tr>
+<td>Alternar o estado do Braille mostrar selecção</td>
+<td><code>f1+f5</code>, <code>f9+f14</code></td>
+</tr>
+<tr>
+<td>Alterna entre as opções do "Braille move o cursor do sistema quando o cursor de revisão é encaminhado"</td>
+<td><code>f1+f3</code>, <code>f9+f11</code></td>
+</tr>
+<tr>
+<td>Ativar o objeto de navegação atual</td>
+<td><code>f7+f8</code></td>
+</tr>
+<tr>
+<td>Anunciar hora/data</td>
+<td><code>f9</code></td>
+</tr>
+<tr>
+<td>Anunciar o estado da bateria e tempo restante se não ligada à corrente</td>
+<td><code>f10</code></td>
+</tr>
+<tr>
+<td>Anunciar o título</td>
+<td><code>f11</code></td>
+</tr>
+<tr>
+<td>Anunciar a Barra de Estado</td>
+<td><code>f12</code></td>
+</tr>
+<tr>
+<td>Anunciar a linha atual</td>
+<td><code>f13</code></td>
+</tr>
+<tr>
+<td>Leitura contínua</td>
+<td><code>f14</code></td>
+</tr>
+<tr>
+<td>Anunciar o carater atual em revisão</td>
+<td><code>f15</code></td>
+</tr>
+<tr>
+<td>Anunciar a linha atual em revisão</td>
+<td><code>f16</code></td>
+</tr>
+<tr>
+<td>Anunciar a palavra atual em revisão</td>
+<td><code>f15+f16</code></td>
+</tr>
+<tr>
+<td>Mover para a linha anterior em revisão</td>
+<td><code>lWheelUp</code>, <code>rWheelUp</code></td>
+</tr>
+<tr>
+<td>Mover para a próxima linha em revisão</td>
+<td><code>lWheelDown</code>, <code>rWheelDown</code></td>
+</tr>
+<tr>
+<td>Tecla <code>windows+d</code> (minimizar todas as aplicações)</td>
+<td><code>attribute1</code></td>
+</tr>
+<tr>
+<td>Tecla <code>Windows+e</code> (Este PC)</td>
+<td><code>attribute2</code></td>
+</tr>
+<tr>
+<td>Tecla <code>windows+b</code> (Mover para a Área de notificações)</td>
+<td><code>attribute3</code></td>
+</tr>
+<tr>
+<td>Tecla <code>Windows+i</code> (Definições do Windows)</td>
+<td><code>attribute4</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Zoomax">NLS eReader Zoomax</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar o Braille para trás</td>
+<td><code>d2</code></td>
+</tr>
+<tr>
+<td>Deslocar o Braille para a frente</td>
+<td><code>d5</code></td>
+</tr>
+<tr>
+<td>Passar a visualização Braille para a linha anterior</td>
+<td><code>d1</code></td>
+</tr>
+<tr>
+<td>Passar a visualização em Braille para a linha seguinte</td>
+<td><code>d3</code></td>
+</tr>
+<tr>
+<td>Encaminhar para a célula Braille</td>
+<td><code>routing</code></td>
+</tr>
+<tr>
+<td>Tecla seta acima</td>
+<td><code>up</code></td>
+</tr>
+<tr>
+<td>Tecla seta abaixo</td>
+<td><code>down</code></td>
+</tr>
+<tr>
+<td>Tecla seta à esquerda</td>
+<td><code>left</code></td>
+</tr>
+<tr>
+<td>Tecla seta à direita</td>
+<td><code>direita</code></td>
+</tr>
+<tr>
+<td>Tecla Enter</td>
+<td><code>select</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="HIDBraille">Dispositivos Braille com protocolo HID</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando de teclado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar a linha Braille para trás</td>
+<td>pan left or rocker up</td>
+</tr>
+<tr>
+<td>Deslocar a linha Braille para a frente</td>
+<td>pan right or rocker down</td>
+</tr>
+<tr>
+<td>Encaminhar para a célula</td>
+<td>routing set 1</td>
+</tr>
+<tr>
+<td>Alternar "Braille segue:"</td>
+<td>up+down</td>
+</tr>
+<tr>
+<td>seta acima</td>
+<td>joystick up, dpad up  ou Espaço + ponto 1</td>
+</tr>
+<tr>
+<td>seta abaixo</td>
+<td>joystick down, dpad down  espaço + ponto 4</td>
+</tr>
+<tr>
+<td>tecla seta à esquerda</td>
+<td>espaço+ponto3, joystick esquerdo ou dpad esquerdo</td>
+</tr>
+<tr>
+<td>tecla seta à direita</td>
+<td>joystick right, dpad right ou espaço +ponto 6</td>
+</tr>
+<tr>
+<td>tecla Shift+Tab</td>
+<td>space+ponto 1+ponto 3</td>
+</tr>
+<tr>
+<td>tecla Tab</td>
+<td>space+ponto 4+ponto 6</td>
+</tr>
+<tr>
+<td>tecla Alt</td>
+<td>space+ponto 1+ponto 3+ponto 4 (space+m)</td>
+</tr>
+<tr>
+<td>tecla Escape</td>
+<td>space+ponto 1+ponto 5 (space+e)</td>
+</tr>
+<tr>
+<td>tecla Enter</td>
+<td>joystick center, dpad center  ou ponto 8</td>
+</tr>
+<tr>
+<td>tecla Windows</td>
+<td>espaço +ponto 3+ponto 4</td>
+</tr>
+<tr>
+<td>tecla alt+tab</td>
+<td>espaço +ponto 2+ponto 3+ponto 4+ponto 5 (space+t)</td>
+</tr>
+<tr>
+<td>Menu NVDA</td>
+<td>espaço +ponto 1+ponto 3+ponto 4+ponto 5 (espaço+n)</td>
+</tr>
+<tr>
+<td>teclas windows+d (minimizar todas as aplicações)</td>
+<td>espaço +ponto 1+ponto 4+ponto 5 (espaço+d)</td>
+</tr>
+<tr>
+<td>Leitura contínua</td>
+<td>espaço +ponto 1+ponto 2+ponto 3+ponto 4+ponto 5+ponto 6</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dotPad">Dot Pad</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deslocar o ecrã braille para trás</td>
+<td><code>pan_left</code></td>
+</tr>
+<tr>
+<td>Deslocação do ecrã braille para a frente</td>
+<td><code>pan_right</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

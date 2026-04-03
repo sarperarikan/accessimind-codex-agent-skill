@@ -44,6 +44,7 @@ $HOME\.codex\skills\accessimind-accessible-ui-agent-skill\SKILL.md
 $HOME\.codex\skills\playwright\SKILL.md
 $HOME\.codex\skills\senior-developer-20y\SKILL.md
 $HOME\.codex\skills\nvda-portable-a11y-audit\SKILL.md
+$HOME\.codex\skills\full-persona-a11y-audit\SKILL.md
 ```
 
 ## Package the Bundle for Sharing
@@ -88,7 +89,8 @@ Use this execution order:
 1. `accessimind-accessible-ui-agent-skill` for WCAG 2.2 interpretation, implementation rules, and severity.
 2. `playwright` for deterministic browser runtime evidence (keyboard, focus, DOM transitions).
 3. `nvda-portable-a11y-audit` for mandatory live screen-reader evidence and screenshot artifacts using portable NVDA.
-4. `senior-developer-20y` for architecture rigor, regression control, and production release hardening.
+4. `full-persona-a11y-audit` for one-command blind/low-vision/motor persona coverage.
+5. `senior-developer-20y` for architecture rigor, regression control, and production release hardening.
 
 This ensures the workflow is not checklist-only and can support production-grade delivery decisions.
 
@@ -101,6 +103,21 @@ From repository root:
 ```
 
 This runner uses the repository-local `NVDA/` directory as the default screen-reader runtime.
+
+## Full Persona Runner
+
+From repository root:
+
+```powershell
+.\skills\full-persona-a11y-audit\scripts\invoke-full-persona-audit.ps1 -Urls "https://www.arcelik.com.tr/kampanyalar","https://www.arcelik.com.tr/destek"
+```
+
+This produces:
+- `blind.md`
+- `low-vision.md`
+- `motor.md`
+- `summary.md`
+- `summary.json`
 
 ## What the Skill Optimizes For
 

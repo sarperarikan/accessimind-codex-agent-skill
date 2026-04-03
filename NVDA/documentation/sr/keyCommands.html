@@ -1,0 +1,4686 @@
+<!DOCTYPE html>
+<html lang="sr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>NVDA 2025.3.3 Kratka napomena za komande</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="styles.css">
+<link rel="shortcut icon" href="favicon.ico">
+
+</head>
+<body><h1 id="nvda-202533-kratka-napomena-za-komande">NVDA 2025.3.3 Kratka napomena za komande</h1>
+<div class="toc">
+<ul>
+<li><a href="#nvda-202533-kratka-napomena-za-komande" title="NVDA 2025.3.3 Kratka napomena za komande">NVDA 2025.3.3 Kratka napomena za komande</a><ul>
+<li><a href="#GettingStartedWithNVDA" title="Korišćenje NVDA-a">Korišćenje NVDA-a</a><ul>
+<li><a href="#NVDATouchGestures" title="NVDA prečice za ekrane osetljive na dodir">NVDA prečice za ekrane osetljive na dodir</a><ul>
+<li><a href="#TouchModes" title="Režimi dodira">Režimi dodira</a></li>
+</ul>
+</li>
+<li><a href="#BasicNVDACommands" title="Osnovne NVDA komande">Osnovne NVDA komande</a></li>
+<li><a href="#ReportingSystemInformation" title="Prijavljivanje sistemskih informacija">Prijavljivanje sistemskih informacija</a></li>
+<li><a href="#SpeechModes" title="Režimi govora">Režimi govora</a></li>
+</ul>
+</li>
+<li><a href="#NavigatingWithNVDA" title="Navigacija sa NVDA-om">Navigacija sa NVDA-om</a><ul>
+<li><a href="#SystemFocus" title="Navigacija sa sistemskim fokusom">Navigacija sa sistemskim fokusom</a></li>
+<li><a href="#SystemCaret" title="Navigacija sa sistemskim kursorom">Navigacija sa sistemskim kursorom</a></li>
+<li><a href="#ObjectNavigation" title="Navigacija objekata">Navigacija objekata</a></li>
+<li><a href="#ReviewingText" title="Pregled teksta">Pregled teksta</a></li>
+<li><a href="#ReviewModes" title="Režimi pregleda">Režimi pregleda</a></li>
+<li><a href="#NavigatingWithTheMouse" title="Navigacija sa mišem">Navigacija sa mišem</a></li>
+</ul>
+</li>
+<li><a href="#BrowseMode" title="Režim pretraživanja">Režim pretraživanja</a><ul>
+<li><a href="#SingleLetterNavigation" title="Navigacija jednim slovom">Navigacija jednim slovom</a></li>
+<li><a href="#ElementsList" title="Lista elemenata">Lista elemenata</a></li>
+<li><a href="#SearchingForText" title="Pretraga teksta">Pretraga teksta</a></li>
+<li><a href="#ImbeddedObjects" title="Umetnuti objekti">Umetnuti objekti</a></li>
+<li><a href="#NativeSelectionMode" title="Režim ugrađenog izbora">Režim ugrađenog izbora</a></li>
+</ul>
+</li>
+<li><a href="#ReadingMath" title="Čitanje matematičkog sadržaja">Čitanje matematičkog sadržaja</a><ul>
+<li><a href="#InteractiveNavigation" title="Interaktivna navigacija">Interaktivna navigacija</a></li>
+</ul>
+</li>
+<li><a href="#Braille" title="Brajevo pismo">Brajevo pismo</a><ul>
+<li><a href="#BrailleInput" title="Brajev unos">Brajev unos</a></li>
+</ul>
+</li>
+<li><a href="#Vision" title="Vid">Vid</a><ul>
+<li><a href="#VisionScreenCurtain" title="Zatamnjivanje ekrana">Zatamnjivanje ekrana</a></li>
+</ul>
+</li>
+<li><a href="#ContentRecognition" title="Prepoznavanje sadržaja">Prepoznavanje sadržaja</a><ul>
+<li><a href="#Win10Ocr" title="Windows optičko prepoznavanje znakova">Windows optičko prepoznavanje znakova</a></li>
+</ul>
+</li>
+<li><a href="#ApplicationSpecificFeatures" title="Posebne karakteristike za aplikacije">Posebne karakteristike za aplikacije</a><ul>
+<li><a href="#MicrosoftWord" title="Microsoft Word">Microsoft Word</a><ul>
+<li><a href="#WordAutomaticColumnAndRowHeaderReading" title="Automatsko čitanje zaglavlja kolona i redova">Automatsko čitanje zaglavlja kolona i redova</a></li>
+<li><a href="#BrowseModeInMicrosoftWord" title="Režim pretraživanja u programu Microsoft Word">Režim pretraživanja u programu Microsoft Word</a><ul>
+<li><a href="#WordElementsList" title="Lista elemenata">Lista elemenata</a></li>
+</ul>
+</li>
+<li><a href="#WordReportingComments" title="Prijavljivanje komentara">Prijavljivanje komentara</a></li>
+</ul>
+</li>
+<li><a href="#MicrosoftExcel" title="Microsoft Excel">Microsoft Excel</a><ul>
+<li><a href="#ExcelAutomaticColumnAndRowHeaderReading" title="Automatsko čitanje zaglavlja redova i kolona">Automatsko čitanje zaglavlja redova i kolona</a></li>
+<li><a href="#ExcelElementsList" title="Lista elemenata">Lista elemenata</a></li>
+<li><a href="#ExcelReportingComments" title="Prijavljivanje napomena">Prijavljivanje napomena</a></li>
+<li><a href="#ExcelReadingProtectedCells" title="Čitanje zaštićenih ćelija">Čitanje zaštićenih ćelija</a></li>
+</ul>
+</li>
+<li><a href="#MicrosoftPowerPoint" title="Microsoft PowerPoint">Microsoft PowerPoint</a></li>
+<li><a href="#Foobar2000" title="foobar2000">foobar2000</a></li>
+<li><a href="#MirandaIM" title="Miranda IM">Miranda IM</a></li>
+<li><a href="#Poedit" title="Poedit">Poedit</a></li>
+<li><a href="#Kindle" title="Kindle za PC">Kindle za PC</a><ul>
+<li><a href="#KindleTextSelection" title="Izbor teksta">Izbor teksta</a></li>
+</ul>
+</li>
+<li><a href="#Azardi" title="Azardi">Azardi</a></li>
+<li><a href="#WinConsole" title="Windows konzola">Windows konzola</a></li>
+</ul>
+</li>
+<li><a href="#ConfiguringNVDA" title="Podešavanje programa NVDA">Podešavanje programa NVDA</a><ul>
+<li><a href="#NVDASettings" title="NVDA podešavanja">NVDA podešavanja</a><ul>
+<li><a href="#GeneralSettings" title="Opšta">Opšta</a></li>
+<li><a href="#SpeechSettings" title="Podešavanja govora">Podešavanja govora</a></li>
+<li><a href="#SelectSynthesizer" title="Izbor sintetizatora">Izbor sintetizatora</a></li>
+<li><a href="#SynthSettingsRing" title="Krug sintetizatora">Krug sintetizatora</a></li>
+<li><a href="#BrailleSettings" title="Brajeva podešavanja">Brajeva podešavanja</a></li>
+<li><a href="#SelectBrailleDisplay" title="Izaberi brajev red">Izaberi brajev red</a></li>
+<li><a href="#AudioSettings" title="Zvuk">Zvuk</a><ul>
+<li><a href="#SelectSoundSplitMode" title="Razdvajanje zvuka">Razdvajanje zvuka</a></li>
+</ul>
+</li>
+<li><a href="#KeyboardSettings" title="Tastatura">Tastatura</a></li>
+<li><a href="#MouseSettings" title="Miš">Miš</a></li>
+<li><a href="#ReviewCursorSettings" title="Pregledni kursor">Pregledni kursor</a></li>
+<li><a href="#ObjectPresentationSettings" title="Predstavljanje objekata">Predstavljanje objekata</a></li>
+<li><a href="#BrowseModeSettings" title="Režim pretraživanja">Režim pretraživanja</a></li>
+<li><a href="#DocumentFormattingSettings" title="Formatiranje dokumenta">Formatiranje dokumenta</a></li>
+<li><a href="#AdvancedSettings" title="Napredna podešavanja">Napredna podešavanja</a><ul>
+<li><a href="#Annotations" title="Napomene">Napomene</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#SavingAndReloading" title="Чуванје и поновно учитаванје подешаванја">Чуванје и поновно учитаванје подешаванја</a></li>
+<li><a href="#ConfigurationProfiles" title="Профили подешаванја">Профили подешаванја</a><ul>
+<li><a href="#ProfilesBasicManagement" title="Основно управлјанје">Основно управлјанје</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#RemoteAccess" title="Daljinski pristup">Daljinski pristup</a><ul>
+<li><a href="#RemoteAccessGestures" title="Kratak opis komandi daljinskog pristupa">Kratak opis komandi daljinskog pristupa</a></li>
+</ul>
+</li>
+<li><a href="#ExtraTools" title="Dodatni alati">Dodatni alati</a><ul>
+<li><a href="#LogViewer" title="Pregled dnevnika">Pregled dnevnika</a></li>
+<li><a href="#ReloadPlugins" title="Ponovo učitaj dodatke">Ponovo učitaj dodatke</a></li>
+</ul>
+</li>
+<li><a href="#SupportedBrailleDisplays" title="Podržani brajevi redovi">Podržani brajevi redovi</a><ul>
+<li><a href="#FreedomScientificFocus" title="Brajevi redovi Freedom Scientific Focus/PAC Mate">Brajevi redovi Freedom Scientific Focus/PAC Mate</a></li>
+<li><a href="#OptelecALVA" title="Optelec ALVA 6 serije/pretvarač protokola">Optelec ALVA 6 serije/pretvarač protokola</a></li>
+<li><a href="#HandyTech" title="Handy Tech brajevi redovi">Handy Tech brajevi redovi</a></li>
+<li><a href="#MDVLilli" title="MDV Lilli">MDV Lilli</a></li>
+<li><a href="#Baum" title="Baum/Humanware/APH/Orbit Brajevi Redovi">Baum/Humanware/APH/Orbit Brajevi Redovi</a></li>
+<li><a href="#HedoProfiLine" title="hedo ProfiLine USB">hedo ProfiLine USB</a></li>
+<li><a href="#HedoMobilLine" title="hedo MobilLine USB">hedo MobilLine USB</a></li>
+<li><a href="#HumanWareBrailliant" title="HumanWare Brailliant BI/B serije / BrailleNote Touch">HumanWare Brailliant BI/B serije / BrailleNote Touch</a><ul>
+<li><a href="#HumanWareBrailliantKeyAssignmentForAllModels" title="Komande za sve modele">Komande za sve modele</a></li>
+<li><a href="#HumanWareBrailliantKeyAssignmentForBI32BI40AndB80" title="Komande za Brailliant BI 32, BI 40 i B 80">Komande za Brailliant BI 32, BI 40 i B 80</a></li>
+<li><a href="#HumanWareBrailliantKeyAssignmentForBI14" title="Komande za Brailliant BI 14">Komande za Brailliant BI 14</a></li>
+</ul>
+</li>
+<li><a href="#Hims" title="HIMS Braille Sense/Braille EDGE / smart beetle /Sync BrailleSerije">HIMS Braille Sense/Braille EDGE / smart beetle /Sync BrailleSerije</a></li>
+<li><a href="#Seika" title="Seika brajevi redovi">Seika brajevi redovi</a><ul>
+<li><a href="#SeikaBrailleDisplays" title="Seika verzija 3, 4 i 5 (40 ćelija), Seika80 (80 ćelija)">Seika verzija 3, 4 i 5 (40 ćelija), Seika80 (80 ćelija)</a></li>
+<li><a href="#SeikaNotetaker" title="MiniSeika (16, 24 ćelije), V6, i V6Pro (40 ćelija)">MiniSeika (16, 24 ćelije), V6, i V6Pro (40 ćelija)</a></li>
+</ul>
+</li>
+<li><a href="#Papenmeier" title="Papenmeier BRAILLEX Noviji Modeli">Papenmeier BRAILLEX Noviji Modeli</a></li>
+<li><a href="#PapenmeierOld" title="Papenmeier Braille BRAILLEX stariji modeli">Papenmeier Braille BRAILLEX stariji modeli</a></li>
+<li><a href="#HumanWareBrailleNote" title="HumanWare BrailleNote">HumanWare BrailleNote</a></li>
+<li><a href="#EcoBraille" title="EcoBraille">EcoBraille</a></li>
+<li><a href="#SuperBraille" title="SuperBraille">SuperBraille</a></li>
+<li><a href="#Eurobraille" title="Eurobraille redovi">Eurobraille redovi</a><ul>
+<li><a href="#EurobrailleBraille" title="Funkcije brajeve tastature">Funkcije brajeve tastature</a></li>
+<li><a href="#Eurobraillebbook" title="b.book komande tastature">b.book komande tastature</a></li>
+<li><a href="#Eurobraillebnote" title="b.note komande tastature">b.note komande tastature</a></li>
+<li><a href="#Eurobrailleesys" title="Esys komande tastature">Esys komande tastature</a></li>
+<li><a href="#EurobrailleEsytime" title="Esytime komande tastature">Esytime komande tastature</a></li>
+</ul>
+</li>
+<li><a href="#NattiqTechnologies" title="Nattiq nBraille redovi">Nattiq nBraille redovi</a></li>
+<li><a href="#BRLTTY" title="BRLTTY">BRLTTY</a></li>
+<li><a href="#Albatross" title="Tivomatic Caiku Albatross 46/80">Tivomatic Caiku Albatross 46/80</a></li>
+<li><a href="#Zoomax" title="NLS eReader Zoomax">NLS eReader Zoomax</a></li>
+<li><a href="#HIDBraille" title="Standardni HID brajevi redovi">Standardni HID brajevi redovi</a></li>
+<li><a href="#dotPad" title="Dot Pad">Dot Pad</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="GettingStartedWithNVDA">Korišćenje NVDA-a</h2>
+<h3 id="NVDATouchGestures">NVDA prečice za ekrane osetljive na dodir</h3>
+<p>Da omogućite ili onemogućite podršku interakcije sa ekranom osetljivim na dodir, pritisnite NVDA+control+alt+t.</p>
+<h4 id="TouchModes">Režimi dodira</h4>
+<p>Da se prebacite između različitih režima dodira, dodirnite jednom sa tri prsta.</p>
+<h3 id="BasicNVDACommands">Osnovne NVDA komande</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Desktop komanda</th>
+<th>Laptop komanda</th>
+<th>Ekran osetljiv na dodir</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pokreće ili restartuje NVDA</td>
+<td>Control+alt+n</td>
+<td>Control+alt+n</td>
+<td>Nema</td>
+<td>Pokreće ili restartuje NVDA sa radne površine, ako je ova Windows prečica omogućena u procesu instalacije programa NVDA. Ovo je Windows prečica i zato se ne može promeniti u dijalogu ulazne komande.</td>
+</tr>
+<tr>
+<td>Zaustavi govor</td>
+<td>Kontrol</td>
+<td>Kontrol</td>
+<td>dodir sa dva prsta</td>
+<td>govor prestaje</td>
+</tr>
+<tr>
+<td>Pauziraj govor</td>
+<td>Šift</td>
+<td>Šift</td>
+<td>Nema komande</td>
+<td>pauzira govor. Ako se pritisne ponovo govor se nastavlja gde je stao(ako trenutni sintetizator podržava pauziranje)</td>
+</tr>
+<tr>
+<td>NVDA meni</td>
+<td>NVDA+n</td>
+<td>NVDA+n</td>
+<td>dvostruki dodir sa dva prsta</td>
+<td>otvara NVDA meni kako biste pristupili podešavanjima, alatima, dobili pomoć, i tako dalje.</td>
+</tr>
+<tr>
+<td>Uključuje i isključuje pomoć za unos</td>
+<td>NVDA+1</td>
+<td>NVDA+1</td>
+<td>Nema komande</td>
+<td>pritiskanje bilo kog tastera u ovom režimu prijavljuje ime tastera, i opis komande koju NVDA koristi</td>
+</tr>
+<tr>
+<td>Izlaz iz NVDA</td>
+<td>NVDA+q</td>
+<td>NVDA+q</td>
+<td>Nema komande</td>
+<td>izlazi iz NVDA</td>
+</tr>
+<tr>
+<td>Ignoriši sledeći taster</td>
+<td>NVDA+f2</td>
+<td>NVDA+f2</td>
+<td>Nema komande</td>
+<td>govori NVDA-u da sledeći taster pošalje kroz aplikaciju, čak i ako je to NVDA komanda</td>
+</tr>
+<tr>
+<td>Uključuje i isključuje režim spavanja za trenutnu aplikaciju</td>
+<td>NVDA+šift+s</td>
+<td>NVDA+šift+z</td>
+<td>Nema komande</td>
+<td>Režim spavanja isključuje sav govor ili brajev izlaz za trenutnu aplikaciju. Ovo je najkorisnije u aplikacijama koje već imaju karakteristike čitanja ekrana. Ponovo pritisnite ovu komandu da isključite režim spavanja.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ReportingSystemInformation">Prijavljivanje sistemskih informacija</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prijavi datum/vreme</td>
+<td>NVDA+f12</td>
+<td>Ako se pritisne jednom prijavljuje trenutni datum, ako se pritisne dva puta prijavljuje trenutno vreme</td>
+</tr>
+<tr>
+<td>Prijavi stanje baterije</td>
+<td>NVDA+šift+b</td>
+<td>prijavljuje stanje baterije, da li je punjač uključen i trenutni procenat.</td>
+</tr>
+<tr>
+<td>Prijavi tekst privremene memorije</td>
+<td>NVDA+c</td>
+<td>prijavljuje tekst privremene memorije ako ima teksta.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="SpeechModes">Režimi govora</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Prečica</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kruži kroz režime govora</td>
+<td><code>NVDA+s</code></td>
+<td>Kruži kroz režime govora.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="NavigatingWithNVDA">Navigacija sa NVDA-om</h2>
+<h3 id="SystemFocus">Navigacija sa sistemskim fokusom</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Desktop komanda</th>
+<th>Laptop komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prijavi trenutni fokus</td>
+<td>NVDA+tab</td>
+<td>NVDA+tab</td>
+<td>Izgovara trenutni objekat ili kontrolu koja ima sistemski fokus. Ako se pritisne dva puta informacija se sriče</td>
+</tr>
+<tr>
+<td>Prijavi naslov</td>
+<td>NVDA+t</td>
+<td>NVDA+t</td>
+<td>Prijavi naslov trenutno aktivnog prozora. Ako se pritisne dva puta informacija se sriče. Ako se pritisne tri puta informacija se kopira u privremenu memoriju</td>
+</tr>
+<tr>
+<td>Čitaj aktivan prozor</td>
+<td>NVDA+b</td>
+<td>NVDA+b</td>
+<td>Čita sve kontrole u trenutnom prozoru(korisno za dijaloge)</td>
+</tr>
+<tr>
+<td>Prijavi statusnu traku</td>
+<td>NVDA+end</td>
+<td>NVDA+Šift+end</td>
+<td>Prijavljuje statusnu traku ako je NVDA pronađe. Ako se pritisne dva puta informacija se sriče. Ako se pritisne tri puta kopira se u privremenu memoriju</td>
+</tr>
+<tr>
+<td>Prijavi tastersku prečicu</td>
+<td><code>šift+numeričko2</code></td>
+<td><code>NVDA+kontrol+šift+.</code></td>
+<td>Prijavljuje tastersku prečicu trenutno fokusiranog objekta</td>
+</tr>
+</tbody>
+</table>
+<h3 id="SystemCaret">Navigacija sa sistemskim kursorom</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Desktop komanda</th>
+<th>Laptop komanda</th>
+<th>opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Izgovori sve</td>
+<td>NVDA+Strelica dole</td>
+<td>NVDA+a</td>
+<td>Počinje čitanje od trenutne pozicije sistemskog kursora, pomerajući ga dok čita</td>
+</tr>
+<tr>
+<td>Pročitaj trenutni red</td>
+<td>NVDA+Strelica gore</td>
+<td>NVDA+l</td>
+<td>Čita red na kom se sistemski kursor nalazi. Ako se pritisne dva puta red se sriče. Ako se pritisne tri puta sriče red koristeći opise znakova.</td>
+</tr>
+<tr>
+<td>Pročitaj trenutni izbor teksta</td>
+<td>NVDA+šift+strelica gore</td>
+<td>NVDA+šift+s</td>
+<td>Čita trenutno odabran tekst</td>
+</tr>
+<tr>
+<td>Prijavi formatiranje teksta</td>
+<td>NVDA+f</td>
+<td>NVDA+f</td>
+<td>Prijavljuje formatiranje teksta na trenutnoj poziciji kursora. Ako se pritisne dva puta prikazuje informaciju u režimu pretraživanja</td>
+</tr>
+<tr>
+<td>Prijavi odredište linka</td>
+<td><code>NVDA+k</code></td>
+<td><code>NVDA+k</code></td>
+<td>Ako se pritisne jednom prijavljuje se odredišna adresa linka na trenutnoj poziciji kursora ili fokusa. Ako se pritisne dva puta prikazuje se u prozoru radi lakšeg pregleda</td>
+</tr>
+<tr>
+<td>Prijavi lokaciju kursora</td>
+<td>NVDA+Numerički taster za brisanje</td>
+<td>NVDA+taster za brisanje</td>
+<td>Prijavljuje informacije o lokaciji objekta ili teksta na poziciji sistemskog kursora. Na primer, ovo može uključiti poziciju dokumenta u procentima, udaljenost od ivica stranica ili tačnu poziciju na ekranu. Pritiskanje dva puta može pružiti dodatne detalje.</td>
+</tr>
+<tr>
+<td>Sledeća rečenica</td>
+<td>alt+strelica dole</td>
+<td>alt+strelica dole</td>
+<td>Pomera kursor na sledeću rečenicu i izgovara je. (Podržano samo u Microsoft Wordu i Outlooku)</td>
+</tr>
+<tr>
+<td>Prethodna rečenica</td>
+<td>alt+strelica gore</td>
+<td>alt+Strelica gore</td>
+<td>Pomera kursor na prethodnu rečenicu i izgovara je. (Podržano samo u Microsoft Wordu i Outlooku)</td>
+</tr>
+</tbody>
+</table>
+<p>Kada ste u tabeli, Sledeće komande su takođe dostupne:</p>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri na prethodnu kolonu</td>
+<td>Kontrol+alt+strelica levo</td>
+<td>Pomera sistemski kursor na prethodnu kolonu(ostajete u istom redu)</td>
+</tr>
+<tr>
+<td>Pomeri na sledeću kolonu</td>
+<td>Kontrol+alt+strelica desno</td>
+<td>Pomera sistemski kursor na sledeću kolonu(ostajete u istom redu)</td>
+</tr>
+<tr>
+<td>Pomeri na prethodni red</td>
+<td>kontrol+alt+strelica gore</td>
+<td>Pomera sistemski kursor na prethodni red(ostajete u istoj koloni)</td>
+</tr>
+<tr>
+<td>Pomeri na sledeći red</td>
+<td>kontrol+alt+strelica dole</td>
+<td>Pomera sistemski kursor na sledeći red(ostajete u istoj koloni)</td>
+</tr>
+<tr>
+<td>Pomeri na prvu kolonu</td>
+<td>kontrol+alt+home</td>
+<td>Pomera sistemski kursor na prvu kolonu (ostajete u istom redu)</td>
+</tr>
+<tr>
+<td>Pomeri na poslednju kolonu</td>
+<td>kontrol+alt+end</td>
+<td>Pomera sistemski kursor na poslednju kolonu (ostajete u istom redu)</td>
+</tr>
+<tr>
+<td>Pomeri na prvi red</td>
+<td>kontrol+alt+pageUp</td>
+<td>Pomera sistemski kursor na prvi red (ostajete u istoj koloni)</td>
+</tr>
+<tr>
+<td>Pomeri na poslednji red</td>
+<td>kontrol+alt+pageDown</td>
+<td>Pomera sistemski kursor na poslednji red (ostajete u istoj koloni)</td>
+</tr>
+<tr>
+<td>Izgovori sve u koloni</td>
+<td><code>NVDA+kontrol+alt+strelicaDole</code></td>
+<td>Čita kolonu vertikalno od trenutne ćelije dole do poslednje ćelije u koloni.</td>
+</tr>
+<tr>
+<td>Izgovori sve u redu</td>
+<td><code>NVDA+kontrol+alt+strelicaDesno</code></td>
+<td>Čita red horizontalno od trenutne ćelije desno do poslednje ćelije u redu.</td>
+</tr>
+<tr>
+<td>Pročitaj celu kolonu</td>
+<td><code>NVDA+kontrol+alt+strelicaGore</code></td>
+<td>Čita trenutnu kolonu vertikalno od vrha do dna bez pomeranja sistemskog kursora.</td>
+</tr>
+<tr>
+<td>Pročitaj ceo red</td>
+<td><code>NVDA+kontrol+alt+strelicaLevo</code></td>
+<td>Čita trenutni red horizontalno s leva na desno bez pomeranja sistemskog kursora.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ObjectNavigation">Navigacija objekata</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Desktop komanda</th>
+<th>Laptop komanda</th>
+<th>Pokret</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prijavi trenutni objekat</td>
+<td>NVDA+numeričko5</td>
+<td>NVDA+šift+o</td>
+<td>Nema komande</td>
+<td>Prijavljuje trenutni navigacioni objekat. Ako se pritisne dva puta informacija se sriče, a pritiskanjem 3 puta informacija i vrednost se kopiraju u privremenu memoriju.</td>
+</tr>
+<tr>
+<td>Premesti se na sadržani objekat</td>
+<td>NVDA+numeričko8</td>
+<td>NVDA+šift+strelica gore</td>
+<td>prevuci nagore(režim objekata)</td>
+<td>premešta se na objekat koji sadrži trenutni navigacioni objekat</td>
+</tr>
+<tr>
+<td>Premesti se na prethodni objekat</td>
+<td>NVDA+numeričko4</td>
+<td>NVDA+šift+strelica levo</td>
+<td>nema</td>
+<td>pomera se na objekat pre trenutnog navigacionog objekta</td>
+</tr>
+<tr>
+<td>Premesti se na prethodni objekat u ravnom prikazu</td>
+<td>NVDA+numeričko9</td>
+<td>NVDA+šift+[</td>
+<td>prevlačenje levo (režim objekata)</td>
+<td>Premešta se na prethodni objekat u ravnom prikazu hierarhije navigacije objekata</td>
+</tr>
+<tr>
+<td>Premesti se na sledeći objekat</td>
+<td>NVDA+numeričko6</td>
+<td>NVDA+šift+strelica desno</td>
+<td>nema</td>
+<td>premešta se na objekat posle trenutnog navigacionog objekta</td>
+</tr>
+<tr>
+<td>Premesti se na sledeći objekat u ravnom prikazu</td>
+<td>NVDA+numeričko3</td>
+<td>NVDA+šift+]</td>
+<td>prevlačenje desno (režim objekata)</td>
+<td>Premešta se na sledeći objekat u ravnom prikazu hierarhije navigacije objekata</td>
+</tr>
+<tr>
+<td>Premesti se na prvi sadržan objekat</td>
+<td>NVDA+numeričko2</td>
+<td>NVDA+šift+strelica dole</td>
+<td>prevlačenje dole (režim objekata)</td>
+<td>Premešta se na prvi objekat sadržan od strane navigacionog objekta</td>
+</tr>
+<tr>
+<td>Premesti se na fokusiran objekat</td>
+<td>NVDA+numerički minus</td>
+<td>NVDA+taster za brisanje unazad</td>
+<td>Nema komande</td>
+<td>Premešta se na objekat koji trenutno ima sistemski fokus, i takođe postavlja pregledni kursor na poziciju sistemskog kursora, ako je prikazan</td>
+</tr>
+<tr>
+<td>Aktiviraj trenutni navigacioni objekat</td>
+<td>NVDA+numerički enter</td>
+<td>NVDA+enter</td>
+<td>dupli dodir</td>
+<td>aktivira trenutni navigacioni objekat(slično kliku mišem ili pritiskanju tastera razmak kada ima sistemski fokus)</td>
+</tr>
+<tr>
+<td>Premesti sistemski fokus ili kursor na poziciju pregleda</td>
+<td>NVDA+šift+numerički minus</td>
+<td>NVDA+šift+taster za brisanje unazad</td>
+<td>Nema komande</td>
+<td>Ako se pritisne jednom pomera sistemski fokus na mesto navigacionog objekta, ako se pritisne dva puta pomera sistemski kursor na poziciju preglednog kursora</td>
+</tr>
+<tr>
+<td>Prijavi lokaciju kursora</td>
+<td>NVDA+numerički taster za brisanje</td>
+<td>NVDA+taster za brisanje</td>
+<td>nema komande</td>
+<td>Prijavljuje informacije o poziciji objekta ili teksta na poziciji sistemskog kursora. Na primer, ovo može uključiti procenat trenutne pozicije u dokumentu, udaljenost od ivica stranica ili tačnu poziciju na ekranu. Pritiskanje dva puta može pružiti dodatne detalje.</td>
+</tr>
+<tr>
+<td>Pomera pregledni kursor na statusnu traku</td>
+<td>Nema komande</td>
+<td>Nema komande</td>
+<td>Nema komande</td>
+<td>Prijavljuje statusnu traku ako je NVDA pronađe. Takođe pomera navigacioni objekat na ovu lokaciju.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ReviewingText">Pregled teksta</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Desktop komanda</th>
+<th>Laptop komanda</th>
+<th>Pokret</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Premesti na prvi red pregleda</td>
+<td>Šift+numeričko7</td>
+<td>NVDA+control+home</td>
+<td>Nema komande</td>
+<td>Premešta pregledni kursor na prvi red teksta</td>
+</tr>
+<tr>
+<td>Premesti na prethodni red pregleda</td>
+<td>Numeričko7</td>
+<td>NVDA+strelica gore</td>
+<td>Prevlačenje gore(režim teksta)</td>
+<td>Pomera pregledni kursor na prethodni red teksta</td>
+</tr>
+<tr>
+<td>Prijavi trenutni red pregleda</td>
+<td>numpad8</td>
+<td>NVDA+šift+.</td>
+<td>Nema komande</td>
+<td>Izgovara trenutni red na kom se nalazi pregledni kursor. Ako se pritisne dva puta red se sriče. Ako se pritisne tri puta red se sriče koristeći opise znakova.</td>
+</tr>
+<tr>
+<td>Prebaci se na sledeći red pregleda</td>
+<td>Numeričko9</td>
+<td>NVDA+strelica dole</td>
+<td>Prevlačenje dole(režim teksta)</td>
+<td>Premesti pregledni kursor na sledeći red teksta</td>
+</tr>
+<tr>
+<td>Premesti se na poslednji red pregleda</td>
+<td>Šift+numeričko9</td>
+<td>NVDA+control+end</td>
+<td>Nema komande</td>
+<td>Pomera pregledni kursor na poslednji red u dokumentu</td>
+</tr>
+<tr>
+<td>Premesti se na prethodnu reč pregleda</td>
+<td>Numeričko4</td>
+<td>NVDA+control+strelica levo</td>
+<td>Prevlačenje sa 2 prsta levo(Režim teksta)</td>
+<td>Pomera pregledni kursor na prethodnu reč u tekstu</td>
+</tr>
+<tr>
+<td>Prijavi trenutnu reč pregleda</td>
+<td>Numeričko5</td>
+<td>NVDA+control+.</td>
+<td>Nema komande</td>
+<td>Izgovara trenutnu reč teksta na kojoj se nalazi pregledni kursor. Ako se pritisne dva puta reč se sriče. Ako se pritisne tri puta reč se sriče koristeći opise znakova.</td>
+</tr>
+<tr>
+<td>Premesti se na sledeću reč pregleda</td>
+<td>Numeričko6</td>
+<td>NVDA+control+strelica desno</td>
+<td>Prevlačenje sa dva prsta desno(režim teksta)</td>
+<td>Premešta pregledni kursor na sledeću reč</td>
+</tr>
+<tr>
+<td>Premesti se na početak reda u pregledu</td>
+<td>Šift+numeričko1</td>
+<td>NVDA+home</td>
+<td>Nema komande</td>
+<td>Premešta pregledni kursor na početak reda</td>
+</tr>
+<tr>
+<td>Premesti se na prethodni znak pregleda</td>
+<td>Numeričko1</td>
+<td>NVDA+strelica levo</td>
+<td>Prevlačenje levo(režim teksta)</td>
+<td>Premešta pregledni kursor na prethodno slovo u trenutnom redu teksta</td>
+</tr>
+<tr>
+<td>Prijavi trenutni znak pregleda</td>
+<td>Numeričko2</td>
+<td>NVDA+.</td>
+<td>Nema komande</td>
+<td>Izgovara trenutni znak u redu na kom se pregledni kursor nalazi. Ako se pritisne dva puta pruža se opis ili primer tog znaka. Ako se pritisne tri puta izgovara se decimalna i hexadecimalna vrednost tog znaka.</td>
+</tr>
+<tr>
+<td>Premesti se na sledeći znak pregleda</td>
+<td>Numeričko3</td>
+<td>NVDA+strelica desno</td>
+<td>Prevlačenje desno(režim teksta)</td>
+<td>Premešta pregledni kursor na sledeći znak u trenutnom redu teksta</td>
+</tr>
+<tr>
+<td>Premesti se na kraj reda pregleda</td>
+<td>Šift+numeričko3</td>
+<td>NVDA+end</td>
+<td>Nema komande</td>
+<td>Premešta pregledni kursor na kraj trenutnog reda u tekstu</td>
+</tr>
+<tr>
+<td>Premesti se na prethodnu stranicu u pregledu</td>
+<td><code>NVDA+pageUp</code></td>
+<td><code>NVDA+šift+pageUp</code></td>
+<td>nema komande</td>
+<td>Premešta pregledni kursor na prethodnu stranicu teksta ako je podržano od aplikacije</td>
+</tr>
+<tr>
+<td>Premesti se na sledeću stranicu u pregledu</td>
+<td><code>NVDA+pageDown</code></td>
+<td><code>NVDA+šift+pageDown</code></td>
+<td>Nema komande</td>
+<td>Premešta pregledni kursor na sledeću stranicu teksta ako je podržano od aplikacije</td>
+</tr>
+<tr>
+<td>Pomeri se na početak izbora pregledom</td>
+<td><code>NVDA+alt+home</code></td>
+<td><code>NVDA+alt+home</code></td>
+<td>Nema</td>
+<td>Pomera pregledni kursor na prvi znak izabranog teksta</td>
+</tr>
+<tr>
+<td>Pomeri se na kraj izbora pregledom</td>
+<td><code>NVDA+alt+end</code></td>
+<td><code>NVDA+alt+end</code></td>
+<td>Nema</td>
+<td>Pomera pregledni kursor na poslednji znak izabranog teksta</td>
+</tr>
+<tr>
+<td>Izgovori sve uz pregled</td>
+<td>Numerički plus</td>
+<td>NVDA+šift+a</td>
+<td>Prevlačenje dole sa 3 prsta(režim teksta)</td>
+<td>Čita od trenutne pozicije preglednog kursora, pomerajući ga u toku čitanja</td>
+</tr>
+<tr>
+<td>Izaberi a zatim kopiraj iz preglednog kursora</td>
+<td>NVDA+f9</td>
+<td>NVDA+f9</td>
+<td>Nema komande</td>
+<td>Počinje izbor teksta koji treba da se kopira iz preglednog kursora. Kopiranje nije odrađeno dok ne kažete programu NVDA gde se nalazi kraj vašeg odabira</td>
+</tr>
+<tr>
+<td>Izaberi a zatim kopiraj pregledni kursor</td>
+<td>NVDA+f10</td>
+<td>NVDA+f10</td>
+<td>Nema komande</td>
+<td>Ako se pritisne jednom, tekst od početnog markera pa sve do kraja uključujući i trenutnu poziciju preglednog kursora je odabran. Ako je moguće, sistemski kursor će se pomeriti na odabran tekst. Nakon što se ova komanda pritisne drugi put, tekst se kopira u Windows privremenu memoriju</td>
+</tr>
+<tr>
+<td>Pomeri se na označen početak za kopiranje u pregledu</td>
+<td>NVDA+šift+f9</td>
+<td>NVDA+šift+f9</td>
+<td>nema</td>
+<td>Pomera pregledni kursor na poziciju koja je prethodno označena kao početak za kopiranje</td>
+</tr>
+<tr>
+<td>Prijavi formatiranje teksta</td>
+<td>NVDA+šift+f</td>
+<td>NVDA+šift+f</td>
+<td>Nema</td>
+<td>Prijavljuje formatiranje teksta na poziciji preglednog kursora. Ako se pritisne dva puta prikazuje informacije u režimu pretraživanja</td>
+</tr>
+<tr>
+<td>Prijavi zamenu za trenutni simbol</td>
+<td>nema</td>
+<td>Nema</td>
+<td>Nema</td>
+<td>Izgovara simbol na poziciji preglednog kursora. Ako se pritisne 2 puta, prikazuje simbol i tekst koji se izgovara u režimu pretraživanja.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ReviewModes">Režimi pregleda</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Desktop komanda</th>
+<th>Laptop komanda</th>
+<th>Pokret</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prebaci se na sledeći režim pregleda</td>
+<td>NVDA+numeričko7</td>
+<td>NVDA+pageUp</td>
+<td>Prevlačenje gore sa dva prsta</td>
+<td>Prelazi na sledeći dostupan režim pregleda</td>
+</tr>
+<tr>
+<td>Prebaci se na prethodni režim pregleda</td>
+<td>NVDA+numeričko1</td>
+<td>NVDA+pageDown</td>
+<td>Prevlačenje dole sa dva prsta</td>
+<td>Prelazi na prethodni dostupan režim pregleda</td>
+</tr>
+</tbody>
+</table>
+<h3 id="NavigatingWithTheMouse">Navigacija sa mišem</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Desktop komanda</th>
+<th>Laptop komanda</th>
+<th>Ekran osetljiv na dodir</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Klik levog tastera miša</td>
+<td>Numeričko podeljeno</td>
+<td>NVDA+[</td>
+<td>Nema</td>
+<td>Izvršava levi klik tastera miša jednom. Dvostruki klik se može izvršiti brzim pritiskanjem ove komande dva puta</td>
+</tr>
+<tr>
+<td>Zaključavanje levog tastera miša</td>
+<td>Šift+numeričko podeljeno</td>
+<td>NVDA+control+[</td>
+<td>Nema</td>
+<td>Zaključava levi taster miša. Pritisnite ponovo da ga otpustite. Da vučete miš, pritisnite ovu komandu a zatim ili pomerajte miš fizički ili koristite jednu od dostupnih komandi za prebacivanje miša</td>
+</tr>
+<tr>
+<td>Desni klik miša</td>
+<td>Numeričko puta</td>
+<td>NVDA+]</td>
+<td>Dodirnite i zadržite</td>
+<td>Izvršava desni klik miša.</td>
+</tr>
+<tr>
+<td>Zaključavanje desnog tastera miša</td>
+<td>Šift+numeričko puta</td>
+<td>NVDA+control+]</td>
+<td>Nema</td>
+<td>Zaključava desni taster miša. Pritisnite ponovo da ga otpustite. Da vučete miš, pritisnite ovu komandu a zatim ili pomerajte miš fizički ili koristite jednu od dostupnih komandi za prebacivanje miša</td>
+</tr>
+<tr>
+<td>Pomeri točkić gore na poziciji miša</td>
+<td>Nema</td>
+<td>Nema</td>
+<td>Nema</td>
+<td>Pomera točkić miša gore na trenutnoj poziciji miša</td>
+</tr>
+<tr>
+<td>Pomeri točkić miša dole na trenutnoj poziciji miša</td>
+<td>Nema</td>
+<td>Nema</td>
+<td>Nema</td>
+<td>Pomera točkić miša dole na trenutnoj poziciji miša</td>
+</tr>
+<tr>
+<td>Pomeri točkić miša levo na trenutnoj poziciji miša</td>
+<td>Nema</td>
+<td>Nema</td>
+<td>Nema</td>
+<td>Pomera točkić miša levo na trenutnoj poziciji miša</td>
+</tr>
+<tr>
+<td>Pomeri točkić miša desno na trenutnoj poziciji miša</td>
+<td>Nema</td>
+<td>Nema</td>
+<td>Nema</td>
+<td>Pomera točkić miša desno nna trenutnoj poziciji miša</td>
+</tr>
+<tr>
+<td>Prebaci miš na trenutni navigacioni objekat</td>
+<td>NVDA+numeričko podeljeno</td>
+<td>NVDA+šift+m</td>
+<td>Nema</td>
+<td>Pomera miš na lokaciju trenutnog navigacionog objekta i preglednog kursora</td>
+</tr>
+<tr>
+<td>Navigacija do objekta ispod miša</td>
+<td>NVDA+Numeričko puta</td>
+<td>NVDA+šift+n</td>
+<td>Nema</td>
+<td>Postavlja navigacioni objekat na trenutnu lokaciju miša</td>
+</tr>
+</tbody>
+</table>
+<h2 id="BrowseMode">Režim pretraživanja</h2>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prebacivanje režima</td>
+<td>NVDA+razmak</td>
+<td>Prebacuje se između režima fokusiranja i režima pretraživanja</td>
+</tr>
+<tr>
+<td>Izlaz iz režima fokusiranja</td>
+<td>escape</td>
+<td>Vraća se u režim pretraživanja ako ste automatski ušli u režim fokusiranja</td>
+</tr>
+<tr>
+<td>Osvežava dokument režima pretraživanja</td>
+<td>NVDA+f5</td>
+<td>Ponavlja učitavanje trenutnog dokumenta(korisno ako određen sadržaj nedostaje u dokumentu. nije dostupno u programima Microsoft Word i Outlook.)</td>
+</tr>
+<tr>
+<td>Pronađi</td>
+<td>NVDA+control+f</td>
+<td>Otvara dijalog u kome možete da upišete tekst koji želite da pronađete u dokumentu. Pogledajte sekciju <a href="#SearchingForText" title="pretraga teksta">pretraga teksta</a> za dodatne informacije.</td>
+</tr>
+<tr>
+<td>Pronađi sledeće</td>
+<td>NVDA+f3</td>
+<td>Pretražuje sledeću pojavu teksta kojeg ste prethodno pretražili u dokumentu</td>
+</tr>
+<tr>
+<td>Pronađi prethodno</td>
+<td>NVDA+šift+f3</td>
+<td>Pretražuje prethodnu pojavu teksta kojeg ste prethodno pretražili u dokumentu</td>
+</tr>
+</tbody>
+</table>
+<h3 id="SingleLetterNavigation">Navigacija jednim slovom</h3>
+<p>Sledeći tasteri skaču na sledeći dostupan element, dok dodavanje šift tastera skače na prethodni element:</p>
+<ul>
+<li>h: Naslov</li>
+<li>l: Lista</li>
+<li>i: Stavka liste</li>
+<li>t: Tabela</li>
+<li>k: link</li>
+<li>n: Tekst koji nije link</li>
+<li>f: Polje unosa</li>
+<li>u: Neposećen link</li>
+<li>v: Posećen link</li>
+<li>e: Polje za unos teksta</li>
+<li>b: Dugme</li>
+<li>x: Izborno polje</li>
+<li>c: Izborni okvir</li>
+<li>r: radio dugme</li>
+<li>q: Citat</li>
+<li>s: separator</li>
+<li>m: Okvir</li>
+<li>g: Slika</li>
+<li>d: Region</li>
+<li>o: Umetnuti objekat (audio i video playeri, aplikacije, dijalozi, etc.)</li>
+<li>1 do 9: naslovi na nivoima od 1 do 9</li>
+<li>a: Napomena (komentar, revizija autora, i tako dalje.)</li>
+<li><code>p</code>: Pasus teksta</li>
+<li>w: Greška u pravopisu</li>
+</ul>
+<p>Da se pomerate na početak i kraj elemenata kao što su liste i tabele:</p>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri se na početak sadržaja</td>
+<td>Šift+zarez</td>
+<td>Premešta se na početak sadržaja(listi, tabela, i tako dalje.) Gde se nalazi kursor</td>
+</tr>
+<tr>
+<td>Pomeri se na kraj sadržaja</td>
+<td>Zarez</td>
+<td>Pomera se na kraj sadržaja(listi, tabela, i tako dalje.) Gde se nalazi kursor</td>
+</tr>
+</tbody>
+</table>
+<p>Da isključite i uključite navigaciju slovima za trenutni dokument, pritisnite NVDA+šift+razmak.</p>
+<h3 id="ElementsList">Lista elemenata</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lista elemenata u režimu pretraživanja</td>
+<td>NVDA+f7</td>
+<td>Prikazuje listu različitih vrsta elemenata u dokumentu</td>
+</tr>
+</tbody>
+</table>
+<h3 id="SearchingForText">Pretraga teksta</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pretraži tekst</td>
+<td>NVDA+kontrol+f</td>
+<td>Otvara dijalog pretrage</td>
+</tr>
+<tr>
+<td>Pronađi sledeće</td>
+<td>NVDA+f3</td>
+<td>Traži sledeće pojavljivanje trenutnog termina pretrage</td>
+</tr>
+<tr>
+<td>Pronađi prethodni</td>
+<td>NVDA+šift+f3</td>
+<td>Pretražuje prethodnu pojavu trenutnog termina pretrage</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ImbeddedObjects">Umetnuti objekti</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Premesti se na sadržan dokument režima pretraživanja</td>
+<td>NVDA+kontrol+razmak</td>
+<td>Prebacuje fokus van umetnutog objekta i vraća ga na dokument koji ga sadrži</td>
+</tr>
+</tbody>
+</table>
+<h3 id="NativeSelectionMode">Režim ugrađenog izbora</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Uključuje ili isključuje režim ugrađenog izbora</td>
+<td><code>NVDA+šift+f10</code></td>
+<td>Uključuje ili isključuje režim ugrađenog izbora</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ReadingMath">Čitanje matematičkog sadržaja</h2>
+<h3 id="InteractiveNavigation">Interaktivna navigacija</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interakcija sa matematičkim sadržajem</td>
+<td>NVDA+alt+m</td>
+<td>Počinje interakciju sa matematičkim sadržajem.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Braille">Brajevo pismo</h2>
+<h3 id="BrailleInput">Brajev unos</h3>
+<p>Pritiskanje tačke 7 briše zadnji upisan znak.
+Tačka 8 prevodi bilo koji brajev unos i pritiska enter.
+Pritiskanje tačke7 i 8 prevodi brajev unos, bez pritiskanja tastera enter.</p>
+<h2 id="Vision">Vid</h2>
+<h3 id="VisionScreenCurtain">Zatamnjivanje ekrana</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Menja stanje zatamnjivanja ekrana</td>
+<td><code>NVDA+kontrol+escape</code></td>
+<td>Omogućite kako bi ekran postao crn ili onemogućite da prikažete sadržaj ekrana. Ako se pritisne jednom, zatamnjivanje ekrana će biti omogućeno dok ponovo ne pokrenete NVDA. Ako se pritisne dva puta, zatamnjivanje ekrana je omogućeno dok ga ne onemogućite.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ContentRecognition">Prepoznavanje sadržaja</h2>
+<h3 id="Win10Ocr">Windows optičko prepoznavanje znakova</h3>
+<p>Da prepoznate tekst trenutnog navigacionog objekta koristeći Windows OCR, pritisnite NVDA+r.</p>
+<h2 id="ApplicationSpecificFeatures">Posebne karakteristike za aplikacije</h2>
+<h3 id="MicrosoftWord">Microsoft Word</h3>
+<h4 id="WordAutomaticColumnAndRowHeaderReading">Automatsko čitanje zaglavlja kolona i redova</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Set column headers</td>
+<td><code>NVDA+shift+c</code></td>
+<td>Pressing this once tells NVDA this is the first header cell in the row that contains column headers, which should be automatically announced when moving between columns below this row. Pressing twice will clear the setting.</td>
+</tr>
+<tr>
+<td>Postavi zaglavlja redova</td>
+<td><code>NVDA+šift+r</code></td>
+<td>Pritiskanje jednom govori NVDA-u da je ovo prva ćelija zaglavlja u koloni koja sadrži zaglavlja redova, koje treba automatski izgovoriti kada se krećete po redovima nakon ove kolone. Ako se pritisne dva puta podešavanje će biti obrisano.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="BrowseModeInMicrosoftWord">Režim pretraživanja u programu Microsoft Word</h4>
+<p>Da uključite ili isključite režim pretraživanja u programu Microsoft Word, pritisnite NVDA+razmak.</p>
+<h5 id="WordElementsList">Lista elemenata</h5>
+<p>Dok ste u režimu pretraživanja u programu Microsoft Word, možete pristupiti listi elemenata komandom NVDA+f7.</p>
+<h4 id="WordReportingComments">Prijavljivanje komentara</h4>
+<p>Za prijaljivanje bilo kojih komentara na trenutnoj poziciji kursora, pritisnite <code>NVDA+alt+c</code>.
+Ako se pritisne dva puta informacija će biti prikazana u poruci koja se može istražiti.</p>
+<h3 id="MicrosoftExcel">Microsoft Excel</h3>
+<h4 id="ExcelAutomaticColumnAndRowHeaderReading">Automatsko čitanje zaglavlja redova i kolona</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Postavi zaglavlja kolone</td>
+<td><code>NVDA+šift+c</code></td>
+<td>Pritiskanje jednom govori NVDA-u da je ovo prva ćelija zaglavlja u redu koji sadrži zaglavlja kolone, koja automatski treba izgovoriti kada se krećete po kolonama ispod ovog reda. Pritiskanje dva puta će obrisati ovo podešavanje.</td>
+</tr>
+<tr>
+<td>Postavi zaglavlja redova</td>
+<td><code>NVDA+šift+r</code></td>
+<td>Pritiskanje jednom govori NVDA-u da je ovo prva ćelija zaglavlja u koloni koja sadrži zaglavlja redova, koje treba automatski izgovoriti kada se krećete po redovima nakon ove kolone. Ako se pritisne dva puta podešavanje će biti obrisano.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ExcelElementsList">Lista elemenata</h4>
+<p>Da pristupite listi elemenata u programu Excel, pritisnite NVDA+f7.</p>
+<h4 id="ExcelReportingComments">Prijavljivanje napomena</h4>
+<p>Za prijaljivanje bilo kojih napomena na trenutno fokusiranoj ćeliji, pritisnite <code>NVDA+alt+c</code>.
+Ako se pritisne dva puta informacija će biti prikazana u poruci koja se može istražiti.
+U Microsoft 2016, 365 i novijim office verzijama, komentari u programu Microsoft Excel su preimenovani u "napomene".</p>
+<p>Da biste dodali ili uredili određenu napomenu, u fokusiranoj ćeliji, pritisnite šift+f2.</p>
+<h4 id="ExcelReadingProtectedCells">Čitanje zaštićenih ćelija</h4>
+<p>Da biste dozvolili pomeranje na zaključane ćelije, prebacite se u režim pretraživanja pritiskajući NVDA+space, a zatim koristite standardne Excel komande za kretanje kao što su strelice za pomeranje na sve ćelije na trenutnom radnom listu.</p>
+<h3 id="MicrosoftPowerPoint">Microsoft PowerPoint</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Uključi i isključi čitanje napomena za predavača</td>
+<td>kontrol+šift+s</td>
+<td>Kada ste u slajd šou koji je pokrenut, ova komanda prebacuje između čitanja napomena za predavača i čitanja slajdova. Ovo uključuje samo šta NVDA čita, a ne šta je prikazano na ekranu.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Foobar2000">foobar2000</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prijavi preostalo vreme</td>
+<td>Kontrol+šift+r</td>
+<td>Prijavljuje preostalo vreme zapisa koji se trenutno reprodukuje, ukoliko se nešto reprodukuje.</td>
+</tr>
+<tr>
+<td>Prijavi proteklo vreme</td>
+<td>Kontrol+Šift+e</td>
+<td>Prijavljuje proteklo vreme zapisa koji se trenutno reprodukuje, ako se neki zapis reprodukuje.</td>
+</tr>
+<tr>
+<td>Prijavi trajanje zapisa</td>
+<td>Kontrol+šift+t</td>
+<td>Prijavljuje ukupno trajanje zapisa koji se trenutno reprodukuje, ako se neki zapis reprodukuje.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="MirandaIM">Miranda IM</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prijavi jednu od poslednjih poruka</td>
+<td>NVDA+kontrol+1-4</td>
+<td>Prijavljuje jednu od poslednjih poruka, u zavisnosti od pritisnutog broja; Na primer NVDA+kontrol+2 čita drugu najnoviju poruku.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Poedit">Poedit</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prijavi napomene za prevodioce</td>
+<td><code>Kontrol+šift+a</code></td>
+<td>Prijavljuje sve napomene za prevodioce. Ako se pritisne dva puta, prikazuje napomene u režimu pretraživanja</td>
+</tr>
+<tr>
+<td>Prijavi komentar</td>
+<td><code>Kontrol+šift+c</code></td>
+<td>Prijavljuje bilo koji komentar u prozoru sa komentarima. Ako se pritisne dva puta, prikazuje komentar u režimu pretraživanja</td>
+</tr>
+<tr>
+<td>Prijavi stari izvorni tekst</td>
+<td><code>kontrol+šift+o</code></td>
+<td>Prijavljuje stari izvorni tekst, ako postoji. Ako se pritisne dva puta, prikazuje tekst u režimu pretraživanja</td>
+</tr>
+<tr>
+<td>Prijavi upozorenje za prevod</td>
+<td><code>kontrol+šift+w</code></td>
+<td>Prijavljuje upozorenje za prevod, ako postoji. Ako se pritisne dva puta, prikazuje upozorenje u režimu pretraživanja</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Kindle">Kindle za PC</h3>
+<p>Možete ručno preći na prethodnu stranicu tasterom page up ili na sledeću tasterom page down.</p>
+<h4 id="KindleTextSelection">Izbor teksta</h4>
+<p>Kada izaberete tekst, pritisnite aplikacioni taster ili šift+f10 kako biste prikazali opcije za rad sa odabranim tekstom.</p>
+<h3 id="Azardi">Azardi</h3>
+<p>Kada ste u prikazu tabele dodatih knjiga:</p>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enter</td>
+<td>enter</td>
+<td>Otvara izabranu knjigu.</td>
+</tr>
+<tr>
+<td>Kontekstni meni</td>
+<td>Aplikacioni taster</td>
+<td>Otvara kontekstni meni za izabranu knjigu.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="WinConsole">Windows konzola</h3>
+<p>Sledeće ugrađene prečice u Windows konzoli mogu biti korisne kada se <a href="#ReviewingText" title="pregleda tekst">pregleda tekst</a> uz NVDA u starijim verzijama Windows konzole:</p>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri gore</td>
+<td>kontrol+StrelicaGore</td>
+<td>Pomera prozor konzole gore, kako bi stariji tekst mogao da se pročita.</td>
+</tr>
+<tr>
+<td>Pomeri dole</td>
+<td>kontrol+StrelicaDole</td>
+<td>Pomera prozor konzole dole, kako bi noviji tekst mogao da se pročita.</td>
+</tr>
+<tr>
+<td>Pomeri na početak</td>
+<td>kontrol+home</td>
+<td>Pomera prozor konzole na početak teksta.</td>
+</tr>
+<tr>
+<td>Pomeri na kraj</td>
+<td>kontrol+end</td>
+<td>Pomera prozor konzole na kraj teksta.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ConfiguringNVDA">Podešavanje programa NVDA</h2>
+<p>Kada ste u dijalogu, pritiskanje tastera  <code>f1</code> otvara korisničko uputstvo na pasusu koji je vezan za fokusirano podešavanje ili trenutni dijalog.</p>
+<h3 id="NVDASettings">NVDA podešavanja</h3>
+<h4 id="GeneralSettings">Opšta</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Desktop komanda</th>
+<th>Laptop komanda</th>
+<th>opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenGeneralSettings">Otvori opšta podešavanja</td>
+<td><code>NVDA+kontrol+g</code></td>
+<td><code>NVDA+kontrol+g</code></td>
+<td>Opšta kategorija NVDA dijaloga podešavanja podešava celokupno ponašanje programa NVDA kao što je jezik interfejsa i da li treba da proverava ažuriranja.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="SpeechSettings">Podešavanja govora</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Desktop komanda</th>
+<th>Laptop komanda</th>
+<th>opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenSpeechSettings">Otvori podešavanja govora</td>
+<td><code>NVDA+kontrol+v</code></td>
+<td><code>NVDA+kontrol+v</code></td>
+<td>Kategorija govor dijaloga NVDA podešavanja sadrži opcije koje vam dozvoljavaju da promenite sintetizatora govora kao i karakteristike glasa izabranog sintetizatora.</td>
+</tr>
+<tr>
+<td id="SpeechSettingsSymbolLevel">Nivo izgovora znakova interpunkcije/simbola</td>
+<td>NVDA+p</td>
+<td>NVDA+p</td>
+<td>Ovo vam dozvoljava da izaberete količinu simbola koji trebaju biti izgovoreni kao reči.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="SelectSynthesizer">Izbor sintetizatora</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Desktop komanda</th>
+<th>Laptop komanda</th>
+<th>opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenSelectSynthesizer">Otvori dijalog za izbor sintetizatora</td>
+<td><code>NVDA+kontrol+s</code></td>
+<td><code>NVDA+kontrol+s</code></td>
+<td>Dijalog izbor sintetizatora, koji se može otvoriti aktiviranjem dugmeta promeni... u kategoriji govor NVDA podešavanja, dozvoljava vam da izaberete kojeg sintetizatora NVDA treba da koristi za izgovaranje.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="SynthSettingsRing">Krug sintetizatora</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Desktop komanda</th>
+<th>Laptop komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Premesti se na naredno podešavanje govora</td>
+<td>NVDA+kontrol+strelica desno</td>
+<td>NVDA+šift+kontrol+strelica desno</td>
+<td>Premešta se na naredno dostupno podešavanje govora, vraćajući se na prvo podešavanje nakon poslednjeg</td>
+</tr>
+<tr>
+<td>Premesti se na prethodno podešavanje govora</td>
+<td>NVDA+kontrol+strelica levo</td>
+<td>NVDA+šift+kontrol+strelica levo</td>
+<td>Premešta se na prethodno podešavanje govora, vraćajući se na poslednje podešavanje nakon prvog</td>
+</tr>
+<tr>
+<td>Povećaj trenutno podešavanje govora</td>
+<td>NVDA+kontrol+strelica gore</td>
+<td>NVDA+šift+kontrol+strelica gore</td>
+<td>Povećava trenutno podešavanje govora na kojem se nalazite. Na primer povećava brzinu, bira sledeći glas, pojačava ton</td>
+</tr>
+<tr>
+<td>Povećaj trenutno podešavanje govora većim skokom</td>
+<td><code>NVDA+kontrol+pageUp</code></td>
+<td><code>NVDA+šift+kontrol+pageUp</code></td>
+<td>Povećava vrednost trenutnog podešavanja govora na kojem se nalazite većim skokom. Na primer kada ste na podešavanju glasa, skočiće napred za dvadeset glasova; kada ste na podešavanjima klizača (brzina, visina, i tako dalje) povećaće vrednost za 20%</td>
+</tr>
+<tr>
+<td>Smanji trenutno podešavanje govora</td>
+<td>NVDA+kontrol+strelica dole</td>
+<td>NVDA+šift+kontrol+strelica dole</td>
+<td>Smanjuje trenutno podešavanje govora na kojem se nalazite. Na primer smanjuje brzinu, bira prethodni glas, smanjuje ton</td>
+</tr>
+<tr>
+<td>Smanji trenutno podešavanje govora većim skokom</td>
+<td><code>NVDA+kontrol+pageDown</code></td>
+<td><code>NVDA+šift+kontrol+pageDown</code></td>
+<td>Smanjuje vrednost trenutnog podešavanja govora na kojem se nalazite većim skokom. Na primer kada ste na podešavanju glasa, skočiće nazad za dvadeset glasova; kada ste na podešavanjima klizača (brzina, visina, i tako dalje) smanjiće vrednost za 20%</td>
+</tr>
+</tbody>
+</table>
+<h4 id="BrailleSettings">Brajeva podešavanja</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Desktop komanda</th>
+<th>Laptop komanda</th>
+<th>opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="BrailleMode">Brajev režim</td>
+<td><code>NVDA+alt+t</code></td>
+<td><code>NVDA+alt+t</code></td>
+<td>Ova opcija vam dozvoljava da izaberete brajev režim.</td>
+</tr>
+<tr>
+<td id="BrailleTether">Veži brajev red za</td>
+<td>NVDA+control+t</td>
+<td>NVDA+control+t</td>
+<td>Ova opcija vam dozvoljava da izaberete da li brajev red treba da prati sistemski fokus, navigacioni objekat/ pregledni kursor, ili oba.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="SelectBrailleDisplay">Izaberi brajev red</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Desktop komanda</th>
+<th>Laptop komanda</th>
+<th>opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenSelectBrailleDisplay">Otvori dijalog za izbor brajevog reda</td>
+<td><code>NVDA+kontrol+a</code></td>
+<td><code>NVDA+kontrol+a</code></td>
+<td>Dijalog za izbor brajevog reda, koji se može otvoriti aktiviranjem dugmeta promeni... u kategoriji brajeva podešavanja dijaloga NVDA podešavanja, dozvoljava vam da izaberete koji brajev red NVDA treba da koristi.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="AudioSettings">Zvuk</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Desktop komanda</th>
+<th>Laptop komanda</th>
+<th>opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenAudioSettings">Otvori podešavanja zvuka</td>
+<td><code>NVDA+kontrol+u</code></td>
+<td><code>NVDA+kontrol+u</code></td>
+<td>Kategorija zvuk u NVDA podešavanjima sadrži opcije koje vam dozvoljavaju da promenite neke opcije zvučnog izlaza.</td>
+</tr>
+<tr>
+<td id="SelectSynthesizerDuckingMode">Režim stišavanja pozadinskih zvukova</td>
+<td><code>NVDA+šift+d</code></td>
+<td><code>NVDA+šift+d</code></td>
+<td>Ova opcija vam dozvoljava da izaberete da li NVDA treba da smanjuje glasnoću drugih aplikacija u toku izgovaranja, ili sve vreme dok je NVDA pokrenut.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="SelectSoundSplitMode">Razdvajanje zvuka</h5>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Prečica</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kruži kroz režime razdvajanja zvuka</td>
+<td><code>NVDA+alt+s</code></td>
+<td>Kruži kroz režime razdvajanja zvuka.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="KeyboardSettings">Tastatura</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Desktop komanda</th>
+<th>Laptop komanda</th>
+<th>opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenKeyboardSettings">Otvori podešavanja tastature</td>
+<td><code>NVDA+kontrol+k</code></td>
+<td><code>NVDA+kontrol+k</code></td>
+<td>Kategorija tastatura u dijalogu NVDA podešavanja sadrži podešavanja koja kontrolišu kako se NVDA ponaša dok koristite vašu tastaturu i unosite znakove na njoj.</td>
+</tr>
+<tr>
+<td id="KeyboardSettingsSpeakTypedCharacters">Izgovaraj ukucane znakove</td>
+<td><code>NVDA+2</code></td>
+<td><code>NVDA+2</code></td>
+<td>Ova opcija kontroliše kada će NVDA izgovoriti znakove koje upisujete na tastaturi.</td>
+</tr>
+<tr>
+<td id="KeyboardSettingsSpeakTypedWords">Izgovaraj ukucane reči</td>
+<td><code>NVDA+3</code></td>
+<td><code>NVDA+3</code></td>
+<td>Ova opcija kontroliše kada će NVDA izgovoriti reči koje upisujete na tastaturi.</td>
+</tr>
+<tr>
+<td id="KeyboardSettingsSpeakCommandKeys">Izgovaraj komandne tastere</td>
+<td>NVDA+4</td>
+<td>NVDA+4</td>
+<td>Kada je omogućeno, NVDA će izgovoriti sve tastere koji nisu znakovi na tastaturi. Ovo uključuje kombinacije kao što su kontrol+ dodatno slovo.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="MouseSettings">Miš</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Desktop komanda</th>
+<th>Laptop komanda</th>
+<th>opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenMouseSettings">Otvori podešavanja miša</td>
+<td><code>NVDA+kontrol+m</code></td>
+<td><code>NVDA+kontrol+m</code></td>
+<td>Kategorija miš u dijalogu NVDA podešavanja dozvoljava programu NVDA da prati miš, reprodukuje zvučne koordinate miša i podešava druge opcije korišćenja miša.</td>
+</tr>
+<tr>
+<td id="MouseSettingsTracking">Omogući praćenje miša</td>
+<td>NVDA+m</td>
+<td>NVDA+m</td>
+<td>Kada je omogućeno, NVDA će izgovoriti tekst ispod miša, dok ga pomerate po ekranu. Ovo vam dozvoljava da pronađete stvari na ekranu, fizičkim pomeranjem miša, umesto da ih tražite navigaciom objekata.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ReviewCursorSettings">Pregledni kursor</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Desktop komanda</th>
+<th>Laptop komanda</th>
+<th>opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="ReviewCursorFollowFocus">Prati sistemski fokus</td>
+<td>NVDA+7</td>
+<td>NVDA+7</td>
+<td>Kada je omogućeno, pregledni kursor će uvek biti postavljen na objekat sistemskog fokusa kada se fokus promeni.</td>
+</tr>
+<tr>
+<td id="ReviewCursorFollowCaret">Prati sistemski kursor</td>
+<td>NVDA+6</td>
+<td>NVDA+6</td>
+<td>Kada je omogućeno, pregledni kursor će uvek biti postavljen na poziciju sistemskog kursora kada kursor promeni poziciju.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ObjectPresentationSettings">Predstavljanje objekata</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Desktop komanda</th>
+<th>Laptop komanda</th>
+<th>opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenObjectPresentationSettings">Otvori podešavanja predstavljanja objekata</td>
+<td><code>NVDA+kontrol+o</code></td>
+<td><code>NVDA+kontrol+o</code></td>
+<td>Kategorija predstavljanje objekata u dijalogu NVDA podešavanja se koristi za podešavanje koliko informacija će NVDA prijavljivati o kontrolama kao što su opis, informacije o poziciji i tako dalje.</td>
+</tr>
+<tr>
+<td id="ObjectPresentationProgressBarOutput">Informacije o traci napredovanja</td>
+<td>NVDA+u</td>
+<td>NVDA+u</td>
+<td>Ova opcija kontroliše kako NVDA prijavljuje ažuriranja trake napredovanja.</td>
+</tr>
+<tr>
+<td id="ObjectPresentationReportDynamicContent">Obaveštavaj o dinamičkim promenama sadržaja</td>
+<td>NVDA+5</td>
+<td>NVDA+5</td>
+<td>Uključuje i isključuje izgovor novog sadržaja a posebno objekata kao što su terminali i istorije ćaskanja.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="BrowseModeSettings">Režim pretraživanja</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Desktop komanda</th>
+<th>Laptop komanda</th>
+<th>opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenBrowseModeSettings">Otvori podešavanja režima pretraživanja</td>
+<td><code>NVDA+kontrol+b</code></td>
+<td><code>NVDA+kontrol+b</code></td>
+<td>Kategorija režim pretraživanja u dijalogu NVDA podešavanja se koristi za podešavanje ponašanja programa NVDA kada čitate i krećete se kroz veće dokumente kao što su Web stranice.</td>
+</tr>
+<tr>
+<td id="BrowseModeSettingsScreenLayout">Koristi izgled ekrana</td>
+<td>NVDA+v</td>
+<td>NVDA+v</td>
+<td>Ova opcija vam dozvoljava da odredite da li će režim pretraživanja staviti klikabilne elemente (linkove, dugmad i polja za unos) na posebnom redu, ili da ostanu u tekstu kako su vizuelno prikazani.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="DocumentFormattingSettings">Formatiranje dokumenta</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Desktop komanda</th>
+<th>Laptop komanda</th>
+<th>opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="OpenDocumentFormattingSettings">Otvori  podešavanja formatiranja dokumenta</td>
+<td><code>NVDA+kontrol+d</code></td>
+<td><code>NVDA+kontrol+d</code></td>
+<td>Većina opcija u ovoj kategoriji vam dozvoljava da izaberete informacije koje trebaju biti prijavljivane dok pomerate kursor kroz dokument.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="AdvancedSettings">Napredna podešavanja</h4>
+<h5 id="Annotations">Napomene</h5>
+<p>Da biste prijavili kratak opis svih detalja na poziciji kursora, pritisnite NVDA+d.</p>
+<h3 id="SavingAndReloading">Чуванје и поновно учитаванје подешаванја</h3>
+<table>
+<thead>
+<tr>
+<th>Име</th>
+<th>Desktop команда</th>
+<th>Laptop команда</th>
+<th>Опис</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sačuvaj podešavanja</td>
+<td><code>NVDA+kontrol+c</code></td>
+<td><code>NVDA+kontrol+c</code></td>
+<td>Čuva vaša trenutna podešavanja kako ne bi bila izgubljena kada zatvorite NVDA</td>
+</tr>
+<tr>
+<td>Vrati podešavanja</td>
+<td><code>NVDA+kontrol+r</code></td>
+<td><code>NVDA+kontrol+r</code></td>
+<td>Pritiskanje jednom vraća podešavanja na ona koja ste poslednji put sačuvali. Pritiskanje tri puta ih vraća na fabrička.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ConfigurationProfiles">Профили подешаванја</h3>
+<h4 id="ProfilesBasicManagement">Основно управлјанје</h4>
+<ul>
+<li>NVDA+контрол+p: Прикажи дијалог за профиле подешаванја.</li>
+</ul>
+<h2 id="RemoteAccess">Daljinski pristup</h2>
+<h3 id="RemoteAccessGestures">Kratak opis komandi daljinskog pristupa</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Uspostavi ili prekini daljinsku vezu</td>
+<td><code>NVDA+alt+r</code></td>
+<td>Uspostavlja novu vezu daljinskog pristupa ili, ako je veza već uspostavljena, prekida je.</td>
+</tr>
+<tr>
+<td>Prebaci kontrolisanje</td>
+<td><code>NVDA+alt+tab</code></td>
+<td>Prebacuje se između kontrolisanja udaljenog i lokalnog računara.</td>
+</tr>
+<tr>
+<td>Poveži se</td>
+<td>Nema komande</td>
+<td>Započinje novu vezu daljinskog pristupa. Nedostupno u <a href="#SecureMode" title="bezbednom režimu">bezbednom režimu</a>.</td>
+</tr>
+<tr>
+<td>Kopiraj link</td>
+<td>Nema komande</td>
+<td>Kopira link daljinske veze u vašu privremenu memoriju.</td>
+</tr>
+<tr>
+<td>Prekini vezu</td>
+<td>Nema komadne</td>
+<td>Prekida postojeću vezu daljinskog pristupa.</td>
+</tr>
+<tr>
+<td>Isključi govor udaljenog računara</td>
+<td>Nema komande</td>
+<td>Isključuje ili uključuje dolazni govor sa udaljenog računara.</td>
+</tr>
+<tr>
+<td>Pošalji privremenu memoriju</td>
+<td>Nema komande</td>
+<td>Šalje sadržaj privremene memorije udaljenom računaru.</td>
+</tr>
+<tr>
+<td>Pošalji <code>kontrol+alt+delete</code></td>
+<td>Nema</td>
+<td>Šalje <code>kontrol+alt+delete</code> kontrolisanom računaru.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ExtraTools">Dodatni alati</h2>
+<h3 id="LogViewer">Pregled dnevnika</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Otvori pregled dnevnika</td>
+<td><code>NVDA+f1</code></td>
+<td>Otvara pregled dnevnika i prikazuje informacije za programere o trenutnom navigacionom objektu.</td>
+</tr>
+<tr>
+<td>Kopiraj deo dnevnika u privremenu memoriju</td>
+<td><code>NVDA+kontrol+šift+f1</code></td>
+<td>Kada se ova komanda jednom pritisne, postavlja početno mesto za sadržaj dnevnika koji treba sačuvati. Kada se pritisne drugi put, kopira sadržaj dnevnika od početne tačke u privremenu memoriju.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ReloadPlugins">Ponovo učitaj dodatke</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ponovo učitaj dodatke</td>
+<td><code>NVDA+kontrol+f3</code></td>
+<td>Učitava NVDA globalne dodatke i module za aplikacije.</td>
+</tr>
+<tr>
+<td>Prijavi učitani modul aplikacije i izvršnu datoteku</td>
+<td><code>NVDA+kontrol+f1</code></td>
+<td>Prijavi ime modula aplikacije, ako postoji i ime izvršne datoteke aplikacije koja je fokusirana.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="SupportedBrailleDisplays">Podržani brajevi redovi</h2>
+<h3 id="FreedomScientificFocus">Brajevi redovi Freedom Scientific Focus/PAC Mate</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prebaci brajev red na prethodni red</td>
+<td>PrviTasterZaPomeranje1 (Prva ćelija na brajevom redu)</td>
+</tr>
+<tr>
+<td>Prebaci brajev red napred</td>
+<td>toprouting20/40/80 (zadnja ćelija na brajevom redu)</td>
+</tr>
+<tr>
+<td>Prebaci brajev red nazad</td>
+<td>leviAdvanceBar</td>
+</tr>
+<tr>
+<td>Prebaci brajev red napred</td>
+<td>desniAdvanceBar</td>
+</tr>
+<tr>
+<td>Prebacuj se između usmeravanja brajevog pregleda</td>
+<td>leviGDFTaster+desniGDFTaster</td>
+</tr>
+<tr>
+<td>Uključi ili isključi akciju levog wiz točka</td>
+<td>leviWizPritisakWheel</td>
+</tr>
+<tr>
+<td>Prebaci se nazad koristeći levi točak</td>
+<td>LeviWizWheelGore</td>
+</tr>
+<tr>
+<td>Prebaci se napred koristeći levi točak</td>
+<td>leviWizWheelDole</td>
+</tr>
+<tr>
+<td>Uključi ili isključi desni wizwheel taster</td>
+<td>desniWizPritisakWheel</td>
+</tr>
+<tr>
+<td>Premesti se nazad koristeći desni točak</td>
+<td>DesniWizWheelGore</td>
+</tr>
+<tr>
+<td>Premesti se napred koristeći desni točak</td>
+<td>desniWizWheelDole</td>
+</tr>
+<tr>
+<td>Prebaci se na brajevu ćeliju</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>šift+tab</td>
+<td>BrajevRazmak+tačka1+tačka2</td>
+</tr>
+<tr>
+<td>tab</td>
+<td>BrajevRazmak+tačka4+tačka5</td>
+</tr>
+<tr>
+<td>strelicaGore</td>
+<td>BrajevRazmak+tačka1</td>
+</tr>
+<tr>
+<td>strelicaDole</td>
+<td>BrajevRazmak+tačka4</td>
+</tr>
+<tr>
+<td>kontrol+strelicaLevo</td>
+<td>BrajevRazmak+tačka3</td>
+</tr>
+<tr>
+<td>kontrol+strelicaDesno</td>
+<td>BrajevRazmak+tačka5</td>
+</tr>
+<tr>
+<td>strelicaLevo</td>
+<td>BrajevRazmak+tačka3</td>
+</tr>
+<tr>
+<td>strelicaDesno</td>
+<td>BrajevRazmak+tačka6</td>
+</tr>
+<tr>
+<td>home</td>
+<td>BrajevRazmak+tačka1+tačka3</td>
+</tr>
+<tr>
+<td>end</td>
+<td>BrajevRazmak+tačka4+tačka6</td>
+</tr>
+<tr>
+<td>kontrol+home</td>
+<td>BrajevRazmak+tačka1+tačka2+tačka3</td>
+</tr>
+<tr>
+<td>kontrol+end</td>
+<td>BrajevRazmak+tačka4+tačka5+tačka6</td>
+</tr>
+<tr>
+<td>alt</td>
+<td>BrajevRazmak+tačka1+tačka3+tačka4</td>
+</tr>
+<tr>
+<td>alt+tab</td>
+<td>BrajevRazmak+tačka2+tačka3+tačka4+tačka5</td>
+</tr>
+<tr>
+<td>alt+šift+tab taster</td>
+<td>BrajevRazmak+tačka1+tačka2+tačka5+tačka6</td>
+</tr>
+<tr>
+<td>windows+tab taster</td>
+<td>BrajevRazmak+tačka2+tačka3+tačka4</td>
+</tr>
+<tr>
+<td>escape</td>
+<td>BrajevRazmak+tačka1+tačka5</td>
+</tr>
+<tr>
+<td>windows taster</td>
+<td>BrajevRazmak+tačka2+tačka4+tačka5+tačka6</td>
+</tr>
+<tr>
+<td>razmak</td>
+<td>BrajevRazmak</td>
+</tr>
+<tr>
+<td>Uključuje i isključuje taster kontrol</td>
+<td>BrajevRazmak+Tačka3+tačka8</td>
+</tr>
+<tr>
+<td>Uključuje i isključuje taster alt</td>
+<td>BrajevRazmak+tačka6+tačka8</td>
+</tr>
+<tr>
+<td>Uključuje i isključuje taster Windows</td>
+<td>BrajevRazmak+tačka4+tačka8</td>
+</tr>
+<tr>
+<td>Uključuje i isključuje taster NVDA</td>
+<td>BrajevRazmak+tačka5+tačka8</td>
+</tr>
+<tr>
+<td>Uključuje i isključuje taster šift</td>
+<td>BrajevRazmak+tačka7+tačka8</td>
+</tr>
+<tr>
+<td>Uključuje i isključuje tastere kontrol i šift</td>
+<td>BrajevRazmak+tačka3+tačka7+tačka8</td>
+</tr>
+<tr>
+<td>Uključuje i isključuje tastere alt i šift</td>
+<td>BrajevRazmak+tačka6+tačka7+tačka8</td>
+</tr>
+<tr>
+<td>Uključuje i isključuje tastere Windows i šift</td>
+<td>BrajevRazmak+tačka4+tačka7+tačka8</td>
+</tr>
+<tr>
+<td>Uključuje i isključuje tastere NVDA i šift</td>
+<td>BrajevRazmak+tačka5+tačka7+tačka8</td>
+</tr>
+<tr>
+<td>Uključuje i isključuje tastere kontrol i alt</td>
+<td>BrajevRazmak+tačka3+tačka6+tačka8</td>
+</tr>
+<tr>
+<td>Uključuje i isključuje tastere kontrol, alt i šift</td>
+<td>BrajevRazmak+tačka3+tačka6+tačka7+tačka8</td>
+</tr>
+<tr>
+<td>windows+d (umanji sve aplikacije)</td>
+<td>BrajevRazmak+tačka1+tačka2+tačka3+tačka4+tačka5+tačka6</td>
+</tr>
+<tr>
+<td>Pročitaj trenutni red</td>
+<td>BrajevRazmak+tačka1+tačka4</td>
+</tr>
+<tr>
+<td>NVDA meni</td>
+<td>BrajevRazmak+tačka1+tačka3+tačka4+tačka5</td>
+</tr>
+</tbody>
+</table>
+<p>Za novije modele fokus brajevih redova koji na sebi imaju rocker bar tastere (focus 40, focus 80 i focus blue):</p>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Premesti brajev red na prethodni red</td>
+<td>leviRockerBarGore, desniRockerBarGore</td>
+</tr>
+<tr>
+<td>Premesti brajev red na sledeći red</td>
+<td>leviRockerBarDole, desniRockerBarDole</td>
+</tr>
+</tbody>
+</table>
+<p>Samo za Focus 80:</p>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri brajev red nazad na prethodni red</td>
+<td>leviBumperBarGore, desniBumperBarGore</td>
+</tr>
+<tr>
+<td>Prebaci brajev red za red u napred</td>
+<td>leviBumperBarDole, desniBumperBarDole</td>
+</tr>
+</tbody>
+</table>
+<h3 id="OptelecALVA">Optelec ALVA 6 serije/pretvarač protokola</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri brajev red za red unazad</td>
+<td>t1, etouch1</td>
+</tr>
+<tr>
+<td>Premesti brajev red na prethodni red</td>
+<td>t2</td>
+</tr>
+<tr>
+<td>Premesti na trenutni fokus</td>
+<td>t3</td>
+</tr>
+<tr>
+<td>Premesti brajev red na sledeći red</td>
+<td>t4</td>
+</tr>
+<tr>
+<td>Pomeri brajev red napred za red</td>
+<td>t5, etouch 3</td>
+</tr>
+<tr>
+<td>Prijavi formatiranje teksta ispod brajeve ćelije</td>
+<td>secondary routing</td>
+</tr>
+<tr>
+<td>Prebaci na brajevu ćeliju</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Uključuje i isključuje HID simulaciju tastature</td>
+<td>t1+spEnter</td>
+</tr>
+<tr>
+<td>Premesti se na najgornji red u pregledu</td>
+<td>t1+t2</td>
+</tr>
+<tr>
+<td>Premesti se na poslednji red u pregledu</td>
+<td>t4+t5</td>
+</tr>
+<tr>
+<td>Prebaci brajev vezan za</td>
+<td>t1+t3</td>
+</tr>
+<tr>
+<td>Pročitaj naslov</td>
+<td>etouch2</td>
+</tr>
+<tr>
+<td>Pročitaj traku statusa</td>
+<td>etouch4</td>
+</tr>
+<tr>
+<td>šift+tab</td>
+<td>sp1</td>
+</tr>
+<tr>
+<td>alt</td>
+<td>sp2, alt</td>
+</tr>
+<tr>
+<td>escape</td>
+<td>sp3</td>
+</tr>
+<tr>
+<td>tab</td>
+<td>sp4</td>
+</tr>
+<tr>
+<td>strelicaGore</td>
+<td>spUp</td>
+</tr>
+<tr>
+<td>strelicaDole</td>
+<td>spDown</td>
+</tr>
+<tr>
+<td>strelicaLevo</td>
+<td>spLeft</td>
+</tr>
+<tr>
+<td>strelicaDesno</td>
+<td>spRight</td>
+</tr>
+<tr>
+<td>enter</td>
+<td>spEnter, enter, enter</td>
+</tr>
+<tr>
+<td>Izgovori datum i vreme</td>
+<td>sp2+sp3</td>
+</tr>
+<tr>
+<td>NVDA meni</td>
+<td>sp1+sp3</td>
+</tr>
+<tr>
+<td>windows+d (umanji sve aplikacije)</td>
+<td>sp1+sp4</td>
+</tr>
+<tr>
+<td>windows+b taster (fokusiranje sistemske trake)</td>
+<td>sp3+sp4</td>
+</tr>
+<tr>
+<td>windows taster</td>
+<td>sp1+sp2, windows</td>
+</tr>
+<tr>
+<td>alt+tab</td>
+<td>sp2+sp4</td>
+</tr>
+<tr>
+<td>ctrl+home</td>
+<td>t3+spUp</td>
+</tr>
+<tr>
+<td>control+end</td>
+<td>t3+spDown</td>
+</tr>
+<tr>
+<td>home</td>
+<td>t3+spLeft</td>
+</tr>
+<tr>
+<td>end</td>
+<td>t3+spRight</td>
+</tr>
+<tr>
+<td>kontrol</td>
+<td>Kontrol</td>
+</tr>
+</tbody>
+</table>
+<h3 id="HandyTech">Handy Tech brajevi redovi</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri brajev red za red unazad</td>
+<td>levo, gore, B3</td>
+</tr>
+<tr>
+<td>Pomeri brajev red za red napred</td>
+<td>desno, dole, B6</td>
+</tr>
+<tr>
+<td>Premesti brajev red na prethodni red</td>
+<td>b4</td>
+</tr>
+<tr>
+<td>Premesti brajev red na sledeći red</td>
+<td>b5</td>
+</tr>
+<tr>
+<td>Prebaci se na brajevu ćeliju</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>šift+tab</td>
+<td>esc, levi trostruki akcijski taster gore+dole</td>
+</tr>
+<tr>
+<td>alt</td>
+<td>b2+b4+b5</td>
+</tr>
+<tr>
+<td>escape</td>
+<td>b4+b6</td>
+</tr>
+<tr>
+<td>tab</td>
+<td>enter, desni trostruki akcijski taster gore+dole</td>
+</tr>
+<tr>
+<td>enter</td>
+<td>esc+enter, Levi+desni trostruki akcijski taster gore+dole, AkcijaDžojstika</td>
+</tr>
+<tr>
+<td>strelicaGore</td>
+<td>Džojstik gore</td>
+</tr>
+<tr>
+<td>strelicaDole</td>
+<td>Džojstik dole</td>
+</tr>
+<tr>
+<td>strelicaLevo</td>
+<td>Džojstik levo</td>
+</tr>
+<tr>
+<td>strelicaDesno</td>
+<td>Džojstik desno</td>
+</tr>
+<tr>
+<td>NVDA meni</td>
+<td>b2+b4+b5+b6</td>
+</tr>
+<tr>
+<td>Menjanje vezivanja brajevog reda</td>
+<td>b2</td>
+</tr>
+<tr>
+<td>Uključuje ili isključuje brajev kursor</td>
+<td>b1</td>
+</tr>
+<tr>
+<td>Menjanje predstavljanja sadržaja fokusa</td>
+<td>b7</td>
+</tr>
+<tr>
+<td>Uključivanje i isključivanje brajevog unosa</td>
+<td>Razmak+b1+b3+b4 (Razmak +veliko B)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="MDVLilli">MDV Lilli</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri brajev red za red unazad</td>
+<td>LF</td>
+</tr>
+<tr>
+<td>Pomeri brajev red za red napred</td>
+<td>RG</td>
+</tr>
+<tr>
+<td>Pomeri brajev red na prethodni red</td>
+<td>UP</td>
+</tr>
+<tr>
+<td>Pomeri brajev red na sledeći red</td>
+<td>DN</td>
+</tr>
+<tr>
+<td>Pomeri se na brajevu ćeliju</td>
+<td>route</td>
+</tr>
+<tr>
+<td>šift+tab</td>
+<td>SLF</td>
+</tr>
+<tr>
+<td>tab</td>
+<td>SRG</td>
+</tr>
+<tr>
+<td>alt+tab</td>
+<td>SDN</td>
+</tr>
+<tr>
+<td>alt+šift+tab</td>
+<td>SUP</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Baum">Baum/Humanware/APH/Orbit Brajevi Redovi</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri brajev red unazad</td>
+<td><code>d2</code></td>
+</tr>
+<tr>
+<td>Pomeri brajev red napred</td>
+<td><code>d5</code></td>
+</tr>
+<tr>
+<td>Pomeri brajev red na prethodni red</td>
+<td><code>d1</code></td>
+</tr>
+<tr>
+<td>Pomeri brajev red na sledeći red</td>
+<td><code>d3</code></td>
+</tr>
+<tr>
+<td>Pomeri se na brajevu ćeliju</td>
+<td><code>routing</code></td>
+</tr>
+<tr>
+<td><code>šift+tab</code></td>
+<td><code>Razmak+tačka1+tačka3</code></td>
+</tr>
+<tr>
+<td><code>tab</code></td>
+<td><code>Razmak+tačka4+tačka6</code></td>
+</tr>
+<tr>
+<td><code>alt</code></td>
+<td><code>Razmak+tačka1+tačka3+tačka4</code> (<code>razmak+M</code>)</td>
+</tr>
+<tr>
+<td><code>escape</code></td>
+<td><code>Razmak+tačka1+tačka5</code> (<code>razmak+e</code>)</td>
+</tr>
+<tr>
+<td><code>windows</code></td>
+<td><code>Razmak+tačka3+tačka4</code></td>
+</tr>
+<tr>
+<td><code>alt+tab</code></td>
+<td><code>Razmak+tačka2+tačka3+tačka4+tačka5</code> (<code>razmak+t</code>)</td>
+</tr>
+<tr>
+<td>NVDA meni</td>
+<td><code>razmak+tačka1+tačka3+tačka4+tačka5</code> (<code>razmak+n</code>)</td>
+</tr>
+<tr>
+<td><code>windows+d</code> (umanji sve aplikacije)</td>
+<td><code>Razmak+tačka1+tačka4+tačka5</code> (<code>razmak+d</code>)</td>
+</tr>
+<tr>
+<td>Izgovori sve</td>
+<td><code>Razmak+tačka1+tačka2+tačka3+tačka4+tačka5+tačka6</code></td>
+</tr>
+</tbody>
+</table>
+<p>Za brajeve redove koji imaju džojstik:</p>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>strelicaGore</td>
+<td>gore</td>
+</tr>
+<tr>
+<td>strelicaDole</td>
+<td>dole</td>
+</tr>
+<tr>
+<td>strelicaLevo</td>
+<td>levo</td>
+</tr>
+<tr>
+<td>strelicaDesno</td>
+<td>desno</td>
+</tr>
+<tr>
+<td>enter</td>
+<td>odabir</td>
+</tr>
+</tbody>
+</table>
+<h3 id="HedoProfiLine">hedo ProfiLine USB</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri brajev red unazad</td>
+<td>K1</td>
+</tr>
+<tr>
+<td>Pomeri brajev red napred</td>
+<td>K3</td>
+</tr>
+<tr>
+<td>Pomeri brajev red na prethodni red</td>
+<td>B2</td>
+</tr>
+<tr>
+<td>Pomeri brajev red na sledeći red</td>
+<td>B5</td>
+</tr>
+<tr>
+<td>Premesti se na brajevu ćeliju</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Prebacuj brajev vezan za</td>
+<td>K2</td>
+</tr>
+<tr>
+<td>Izgovori sve</td>
+<td>B6</td>
+</tr>
+</tbody>
+</table>
+<h3 id="HedoMobilLine">hedo MobilLine USB</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri brajev red unazad</td>
+<td>K1</td>
+</tr>
+<tr>
+<td>Pomeri brajev red napred</td>
+<td>K3</td>
+</tr>
+<tr>
+<td>Pomeri brajev red na prethodni red</td>
+<td>B2</td>
+</tr>
+<tr>
+<td>Pomeri brajev red na sledeći red</td>
+<td>B5</td>
+</tr>
+<tr>
+<td>Pomeri se na brajevu ćeliju</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Prebacuj se između brajev vezan na</td>
+<td>K2</td>
+</tr>
+<tr>
+<td>Izgovori sve</td>
+<td>B6</td>
+</tr>
+</tbody>
+</table>
+<h3 id="HumanWareBrailliant">HumanWare Brailliant BI/B serije / BrailleNote Touch</h3>
+<h4 id="HumanWareBrailliantKeyAssignmentForAllModels">Komande za sve modele</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri brajev red unazad</td>
+<td>Levo</td>
+</tr>
+<tr>
+<td>Pomeri brajev red napred</td>
+<td>desno</td>
+</tr>
+<tr>
+<td>Premesti brajev red na prethodni red</td>
+<td>gore</td>
+</tr>
+<tr>
+<td>Premesti brajev red na sledeći red</td>
+<td>dole</td>
+</tr>
+<tr>
+<td>Premesti se na brajevu ćeliju</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Prebacuj brajev vezan za</td>
+<td>gore+dole</td>
+</tr>
+<tr>
+<td>strelicaGore</td>
+<td>razmak+tačka1</td>
+</tr>
+<tr>
+<td>strelicaDole</td>
+<td>razmak+tačka4</td>
+</tr>
+<tr>
+<td>strelicaLevo</td>
+<td>razmak+tačka3</td>
+</tr>
+<tr>
+<td>strelicaDesno</td>
+<td>razmak+tačka6</td>
+</tr>
+<tr>
+<td>šift+tab</td>
+<td>razmak+tačka1+tačka3</td>
+</tr>
+<tr>
+<td>tab</td>
+<td>razmak+tačka4+tačka6</td>
+</tr>
+<tr>
+<td>alt</td>
+<td>razmak+tačka1+tačka3+tačka4 (razmak+m)</td>
+</tr>
+<tr>
+<td>escape</td>
+<td>razmak+tačka1+tačka5 (razmak+e)</td>
+</tr>
+<tr>
+<td>enter</td>
+<td>tačka8</td>
+</tr>
+<tr>
+<td>windows taster</td>
+<td>razmak+tačka3+tačka4</td>
+</tr>
+<tr>
+<td>alt+tab</td>
+<td>razmak+tačka2+tačka3+tačka4+tačka5 (razmak+t)</td>
+</tr>
+<tr>
+<td>NVDA meni</td>
+<td>Razmak+tačka1+tačka3+tačka4+tačka5 (razmak+n)</td>
+</tr>
+<tr>
+<td>windows+d (Minimizuj sve aplikacije)</td>
+<td>razmak+tačka1+tačka4+tačka5 (razmak+d)</td>
+</tr>
+<tr>
+<td>Izgovori sve</td>
+<td>razmak+tačka1+tačka2+tačka3+tačka4+tačka5+tačka6</td>
+</tr>
+</tbody>
+</table>
+<h4 id="HumanWareBrailliantKeyAssignmentForBI32BI40AndB80">Komande za Brailliant BI 32, BI 40 i B 80</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NVDA meni</td>
+<td>c1+c3+c4+c5 (komanda n)</td>
+</tr>
+<tr>
+<td>windows+d (minimizuj sve aplikacije)</td>
+<td>c1+c4+c5 (komanda d)</td>
+</tr>
+<tr>
+<td>Izgovori sve</td>
+<td>c1+c2+c3+c4+c5+c6</td>
+</tr>
+</tbody>
+</table>
+<h4 id="HumanWareBrailliantKeyAssignmentForBI14">Komande za Brailliant BI 14</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>strelica gore</td>
+<td>Džojstik gore</td>
+</tr>
+<tr>
+<td>strelica dole</td>
+<td>džojstik dole</td>
+</tr>
+<tr>
+<td>strelica levo</td>
+<td>Džojstik levo</td>
+</tr>
+<tr>
+<td>strelica desno</td>
+<td>Džojstik desno</td>
+</tr>
+<tr>
+<td>enter</td>
+<td>Akcija džojstika</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Hims">HIMS Braille Sense/Braille EDGE / smart beetle /Sync BrailleSerije</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Premesti se na brajevu ćeliju</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Pomeri brajev red nazad</td>
+<td>leftSideScrollUp, rightSideScrollUp, leftSideScroll</td>
+</tr>
+<tr>
+<td>Pomeri brajev red napred</td>
+<td>leftSideScrollDown, rightSideScrollDown, rightSideScroll</td>
+</tr>
+<tr>
+<td>Pomeri brajev red na prethodni red</td>
+<td>leftSideScrollUp+rightSideScrollUp</td>
+</tr>
+<tr>
+<td>Pomeri brajev red na sledeći red</td>
+<td>leftSideScrollDown+rightSideScrollDown</td>
+</tr>
+<tr>
+<td>Premesti se na sledeći red u pregledu</td>
+<td>rightSideUpArrow</td>
+</tr>
+<tr>
+<td>Premesti se na sledeći red u pregledu</td>
+<td>rightSideDownArrow</td>
+</tr>
+<tr>
+<td>Premesti se na prethodni znak u pregledu</td>
+<td>rightSideLeftArrow</td>
+</tr>
+<tr>
+<td>Premesti se na sledeći znak u pregledu</td>
+<td>rightSideRightArrow</td>
+</tr>
+<tr>
+<td>Premesti se na trenutni fokus</td>
+<td>leftSideScrollUp+leftSideScrollDown, rightSideScrollUp+rightSideScrollDown, leftSideScroll+rightSideScroll</td>
+</tr>
+<tr>
+<td>kontrol taster</td>
+<td>smartbeetle:f1, brailleedge:f3</td>
+</tr>
+<tr>
+<td>windows taster</td>
+<td>f7, smartbeetle:f2</td>
+</tr>
+<tr>
+<td>alt taster</td>
+<td>Tačka1+Tačka3+Tačka4+razmak, f2, smartbeetle:f3, brailleedge:f4</td>
+</tr>
+<tr>
+<td>šift taster</td>
+<td>f5</td>
+</tr>
+<tr>
+<td>insert taster</td>
+<td>Tačka2+Tačka4+Razmak, f6</td>
+</tr>
+<tr>
+<td>aplikacijski Taster</td>
+<td>Tačka1+Tačka2+Tačka3+Tačka4+razmak, f8</td>
+</tr>
+<tr>
+<td>Taster velika slova</td>
+<td>Tačka1+tačka3+tačka6+razmak</td>
+</tr>
+<tr>
+<td>tab taster</td>
+<td>tačka4+tačka5+razmak, f3, brailleedge:f2</td>
+</tr>
+<tr>
+<td>šift+alt+tab taster</td>
+<td>f2+f3+f1</td>
+</tr>
+<tr>
+<td>alt+tab taster</td>
+<td>f2+f3</td>
+</tr>
+<tr>
+<td>šift+tab</td>
+<td>Tačka1+tačka2+razmak</td>
+</tr>
+<tr>
+<td>end taster</td>
+<td>Tačka4+tačka6+razmak</td>
+</tr>
+<tr>
+<td>kontrol+end taster</td>
+<td>tačka4+tačka5+tačka6+razmak</td>
+</tr>
+<tr>
+<td>home taster</td>
+<td>tačka1+tačka3+razmak, smartbeetle:f4</td>
+</tr>
+<tr>
+<td>kontrol+home</td>
+<td>Tačka1+tačka2+tačka3+razmak</td>
+</tr>
+<tr>
+<td>alt+f4 taster</td>
+<td>tačka1+tačka3+tačka5+tačka6+razmak</td>
+</tr>
+<tr>
+<td>strelicaLevo taster</td>
+<td>tačka3+razmak, leftSideLeftArrow</td>
+</tr>
+<tr>
+<td>kontrol+šift+StrelicaLevo taster</td>
+<td>tačka2+tačka8+razmak+f1</td>
+</tr>
+<tr>
+<td>kontrol+strelicaLevo</td>
+<td>Tačka2+razmak</td>
+</tr>
+<tr>
+<td>šift+alt+StrelicaLevo taster</td>
+<td>tačka2+tačka7+f1</td>
+</tr>
+<tr>
+<td><code>alt+strelicaLevo</code></td>
+<td><code>tačka2+tačka7+razmak</code></td>
+</tr>
+<tr>
+<td>strelicaDesno taster</td>
+<td>tačka6+razmak, leftSideRightArrow</td>
+</tr>
+<tr>
+<td>kontrol+šift+StrelicaDesno taster</td>
+<td>tačka5+tačka8+razmak+f1</td>
+</tr>
+<tr>
+<td>kontrol+strelicaDesno</td>
+<td>Tačka5+razmak</td>
+</tr>
+<tr>
+<td>šift+alt+StrelicaDesno taster</td>
+<td>tačka5+tačka7+f1</td>
+</tr>
+<tr>
+<td><code>alt+strelicaDesno</code></td>
+<td><code>tačka5+tačka7+razmak</code></td>
+</tr>
+<tr>
+<td>pageUp</td>
+<td>Tačka1+tačka2+tačka6+razmak</td>
+</tr>
+<tr>
+<td>kontrol+pageUp</td>
+<td>Tačka1+tačka2+tačka6+tačka8+razmak</td>
+</tr>
+<tr>
+<td>strelicaGore taster</td>
+<td>tačka1+razmak, leftSideUpArrow</td>
+</tr>
+<tr>
+<td>kontrol+šift+StrelicaGore taster</td>
+<td>tačka2+tačka3+tačka8+razmak+f1</td>
+</tr>
+<tr>
+<td>kontrol+strelicaGore</td>
+<td>Tačka2+tačka3+razmak</td>
+</tr>
+<tr>
+<td>šift+alt+StrelicaGore taster</td>
+<td>tačka2+tačka3+tačka7+f1</td>
+</tr>
+<tr>
+<td><code>alt+strelicaGore</code></td>
+<td><code>tačka2+tačka3+tačka7+razmak</code></td>
+</tr>
+<tr>
+<td>šift+StrelicaGore taster</td>
+<td>leftSideScrollDown+razmak</td>
+</tr>
+<tr>
+<td>pageDown</td>
+<td>Tačka3+tačka4+tačka5+razmak</td>
+</tr>
+<tr>
+<td>kontrol+pageDown taster</td>
+<td>tačka3+tačka4+tačka5+tačka8+razmak</td>
+</tr>
+<tr>
+<td>strelicaDole taster</td>
+<td>tačka4+razmak, leftSideDownArrow</td>
+</tr>
+<tr>
+<td>kontrol+šift+StrelicaDole taster</td>
+<td>tačka5+tačka6+tačka8+razmak+f1</td>
+</tr>
+<tr>
+<td>kontrol+strelicaDole</td>
+<td>Tačka5+tačka6+razmak</td>
+</tr>
+<tr>
+<td>šift+alt+StrelicaDole taster</td>
+<td>tačka5+tačka6+tačka7+f1</td>
+</tr>
+<tr>
+<td><code>alt+strelicaDole</code></td>
+<td><code>tačka5+tačka6+tačka7+razmak</code></td>
+</tr>
+<tr>
+<td>šift+strelicaDole taster</td>
+<td>razmak+rightSideScrollDown</td>
+</tr>
+<tr>
+<td>escape taster</td>
+<td>tačka1+tačka5+razmak, f4, brailleedge:f1</td>
+</tr>
+<tr>
+<td>taster za brisanje</td>
+<td>tačka1+tačka3+tačka5+razmak, tačka1+tačka4+tačka5+razmak</td>
+</tr>
+<tr>
+<td>f1</td>
+<td>Tačka1+tačka2+tačka5+razmak</td>
+</tr>
+<tr>
+<td>f3 taster</td>
+<td>Tačka1+tačka4+tačka8+razmak</td>
+</tr>
+<tr>
+<td>f4 taster</td>
+<td>tačka7+f3</td>
+</tr>
+<tr>
+<td>windows+b taster</td>
+<td>tačka1+tačka2+f1</td>
+</tr>
+<tr>
+<td>windows+d taster</td>
+<td>tačka1+tačka4+tačka5+f1</td>
+</tr>
+<tr>
+<td>kontrol+insert taster</td>
+<td>smartbeetle:f1+rightSideScroll</td>
+</tr>
+<tr>
+<td>alt+insert taster</td>
+<td>smartbeetle:f3+rightSideScroll</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Seika">Seika brajevi redovi</h3>
+<h4 id="SeikaBrailleDisplays">Seika verzija 3, 4 i 5 (40 ćelija), Seika80 (80 ćelija)</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri brajev red nazad</td>
+<td>levo</td>
+</tr>
+<tr>
+<td>Pomeri brajev red napred</td>
+<td>desno</td>
+</tr>
+<tr>
+<td>Premesti brajev red na prethodni red</td>
+<td>b3</td>
+</tr>
+<tr>
+<td>Premesti brajev red na sledeći red</td>
+<td>b4</td>
+</tr>
+<tr>
+<td>Prebacuj se između brajev vezan za</td>
+<td>b5</td>
+</tr>
+<tr>
+<td>Izgovori sve</td>
+<td>b6</td>
+</tr>
+<tr>
+<td>tab</td>
+<td>b1</td>
+</tr>
+<tr>
+<td>šift+tab</td>
+<td>b2</td>
+</tr>
+<tr>
+<td>alt+tab</td>
+<td>b1+b2</td>
+</tr>
+<tr>
+<td>NVDA meni</td>
+<td>levo+desno</td>
+</tr>
+<tr>
+<td>Prebaci se na brajevu ćeliju</td>
+<td>routing</td>
+</tr>
+</tbody>
+</table>
+<h4 id="SeikaNotetaker">MiniSeika (16, 24 ćelije), V6, i V6Pro (40 ćelija)</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri brajev red nazad</td>
+<td>Levo</td>
+</tr>
+<tr>
+<td>Pomeri brajev red napred</td>
+<td>desno</td>
+</tr>
+<tr>
+<td>Izgovori sve</td>
+<td>razmak+backspace</td>
+</tr>
+<tr>
+<td>NVDA meni</td>
+<td>Levo+desno</td>
+</tr>
+<tr>
+<td>Pomeri brajev red na prethodni red</td>
+<td>LJ gore</td>
+</tr>
+<tr>
+<td>Pomeri brajev red na sledeći red</td>
+<td>LJ dole</td>
+</tr>
+<tr>
+<td>Menjanje vezivanja brajevog reda</td>
+<td>LJ centar</td>
+</tr>
+<tr>
+<td>tab</td>
+<td>LJ desno</td>
+</tr>
+<tr>
+<td>šift+tab</td>
+<td>LJ levo</td>
+</tr>
+<tr>
+<td>strelica gore</td>
+<td>RJ gore</td>
+</tr>
+<tr>
+<td>strelica dole</td>
+<td>RJ dole</td>
+</tr>
+<tr>
+<td>strelica levo</td>
+<td>RJ levo</td>
+</tr>
+<tr>
+<td>strelica desno</td>
+<td>RJ desno</td>
+</tr>
+<tr>
+<td>Prebaci na brajevu ćeliju</td>
+<td>prebacivanje</td>
+</tr>
+<tr>
+<td>šift+strelica gore</td>
+<td>Razmak+RJ gore, Backspace+RJ gore</td>
+</tr>
+<tr>
+<td>šift+strelica dole</td>
+<td>Razmak+RJ dole, Backspace+RJ dole</td>
+</tr>
+<tr>
+<td>šift+strelica levo</td>
+<td>Razmak+RJ levo, Backspace+RJ levo</td>
+</tr>
+<tr>
+<td>šift+strelica desno</td>
+<td>razmak+RJ desno, Backspace+RJ desno</td>
+</tr>
+<tr>
+<td>enter</td>
+<td>RJ centar, Tačka8</td>
+</tr>
+<tr>
+<td>escape</td>
+<td>Razmak+RJ centar</td>
+</tr>
+<tr>
+<td>windows</td>
+<td>Backspace+RJ centar</td>
+</tr>
+<tr>
+<td>razmak</td>
+<td>Space, Backspace</td>
+</tr>
+<tr>
+<td>backspace</td>
+<td>Tačka7</td>
+</tr>
+<tr>
+<td>pageup</td>
+<td>Razmak+LJ desno</td>
+</tr>
+<tr>
+<td>pageDown taster</td>
+<td>razmak+LJ levo</td>
+</tr>
+<tr>
+<td>home</td>
+<td>space+LJ gore</td>
+</tr>
+<tr>
+<td>end</td>
+<td>razmak+LJ dole</td>
+</tr>
+<tr>
+<td>kontrol+home</td>
+<td>backspace+LJ gore</td>
+</tr>
+<tr>
+<td>kontrol+end</td>
+<td>backspace+LJ dole</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Papenmeier">Papenmeier BRAILLEX Noviji Modeli</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prebaci brajev red u levo</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Prebaci brajev red u desno</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Prebaci brajev red u prethodni red</td>
+<td>up</td>
+</tr>
+<tr>
+<td>Premesti brajev red na sledeći red</td>
+<td>dn</td>
+</tr>
+<tr>
+<td>Prebaci se na brajevu ćeliju</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Pročitaj trenutni znak u režimu pregleda</td>
+<td>l1</td>
+</tr>
+<tr>
+<td>Aktiviraj trenutni objekat navigacije</td>
+<td>l2</td>
+</tr>
+<tr>
+<td>Prebacuj između brajev vezan za</td>
+<td>r2</td>
+</tr>
+<tr>
+<td>Prijavi naslov</td>
+<td>l1+up</td>
+</tr>
+<tr>
+<td>Pročitaj statusnu traku</td>
+<td>l2+down</td>
+</tr>
+<tr>
+<td>Premesti se na sadržan objekat</td>
+<td>up2</td>
+</tr>
+<tr>
+<td>Premesti se na prvi sadržani objekat</td>
+<td>dn2</td>
+</tr>
+<tr>
+<td>Prebaci se na prethodni objekat</td>
+<td>left2</td>
+</tr>
+<tr>
+<td>Prebaci se na sledeći objekat</td>
+<td>right2</td>
+</tr>
+<tr>
+<td>Prijavi formatiranje teksta ispod brajeve ćelije</td>
+<td>gornji red routing tastera</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>escape</td>
+<td>razmak sa tačkom 7</td>
+</tr>
+<tr>
+<td>strelicaGore</td>
+<td>razmak sa tačkom 2</td>
+</tr>
+<tr>
+<td>strelicaLevo</td>
+<td>razmak sa tačkom 1</td>
+</tr>
+<tr>
+<td>strelicaDesno</td>
+<td>razmak sa tačkom 4</td>
+</tr>
+<tr>
+<td>strelicaDole</td>
+<td>razmak sa tačkom 5</td>
+</tr>
+<tr>
+<td>kontrol</td>
+<td>lt+tačka2</td>
+</tr>
+<tr>
+<td>alt</td>
+<td>lt+tačka3</td>
+</tr>
+<tr>
+<td>kontrol+escape</td>
+<td>razmak sa tačkama 1 2 3 4 5 6</td>
+</tr>
+<tr>
+<td>tab</td>
+<td>razmak sa tačkama 3 7</td>
+</tr>
+</tbody>
+</table>
+<h3 id="PapenmeierOld">Papenmeier Braille BRAILLEX stariji modeli</h3>
+<p>Uređaji koji imaju EAB:</p>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri brajev red nazad</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Pomeri brajev red napred</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Pomeri brajev red na prethodni red</td>
+<td>up</td>
+</tr>
+<tr>
+<td>Pomeri brajev red na sledeći red</td>
+<td>dn</td>
+</tr>
+<tr>
+<td>Premesti se na brajevu ćeliju</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>Izgovori trenutni znak u režimu pregleda</td>
+<td>l1</td>
+</tr>
+<tr>
+<td>Aktiviraj trenutni objekat navigacije</td>
+<td>l2</td>
+</tr>
+<tr>
+<td>Izgovori naslov</td>
+<td>l1up</td>
+</tr>
+<tr>
+<td>Izgovori statusnu traku</td>
+<td>l2down</td>
+</tr>
+<tr>
+<td>Premesti se na sadržan objekat</td>
+<td>up2</td>
+</tr>
+<tr>
+<td>Premesti se na prvi sadržani objekat</td>
+<td>dn2</td>
+</tr>
+<tr>
+<td>Premesti se na sledeći objekat</td>
+<td>right2</td>
+</tr>
+<tr>
+<td>Prebaci se na prethodni objekat</td>
+<td>left2</td>
+</tr>
+<tr>
+<td>Prijavi formatiranje teksta ispod brajeve ćelije</td>
+<td>Gornji routing strip</td>
+</tr>
+</tbody>
+</table>
+<p>BRAILLEX Tiny:</p>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Izgovori trenutni znak u režimu pregleda</td>
+<td>l1</td>
+</tr>
+<tr>
+<td>Aktiviraj trenutni objekat navigacije</td>
+<td>l2</td>
+</tr>
+<tr>
+<td>Prebaci brajev red nazad</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Prebaci brajev red napred</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Prebaci brajev red na prethodni red</td>
+<td>up</td>
+</tr>
+<tr>
+<td>Prebaci brajev red na sledeći red</td>
+<td>dn</td>
+</tr>
+<tr>
+<td>Prebacuj vezivanje brajevog reda na</td>
+<td>r2</td>
+</tr>
+<tr>
+<td>Prebaci se na sadržan objekat</td>
+<td>r1+up</td>
+</tr>
+<tr>
+<td>Prebaci se na prvi sadržani objekat</td>
+<td>r1+dn</td>
+</tr>
+<tr>
+<td>Prebaci se na prvi objekat</td>
+<td>r1+left</td>
+</tr>
+<tr>
+<td>Prebaci se na sledeći objekat</td>
+<td>r1+right</td>
+</tr>
+<tr>
+<td>Prijavi formatiranje teksta ispod brajeve ćelije</td>
+<td>Gornji routing strip</td>
+</tr>
+<tr>
+<td>Izgovori naslov</td>
+<td>l1+gore</td>
+</tr>
+<tr>
+<td>Izgovori statusnu traku</td>
+<td>l2+dole</td>
+</tr>
+</tbody>
+</table>
+<p>BRAILLEX 2D Screen:</p>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Izgovori trenutni znak u režimu pregleda</td>
+<td>l1</td>
+</tr>
+<tr>
+<td>Aktiviraj trenutni objekat navigacije</td>
+<td>l2</td>
+</tr>
+<tr>
+<td>Prebacuj brajev vezan na</td>
+<td>r2</td>
+</tr>
+<tr>
+<td>Prijavi formatiranje teksta ispod brajeve ćelije</td>
+<td>Gornji routing strip</td>
+</tr>
+<tr>
+<td>Premesti brajev red na prethodni red</td>
+<td>up</td>
+</tr>
+<tr>
+<td>Pomeri brajev red nazad</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Prebaci brajev red napred</td>
+<td>right</td>
+</tr>
+<tr>
+<td>Prebaci brajev red na sledeći red</td>
+<td>dn</td>
+</tr>
+<tr>
+<td>Prebaci se na sledeći objekat</td>
+<td>left2</td>
+</tr>
+<tr>
+<td>Prebaci se na sadržan objekat</td>
+<td>up2</td>
+</tr>
+<tr>
+<td>Prebaci se na prvi sadržani objekat</td>
+<td>dn2</td>
+</tr>
+<tr>
+<td>Prebaci se na prethodni objekat</td>
+<td>right2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="HumanWareBrailleNote">HumanWare BrailleNote</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prebaci brajev red nazad</td>
+<td>nazad</td>
+</tr>
+<tr>
+<td>Prebaci brajev red napred</td>
+<td>napred</td>
+</tr>
+<tr>
+<td>Premesti brajev red na prethodni red</td>
+<td>prethodno</td>
+</tr>
+<tr>
+<td>Premesti brajev red na sledeći red</td>
+<td>sledeće</td>
+</tr>
+<tr>
+<td>Prebaci se na brajevu ćeliju</td>
+<td>routing</td>
+</tr>
+<tr>
+<td>NVDA meni</td>
+<td>razmak+tačka1+tačka3+tačka4+tačka5 (razmak+n)</td>
+</tr>
+<tr>
+<td>Prebacuj brajev vezan za</td>
+<td>Prethodni+Sledeći</td>
+</tr>
+<tr>
+<td>Strelica Gore</td>
+<td>razmak+tačka1</td>
+</tr>
+<tr>
+<td>Strelica Dole</td>
+<td>razmak+tačka4</td>
+</tr>
+<tr>
+<td>Leva Strelica</td>
+<td>razmak+tačka3</td>
+</tr>
+<tr>
+<td>Strelica desno</td>
+<td>razmak+tačka6</td>
+</tr>
+<tr>
+<td>Page up</td>
+<td>razmak+tačka1+tačka3</td>
+</tr>
+<tr>
+<td>Page down</td>
+<td>razmak+tačka4+tačka6</td>
+</tr>
+<tr>
+<td>Home</td>
+<td>razmak+tačka1+tačka2</td>
+</tr>
+<tr>
+<td>End</td>
+<td>razmak+tačka4+tačka5</td>
+</tr>
+<tr>
+<td>Kontrol+home</td>
+<td>razmak+tačka1+tačka2+tačka3</td>
+</tr>
+<tr>
+<td>Control+end</td>
+<td>razmak+tačka4+tačka5+tačka6</td>
+</tr>
+<tr>
+<td>Razmak</td>
+<td>brajev razmak</td>
+</tr>
+<tr>
+<td>Enter</td>
+<td>Razmak +tačka8</td>
+</tr>
+<tr>
+<td>Backspace</td>
+<td>Razmak +tačka7</td>
+</tr>
+<tr>
+<td>Tab</td>
+<td>razmak+tačka2+tačka3+tačka4+tačka5 (razmak+t)</td>
+</tr>
+<tr>
+<td>Šift+tab</td>
+<td>razmak+tačka1+tačka2+tačka5+tačka6</td>
+</tr>
+<tr>
+<td>Windows taster</td>
+<td>razmak+tačka2+tačka4+tačka5+tačka6 (razmak+w)</td>
+</tr>
+<tr>
+<td>Alt</td>
+<td>razmak+Tačka1+tačka3+tačka4 (razmak+m)</td>
+</tr>
+<tr>
+<td>Uključi/isključi pomoć za unos</td>
+<td>razmak+tačka2+tačka3+tačka6 (razmak+spušteno h)</td>
+</tr>
+</tbody>
+</table>
+<p>Slede komande dodeljene za BrailleNote QT kada nije u režimu brajevog unosa.</p>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NVDA meni</td>
+<td>read+n</td>
+</tr>
+<tr>
+<td>StrelicaGore</td>
+<td>StrelicaGore</td>
+</tr>
+<tr>
+<td>StrelicaDole</td>
+<td>StrelicaDole</td>
+</tr>
+<tr>
+<td>StrelicaLevo</td>
+<td>StrelicaLevo</td>
+</tr>
+<tr>
+<td>StrelicaDesno</td>
+<td>StrelicaDesno</td>
+</tr>
+<tr>
+<td>Page up taster</td>
+<td>function+StrelicaGore</td>
+</tr>
+<tr>
+<td>Page down taster</td>
+<td>function+StrelicaDole</td>
+</tr>
+<tr>
+<td>Home taster</td>
+<td>function+StrelicaLevo</td>
+</tr>
+<tr>
+<td>End taster</td>
+<td>function+StrelicaDesno</td>
+</tr>
+<tr>
+<td>Kontrol+home tasteri</td>
+<td>read+t</td>
+</tr>
+<tr>
+<td>Kontrol+end tasteri</td>
+<td>read+b</td>
+</tr>
+<tr>
+<td>Enter taster</td>
+<td>enter</td>
+</tr>
+<tr>
+<td>Backspace taster</td>
+<td>backspace</td>
+</tr>
+<tr>
+<td>Tab taster</td>
+<td>tab</td>
+</tr>
+<tr>
+<td>Šift+tab tasteri</td>
+<td>šift+tab</td>
+</tr>
+<tr>
+<td>Windows taster</td>
+<td>read+w</td>
+</tr>
+<tr>
+<td>Alt taster</td>
+<td>read+m</td>
+</tr>
+<tr>
+<td>Uključi i isključi pomoć za unos</td>
+<td>read+1</td>
+</tr>
+</tbody>
+</table>
+<p>Slede komande dodeljene za scroll wheel:</p>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Strelica gore</td>
+<td>StrelicaGore</td>
+</tr>
+<tr>
+<td>Taster strelica dole</td>
+<td>StrelicaDole</td>
+</tr>
+<tr>
+<td>Taster strelica levo</td>
+<td>StrelicaLevo</td>
+</tr>
+<tr>
+<td>Taster strelica desno</td>
+<td>StrelicaDesno</td>
+</tr>
+<tr>
+<td>Taster enter</td>
+<td>dugme u sredini</td>
+</tr>
+<tr>
+<td>Taster tab</td>
+<td>Pomeranje točka u pravcu kazaljke sata</td>
+</tr>
+<tr>
+<td>Tasteri šift+tab</td>
+<td>Pomeranje točka u suprotnom pravcu</td>
+</tr>
+</tbody>
+</table>
+<h3 id="EcoBraille">EcoBraille</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri brajev red nazad za red</td>
+<td>T2</td>
+</tr>
+<tr>
+<td>Pomeri brajev red napred za jedan red</td>
+<td>T4</td>
+</tr>
+<tr>
+<td>Pomeri brajev red na prethodnu liniju teksta</td>
+<td>T1</td>
+</tr>
+<tr>
+<td>Pomeri brajev red na sledeću liniju teksta</td>
+<td>T5</td>
+</tr>
+<tr>
+<td>Pomeri se na brajevu ćeliju</td>
+<td>Routing</td>
+</tr>
+<tr>
+<td>Aktiviraj trenutni objekat navigacije</td>
+<td>T3</td>
+</tr>
+<tr>
+<td>Prebaci se na sledeći režim pregleda</td>
+<td>F1</td>
+</tr>
+<tr>
+<td>Pomeri se na prethodni objekat</td>
+<td>F2</td>
+</tr>
+<tr>
+<td>Pomeri se na prethodni režim pregleda</td>
+<td>F3</td>
+</tr>
+<tr>
+<td>Pomeri se na prethodni objekat</td>
+<td>F4</td>
+</tr>
+<tr>
+<td>Čitaj trenutni objekat</td>
+<td>F5</td>
+</tr>
+<tr>
+<td>Prebaci se na sledeći objekat</td>
+<td>F6</td>
+</tr>
+<tr>
+<td>Premesti se na objekat koji ima fokus</td>
+<td>F7</td>
+</tr>
+<tr>
+<td>Premesti se na prvi sadržan objekat</td>
+<td>F8</td>
+</tr>
+<tr>
+<td>Premesti fokus sistema i kursor na trenutnu poziciju</td>
+<td>F9</td>
+</tr>
+<tr>
+<td>Prijavi poziciju preglednog kursora</td>
+<td>F0</td>
+</tr>
+<tr>
+<td>Uključi /isključi brajev vezan na</td>
+<td>A</td>
+</tr>
+</tbody>
+</table>
+<h3 id="SuperBraille">SuperBraille</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri brajev red nazad</td>
+<td>NumeričkiMinus</td>
+</tr>
+<tr>
+<td>Pomeri brajev red napred</td>
+<td>NumeričkiPlus</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Eurobraille">Eurobraille redovi</h3>
+<h4 id="EurobrailleBraille">Funkcije brajeve tastature</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Obriši poslednju upisanu brajevu ćeliju ili znak</td>
+<td><code>taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td>Prevedi bilo koji brajev unos i pritisni taster enter</td>
+<td><code>taster za brisanje nazad+razmak</code></td>
+</tr>
+<tr>
+<td>Uključi ili isključi <code>NVDA</code> taster</td>
+<td><code>tačka3+tačka5+razmak</code></td>
+</tr>
+<tr>
+<td><code>insert</code> taster</td>
+<td><code>tačka1+tačka3+tačka5+razmak</code>, <code>tačka3+tačka4+tačka5+razmak</code></td>
+</tr>
+<tr>
+<td><code>delete</code> taster</td>
+<td><code>tačka3+tačka6+razmak</code></td>
+</tr>
+<tr>
+<td><code>home</code> taster</td>
+<td><code>tačka1+tačka2+tačka3+razmak</code></td>
+</tr>
+<tr>
+<td><code>end</code> taster</td>
+<td><code>tačka4+tačka5+tačka6+razmak</code></td>
+</tr>
+<tr>
+<td><code>StrelicaLevo</code></td>
+<td><code>tačka2+razmak</code></td>
+</tr>
+<tr>
+<td><code>strelicaDesno</code></td>
+<td><code>tačka5+razmak</code></td>
+</tr>
+<tr>
+<td><code>strelicaGore</code></td>
+<td><code>tačka1+razmak</code></td>
+</tr>
+<tr>
+<td><code>strelicaDole</code></td>
+<td><code>tačka6+razmak</code></td>
+</tr>
+<tr>
+<td><code>pageUp</code> taster</td>
+<td><code>tačka1+tačka3+razmak</code></td>
+</tr>
+<tr>
+<td><code>pageDown</code> taster</td>
+<td><code>tačka4+tačka6+razmak</code></td>
+</tr>
+<tr>
+<td><code>NumeričkiTaster1</code></td>
+<td><code>tačka1+tačka6+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>NumeričkiTaster2</code></td>
+<td><code>tačka1+tačka2+tačka6+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>NumeričkiTaster3</code></td>
+<td><code>tačka1+tačka4+tačka6+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>numeričkiTaster4</code></td>
+<td><code>tačka1+tačka4+tačka5+tačka6+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>numeričkiTaster5</code></td>
+<td><code>tačka1+tačka5+tačka6+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>numeričkiTaster6</code></td>
+<td><code>tačka1+tačka2+tačka4+tačka6+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>numeričkiTaster7</code></td>
+<td><code>tačka1+tačka2+tačka4+tačka5+tačka6+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>numeričkiTaster8</code></td>
+<td><code>tačka1+tačka2+tačka5+tačka6+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>numeričkiTaster9</code></td>
+<td><code>tačka2+tačka4+tačka6+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>NumeričkiInsert</code> taster</td>
+<td><code>tačka3+tačka4+tačka5+tačka6+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>NumeričkiDecimalniZarez</code></td>
+<td><code>tačka2+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>NumeričkiTasterPodeljeno</code></td>
+<td><code>tačka3+tačka4+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>NumeričkiTasterPuta</code></td>
+<td><code>tačka3+tačka5+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>NumeričkiTasterMinus</code></td>
+<td><code>tačka3+tačka6+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>NumeričkiTasterplus</code></td>
+<td><code>tačka2+tačka3+tačka5+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>NumeričkiTasterEnter</code></td>
+<td><code>tačka3+tačka4+tačka5+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>escape</code> taster</td>
+<td><code>tačka1+tačka2+tačka4+tačka5+razmak</code>, <code>l2</code></td>
+</tr>
+<tr>
+<td><code>tab</code> taster</td>
+<td><code>tačka2+tačka5+tačka6+razmak</code>, <code>l3</code></td>
+</tr>
+<tr>
+<td><code>šift+tab</code> tasteri</td>
+<td><code>tačka2+tačka3+tačka5+razmak</code></td>
+</tr>
+<tr>
+<td><code>printScreen</code> taster</td>
+<td><code>tačka1+tačka3+tačka4+tačka6+razmak</code></td>
+</tr>
+<tr>
+<td><code>Pauza</code> taster</td>
+<td><code>tačka1+tačka4+razmak</code></td>
+</tr>
+<tr>
+<td><code>aplikacioni</code> taster</td>
+<td><code>tačka5+tačka6+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>f1</code> taster</td>
+<td><code>tačka1+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>f2</code> taster</td>
+<td><code>tačka1+tačka2+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>f3</code> taster</td>
+<td><code>tačka1+tačka4+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>f4</code> taster</td>
+<td><code>tačka1+tačka4+tačka5+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>f5</code> taster</td>
+<td><code>tačka1+tačka5+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>f6</code> taster</td>
+<td><code>tačka1+tačka2+tačka4+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>f7</code> taster</td>
+<td><code>tačka1+tačka2+tačka4+tačka5+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>f8</code> taster</td>
+<td><code>tačka1+tačka2+tačka5+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>f9</code> taster</td>
+<td><code>tačka2+tačka4+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>f10</code> taster</td>
+<td><code>tačka2+tačka4+tačka5+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>f11</code> taster</td>
+<td><code>tačka1+tačka3+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>f12</code> taster</td>
+<td><code>tačka1+tačka2+tačka3+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>windows</code> taster</td>
+<td><code>tačka1+tačka2+tačka4+tačka5+tačka6+razmak</code></td>
+</tr>
+<tr>
+<td>Uključi ili isključi taster <code>windows</code></td>
+<td><code>tačka1+tačka2+tačka3+tačka4+taster za brisanje nazad</code>, <code>tačka2+tačka4+tačka5+tačka6+razmak</code></td>
+</tr>
+<tr>
+<td><code>capsLock</code> taster</td>
+<td><code>tačka7+taster za brisanje nazad</code>, <code>tačka8+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>numLock</code> taster</td>
+<td><code>tačka3+taster za brisanje nazad</code>, <code>tačka6+taster za brisanje nazad</code></td>
+</tr>
+<tr>
+<td><code>Šhift</code> taster</td>
+<td><code>tačka7+razmak</code></td>
+</tr>
+<tr>
+<td>Uključi ili isključi taster <code>šift</code></td>
+<td><code>tačka1+tačka7+razmak</code>, <code>tačka4+tačka7+razmak</code></td>
+</tr>
+<tr>
+<td><code>kontrol</code> taster</td>
+<td><code>tačka7+tačka8+razmak</code></td>
+</tr>
+<tr>
+<td>Uključi ili isključi taster <code>kontrol</code></td>
+<td><code>tačka1+tačka7+tačka8+razmak</code>, <code>tačka4+tačka7+tačka8+razmak</code></td>
+</tr>
+<tr>
+<td><code>alt</code> taster</td>
+<td><code>tačka8+razmak</code></td>
+</tr>
+<tr>
+<td>Uključi ili isključi taster <code>alt</code></td>
+<td><code>tačka1+tačka8+razmak</code>, <code>tačka4+tačka8+razmak</code></td>
+</tr>
+<tr>
+<td>Uključi ili isključi HID simulaciju tastature</td>
+<td><code>Prekidač1Levo+Džojstik1Dole</code>, <code>Prekidač1Desno+džojstik1Dole</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="Eurobraillebbook">b.book komande tastature</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>taster</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri brajev red nazad</td>
+<td><code>nazad</code></td>
+</tr>
+<tr>
+<td>Pomeri brajev red napred</td>
+<td><code>napred</code></td>
+</tr>
+<tr>
+<td>Prebaci se na trenutni fokus</td>
+<td><code>nazad+napred</code></td>
+</tr>
+<tr>
+<td>Prebaci se na brajevu ćeliju</td>
+<td><code>prebacivanje</code></td>
+</tr>
+<tr>
+<td><code>strelicaLevo</code></td>
+<td><code>džojstik2Levo</code></td>
+</tr>
+<tr>
+<td><code>strelicaDesno</code></td>
+<td><code>džojstik2Desno</code></td>
+</tr>
+<tr>
+<td><code>strelicaGore</code></td>
+<td><code>džojstik2Gore</code></td>
+</tr>
+<tr>
+<td><code>strelicaDole</code></td>
+<td><code>džojstik2Dole</code></td>
+</tr>
+<tr>
+<td><code>enter</code> taster</td>
+<td><code>džojstik2Centar</code></td>
+</tr>
+<tr>
+<td><code>escape</code> taster</td>
+<td><code>c1</code></td>
+</tr>
+<tr>
+<td><code>tab</code> taster</td>
+<td><code>c2</code></td>
+</tr>
+<tr>
+<td>Uključi ili isključi taster <code>šift</code></td>
+<td><code>c3</code></td>
+</tr>
+<tr>
+<td>Uključi ili isključi taster <code>kontrol</code></td>
+<td><code>c4</code></td>
+</tr>
+<tr>
+<td>Uključi ili isključi taster <code>alt</code></td>
+<td><code>c5</code></td>
+</tr>
+<tr>
+<td>Uključi ili isključi taster <code>NVDA</code></td>
+<td><code>c6</code></td>
+</tr>
+<tr>
+<td><code>kontrol+Home</code></td>
+<td><code>c1+c2+c3</code></td>
+</tr>
+<tr>
+<td><code>kontrol+End</code></td>
+<td><code>c4+c5+c6</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="Eurobraillebnote">b.note komande tastature</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>taster</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri brajev red nazad</td>
+<td><code>levaGrupaStrelicaLevo</code></td>
+</tr>
+<tr>
+<td>Pomeri brajev red napred</td>
+<td><code>LevaGrupaStrelicaDesno</code></td>
+</tr>
+<tr>
+<td>Prebaci se na brajevu ćeliju</td>
+<td><code>prebacivanje</code></td>
+</tr>
+<tr>
+<td>Prijavi formatiranje teksta ispod brajeve ćelije</td>
+<td><code>Dvostruko prebacivanje</code></td>
+</tr>
+<tr>
+<td>Prebaci se na sledeći red u pregledu</td>
+<td><code>levaGrupaStrelicaDole</code></td>
+</tr>
+<tr>
+<td>Prebaci se na prethodni režim pregleda</td>
+<td><code>levaGrupaStrelicaLevo+levaGrupaStrelicaGore</code></td>
+</tr>
+<tr>
+<td>Prebaci se na sledeći režim pregleda</td>
+<td><code>levaGrupaStrelicaDesno+levaGrupaStrelicaDole</code></td>
+</tr>
+<tr>
+<td><code>strelicaLevo</code></td>
+<td><code>desnaGrupaStrelicaDesno</code></td>
+</tr>
+<tr>
+<td><code>strelicaDesno</code></td>
+<td><code>desnaGrupaStrelicaDesno</code></td>
+</tr>
+<tr>
+<td><code>strelicaGore</code></td>
+<td><code>desnaGrupaStrelicaGore</code></td>
+</tr>
+<tr>
+<td><code>strelicaDole</code></td>
+<td><code>desnaGrupaStrelicaDole</code></td>
+</tr>
+<tr>
+<td><code>kontrol+home</code></td>
+<td><code>desnaGrupaStrelicaLevo+desnaGrupaStrelicaGore</code></td>
+</tr>
+<tr>
+<td><code>kontrol+end</code></td>
+<td><code>desnaGrupaStrelicaLevo+desnaGrupaStrelicaGore</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="Eurobrailleesys">Esys komande tastature</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>taster</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri brajev red nazad</td>
+<td><code>prekidač1Levo</code></td>
+</tr>
+<tr>
+<td>Pomeri brajev red napred</td>
+<td><code>prekidač1Desno</code></td>
+</tr>
+<tr>
+<td>Prebaci se na trenutni fokus</td>
+<td><code>Prekidač1Centar</code></td>
+</tr>
+<tr>
+<td>Prebaci se na brajevu ćeliju</td>
+<td><code>prebacivanje</code></td>
+</tr>
+<tr>
+<td>Prijavi formatiranje teksta ispod brajeve ćelije</td>
+<td><code>dvostrukoPrebacivanje</code></td>
+</tr>
+<tr>
+<td>Prebaci se na prethodni red u  rpegledu</td>
+<td><code>džojstik1Gore</code></td>
+</tr>
+<tr>
+<td>Prebaci se na sledeći red u pregledu</td>
+<td><code>džojstik1Dole</code></td>
+</tr>
+<tr>
+<td>Prebaci se na prethodni znak u pregledu</td>
+<td><code>džojstik1Levo</code></td>
+</tr>
+<tr>
+<td>Prebaci se na sledeći znak u pregledu</td>
+<td><code>džojstik1Desno</code></td>
+</tr>
+<tr>
+<td><code>strelicaLevo</code></td>
+<td><code>džojstik2Levo</code></td>
+</tr>
+<tr>
+<td><code>strelicaDesno</code></td>
+<td><code>džojstik2Desno</code></td>
+</tr>
+<tr>
+<td><code>strelicaGore</code></td>
+<td><code>džojstik2Gore</code></td>
+</tr>
+<tr>
+<td><code>strelicaDole</code></td>
+<td><code>džojstik2Dole</code></td>
+</tr>
+<tr>
+<td><code>enter</code> taster</td>
+<td><code>džojstik2Centar</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="EurobrailleEsytime">Esytime komande tastature</h4>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>taster</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri brajev red nazad</td>
+<td><code>l1</code></td>
+</tr>
+<tr>
+<td>Pomeri brajev red napred</td>
+<td><code>l8</code></td>
+</tr>
+<tr>
+<td>Prebaci se na trenutni fokus</td>
+<td><code>l1+l8</code></td>
+</tr>
+<tr>
+<td>Prebaci se na brajevu ćeliju</td>
+<td><code>prebacivanje</code></td>
+</tr>
+<tr>
+<td>Prijavi formatiranje teksta ispod brajeve ćelije</td>
+<td><code>dvostrukoPrebacivanje</code></td>
+</tr>
+<tr>
+<td>Prebaci se na prethodni red u pregledu</td>
+<td><code>džojstik1Gore</code></td>
+</tr>
+<tr>
+<td>Prebaci se na sledeći red u pregledu</td>
+<td><code>džojstik1Dole</code></td>
+</tr>
+<tr>
+<td>Prebaci se na prethodni znak u pregledu</td>
+<td><code>džojstik1Levo</code></td>
+</tr>
+<tr>
+<td>Prebaci se na sledeći znak u pregledu</td>
+<td><code>džojstik1Desno</code></td>
+</tr>
+<tr>
+<td><code>strelicaLevo</code></td>
+<td><code>džojstik2Levo</code></td>
+</tr>
+<tr>
+<td><code>strelicaDesno</code></td>
+<td><code>džojstik2Desno</code></td>
+</tr>
+<tr>
+<td><code>strelicaGore</code></td>
+<td><code>džojstik2Gore</code></td>
+</tr>
+<tr>
+<td><code>strelicaDole</code></td>
+<td><code>džojstik2Dole</code></td>
+</tr>
+<tr>
+<td><code>enter</code> taster</td>
+<td><code>džojstik2Centar</code></td>
+</tr>
+<tr>
+<td><code>escape</code> taster</td>
+<td><code>l2</code></td>
+</tr>
+<tr>
+<td><code>tab</code> taster</td>
+<td><code>l3</code></td>
+</tr>
+<tr>
+<td>Uključi ili isključi taster <code>šift</code></td>
+<td><code>l4</code></td>
+</tr>
+<tr>
+<td>Uključi ili isključi taster <code>kontrol</code></td>
+<td><code>l5</code></td>
+</tr>
+<tr>
+<td>Uključi ili isključi taster <code>alt</code></td>
+<td><code>l6</code></td>
+</tr>
+<tr>
+<td>Uključi ili isključi taster <code>NVDA</code></td>
+<td><code>l7</code></td>
+</tr>
+<tr>
+<td><code>kontrol+home</code></td>
+<td><code>l1+l2+l3</code>, <code>l2+l3+l4</code></td>
+</tr>
+<tr>
+<td><code>kontrol+end</code></td>
+<td><code>l6+l7+l8</code>, <code>l5+l6+l7</code></td>
+</tr>
+<tr>
+<td>Uključi ili isključi HID simulaciju tastature</td>
+<td><code>l1+džojstik1Dole</code>, <code>l8+džojstik1Dole</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="NattiqTechnologies">Nattiq nBraille redovi</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Taster</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri brajev red nazad</td>
+<td>Gore</td>
+</tr>
+<tr>
+<td>Pomeri brajev red napred</td>
+<td>Dole</td>
+</tr>
+<tr>
+<td>Pomeri brajev red na prethodni red</td>
+<td>Levo</td>
+</tr>
+<tr>
+<td>Pomeri brajev red na sledeći red</td>
+<td>Desno</td>
+</tr>
+<tr>
+<td>Prebaci se na brajevu ćeliju</td>
+<td>routing</td>
+</tr>
+</tbody>
+</table>
+<h3 id="BRLTTY">BRLTTY</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>BRLTTY komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prebaci brajev red nazad</td>
+<td><code>fwinlt</code> (idi jedan prozor u levo)</td>
+</tr>
+<tr>
+<td>Prebaci brajev red napred</td>
+<td><code>fwinrt</code> (Prebaci se jedan prozor u desno)</td>
+</tr>
+<tr>
+<td>Prebaci brajev red na prethodni red</td>
+<td><code>lnup</code> (Idi jedan red gore)</td>
+</tr>
+<tr>
+<td>Prebaci brajev red na sledeći red</td>
+<td><code>lndn</code> (Idi dole za jedan red)</td>
+</tr>
+<tr>
+<td>Pomeri se na brajevu ćeliju</td>
+<td><code>route</code> (Pomeri kursor na znak)</td>
+</tr>
+<tr>
+<td>Uključi ili isključi pomoć za unos</td>
+<td><code>learn</code> (enter/izlaz iz režima za učenje komandi)</td>
+</tr>
+<tr>
+<td>Otvori NVDA meni</td>
+<td><code>prefmenu</code> (enter/izlaz iz menija za podešavanja)</td>
+</tr>
+<tr>
+<td>Vrati podešavanja</td>
+<td><code>prefload</code> (vrati podešavanja sa diska)</td>
+</tr>
+<tr>
+<td>Sačuvaj podešavanja</td>
+<td><code>prefsave</code> (sačuvaj podešavanja na disk)</td>
+</tr>
+<tr>
+<td>Prijavi vreme</td>
+<td><code>time</code> (prikaži trenutni datum i vreme)</td>
+</tr>
+<tr>
+<td>Izgovori red u kojem se nalazi pregledni kursor</td>
+<td><code>say_line</code> (izgovori trenutni red)</td>
+</tr>
+<tr>
+<td>Izgovori sve preglednim kursorom</td>
+<td><code>say_below</code> (izgovori od trenutnog reda do dna ekrana)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Albatross">Tivomatic Caiku Albatross 46/80</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Prečica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prebaci se na prvi red pregleda</td>
+<td><code>home1</code>, <code>home2</code></td>
+</tr>
+<tr>
+<td>Prebaci se na poslednji red pregleda</td>
+<td><code>end1</code>, <code>end2</code></td>
+</tr>
+<tr>
+<td>Prebaci navigacioni objekat na trenutni fokus</td>
+<td><code>eKursor1</code>, <code>eKursor2</code></td>
+</tr>
+<tr>
+<td>Prebaci se na trenutni fokus</td>
+<td><code>kursor1</code>, <code>kursor2</code></td>
+</tr>
+<tr>
+<td>Pomera miš na trenutni navigacioni objekat</td>
+<td><code>home1+home2</code></td>
+</tr>
+<tr>
+<td>Postavlja navigacioni objekat na trenutni objekat ispod pokazivača miša i izgovara ga</td>
+<td><code>end1+end2</code></td>
+</tr>
+<tr>
+<td>Pomera fokus na trenutni navigacioni objekat</td>
+<td><code>eKursor1+eKursor2</code></td>
+</tr>
+<tr>
+<td>Menja vezivanje brajevog reda</td>
+<td><code>kursor1+kursor2</code></td>
+</tr>
+<tr>
+<td>Pomera brajev red na prethodni red</td>
+<td><code>gore1</code>, <code>gore2</code>, <code>gore3</code></td>
+</tr>
+<tr>
+<td>Pomera brajev red na sledeći red</td>
+<td><code>dole1</code>, <code>dole2</code>, <code>dole3</code></td>
+</tr>
+<tr>
+<td>Pomera brajev red nazad</td>
+<td><code>levo</code>, <code>lTočakLevo</code>, <code>DTočakLevo</code></td>
+</tr>
+<tr>
+<td>Pomera brajev red napred</td>
+<td><code>desno</code>, <code>lTočakDesno</code>, <code>DTočakDesno</code></td>
+</tr>
+<tr>
+<td>Prebaci na brajevu ćeliju</td>
+<td><code>Prebacivanje</code></td>
+</tr>
+<tr>
+<td>Prijavi formatiranje teksta ispod brajeve ćelije</td>
+<td><code>Sekundarno prebacivanje</code></td>
+</tr>
+<tr>
+<td>Prebacuje načine predstavljanja sadržaja na brajevom redu</td>
+<td><code>atribut1+atribut3</code></td>
+</tr>
+<tr>
+<td>Kruži kroz režime govora</td>
+<td><code>atribut2+atribut4</code></td>
+</tr>
+<tr>
+<td>Prelazi na prethodni režim pregleda (npr. objekat, dokument ili ekran)</td>
+<td><code>f1</code></td>
+</tr>
+<tr>
+<td>Prelazi na sledeći režim pregleda (npr. objekat, dokument ili ekran)</td>
+<td><code>f2</code></td>
+</tr>
+<tr>
+<td>Pomera navigacioni objekat na objekat koji ga sadrži</td>
+<td><code>f3</code></td>
+</tr>
+<tr>
+<td>Pomera navigacioni objekat na prvi objekat unutar njega</td>
+<td><code>f4</code></td>
+</tr>
+<tr>
+<td>Pomera navigacioni objekat na prethodni objekat</td>
+<td><code>f5</code></td>
+</tr>
+<tr>
+<td>Pomera navigacioni objekat na sledeći objekat</td>
+<td><code>f6</code></td>
+</tr>
+<tr>
+<td>Prijavljuje trenutni navigacioni objekat</td>
+<td><code>f7</code></td>
+</tr>
+<tr>
+<td>Daje informacije o lokaciji teksta ili objekta na poziciji sistemskog kursora</td>
+<td><code>f8</code></td>
+</tr>
+<tr>
+<td>Prikazuje brajeva podešavanja</td>
+<td><code>f1+home1</code>, <code>f9+home2</code></td>
+</tr>
+<tr>
+<td>Čita statusnu traku i prebacuje navigacioni objekat na nju</td>
+<td><code>f1+end1</code>, <code>f9+end2</code></td>
+</tr>
+<tr>
+<td>Kruži kroz oblike brajevog kursora</td>
+<td><code>f1+eKursor1</code>, <code>f9+eKursor2</code></td>
+</tr>
+<tr>
+<td>Uključuje ili isključuje brajev kursor</td>
+<td><code>f1+kursor1</code>, <code>f9+kursor2</code></td>
+</tr>
+<tr>
+<td>Kruži kroz režime prikazivanja brajevih poruka</td>
+<td><code>f1+f2</code>, <code>f9+f10</code></td>
+</tr>
+<tr>
+<td>Menja stanje prikazivanja izbora na brajevom redu</td>
+<td><code>f1+f5</code>, <code>f9+f14</code></td>
+</tr>
+<tr>
+<td>Kruži kroz stanja opcije "Brajevo pomeranje sistemskog kursora kada se prebacuje pregledni kursor"</td>
+<td><code>f1+f3</code>, <code>f9+f11</code></td>
+</tr>
+<tr>
+<td>Izvršava podrazumevanu radnju na trenutnom navigacionom objektu</td>
+<td><code>f7+f8</code></td>
+</tr>
+<tr>
+<td>Prijavljuje datum/vreme</td>
+<td><code>f9</code></td>
+</tr>
+<tr>
+<td>Obaveštava o statusu baterije i preostalom vremenu ako punjač nije uključen</td>
+<td><code>f10</code></td>
+</tr>
+<tr>
+<td>Prijavljuje naslov</td>
+<td><code>f11</code></td>
+</tr>
+<tr>
+<td>Prijavljuje statusnu traku</td>
+<td><code>f12</code></td>
+</tr>
+<tr>
+<td>Prijavljuje trenutni red ispod kursora za aplikacije</td>
+<td><code>f13</code></td>
+</tr>
+<tr>
+<td>Izgovori sve</td>
+<td><code>f14</code></td>
+</tr>
+<tr>
+<td>Prijavljuje trenutni znak preglednog kursora</td>
+<td><code>f15</code></td>
+</tr>
+<tr>
+<td>Prijavljuje red trenutnog navigacionog objekta gde se nalazi pregledni kursor</td>
+<td><code>f16</code></td>
+</tr>
+<tr>
+<td>Izgovara reč trenutnog navigacionog objekta gde se nalazi pregledni kursor</td>
+<td><code>f15+f16</code></td>
+</tr>
+<tr>
+<td>Pomera pregledni kursor na prethodni red trenutnog navigacionog objekta i izgovara ga</td>
+<td><code>lTočakGore</code>, <code>dTočakGore</code></td>
+</tr>
+<tr>
+<td>Pomera pregledni kursor na naredni red trenutnog navigacionog objekta i izgovara ga</td>
+<td><code>lTočakDole</code>, <code>dTočakDole</code></td>
+</tr>
+<tr>
+<td><code>Windows+d</code> prečica (prebaci se na radnu površinu)</td>
+<td><code>atribut1</code></td>
+</tr>
+<tr>
+<td><code>Windows+e</code> prečica (ovaj računar)</td>
+<td><code>atribut2</code></td>
+</tr>
+<tr>
+<td><code>Windows+b</code> prečica (fokusiranje na sistemsku traku)</td>
+<td><code>atribut3</code></td>
+</tr>
+<tr>
+<td><code>Windows+i</code> prečica (Windows podešavanja)</td>
+<td><code>atribut4</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Zoomax">NLS eReader Zoomax</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri brajev red nazad</td>
+<td><code>d2</code></td>
+</tr>
+<tr>
+<td>Pomeri brajev red napred</td>
+<td><code>d5</code></td>
+</tr>
+<tr>
+<td>Pomeri brajev red u prethodni red</td>
+<td><code>d1</code></td>
+</tr>
+<tr>
+<td>Pomeri brajev red u sledeći red</td>
+<td><code>d3</code></td>
+</tr>
+<tr>
+<td>Prebaci se na brajevu ćeliju</td>
+<td><code>routing</code></td>
+</tr>
+<tr>
+<td>Strelica gore</td>
+<td><code>up</code></td>
+</tr>
+<tr>
+<td>Strelica dole</td>
+<td><code>down</code></td>
+</tr>
+<tr>
+<td>Strelica levo</td>
+<td><code>left</code></td>
+</tr>
+<tr>
+<td>Strelica desno</td>
+<td><code>right</code></td>
+</tr>
+<tr>
+<td>Enter</td>
+<td><code>select</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="HIDBraille">Standardni HID brajevi redovi</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri brajev red nazad</td>
+<td>pan levo ili rocker gore</td>
+</tr>
+<tr>
+<td>Pomeri brajev red napred</td>
+<td>pan desno ili rocker dole</td>
+</tr>
+<tr>
+<td>Prebaci na brajevu ćeliju</td>
+<td>routing set 1</td>
+</tr>
+<tr>
+<td>Promeni vezivanje brajevog reda</td>
+<td>Gore+Dole</td>
+</tr>
+<tr>
+<td>strelica gore</td>
+<td>Džojstik gore, strelica gore ili razmak+tačka1</td>
+</tr>
+<tr>
+<td>strelica dole</td>
+<td>Džojstik dole, strelica dole ili razmak+tačka4</td>
+</tr>
+<tr>
+<td>strelicaLevo</td>
+<td>Razmak+tačka3, džojstik levo ili dpad levo</td>
+</tr>
+<tr>
+<td>strelica desno</td>
+<td>Razmak+tačka6, džojstik desno ili strelica desno</td>
+</tr>
+<tr>
+<td>šift plus tab</td>
+<td>razmak+tačka1+tačka3</td>
+</tr>
+<tr>
+<td>tab</td>
+<td>Razmak+tačka4+tačka6</td>
+</tr>
+<tr>
+<td>alt</td>
+<td>Razmak+tačka1+tačka3+tačka4 (razmak+m)</td>
+</tr>
+<tr>
+<td>escape</td>
+<td>Razmak+tačka1+tačka5 (razmak+e)</td>
+</tr>
+<tr>
+<td>enter</td>
+<td>tačka8, centar džojstika ili centralna strelica</td>
+</tr>
+<tr>
+<td>windows</td>
+<td>Razmak+tačka3+tačka4</td>
+</tr>
+<tr>
+<td>alt+tab</td>
+<td>Razmak+tačka2+tačka3+tačka4+tačka5 (razmak+t)</td>
+</tr>
+<tr>
+<td>NVDA meni</td>
+<td>Razmak+tačka1+tačka3+tačka4+tačka5 (razmak+n)</td>
+</tr>
+<tr>
+<td>windows+d (umanji sve aplikacije)</td>
+<td>Razmak+tačka1+tačka4+tačka5 (razmak+d)</td>
+</tr>
+<tr>
+<td>Izgovori sve</td>
+<td>Razmak+tačka1+tačka2+tačka3+tačka4+tačka5+tačka6</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dotPad">Dot Pad</h3>
+<table>
+<thead>
+<tr>
+<th>Ime</th>
+<th>Komanda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pomeri brajev red nazad</td>
+<td><code>pan_left</code></td>
+</tr>
+<tr>
+<td>Pomeri brajev red napred</td>
+<td><code>pan_right</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

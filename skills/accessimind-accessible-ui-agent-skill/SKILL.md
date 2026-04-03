@@ -3061,6 +3061,37 @@ For Windows audits, this skill must use `nvda-portable-a11y-audit` as the defaul
 - Run `skills/nvda-portable-a11y-audit/scripts/invoke-nvda-playwright-audit.ps1` when live SR evidence is required.
 - Treat missing portable NVDA runtime as a blocking condition and keep final gate decision at `FAIL`.
 
+## Full persona integration
+
+For production audits, run persona-complete analysis via `full-persona-a11y-audit`.
+
+### Persona-complete rule
+
+- Blind track: live SR evidence (`NVDA` portable path on Windows).
+- Low-vision track: 200% and 400% zoom, reflow checks, screenshot evidence, focus visibility checks.
+- Motor track: long keyboard traversal, loop/trap risk detection, keyboard-completion risk.
+
+### Mandatory runner
+
+Use:
+- `skills/full-persona-a11y-audit/scripts/invoke-full-persona-audit.ps1`
+
+and include outputs:
+- `blind.md`
+- `low-vision.md`
+- `motor.md`
+- `summary.md`
+- `summary.json`
+
+### Handoff enrichment
+
+Every persona finding should include:
+- severity
+- WCAG reference
+- selector or evidence id
+- concise fix direction
+- owner and ETA placeholders
+
 ## Senior engineering integration mode
 
 This skill is integrated with `senior-developer-20y` for architecture, delivery risk, and production hardening decisions.
