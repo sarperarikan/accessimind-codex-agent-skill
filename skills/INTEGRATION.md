@@ -7,6 +7,7 @@ This bundle is designed to run as a coordinated workflow, not as isolated skills
 - `accessimind-accessible-ui-agent-skill`
 - `playwright`
 - `senior-developer-20y`
+- `nvda-portable-a11y-audit`
 
 ## Execution Order
 
@@ -16,7 +17,10 @@ Defines scope, WCAG 2.2 A/AA target, implementation rules, and severity calibrat
 2. `playwright`
 Collects deterministic runtime evidence for keyboard navigation, focus behavior, and DOM state transitions.
 
-3. `senior-developer-20y`
+3. `nvda-portable-a11y-audit`
+Runs real screen-reader evidence collection using the repository-local portable `NVDA/` copy and captures screenshot artifacts.
+
+4. `senior-developer-20y`
 Applies architecture and delivery-risk review, regression strategy, and production release hardening.
 
 ## Sign-off Decision Model

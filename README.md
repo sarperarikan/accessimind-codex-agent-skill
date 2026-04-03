@@ -8,6 +8,7 @@ This repository now ships an integrated skill bundle:
 - `accessimind-accessible-ui-agent-skill`
 - `playwright`
 - `senior-developer-20y`
+- `nvda-portable-a11y-audit`
 
 It is designed for teams that want a single skill capable of:
 - applying WCAG 2.2-oriented implementation rules
@@ -45,6 +46,8 @@ The skill currently includes guidance for:
   Integrated runtime browser automation and keyboard/DOM evidence skill.
 - `skills/senior-developer-20y/`
   Integrated production engineering and risk-hardening skill.
+- `skills/nvda-portable-a11y-audit/`
+  Portable NVDA + Playwright audit skill for mandatory live SR evidence and screenshot-based analysis.
 - `skills/INTEGRATION.md`
   Methodology and execution order for integrated skill usage.
 - `skills/accessimind-accessible-ui-agent-skill/SKILL.md`
@@ -81,6 +84,7 @@ Expected result:
 $HOME\.codex\skills\accessimind-accessible-ui-agent-skill\SKILL.md
 $HOME\.codex\skills\playwright\SKILL.md
 $HOME\.codex\skills\senior-developer-20y\SKILL.md
+$HOME\.codex\skills\nvda-portable-a11y-audit\SKILL.md
 ```
 
 ## Validate
@@ -116,8 +120,9 @@ For a more detailed English usage guide, see `USAGE.md`.
 The bundle methodology is:
 1. `accessimind-accessible-ui-agent-skill` defines WCAG 2.2 scope, implementation path, and severity.
 2. `playwright` captures deterministic runtime evidence for keyboard, focus, and DOM behavior.
-3. `senior-developer-20y` hardens architecture, test depth, regression safety, and release readiness.
-4. Final decision is emitted through AccessiMind production gates.
+3. `nvda-portable-a11y-audit` runs screen-reader evidence using portable NVDA and captures screenshots.
+4. `senior-developer-20y` hardens architecture, test depth, regression safety, and release readiness.
+5. Final decision is emitted through AccessiMind production gates.
 
 ## Release Notes
 

@@ -4,7 +4,8 @@ $skillsRoot = Join-Path $repoRoot 'skills'
 $bundleSkillNames = @(
   'accessimind-accessible-ui-agent-skill',
   'playwright',
-  'senior-developer-20y'
+  'senior-developer-20y',
+  'nvda-portable-a11y-audit'
 )
 $bundlePaths = @()
 $integrationGuide = Join-Path $skillsRoot 'INTEGRATION.md'

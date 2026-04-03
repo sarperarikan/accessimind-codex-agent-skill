@@ -3051,6 +3051,16 @@ Every final report must include dedicated sections:
 - `Pixel-level contrast measurements`
 - `Focus visibility measurements`
 
+## NVDA portable skill integration
+
+For Windows audits, this skill must use `nvda-portable-a11y-audit` as the default SR evidence path.
+
+### Integration rules
+
+- Prefer repository-local portable NVDA runtime under `NVDA/`.
+- Run `skills/nvda-portable-a11y-audit/scripts/invoke-nvda-playwright-audit.ps1` when live SR evidence is required.
+- Treat missing portable NVDA runtime as a blocking condition and keep final gate decision at `FAIL`.
+
 ## Senior engineering integration mode
 
 This skill is integrated with `senior-developer-20y` for architecture, delivery risk, and production hardening decisions.

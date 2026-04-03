@@ -1,0 +1,5 @@
+interface:
+  display_name: "NVDA Portable A11y Audit"
+  short_description: "Run NVDA-based SR evidence + Playwright screenshot and DOM/focus capture"
+  default_prompt: "Use $nvda-portable-a11y-audit to run portable NVDA screen-reader validation with screenshot and DOM/focus evidence."
+  version: "1.0.0.3"

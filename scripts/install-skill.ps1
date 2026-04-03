@@ -4,7 +4,8 @@ $targetRoot = Join-Path $HOME '.codex\skills'
 $bundleSkillNames = @(
   'accessimind-accessible-ui-agent-skill',
   'playwright',
-  'senior-developer-20y'
+  'senior-developer-20y',
+  'nvda-portable-a11y-audit'
 )
 
 if (-not (Test-Path $skillsRoot)) {

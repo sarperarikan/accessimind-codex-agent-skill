@@ -43,6 +43,7 @@ After installation, the expected paths are:
 $HOME\.codex\skills\accessimind-accessible-ui-agent-skill\SKILL.md
 $HOME\.codex\skills\playwright\SKILL.md
 $HOME\.codex\skills\senior-developer-20y\SKILL.md
+$HOME\.codex\skills\nvda-portable-a11y-audit\SKILL.md
 ```
 
 ## Package the Bundle for Sharing
@@ -86,9 +87,20 @@ This repository is now intentionally multi-skill.
 Use this execution order:
 1. `accessimind-accessible-ui-agent-skill` for WCAG 2.2 interpretation, implementation rules, and severity.
 2. `playwright` for deterministic browser runtime evidence (keyboard, focus, DOM transitions).
-3. `senior-developer-20y` for architecture rigor, regression control, and production release hardening.
+3. `nvda-portable-a11y-audit` for mandatory live screen-reader evidence and screenshot artifacts using portable NVDA.
+4. `senior-developer-20y` for architecture rigor, regression control, and production release hardening.
 
 This ensures the workflow is not checklist-only and can support production-grade delivery decisions.
+
+## NVDA Portable Runner
+
+From repository root:
+
+```powershell
+.\skills\nvda-portable-a11y-audit\scripts\invoke-nvda-playwright-audit.ps1 -Urls "https://www.arcelik.com.tr/kampanyalar","https://www.arcelik.com.tr/destek"
+```
+
+This runner uses the repository-local `NVDA/` directory as the default screen-reader runtime.
 
 ## What the Skill Optimizes For
 
