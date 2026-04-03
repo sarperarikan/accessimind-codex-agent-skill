@@ -1,8 +1,13 @@
 ﻿# AccessiMind Accessible UI Agent Skill
 
-Current version: `1.0.0.2`
+Current version: `1.1.0`
 
 AccessiMind Accessible UI Agent Skill is a shareable Codex skill for building and reviewing production-ready UI with an accessibility-first workflow.
+
+This repository now ships an integrated skill bundle:
+- `accessimind-accessible-ui-agent-skill`
+- `playwright`
+- `senior-developer-20y`
 
 It is designed for teams that want a single skill capable of:
 - applying WCAG 2.2-oriented implementation rules
@@ -11,6 +16,7 @@ It is designed for teams that want a single skill capable of:
 - guiding multilingual and enterprise-grade UI architecture
 - integrating automated `axe-core` checks where appropriate
 - covering web, React, Android, Flutter, and iOS accessibility concerns
+- enforcing production-grade delivery gates through integrated runtime evidence and senior engineering risk review
 
 ## What This Skill Does
 
@@ -35,6 +41,12 @@ The skill currently includes guidance for:
 
 - `skills/accessimind-accessible-ui-agent-skill/`
   The installable Codex skill folder.
+- `skills/playwright/`
+  Integrated runtime browser automation and keyboard/DOM evidence skill.
+- `skills/senior-developer-20y/`
+  Integrated production engineering and risk-hardening skill.
+- `skills/INTEGRATION.md`
+  Methodology and execution order for integrated skill usage.
 - `skills/accessimind-accessible-ui-agent-skill/SKILL.md`
   The core skill instructions and workflow.
 - `skills/accessimind-accessible-ui-agent-skill/references/official-sources.md`
@@ -67,6 +79,8 @@ Expected result:
 
 ```text
 $HOME\.codex\skills\accessimind-accessible-ui-agent-skill\SKILL.md
+$HOME\.codex\skills\playwright\SKILL.md
+$HOME\.codex\skills\senior-developer-20y\SKILL.md
 ```
 
 ## Validate
@@ -83,7 +97,7 @@ python .\scripts\quick_validate.py .\skills\accessimind-accessible-ui-agent-skil
 .\scripts\package-skill.ps1
 ```
 
-The zip artifact will be written to `dist/accessimind-accessible-ui-agent-skill.zip`.
+The zip artifact will be written to `dist/accessimind-integrated-skill-bundle.zip`.
 
 ## How To Invoke the Skill
 
@@ -97,7 +111,15 @@ Suggested trigger phrases:
 
 For a more detailed English usage guide, see `USAGE.md`.
 
+## Integrated Workflow
+
+The bundle methodology is:
+1. `accessimind-accessible-ui-agent-skill` defines WCAG 2.2 scope, implementation path, and severity.
+2. `playwright` captures deterministic runtime evidence for keyboard, focus, and DOM behavior.
+3. `senior-developer-20y` hardens architecture, test depth, regression safety, and release readiness.
+4. Final decision is emitted through AccessiMind production gates.
+
 ## Release Notes
 
-- Current release: `1.0.0.2`
+- Current release: `1.1.0`
 - Changelog: `CHANGELOG.md`

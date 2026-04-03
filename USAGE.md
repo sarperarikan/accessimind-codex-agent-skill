@@ -1,6 +1,6 @@
 ﻿# Usage Guide
 
-Current version: `1.0.0.2`
+Current version: `1.1.0`
 
 ## Overview
 
@@ -13,7 +13,7 @@ AccessiMind Accessible UI Agent Skill is intended for Codex users who want UI wo
 
 This guide explains how to install, invoke, and use the skill effectively.
 
-## Install the Skill
+## Install the Integrated Skill Bundle
 
 ### Option 1: Install with the bundled script
 
@@ -37,13 +37,15 @@ Into your Codex skills directory:
 $HOME\.codex\skills\
 ```
 
-After installation, the expected path is:
+After installation, the expected paths are:
 
 ```text
 $HOME\.codex\skills\accessimind-accessible-ui-agent-skill\SKILL.md
+$HOME\.codex\skills\playwright\SKILL.md
+$HOME\.codex\skills\senior-developer-20y\SKILL.md
 ```
 
-## Package the Skill for Sharing
+## Package the Bundle for Sharing
 
 To create a distributable zip archive:
 
@@ -54,7 +56,7 @@ To create a distributable zip archive:
 The package will be created here:
 
 ```text
-dist/accessimind-accessible-ui-agent-skill.zip
+dist/accessimind-integrated-skill-bundle.zip
 ```
 
 ## Validate the Skill
@@ -76,6 +78,17 @@ Use this skill when you want Codex to:
 - handle dynamic UI states such as dialogs, toasts, overlays, tabs, async loads, and live updates
 - design multilingual UI architecture instead of scattering strings inline
 - evaluate or implement accessibility for React, HTML/CSS, Android, Flutter, or iOS surfaces
+
+## Integrated Methodology
+
+This repository is now intentionally multi-skill.
+
+Use this execution order:
+1. `accessimind-accessible-ui-agent-skill` for WCAG 2.2 interpretation, implementation rules, and severity.
+2. `playwright` for deterministic browser runtime evidence (keyboard, focus, DOM transitions).
+3. `senior-developer-20y` for architecture rigor, regression control, and production release hardening.
+
+This ensures the workflow is not checklist-only and can support production-grade delivery decisions.
 
 ## What the Skill Optimizes For
 

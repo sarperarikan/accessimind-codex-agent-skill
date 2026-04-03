@@ -1,6 +1,6 @@
 ---
 name: accessimind-accessible-ui-agent-skill
-description: Use when the user wants production-ready modern UI work for existing projects or new screens in React, HTML, or CSS, with stack-aware implementation, enterprise-grade multilingual architecture, consistent design systems, WCAG 2.2-compliant output, axe-core-backed accessibility verification, and strong support for dynamic and stateful interfaces.
+description: Use when the user wants production-ready modern UI work for existing projects or new screens in React, HTML, or CSS, with stack-aware implementation, enterprise-grade multilingual architecture, integrated Playwright and senior-engineering workflows, WCAG 2.2-compliant output, axe-core-backed accessibility verification, and strong support for dynamic and stateful interfaces.
 ---
 
 # AccessiMind Accessible UI Agent Skill
@@ -667,6 +667,49 @@ When no explicit output path is provided:
 - create the file under the workspace `reports` folder
 - mention the created file path in the response
 - prefer a real file over inline HTML when the user asks for a report artifact
+
+### Report encoding safety rule
+
+When this skill generates HTML accessibility reports, character corruption is not acceptable.
+
+The report output must preserve Turkish and all other intended Unicode characters correctly.
+
+### Required encoding rules for HTML reports
+
+- always write HTML report files in UTF-8
+- keep `<meta charset="utf-8">` in the document head
+- avoid shell or file-writing paths that are likely to transcode UTF-8 into ANSI, Windows-1252, or mojibake
+- if the environment is known to display UTF-8 poorly in terminal output, treat terminal mojibake as a display issue, not a reason to downgrade file encoding
+- when needed for Windows compatibility, prefer a UTF-8-safe write path and allow a UTF-8 BOM only if it improves reliable opening behavior for the generated report
+
+### Required verification step
+
+After generating an HTML report file, verify that the written file still contains expected non-ASCII strings correctly.
+
+At minimum:
+- re-read the file as UTF-8
+- check that representative strings such as Turkish labels or page titles are preserved
+- explicitly verify static report strings as well as crawled page data, because a report can contain correct page titles while the report shell itself is corrupted
+- verify at least the report `<title>`, the main `<h1>`, and one paragraph or heading containing Turkish characters such as `Arçelik`, `erişilebilirlik`, `çok sayfalı`, or equivalent locale-specific text
+- if verification fails, rewrite the report through a safer UTF-8 path before considering the task complete
+
+### Completion rule for report encoding
+
+Do not consider an HTML audit report complete if any of the following are corrupted:
+- report title
+- report section headings
+- executive summary text
+- severity labels
+- metadata labels
+
+If a generated report artifact in the current task is found to be corrupted, regenerate or repair that artifact before closing the task.
+
+### Reporting rule for encoding
+
+If an encoding workaround was required, mention that:
+- the report was written in UTF-8
+- terminal preview may still show mojibake due to shell codepage limitations
+- the file content itself was verified successfully
 
 ### Report modes
 
@@ -1892,6 +1935,7 @@ If the task touches multilingual UI, generated HTML, extension UIs, reports, or 
 - file encoding remained UTF-8
 - visible text renders correctly in the browser
 - `lang`, `dir`, and localized strings still match the selected locale
+- static report chrome or template strings are not corrupted even when the underlying crawled data is correct
 
 Do not ship interface changes with encoding corruption, even if the UI is otherwise functional.
 ## Multilingual architecture
@@ -2759,6 +2803,262 @@ Use for:
 - drag and drop surfaces
 - canvas-adjacent controls
 - extension popup actions
+
+## NVDA-assisted live review mode
+
+This skill must support an optional NVDA-assisted validation path for Windows environments when the user asks for real screen-reader interaction evidence.
+
+Treat requests like these as triggers:
+- `NVDA ile test et`
+- `screen reader outputunu rapora dahil et`
+- `Chrome ac ve NVDA ile gezin`
+- `include NVDA interaction evidence in the HTML report`
+
+### NVDA-assisted objective
+
+When available, collect deterministic assistive-tech evidence from a real NVDA session and add it to the audit output.
+
+### NVDA source rule
+
+For NVDA tool identity and project reference, prefer the official repository:
+- `https://github.com/nvaccess/nvda`
+
+### NVDA-assisted workflow
+
+1. Verify local prerequisites:
+- NVDA executable available on Windows.
+- Browser channel available (`chrome` preferred, `msedge` fallback).
+- Guidepup runtime available for NVDA automation (`@guidepup/guidepup`).
+
+2. Open the target page in a real browser window (not source-only analysis).
+
+3. Start NVDA and run a deterministic interaction sequence:
+- focus page
+- perform a fixed navigation set (for example `Tab` + `next` commands)
+- collect `spokenPhraseLog` and `lastSpokenPhrase`
+
+4. Stop NVDA cleanly and close browser.
+
+5. Add a dedicated evidence section in the report.
+
+### Required NVDA evidence fields
+
+When NVDA-assisted mode succeeds, include:
+- target URL
+- browser channel
+- locale
+- NVDA session status (`started/stopped`)
+- deterministic step list
+- spoken phrase log excerpt
+- last spoken phrase
+- timestamp
+
+### NVDA report section rule
+
+HTML accessibility reports should include a section like:
+- `NVDA-assisted interaction evidence`
+- `Observed spoken output`
+- `Interpretation notes`
+
+Keep interpretation grounded in collected output. Do not over-claim full user equivalence from a short scripted pass.
+
+### Fallback and limitation rule
+
+If NVDA automation cannot run:
+- mark the result as `unverified: no NVDA runtime evidence`
+- keep the audit running with DOM and heuristic evidence
+- state why NVDA evidence could not be captured (tooling, permissions, runtime failure, missing setup)
+
+### Safety and integrity rule
+
+- Never fabricate spoken output.
+- Never claim NVDA coverage if logs were empty or capture failed.
+- Distinguish `NVDA-assisted confirmed` findings from `DOM-only inferred` findings.
+
+## Long keyboard-session mode
+
+This skill must support long real-session keyboard data collection when the user requests sustained interaction evidence, such as:
+- `en az 1 saat tab ile gezinerek veri topla`
+- `collect at least 1 hour of keyboard navigation evidence`
+- `run a long tab navigation session and include findings`
+
+### Long-session objective
+
+Collect deterministic evidence from prolonged keyboard-only navigation under realistic timing, not a one-pass static snapshot.
+
+### Minimum requirements
+
+When requested for long-session collection:
+- run a real browser session for at least 60 minutes unless the user asks for a different duration
+- use keyboard traversal (`Tab`, and optionally `Shift+Tab`) as the primary interaction model
+- capture timestamped focus transitions
+- capture URL/title transitions
+- capture focusable element identity data (role/name/tag/id/class/tabindex/disabled/hidden indicators)
+- record unreachable or looping focus patterns when observed
+
+### Required long-session report fields
+
+Include in report:
+- target URL and scope
+- browser profile and locale
+- session start/end timestamps
+- configured duration and actual duration
+- key interval settings (tab interval, logging cadence)
+- total focus transitions
+- repeated-focus loop indicators
+- no-visible-focus or hidden-focus indicators
+- sampled element evidence list
+
+### Reliability rules
+
+- If session is interrupted before requested duration, report exact stop time and reason.
+- If anti-bot/WAF or modal overlays block traversal, report blockage points explicitly.
+- Do not claim 1-hour evidence if actual runtime is shorter.
+
+## Production-grade audit gate mode
+
+This skill must enforce explicit release gates for accessibility audits and remediation output.
+
+### Gate objective
+
+Prevent ambiguous "looks good" conclusions by requiring a measurable `PASS`, `PASS_WITH_RISK`, or `FAIL` decision.
+
+### Gate model
+
+Use these gates before final sign-off:
+- `G1: Coverage gate`:
+Audit scope, tested surfaces, and untested boundaries are explicitly listed.
+- `G2: Keyboard gate`:
+Core task flows are executable with keyboard only, with visible focus and no trap.
+- `G3: Semantics gate`:
+Primary controls and structure expose valid name, role, state, and relationship semantics.
+- `G4: WCAG gate`:
+All `critical` and `high` findings have an accepted remediation decision.
+- `G5: Evidence gate`:
+Report includes reproducible evidence for each major claim.
+
+### Gate decision rules
+
+- `PASS`: all gates satisfied and no unresolved `critical` or `high` findings.
+- `PASS_WITH_RISK`: no unresolved `critical` findings, but at least one unresolved `high` or accepted temporary exception.
+- `FAIL`: any unresolved `critical`, missing evidence on major claims, or blocked keyboard completion in core flow.
+
+### Exception handling rule
+
+If a finding is deferred, the report must include:
+- rationale
+- owner
+- target date
+- temporary mitigation
+- residual user impact
+
+## Evidence and traceability contract
+
+When producing implementation or audit output, every non-trivial finding should be traceable to observed evidence.
+
+### Required evidence fields per major finding
+
+- evidence id (for example `EV-12`)
+- surface (`URL`, component, or file)
+- locator (selector, DOM snippet, or line reference)
+- reproduction steps
+- observed behavior
+- expected behavior
+- WCAG 2.2 reference
+- confidence (`high`, `medium`, `low`)
+
+### Confidence calibration
+
+- `high`: directly observed in DOM/runtime with repeatable steps.
+- `medium`: strong inference from partial runtime evidence.
+- `low`: likely issue but blocked by missing state, auth, or tooling.
+
+Low-confidence findings must never be presented as confirmed compliance failures.
+
+## Regression pack generation mode
+
+This skill must be able to output a minimal regression pack after remediation planning.
+
+### Required regression pack sections
+
+- smoke checks for fixed `critical/high` findings
+- keyboard traversal checks for impacted flows
+- screen-reader naming/state checks for changed components
+- zoom/reflow checks for affected layouts
+- negative checks to ensure no regression in adjacent flows
+
+### Regression pack rule
+
+Each check must be written as deterministic `step -> expected result`.
+
+## Playwright integration mode
+
+This skill is integrated with the `playwright` skill for runtime evidence collection.
+
+### Integration trigger
+
+Default to Playwright-assisted runtime capture when the request includes any of:
+- keyboard traversal validation
+- focus behavior validation
+- DOM-backed accessibility evidence
+- multi-page or long-session audit
+
+### Integrated workflow
+
+1. `accessimind` defines audit scope, WCAG lens, and severity model.
+2. `playwright` runs deterministic keyboard/DOM capture and produces step logs.
+3. `accessimind` calibrates severity and maps findings to WCAG 2.2 criteria.
+4. `accessimind` applies production gates (`G1`-`G5`) and outputs `PASS`, `PASS_WITH_RISK`, or `FAIL`.
+
+### Data contract from Playwright
+
+`playwright` evidence should be consumed as:
+- artifact paths
+- keyboard step logs
+- focused element identity and action result
+- candidate issues with element refs
+- run limitations
+
+### Source of truth rule
+
+- Runtime interaction evidence comes from `playwright`.
+- Severity and compliance interpretation stay in `accessimind`.
+- Never skip runtime evidence for keyboard/focus claims unless tooling is blocked; if blocked, mark as unverified.
+
+## Senior engineering integration mode
+
+This skill is integrated with `senior-developer-20y` for architecture, delivery risk, and production hardening decisions.
+
+### Integration trigger
+
+Enable senior mode by default when the task includes:
+- production UI implementation
+- refactor with regression risk
+- shared component or design-system changes
+- release readiness decisions
+
+### Ownership split
+
+- `accessimind` owns accessibility semantics, WCAG 2.2 mapping, and user-impact severity.
+- `playwright` owns runtime keyboard/DOM evidence capture.
+- `senior-developer-20y` owns delivery architecture, risk control, test strategy, and release hardening.
+
+### Production-grade WCAG 2.2 delivery lifecycle
+
+For production UI development, run this sequence:
+1. Define scope, assumptions, and WCAG 2.2 A/AA target.
+2. Implement with semantic-first UI and native controls.
+3. Capture deterministic runtime evidence via Playwright.
+4. Apply senior risk review: regression risk, state management risk, rollout safety, and maintainability.
+5. Enforce release gates (`G1`-`G5`) and produce a final decision.
+
+### Full-compliance statement rule
+
+Do not claim "full WCAG 2.2 compliance" unless:
+- coverage boundaries are explicit,
+- no unresolved `critical`/`high` findings remain in scope,
+- runtime keyboard/focus evidence is present for core flows,
+- residual risks and unverified areas are clearly documented.
 
 ## References
 
