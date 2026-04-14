@@ -1,6 +1,6 @@
 ﻿# Usage Guide
 
-Current version: `1.0.0.3`
+Current version: `1.0.0.11`
 
 ## Overview
 
@@ -45,6 +45,7 @@ $HOME\.codex\skills\playwright\SKILL.md
 $HOME\.codex\skills\senior-developer-20y\SKILL.md
 $HOME\.codex\skills\nvda-portable-a11y-audit\SKILL.md
 $HOME\.codex\skills\full-persona-a11y-audit\SKILL.md
+$HOME\.codex\skills\business-analyst-a11y\SKILL.md
 ```
 
 ## Package the Bundle for Sharing
@@ -87,29 +88,144 @@ This repository is now intentionally multi-skill.
 
 Use this execution order:
 1. `accessimind-accessible-ui-agent-skill` for WCAG 2.2 interpretation, implementation rules, and severity.
-2. `playwright` for deterministic browser runtime evidence (keyboard, focus, DOM transitions).
-3. `nvda-portable-a11y-audit` for mandatory live screen-reader evidence and screenshot artifacts using portable NVDA.
+2. `playwright` for deterministic browser runtime evidence with enforced artifact gates (keyboard, focus, DOM transitions).
+3. `nvda-portable-a11y-audit` for mandatory live screen-reader evidence and verified screenshot artifacts using portable NVDA.
 4. `full-persona-a11y-audit` for one-command blind/low-vision/motor persona coverage.
-5. `senior-developer-20y` for architecture rigor, regression control, and production release hardening.
+5. `business-analyst-a11y` for As-Is analysis and Dev/BA/PO action mapping.
+6. `senior-developer-20y` for architecture rigor, regression control, and production release hardening.
 
 This ensures the workflow is not checklist-only and can support production-grade delivery decisions.
+
+## Prompt Recipes
+
+Generic prompt starters are available here:
+
+```text
+skills/accessimind-accessible-ui-agent-skill/references/prompt-recipes.md
+```
+
+Use them when you want a fast starting point for:
+- single-page audits
+- multi-page audits
+- component reviews
+- remediation plans
+
+## Local Regression Fixtures
+
+Generic local fixtures are available here:
+
+```text
+skills/accessimind-accessible-ui-agent-skill/references/fixtures/
+```
+
+Use them when you want repeatable, domain-agnostic checks without relying on live sites.
+
+## Deterministic Runtime Collector
+
+The live audit runners use this helper:
+
+```text
+scripts/deterministic_playwright_probe.cjs
+```
+
+It opens each target URL in a single Playwright process and collects DOM, scroll, screenshot, focus, and structured element evidence without relying on cross-process CLI session state.
+
+Blind-side spoken output is collected with:
+
+```text
+scripts/nvda_speech_probe.py
+```
 
 ## NVDA Portable Runner
 
 From repository root:
 
 ```powershell
-.\skills\nvda-portable-a11y-audit\scripts\invoke-nvda-playwright-audit.ps1 -Urls "https://www.arcelik.com.tr/kampanyalar","https://www.arcelik.com.tr/destek"
+.\skills\nvda-portable-a11y-audit\scripts\invoke-nvda-playwright-audit.ps1 -Urls "https://example.com","https://example.com/support","https://example.com/company"
 ```
 
-This runner uses the repository-local `NVDA/` directory as the default screen-reader runtime.
+This runner uses the repository-local `NVDA/` directory as the default screen-reader runtime and records:
+- `spokenPhraseLog`
+- `lastSpokenPhrase`
+- step-level `events` with action-to-speech mapping
+
+Chrome is mandatory for live-site audits. Use a real Chrome session and attach by CDP when the target site is session-sensitive or bot-protected:
+
+```powershell
+.\scripts\start_chrome_a11y_debug.ps1 -Port 9222 -Urls "https://example.com"
+.\skills\full-persona-a11y-audit\scripts\invoke-full-persona-audit.ps1 -Urls "https://example.com","https://example.com/support" -CdpUrl "http://127.0.0.1:9222"
+```
+
+Generated HTML reports now enforce:
+- UTF-8 round-trip validation with fail-fast mojibake detection
+- behavior-oriented finding cards that explain what element was reached, what happened, why it violates WCAG 2.2, and what should happen instead
+- BA `As-Is` / `To-Be` notes derived from real DOM, focus, and NVDA speech evidence instead of placeholder wording
+- exact locator output based on structural DOM context
+- issue-level crop images for actionable visual handoff when a target element has a valid visible bounding box
+
+Single-command orchestration for the full human-readable HTML output:
+
+```powershell
+.\scripts\run_human_a11y_report.ps1 -Urls "https://example.com","https://example.com/support" -ProjectName "example" -StartChrome
+```
+
+OpenClaw-style single-entry orchestration with same-domain discovery and merged summary:
+
+```powershell
+.\scripts\run_openclaw_accessmind_audit.ps1 -Url "https://example.com" -MaxPages 3 -StartChrome
+```
+
+This wrapper:
+- discovers in-scope same-domain pages first
+- runs the existing full persona audit flow on the resulting URL set
+- preserves the original report outputs
+- adds `discovery.json`, `openclaw-summary.md`, and `openclaw-summary.json`
+
+If you already have real Windows NVDA worker evidence, merge it into the final summary:
+
+```powershell
+.\scripts\run_openclaw_accessmind_audit.ps1 -Url "https://example.com" -MaxPages 3 -StartChrome -NVDAWorkerJson ".\reports\windows-nvda-worker.json"
+```
+
+Discovery only:
+
+```powershell
+node .\scripts\accessmind_discover.cjs --url https://example.com --max-pages 3 --output .\reports\example-discovery.json
+```
+
+Safe session-assisted inputs:
+
+```powershell
+.\skills\nvda-portable-a11y-audit\scripts\invoke-nvda-playwright-audit.ps1 -Urls "https://example.com" -StorageStatePath ".\session\state.json"
+.\skills\nvda-portable-a11y-audit\scripts\invoke-nvda-playwright-audit.ps1 -Urls "https://example.com" -CdpUrl "http://127.0.0.1:9222"
+```
+
+To collect NVDA evidence while you manually navigate the page, enable manual session capture:
+
+```powershell
+.\skills\nvda-portable-a11y-audit\scripts\invoke-nvda-playwright-audit.ps1 -Urls "https://example.com" -CdpUrl "http://127.0.0.1:9222" -ManualSessionCapture -ManualSessionSeconds 120
+```
+
+This preserves the normal automated blind scan and also writes a per-page `speech-session.json` log plus a manual-session section in `summary.md`.
+
+These inputs are intended for authorized user sessions only. The runner does not bypass access controls; it detects rendered barriers and instructs you to rerun with a legitimate session when required.
+
+## Windows NVDA Worker Merge
+
+Use the local guide here:
+
+```text
+NVDA-WINDOWS-WORKER.md
+```
+
+The merge layer expects a simple JSON payload with `syncedAt`, `sessionCount`, and per-session URL/speech evidence. The audit can still run without this file, but blind persona conclusions remain heuristic unless real screen-reader evidence is attached.
 
 ## Full Persona Runner
 
 From repository root:
 
 ```powershell
-.\skills\full-persona-a11y-audit\scripts\invoke-full-persona-audit.ps1 -Urls "https://www.arcelik.com.tr/kampanyalar","https://www.arcelik.com.tr/destek"
+.\skills\full-persona-a11y-audit\scripts\invoke-full-persona-audit.ps1 -Urls "https://example.com","https://example.com/support","https://example.com/company"
 ```
 
 This produces:
@@ -118,6 +234,12 @@ This produces:
 - `motor.md`
 - `summary.md`
 - `summary.json`
+- `index.html` (UTF-8 and accessible with table of contents)
+
+Mandatory flow and integrity rules:
+- Cookie dialog must be evaluated first, then accepted, then scanning restarts from top-of-page.
+- Reports must be UTF-8 safe (BOM for generated artifacts) and contain no mojibake.
+- Reports must be detailed; short-form output is not accepted.
 
 ## What the Skill Optimizes For
 

@@ -209,7 +209,7 @@ When this mode is used for an audit handoff, provide:
 - artifact paths
 - keyboard step log
 - candidate issue list with element refs
-- capture limitations (auth walls, blocked modals, anti-bot interstitials)
+- coverage status and next-pass targets when some states need another run
 
 ## AccessiMind integration mode
 
@@ -230,7 +230,7 @@ When the parent task is an accessibility audit:
 - `focus_trace` (element refs plus role/name hints)
 - `candidate_issues` (short, evidence-linked)
 - `artifacts` (snapshot/screenshot/log paths)
-- `limitations`
+- `coverage_status`
 
 ### Severity ownership rule
 

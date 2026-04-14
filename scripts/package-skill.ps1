@@ -6,7 +6,8 @@ $bundleSkillNames = @(
   'playwright',
   'senior-developer-20y',
   'nvda-portable-a11y-audit',
-  'full-persona-a11y-audit'
+  'full-persona-a11y-audit',
+  'business-analyst-a11y'
 )
 $bundlePaths = @()
 $integrationGuide = Join-Path $skillsRoot 'INTEGRATION.md'

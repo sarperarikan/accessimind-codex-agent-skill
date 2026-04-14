@@ -1,0 +1,19 @@
+{
+  "name": "accessimind-codex-agent-skill",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Runtime dependencies for CDP-native accessibility audit collection.",
+  "license": "UNLICENSED",
+  "scripts": {
+    "a11y:audit": "powershell -ExecutionPolicy Bypass -File .\\scripts\\run_a11y_audit.ps1",
+    "a11y:audit:chrome": "powershell -ExecutionPolicy Bypass -File .\\scripts\\run_a11y_audit.ps1 -StartChrome",
+    "a11y:discover": "node .\\scripts\\accessmind_discover.cjs",
+    "a11y:audit:openclaw": "powershell -ExecutionPolicy Bypass -File .\\scripts\\run_openclaw_accessmind_audit.ps1"
+  },
+  "dependencies": {
+    "axe-core": "^4.10.3",
+    "chrome-remote-interface": "^0.33.3",
+    "codex": "^0.2.3",
+    "droid": "^0.93.0"
+  }
+}

@@ -1,6 +1,6 @@
 ---
 name: accessimind-accessible-ui-agent-skill
-description: Use when the user wants production-ready modern UI work for existing projects or new screens in React, HTML, or CSS, with stack-aware implementation, enterprise-grade multilingual architecture, integrated Playwright and senior-engineering workflows, WCAG 2.2-compliant output, axe-core-backed accessibility verification, and strong support for dynamic and stateful interfaces.
+description: Use when the user wants production-ready modern UI work for existing projects or new screens in React, HTML, or CSS, with stack-aware implementation, enterprise-grade multilingual architecture, integrated Chrome CDP-native collection, NVDA, persona-audit, BA handoff, and senior-engineering workflows, WCAG 2.2-compliant output, axe-core-backed accessibility verification, and strong support for dynamic and stateful interfaces.
 ---
 
 # AccessiMind Accessible UI Agent Skill
@@ -10,6 +10,29 @@ Use this skill when building or refactoring UI in web projects that must be mode
 Keep this skill practical. Prefer shipping code over writing design essays.
 
 This skill must also support delivery planning output when the user asks for implementation breakdowns, rollout plans, handoff documentation, or Jira-ready task definitions for the UI and accessibility work.
+
+## Integrated bundle orchestration mode
+
+Treat this skill as the orchestrator for the full AccessiMind skill bundle in this project, not as an isolated UI rule sheet.
+
+### Orchestration rule
+
+When the task is audit-heavy, production-facing, or requires evidence-backed sign-off, this skill should orchestrate:
+- Chrome CDP-native collection for runtime keyboard, focus, DOM, accessibility-tree, and screenshot evidence
+- `nvda-portable-a11y-audit` for Windows screen-reader evidence using repository-local portable NVDA
+- `full-persona-a11y-audit` for blind, low-vision, and motor-limited coverage
+- `business-analyst-a11y` for As-Is / To-Be and role-based remediation mapping
+- `senior-developer-20y` for architecture, regression, rollout, and production-risk review
+
+### Default execution order
+
+1. `accessimind` defines scope, boundaries, WCAG 2.2 lens, and severity model.
+2. Chrome CDP-native collector captures deterministic browser evidence and serves as the main collector.
+3. `nvda-portable-a11y-audit` captures Windows SR evidence and is mandatory for production audits.
+4. Vision evidence via screenshot and issue-crop artifacts is mandatory for production audits.
+5. `full-persona-a11y-audit` expands the run into blind, low-vision, and motor tracks inside a single report pipeline.
+6. `business-analyst-a11y` converts findings into delivery-ready handoff output.
+7. `senior-developer-20y` applies architecture and release-readiness judgment before final sign-off.
 
 ## Outcomes
 
@@ -232,6 +255,123 @@ Include when available:
 
 The report should show enough evidence metadata that another reviewer can understand how the audit was performed.
 
+## Deep traversal reporting mode
+
+This skill must optimize live audit runs for deeper page traversal, not only a first-screen or first-state snapshot.
+
+### Deep traversal objective
+
+For each in-scope page, traverse enough of the rendered experience to produce:
+- richer head-to-tail element coverage
+- interactive control coverage beyond the hero area
+- repeated pattern detection across shared shell, mid-page modules, and footer utilities
+- longer keyboard evidence, not only a short smoke pass
+
+### Deep traversal rules
+
+- Prefer scrolling through the full page in multiple checkpoints before finalizing element inventory.
+- Re-run DOM collection after major lazy-load or below-the-fold content becomes visible.
+- Record more than one interaction layer: initial render, post-cookie state, and deeper page traversal state.
+- Preserve shared-shell findings, but also keep route-specific findings from deeper content modules.
+- Increase keyboard traversal depth for audit runs so the report includes a broader focus path across the page.
+
+### Element coverage rule
+
+For report generation, include enough element evidence to represent:
+- landmarks
+- headings
+- links
+- buttons
+- form fields
+- dialogs
+- images and graphics
+- repeated CTA clusters
+- sticky or floating helper menus
+- footer utility links
+
+Do not collapse the report to a tiny sample when the page clearly contains materially more navigable content.
+
+## Runtime resilience mode
+
+This skill must harden browser-driven audits against flaky sessions, stale pipes, partial DOM capture, and transient navigation failures.
+
+### Runtime resilience rules
+
+- Retry key browser actions such as navigation, DOM extraction, and screenshot capture before giving up.
+- Reset the Playwright session when the browser state becomes stale or the transport pipe is no longer reliable.
+- Enforce a deterministic evidence gate per page before any report artifact is accepted.
+- Fail the run when a page does not produce verified runtime evidence after the allowed retry and session-reset path.
+
+## Stateful component coverage mode
+
+This skill must not treat dynamic UI as if it were a static page snapshot.
+
+### Stateful coverage rules
+
+- Probe common interactive patterns such as accordions, tabs, expandable menus, drawers, dialogs, and carousel controls when they are safely reachable.
+- Re-collect DOM and evidence after opening common stateful controls.
+- Summarize which dynamic component types were actually traversed in the report.
+- Treat stateful coverage as part of evidence breadth, not as an optional extra.
+
+## Verified runtime evidence gate
+
+Each reviewed page must pass a single deterministic runtime gate before the audit may continue.
+
+### Required gate signals
+
+- resolved live URL and document title captured from the rendered page
+- non-empty DOM inventory from the rendered page
+- successful multi-checkpoint scroll traversal
+- successful screenshot artifact creation
+- successful keyboard or assistive-tech interaction trace
+
+### Gate rule
+
+- If the gate passes, the page is `verified`.
+- If the gate fails after the allowed retry path, stop the run and report the failure as a tooling outcome, not as a site finding.
+- Do not emit placeholder counts, synthetic scroll checkpoints, or source-only substitutions to keep the report alive.
+
+## Chrome-first live audit mode
+
+For live-site accessibility audits, Chrome is the required browser.
+
+### Chrome-first rules
+
+- Use a real Chrome render path for live audits instead of a generic browser fallback.
+- Prefer attaching to an already open Chrome session by CDP when the target site is session-sensitive, geo-sensitive, or anti-bot-sensitive.
+- Do not silently fall back to another browser for production audit output.
+
+## Report integrity mode
+
+Generated audit reports must be encoding-safe, evidence-backed, and behavior-oriented.
+
+### Report integrity rules
+
+- Enforce UTF-8 round-trip validation on generated HTML artifacts and fail the run if mojibake or replacement characters are detected.
+- Do not use canned BA `As-Is` / `To-Be` prose; derive those sections from actual findings, DOM evidence, focus evidence, and spoken screen-reader evidence.
+- Write finding narratives in a close-to-natural style that explains which element was reached, what was attempted, what happened, why the behavior fails WCAG 2.2, and what the expected behavior should be.
+- Prefer behavior and evidence over generic labels such as `issue exists` or `needs improvement`.
+- Include an exact locator for actionable findings using structural DOM context such as css-path, landmark context, and identifying attributes when available.
+- Include issue-level crop evidence for actionable findings when the reviewed element has a valid visible bounding box.
+
+## Coverage-first report wording mode
+
+This skill should avoid making the final report read like a blocker log or a limitations memo.
+
+### Wording rule
+
+- Prefer `coverage`, `verification scope`, `observed evidence`, and `next-pass targets`.
+- Avoid creating a dedicated `limitations` section unless the user explicitly asks for constraints reporting.
+- If some surfaces need a rerun, present that as `additional coverage recommended` instead of a limitations-heavy narrative.
+- Keep the report centered on observed findings, covered surfaces, and concrete remediation direction.
+
+### Truthfulness rule
+
+Do not fabricate evidence or hide missing coverage. Instead:
+- state which verified surfaces were covered
+- fail the run when a requested surface cannot be verified
+- keep the emphasis on observed findings backed by runtime artifacts
+
 ## Authenticated boundary mode
 
 This skill must explicitly handle login-gated or account-gated surfaces.
@@ -352,6 +492,49 @@ This skill must be able to convert findings into implementation-ready accessibil
 - separate shared-shell criteria from page-specific criteria
 - include dynamic states when the issue involves overlays, filtering, cart actions, compare actions, or runtime status updates
 
+## Localization and language review mode
+
+This skill must treat localization correctness as part of accessibility quality, not only text translation quality.
+
+### Localization review rules
+
+- Check `lang` and `dir` on the document root when reviewing rendered pages.
+- Check that runtime messages and validation messages are localized consistently with the surface language.
+- Check text expansion risk, mixed-language announcements, and aria text that diverges from the visible locale.
+- Report locale configuration and basic language evidence in the audit output when available.
+
+## Repeated pattern synthesis mode
+
+This skill must synthesize repeated defects across cards, CTA clusters, helper menus, sticky widgets, and footer utilities.
+
+### Synthesis rules
+
+- Summarize repeated pattern defects once with page examples instead of duplicating long finding blocks.
+- Prefer remediation at the shared component or shell level when the pattern clearly repeats.
+- Include a repeated-pattern summary in HTML audit output for multi-surface reviews.
+
+## Fixture regression mode
+
+This skill bundle should remain testable against local generic fixtures, not only live sites.
+
+### Fixture rules
+
+- Prefer using the generic HTML fixtures in `references/fixtures/` for repeatable local regression checks when live-site behavior is unstable.
+- Keep fixtures domain-agnostic and focused on reusable accessibility patterns such as forms, navigation shells, and product grids.
+- Do not let fixture wording drift into customer-specific branding.
+
+## Prompt recipe mode
+
+This bundle should ship reusable prompt starters for common audit tasks.
+
+### Prompt recipe rule
+
+Use or point to `references/prompt-recipes.md` when the user needs:
+- single-page audit prompts
+- multi-page audit prompts
+- component review prompts
+- remediation-plan prompts
+
 ## HTML accessibility analysis report mode
 
 This skill must also be capable of generating a detailed HTML accessibility analysis report when the user asks for a report artifact instead of, or in addition to, a plain-text review.
@@ -422,7 +605,7 @@ The crawl and review must stay within the intended scope:
 
 For domain-scoped audits:
 1. Start from the seed URL.
-2. Collect eligible same-domain links from the rendered page or fallback DOM/source.
+2. Collect eligible same-domain links from the rendered page.
 3. Deduplicate normalized URLs.
 4. Respect the requested maximum depth.
 5. Respect the requested maximum page count.
@@ -507,8 +690,8 @@ If the user asks for a domain-scoped accessibility report:
 - produce one consolidated HTML report by default
 - include a reviewed page inventory table
 - show which findings are shared versus route-specific
-- include crawl limits and confidence notes
-- state clearly if some pages were unreachable, blocked by WAF, login, rate limits, or environment restrictions
+- include verified page inventory and confidence notes
+- fail the run if any in-scope page cannot be verified through the deterministic browser path
 
 ### Required HTML report sections
 
@@ -520,7 +703,7 @@ A detailed HTML accessibility analysis report should include at minimum:
 - executive summary
 - severity summary
 - confirmed findings
-- inferred risks or unverified areas
+- evidence gate summary
 - WCAG 2.2 mapping summary
 - recommended remediation direction
 - QA / verification next steps
@@ -649,7 +832,7 @@ reports/<audit-label>-YYYY-MM-DD.html
 
 Examples:
 - `reports/swiper-accessibility-review-2026-04-02.html`
-- `reports/arcelik-social-links-live-audit-2026-04-02.html`
+- `reports/site-navigation-live-audit-2026-04-02.html`
 - `reports/domain-audit-2026-04-02.html`
 
 ### Naming rules for default report files
@@ -688,9 +871,9 @@ After generating an HTML report file, verify that the written file still contain
 
 At minimum:
 - re-read the file as UTF-8
-- check that representative strings such as Turkish labels or page titles are preserved
+- check that representative strings such as localized labels or page titles are preserved
 - explicitly verify static report strings as well as crawled page data, because a report can contain correct page titles while the report shell itself is corrupted
-- verify at least the report `<title>`, the main `<h1>`, and one paragraph or heading containing Turkish characters such as `Arçelik`, `erişilebilirlik`, `çok sayfalı`, or equivalent locale-specific text
+- verify at least the report `<title>`, the main `<h1>`, and one paragraph or heading containing locale-specific characters such as `erişilebilirlik`, `çok sayfalı`, `müşteri desteği`, or equivalent text for the target language
 - if verification fails, rewrite the report through a safer UTF-8 path before considering the task complete
 
 ### Completion rule for report encoding
@@ -772,32 +955,35 @@ When a live URL is provided or clearly implied:
 5. Check keyboard reachability and focus order for the target flow where feasible.
 6. Check runtime state announcements for actions that should notify assistive technology users.
 7. Check whether the visible UI matches the semantic model exposed to assistive technologies.
-8. Report environment limitations explicitly when interaction depth is blocked.
+8. Stop the run if deterministic interaction evidence cannot be verified for the requested flow.
 
 ### Live-site evidence rules
 
-When reviewing a live site, collect and report evidence from as many of these sources as the environment allows:
+When reviewing a live site, collect and report evidence from these rendered-runtime sources:
 - rendered DOM
 - browser snapshot or page structure view
-- screenshot evidence when capture works
+- screenshot evidence
 - keyboard interaction results
 - network or runtime observations when relevant to accessibility state changes
-- fetched source only as a fallback, not as the only truth when rendering differs
 
-If browser interaction is partially blocked:
-- continue with the best fallback path
-- state exactly which layers were observed directly
-- state which conclusions are inferred rather than confirmed
+If these rendered-runtime sources cannot be captured with deterministic integrity after retry and session reset:
+- fail the audit run for that surface
+- do not downgrade to source-only or inferred evidence to preserve report output
+- separate tooling failure from accessibility findings
+
+If the rendered surface is an access barrier, challenge page, login wall, or bot-mitigation page:
+- classify the barrier explicitly
+- do not report that barrier surface as if it were the target application content
+- require a legitimate user session such as CDP attach or approved storage state before rerunning
+- never suggest bypassing access controls or anti-bot mechanisms
 
 ### Live-site confidence labeling
 
 For live evaluations, the skill should be able to label findings with confidence such as:
 - confirmed in rendered UI
-- confirmed in source / DOM only
 - likely runtime risk
-- unverified due to environment limitation
 
-Do not present a source-only issue as a rendered-runtime defect unless that runtime behavior was actually observed.
+Do not present a non-verified issue as a rendered-runtime defect.
 
 ### Live-site interaction coverage
 
@@ -810,7 +996,7 @@ When relevant to the requested surface, evaluate:
 - carousels and auto-updating areas
 - locale switching or translated status messages
 
-If not all states could be reached, list the missing states as unverified coverage.
+If a required state cannot be reached after the deterministic retry path, fail the run rather than padding the report with unverified coverage.
 
 ### Screenshot and visual evidence rules
 
@@ -818,10 +1004,9 @@ If screenshot capture works:
 - use screenshots as supporting evidence, not as a substitute for DOM and interaction analysis
 - tie screenshots to specific findings when useful
 
-If screenshot capture does not work:
-- do not stop the review
-- continue with live DOM, browser snapshot, fetched HTML, and interaction evidence as available
-- explicitly note that screenshot evidence was unavailable
+If screenshot capture does not work after the allowed retry path:
+- fail the run
+- do not continue with a weakened evidence model
 
 ### Live-site report expectations
 
@@ -829,10 +1014,9 @@ When the user asks for a live-site accessibility evaluation, the output should i
 - evaluated URL
 - date of evaluation
 - environment used for inspection
-- interaction depth achieved: source only, rendered DOM, partial interaction, full interactive smoke test
+- interaction depth achieved: verified rendered runtime
 - findings ordered by severity
-- confirmed versus inferred distinctions
-- remaining verification gaps
+- deterministic artifact manifest
 
 ### Live-site HTML report support
 
@@ -842,7 +1026,7 @@ If the user asks for an HTML report for a live-site evaluation, include these ex
 - rendered inspection path used
 - screenshot capture status
 - interaction depth
-- verification limitations
+- evidence gate result
 
 ### Live-site anti-pattern warning
 
@@ -1111,67 +1295,35 @@ Then choose the least invasive implementation path:
 - If the repo is a browser extension popup/options page, prefer the current runtime constraints over introducing a bundler unless explicitly requested.
 - If the repo already has an accessibility audit path, extend it instead of creating a second competing path.
 
-## Browser restriction fallback protocol
+## Deterministic browser execution protocol
 
-When this skill needs live site inspection, screenshots, or interactive browser verification and the primary browser automation path is blocked by environment restrictions, permission issues, Playwright MCP startup failures, browser profile locks, or sandboxed filesystem paths, do not stop at the first failure.
+When this skill needs live-site inspection, screenshots, or interactive browser verification, it must stay inside a rendered-runtime execution model.
 
-### Required fallback order
+### Allowed execution path
 
-Try these in order until one works well enough for the task:
+The deterministic path may use:
+1. the primary browser automation session already available in the turn
+2. a project or user-scoped Playwright CLI / wrapper script
 
-1. primary browser automation path already available in the session
-2. project or user-scoped Playwright CLI / wrapper script
-3. local static or HTTP preview plus non-MCP browser checks
-4. direct HTML fetch, DOM inspection, and source-based reconstruction
-5. web search + page fetch + cited structural inference when a full live session is impossible
-
-On Windows, prefer a user-writable PowerShell wrapper for the secondary browser path, for example:
+On Windows, a user-writable PowerShell wrapper such as
 - `C:\\Users\\<user>\\.codex\\skills\\playwright\\scripts\\playwright_cli.ps1`
 
-Treat that PowerShell wrapper as the standard secondary browser execution path when:
-- the in-app browser session is closed or unstable
-- screenshot tooling fails before navigation
-- the environment still has `node` / `npm` / `npx`
-- a rendered smoke check is still worth attempting before falling back to raw fetches
+is an acceptable execution path when it still drives a real rendered browser session.
 
-### Implementation rule
+### Deterministic execution rule
 
-If browser automation fails, explicitly switch to a fallback path and continue the task. Do not present the first browser failure as the end of the task unless every practical fallback has failed.
-
-### Windows-specific fallback guidance
-
-If a browser tool attempts to create state, cache, or working directories in restricted locations such as `C:\\Windows\\System32`, prefer a user-writable override strategy when possible.
-
-Prefer these recovery patterns:
-- use user-writable working directories under the workspace or `C:\\Users\\<user>\\.codex\\tmp`
-- use local HTTP preview servers for static demos
-- fetch the rendered page over HTTP when the local file renders correctly in a preview server
-- use `curl` or equivalent to validate returned HTML and encoding
-- inspect DOM structure from fetched source when screenshots are unavailable
-
-### Screenshot fallback rule
-
-When the user asks for a screenshot and direct screenshot capture is blocked:
-- first try an alternate browser automation path if available
-- if still blocked, continue by inspecting the live page HTML/source and clearly state that screenshot capture was blocked by the environment
-- if helpful, describe the inferred visual structure and cite the source page
-- do not falsely claim that a screenshot was captured
-
-### Fidelity rule for reference-driven UI work
-
-When reconstructing a live site without full browser control:
-- prefer observed DOM structure, text hierarchy, action labels, and pricing/promo layout from fetched source
-- clearly label any visual inference as inference
-- preserve only the patterns relevant to the requested component, not the entire page
-- if exact pixel parity is impossible, prioritize interaction parity and accessibility correctness
+- Retry failed browser actions a bounded number of times.
+- Reset the browser session when the transport becomes stale.
+- Keep artifact paths user-writable and deterministic.
+- If rendered browser automation still fails, stop the run instead of switching to HTML fetch, source reconstruction, or web-search inference.
 
 ### Reporting rule
 
-When a fallback path is used, report:
-- which browser path failed
-- which fallback path was used
-- whether screenshots were captured or not
-- what was directly observed versus inferred
+When a deterministic browser run fails, report:
+- which rendered browser path failed
+- which retry and session-reset attempts were made
+- which artifact gate was not satisfied
+- that no accessibility finding should be inferred from the tooling failure
 
 ### Practical browser-use integration rule
 
@@ -1180,9 +1332,9 @@ If the user asks to:
 - add browser-use style integration
 - enable better live-site inspection tooling
 
-interpret that as a request to wire and prefer a secondary local browser automation path before source-only fallback.
+interpret that as a request to wire and prefer a secondary local rendered browser automation path.
 
-This integration improves coverage but does not guarantee bypass of third-party CDN, WAF, or anti-bot defenses. If the live site still returns an access-block page under the secondary browser path, report that truthfully and continue with the strongest remaining evidence path.
+This integration improves coverage but does not guarantee bypass of third-party CDN, WAF, or anti-bot defenses. If the live site still returns an access-block page under the secondary browser path, report that truthfully and stop the run.
 
 ### WAF mitigation strategy rule
 
@@ -1202,12 +1354,12 @@ These are compatibility and rendering strategies, not stealth guarantees. Do not
 If these strategies are attempted, report:
 - which combinations were tried
 - which combination returned a real page versus a block page
-- whether the working result came from rendered browser evidence or source-only evidence
+- whether the working result came from rendered browser evidence
 - whether the result appears stable enough for accessibility review
 
 ### Site-specific access strategy rule
 
-When live-site evaluation is blocked, unstable, or only partially reachable, this skill should not treat all sites the same.
+When live-site evaluation is unstable or access-controlled, this skill should not treat all sites the same.
 
 It must determine the most likely access-limitation pattern first, then choose a matching strategy.
 
@@ -1258,11 +1410,11 @@ Use these strategy families depending on the site behavior:
 
 - Login-gated content:
   - do not fake authenticated access
-  - report the login boundary and review only what is actually reachable
+  - stop at the login boundary unless the user provides a real authenticated state
 
 - Source/render mismatch:
   - prefer rendered DOM evidence over raw fetch
-  - report source-only findings separately when rendering cannot be verified
+  - fail the run when rendered verification cannot be achieved
 
 ### Domain memory rule
 
@@ -1594,8 +1746,8 @@ Good message shape:
 - optional quantity or cart count
 
 Example:
-- `Arcelik 270475 MB sepete eklendi. Sepette 2 ürün var.`
-- `Arcelik 270475 MB added to cart. Cart now contains 2 items.`
+- `Product A sepete eklendi. Sepette 2 ürün var.`
+- `Product A added to cart. Cart now contains 2 items.`
 
 ### Compare-list implementation rule
 
@@ -1609,8 +1761,8 @@ Good message shape:
 - product name + added/removed + current compare count
 
 Example:
-- `270475 MB karşılaştırma listesine eklendi. 2 / 3 ürün seçildi.`
-- `270475 MB added to compare. 2 of 3 products selected.`
+- `Product A karşılaştırma listesine eklendi. 2 / 3 ürün seçildi.`
+- `Product A added to compare. 2 of 3 products selected.`
 
 ### Mini-cart, drawer, and modal rule
 
@@ -1633,7 +1785,7 @@ Prefer names like:
 - `Sepete ekle`
 - `Karşılaştırmaya ekle`
 - `Favorilere ekle`
-- `270475 MB ürününü karşılaştırmaya ekle`
+- `Product A ürününü karşılaştırmaya ekle`
 
 Avoid vague names like:
 - `Ekle`
@@ -1650,7 +1802,7 @@ When multiple identical action buttons exist in a product grid:
 Links that open product details, shipping info, size guides, campaign details, or compare pages must make destination purpose clear.
 
 Good:
-- `270475 MB ürün detaylarını aç`
+- `Product A ürün detaylarını aç`
 - `Teslimat seçeneklerini görüntüle`
 - `Karşılaştırma listesini görüntüle`
 
@@ -2827,7 +2979,7 @@ For NVDA tool identity and project reference, prefer the official repository:
 
 1. Verify local prerequisites:
 - NVDA executable available on Windows.
-- Browser channel available (`chrome` preferred, `msedge` fallback).
+- Browser channel available for a real rendered run.
 - Guidepup runtime available for NVDA automation (`@guidepup/guidepup`).
 
 2. Open the target page in a real browser window (not source-only analysis).
@@ -2862,12 +3014,12 @@ HTML accessibility reports should include a section like:
 
 Keep interpretation grounded in collected output. Do not over-claim full user equivalence from a short scripted pass.
 
-### Fallback and limitation rule
+### NVDA evidence gate rule
 
-If NVDA automation cannot run:
-- mark the result as `unverified: no NVDA runtime evidence`
-- keep the audit running with DOM and heuristic evidence
+If NVDA automation cannot run to completion:
+- fail the audit run that requires NVDA evidence
 - state why NVDA evidence could not be captured (tooling, permissions, runtime failure, missing setup)
+- do not substitute DOM-only or heuristic output for live NVDA evidence
 
 ### Safety and integrity rule
 
@@ -2943,7 +3095,7 @@ Live screen-reader evidence and pixel-level visual checks are mandatory and repo
 
 - `PASS`: all gates satisfied and no unresolved `critical` or `high` findings.
 - `PASS_WITH_RISK`: no unresolved `critical` findings, but at least one unresolved `high` or accepted temporary exception.
-- `FAIL`: any unresolved `critical`, missing evidence on major claims, blocked keyboard completion in core flow, missing live SR evidence, or missing pixel-level contrast/focus evidence.
+- `FAIL`: any unresolved `critical`, missing evidence on major claims, failed keyboard completion in core flow, missing live SR evidence, or missing pixel-level contrast/focus evidence.
 
 ### Exception handling rule
 
@@ -2972,8 +3124,8 @@ When producing implementation or audit output, every non-trivial finding should 
 ### Confidence calibration
 
 - `high`: directly observed in DOM/runtime with repeatable steps.
-- `medium`: strong inference from partial runtime evidence.
-- `low`: likely issue but blocked by missing state, auth, or tooling.
+- `medium`: directly observed issue with narrower user impact or smaller surface area.
+- `low`: directly observed minor issue with limited impact.
 
 Low-confidence findings must never be presented as confirmed compliance failures.
 
@@ -3015,17 +3167,23 @@ Default to Playwright-assisted runtime capture when the request includes any of:
 ### Data contract from Playwright
 
 `playwright` evidence should be consumed as:
+- `run_id`
+- `surface` (`url`, component, or page label)
 - artifact paths
+- `step_log`
 - keyboard step logs
+- `focus_trace`
 - focused element identity and action result
 - candidate issues with element refs
-- run limitations
+- gate result
+- execution failure notes only when the deterministic evidence gate fails
 
 ### Source of truth rule
 
 - Runtime interaction evidence comes from `playwright`.
 - Severity and compliance interpretation stay in `accessimind`.
-- Never skip runtime evidence for keyboard/focus claims unless tooling is blocked; if blocked, mark as unverified.
+- Never skip runtime evidence for keyboard/focus claims.
+- If runtime evidence cannot be captured deterministically, stop the run instead of weakening the claim model.
 
 ## Absolute mandatory verification mode
 
@@ -3061,6 +3219,21 @@ For Windows audits, this skill must use `nvda-portable-a11y-audit` as the defaul
 - Run `skills/nvda-portable-a11y-audit/scripts/invoke-nvda-playwright-audit.ps1` when live SR evidence is required.
 - Treat missing portable NVDA runtime as a blocking condition and keep final gate decision at `FAIL`.
 
+### NVDA evidence alignment contract
+
+- Align blind-side traversal to the repository NVDA guide at `NVDA/documentation/en/userGuide.html`.
+- Model Browse Mode and Elements List behavior explicitly.
+- Include heading, link, form field, button, landmark, and graphic traversal coverage where relevant.
+- Never claim NVDA evidence unless the NVDA process actually started and completed the scripted pass.
+
+### NVDA output contract
+
+The NVDA-integrated run should produce or reference:
+- `summary.json`
+- `summary.md`
+- per-page screenshots
+- per-page blind model data such as `blind-page.json`
+
 ## Full persona integration
 
 For production audits, run persona-complete analysis via `full-persona-a11y-audit`.
@@ -3082,6 +3255,7 @@ and include outputs:
 - `motor.md`
 - `summary.md`
 - `summary.json`
+- `index.html`
 
 ### Handoff enrichment
 
@@ -3091,6 +3265,40 @@ Every persona finding should include:
 - selector or evidence id
 - concise fix direction
 - owner and ETA placeholders
+- As-Is state
+- user and business impact
+- To-Be state
+- developer action
+- BA action
+- PO action
+
+### Report architecture requirement
+
+- Output folder must follow: `reports/<project-name>-<YYYY-MM-DD>/`.
+- Each scanned page must have its own folder under `pages/`.
+- Report home must be UTF-8 `index.html` and accessible itself.
+- `index.html` must include a `Table of contents` with in-page navigation to each page section.
+- Every scanned page must include head-to-tail element inventory and persona perception notes.
+
+
+### Absolute report integrity rules
+
+- Reports must be UTF-8 safe and must not contain mojibake or broken characters.
+- Reports must be detailed (not short-form) and include all evaluation sections.
+- For each page, cookie dialog must be evaluated first, then accepted, then scanning must restart from top-of-page.
+### Business analyst sub-skill requirement
+
+Use `business-analyst-a11y` in the same run so each finding includes As-Is and role-based actions for:
+- developer
+- business analyst
+- product owner
+
+Do not stop at role labels only. The BA layer must also convert findings into:
+- As-Is state
+- user and business impact
+- To-Be state
+- owner placeholder
+- ETA placeholder
 
 ## Senior engineering integration mode
 
@@ -3119,13 +3327,21 @@ For production UI development, run this sequence:
 4. Apply senior risk review: regression risk, state management risk, rollout safety, and maintainability.
 5. Enforce release gates (`G1`-`G5`) and produce a final decision.
 
+### Senior handoff requirements
+
+Before final sign-off, the integrated output must include:
+- implementation tradeoff summary
+- regression risk notes
+- verification depth and remaining test gaps
+- rollback or mitigation plan when unresolved risk remains
+
 ### Full-compliance statement rule
 
 Do not claim "full WCAG 2.2 compliance" unless:
 - coverage boundaries are explicit,
 - no unresolved `critical`/`high` findings remain in scope,
 - runtime keyboard/focus evidence is present for core flows,
-- residual risks and unverified areas are clearly documented.
+- deterministic evidence gates passed for all in-scope surfaces.
 
 ## References
 

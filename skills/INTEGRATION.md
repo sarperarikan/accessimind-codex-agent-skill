@@ -9,6 +9,7 @@ This bundle is designed to run as a coordinated workflow, not as isolated skills
 - `senior-developer-20y`
 - `nvda-portable-a11y-audit`
 - `full-persona-a11y-audit`
+- `business-analyst-a11y`
 
 ## Execution Order
 
@@ -27,6 +28,9 @@ Combines blind, low-vision, and motor-limited checks into one deterministic run 
 5. `senior-developer-20y`
 Applies architecture and delivery-risk review, regression strategy, and production release hardening.
 
+6. `business-analyst-a11y`
+Adds As-Is analysis, To-Be target state, and role-based action notes (Developer/BA/PO) for each finding.
+
 ## Sign-off Decision Model
 
 AccessiMind emits final gate decision:
@@ -35,3 +39,14 @@ AccessiMind emits final gate decision:
 - `FAIL`
 
 The decision requires explicit coverage boundaries, evidence traceability, and unresolved-risk disclosure.
+
+## Absolute Audit Constraints
+
+- Generated report artifacts must be UTF-8 safe (BOM on Windows outputs) and must not contain mojibake.
+- Cookie dialog flow is mandatory per page:
+1. detect and evaluate dialog accessibility
+2. accept dialog
+3. return to top of page
+4. start evidence collection
+- Blind-side NVDA evidence must align with Browse Mode categories and Elements List logic.
+- Reports must be detailed (not short-form) and include per-page findings, head-to-tail element inventory, and BA action mapping.

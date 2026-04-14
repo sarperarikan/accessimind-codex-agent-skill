@@ -1,0 +1,5 @@
+interface:
+  display_name: "Business Analyst A11y"
+  short_description: "Translate technical a11y findings into As-Is/To-Be and actionable backlog items"
+  default_prompt: "Use $business-analyst-a11y to enrich accessibility findings with As-Is analysis and role-based actions."
+  version: "1.0.0.3"
