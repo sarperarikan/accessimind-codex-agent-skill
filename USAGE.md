@@ -1,6 +1,6 @@
 ﻿# Usage Guide
 
-Current version: `1.0.0.3`
+Current version: `1.0.0.4`
 
 ## Overview
 
@@ -71,6 +71,14 @@ python .\scripts\quick_validate.py .\skills\accessimind-accessible-ui-agent-skil
 
 This validation checks the skill frontmatter and naming rules.
 
+Validate the bundled runtime harnesses:
+
+```powershell
+node --check .\skills\accessimind-accessible-ui-agent-skill\scripts\nvda_web_audit.mjs
+node --check .\skills\accessimind-accessible-ui-agent-skill\scripts\low_vision_web_audit.mjs
+node --check .\skills\accessimind-accessible-ui-agent-skill\scripts\motor_web_audit.mjs
+```
+
 ## When to Use This Skill
 
 Use this skill when you want Codex to:
@@ -103,6 +111,132 @@ From repository root:
 ```
 
 This runner uses the repository-local `NVDA/` directory as the default screen-reader runtime.
+
+## Core Web Evidence Harnesses
+
+The main AccessiMind skill includes direct web-audit harnesses under:
+
+```text
+skills/accessimind-accessible-ui-agent-skill/scripts/
+```
+
+Install runtime dependencies in the workspace where you run the audit:
+
+```powershell
+cmd /c npm.cmd install playwright @guidepup/guidepup @guidepup/setup
+cmd /c npx.cmd @guidepup/setup
+```
+
+Use PowerShell `npm.cmd` and `npx.cmd` when execution policy blocks `npm.ps1` or `npx.ps1`.
+
+### NVDA web-only evidence
+
+Use this when the report needs real NVDA speech output from a live browser page:
+
+```powershell
+node .\skills\accessimind-accessible-ui-agent-skill\scripts\nvda_web_audit.mjs `
+  --url https://www.example.com `
+  --selector "#main" `
+  --out output\nvda-web-audit.json `
+  --next 80 `
+  --previous 20 `
+  --tab 30
+```
+
+The NVDA harness captures:
+- foreground browser ownership
+- unique page-title token
+- accepted web speech
+- filtered OS or unrelated application noise
+- forward browse traversal
+- reverse browse traversal
+- keyboard Tab traversal
+- DOM inventory and coverage comparison
+
+Do not treat a short or empty NVDA log as production evidence. If foreground ownership cannot be proven or all speech is filtered, the result must be reported as blocked or unverified.
+
+### Low-vision evidence
+
+Use this when the report needs measured visual-accessibility evidence:
+
+```powershell
+node .\skills\accessimind-accessible-ui-agent-skill\scripts\low_vision_web_audit.mjs `
+  --url https://www.example.com `
+  --selector "#main" `
+  --out output\low-vision-audit.json `
+  --artifacts output\low-vision
+```
+
+The low-vision harness captures:
+- desktop viewport
+- mobile viewport
+- 200% equivalent viewport
+- 400% equivalent viewport
+- WCAG text-spacing condition
+- forced-colors condition where browser support is available
+- screenshots
+- bounding boxes
+- contrast ratios
+- focus style data
+- clipping and overflow indicators
+- target cluster density signals
+
+### Motor accessibility evidence
+
+Use this when the report needs measured motor-accessibility evidence:
+
+```powershell
+node .\skills\accessimind-accessible-ui-agent-skill\scripts\motor_web_audit.mjs `
+  --url https://www.example.com `
+  --selector "#main" `
+  --out output\motor-audit.json `
+  --artifacts output\motor `
+  --focusSteps 80 `
+  --actionabilityChecks 60
+```
+
+The motor harness captures:
+- desktop pointer condition
+- desktop keyboard condition
+- mobile touch condition
+- interactive element inventory
+- target size measurements
+- nearest-neighbor target spacing
+- viewport clipping
+- keyboard Tab trace
+- non-destructive pointer actionability checks
+- drag, slider, carousel, resize, and swipe-like candidates
+- whether detected precision widgets expose a keyboard or button alternative
+
+Motor findings must stay atomic. For example, report `carousel next button is 18x18px in mobile-touch condition` instead of `carousel is difficult for motor users`.
+
+## Professional HTML Audit Reports
+
+When asking Codex to produce an audit deliverable, request an HTML report explicitly:
+
+```text
+Use $accessimind-accessible-ui-agent-skill to audit https://www.example.com.
+Create a professional HTML report for PO, developers, and business analysts.
+Include table of contents, evidence, WCAG mapping, Jira summary, Jira description, remediation guidance, and verification plan.
+Use NVDA, low-vision, and motor evidence where available.
+```
+
+The report should include:
+- executive summary
+- scope and tested surfaces
+- methodology
+- evidence artifact paths
+- findings ordered by severity
+- WCAG 2.2 references
+- screen-reader evidence section
+- low-vision evidence section
+- motor evidence section
+- Jira-ready summary and description
+- remediation plan
+- regression checks
+- production gate decision: `PASS`, `PASS_WITH_RISK`, or `FAIL`
+
+Screen-reader, low-vision, and motor sections must not contain summary-only findings. Each finding must identify the tested condition, element, observed evidence, expected behavior, impact, WCAG reference, remediation direction, and confidence.
 
 ## Full Persona Runner
 
@@ -282,6 +416,10 @@ Use $accessimind-accessible-ui-agent-skill to make this Flutter form production-
 Use $accessimind-accessible-ui-agent-skill to audit this iOS SwiftUI flow for VoiceOver and state-change behavior.
 ```
 
+```text
+Use $accessimind-accessible-ui-agent-skill to audit this Swiper carousel with real NVDA output, low-vision measurement, motor measurement, and a professional HTML report.
+```
+
 ## Recommended Working Pattern
 
 For best results, ask Codex to:
@@ -321,3 +459,236 @@ This skill improves implementation quality and verification discipline, but it d
 ## License and Reuse
 
 Review the repository license and your organization's policy before redistributing the skill in packaged form.
+
+---
+
+# Türkçe Kullanım Kılavuzu
+
+## Genel Bakış
+
+AccessiMind Accessible UI Agent Skill, Codex ile erişilebilirlik odaklı UI geliştirme, refactor, canlı sayfa denetimi ve profesyonel raporlama yapmak için tasarlanmış entegre bir skill paketidir.
+
+Bu paket şu işleri destekler:
+- WCAG 2.2 odaklı UI geliştirme ve denetim
+- React, HTML/CSS, Android, Flutter ve iOS yüzeyleri için erişilebilirlik incelemesi
+- Playwright ile gerçek tarayıcı runtime kanıtı
+- NVDA ile gerçek ekran okuyucu konuşma çıktısı
+- az gören kullanıcılar için ölçüme dayalı simülasyon
+- motor beceri kısıtları için ölçüme dayalı simülasyon
+- PO, geliştirici ve iş analisti için profesyonel HTML raporu
+- Jira summary ve Jira description üretimi
+- production gate kararı: `PASS`, `PASS_WITH_RISK`, `FAIL`
+
+## Kurulum
+
+Repo kökünden:
+
+```powershell
+.\scripts\install-skill.ps1
+```
+
+Manuel kurulum için `skills/` altındaki skill klasörlerini şu dizine kopyalayın:
+
+```text
+$HOME\.codex\skills\
+```
+
+Beklenen ana yollar:
+
+```text
+$HOME\.codex\skills\accessimind-accessible-ui-agent-skill\SKILL.md
+$HOME\.codex\skills\playwright\SKILL.md
+$HOME\.codex\skills\senior-developer-20y\SKILL.md
+$HOME\.codex\skills\nvda-portable-a11y-audit\SKILL.md
+$HOME\.codex\skills\full-persona-a11y-audit\SKILL.md
+```
+
+## Doğrulama
+
+Skill yapısını doğrulayın:
+
+```powershell
+python .\scripts\quick_validate.py .\skills\accessimind-accessible-ui-agent-skill
+```
+
+Harness scriptlerini doğrulayın:
+
+```powershell
+node --check .\skills\accessimind-accessible-ui-agent-skill\scripts\nvda_web_audit.mjs
+node --check .\skills\accessimind-accessible-ui-agent-skill\scripts\low_vision_web_audit.mjs
+node --check .\skills\accessimind-accessible-ui-agent-skill\scripts\motor_web_audit.mjs
+```
+
+## Codex İçinde Nasıl Tetiklenir
+
+Örnek istekler:
+
+```text
+Bu sayfayı $accessimind-accessible-ui-agent-skill ile WCAG 2.2 açısından denetle.
+```
+
+```text
+Swiper carousel için NVDA, az gören ve motor beceri kanıtlarıyla profesyonel HTML rapor oluştur.
+```
+
+```text
+Bu React modal akışını $accessimind-accessible-ui-agent-skill ile production-ready ve erişilebilir hale getir.
+```
+
+```text
+Bu Android ekranını TalkBack ve genel erişilebilirlik regresyonları açısından incele.
+```
+
+## Önerilen Çalışma Akışı
+
+1. Kapsamı belirleyin: URL, component, selector, ekran veya kullanıcı akışı.
+2. Codex’ten önce mevcut stack’i ve runtime koşullarını incelemesini isteyin.
+3. Tarayıcı/DOM kanıtını Playwright ile alın.
+4. Ekran okuyucu gerekiyorsa NVDA kanıtını gerçek speech log ile alın.
+5. Az gören kullanıcılar için zoom, reflow, text spacing, contrast, forced-colors ve focus ölçümlerini alın.
+6. Motor beceri için hedef boyutu, hedef aralığı, klavye sırası, pointer actionability ve drag alternatifi ölçümlerini alın.
+7. Bulguları WCAG 2.2, kullanıcı etkisi, severity ve remediation ile raporlayın.
+8. HTML raporda Jira summary ve Jira description bölümlerini ekleyin.
+9. Sonucu `PASS`, `PASS_WITH_RISK` veya `FAIL` olarak kapatın.
+
+## NVDA Web Kanıtı
+
+Çalışma alanında bağımlılıkları kurun:
+
+```powershell
+cmd /c npm.cmd install playwright @guidepup/guidepup @guidepup/setup
+cmd /c npx.cmd @guidepup/setup
+```
+
+NVDA web-only audit örneği:
+
+```powershell
+node .\skills\accessimind-accessible-ui-agent-skill\scripts\nvda_web_audit.mjs `
+  --url https://www.example.com `
+  --selector "#main" `
+  --out output\nvda-web-audit.json `
+  --next 80 `
+  --previous 20 `
+  --tab 30
+```
+
+Bu script şunları ayırır:
+- gerçek web sayfası konuşmaları
+- tarayıcı foreground sahipliği
+- sayfa title token doğrulaması
+- Windows veya başka uygulamalardan gelen bildirim gürültüsü
+- DOM inventory ve coverage karşılaştırması
+- ileri/geri NVDA traversal
+- Tab traversal
+
+NVDA çıktısı azsa veya foreground doğrulanamıyorsa raporda bunu açıkça `blocked` veya `unverified` olarak işaretleyin. Konuşma çıktısı uydurmayın.
+
+## Az Gören Kullanıcı Kanıtı
+
+Örnek:
+
+```powershell
+node .\skills\accessimind-accessible-ui-agent-skill\scripts\low_vision_web_audit.mjs `
+  --url https://www.example.com `
+  --selector "#main" `
+  --out output\low-vision-audit.json `
+  --artifacts output\low-vision
+```
+
+Bu script şu koşulları ölçer:
+- desktop
+- mobile
+- 200% eşdeğer viewport
+- 400% eşdeğer viewport
+- WCAG text spacing
+- forced colors
+- contrast
+- focus görünürlüğü
+- clipping/overflow
+- yoğun hedef kümeleri
+
+Az gören bulguları özet olmamalıdır. Her bulgu ölçülen element, ekran görüntüsü, bounding box, contrast, overflow, focus style veya target spacing gibi somut kanıt içermelidir.
+
+## Motor Beceri Kanıtı
+
+Örnek:
+
+```powershell
+node .\skills\accessimind-accessible-ui-agent-skill\scripts\motor_web_audit.mjs `
+  --url https://www.example.com `
+  --selector "#main" `
+  --out output\motor-audit.json `
+  --artifacts output\motor `
+  --focusSteps 80 `
+  --actionabilityChecks 60
+```
+
+Bu script şu kanıtları üretir:
+- desktop pointer senaryosu
+- desktop keyboard senaryosu
+- mobile touch senaryosu
+- interactive element inventory
+- hedef boyutu
+- en yakın interaktif hedef mesafesi
+- Tab sırası
+- pointer actionability
+- drag/slider/carousel/sürükleme adayları
+- klavye veya buton alternatifi olup olmadığı
+
+Motor bulguları da özet olmamalıdır. Örneğin `motor kullanıcılar zorlanır` yerine `mobile-touch koşulunda carousel pagination hedefi 16x16px ve en yakın hedefe 4px uzaklıkta` gibi ölçülü yazılmalıdır.
+
+## Profesyonel HTML Rapor Beklentisi
+
+Rapor şu bölümleri içermelidir:
+- içindekiler tablosu
+- kapsam
+- metodoloji
+- executive summary
+- kanıt artifact yolları
+- WCAG 2.2 bulgu tablosu
+- NVDA konuşma çıktıları
+- NVDA coverage matrix
+- az gören ölçüm tablosu
+- motor beceri ölçüm tablosu
+- Jira summary
+- Jira description
+- remediation önerileri
+- QA/regression planı
+- referanslar
+- production gate kararı
+
+Rapor dili PO, geliştirici ve iş analistinin birlikte kullanabileceği netlikte olmalıdır. Teknik detaylar saklanmamalı, ancak her bulgunun iş etkisi ve kullanıcı etkisi anlaşılır yazılmalıdır.
+
+## Jira Alanları
+
+HTML rapor içinde Jira alanlarını ayrı konumlandırın:
+
+```text
+Jira Summary:
+[Component] Carousel controls are not operable with reliable screen-reader, low-vision, and motor access
+
+Jira Description:
+Scope:
+Evidence:
+Observed:
+Expected:
+User impact:
+WCAG references:
+Remediation:
+Acceptance criteria:
+QA notes:
+```
+
+Her kritik veya high bulgu için acceptance criteria ölçülebilir olmalıdır.
+
+## Kalite Kapıları
+
+Rapor sonunda şu kapıları değerlendirin:
+- `G1 Coverage`: kapsam ve test edilmeyen alanlar açık mı?
+- `G2 Keyboard`: klavye ile temel akış tamamlanabiliyor mu?
+- `G3 Semantics`: name, role, state, relationship doğru mu?
+- `G4 WCAG`: critical/high bulgular için karar var mı?
+- `G5 Evidence`: her ana iddia artifact ile destekli mi?
+- `G6 Assistive-tech and visual measurement`: NVDA ve görsel ölçüm kanıtı var mı?
+
+Eksik canlı ekran okuyucu veya pixel-level görsel kanıt varsa production sign-off verilmemelidir.

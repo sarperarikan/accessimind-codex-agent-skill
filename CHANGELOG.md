@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.0.0.4 - 2026-06-17
+
+### Added
+- Added real web-focused NVDA audit harness: `skills/accessimind-accessible-ui-agent-skill/scripts/nvda_web_audit.mjs`.
+- Added low-vision measurement harness: `skills/accessimind-accessible-ui-agent-skill/scripts/low_vision_web_audit.mjs`.
+- Added motor accessibility measurement harness: `skills/accessimind-accessible-ui-agent-skill/scripts/motor_web_audit.mjs`.
+- Added strict no-summary-finding directives for screen-reader, low-vision, and motor evidence.
+- Added professional HTML audit report requirements for stakeholder-ready deliverables, including table of contents, Jira summary, Jira description, evidence, remediation, and verification sections.
+- Added deeper NVDA coverage requirements: DOM inventory, forward/reverse traversal, Tab traversal, accepted speech, filtered noise, coverage comparison, and atomic screen-reader issue tables.
+- Added low-vision evidence infrastructure for zoom/reflow, text spacing, contrast, forced colors, focus visibility, clipping, and target cluster density.
+- Added motor evidence infrastructure for target size, target spacing, keyboard parity, drag alternatives, hover-only disclosure, accidental activation, timing, mobile reach, and switch/sequential access.
+- Added bilingual README guidance and expanded bilingual usage documentation.
+
+### Improved
+- AccessiMind audit behavior now requires measured artifact-backed findings instead of generic summaries for assistive technology, low-vision, and motor access.
+- Live web reports now distinguish confirmed evidence, inferred DOM findings, filtered unrelated speech, and explicit limitations.
+
 ## 1.0.0.3 - 2026-04-03
 
 ### Added

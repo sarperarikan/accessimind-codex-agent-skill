@@ -1,8 +1,10 @@
 ﻿# AccessiMind Accessible UI Agent Skill
 
-Current version: `1.0.0.3`
+Current version: `1.0.0.4`
 
 AccessiMind Accessible UI Agent Skill is a shareable Codex skill for building and reviewing production-ready UI with an accessibility-first workflow.
+
+AccessiMind Accessible UI Agent Skill, accessibility-first yaklaşımla production-ready UI geliştirmek ve erişilebilirlik denetimi yapmak için paylaşılabilir bir Codex skill paketidir.
 
 This repository now ships an integrated skill bundle:
 - `accessimind-accessible-ui-agent-skill`
@@ -19,6 +21,10 @@ It is designed for teams that want a single skill capable of:
 - integrating automated `axe-core` checks where appropriate
 - covering web, React, Android, Flutter, and iOS accessibility concerns
 - enforcing production-grade delivery gates through integrated runtime evidence and senior engineering risk review
+- producing professional accessibility audit reports with table of contents, evidence sections, Jira-ready summaries, and stakeholder-oriented remediation guidance
+- collecting real or runtime-backed evidence for screen-reader, low-vision, and motor accessibility checks
+
+Bu paket, tek bir workflow içinde WCAG 2.2 yorumlama, Playwright runtime kanıtı, NVDA destekli ekran okuyucu çıktısı, az gören kullanıcı ölçümleri, motor beceri ölçümleri, profesyonel HTML raporlama ve release gate kararlarını birleştirmek isteyen ekipler için tasarlanmıştır.
 
 ## What This Skill Does
 
@@ -99,6 +105,14 @@ If Python is available in your environment:
 python .\scripts\quick_validate.py .\skills\accessimind-accessible-ui-agent-skill
 ```
 
+The core web-audit harnesses can also be syntax-checked:
+
+```powershell
+node --check .\skills\accessimind-accessible-ui-agent-skill\scripts\nvda_web_audit.mjs
+node --check .\skills\accessimind-accessible-ui-agent-skill\scripts\low_vision_web_audit.mjs
+node --check .\skills\accessimind-accessible-ui-agent-skill\scripts\motor_web_audit.mjs
+```
+
 ## Package
 
 ```powershell
@@ -114,10 +128,15 @@ Suggested trigger phrases:
 - `Refactor this React screen with $accessimind-accessible-ui-agent-skill`
 - `Apply $accessimind-accessible-ui-agent-skill to make this flow WCAG 2.2 ready`
 - `Use $accessimind-accessible-ui-agent-skill for Android/Flutter/iOS accessibility review`
+- `Use $accessimind-accessible-ui-agent-skill to audit this carousel with NVDA, low-vision, and motor evidence`
+- `Bu sayfayı $accessimind-accessible-ui-agent-skill ile WCAG 2.2, NVDA, az gören ve motor beceri açısından denetle`
+- `Swiper bileşeni için profesyonel HTML erişilebilirlik raporu oluştur`
 
 ## Documentation
 
-For a more detailed English usage guide, see `USAGE.md`.
+For a detailed bilingual usage guide, see `USAGE.md`.
+
+Detaylı İngilizce ve Türkçe kullanım kılavuzu için `USAGE.md` dosyasına bakın.
 
 ## Integrated Workflow
 
@@ -129,7 +148,16 @@ The bundle methodology is:
 5. `senior-developer-20y` hardens architecture, test depth, regression safety, and release readiness.
 6. Final decision is emitted through AccessiMind production gates.
 
+## Evidence Harnesses
+
+The main skill includes three browser-oriented evidence harnesses:
+- `nvda_web_audit.mjs`: real NVDA + Guidepup speech capture with web-only foreground filtering.
+- `low_vision_web_audit.mjs`: viewport, reflow, text-spacing, forced-colors, contrast, focus, clipping, and target-density measurement.
+- `motor_web_audit.mjs`: target size, spacing, keyboard trace, pointer actionability, drag/precision candidate, and mobile-touch measurement.
+
+These harnesses are intended to support audit reports. They do not replace human QA, but they prevent unsupported summary-only findings.
+
 ## Release Notes
 
-- Current release: `1.0.0.3`
+- Current release: `1.0.0.4`
 - Changelog: `CHANGELOG.md`

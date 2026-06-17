@@ -1,6 +1,6 @@
 ---
 name: accessimind-accessible-ui-agent-skill
-description: Use when the user wants production-ready modern UI work for existing projects or new screens in React, HTML, or CSS, with stack-aware implementation, enterprise-grade multilingual architecture, integrated Playwright and senior-engineering workflows, WCAG 2.2-compliant output, axe-core-backed accessibility verification, and strong support for dynamic and stateful interfaces.
+description: Use when the user wants production-ready modern UI work for existing projects or new screens in React, HTML, or CSS, with stack-aware implementation, enterprise-grade multilingual architecture, consistent design systems, WCAG 2.2-compliant output, axe-core-backed accessibility verification, and strong support for dynamic and stateful interfaces.
 ---
 
 # AccessiMind Accessible UI Agent Skill
@@ -10,6 +10,39 @@ Use this skill when building or refactoring UI in web projects that must be mode
 Keep this skill practical. Prefer shipping code over writing design essays.
 
 This skill must also support delivery planning output when the user asks for implementation breakdowns, rollout plans, handoff documentation, or Jira-ready task definitions for the UI and accessibility work.
+
+## APG coverage boundary mode
+
+This skill should use WAI-ARIA Authoring Practices Guide (APG) patterns and practices as a primary technical reference for custom widgets and composite interactions, but it must not imply equal first-class coverage for every APG pattern unless the pattern is explicitly supported in this skill or directly checked from the current APG source during the task.
+
+### APG coverage rule
+
+- for common patterns already covered in this skill, apply the embedded guidance directly
+- for less common or higher-risk APG patterns, consult the current official APG pattern or practice before implementation or review conclusions
+- do not claim that a custom widget follows APG unless the required keyboard model, roles, states, properties, and naming behavior have actually been verified
+- if the requested pattern is only partially covered by this skill, say so internally in the work process and supplement with current APG guidance instead of guessing
+
+### Patterns that require fresh APG verification unless explicitly handled elsewhere in the task
+
+At minimum, treat these as verify-before-claim patterns:
+- menubar
+- radio group keyboard models
+- slider and multi-thumb slider
+- spinbutton
+- tree view and treegrid
+- window splitter
+- advanced grid navigation beyond standard table behavior
+- toolbar-specific roving tabindex behavior
+
+### APG practice areas that require fresh verification when implementation details matter
+
+- landmark regions
+- accessible names and descriptions by role
+- keyboard interface conventions for composite widgets
+- grid and table properties
+- communicating value and limits for range widgets
+- structural roles
+- hiding semantics with the `presentation` role
 
 ## Outcomes
 
@@ -178,6 +211,186 @@ This skill must be capable of deciding whether a finding belongs to:
 - incorrect landmark usage repeated in shared footer/header areas may be shell-level
 - one isolated unlabeled input may be page-level
 
+## Contextual link naming mode
+
+This skill must be able to name links according to their local context instead of relying on generic CTA text.
+
+### Link naming objective
+
+Ensure link text or accessible names:
+- communicate destination, action, or result without surrounding visual context
+- stay distinguishable from adjacent links in the same region
+- remain meaningful in screen-reader link lists, voice control, and high-zoom scanning
+
+### Link naming rules
+
+- avoid generic names such as `click here`, `more`, `read more`, `incele`, `detay`, `learn more`, or `see all` when the surrounding context is required to understand the link
+- when visual design requires short CTA text, provide a context-complete accessible name with `aria-label` or a visually hidden text addition, but do not create redundant or conflicting names
+- prefer visible link text that already carries the needed context, such as product, category, article, campaign, or next-step meaning
+- if multiple links in the same card, list, grid, or banner would otherwise share the same generic label, make each one uniquely identifiable
+- keep labels concise; add only the minimum context needed for clarity
+- do not override a strong native visible label with a worse or duplicated ARIA label
+- when auditing, evaluate link purpose both in-place and out of context, especially from a screen-reader links list perspective
+
+### Link naming patterns
+
+Prefer patterns like:
+- `Klima kampanyasını incele`
+- `A65 Q 990 AY Smart TV ürün detayları`
+- `Buzdolabı kategorisini görüntüle`
+- `Garanti koşullarını oku`
+
+Avoid patterns like:
+- `İncele`
+- `Detay`
+- `Devamı`
+- `Tıklayın`
+
+### Link naming review rule
+
+When reviewing UI, report vague or repeated link names as accessibility findings when link purpose depends too heavily on nearby layout, imagery, or heading context.
+
+## Contextual button naming mode
+
+This skill must be able to name buttons according to the user action and expected result in context instead of relying on vague button text.
+
+### Button naming objective
+
+Ensure button text or accessible names:
+- communicate what will happen after activation
+- remain understandable without depending on nearby layout or iconography
+- stay distinguishable from other buttons in the same component, dialog, card, or toolbar
+
+### Button naming rules
+
+- avoid generic names such as `tamam`, `gönder`, `kaydet`, `devam`, `onayla`, `aç`, or `kapat` when the target action is ambiguous in context
+- prefer labels that describe the concrete action or result, such as submitting a form, applying a filter, removing an item, or opening a specific panel
+- when visual design requires an icon-only or short button, provide a context-complete accessible name with `aria-label`, and ensure it matches the visible intention
+- if multiple buttons in the same region would otherwise share the same vague label, make each one uniquely identifiable
+- keep labels concise; add only the action-specific context required for clarity
+- do not replace a strong visible label with a redundant or conflicting ARIA label
+- for toggle buttons, expose both the control name and state clearly, and keep the base action understandable across states
+- when auditing, evaluate button purpose both in-place and out of context, especially for screen-reader controls lists and voice commands
+
+### Button naming patterns
+
+Prefer patterns like:
+- `Sepete ekle`
+- `Filtreleri uygula`
+- `Teslimat adresini kaydet`
+- `Arama panelini aç`
+- `Bildirimleri kapat`
+
+Avoid patterns like:
+- `Tamam`
+- `Devam`
+- `Kaydet`
+- `Aç`
+- `Kapat`
+
+### Button naming review rule
+
+When reviewing UI, report vague, repeated, icon-only, or state-ambiguous button names as accessibility findings when the triggered action is not clear enough for keyboard, screen-reader, or speech-input users.
+
+## Contextual form field naming mode
+
+This skill must be able to produce context-complete naming for form fields, helper text, and validation messages without duplicating the broader form-semantic rules defined elsewhere in this skill.
+
+### Form naming objective
+
+Ensure each field exposes:
+- a clear programmatic label that matches the visible intent
+- supporting help text only when it adds necessary instruction, constraint, or format guidance
+- validation text that explains the problem and the corrective action
+
+### Form naming rules
+
+- prefer visible labels that identify the user input directly, rather than vague labels such as `Bilgi`, `Değer`, `Açıklama`, or `Detay`
+- do not rely on placeholder text as the field name; placeholders may supplement format expectation but must not replace the label
+- keep labels concise and task-specific, such as what the field collects, selects, searches, confirms, or filters
+- if the same field type appears multiple times in one form, make labels uniquely contextual, such as `Teslimat adresi` and `Fatura adresi`
+- write helper text only for constraints the label alone does not communicate, such as format, limits, required selection logic, or side effects
+- write error text as corrective guidance, not just failure status; users should understand what to fix next
+- keep visible labels, helper text, and announced error text meaningfully aligned so screen-reader, voice-input, and cognitive-load-sensitive users do not hear conflicting terminology
+
+### Form naming patterns
+
+Prefer patterns like:
+- `E-posta adresi`
+- `Teslimat telefonu`
+- `Şifreyi yeniden girin`
+- `Kart numarası`
+- `Faturayı e-posta ile gönder`
+
+Prefer helper or error text patterns like:
+- `En az 8 karakter girin.`
+- `Telefon numarasını alan koduyla yazın.`
+- `Bu alan boş bırakılamaz.`
+- `Geçerli bir e-posta adresi girin.`
+
+Avoid patterns like:
+- `Bilgi`
+- `Detay`
+- `Giriniz`
+- `Hatalı giriş`
+- `Eksik alan`
+
+### Form naming review rule
+
+When reviewing UI, report field labels, helper text, or error messages as accessibility findings when they are vague, duplicated, placeholder-only, terminology-inconsistent, or not actionable enough to support successful form completion.
+
+## Accessible description decision mode
+
+This skill must distinguish clearly between accessible names and accessible descriptions and use descriptions only for supporting information that should come after the primary label.
+
+### Description objective
+
+Ensure descriptions:
+- supplement a control or region after its primary name is known
+- communicate format, constraint, consequence, or help text without replacing the main label
+- stay brief enough to avoid turning routine navigation into verbose output
+
+### Description rules
+
+- prefer visible text and native labeling for the accessible name first; use descriptions only for secondary guidance
+- do not use `title`, `placeholder`, or similar browser fallback mechanisms as the intended naming strategy
+- use `aria-describedby` for helper text, constraints, examples, or validation text when that content should be associated with the control after its name
+- do not move critical primary meaning from the visible label into a description
+- when a control already has a strong visible label, keep the label stable and put only genuinely supplemental text in the description
+- avoid overly long descriptions on frequently repeated controls, especially in lists, cards, tables, or dense toolbars
+- when combining name and description, verify the spoken output is still brief, distinguishable, and not duplicative
+
+### Description review rule
+
+When reviewing UI, report cases where helper text, placeholders, titles, or long ARIA descriptions are incorrectly carrying the primary label, creating redundant speech, or hiding important meaning from visible UI.
+
+## Image alt decision mode
+
+This skill must apply a deterministic `alt` decision process for images instead of treating every image as if it needs a descriptive sentence.
+
+### Alt objective
+
+Choose text alternatives based on image purpose:
+- decorative
+- informative
+- functional
+- text-in-image
+- complex image
+
+### Alt rules
+
+- if the image is decorative or the same information is already present as nearby real text, prefer empty `alt=""` or a CSS/background approach where appropriate
+- if the image acts as part of a link or button and carries the action or destination meaning, write `alt` for the function, not the visual appearance
+- if the image is informative, keep `alt` brief and focused on the meaning contributed in context
+- if the image contains text that is not otherwise available, include that text or its equivalent in the `alt`
+- if the image is complex, move the substantive information into adjacent text, caption, table, or other structured content rather than overloading `alt`
+- do not repeat file names, decorative styling details, or obvious phrases like `image of`
+- when adjacent visible text already labels the same control or destination, avoid duplicated announcements from both the text and the image alternative
+
+### Alt review rule
+
+When reviewing UI, report incorrect text alternatives when decorative images are announced unnecessarily, functional images describe appearance instead of function, informative images omit meaning, or complex graphics rely on overlong `alt` text instead of nearby structured explanation.
+
 ## Manual test script generation mode
 
 This skill must be able to generate deterministic manual test scripts after an audit.
@@ -209,6 +422,50 @@ This skill must be able to produce a non-technical or semi-technical executive s
 - avoid dumping raw ARIA or DOM jargon without interpretation
 - summarize repeated defects as systemic issues when appropriate
 - keep this separate from the technical findings section
+
+## Professional HTML audit report mode
+
+When the user asks for a report, audit deliverable, handoff artifact, stakeholder-ready output, or accessibility analyst output, generate a professional HTML report by default unless the user explicitly asks for another format.
+
+### HTML report audience
+
+Write the HTML report for:
+- Product Owners who need release risk and business impact.
+- Developers who need selectors, expected behavior, implementation direction, and acceptance criteria.
+- Business analysts who need clear scope, Jira-ready wording, and traceable requirements.
+- QA/accessibility analysts who need reproducible verification steps and evidence references.
+
+### Required HTML report structure
+
+Include these sections in this order unless the task clearly requires a narrower report:
+- title, date, scope, tested URL/surface, and explicit decision (`PASS`, `PASS_WITH_RISK`, `FAIL`, or `BLOCKED`)
+- table of contents with same-page anchors
+- executive summary
+- scope and methodology
+- evidence package, including artifact paths and runtime tool status
+- inspected surfaces or component inventory
+- deduplicated finding matrix ordered by severity
+- live screen-reader evidence section when NVDA/VoiceOver evidence was collected or attempted, including coverage counts, traversal depth, filtered noise count, unmatched DOM items, and repeated announcements
+- atomic screen-reader issue table when screen-reader evidence produces defects; each row must include step id, spoken phrase, DOM target, expected behavior, observed mismatch, impact, reference, remediation, and confidence
+- low-vision evidence section when visual accessibility is in scope, including zoom/reflow, text spacing, contrast, focus visibility, forced-colors, magnified scanning, screenshots, measurement JSON paths, and atomic measured findings
+- Jira-ready section with at least `Summary`, `Description`, `Priority`, and `Acceptance Criteria` for each major fix group
+- remediation plan grouped by shared component, token/design-system, and page-specific work
+- deterministic verification/regression pack
+- standards and tool references
+- limitations and out-of-scope notes
+
+### HTML report quality rules
+
+- Do not repeat the same finding narrative in multiple sections; use each section for a different stakeholder purpose.
+- Prefer compact tables for triage, cards for Jira-ready work items, and short paragraphs for impact.
+- Keep references linked to primary sources such as WCAG, WAI-ARIA APG, vendor docs, NVDA, and the actual tool output.
+- Preserve Turkish and other Unicode characters with `<meta charset="utf-8">`.
+- Make the report itself accessible: semantic headings, a real `nav` table of contents, readable contrast, responsive layout, visible focus styles, and no keyboard traps.
+- Include Jira `Summary` and `Description` labels visibly inside the HTML, not only in comments or external files.
+- If live screen-reader evidence is blocked or filtered out, say that explicitly and keep simulated/DOM-only findings separate.
+- Do not present a sparse screen-reader excerpt as complete evidence; if coverage is shallow, add a limitation and a follow-up Jira/QA task for deeper assistive-technology coverage.
+- Do not include screen-reader summary findings in HTML reports. Screen-reader defects must appear as atomic evidence rows; executive or business summaries may state release risk, but they must not replace or rename the detailed screen-reader issue table.
+- Do not include low-vision summary findings in HTML reports. Low-vision defects must appear as measured element/state rows with thresholds, screenshots or JSON artifacts, and reproducible test conditions.
 
 ## Evidence manifest mode
 
@@ -316,6 +573,50 @@ Simulate by checking:
 - dense target clusters
 - whether link or button names remain understandable when visually scanning at high zoom
 
+### Low-vision evidence infrastructure
+
+Low-vision simulation must produce measured findings, not only visual impressions. Treat it as a deterministic visual-accessibility evidence pass.
+
+Minimum low-vision evidence tracks:
+- viewport/reflow: test at desktop, narrow mobile, 200% equivalent, and 400% equivalent conditions. Use viewport resizing such as `1280x720`, `640x720`, and `320x720` or project-appropriate equivalents when browser zoom control is unavailable.
+- text spacing: inject WCAG text-spacing CSS where safe (`line-height: 1.5`, paragraph spacing `2em`, letter spacing `0.12em`, word spacing `0.16em`) and check clipping, overlap, hidden text, and control growth.
+- contrast: sample computed foreground/background colors for visible text, icons, controls, disabled states, and focus indicators; calculate contrast ratios where possible instead of eyeballing.
+- focus visibility: keyboard-focus important controls and record bounding box, outline/box-shadow, contrast against adjacent pixels or computed colors, and whether the ring is clipped or obscured.
+- forced colors/high contrast: use browser forced-colors emulation when available; otherwise report `unverified forced-colors` and still inspect CSS for color-only state and `forced-color-adjust`.
+- magnified scanning: inspect whether labels, headings, controls, and current state remain understandable when only a small viewport slice is visible.
+- target cluster density: measure control bounding boxes and spacing for crowded icon rows, pagination dots, close buttons, and carousel controls.
+
+Required low-vision artifact outputs:
+- screenshots for each tested viewport/zoom/text-spacing/forced-colors state
+- DOM measurement JSON containing target selector, bounding boxes, overflow/clipping flags, text dimensions, computed colors, contrast ratios, focus styles, and target spacing
+- a coverage table listing which elements were measured and which were not
+- a limitations table for states that could not be emulated in the current environment
+
+Prefer the bundled harness when auditing a live web page:
+- script: `scripts/low_vision_web_audit.mjs`
+- run from the target workspace so Node resolves workspace `node_modules`
+- prerequisites: `cmd /c npm.cmd install playwright`
+- example:
+  - `node C:\Users\sarper\.codex\skills\accessimind-accessible-ui-agent-skill\scripts\low_vision_web_audit.mjs --url https://example.com --selector "#main" --out output\low-vision-audit.json --artifacts output\low-vision`
+
+### Low-vision no-summary-finding directive
+
+Low-vision simulation must not produce summary-only findings such as `low-vision users may struggle`, `contrast is poor`, or `zoom is broken` without measured evidence.
+
+Every low-vision finding must be atomic and tied to one observed element/state:
+- test condition (`desktop`, `mobile`, `200%`, `400%`, `text-spacing`, `forced-colors`, `focus`, etc.)
+- selector or stable element description
+- screenshot/artifact reference
+- measured values such as bounding box, overflow amount, target size, spacing, computed colors, contrast ratio, or focus style
+- expected threshold or behavior
+- observed mismatch
+- user impact
+- WCAG reference
+- remediation direction
+- confidence level
+
+If multiple elements share one token-level issue, list the measured examples first, then group them as a shared token/component defect.
+
 ### Motor-limited simulation rules
 
 Simulate by checking:
@@ -324,6 +625,55 @@ Simulate by checking:
 - drag-only or precision-only interactions
 - small close buttons and crowded icon rows
 - whether pointer precision is unnecessarily required
+
+### Motor evidence infrastructure
+
+Motor-limited simulation must produce measured findings, not only ergonomic impressions. Treat it as a deterministic interaction-accessibility evidence pass for users with tremor, limited dexterity, switch access, keyboard-only navigation, one-handed mobile use, and low pointer precision.
+
+Minimum motor evidence tracks:
+- target size: measure every visible interactive control against WCAG 2.2 target-size expectations, including small carousel dots, close buttons, icon buttons, pagination, card links, and sticky controls.
+- target spacing: measure nearest-neighbor gaps and overlap risk between adjacent interactive controls, especially in dense icon rows and mobile layouts.
+- keyboard parity: verify that pointer actions have keyboard-reachable equivalents, visible focus, and deterministic activation behavior.
+- drag and precision alternatives: identify sliders, carousels, sortable areas, range controls, draggable widgets, resize handles, maps, and swipe-only regions; verify a keyboard/button alternative rather than requiring drag, swipe, or fine pointer control.
+- hover-only disclosure: identify menus, tooltips, cards, and controls that reveal functionality only on hover; verify equivalent focus/touch access.
+- accidental activation risk: flag controls that are tiny, crowded, moving, auto-advancing, or placed near destructive actions without adequate spacing or confirmation.
+- timing and persistence: check auto-dismiss, autoplay, timeout, and moving-target behavior where motor timing can prevent reliable interaction.
+- reach and mobile posture: review mobile bottom/top edge controls, off-screen or clipped controls, and controls that require two-handed gestures or precise swipes.
+- switch and sequential access: inspect whether the focus order reaches all operable controls in a meaningful sequence without traps, loops, or excessive repeated stops.
+
+Required motor artifact outputs:
+- screenshots for each tested desktop/mobile interaction scenario
+- DOM measurement JSON containing target selector, interactive element inventory, bounding boxes, target dimensions, nearest-neighbor spacing, viewport clipping flags, role/name/state, and focusability
+- keyboard traversal trace with active element identity for each Tab step
+- pointer actionability trace using non-destructive actionability checks where possible
+- drag/precision candidate table with detected widget evidence and whether a keyboard or button alternative exists
+- a limitations table for gestures, switch-device behavior, or OS-level input modes that could not be directly emulated
+
+Prefer the bundled harness when auditing a live web page:
+- script: `scripts/motor_web_audit.mjs`
+- run from the target workspace so Node resolves workspace `node_modules`
+- prerequisites: `cmd /c npm.cmd install playwright`
+- example:
+  - `node C:\Users\sarper\.codex\skills\accessimind-accessible-ui-agent-skill\scripts\motor_web_audit.mjs --url https://example.com --selector "#main" --out output\motor-audit.json --artifacts output\motor`
+
+### Motor no-summary-finding directive
+
+Motor-limited simulation must not produce summary-only findings such as `motor users may struggle`, `controls are hard to use`, `carousel requires precision`, or `keyboard access is poor` without measured evidence.
+
+Every motor finding must be atomic and tied to one observed element/interaction:
+- test condition (`desktop-pointer`, `desktop-keyboard`, `mobile-touch`, `drag-candidate`, `timing`, etc.)
+- selector or stable element description
+- screenshot/artifact reference
+- measured values such as bounding box, target size, nearest-neighbor spacing, focus order position, actionability result, or drag/gesture requirement
+- expected threshold or behavior
+- observed mismatch
+- affected motor interaction model
+- user impact
+- WCAG/APG reference
+- remediation direction
+- confidence level
+
+If multiple elements share one component-level motor issue, list the measured examples first, then group them as a shared component defect. Do not replace the atomic rows with a single aggregate statement.
 
 ### Deterministic persona evidence rule
 
@@ -2232,6 +2582,17 @@ Do not mechanically attach WCAG references to every comment. Use them for meanin
 - If a behavior maps to multiple criteria, cite only the most relevant criteria unless multiple are genuinely needed for understanding.
 - When the implementation follows an APG pattern or platform accessibility pattern, mention that pattern briefly if it helps future maintenance.
 
+### Visible explanation rule
+
+Do not turn accessibility rationale, audit notes, naming strategy, or WCAG mapping into visible end-user UI copy unless the user explicitly asks for an educational or diagnostic surface.
+
+When the purpose of a text block is mainly to explain implementation intent to developers or reviewers:
+- keep it in code comments, not visible UI
+- place it near the relevant HTML, CSS, or JavaScript
+- include the most relevant WCAG 2.2 reference in the comment when it materially helps maintenance
+
+Prefer shipping interfaces that read like real product UI, while keeping developer-facing accessibility explanations embedded in comments.
+
 ### Recommended comment template
 
 Use a shape like this when appropriate:
@@ -2748,6 +3109,72 @@ Use for:
 - log explorers
 - editable admin tables
 
+### Slider and spinbutton decision rules
+
+When the requested UI includes a slider, range picker, spinbutton, or other value-adjustment widget:
+- prefer native `input type="range"` or `input type="number"` before custom ARIA widgets
+- if a custom slider is unavoidable, expose `aria-valuemin`, `aria-valuemax`, and `aria-valuenow`, plus `aria-valuetext` only when the spoken value needs a clearer human-readable form
+- support keyboard adjustment with arrow keys, and where appropriate also `Home`, `End`, `PageUp`, and `PageDown`
+- ensure orientation is explicit when it is not obvious
+- if the UI includes multiple thumbs, each thumb must remain independently reachable and its current value and constraints must stay understandable
+- do not implement slider-like visuals that require pointer dragging only
+- use spinbutton semantics only when the control truly behaves as a discrete adjustable numeric input
+
+Review for:
+- missing value exposure
+- drag-only adjustment
+- inconsistent step size across keyboard and pointer input
+- inaccessible multi-thumb constraints
+
+### Radio group and toolbar keyboard rules
+
+When the requested UI includes mutually exclusive options or compact action groups:
+- use native radios for ordinary forms unless there is a strong reason to implement a custom radio group
+- if a custom radio group is used, ensure only one option is checked and arrow-key behavior matches the APG model for the group orientation
+- distinguish clearly between a radio group and a toolbar; do not reuse one keyboard model for the other without justification
+- in toolbars, use roving `tabindex` only when the toolbar contains multiple focusable controls that should behave as one compact keyboard stop
+- toolbar arrow-key support must not break normal text editing keys inside embedded fields
+- do not force roving `tabindex` onto simple button rows that work better as ordinary tab stops
+
+Review for:
+- multiple tab stops where roving focus was intended
+- arrow keys changing state unexpectedly
+- toolbar patterns applied to plain button groups
+- radio groups missing orientation-consistent keyboard behavior
+
+### Tree view and treegrid rules
+
+When the requested UI includes hierarchical navigation, expandable option trees, or file/folder-like explorers:
+- use tree view only when the hierarchy and expand-collapse model are essential to the experience
+- do not replace simpler list, disclosure, or nav patterns with a tree just for visual styling
+- ensure expand/collapse, selection, and focus are modeled separately and intentionally
+- verify whether the design expects selection to follow focus; if not, keep them distinct
+- for treegrid, use it only when hierarchical data also requires grid-like row or cell interaction
+- if `aria-activedescendant` is used, keep DOM focus management, item IDs, and announcement behavior stable through updates and virtualization
+- preserve level, expanded, selected, and positional context in a way assistive tech can follow
+
+Review for:
+- tree widgets that are actually just nested lists
+- focus and selection being conflated accidentally
+- broken hierarchy metadata under virtualization
+- treegrid complexity used where a table plus disclosure would be simpler
+
+### Menubar and window splitter rules
+
+When the requested UI includes application-style menus or resizable split panes:
+- use menubar only for persistent application-command navigation, not for ordinary site navigation headers
+- do not convert standard website nav into menubar semantics unless the full APG keyboard model is intentionally implemented
+- verify menubar keyboard behavior for horizontal and vertical orientation, submenu opening, escape handling, and focus return
+- use a splitter pattern only when the user can resize adjacent panels and the divider itself is an interactive control
+- a splitter must expose current value and limits in a way assistive tech can understand, and keyboard resizing must work without pointer dragging
+- if resizing is not essential, prefer simpler responsive layout controls over a full splitter widget
+
+Review for:
+- menubar semantics on standard marketing or content nav
+- submenu focus traps or escape failures
+- split panes that resize only by mouse dragging
+- missing min/max/current size exposure on the divider
+
 ### Dynamic updates, live regions, and async UI
 
 Focus first on:
@@ -2829,17 +3256,92 @@ For NVDA tool identity and project reference, prefer the official repository:
 - NVDA executable available on Windows.
 - Browser channel available (`chrome` preferred, `msedge` fallback).
 - Guidepup runtime available for NVDA automation (`@guidepup/guidepup`).
+- On Windows PowerShell, use `npm.cmd` / `npx.cmd` when script execution policy blocks `npm.ps1` / `npx.ps1`.
 
-2. Open the target page in a real browser window (not source-only analysis).
+2. Prepare the workspace dependency runtime when missing:
+- run `cmd /c npm.cmd install @guidepup/guidepup @guidepup/setup playwright`
+- run `cmd /c npx.cmd @guidepup/setup`
+- verify with a real `nvda.detect()` call before claiming NVDA support
 
-3. Start NVDA and run a deterministic interaction sequence:
-- focus page
-- perform a fixed navigation set (for example `Tab` + `next` commands)
-- collect `spokenPhraseLog` and `lastSpokenPhrase`
+3. Prefer the bundled web-only harness for real page evidence:
+- script: `scripts/nvda_web_audit.mjs`
+- run from the target workspace, not from the skill directory, so Node resolves the workspace `node_modules`
+- example:
+  - `node C:\Users\sarper\.codex\skills\accessimind-accessible-ui-agent-skill\scripts\nvda_web_audit.mjs --url https://example.com --selector "#main" --out output\nvda-web-audit.json --next 80 --previous 20 --tab 30`
 
-4. Stop NVDA cleanly and close browser.
+4. The harness must open a real headed browser, inject a unique page-title token, bring that page to the foreground before each NVDA step, and capture:
+- `spokenPhraseLog`
+- active URL/title
+- active DOM focus target
+- foreground window title/process
+- accepted web speech versus filtered noise
 
-5. Add a dedicated evidence section in the report.
+5. Treat speech as valid page evidence only when:
+- the foreground process is the audited browser (`chrome`, `msedge`, or `chromium`)
+- the foreground window title contains the harness token
+- the phrase does not match known OS/application notification patterns such as `Windows Security`, `Logi Download Assistant`, Teams, Outlook, or generic notification/`bildirim` text
+
+6. Stop NVDA cleanly and close browser.
+
+7. Add a dedicated evidence section in the report.
+
+### NVDA depth and coverage directive
+
+Short NVDA smoke logs are not sufficient for stakeholder reports. For any report that includes NVDA evidence, collect enough real speech to cover the audited component or page section.
+
+Minimum NVDA coverage requirements:
+- collect a DOM inventory for the target selector before starting NVDA traversal: headings, links, buttons/controls, images, focusables, carousel slides, and pagination controls
+- run forward browse traversal with enough `next` steps to pass through the entire target and at least one adjacent boundary; use at least `--next 60` for a component and `--next 120` for a full page unless the DOM inventory is smaller and fully covered
+- run reverse traversal with `previous` steps to detect order asymmetry and repeated/looped announcements
+- run keyboard `Tab` traversal separately to compare DOM focus order with browse-mode speech order
+- capture `spokenPhraseLog`, `lastSpokenPhrase`, `itemText`, active DOM focus, active URL/title, and foreground window for every step
+- compare accepted NVDA speech against DOM inventory and report `matched`, `unmatched`, and `possibly duplicated` items
+- keep a list of traversal gaps, such as controls present in DOM but not heard, heard text with no clear DOM source, repeated speech, focus moving outside the target, or hidden content being spoken
+- continue traversal until the target's expected controls/content have either been heard, explicitly missed, or the step budget is exhausted
+
+Report-level NVDA requirements:
+- include the total number of NVDA forward, reverse, and keyboard steps
+- include accepted speech count and filtered noise count
+- include a coverage table, not just a short speech excerpt
+- include the raw artifact path
+- never say "NVDA tested" without stating what was covered and what remains unverified
+- if the output is sparse, call that a finding or limitation; do not silently accept a shallow log
+
+### Screen-reader no-summary-finding directive
+
+Screen-reader usage evidence must not produce summary-only findings. Do not create findings such as `NVDA output is confusing`, `screen-reader support is weak`, `carousel is not screen-reader friendly`, or any other aggregate screen-reader finding unless it is immediately decomposed into atomic evidence rows.
+
+For NVDA/VoiceOver/TalkBack evidence, every screen-reader finding must be atomic and tied to one observed interaction:
+- step id or traversal id
+- exact spoken phrase or explicit `no speech`
+- active DOM target with selector, role, accessible name, state, and focusability
+- expected spoken output or expected state exposure
+- observed mismatch
+- user impact
+- WCAG/APG reference
+- remediation direction
+- confidence level
+
+If several steps show the same defect, group them only after listing the concrete evidence rows. The grouping label may be used for triage, but it must not replace the individual observations.
+
+Allowed screen-reader output sections:
+- coverage table
+- step-by-step speech log
+- unheard DOM items table
+- repeated announcements table
+- focus versus browse-mode comparison
+- atomic issue table
+- limitations table
+
+Disallowed screen-reader output sections:
+- `summary findings`
+- `NVDA summary findings`
+- generic screen-reader conclusions without row-level evidence
+- single-paragraph screen-reader findings that do not identify the step, phrase, DOM target, and expected behavior
+
+### NVDA web-only evidence integrity rule
+
+Do not mix OS or other-application speech with web-page findings. If NVDA speaks a system notification, browser chrome, or unrelated app, keep it in `filteredNoise` and exclude it from page findings. If all speech is filtered or foreground ownership cannot be proven, mark the NVDA result as blocked/unverified and use DOM/keyboard evidence separately.
 
 ### Required NVDA evidence fields
 
@@ -2849,7 +3351,10 @@ When NVDA-assisted mode succeeds, include:
 - locale
 - NVDA session status (`started/stopped`)
 - deterministic step list
+- DOM inventory summary and coverage comparison
 - spoken phrase log excerpt
+- accepted speech count and filtered noise count
+- unmatched DOM items and repeated speech observations
 - last spoken phrase
 - timestamp
 
@@ -2858,9 +3363,12 @@ When NVDA-assisted mode succeeds, include:
 HTML accessibility reports should include a section like:
 - `NVDA-assisted interaction evidence`
 - `Observed spoken output`
-- `Interpretation notes`
+- `Coverage matrix`
+- `Unheard DOM items and repeated announcements`
+- `Atomic screen-reader issue table`
+- `Limitations`
 
-Keep interpretation grounded in collected output. Do not over-claim full user equivalence from a short scripted pass.
+Keep interpretation grounded in collected output. Do not over-claim full user equivalence from a short scripted pass. If only a short pass was possible, label it as a limited smoke test and keep it out of production sign-off evidence. Do not emit screen-reader summary findings; emit atomic evidence rows instead.
 
 ### Fallback and limitation rule
 
@@ -3051,81 +3559,113 @@ Every final report must include dedicated sections:
 - `Pixel-level contrast measurements`
 - `Focus visibility measurements`
 
-## NVDA portable skill integration
+## Strict accessibility default mode
 
-For Windows audits, this skill must use `nvda-portable-a11y-audit` as the default SR evidence path.
+This mode is the default operating posture for all implementation, remediation, refactor, and review requests handled with this skill unless the user explicitly asks for a lighter exploratory pass.
 
-### Integration rules
+### Strict-default objective
 
-- Prefer repository-local portable NVDA runtime under `NVDA/`.
-- Run `skills/nvda-portable-a11y-audit/scripts/invoke-nvda-playwright-audit.ps1` when live SR evidence is required.
-- Treat missing portable NVDA runtime as a blocking condition and keep final gate decision at `FAIL`.
+Treat accessibility as a release-quality requirement, not a best-effort enhancement.
 
-## Full persona integration
+The default build quality for UI output under this skill is production-grade.
 
-For production audits, run persona-complete analysis via `full-persona-a11y-audit`.
+For every applicable request, the skill must assume the user expects:
+- production-grade semantic structure
+- keyboard-complete interaction behavior
+- screen-reader-complete naming, state, and relationship exposure
+- zoom, reflow, reduced-motion, and forced-colors resilience where relevant
+- explicit runtime evidence for important claims
+- no unresolved `critical` or `high` accessibility debt at sign-off
 
-### Persona-complete rule
+### Strict-default behavior rules
 
-- Blind track: live SR evidence (`NVDA` portable path on Windows).
-- Low-vision track: 200% and 400% zoom, reflow checks, screenshot evidence, focus visibility checks.
-- Motor track: long keyboard traversal, loop/trap risk detection, keyboard-completion risk.
+- Do not deliver accessibility-sensitive UI as "good enough" when known defects remain.
+- Do not stop at visual polish if semantics, focus flow, announcements, or interaction parity are incomplete.
+- Do not treat accessibility as limited to labels and contrast; include structure, state, behavior, motion, responsiveness, and dynamic updates.
+- Prefer native HTML and simpler interaction models whenever they reduce risk and increase long-term maintainability.
+- If a requested pattern is inherently risky or unnecessarily custom, propose or implement the simpler accessible alternative by default.
+- If the current implementation cannot satisfy the required accessibility bar cleanly, escalate internally toward redesign or structural remediation instead of patching symptoms only.
+- Build the structure itself to the required accessibility bar by default; do not leave accessibility intent as a follow-up note when it should be encoded in the implementation.
 
-### Mandatory runner
+### Production-grade default rule
 
-Use:
-- `skills/full-persona-a11y-audit/scripts/invoke-full-persona-audit.ps1`
+For implementation requests, the skill must assume `production-grade` is the minimum acceptable delivery level unless the user explicitly asks for a lower-fidelity prototype or draft.
 
-and include outputs:
-- `blind.md`
-- `low-vision.md`
-- `motor.md`
-- `summary.md`
-- `summary.json`
+This means the produced HTML, CSS, and JS should be:
+- structurally complete
+- accessibility-aware by default
+- ready for realistic integration rather than illustrative only
+- written to minimize rework in semantics, focus handling, naming, and responsive behavior
 
-### Handoff enrichment
+Do not label work as production-grade if it is only a visual mockup or an accessibility concept sketch.
 
-Every persona finding should include:
-- severity
-- WCAG reference
-- selector or evidence id
-- concise fix direction
-- owner and ETA placeholders
+### Comment-location rule
 
-## Senior engineering integration mode
+When the implementation needs explanation, intent markers, maintenance notes, or accessibility rationale, place that information in source comments inside:
+- HTML comments
+- CSS comments
+- JS comments
 
-This skill is integrated with `senior-developer-20y` for architecture, delivery risk, and production hardening decisions.
+Do not move implementation rationale, accessibility intent, or behavior notes into visible UI copy unless the user-facing product genuinely needs that text.
 
-### Integration trigger
+### No-UI-explanation rule
 
-Enable senior mode by default when the task includes:
-- production UI implementation
-- refactor with regression risk
-- shared component or design-system changes
-- release readiness decisions
+Do not add explanatory helper text to the rendered interface solely to describe:
+- why the component was built a certain way
+- which accessibility technique was used
+- that a control is a demo, sample, prototype, or production-grade rebuild
+- what keyboard support exists, unless the product experience itself requires visible instructions
 
-### Ownership split
+If such context is needed for maintainers or future agents, encode it in comments in the relevant source layer instead.
 
-- `accessimind` owns accessibility semantics, WCAG 2.2 mapping, and user-impact severity.
-- `playwright` owns runtime keyboard/DOM evidence capture.
-- `senior-developer-20y` owns delivery architecture, risk control, test strategy, and release hardening.
+### Sign-off rule
 
-### Production-grade WCAG 2.2 delivery lifecycle
+The skill must not present work as complete, production-ready, or approved unless all relevant accessibility requirements for that surface have been either:
+- directly satisfied and verified, or
+- explicitly called out as blocked, unverified, or failed with a clear reason
 
-For production UI development, run this sequence:
-1. Define scope, assumptions, and WCAG 2.2 A/AA target.
-2. Implement with semantic-first UI and native controls.
-3. Capture deterministic runtime evidence via Playwright.
-4. Apply senior risk review: regression risk, state management risk, rollout safety, and maintainability.
-5. Enforce release gates (`G1`-`G5`) and produce a final decision.
+Absence of detected issues is not enough by itself; the final status must be backed by explicit coverage and evidence.
 
-### Full-compliance statement rule
+### No-regression interpretation rule
 
-Do not claim "full WCAG 2.2 compliance" unless:
-- coverage boundaries are explicit,
-- no unresolved `critical`/`high` findings remain in scope,
-- runtime keyboard/focus evidence is present for core flows,
-- residual risks and unverified areas are clearly documented.
+The skill must not claim that future regression testing is unnecessary in an absolute sense.
+
+Instead, when the user asks for work that "should not need regression", interpret that as:
+- design and implement to minimize regression risk up front
+- verify all impacted accessibility surfaces before sign-off
+- include adjacent-flow checks where shared components, tokens, layouts, or interaction primitives are affected
+- refuse to mark the work as safely complete when regression-relevant areas remain unverified
+
+### Minimum required coverage for strict-default delivery
+
+Unless clearly irrelevant to the surface, verify and reason about:
+- landmarks, headings, lists, regions, and reading order
+- accessible names, descriptions, roles, states, and values
+- keyboard access, focus order, focus visibility, and escape behavior
+- target size, pointer/keyboard parity, and non-color cues
+- text spacing, zoom, reflow, overflow, and responsive behavior
+- contrast for text, icons, controls, and focus indicators
+- motion, autoplay, hover/focus-triggered disclosure, and reduced-motion behavior
+- status messages, validation messaging, live regions, and async updates
+- localization-sensitive naming and language exposure when locale behavior is present
+
+### Delivery refusal rule
+
+If the skill cannot obtain enough evidence to support a strict-default accessibility sign-off, it must:
+- state the exact missing verification or blocker
+- avoid over-claiming compliance or production readiness
+- return `FAIL` or an explicitly blocked status rather than a soft approval
+
+### Final response rule under strict-default mode
+
+When closing a task handled with this skill, always state:
+- which accessibility-sensitive surfaces were changed or reviewed
+- which verification methods were actually run
+- which requirements were satisfied
+- which areas remain unverified, blocked, or out of scope
+- whether the result meets the production accessibility bar for that surface
+
+Do not omit these points even when the user asks for a short answer.
 
 ## References
 
