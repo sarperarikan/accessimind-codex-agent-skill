@@ -1,27 +1,57 @@
 # AccessiMind Codex Agent Skill
 
-Version: `1.1.0`
+**AccessiMind** is a single Codex skill for building and auditing accessible web UI. It combines implementation guidance with reproducible WCAG 2.2 evidence for real product journeys—without requiring separate Playwright, NVDA, or persona skills.
 
-AccessiMind is a single, production-oriented Codex skill for accessible UI implementation and WCAG 2.2 evidence collection. It combines automated, keyboard, screen-reader, low-vision, motor, and journey-state checks without requiring separate companion skills.
+Current version: `1.1.0`
 
-## Included capabilities
+## What it covers
 
-- Semantic, multilingual UI implementation and WCAG 2.2 review
-- Keyboard, focus, reflow, contrast, forced-colors, and reduced-motion evidence
-- NVDA-assisted evidence collection when the local runtime is available
-- State-by-state journey audits for sign-in, search, checkout, booking, onboarding, and forms
-- Detection of targets that accept pointer interaction but lack a keyboard-operable target
-- Release gates: `PASS`, `PASS_WITH_RISK`, or `FAIL`
+- Production-oriented HTML, CSS, and React accessibility work
+- Semantic structure, accessible names, ARIA states, forms, dialogs, live regions, and localization-aware UI
+- Keyboard order, focus visibility, reflow, text spacing, contrast, forced colors, reduced motion, and target size
+- NVDA-assisted evidence collection when NVDA and Guidepup are available locally
+- Journey audits for sign-in, search, filtering, cart, checkout, booking, onboarding, and multi-step forms
+- Pointer–keyboard parity: highlights visible targets that accept a pointer click but lack a keyboard-operable semantic target
+- Evidence-backed release gates: `PASS`, `PASS_WITH_RISK`, or `FAIL`
+
+Automated checks accelerate the audit; they do not replace real assistive-technology users or human usability review.
 
 ## Install
+
+From the repository root:
 
 ```powershell
 .\scripts\install-skill.ps1
 ```
 
-This installs only `accessimind-accessible-ui-agent-skill` under `$HOME\.codex\skills`.
+The installer copies one folder to your Codex skills directory:
 
-## Validate
+```text
+$HOME\.codex\skills\accessimind-accessible-ui-agent-skill\
+```
+
+## Use in Codex
+
+Examples:
+
+```text
+Use $accessimind-accessible-ui-agent-skill to audit this checkout flow for WCAG 2.2.
+Use $accessimind-accessible-ui-agent-skill to find controls reachable by mouse but not keyboard.
+Use $accessimind-accessible-ui-agent-skill to review this React modal and propose verified fixes.
+```
+
+## Evidence harnesses
+
+The bundled scripts live in `skills/accessimind-accessible-ui-agent-skill/scripts/`.
+
+| Script | Purpose |
+| --- | --- |
+| `nvda_web_audit.mjs` | Captures NVDA-assisted browser evidence when the local runtime is available. |
+| `low_vision_web_audit.mjs` | Measures reflow, text spacing, forced colors, contrast, focus, clipping, and density. |
+| `motor_web_audit.mjs` | Collects keyboard traces, pointer actionability, target size/spacing, drag alternatives, and pointer–keyboard parity. |
+| `journey-audit.mjs` | Executes declared UI journeys and runs AccessLint at every reached state. |
+
+Validate the scripts after installation:
 
 ```powershell
 python .\scripts\quick_validate.py .\skills\accessimind-accessible-ui-agent-skill
@@ -31,9 +61,27 @@ node --check .\skills\accessimind-accessible-ui-agent-skill\scripts\motor_web_au
 node --check .\skills\accessimind-accessible-ui-agent-skill\scripts\journey-audit.mjs
 ```
 
-## Journey audit
+## Journey audits
 
-Create `a11y-journey.json` with a `baseUrl`, named journeys, and ordered `url`, `click`, `fill`, `press`, `waitFor`, or `waitMs` steps. Do not include irreversible production actions without explicit approval.
+Define safe, non-destructive UI states in `a11y-journey.json`:
+
+```json
+{
+  "baseUrl": "http://localhost:3000",
+  "journeys": [
+    {
+      "name": "Guest checkout",
+      "steps": [
+        { "name": "Browse", "url": "/products" },
+        { "name": "Add item", "click": "[data-testid='add-to-cart']" },
+        { "name": "Open cart", "click": "a[href='/cart']" }
+      ]
+    }
+  ]
+}
+```
+
+Run it with:
 
 ```powershell
 node .\skills\accessimind-accessible-ui-agent-skill\scripts\journey-audit.mjs `
@@ -41,6 +89,29 @@ node .\skills\accessimind-accessible-ui-agent-skill\scripts\journey-audit.mjs `
   --output .\accessibility-journey-report.json
 ```
 
-Invoke it in Codex with `$accessimind-accessible-ui-agent-skill ile checkout yolculuğunu denetle`.
+Supported step actions are `url`, `click`, `fill`, `press`, `waitFor`, and `waitMs`. Do not include purchases, sends, deletes, or production-record creation without explicit approval.
 
-See [USAGE.md](USAGE.md) for the audit commands and report interpretation.
+## Pointer–keyboard parity
+
+Run the motor audit with a Tab budget appropriate to the page:
+
+```powershell
+node .\skills\accessimind-accessible-ui-agent-skill\scripts\motor_web_audit.mjs `
+  --url https://example.com `
+  --focus-steps 160 `
+  --out .\motor-web-audit.json
+```
+
+`pointer-reachable-without-keyboard-target` is a confirmed candidate when a visible target accepts a pointer trial but has no keyboard-operable semantic owner. `pointer-keyboard-parity-undetermined` means the recorded Tab trace is not long enough to prove a failure.
+
+## Project structure
+
+```text
+skills/accessimind-accessible-ui-agent-skill/
+├── SKILL.md                 # Codex workflow and production gates
+├── agents/openai.yaml       # Codex UI metadata
+├── references/              # WCAG, journey, and parity guidance
+└── scripts/                 # NVDA, low-vision, motor, and journey evidence tools
+```
+
+For command details and report interpretation, see [USAGE.md](USAGE.md). Changes are tracked in [CHANGELOG.md](CHANGELOG.md).
