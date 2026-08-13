@@ -1,20 +1,30 @@
 # AccessiMind usage
 
-## Core skill
+AccessiMind is distributed as one Codex skill: `$accessimind-accessible-ui-agent-skill`.
 
-Use `$accessimind-accessible-ui-agent-skill` for accessible UI work or evidence-backed review. The skill owns implementation guidance, runtime evidence interpretation, remediation planning, and release gates.
+## Install
+
+```powershell
+.\scripts\install-skill.ps1
+```
+
+Restart or refresh Codex after installation, then invoke the skill in a request.
 
 ## Evidence harnesses
 
+Run these commands from the project being audited so Node can resolve that project's dependencies.
+
 ```powershell
-node .\skills\accessimind-accessible-ui-agent-skill\scripts\motor_web_audit.mjs --url https://example.com --focus-steps 160 --out .\motor-web-audit.json
-node .\skills\accessimind-accessible-ui-agent-skill\scripts\low_vision_web_audit.mjs --url https://example.com --out .\low-vision-web-audit.json
-node .\skills\accessimind-accessible-ui-agent-skill\scripts\nvda_web_audit.mjs --url https://example.com --out .\nvda-web-audit.json
+node C:\Users\sarper\.codex\skills\accessimind-accessible-ui-agent-skill\scripts\motor_web_audit.mjs --url https://example.com --focus-steps 160 --out .\motor-web-audit.json
+node C:\Users\sarper\.codex\skills\accessimind-accessible-ui-agent-skill\scripts\low_vision_web_audit.mjs --url https://example.com --out .\low-vision-web-audit.json
+node C:\Users\sarper\.codex\skills\accessimind-accessible-ui-agent-skill\scripts\nvda_web_audit.mjs --url https://example.com --out .\nvda-web-audit.json
 ```
 
-`motor_web_audit.mjs` reports confirmed `pointer-reachable-without-keyboard-target` findings only when a visible target passes a pointer trial but lacks a keyboard-operable semantic owner. `pointer-keyboard-parity-undetermined` means the Tab trace was insufficient and must be extended before claiming a defect.
+`nvda_web_audit.mjs` requires Windows, an installed NVDA runtime, and Guidepup. It does not ship or install NVDA.
 
 ## Journey audits
+
+Create a safe, non-destructive journey definition:
 
 ```json
 {
@@ -31,7 +41,11 @@ node .\skills\accessimind-accessible-ui-agent-skill\scripts\nvda_web_audit.mjs -
 ```
 
 ```powershell
-node .\skills\accessimind-accessible-ui-agent-skill\scripts\journey-audit.mjs --journey .\a11y-journey.json --output .\accessibility-journey-report.json
+node C:\Users\sarper\.codex\skills\accessimind-accessible-ui-agent-skill\scripts\journey-audit.mjs --journey .\a11y-journey.json --output .\accessibility-journey-report.json
 ```
 
-The runner scans every reached state with AccessLint. AccessiMind then adds keyboard, focus, visual, and screen-reader evidence; an incomplete transition or unavailable mandatory evidence remains undetermined or fails the production gate.
+The journey runner scans each reached state with AccessLint. Supported actions are `url`, `click`, `fill`, `press`, `waitFor`, and `waitMs`. Do not use it for purchases, messages, deletes, or production-record creation without explicit approval.
+
+## Pointer--keyboard parity
+
+`motor_web_audit.mjs` reports `pointer-reachable-without-keyboard-target` only when a visible pointer-actionable target lacks a keyboard-operable semantic owner. `pointer-keyboard-parity-undetermined` means the Tab trace must be extended before treating the target as a defect.

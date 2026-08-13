@@ -2,14 +2,14 @@
 
 **AccessiMind** is a single Codex skill for building and auditing accessible web UI. It combines implementation guidance with reproducible WCAG 2.2 evidence for real product journeys—without requiring separate Playwright, NVDA, or persona skills.
 
-Current version: `1.1.0`
+Current version: `1.1.1`
 
 ## What it covers
 
 - Production-oriented HTML, CSS, and React accessibility work
 - Semantic structure, accessible names, ARIA states, forms, dialogs, live regions, and localization-aware UI
 - Keyboard order, focus visibility, reflow, text spacing, contrast, forced colors, reduced motion, and target size
-- NVDA-assisted evidence collection when NVDA and Guidepup are available locally
+- NVDA-assisted evidence collection when NVDA and Guidepup are installed locally
 - Journey audits for sign-in, search, filtering, cart, checkout, booking, onboarding, and multi-step forms
 - Pointer–keyboard parity: highlights visible targets that accept a pointer click but lack a keyboard-operable semantic target
 - Evidence-backed release gates: `PASS`, `PASS_WITH_RISK`, or `FAIL`
@@ -29,6 +29,8 @@ The installer copies one folder to your Codex skills directory:
 ```text
 $HOME\.codex\skills\accessimind-accessible-ui-agent-skill\
 ```
+
+The repository intentionally does not bundle a portable NVDA runtime. For NVDA evidence, install NVDA on the Windows audit machine and set up Guidepup in the audited project.
 
 ## Use in Codex
 
