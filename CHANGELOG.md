@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.1.0 - 2026-08-13
+
+### Added
+- Added state-by-state journey auditing with `journey-audit.mjs` and AccessLint scan evidence.
+- Added pointer-to-keyboard parity checks that distinguish confirmed mouse-only targets from an insufficient Tab-trace coverage result.
+- Added journey and pointer-keyboard parity references to the core AccessiMind skill.
+
+### Changed
+- Consolidated all supported workflow guidance and evidence harnesses under the single `accessimind-accessible-ui-agent-skill` directory.
+- Simplified installer and package scripts to distribute one Codex skill.
+
+### Removed
+- Removed deprecated standalone Playwright, NVDA portable, persona, and senior-developer skill wrappers.
+- Removed stale smoke-report artifacts and the legacy multi-skill integration guide.
+
 ## 1.0.0.4 - 2026-06-17
 
 ### Added

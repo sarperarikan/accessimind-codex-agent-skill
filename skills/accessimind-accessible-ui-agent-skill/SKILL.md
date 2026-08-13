@@ -1,6 +1,6 @@
 ---
 name: accessimind-accessible-ui-agent-skill
-description: Use when the user wants production-ready modern UI work for existing projects or new screens in React, HTML, or CSS, with stack-aware implementation, enterprise-grade multilingual architecture, consistent design systems, WCAG 2.2-compliant output, axe-core-backed accessibility verification, and strong support for dynamic and stateful interfaces.
+description: Use when the user wants production-ready modern UI work or accessibility review for web UI, including journey-based WCAG 2.2 audits of sign-in, checkout, search, booking, onboarding, or form flows; keyboard/focus analysis; real NVDA or screen-reader interaction evidence; and accessible React/HTML/CSS implementation with multilingual and design-system awareness.
 ---
 
 # AccessiMind Accessible UI Agent Skill
@@ -3671,6 +3671,8 @@ Do not omit these points even when the user asks for a short answer.
 
 Load [official-sources.md](references/official-sources.md) when you need the standards, techniques, and rationale behind the rules in this skill.
 Load [wcag-2-2-coverage-map.md](references/wcag-2-2-coverage-map.md) when you need a practical criterion-to-surface review map for complete WCAG 2.2 A/AA coverage.
+Load [journey-audits.md](references/journey-audits.md) when auditing a multi-step product flow or a state reached after interaction.
+Load [pointer-keyboard-parity.md](references/pointer-keyboard-parity.md) when the audit must identify targets available to pointer users but not to keyboard users.
 
 
 

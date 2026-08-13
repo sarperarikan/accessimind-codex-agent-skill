@@ -65,6 +65,7 @@ try {
     measurement.screenshot = screenshot;
     measurement.keyboardTrace = await collectKeyboardTrace(page, targetSelector, maxFocusSteps);
     measurement.pointerActionability = await collectPointerActionability(page, targetSelector, maxActionabilityChecks);
+    measurement.pointerKeyboardParity = await collectPointerKeyboardParity(page, measurement.pointerCandidates, measurement.keyboardTrace, maxActionabilityChecks);
 
     result.scenarios.push(measurement);
     result.findings.push(...deriveFindings(measurement));
@@ -149,6 +150,37 @@ async function measureScenario(page, selector, scenario) {
       .slice(0, 80)
       .map((el, index) => inspectElement(el, index));
 
+    // A visual click target is not necessarily a semantic control. Exclude descendants
+    // of a keyboard-operable owner so icon/text inside a real button is not misreported.
+    const pointerCandidates = [...target.querySelectorAll("*")]
+      .filter(isVisible)
+      .filter((el) => {
+        const cs = getComputedStyle(el);
+        return el.matches("a[href],button,input,select,textarea,summary,[onclick],[role='button'],[role='link'],[data-action],[data-toggle],[tabindex]") ||
+          cs.cursor === "pointer" ||
+          /(?:click|toggle|trigger|cta|dropdown|menu-item)/i.test(String(el.className || ""));
+      })
+      .filter((el) => {
+        const owner = el.closest("a[href],button,input,select,textarea,summary,[role='button'],[role='link'],[role='menuitem'],[role='tab']");
+        return !owner || owner === el;
+      })
+      .filter((el) => !el.matches("a[href],button,input,select,textarea,summary") || el.getAttribute("tabindex") === "-1")
+      .slice(0, 120)
+      .map((el, index) => {
+        const inspected = inspectElement(el, index);
+        const cs = getComputedStyle(el);
+        return {
+          ...inspected,
+          pointerSignals: {
+            cursor: cs.cursor,
+            onclick: el.hasAttribute("onclick"),
+            role: el.getAttribute("role"),
+            dataAction: el.hasAttribute("data-action") || el.hasAttribute("data-toggle"),
+          },
+          keyboardOwner: null,
+        };
+      });
+
     return {
       scenario: scenarioValue,
       viewport: { width: innerWidth, height: innerHeight },
@@ -156,6 +188,7 @@ async function measureScenario(page, selector, scenario) {
       controls: withSpacing,
       dragCandidates,
       hoverDisclosureCandidates,
+      pointerCandidates,
       documentMetrics: {
         scrollWidth: document.documentElement.scrollWidth,
         scrollHeight: document.documentElement.scrollHeight,
@@ -361,6 +394,36 @@ async function collectPointerActionability(page, selector, maxChecks) {
   return rows;
 }
 
+async function collectPointerKeyboardParity(page, candidates, keyboardTrace, maxChecks) {
+  const reached = new Set((keyboardTrace || []).filter((row) => row.insideTarget).map((row) => `${row.tag}|${row.id}|${row.name}`));
+  const rows = [];
+  for (const candidate of (candidates || []).slice(0, maxChecks)) {
+    const item = page.locator(candidate.selector).first();
+    let pointerReachable = true;
+    let error = null;
+    await item.click({ trial: true, timeout: 1500 }).catch((trialError) => {
+      pointerReachable = false;
+      error = trialError.message.split("\n")[0];
+    });
+    const identity = await item.evaluate((el) => {
+      const tabIndex = el.getAttribute("tabindex");
+      const naturallyFocusable = el.matches("a[href],button,input,select,textarea,summary") && !el.hasAttribute("disabled");
+      return {
+        tag: el.tagName,
+        id: el.id || null,
+        selector: el.id ? `#${CSS.escape(el.id)}` : null,
+        name: (el.getAttribute("aria-label") || el.innerText || el.getAttribute("title") || "").replace(/\s+/g, " ").trim().slice(0, 180),
+        tabindex: tabIndex,
+        keyboardEligible: naturallyFocusable || (tabIndex !== null && Number(tabIndex) >= 0),
+        hasKeyboardHandler: Boolean(el.getAttribute("onkeydown") || el.getAttribute("onkeyup") || el.getAttribute("onkeypress")),
+      };
+    }).catch(() => ({ tag: null, id: null, name: "", keyboardEligible: false, hasKeyboardHandler: false }));
+    const traceKey = `${identity.tag}|${identity.id}|${identity.name}`;
+    rows.push({ ...candidate, ...identity, pointerReachable, pointerError: error, reachedInTrace: reached.has(traceKey) });
+  }
+  return rows;
+}
+
 function deriveFindings(measurement) {
   const findings = [];
   for (const control of measurement.controls || []) {
@@ -398,6 +461,14 @@ function deriveFindings(measurement) {
   for (const row of measurement.pointerActionability || []) {
     if (!row.actionable) {
       findings.push(finding(measurement, "pointer-actionability-failed", row, row.error || "Playwright trial click could not verify actionability.", "Pointer-operable controls should be visible, stable, enabled, and receive pointer events.", "WCAG 2.5.8 Target Size (Minimum)"));
+    }
+  }
+
+  for (const row of measurement.pointerKeyboardParity || []) {
+    if (row.pointerReachable && !row.keyboardEligible) {
+      findings.push(finding(measurement, "pointer-reachable-without-keyboard-target", row, "A visible non-native target accepted a pointer trial click but has no focusable semantic owner or non-negative tabindex.", "Use a native button/link where possible. Otherwise supply a valid role, tabindex=0, and equivalent Enter/Space behavior.", "WCAG 2.1 SC 2.1.1 Keyboard; WCAG 4.1.2 Name, Role, Value"));
+    } else if (row.pointerReachable && row.keyboardEligible && !row.reachedInTrace) {
+      findings.push(finding(measurement, "pointer-keyboard-parity-undetermined", row, "The target accepted a pointer trial click but was not reached in the bounded Tab trace.", "Increase --focus-steps or test the controlling state before concluding that keyboard access is absent.", "WCAG 2.1 SC 2.1.1 Keyboard"));
     }
   }
 

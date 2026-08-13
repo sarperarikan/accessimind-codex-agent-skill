@@ -1,13 +1,7 @@
 $skillsRoot = Join-Path $PSScriptRoot '..\skills'
 $targetRoot = Join-Path $HOME '.codex\skills'
 
-$bundleSkillNames = @(
-  'accessimind-accessible-ui-agent-skill',
-  'playwright',
-  'senior-developer-20y',
-  'nvda-portable-a11y-audit',
-  'full-persona-a11y-audit'
-)
+$bundleSkillNames = @('accessimind-accessible-ui-agent-skill')
 
 if (-not (Test-Path $skillsRoot)) {
   throw "Skills source root not found: $skillsRoot"
@@ -31,4 +25,4 @@ foreach ($skillName in $bundleSkillNames) {
   Write-Host "Installed skill to $target"
 }
 
-Write-Host "Installed AccessiMind integrated bundle: $($bundleSkillNames -join ', ')"
+Write-Host "Installed AccessiMind skill: $($bundleSkillNames -join ', ')"

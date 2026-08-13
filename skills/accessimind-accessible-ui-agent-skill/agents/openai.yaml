@@ -1,5 +1,5 @@
 interface:
   display_name: "AccessiMind Accessible UI Agent Skill"
-  short_description: "Enterprise UI + WCAG 2.2 + multi-platform accessibility"
-  default_prompt: "Use $accessimind-accessible-ui-agent-skill to improve or build UI using the existing stack with enterprise-grade accessibility, multilingual support, and platform-aware verification."
-  version: "1.0.0.4"
+  short_description: "WCAG 2.2 UI, journey audits, and runtime evidence"
+  default_prompt: "Use $accessimind-accessible-ui-agent-skill to audit a checkout journey with keyboard, pointer, NVDA, and WCAG 2.2 evidence."
+  version: "1.1.0"

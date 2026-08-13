@@ -1,16 +1,9 @@
 $repoRoot = Split-Path $PSScriptRoot -Parent
 $dist = Join-Path $repoRoot 'dist'
 $skillsRoot = Join-Path $repoRoot 'skills'
-$bundleSkillNames = @(
-  'accessimind-accessible-ui-agent-skill',
-  'playwright',
-  'senior-developer-20y',
-  'nvda-portable-a11y-audit',
-  'full-persona-a11y-audit'
-)
+$bundleSkillNames = @('accessimind-accessible-ui-agent-skill')
 $bundlePaths = @()
-$integrationGuide = Join-Path $skillsRoot 'INTEGRATION.md'
-$zipPath = Join-Path $dist 'accessimind-integrated-skill-bundle.zip'
+$zipPath = Join-Path $dist 'accessimind-skill.zip'
 
 foreach ($skillName in $bundleSkillNames) {
   $source = Join-Path $skillsRoot $skillName
@@ -19,11 +12,6 @@ foreach ($skillName in $bundleSkillNames) {
   }
   $bundlePaths += $source
 }
-
-if (-not (Test-Path $integrationGuide)) {
-  throw "Integration guide not found: $integrationGuide"
-}
-$bundlePaths += $integrationGuide
 
 New-Item -ItemType Directory -Force -Path $dist | Out-Null
 if (Test-Path $zipPath) {

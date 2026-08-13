@@ -1,5 +1,0 @@
-interface:
-  display_name: "Full Persona A11y Audit"
-  short_description: "Blind + low-vision + motor accessibility audit in one deterministic run"
-  default_prompt: "Use $full-persona-a11y-audit to run blind, low-vision, and motor accessibility checks with artifacts and handoff-ready findings."
-  version: "1.0.0.3"
