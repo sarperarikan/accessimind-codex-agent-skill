@@ -80,7 +80,7 @@ When the request is review-oriented, switch from implementation mode to review m
 
 - **WCAG coverage.** Load the [WCAG rule workflow](references/wcag-rule-workflow.md) for the complete rule catalog and evidence requirements. Use A and AA for an unspecified full review and include AAA when requested.
 - **Bakanlık checklist.** Load the [versioned checklist](references/turkey-ministry-checklist.md) for Bakanlık, ASHB, 2025/10, or 122/126-question requests. Record the edition, question outcomes and WCAG verdicts. Keep skipped, blocked and unverified conditions visible.
-- **Site-wide or end-to-end review.** Follow the [journey guide](references/journey-audits.md) to sample templates, exercise complete tasks and replay them after remediation. Use the local browser, AccessiMind harnesses and available accessibility engines directly. Keep Binclusive CLI, authentication and dashboard delivery out of these skill invocations.
+- **Site-wide or end-to-end review.** Follow the [journey guide](references/journey-audits.md) to sample templates, exercise complete tasks and replay them after remediation. Use the local browser, AccessiMind harnesses and available accessibility engines directly.
 
 ### Review-mode objective
 
