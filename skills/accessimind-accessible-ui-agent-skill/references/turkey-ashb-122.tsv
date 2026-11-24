@@ -1,0 +1,123 @@
+question	pdf_page	ministry_criterion	wcag	type	on_yes	on_no	on_exception	test_topic
+1	1	1	1.1.1	gate		14		Metin dışı içerik envanteri
+2	1	1	1.1.1	check-yes				Bilgi taşıyan görsellerin metin karşılığı
+3	1	1	1.1.1	gate		5		Metne çevrilince bozulan sınav veya alıştırma
+4	1	1	1.1.1	check-yes				Sınav içeriğini çözümü vermeden tanımlama
+5	1	1	1.1.1	gate		7		Duyusal deneyim için içerik
+6	1	1	1.1.1	check-yes				Duyusal içeriği tanımlama
+7	1	1	1.1.1	gate		10		CAPTCHA varlığı
+8	1	1	1.1.1	check-yes				CAPTCHA amacının metinsel açıklaması
+9	1	1	1.1.1	check-yes				Farklı duyularla CAPTCHA seçeneği
+10	2	1	1.1.1	gate		12		Zamana bağlı medya varlığı
+11	2	1	1.1.1	check-yes				Medyanın metinsel karşılığı veya özeti
+12	2	1	1.1.1	gate		14		Arayüzde kodla oluşturulan form ve görsel kontroller
+13	2	1	1.1.1	check-yes				Görsel kontrolün amacını açıklayan erişilebilir ad
+14	2	2	1.2.1	gate		16		Önceden kaydedilmiş yalnız ses veya görüntü
+15	2	2	1.2.1	check-yes				Yalnız ses veya görüntünün eşdeğer alternatifi
+16	2	3	1.2.2	gate		19		Önceden kaydedilmiş sesli içerik
+17	2	3	1.2.2	check-yes				Önceden kaydedilmiş içerikte altyazı koşulu
+18	3	4	1.2.3	check-yes				Önemli görsel bilgilerin betimlenmesi
+19	3	5	1.3.1	check-yes				Arayüz eleman ve bağlantılarının anlamlı grupları
+20	3	5	1.3.1	gate		23		Başlık varlığı
+21	3	5	1.3.1	check-yes				İçeriği açıklayan başlıklar
+22	3	5	1.3.1	check-yes				Başlıkların semantik düzeyi ve sırası
+23	3	5	1.3.1	gate		25		Paragraf varlığı
+24	3	5	1.3.1	check-yes				Paragraf semantiği
+25	3	5	1.3.1	gate		27		Liste varlığı
+26	3	5	1.3.1	check-yes				Liste semantiği
+27	3	5	1.3.1	gate		32		Tablo varlığı
+28	4	5	1.3.1	gate		32		Veri tablosu ile yerleşim tablosu ayrımı
+29	4	5	1.3.1	check-yes				Veri tablosunun semantik yapısı
+30	4	5	1.3.1	check-yes				Veri tablosunun erişilebilir başlığı
+31	4	5	1.3.1	check-yes				Satır ve sütun başlıklarının ilişkisi
+32	4	5	1.3.1	gate		34		Gezinti bölümü varlığı
+33	4	5	1.3.1	check-yes				Gezinti bölgesi semantiği
+34	4	5	1.3.1	gate		36		Form alanı varlığı
+35	4	5	1.3.1	check-yes				Form etiketi ile kontrol ilişkisi
+36	4	5	1.3.1	gate		38		Yalnızca görsel biçimle yapılan vurgu
+37	4	5	1.3.1	check-yes				Vurgunun semantik karşılığı
+38	4	6	1.3.2	gate		41		Anlam için belirli okuma sırası
+39	4	6	1.3.2	check-yes				Kod ve gezinme sırası ilişkisi
+40	4	6	1.3.2	check-yes				Görsel düzen olmadan okuma
+41	5	6	1.3.2	gate		43		Boşlukla oluşturulan tablo
+42	5	6	1.3.2	check-yes				Boşluk kalkınca anlamın korunması
+43	5	7	1.3.3	gate		45		Duyusal özelliğe dayanan talimat
+44	5	7	1.3.3	check-yes				Talimatın duyusal olmayan karşılığı
+45	5	8	1.4.1	gate		48		Renk kullanımı açısından bilgi veya durum envanteri
+46	5	8	1.4.1	gate		48		Yalnız renkle iletilen bilgi veya durum
+47	5	8	1.4.1	check-yes				Renkle iletilen bilginin ek metinsel ipucu
+48	6	9	1.4.2	gate		51		Ses içeriği varlığı
+49	6	9	1.4.2	gate		51		Otomatik sesin üç saniyeyi aşması
+50	6	9	1.4.2	check-yes				Otomatik sesi kapatma, durdurma veya bağımsız kısma
+51	6	10	2.1.1	check-yes	62			Tüm işlevlerin klavyeyle işletilmesi
+52	6	10	2.1.1	gate		54		Medya oynatıcı varlığı
+53	6	10	2.1.1	check-yes				Medya oynatıcıda klavye işlemleri
+54	6	10	2.1.1	gate		56		Açılır menü varlığı
+55	6	10	2.1.1	check-yes				Menünün klavyeyle açılması
+56	6	10	2.1.1	gate		58		Diyalog veya otomatik pencere varlığı
+57	6	10	2.1.1	check-yes				Diyalog veya pencerenin klavyeyle işletilmesi ve kapatılması
+58	6	10	2.1.1	gate		60		Üzerine gelince renk değiştiren bağlantı
+59	6	10	2.1.1	check-yes				Bağlantı durumunun klavye odağında karşılığı
+60	7	10	2.1.1	gate		62		Sürükle bırak varlığı
+61	7	10	2.1.1	check-yes				Sürükle bırak işlevinin klavye karşılığı
+62	7	11	2.1.2	gate		64		İçeriğin odağı yakalayabildiği bileşen
+63	7	11	2.1.2	check-yes				Bileşenden klavye ile çıkış
+64	7	12	2.1.4	gate		66		Karakterle tetiklenen kısayol
+65	7	12	2.1.4	check-yes				Kısayolu kapatma, değiştirme veya odak kapsamına alma
+66	7	13	2.2.1	gate		68		Zaman sınırı varlığı
+67	8	13	2.2.1	check-yes			68	Zamanı kapatma, ayarlama veya uzatma seçenekleri
+68	8	14	2.2.2	gate		76		Otomatik yenilenen veya başlayan içerik
+69	8	14	2.2.2	check-yes				Otomatik güncellemeyi durdurma, gizleme veya sıklık ayarı
+70	8	14	2.2.2	gate		76		Hareketli, yanıp sönen veya kayan içerik
+71	8	14	2.2.2	gate		73		Otomatik paralel hareketin beş saniyeyi aşması
+72	8	14	2.2.2	check-yes				Hareketi durdurma, duraklatma veya gizleme
+73	8	15	2.3.1	gate		76		Işık çakması veya parlama varlığı
+74	9	15	2.3.1	check-yes				Eski listedeki üçten az çakma ifadesi
+75	9	15	2.3.1	check-yes				Eski listedeki ekran alanı ölçüsü
+76	9	16	2.4.1	gate		78		Yinelenen blok varlığı
+77	9	16	2.4.1	check-yes				Yinelenen bloğu atlama
+78	9	17	2.4.2	gate		80		Başlık çubuğunda sayfa başlığı varlığı
+79	9	17	2.4.2	check-yes				Ayırt edici ve açıklayıcı sayfa başlığı
+80	9	18	2.4.3	check-yes				İşlevi ve anlamı koruyan odak sırası
+81	9	18	2.4.3	check-yes				İleri ve geri Tab sırası
+82	9	18	2.4.3	check-yes				Yapı, görsel sıra ve odak ilişkisi
+83	9	19	2.4.4	gate		85		Bağlantı varlığı
+84	10	19	2.4.4	check-yes				Bağlamda anlaşılır bağlantı amacı
+85	10	20	2.5.1	gate		87		Çok noktalı veya yola bağlı hareket
+86	10	20	2.5.1	check-yes				Eşdeğer tek işaretçi kullanımı
+87	10	21	2.5.2	gate		89		Tek işaretçiyle tetiklenen işlem
+88	10	21	2.5.2	check-yes			89	İşaretçi bırakma, iptal veya geri alma güvencesi
+89	10	22	2.5.3	check-yes				Görünür metin ile erişilebilir ad ilişkisi
+90	11	23	2.5.4	gate		93		Cihaz hareketiyle tetiklenen işlev
+91	11	23	2.5.4	check-yes				Hareket gerektirmeyen eşdeğer yol
+92	11	23	2.5.4	check-yes				Hareketle tetiklemeyi kapatma
+93	11	24	3.1.1	check-yes				Varsayılan dilin programatik bildirimi
+94	11	25	3.2.1	gate		98		Odaklanabilir kontrol varlığı
+95	11	25	3.2.1	check-no				Yalnız odaklanınca bağlam değişikliği
+96	11	26	3.2.2	check-yes				Girdiyle bağlam değişikliği öncesi uyarı
+97	12	26	3.2.2	check-yes				Ayrı onay veya gönderme ile bağlam geçişi
+98	12	27	3.2.6	gate		101		Yinelenen yardım mekanizması
+99	12	27	3.2.6	check-yes				Yardımın görsel göreli sırası
+100	12	27	3.2.6	check-yes				Yardımın kod ve görsel sırası
+101	12	28	3.3.1	gate		111		Olası giriş hatası
+102	12	28	3.3.1	check-yes				Hatanın anlaşılır metni
+103	12	28	3.3.1	check-yes				Hata mesajının zamanında görünmesi
+104	12	28	3.3.1	check-yes				Hatanın ilgili bölümde ayırt edilmesi
+105	12	28	3.3.1	check-yes				Hatalı bölümü geçme mekanizması
+106	12	28	3.3.1	check-yes				Başlık çubuğunda hata belirtimi
+107	13	28	3.3.1	check-yes				Hata listesinin formla birlikte tekrar sunulması
+108	13	28	3.3.1	check-yes				Hata simgesi ve diğer görsellerin metin karşılığı
+109	13	28	3.3.1	check-yes				Başarılı girişin bildirimi
+110	13	28	3.3.1	check-yes				Sunucu tarafında form doğrulaması
+111	13	29	3.3.2	check-yes				Girdi biçimini açıklayan talimat
+112	13	29	3.3.2	check-yes				Benzer form alanlarının gruplandırılması
+113	13	29	3.3.2	check-yes				Form grubu ve grup adının semantiği
+114	13	29	3.3.2	check-yes				Açıklayıcı form etiketleri
+115	13	29	3.3.2	check-yes				Etiket ve kontrolün görsel ilişkisi
+116	13	29	3.3.2	gate		118		Zorunlu alan varlığı
+117	13	29	3.3.2	check-yes				Zorunluluğun metinle bildirimi
+118	13	29	3.3.2	check-yes				Programatik form etiketi veya başlığı
+119	13	30	3.3.7	gate		121		Aynı süreçte bilgi tekrarının varlığı
+120	14	30	3.3.7	check-yes				Önceki bilgiyi otomatik doldurma veya seçebilme
+121	14	31	4.1.2	gate		end		Kullanıcı arayüzü bileşeni varlığı
+122	14	31	4.1.2	check-yes				Ad, rol, durum ve değerlerin doğru iletimi

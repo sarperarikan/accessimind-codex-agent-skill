@@ -1,0 +1,87 @@
+id	level	anchor	evidence	name
+1.1.1	A	non-text-content	semantics,visual,content	Non-text Content
+1.2.1	A	audio-only-and-video-only-prerecorded	media	Audio-only and Video-only (Prerecorded)
+1.2.2	A	captions-prerecorded	media	Captions (Prerecorded)
+1.2.3	A	audio-description-or-media-alternative-prerecorded	media	Audio Description or Media Alternative (Prerecorded)
+1.2.4	AA	captions-live	media	Captions (Live)
+1.2.5	AA	audio-description-prerecorded	media	Audio Description (Prerecorded)
+1.2.6	AAA	sign-language-prerecorded	media	Sign Language (Prerecorded)
+1.2.7	AAA	extended-audio-description-prerecorded	media	Extended Audio Description (Prerecorded)
+1.2.8	AAA	media-alternative-prerecorded	media	Media Alternative (Prerecorded)
+1.2.9	AAA	audio-only-live	media	Audio-only (Live)
+1.3.1	A	info-and-relationships	semantics,visual	Info and Relationships
+1.3.2	A	meaningful-sequence	semantics,visual,speech	Meaningful Sequence
+1.3.3	A	sensory-characteristics	content,visual	Sensory Characteristics
+1.3.4	AA	orientation	visual,task	Orientation
+1.3.5	AA	identify-input-purpose	semantics,task	Identify Input Purpose
+1.3.6	AAA	identify-purpose	semantics,task	Identify Purpose
+1.4.1	A	use-of-color	visual,task	Use of Color
+1.4.2	A	audio-control	media,keyboard	Audio Control
+1.4.3	AA	contrast-minimum	visual	Contrast (Minimum)
+1.4.4	AA	resize-text	visual,task	Resize Text
+1.4.5	AA	images-of-text	visual	Images of Text
+1.4.6	AAA	contrast-enhanced	visual	Contrast (Enhanced)
+1.4.7	AAA	low-or-no-background-audio	media	Low or No Background Audio
+1.4.8	AAA	visual-presentation	visual	Visual Presentation
+1.4.9	AAA	images-of-text-no-exception	visual	Images of Text (No Exception)
+1.4.10	AA	reflow	visual	Reflow
+1.4.11	AA	non-text-contrast	visual	Non-text Contrast
+1.4.12	AA	text-spacing	visual	Text Spacing
+1.4.13	AA	content-on-hover-or-focus	keyboard,pointer,visual	Content on Hover or Focus
+2.1.1	A	keyboard	keyboard	Keyboard
+2.1.2	A	no-keyboard-trap	keyboard	No Keyboard Trap
+2.1.3	AAA	keyboard-no-exception	keyboard	Keyboard (No Exception)
+2.1.4	A	character-key-shortcuts	keyboard	Character Key Shortcuts
+2.2.1	A	timing-adjustable	task	Timing Adjustable
+2.2.2	A	pause-stop-hide	task,keyboard,visual	Pause, Stop, Hide
+2.2.3	AAA	no-timing	task	No Timing
+2.2.4	AAA	interruptions	task	Interruptions
+2.2.5	AAA	re-authenticating	task	Re-authenticating
+2.2.6	AAA	timeouts	task	Timeouts
+2.3.1	A	three-flashes-or-below-threshold	media,visual	Three Flashes or Below Threshold
+2.3.2	AAA	three-flashes	media,visual	Three Flashes
+2.3.3	AAA	animation-from-interactions	media,visual	Animation from Interactions
+2.4.1	A	bypass-blocks	keyboard,semantics	Bypass Blocks
+2.4.2	A	page-titled	semantics,content	Page Titled
+2.4.3	A	focus-order	keyboard,visual	Focus Order
+2.4.4	A	link-purpose-in-context	semantics,content	Link Purpose (In Context)
+2.4.5	AA	multiple-ways	task	Multiple Ways
+2.4.6	AA	headings-and-labels	semantics,content	Headings and Labels
+2.4.7	AA	focus-visible	keyboard,visual	Focus Visible
+2.4.8	AAA	location	task,semantics	Location
+2.4.9	AAA	link-purpose-link-only	semantics,content	Link Purpose (Link Only)
+2.4.10	AAA	section-headings	content,semantics	Section Headings
+2.4.11	AA	focus-not-obscured-minimum	keyboard,visual	Focus Not Obscured (Minimum)
+2.4.12	AAA	focus-not-obscured-enhanced	keyboard,visual	Focus Not Obscured (Enhanced)
+2.4.13	AAA	focus-appearance	keyboard,visual	Focus Appearance
+2.5.1	A	pointer-gestures	pointer	Pointer Gestures
+2.5.2	A	pointer-cancellation	pointer	Pointer Cancellation
+2.5.3	A	label-in-name	semantics,visual,speech	Label in Name
+2.5.4	A	motion-actuation	pointer,task	Motion Actuation
+2.5.5	AAA	target-size-enhanced	pointer,visual	Target Size (Enhanced)
+2.5.6	AAA	concurrent-input-mechanisms	pointer,keyboard,task	Concurrent Input Mechanisms
+2.5.7	AA	dragging-movements	pointer,task	Dragging Movements
+2.5.8	AA	target-size-minimum	pointer,visual	Target Size (Minimum)
+3.1.1	A	language-of-page	semantics,content	Language of Page
+3.1.2	AA	language-of-parts	semantics,content,speech	Language of Parts
+3.1.3	AAA	unusual-words	content	Unusual Words
+3.1.4	AAA	abbreviations	content	Abbreviations
+3.1.5	AAA	reading-level	content	Reading Level
+3.1.6	AAA	pronunciation	content	Pronunciation
+3.2.1	A	on-focus	keyboard,task	On Focus
+3.2.2	A	on-input	task	On Input
+3.2.3	AA	consistent-navigation	task	Consistent Navigation
+3.2.4	AA	consistent-identification	semantics,task	Consistent Identification
+3.2.5	AAA	change-on-request	task	Change on Request
+3.2.6	A	consistent-help	task	Consistent Help
+3.3.1	A	error-identification	task,content,semantics	Error Identification
+3.3.2	A	labels-or-instructions	task,content,semantics	Labels or Instructions
+3.3.3	AA	error-suggestion	task,content	Error Suggestion
+3.3.4	AA	error-prevention-legal-financial-data	task	Error Prevention (Legal, Financial, Data)
+3.3.5	AAA	help	task	Help
+3.3.6	AAA	error-prevention-all	task	Error Prevention (All)
+3.3.7	A	redundant-entry	task	Redundant Entry
+3.3.8	AA	accessible-authentication-minimum	task	Accessible Authentication (Minimum)
+3.3.9	AAA	accessible-authentication-enhanced	task	Accessible Authentication (Enhanced)
+4.1.2	A	name-role-value	semantics,task,speech	Name, Role, Value
+4.1.3	AA	status-messages	semantics,task,speech	Status Messages

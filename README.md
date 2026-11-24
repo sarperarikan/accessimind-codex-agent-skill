@@ -11,6 +11,7 @@ Current version: `1.1.1`
 - Keyboard order, focus visibility, reflow, text spacing, contrast, forced colors, reduced motion, and target size
 - NVDA-assisted evidence collection when NVDA and Guidepup are installed locally
 - Journey audits for sign-in, search, filtering, cart, checkout, booking, onboarding, and multi-step forms
+- A local catalog of all 86 WCAG 2.2 criteria and versioned mappings for Türkiye's 122- and 126-question Ministry checklists
 - Pointer–keyboard parity: highlights visible targets that accept a pointer click but lack a keyboard-operable semantic target
 - Evidence-backed release gates: `PASS`, `PASS_WITH_RISK`, or `FAIL`
 
@@ -38,6 +39,7 @@ Examples:
 
 ```text
 Use $accessimind-accessible-ui-agent-skill to audit this checkout flow for WCAG 2.2.
+Use $accessimind-accessible-ui-agent-skill to audit this site against WCAG 2.2 AA and the Ministry's 122-question checklist.
 Use $accessimind-accessible-ui-agent-skill to find controls reachable by mouse but not keyboard.
 Use $accessimind-accessible-ui-agent-skill to review this React modal and propose verified fixes.
 ```
@@ -52,6 +54,7 @@ The bundled scripts live in `skills/accessimind-accessible-ui-agent-skill/script
 | `low_vision_web_audit.mjs` | Measures reflow, text spacing, forced colors, contrast, focus, clipping, and density. |
 | `motor_web_audit.mjs` | Collects keyboard traces, pointer actionability, target size/spacing, drag alternatives, and pointer–keyboard parity. |
 | `journey-audit.mjs` | Executes declared UI journeys and runs AccessLint at every reached state. |
+| `wcag-rules.mjs` | Validates the bundled catalogs and looks up WCAG criteria and Ministry questions in both directions. |
 
 Validate the scripts after installation:
 
@@ -61,6 +64,7 @@ node --check .\skills\accessimind-accessible-ui-agent-skill\scripts\nvda_web_aud
 node --check .\skills\accessimind-accessible-ui-agent-skill\scripts\low_vision_web_audit.mjs
 node --check .\skills\accessimind-accessible-ui-agent-skill\scripts\motor_web_audit.mjs
 node --check .\skills\accessimind-accessible-ui-agent-skill\scripts\journey-audit.mjs
+node .\skills\accessimind-accessible-ui-agent-skill\scripts\wcag-rules.mjs --validate
 ```
 
 ## Journey audits

@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Added the complete WCAG 2.2 catalog and versioned Ministry mappings for 122 and 126 questions.
+- Added offline lookup and validation, plus coverage and replay guidance for site-wide journey audits.
+
 ## 1.1.1 - 2026-08-13
 
 ### Changed

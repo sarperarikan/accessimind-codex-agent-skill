@@ -1,6 +1,6 @@
 ---
 name: accessimind-accessible-ui-agent-skill
-description: Use when the user wants production-ready modern UI work or accessibility review for web UI, including journey-based WCAG 2.2 audits of sign-in, checkout, search, booking, onboarding, or form flows; keyboard/focus analysis; real NVDA or screen-reader interaction evidence; and accessible React/HTML/CSS implementation with multilingual and design-system awareness.
+description: Build accessible React, HTML, and CSS interfaces and audit live web journeys. Use for WCAG 2.2 A/AA/AAA reviews, Türkiye's Aile ve Sosyal Hizmetler Bakanlığı 122- or 126-question accessibility checklist, keyboard and focus analysis, real screen-reader evidence, and multilingual UI.
 ---
 
 # AccessiMind Accessible UI Agent Skill
@@ -78,6 +78,10 @@ Treat these and similar requests as an accessibility analysis or audit request, 
 
 When the request is review-oriented, switch from implementation mode to review mode.
 
+- **WCAG coverage.** Load the [WCAG rule workflow](references/wcag-rule-workflow.md) for the complete rule catalog and evidence requirements. Use A and AA for an unspecified full review and include AAA when requested.
+- **Bakanlık checklist.** Load the [versioned checklist](references/turkey-ministry-checklist.md) for Bakanlık, ASHB, 2025/10, or 122/126-question requests. Record the edition, question outcomes and WCAG verdicts. Keep skipped, blocked and unverified conditions visible.
+- **Site-wide or end-to-end review.** Follow the [journey guide](references/journey-audits.md) to sample templates, exercise complete tasks and replay them after remediation. Use the local browser, AccessiMind harnesses and available accessibility engines directly. Keep Binclusive CLI, authentication and dashboard delivery out of these skill invocations.
+
 ### Review-mode objective
 
 Identify:
@@ -100,9 +104,9 @@ Do not default to rewriting the code first. Inspect, reason, and report findings
 5. Check keyboard access and focus behavior.
 6. Check dynamic announcements and live updates if the UI is stateful.
 7. Check structural landmarks, headings, lists, tables, and grouping.
-8. Check relevant WCAG 2.2 A/AA criteria for the surface.
+8. Check the applicable WCAG 2.2 criteria in the requested level and any requested Ministry questions.
 9. Report findings ordered by severity.
-10. Call out unknowns or unverified areas explicitly.
+10. Record blocked or unverified coverage. Keep criterion verdicts and checklist responses distinct from the production release gate.
 
 ### Review output rule
 
@@ -3425,7 +3429,7 @@ Include in report:
 
 ## Production-grade audit gate mode
 
-This skill must enforce explicit release gates for accessibility audits and remediation output.
+Apply these release gates when the task includes production sign-off. For a scoped audit, report criterion outcomes and the evidence available for each tested state.
 
 ### Gate objective
 
@@ -3518,7 +3522,7 @@ Default to Playwright-assisted runtime capture when the request includes any of:
 1. `accessimind` defines audit scope, WCAG lens, and severity model.
 2. `playwright` runs deterministic keyboard/DOM capture and produces step logs.
 3. `accessimind` calibrates severity and maps findings to WCAG 2.2 criteria.
-4. `accessimind` applies production gates (`G1`-`G5`) and outputs `PASS`, `PASS_WITH_RISK`, or `FAIL`.
+4. `accessimind` reports rule outcomes and coverage. Apply gates `G1`–`G6` when the task includes production sign-off.
 
 ### Data contract from Playwright
 
@@ -3535,26 +3539,25 @@ Default to Playwright-assisted runtime capture when the request includes any of:
 - Severity and compliance interpretation stay in `accessimind`.
 - Never skip runtime evidence for keyboard/focus claims unless tooling is blocked; if blocked, mark as unverified.
 
-## Absolute mandatory verification mode
+## Production sign-off evidence
 
-This mode is default and non-optional for accessibility audits and production sign-off.
+Collect live screen-reader evidence and visual measurements for production sign-off. In a scoped audit, test the relevant modality and record blocked or unverified coverage when evidence is incomplete.
 
 ### Absolute requirements
 
-- Live screen-reader evidence must be captured and reported in every audit:
+- Capture and report live screen-reader evidence:
   - `NVDA` on Windows and/or `VoiceOver` on Apple platforms based on runtime availability.
-- Pixel-level visual verification must be captured and reported in every audit:
+- Capture and report pixel-level visual verification:
   - text/control contrast measurements
   - visible focus indicator checks
 
-### No-skip policy
+### Missing evidence
 
-- These checks are mandatory in all conditions.
-- If tooling cannot run, the audit result must be `FAIL` with explicit blocker details; do not mark as passed or pass-with-risk.
+When a required tool cannot run, record the precise blocker in the affected criterion or state. At production sign-off, missing required evidence fails the applicable release gate.
 
 ### Reporting requirement
 
-Every final report must include dedicated sections:
+Include these sections in a production sign-off report:
 - `Live screen-reader evidence (NVDA/VoiceOver)`
 - `Pixel-level contrast measurements`
 - `Focus visibility measurements`

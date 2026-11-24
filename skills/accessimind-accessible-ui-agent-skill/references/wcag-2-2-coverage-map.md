@@ -2,7 +2,8 @@
 
 Use this reference when a task needs explicit WCAG 2.2 A/AA review coverage, especially for production-ready UI work, audits, PR reviews, design-system changes, or dynamic interaction work.
 
-How to use it:
+Use the [complete WCAG catalog](wcag-rule-workflow.md) to enumerate criteria for the requested level. Use this map to select additional tests for the surface.
+
 - start from the changed UI surface, not from the entire product
 - mark each criterion as `applicable`, `not applicable`, or `needs manual verification`
 - use this file to avoid missing less-obvious criteria outside basic keyboard and contrast checks

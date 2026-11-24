@@ -49,3 +49,15 @@ The journey runner scans each reached state with AccessLint. Supported actions a
 ## Pointer--keyboard parity
 
 `motor_web_audit.mjs` reports `pointer-reachable-without-keyboard-target` only when a visible pointer-actionable target lacks a keyboard-operable semantic owner. `pointer-keyboard-parity-undetermined` means the Tab trace must be extended before treating the target as a defect.
+
+## WCAG and Ministry rule lookup
+
+Run from the repository root.
+
+```powershell
+node .\skills\accessimind-accessible-ui-agent-skill\scripts\wcag-rules.mjs 3.2.1
+node .\skills\accessimind-accessible-ui-agent-skill\scripts\wcag-rules.mjs 122 95
+node .\skills\accessimind-accessible-ui-agent-skill\scripts\wcag-rules.mjs 126 106
+```
+
+An exact question lookup includes the edition, physical PDF page, mapped WCAG criterion, expected answer type and conditional destinations. In an audit report, retain the observed answer and evidence. The Ministerial A-level lists map to 31 WCAG criteria. AA and AAA findings are recorded against the WCAG catalog. [Checklist guide](skills/accessimind-accessible-ui-agent-skill/references/turkey-ministry-checklist.md)
